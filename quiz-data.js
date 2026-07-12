@@ -1,4 +1,4 @@
-// AIGP Quiz Questions — 621 total
+// AIGP Quiz Questions — 742 total
 const ALL_QUESTIONS = [
   {
     "id": "q-1",
@@ -16265,5 +16265,3272 @@ const ALL_QUESTIONS = [
     ],
     "answer": "C",
     "explanation": "Accountability is a fundamental principle of AI governance. Governance establishes accountability structures (roles, responsibilities), mechanisms (monitoring, auditing, incident response), and ensures someone is answerable for AI outcomes. Conclusion Congratulations on completing all 500 AIGP study guide questions! This comprehensive question set covers all four domains and 15 chapters of the AI Governance Professional certification. Study Recommendations Review Explanations: Even for questions answered correctly, read the explanations to deepen understanding Focus on Weak Areas: Identify chapters or topics where you struggled and review those sections Understand Rationales: Don’t just memorize answers; understand the reasoning behind correct and incorrect options Cross-Reference: Use the AIGP Body of Knowledge alongside these questions for comprehensive preparation Practice Application: Consider how concepts apply to real-world scenarios in your organization Track Progress: Mark questions for review and revisit them periodically Difficulty Distribution Summary Easy Questions (30%): ~150 questions testing foundational knowledge and definitions Medium Questions (50%): ~250 questions testing application and analysis Hard Questions (20%): ~100 questions testing complex scenarios and integration Domain Coverage Domain I: Questions 1-125 (Foundations of AI Governance) Domain II: Questions 126-250 (Laws, Standards & Frameworks) Domain III: Questions 251-375 (Governing AI Development) Domain IV: Questions 376-500 (Governing AI Deployment & Use) 1. 2. 3. 4. 5. 6. • • • • • • • 168 Next Steps Review the IAPP AIGP Body of Knowledge Take official IAPP practice exams Join study groups or forums for discussion Apply concepts to real-world AI governance scenarios Schedule your AIGP certification exam when ready Good luck with your AIGP certification journey! Document Version: 1.0 Last Updated: October 2025 Total Questions: 500 Prepared for: AIGP Certification Exam Preparation 1. 2. 3. 4. 5. 169 [Extended: governance establishes accountability]"
+  },
+  {
+    "id": "q-622",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "An assessor reviewing an insurer's claims-processing model against the NIST AI RMF finds it deficient on the accountable and transparent trustworthiness characteristic. Which remediation most directly addresses the gap?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Publish technical explanations of how the model derives each individual prediction"
+      },
+      {
+        "letter": "B",
+        "text": "Release the model's source code and weights for public inspection"
+      },
+      {
+        "letter": "C",
+        "text": "Make information about design decisions and outputs available to stakeholders and designate who is answerable for outcomes"
+      },
+      {
+        "letter": "D",
+        "text": "Run demographic bias testing and publish subgroup performance metrics"
+      }
+    ],
+    "answer": "C",
+    "explanation": "In the NIST AI RMF, this characteristic means information about the AI system's design decisions and outputs is available to stakeholders and responsibility for the system is clearly owned. Option A describes the separate 'explainable and interpretable' characteristic, B is a lay reading of transparency as open-sourcing, and D addresses the 'fair with harmful bias managed' characteristic."
+  },
+  {
+    "id": "q-623",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A Dutch electronics retailer resells a third-party workplace-monitoring AI system to EU businesses without altering it, acting as an AI distributor under the EU AI Act. Before making the system available, what must the retailer verify?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "That the system bears the required CE marking and is accompanied by the required documentation"
+      },
+      {
+        "letter": "B",
+        "text": "That the system has been re-tested and certified under the retailer's own quality management system"
+      },
+      {
+        "letter": "C",
+        "text": "That the provider is established in the EU or has appointed an authorized representative there"
+      },
+      {
+        "letter": "D",
+        "text": "That the system's training data was collected with a lawful basis under the GDPR"
+      }
+    ],
+    "answer": "A",
+    "explanation": "This supply-chain role makes an AI system available on the EU market without affecting its compliance, and its core duty is to verify the CE marking and required documentation before distribution. Option B describes provider obligations (a quality management system), C describes the importer's check, and D is a data protection duty that sits with the controller, not this role."
+  },
+  {
+    "id": "q-624",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Under ISO/IEC 22989 terminology, a bank's loan-approval documentation must account for the interests of each AI subject. Who does this refer to?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The engineer responsible for operating and maintaining the model"
+      },
+      {
+        "letter": "B",
+        "text": "The topic or domain area the model was trained to handle"
+      },
+      {
+        "letter": "C",
+        "text": "The legal entity that owns and commercializes the system"
+      },
+      {
+        "letter": "D",
+        "text": "A person who interacts with or is affected by the system's decisions"
+      }
+    ],
+    "answer": "D",
+    "explanation": "In ISO/IEC 22989, this term denotes an individual affected by or interacting with an AI system, such as a loan applicant. Option A is an operator role, B is a lay misreading of 'subject' as subject matter, and C is the AI provider or producer, not the affected individual."
+  },
+  {
+    "id": "q-625",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A policy briefing distinguishes today's AI systems from a hypothetical future artificial superintelligence. What capability would qualify a system for that label?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Matching average human performance across most cognitive tasks"
+      },
+      {
+        "letter": "B",
+        "text": "Exceeding the best human performance in essentially every domain, from creativity to decision-making"
+      },
+      {
+        "letter": "C",
+        "text": "Outperforming human experts in one narrow specialty such as protein-structure prediction"
+      },
+      {
+        "letter": "D",
+        "text": "Operating fully autonomously without any human oversight or control"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The term describes a theoretical AI that surpasses human intelligence in all domains, including creativity, problem-solving, emotional understanding, and decision-making. Option A describes artificial general intelligence (human-level), C describes narrow AI, and D describes autonomy, which is a mode of operation rather than a level of intelligence."
+  },
+  {
+    "id": "q-626",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "The EU AI Act requires providers of high-risk AI systems to report serious incidents to the competent authorities. To whom would a provider actually send such a report?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The designated regulatory oversight bodies of the member states concerned"
+      },
+      {
+        "letter": "B",
+        "text": "The notified body that assessed the system's conformity before launch"
+      },
+      {
+        "letter": "C",
+        "text": "An internal committee of suitably qualified compliance officers"
+      },
+      {
+        "letter": "D",
+        "text": "The European Data Protection Board in Brussels"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The term refers to the regulatory or oversight bodies designated by member states to supervise and enforce the law, such as market surveillance authorities. Option B is a private conformity assessment body, not a regulator; C is a lay misreading of 'competent' as skilled internal staff; and D is a GDPR body, not the AI Act's supervisory recipient for incident reports."
+  },
+  {
+    "id": "q-627",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A radiology startup selects a convolutional neural network for its tumor-detection product. What property of this architecture motivates the choice?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It maintains a memory of earlier inputs, letting each prediction depend on what came before"
+      },
+      {
+        "letter": "B",
+        "text": "It weighs relationships among all parts of the input simultaneously through attention"
+      },
+      {
+        "letter": "C",
+        "text": "It combines the votes of many independently trained decision trees"
+      },
+      {
+        "letter": "D",
+        "text": "It slides learned filters across the image to detect local patterns such as edges and textures"
+      }
+    ],
+    "answer": "D",
+    "explanation": "This is a feedforward network with convolution in at least one layer: learned filters pass over local regions of the input, making it well suited to spatial data like medical images. Option A describes a recurrent network, B describes a transformer's attention mechanism, and C describes a random forest ensemble."
+  },
+  {
+    "id": "q-628",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Before an insurer trains an underwriting model, its governance policy mandates a data quality review. What does this step examine?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Whether the model's predictions meet the accuracy targets set for release"
+      },
+      {
+        "letter": "B",
+        "text": "Whether the dataset is complete and free of systematic deviations that would impair its usefulness"
+      },
+      {
+        "letter": "C",
+        "text": "Whether a lawful basis exists for processing each category of personal data involved"
+      },
+      {
+        "letter": "D",
+        "text": "Whether the data is encrypted and access to it is restricted to authorized staff"
+      }
+    ],
+    "answer": "B",
+    "explanation": "This process checks data for completeness, systematic deviations such as bias, and other factors that would impair its usefulness for an AI system. Option A is model evaluation rather than a data check, C is a legal or DPIA review, and D is a data security assessment."
+  },
+  {
+    "id": "q-629",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A hospital applies deidentification to patient records before providing them to an AI vendor for model development. What did the hospital do to the records?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Encrypted them so that only the vendor's authorized staff can decrypt and read them"
+      },
+      {
+        "letter": "B",
+        "text": "Replaced the real records with artificial ones generated to mimic their statistical properties"
+      },
+      {
+        "letter": "C",
+        "text": "Removed or generalized the fields that could reveal who each patient is"
+      },
+      {
+        "letter": "D",
+        "text": "Moved them into a restricted enclave the vendor can query but never export"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The term covers techniques such as pseudonymization, aggregation, and generalization that remove or obscure personally identifying information from a dataset. Option A is encryption, a security control that leaves the identifying data intact; B describes synthetic data generation; and D describes a data clean room or enclave arrangement."
+  },
+  {
+    "id": "q-630",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Following adoption of the EU AI Act, a compliance team maps which supervisory tasks belong to the European AI Office. Which task belongs on that list?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Coordinating supervision of general-purpose AI models with systemic risk and issuing guidance"
+      },
+      {
+        "letter": "B",
+        "text": "Conducting day-to-day market surveillance of high-risk systems within each member state"
+      },
+      {
+        "letter": "C",
+        "text": "Accrediting the notified bodies that perform third-party conformity assessments"
+      },
+      {
+        "letter": "D",
+        "text": "Hearing individual complaints about automated decisions and awarding remedies"
+      }
+    ],
+    "answer": "A",
+    "explanation": "This body, housed within the European Commission, coordinates supervision of GPAI models with systemic risk, maintains the public database of high-risk AI systems, and issues guidance and best practices. Option B belongs to national competent authorities, C to national accreditation bodies, and D to data protection authorities and courts."
+  },
+  {
+    "id": "q-631",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Five hospitals want to jointly improve a sepsis-prediction model but cannot share patient records, so they adopt federated learning. How does the joint model get trained?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Each hospital anonymizes its records and uploads them to a shared central repository"
+      },
+      {
+        "letter": "B",
+        "text": "A trusted third party pools the encrypted records and trains on them after decryption"
+      },
+      {
+        "letter": "C",
+        "text": "The hospitals compute on secret-shared data so no party ever sees another's plaintext inputs"
+      },
+      {
+        "letter": "D",
+        "text": "Each hospital trains on its own data locally, and only model updates leave the premises"
+      }
+    ],
+    "answer": "D",
+    "explanation": "In this approach, training happens across decentralized sites using local data, and only model parameters or updates are exchanged, so raw data never moves to a central server. Options A and B still centralize the data, defeating the privacy benefit, and C describes secure multi-party computation, a different privacy-enhancing technology."
+  },
+  {
+    "id": "q-632",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A provider placed its general-purpose AI model on the EU market in June 2025. Applying the GPAI transitional period, when must the model fully comply with the AI Act's obligations for such models?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Immediately, when those obligations began applying on August 2, 2025"
+      },
+      {
+        "letter": "B",
+        "text": "By August 2, 2027, two years after those obligations took effect"
+      },
+      {
+        "letter": "C",
+        "text": "By August 2, 2026, alongside the Act's main high-risk requirements"
+      },
+      {
+        "letter": "D",
+        "text": "Only if the model undergoes a substantial modification after the rules took effect"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Models placed on the market before August 2, 2025 benefit from a grace period running until August 2, 2027 to reach full compliance with the Act's GPAI obligations. Option A applies to models placed on the market after that date, C confuses the timeline with the general application date for other obligations, and D describes the legacy treatment of certain pre-existing high-risk systems, not GPAI models."
+  },
+  {
+    "id": "q-633",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A manufacturer with an enterprise risk program built on ISO 31000:2018 is now adopting ISO/IEC 23894 for its AI systems. What should the risk team expect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To retire the older standard, since the AI-specific standard replaces it"
+      },
+      {
+        "letter": "B",
+        "text": "To pursue certification, since the older standard defines an auditable management system"
+      },
+      {
+        "letter": "C",
+        "text": "To keep its existing principles, framework, and process structure, with AI-specific guidance layered on"
+      },
+      {
+        "letter": "D",
+        "text": "To run two separate programs, because the standards use incompatible risk vocabularies"
+      }
+    ],
+    "answer": "C",
+    "explanation": "This is the generic risk management standard whose clause structure — principles (Clause 4), framework (Clause 5), and process (Clause 6) — ISO/IEC 23894 mirrors and extends with AI-specific guidance; it is extended, not replaced. Option A wrongly assumes replacement, B confuses it with a certifiable management system standard like ISO/IEC 42001, and D contradicts the deliberate clause-by-clause alignment."
+  },
+  {
+    "id": "q-634",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An AI governance team at a logistics firm begins the Map function of the NIST AI RMF for a new route-optimization system. Which activity are they performing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Establishing the system's purpose and context and identifying whom its risks could affect"
+      },
+      {
+        "letter": "B",
+        "text": "Applying quantitative and qualitative methods to score the risks already identified"
+      },
+      {
+        "letter": "C",
+        "text": "Prioritizing the scored risks and allocating resources to respond to them"
+      },
+      {
+        "letter": "D",
+        "text": "Writing the organization-wide policies and accountability structures for AI risk"
+      }
+    ],
+    "answer": "A",
+    "explanation": "This NIST AI RMF function establishes context to frame AI risks: understanding system purpose and categorization, weighing benefits and costs, and connecting risks to impacts on individuals and society. Option B describes the Measure function, C the Manage function, and D the Govern function."
+  },
+  {
+    "id": "q-635",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "A legal-tech firm runs named entity recognition over a corpus of merger agreements. What output does the pipeline produce?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A judgment of whether each clause is favorable or unfavorable to the client"
+      },
+      {
+        "letter": "B",
+        "text": "A short abstract summarizing the key obligations in each agreement"
+      },
+      {
+        "letter": "C",
+        "text": "Clusters of agreements grouped by the themes they share"
+      },
+      {
+        "letter": "D",
+        "text": "Labeled spans marking parties, dates, jurisdictions, and monetary amounts in the text"
+      }
+    ],
+    "answer": "D",
+    "explanation": "This NLP task recognizes and labels the names of entities in word sequences and assigns them categories such as person, organization, date, or amount. Option A is classification or sentiment analysis, B is text summarization, and C is topic modeling or clustering."
+  },
+  {
+    "id": "q-636",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "Before building a commercial product on a freely downloadable language model, in-house counsel reviews the model's open source agreement. What is counsel most likely checking?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The uptime commitments and support response times the model's maintainers promise"
+      },
+      {
+        "letter": "B",
+        "text": "Whether commercial use is permitted and whether derivative models must carry the same terms"
+      },
+      {
+        "letter": "C",
+        "text": "How the vendor will process the company's personal data, as the GDPR requires"
+      },
+      {
+        "letter": "D",
+        "text": "The indemnities offered if the model's outputs infringe a third party's copyright"
+      }
+    ],
+    "answer": "B",
+    "explanation": "These license terms govern use of openly released models and may restrict commercial use, require attribution, or impose copyleft provisions that bind derivatives to the same terms. Option A describes a service-level agreement, C a data processing agreement, and D indemnification clauses typical of negotiated proprietary vendor contracts."
+  },
+  {
+    "id": "q-637",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A fintech's governance board will not sign off on launching a credit-scoring model until it passes a production readiness evaluation. What does this gate involve?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Continuous monitoring of the live system for drift and degraded performance"
+      },
+      {
+        "letter": "B",
+        "text": "Unit and integration testing of the codebase during each development sprint"
+      },
+      {
+        "letter": "C",
+        "text": "A structured pre-launch review of safety, benchmarked performance, regulatory conformity, and operational plans"
+      },
+      {
+        "letter": "D",
+        "text": "Stress-testing the serving infrastructure to confirm it can absorb peak traffic"
+      }
+    ],
+    "answer": "C",
+    "explanation": "This is a structured pre-deployment review confirming the system is production-worthy across safety, accountability, suitability for its intended context, regulatory conformity, performance benchmarking, and operational planning. Option A happens after deployment, B is routine development testing, and D is load testing, which addresses only one narrow operational dimension."
+  },
+  {
+    "id": "q-638",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "An analytics team building a demand-forecasting tool from daily sales history chooses a recurrent neural network. What makes this architecture suited to the task?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It feeds each step's output back into the network, so earlier observations shape later predictions"
+      },
+      {
+        "letter": "B",
+        "text": "It applies sliding filters that detect local patterns within a fixed window of the input"
+      },
+      {
+        "letter": "C",
+        "text": "It retrains itself repeatedly on the same data until the error stops improving"
+      },
+      {
+        "letter": "D",
+        "text": "It attends to every time step at once rather than processing them in order"
+      }
+    ],
+    "answer": "A",
+    "explanation": "In this architecture, the current layer receives both the previous layer's output and the output of the previous processing step, giving it a memory of earlier sequence elements — ideal for time-series data. Option B describes a convolutional network, C is a lay misreading of the name as repeated retraining, and D describes a transformer's attention mechanism."
+  },
+  {
+    "id": "q-639",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A vendor describes its scheduling engine as built on soft computing techniques. What characterizes this approach?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It runs entirely in software, requiring no specialized hardware accelerators"
+      },
+      {
+        "letter": "B",
+        "text": "It relies on lightweight models small enough to run on low-power edge devices"
+      },
+      {
+        "letter": "C",
+        "text": "It guarantees exact, provably correct answers through formal deterministic methods"
+      },
+      {
+        "letter": "D",
+        "text": "It tolerates imprecision, uncertainty, and partial truth to reach robust, workable solutions"
+      }
+    ],
+    "answer": "D",
+    "explanation": "This field of data processing tolerates and exploits imprecision, uncertainty, and partial truth — as in fuzzy logic — to make problem-solving more transparent and robust. Options A and B are lay misreadings of 'soft' as software-only or lightweight, and C describes the opposite: conventional 'hard' computing with exact deterministic methods."
+  },
+  {
+    "id": "q-640",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A data scientist trains a support vector machine to flag fraudulent insurance claims. How does the trained model decide where to draw the line between the two classes?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It averages the predictions of many decision trees fitted on random subsets of the data"
+      },
+      {
+        "letter": "B",
+        "text": "It selects the boundary that leaves the widest possible gap to the closest training examples of each class"
+      },
+      {
+        "letter": "C",
+        "text": "It assigns each new claim to the class of the most similar claims it has already seen"
+      },
+      {
+        "letter": "D",
+        "text": "It multiplies the estimated probabilities of each feature value occurring within each class"
+      }
+    ],
+    "answer": "B",
+    "explanation": "This algorithm finds the decision boundary with maximum margin — the separator farthest from the nearest training points of each class. Option A describes a random forest, C describes k-nearest neighbors, and D describes a naive Bayes classifier."
+  },
+  {
+    "id": "q-641",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A hospital system's AI governance lead is tasked with standing up a training and awareness program. What should the lead deliver?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A pipeline that retrains the organization's models on fresh clinical data each quarter"
+      },
+      {
+        "letter": "B",
+        "text": "A technical certification track reserved for the data science staff"
+      },
+      {
+        "letter": "C",
+        "text": "Education on AI terminology, strategy, and governance, tailored to each role across the organization"
+      },
+      {
+        "letter": "D",
+        "text": "A public campaign informing patients about the hospital's use of AI tools"
+      }
+    ],
+    "answer": "C",
+    "explanation": "This organizational program delivers AI terminology, strategy, and governance education to all stakeholders, tailored to how each role interacts with AI. Option A is a lay misreading of 'training' as model retraining, B is too narrow because the program covers all stakeholders, and D is external communication or transparency notice rather than internal education."
+  },
+  {
+    "id": "q-642",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An ISO/IEC 22989-aligned quality plan requires verification & validation before an autonomous warehouse forklift system ships. Which pair of questions does this activity answer?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Does the system meet its specifications, and does it fulfill its intended use in its target context?"
+      },
+      {
+        "letter": "B",
+        "text": "Are users who they claim to be, and are their access rights correctly enforced?"
+      },
+      {
+        "letter": "C",
+        "text": "Is the training data accurate, and has its provenance been independently confirmed?"
+      },
+      {
+        "letter": "D",
+        "text": "Can the system withstand attack, and does it protect the personal data it processes?"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The paired activities test a system against its specifications and confirm it satisfies its intended use in the operational context. Option B is a lay misreading of 'verification' as identity checking, C is data quality and provenance review, and D covers security and privacy testing, which are separate assurance activities."
+  },
+  {
+    "id": "q-643",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "While documenting an insurance pricing model for an internal audit, a data scientist notes that every neuron in the network applies an activation function. What role does this component play?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It assigns the initial random values to the network's weights before training begins"
+      },
+      {
+        "letter": "B",
+        "text": "It determines whether the trained model is approved for release into production"
+      },
+      {
+        "letter": "C",
+        "text": "It transforms the weighted sum of a neuron's inputs, typically in a nonlinear way, before passing the result onward"
+      },
+      {
+        "letter": "D",
+        "text": "It gradually reduces the step size the optimizer takes as training converges"
+      }
+    ],
+    "answer": "C",
+    "explanation": "An activation function is applied to the weighted combination of all inputs to a neuron and is typically nonlinear, which is what lets networks model complex relationships. Option A describes weight initialization, B is a deployment or release gate (a lay misreading of 'activation'), and D describes a learning-rate schedule."
+  },
+  {
+    "id": "q-644",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A Rotterdam-based firm acts as the AI importer for a high-risk fleet-routing system built by a Singaporean developer. Under the EU AI Act, what must the firm do before making the system available on the EU market?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Verify that the foreign provider has completed the required conformity assessment and that the system bears the CE marking"
+      },
+      {
+        "letter": "B",
+        "text": "Carry out the conformity assessment itself and draw up the system's technical documentation"
+      },
+      {
+        "letter": "C",
+        "text": "Ensure human oversight arrangements and log retention during the system's operational use"
+      },
+      {
+        "letter": "D",
+        "text": "Obtain a marketing authorization for the system from the European AI Office"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Under the EU AI Act, an importer places an AI system from a third country on the EU market and must verify that the provider has carried out the conformity procedure and that the CE marking and documentation are in place before distribution. Option B describes the provider's own obligations, C describes deployer duties during use, and D invents an authorization the AI Office does not issue."
+  },
+  {
+    "id": "q-645",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A hospital's procurement office conducts AI vendor due diligence before licensing a diagnostic triage tool. Which line of inquiry most clearly distinguishes this review from the hospital's standard software vendor assessment?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Confirming the vendor's financial stability and cyber-liability insurance coverage"
+      },
+      {
+        "letter": "B",
+        "text": "Reviewing the vendor's SOC 2 report, uptime commitments, and penetration-test results"
+      },
+      {
+        "letter": "C",
+        "text": "Checking references with other health systems that already use the product"
+      },
+      {
+        "letter": "D",
+        "text": "Probing the provenance of the training data, the quality of its labeling, and how the model's outputs can be explained"
+      }
+    ],
+    "answer": "D",
+    "explanation": "AI vendor due diligence extends ordinary procurement review to AI-specific risks such as model and training-data provenance, labeling quality, explainability, safety filters, and vulnerable dependencies. Options A, B, and C are all legitimate checks, but they belong to conventional third-party risk reviews that apply to any software supplier."
+  },
+  {
+    "id": "q-646",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A newswire service integrates an automatic summarization model into its editorial workflow. What output should editors expect the model to produce for each incoming article?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A ranked list of related articles retrieved from the archive"
+      },
+      {
+        "letter": "B",
+        "text": "A shorter text that retains the article's important semantic content"
+      },
+      {
+        "letter": "C",
+        "text": "A version of the article rendered in the reader's preferred language"
+      },
+      {
+        "letter": "D",
+        "text": "A set of topic labels assigning the article to sections of the site"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Automatic summarization is the task of shortening natural language content while preserving its important semantic information. Option A describes information retrieval, C describes machine translation, and D describes text classification — all common NLP tasks, but not this one."
+  },
+  {
+    "id": "q-647",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A university research group describes its work as falling squarely within connectionism. Which approach is the group most likely taking?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Encoding expert knowledge as explicit if-then rules that a reasoning engine executes"
+      },
+      {
+        "letter": "B",
+        "text": "Linking multiple independent AI services together through shared APIs and data pipelines"
+      },
+      {
+        "letter": "C",
+        "text": "Evolving candidate programs through mutation and selection across many generations"
+      },
+      {
+        "letter": "D",
+        "text": "Modeling cognition with networks of many simple interconnected computational units"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Connectionism is a form of cognitive modeling that uses networks of interconnected, generally simple computational units — the paradigm underlying neural networks. Option A describes the symbolic paradigm, B is a lay misreading of 'connection' as system integration, and C describes evolutionary computation."
+  },
+  {
+    "id": "q-648",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A startup providing a general-purpose AI model signs the EU's GPAI Code of Practice and asks counsel what the Copyright Chapter commits it to, given that its model is not classified as systemic-risk. Which answer is correct?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It applies to the startup regardless of risk classification and requires a policy honoring text-and-data-mining opt-out reservations under the CDSM Directive, plus measures against infringing outputs"
+      },
+      {
+        "letter": "B",
+        "text": "It does not apply, because that chapter binds only providers of models designated as posing systemic risk"
+      },
+      {
+        "letter": "C",
+        "text": "It requires the startup to obtain a license for every dataset used in training before the model may stay on the market"
+      },
+      {
+        "letter": "D",
+        "text": "It requires the startup to indemnify downstream deployers against any infringement claims arising from model outputs"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The Copyright Chapter of the GPAI Code of Practice applies to all signatory GPAI providers, not just systemic-risk ones, and centers on a copyright policy, compliance with Article 4(3) CDSM text-and-data-mining opt-outs, and safeguards against infringing outputs. Option B confuses it with the Safety and Security Chapter's scope, while C and D overstate the commitments — the chapter requires neither universal licensing nor downstream indemnification."
+  },
+  {
+    "id": "q-649",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Before training a demand-forecasting model, a retail analytics team performs data sampling on two years of transaction records. What is the team doing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Generating synthetic transactions to enlarge the training corpus"
+      },
+      {
+        "letter": "B",
+        "text": "Correcting mislabeled entries and removing duplicate records"
+      },
+      {
+        "letter": "C",
+        "text": "Selecting a subset of records expected to show the same patterns and trends as the full dataset"
+      },
+      {
+        "letter": "D",
+        "text": "Dividing the records into separate training, validation, and test partitions"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Data sampling is the process of selecting a subset of data expected to exhibit patterns and trends similar to the larger dataset. Option A describes synthetic data generation or augmentation, B describes data cleansing, and D describes dataset partitioning — related preparation steps, but distinct from sampling."
+  },
+  {
+    "id": "q-650",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "An auditor reviewing a public agency's benefits-eligibility engine is told the system produces deterministic output. What can the auditor rely on when testing it?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Every decision the system issues will be substantively correct under the governing regulations"
+      },
+      {
+        "letter": "B",
+        "text": "Submitting the same applicant data twice will always return exactly the same result"
+      },
+      {
+        "letter": "C",
+        "text": "Each decision will be accompanied by a calibrated confidence score"
+      },
+      {
+        "letter": "D",
+        "text": "The system will generate a plain-language rationale for each determination"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Deterministic output means results are entirely predictable given the same inputs, as in traditional rule-based systems, in contrast to probabilistic AI outputs. That guarantees reproducibility, not correctness (A), and it says nothing about confidence scoring (C) or explanation generation (D)."
+  },
+  {
+    "id": "q-651",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A US policy analyst is tracing the origin of a NIST publication back to a directive in Executive Order 14110. Which document is the analyst most likely researching?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The AI Risk Management Framework 1.0, NIST's voluntary framework for trustworthy AI"
+      },
+      {
+        "letter": "B",
+        "text": "Special Publication 800-53, the catalog of security and privacy controls for federal systems"
+      },
+      {
+        "letter": "C",
+        "text": "The NIST Privacy Framework for managing privacy risk in products and services"
+      },
+      {
+        "letter": "D",
+        "text": "NIST AI 600-1, the Generative AI Profile that accompanies the AI RMF"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Executive Order 14110, the 2023 US order on safe, secure, and trustworthy AI, directed NIST to develop the Generative AI Profile published as NIST AI 600-1, a companion to the AI RMF. The AI RMF 1.0 itself (A) predates the order and stems from a congressional mandate, while SP 800-53 (B) and the Privacy Framework (C) are unrelated to the order's AI directives."
+  },
+  {
+    "id": "q-652",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Hard",
+    "question": "The monitoring team for an HR screening model reports that a feedback loop has emerged since deployment. Which observation supports that conclusion?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The model's shortlisting decisions determine who gets hired, hiring records feed the next retraining cycle, and the model's original skew grows stronger each cycle"
+      },
+      {
+        "letter": "B",
+        "text": "Recruiters have been submitting thumbs-up and thumbs-down ratings on candidate recommendations through the interface"
+      },
+      {
+        "letter": "C",
+        "text": "The applicant population has shifted demographically since launch, degrading the model's accuracy against its training baseline"
+      },
+      {
+        "letter": "D",
+        "text": "An external actor has been submitting fabricated applications designed to corrupt the next training dataset"
+      }
+    ],
+    "answer": "A",
+    "explanation": "A feedback loop is a cycle in which a system's outputs influence its future inputs, potentially amplifying biases or errors over time — here, the model shapes hiring outcomes that then become its own training data. Option B is ordinary user feedback collection, C describes data or population drift from external change, and D describes a data-poisoning attack."
+  },
+  {
+    "id": "q-653",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A law firm associate drafting a brief with a generative AI assistant is warned by the firm's AI policy about hallucination. Which incident is that policy warning about?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The assistant declines to answer a legitimate legal question because it misjudges the request as improper"
+      },
+      {
+        "letter": "B",
+        "text": "The assistant reproduces confidential language from another client's matter in its draft"
+      },
+      {
+        "letter": "C",
+        "text": "The assistant cites a convincing, well-formatted judicial opinion that does not actually exist"
+      },
+      {
+        "letter": "D",
+        "text": "The assistant's drafting quality slowly degrades as the law evolves beyond its training data"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Hallucination is the phenomenon in which a model generates plausible-sounding but factually incorrect or fabricated information, such as an invented case citation — a signature risk of LLM deployment. Option A is over-refusal, B is a confidentiality or data-leakage failure, and D describes model staleness or drift."
+  },
+  {
+    "id": "q-654",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A capabilities taxonomy in a governance briefing classifies a logistics company's autonomous delivery vehicles as limited memory AI. What does this classification indicate about the vehicles' software?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It responds only to current sensor readings and carries no stored experience between moments"
+      },
+      {
+        "letter": "B",
+        "text": "It retains recent observations, such as surrounding traffic, and uses that stored experience to improve its decisions"
+      },
+      {
+        "letter": "C",
+        "text": "It models the intentions and likely beliefs of nearby drivers and pedestrians"
+      },
+      {
+        "letter": "D",
+        "text": "Its onboard storage is deliberately capped, so it cannot process high-resolution map data"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Limited memory AI retains information for short periods and draws on past experience to improve decisions, with autonomous vehicles processing recent traffic data as the classic example. Option A describes reactive machines, the tier below it in the standard taxonomy; C describes theory-of-mind AI, a tier above; and D is a lay misreading about hardware capacity."
+  },
+  {
+    "id": "q-655",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A machinery manufacturer's high-risk AI safety component is suspected of non-compliance, and a member-state authority invokes its market surveillance powers under the EU AI Act. Which action falls within those powers?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sentencing the manufacturer's responsible managers to criminal penalties"
+      },
+      {
+        "letter": "B",
+        "text": "Reclassifying the system as a prohibited practice by amending the Act's annexes"
+      },
+      {
+        "letter": "C",
+        "text": "Compelling access to technical documentation, conducting unannounced inspections, and requiring the system's withdrawal from the market"
+      },
+      {
+        "letter": "D",
+        "text": "Revoking the designation of the notified body that certified the system"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Market surveillance powers under the EU AI Act include requiring access to documentation, performing unannounced inspections and digital audits, mandating corrective actions, suspending or prohibiting marketing, and ordering withdrawal or recall. Criminal sentencing (A) belongs to member-state criminal law, amending annexes (B) is a European Commission power, and withdrawing a notified body's designation (D) rests with the notifying authority."
+  },
+  {
+    "id": "q-656",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A Spanish company harmed by a competitor's non-compliant recruitment AI system is advised to raise the matter with the national competent authorities rather than a Brussels institution. Under the EU AI Act, why is that the right channel?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Member-state authorities handle complaints, investigate breaches, and impose penalties for AI systems within their own jurisdiction"
+      },
+      {
+        "letter": "B",
+        "text": "Only bodies at member-state level may certify high-risk systems before they are placed on the market"
+      },
+      {
+        "letter": "C",
+        "text": "Member-state authorities draft the harmonized technical standards that give systems a presumption of conformity"
+      },
+      {
+        "letter": "D",
+        "text": "Member-state authorities supervise providers of general-purpose AI models across the entire Union"
+      }
+    ],
+    "answer": "A",
+    "explanation": "National competent authorities under the EU AI Act are the one or more bodies each member state designates for market surveillance, complaint handling, breach investigation, and penalties within their jurisdiction. Certification of high-risk systems (B) is done by notified bodies, harmonized standards (C) come from European standardization organizations like CEN-CENELEC, and Union-wide GPAI supervision (D) belongs to the European AI Office."
+  },
+  {
+    "id": "q-657",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A chatbot vendor's data governance program requires scrubbing personally identifiable information from conversation logs before they are reused for model tuning. Which log element still needs to be removed under this requirement?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Aggregated counts of daily active users per region"
+      },
+      {
+        "letter": "B",
+        "text": "Transcripts that have been irreversibly anonymized so they can no longer be linked to anyone"
+      },
+      {
+        "letter": "C",
+        "text": "The system prompts and configuration text captured alongside each session"
+      },
+      {
+        "letter": "D",
+        "text": "The IP addresses and device identifiers recorded with each user session"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Personally identifiable information is any information that can identify a specific individual directly or indirectly, which includes IP addresses, device identifiers, location data, and other online identifiers. Aggregated statistics (A) and properly anonymized transcripts (B) no longer relate to an identifiable person, and system configuration text (C) contains no personal data at all."
+  },
+  {
+    "id": "q-658",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "During contract negotiations for a third-party underwriting model, a bank's counsel briefs the board on proprietary model deployment obligations. Which point best captures what counsel is warning about?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The bank must release any fine-tuned derivative of the model under the same public license as the original"
+      },
+      {
+        "letter": "B",
+        "text": "The bank takes on heavier contractual duties while depending on vendor claims it cannot independently verify, raising its liability exposure and its reliance on the vendor for updates and incident support"
+      },
+      {
+        "letter": "C",
+        "text": "The bank automatically assumes the provider role for the model and must register it in the EU database under its own name"
+      },
+      {
+        "letter": "D",
+        "text": "The bank must retrain an equivalent model in-house within a defined period to eliminate its dependence on the vendor"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Proprietary model deployment obligations are the heightened duties that accompany deploying a closed third-party model: increased contractual obligations, reliance on vendor claims that cannot be independently verified, higher potential liability exposure, and dependence on the vendor for updates, incident support, and continuity. Option A imports a copyleft concept from open-source licensing, C describes role reassignment that occurs only in specific circumstances such as substantial modification or rebranding, and D invents a retraining duty that no framework imposes."
+  },
+  {
+    "id": "q-659",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A mid-sized model developer whose general-purpose model falls below the systemic-risk threshold signs the EU's GPAI Code of Practice, then asks how the Safety & Security Chapter affects its compliance program. What is the accurate answer?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It requires the developer to stand up serious-incident reporting and cybersecurity measures like every other signatory"
+      },
+      {
+        "letter": "B",
+        "text": "It applies in a lighter, simplified form because the developer qualifies as a smaller enterprise"
+      },
+      {
+        "letter": "C",
+        "text": "It requires annual independent penetration testing of the model before each new release"
+      },
+      {
+        "letter": "D",
+        "text": "It does not bind the developer, because that chapter's commitments attach only to providers of models classified as posing systemic risk"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The Safety & Security Chapter of the GPAI Code of Practice applies only to providers of GPAI models with systemic risk, covering a safety and security framework, risk identification and analysis, mitigations, serious-incident reporting, and cybersecurity. A non-systemic-risk signatory is bound instead by the chapters that apply to all providers. Options A and C wrongly extend systemic-risk commitments to every signatory, and B invents an SME-tiered version of the chapter."
+  },
+  {
+    "id": "q-660",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A telecom call center adds a speech recognition component to its quality-assurance pipeline. What does this component produce from each recorded call?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A text representation of the words the caller and agent spoke"
+      },
+      {
+        "letter": "B",
+        "text": "A determination of which enrolled individual is speaking on the line"
+      },
+      {
+        "letter": "C",
+        "text": "A synthesized spoken rendering of the agent's written call notes"
+      },
+      {
+        "letter": "D",
+        "text": "A classification of the caller's emotional state based on vocal tone"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Speech recognition converts a speech signal into a representation of the speech content — that is, it turns spoken audio into text. Option B describes speaker recognition or voice biometrics, C describes speech synthesis (text-to-speech, the reverse direction), and D describes emotion recognition."
+  },
+  {
+    "id": "q-661",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A regulator reviewing an insurer's claims-routing tool learns it was built with symbolic AI. What should the regulator expect to find when examining how the tool works?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Layers of numeric weights distributed across a trained network, with logic that is hard to trace"
+      },
+      {
+        "letter": "B",
+        "text": "Explicitly defined rules that manipulate structured representations, making the decision logic inspectable"
+      },
+      {
+        "letter": "C",
+        "text": "A retrieval mechanism that matches each new claim to the most similar historical cases"
+      },
+      {
+        "letter": "D",
+        "text": "Mathematical and logical notation used in the interface to present results to adjusters"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Symbolic AI manipulates symbols and structures according to explicitly defined rules, which makes its reasoning inherently more transparent and inspectable. Option A describes the connectionist approach, C describes case-based or nearest-neighbor reasoning, and D is a lay misreading of 'symbolic' as referring to on-screen notation."
+  },
+  {
+    "id": "q-662",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A compliance lead maps her company's commitments under the Transparency Chapter of the GPAI Code of Practice. Which obligation belongs on that list for every signatory provider?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Embedding machine-readable markings so synthetic audio and images are detectable as artificially generated"
+      },
+      {
+        "letter": "B",
+        "text": "Notifying individuals whenever they are interacting with an AI system rather than a human"
+      },
+      {
+        "letter": "C",
+        "text": "Maintaining model documentation and supplying required information to downstream providers, consistent with the Annex XI and XII obligations of Article 53"
+      },
+      {
+        "letter": "D",
+        "text": "Publishing the model's weights and training code for public scrutiny"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The Transparency Chapter of the GPAI Code of Practice applies to all GPAI providers and operationalizes Articles 53(1)(a)-(b): preparing and maintaining model documentation and providing information to downstream providers per Annexes XI and XII. Options A and B are Article 50 transparency duties for AI systems, a different part of the Act, and D confuses documentation duties with open-sourcing, which the chapter does not require."
+  },
+  {
+    "id": "q-663",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A hospital's AI assurance team reports that its chest X-ray triage model is vulnerable to adversarial example attacks. Which finding from their testing supports that conclusion?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Analysts submitted crafted prompts that caused the system to disclose its internal configuration"
+      },
+      {
+        "letter": "B",
+        "text": "Analysts inserted mislabeled scans into the training pipeline, degrading the model over several retraining cycles"
+      },
+      {
+        "letter": "C",
+        "text": "Analysts added tiny pixel-level changes to scans, imperceptible to radiologists, that made the model miss visible abnormalities"
+      },
+      {
+        "letter": "D",
+        "text": "Analysts issued high volumes of structured queries and reconstructed a functional copy of the model"
+      }
+    ],
+    "answer": "C",
+    "explanation": "An adversarial example is an input deliberately crafted with small, often human-imperceptible perturbations that cause a model to produce incorrect predictions. Option A describes prompt injection, B describes data poisoning of the training set, and D describes model extraction — all real attacks on AI systems, but none involves manipulating an individual inference-time input."
+  },
+  {
+    "id": "q-664",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A governance analyst is mapping stakeholders for a warehouse robotics deployment using the ISO/IEC 22989 role taxonomy. Which party should she record as the AI manufacturer?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The cloud vendor that hosts the model and exposes it through an API"
+      },
+      {
+        "letter": "B",
+        "text": "The logistics company that operates the robots in its distribution centers"
+      },
+      {
+        "letter": "C",
+        "text": "The warehouse employees whose movements the robots' sensors track"
+      },
+      {
+        "letter": "D",
+        "text": "The robotics firm that builds and assembles the system into a finished product"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Under ISO/IEC 22989, the AI manufacturer is the entity that builds or assembles the AI system. Option A is closer to an AI platform or service provider, B is the organization using the system in operation, and C describes AI subjects — the people affected by or sensed by the system."
+  },
+  {
+    "id": "q-665",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A bank rejects consumer loan applications using a fully automated scoring model with no employee involvement. Its privacy counsel warns that this practice implicates Article 22 GDPR. To address that concern, what must the bank do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Give declined applicants a way to obtain meaningful human involvement in the decision and to contest the outcome"
+      },
+      {
+        "letter": "B",
+        "text": "Complete a data protection impact assessment before continuing to operate the scoring model"
+      },
+      {
+        "letter": "C",
+        "text": "Notify its lead supervisory authority within 72 hours of any incident affecting applicant data"
+      },
+      {
+        "letter": "D",
+        "text": "Appoint a data protection officer to oversee all credit-decisioning activities"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Article 22 GDPR grants data subjects the right not to be subject to decisions based solely on automated processing that produce legal or similarly significant effects, and where such processing is permitted it requires safeguards including the right to obtain human intervention and to contest the decision. Option B relates to Article 35 (DPIAs), C to Article 33 breach notification, and D to Article 37 DPO designation — real GDPR duties, but not what Article 22 requires."
+  },
+  {
+    "id": "q-666",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An insurance underwriting team tells auditors that its risk-assessment tool is built on a Bayesian network. Which description of the tool's internal structure is consistent with that claim?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Layers of interconnected artificial neurons whose weights are tuned through backpropagation"
+      },
+      {
+        "letter": "B",
+        "text": "A directed acyclic graph whose nodes represent variables linked by conditional probability relationships"
+      },
+      {
+        "letter": "C",
+        "text": "An ensemble of decision trees whose individual outputs are combined by majority vote"
+      },
+      {
+        "letter": "D",
+        "text": "A library of expert-written if-then rules applied in sequence to each application"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A Bayesian network is a probabilistic model that represents variables and their conditional dependencies in a directed acyclic graph and uses probabilistic inference to update beliefs from evidence. Option A describes a neural network, C a random-forest-style tree ensemble, and D a rule-based expert system — none of which encodes probabilistic dependencies in a graph structure."
+  },
+  {
+    "id": "q-667",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A news organization deploying a generative AI drafting tool builds its risk program around NIST AI 600-1 and assigns one working group to content provenance. Which activity belongs to that working group?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Running structured red-team exercises against the tool before each release"
+      },
+      {
+        "letter": "B",
+        "text": "Verifying that the licenses on training datasets permit commercial use of the material"
+      },
+      {
+        "letter": "C",
+        "text": "Standing up a process to report and share information about harmful output events"
+      },
+      {
+        "letter": "D",
+        "text": "Attaching verifiable metadata and markings that record where generated media came from and how it was edited"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Content provenance in NIST AI 600-1 concerns tracking the origin and history of digital content, for example through provenance metadata and watermarking of AI-generated media; it is one of the profile's four primary generative AI considerations. Option A is pre-deployment testing, C is incident disclosure — the other named considerations alongside governance — and B is training-data license diligence, which concerns the provenance of inputs rather than of generated content."
+  },
+  {
+    "id": "q-668",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A German retailer wants a California-based vendor to fine-tune a recommendation model using its EU customers' purchase histories. Its DPO objects that the plan involves a cross-border data transfer. What would resolve the DPO's objection?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Obtaining prior written authorization from the retailer's lead supervisory authority for each shipment of data"
+      },
+      {
+        "letter": "B",
+        "text": "Relying on an adequacy decision, standard contractual clauses, or binding corporate rules to cover the arrangement"
+      },
+      {
+        "letter": "C",
+        "text": "Keeping a duplicate copy of every customer record on servers physically located inside Germany"
+      },
+      {
+        "letter": "D",
+        "text": "Notifying the affected customers within 72 hours of the data leaving the European Economic Area"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A cross-border data transfer is the movement of personal data outside the EU/EEA, which the GDPR permits only with appropriate safeguards such as an adequacy decision, standard contractual clauses, or binding corporate rules. Option A overstates the rule — routine transfers do not need per-shipment regulator authorization; C describes data localization, which is not what Chapter V requires; and D confuses transfer safeguards with breach-notification timing."
+  },
+  {
+    "id": "q-669",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Before licensing a training corpus for its claims-processing model, an insurer's data governance lead asks the vendor to supply the data sheet for the corpus. What is she expecting to receive?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A document describing how the records were collected, what they contain, and the uses for which they are and are not suited"
+      },
+      {
+        "letter": "B",
+        "text": "A report of the resulting model's accuracy, error rates, and performance across subgroups"
+      },
+      {
+        "letter": "C",
+        "text": "A technical specification listing the storage hardware and compute requirements for hosting the corpus"
+      },
+      {
+        "letter": "D",
+        "text": "A spreadsheet export containing a representative sample of the raw records themselves"
+      }
+    ],
+    "answer": "A",
+    "explanation": "A data sheet is a standardized document describing a dataset's composition, collection process, recommended uses, and limitations, supporting responsible data governance for AI training. Option B describes a model card, which documents a model rather than a dataset; C reflects the lay reading of 'datasheet' as a hardware spec; and D confuses documentation about the data with the data itself."
+  },
+  {
+    "id": "q-670",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A parliamentary committee questions a video platform about evidence that its recommendation engine creates an echo chamber effect. What effect on users is the committee concerned about?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Users' viewing histories being amplified to far wider audiences than they intended"
+      },
+      {
+        "letter": "B",
+        "text": "The recommender degrading over time as it is retrained on its own generated suggestions"
+      },
+      {
+        "letter": "C",
+        "text": "Users being steered toward content that confirms what they already believe, with less exposure to opposing views"
+      },
+      {
+        "letter": "D",
+        "text": "The same small set of videos being duplicated across every user's feed regardless of interest"
+      }
+    ],
+    "answer": "C",
+    "explanation": "An echo chamber arises when AI-driven recommendation systems reinforce users' existing beliefs by limiting exposure to diverse perspectives, contributing to polarization. Option A describes an unwanted-amplification privacy harm, B describes model degradation from feedback loops in training, and D describes a loss of personalization — the opposite of the highly tailored filtering that produces echo chambers."
+  },
+  {
+    "id": "q-671",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An auditor assessing a hiring-screening tool against the NIST AI RMF concludes that it fails the explainable and interpretable trustworthiness characteristic. Which observation supports that conclusion?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The vendor cannot produce evidence that the tool's scores are accurate or consistent across repeated runs"
+      },
+      {
+        "letter": "B",
+        "text": "Neither recruiters nor rejected candidates can get a meaningful account of how a score was produced or what it signifies in context"
+      },
+      {
+        "letter": "C",
+        "text": "The tool's rejection rates differ substantially between demographic groups with similar qualifications"
+      },
+      {
+        "letter": "D",
+        "text": "The tool has no documented fallback behavior when it encounters inputs outside its training distribution"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Explainable and interpretable is the NIST AI RMF trustworthiness characteristic requiring that the mechanisms behind an AI system's operation can be described and that its outputs can be understood in the context of their purpose. Option A maps to the valid-and-reliable characteristic, C to fair-with-harmful-bias-managed, and D to safe and resilient — each a separate RMF characteristic, not a failure of understandability."
+  },
+  {
+    "id": "q-672",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A governance training course states that a fraud-scoring model is a feedforward neural network. Which statement about how the model processes a transaction is accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The signal moves through the layers in a single direction from input to output, with no loops back to earlier layers"
+      },
+      {
+        "letter": "B",
+        "text": "The model retains a memory of prior transactions by cycling outputs back into its hidden layers"
+      },
+      {
+        "letter": "C",
+        "text": "The model slides small learned filters across the input to detect local patterns"
+      },
+      {
+        "letter": "D",
+        "text": "The model weighs every element of an input sequence against every other element using attention scores"
+      }
+    ],
+    "answer": "A",
+    "explanation": "In a feedforward neural network, information flows in only one direction, from the input layer through any hidden layers to the output layer, without cycles. Option B describes a recurrent neural network, C a convolutional neural network, and D a transformer's attention mechanism — all neural architectures, but not ones limited to one-way flow."
+  },
+  {
+    "id": "q-673",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A conformity assessment file prepared under ISO/IEC 22989 concepts describes a factory welding robot as exhibiting a high degree of heteronomy. What does this tell the assessor about the robot?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It adapts its own behavior over time by learning from conditions on the production line"
+      },
+      {
+        "letter": "B",
+        "text": "It is assembled from components and subsystems sourced from many different suppliers"
+      },
+      {
+        "letter": "C",
+        "text": "It operates under external supervision and constraint, with outside intervention shaping what it does"
+      },
+      {
+        "letter": "D",
+        "text": "It can pursue its assigned tasks for long periods without any human involvement at all"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Heteronomy in ISO/IEC 22989 characterizes a system that functions under the constraint of external intervention, measures, or supervision — the counterpart of autonomy. Option D describes autonomy itself, A describes adaptability, and B trades on the lay reading of 'hetero-' as meaning merely diverse or mixed components."
+  },
+  {
+    "id": "q-674",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "During an AI governance audit, a logistics company produces the localization policy from the business records for its route-optimization system. What should the auditor expect this document to establish?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "How the system's interface and outputs are translated and culturally adapted for each market it serves"
+      },
+      {
+        "letter": "B",
+        "text": "Which regional business units are delegated authority to configure and customize the system"
+      },
+      {
+        "letter": "C",
+        "text": "A requirement that engineering staff supporting the system be employed within the home jurisdiction"
+      },
+      {
+        "letter": "D",
+        "text": "The geographic regions and jurisdictions in which the system is permitted to operate and process data"
+      }
+    ],
+    "answer": "D",
+    "explanation": "A localization policy sets procedures for restricting an AI system's operation to specific geographic regions, jurisdictions, or contexts, often driven by data residency or regulatory mandates. Option A reflects the software-industry reading of 'localization' as translation and cultural adaptation, B concerns decentralized governance authority, and C concerns workforce location — none addresses where the system itself may run."
+  },
+  {
+    "id": "q-675",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A hospital's threat-modeling exercise concludes that its readmission-prediction model is exposed to a membership inference attack scenario that its existing privacy policy never contemplated. If such an attack succeeded, what would the attacker learn?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The full contents of patient records, reconstructed field by field from the model's outputs"
+      },
+      {
+        "letter": "B",
+        "text": "Whether a particular patient's record was included in the data used to train the model"
+      },
+      {
+        "letter": "C",
+        "text": "Sensitive attributes about patients, such as diagnoses, inferred from other known fields"
+      },
+      {
+        "letter": "D",
+        "text": "Valid credentials allowing the attacker to enroll as an authorized user of the model's API"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A membership inference attack determines whether a specific individual's record was part of a model's training set — an AI-specific privacy threat that traditional privacy policies typically fail to address. Option A describes model inversion or reconstruction, C describes attribute inference, and D trades on the lay reading of 'membership' as account access."
+  },
+  {
+    "id": "q-676",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A telecom's customer-service platform is documented, using ISO/IEC 22989 terminology, as performing natural language generation. Which function of the platform does that documentation refer to?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Transcribing the words a caller speaks into written form for the agent's screen"
+      },
+      {
+        "letter": "B",
+        "text": "Classifying each incoming message by the customer's underlying intent"
+      },
+      {
+        "letter": "C",
+        "text": "Retrieving the knowledge-base article that best matches a customer's question"
+      },
+      {
+        "letter": "D",
+        "text": "Composing fluent text replies from the structured account data the system holds"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Natural language generation is the task of converting semantic or structured data into natural language output. Option A is speech recognition, B is natural language understanding applied to intent classification, and C is information retrieval — all language-related tasks, but none produces new text from an internal representation."
+  },
+  {
+    "id": "q-677",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A public agency's procurement panel gives a benefits-eligibility system a high rating for predictability in the ISO/IEC 22989 sense. What did the panel conclude about the system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Interested parties can form reliable assumptions about what outcomes the system will produce"
+      },
+      {
+        "letter": "B",
+        "text": "The system is highly accurate at forecasting which applicants will need benefits in the future"
+      },
+      {
+        "letter": "C",
+        "text": "The system returns a byte-identical result every time the same input is submitted"
+      },
+      {
+        "letter": "D",
+        "text": "The system's documentation lets reviewers follow the reasoning behind each individual decision"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Predictability in ISO/IEC 22989 is the property of an AI system that enables interested parties to make reliable assumptions about its outcomes. Option B reflects the lay reading of the word as forecasting accuracy, C describes determinism or reproducibility, and D describes explainability — related assurance properties that the standard treats separately."
+  },
+  {
+    "id": "q-678",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A vendor preparing to place a high-risk AI recruitment tool on the EU market learns it must put a quality management system in place. What does satisfying this obligation involve?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Demonstrating that the tool exceeds a minimum accuracy benchmark on an independent test set"
+      },
+      {
+        "letter": "B",
+        "text": "Hiring a dedicated team of reviewers to manually check a sample of the tool's outputs each week"
+      },
+      {
+        "letter": "C",
+        "text": "Documenting the processes, procedures, and responsibilities that govern the tool's design, testing, and compliance across its lifecycle"
+      },
+      {
+        "letter": "D",
+        "text": "Obtaining a certificate for its corporate processes from an accredited third-party certification body"
+      }
+    ],
+    "answer": "C",
+    "explanation": "A quality management system is a formalized, documented framework of processes, procedures, and responsibilities for ensuring an AI system's quality and regulatory compliance throughout its lifecycle, and the EU AI Act requires providers of high-risk systems to maintain one. Option A confuses the systemic obligation with a single performance threshold, B reduces it to manual output review, and D mistakes it for third-party certification, which is not what the obligation itself consists of."
+  },
+  {
+    "id": "q-679",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An ed-tech firm collected webcam footage from students solely to verify exam integrity. Its ethics board later blocks a proposal, citing an impermissible secondary use. Which proposal did the board most likely block?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Using the exam footage to train a new product that scores student engagement during ordinary lectures"
+      },
+      {
+        "letter": "B",
+        "text": "Engaging a vetted subprocessor to store the footage while proctoring continues unchanged"
+      },
+      {
+        "letter": "C",
+        "text": "Retaining the footage for two years after each exam in case of grade disputes"
+      },
+      {
+        "letter": "D",
+        "text": "Capturing higher-resolution video than proctoring strictly requires"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Secondary use is the use of data, an AI system, or its outputs for purposes beyond the original intended use case, creating unanticipated risks that require governance oversight. Option B is a processing arrangement for the same purpose, C is a retention question, and D is a data-minimization problem — all governance issues, but none involves repurposing beyond the original use."
+  },
+  {
+    "id": "q-680",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "To improve accessibility, a public benefits portal adds a speech synthesis feature, as the capability is defined in ISO/IEC 22989. What can users now do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Dictate their application answers instead of typing them into the forms"
+      },
+      {
+        "letter": "B",
+        "text": "Hear the portal read page content aloud in a computer-generated voice"
+      },
+      {
+        "letter": "C",
+        "text": "Prove their identity by having the system recognize the sound of their voice"
+      },
+      {
+        "letter": "D",
+        "text": "Ask free-form questions and have the system work out what they mean"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Speech synthesis is the generation of artificial speech — the system produces audible spoken output, as in text-to-speech features. Option A describes speech recognition (speech-to-text), C describes speaker verification or identification, and D describes natural language understanding — neighboring speech and language capabilities that do not generate audio."
+  },
+  {
+    "id": "q-681",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A generative AI provider already publishes a model card for its flagship model and now releases a system card as well. What information does the new document add?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Benchmark scores and error analyses for the underlying model on standard evaluation datasets"
+      },
+      {
+        "letter": "B",
+        "text": "A description of the composition, collection methods, and limitations of the training corpus"
+      },
+      {
+        "letter": "C",
+        "text": "An inventory of the compute infrastructure and hardware on which the service runs"
+      },
+      {
+        "letter": "D",
+        "text": "Documentation of the deployed product as a whole — its architecture, intended uses, limitations, safeguards, and ethical considerations"
+      }
+    ],
+    "answer": "D",
+    "explanation": "A system card is a transparency document covering an AI system end to end — architecture, training data at a high level, intended use, limitations, and ethical considerations — with a broader scope than a model card, which documents a single model. Option A is the model card's territory, B describes a datasheet for a dataset, and C is an infrastructure inventory rather than a transparency artifact."
+  },
+  {
+    "id": "q-682",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "A manufacturer's visual inspection model for circuit boards is diagnosed with underfitting during validation. Which pattern of results led to that diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Near-perfect accuracy on the images it was trained on but frequent errors on boards from the live line"
+      },
+      {
+        "letter": "B",
+        "text": "Accuracy that was strong at launch but has declined as board designs changed over time"
+      },
+      {
+        "letter": "C",
+        "text": "Poor accuracy on the training images and on new production images alike"
+      },
+      {
+        "letter": "D",
+        "text": "Reliable detection on one product line but markedly worse results on another"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Underfitting occurs when a model is too simple to capture the underlying patterns in its data, producing poor performance on both training data and new data. Option A describes overfitting, B describes model or data drift after deployment, and D describes uneven performance across subpopulations, which points to a representativeness or bias issue rather than model capacity."
+  },
+  {
+    "id": "q-683",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "An auditor documenting a hospital's clinical triage system under ISO/IEC 22989 terminology must list each AI component separately. Which item on the auditor's worksheet correctly belongs on that list?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The natural-language module that extracts symptoms from clinicians' free-text notes"
+      },
+      {
+        "letter": "B",
+        "text": "The hospital's data governance committee that oversees the system"
+      },
+      {
+        "letter": "C",
+        "text": "The service-level agreement with the cloud provider hosting the system"
+      },
+      {
+        "letter": "D",
+        "text": "The clinical validation study performed before the system went live"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Under ISO/IEC 22989, an AI component is a functional element that constitutes an AI system — such as a model or processing module that performs part of the system's function. A governance committee is an organizational stakeholder, an SLA is a contractual artifact, and a validation study is an assurance activity; none of these is a functional element of the system itself."
+  },
+  {
+    "id": "q-684",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A logistics firm's governance register classifies the systems integrator working on its route-optimization rollout as an AI partner. Which characteristic of the integrator justifies that classification?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It relies on the deployed system's outputs to make its own dispatch decisions"
+      },
+      {
+        "letter": "B",
+        "text": "It is affected by the system's routing decisions without ever interacting with it"
+      },
+      {
+        "letter": "C",
+        "text": "It works jointly with the firm on building and rolling out the system"
+      },
+      {
+        "letter": "D",
+        "text": "It supplied the historical shipment data on which the model was trained"
+      }
+    ],
+    "answer": "C",
+    "explanation": "An AI partner is an entity that collaborates in the development or deployment of an AI system — a systems integrator helping configure and roll out the model fits squarely. An entity that consumes outputs is a user, one affected without interacting is an AI subject, and one that merely supplies training data is a data provider rather than a collaborator in development or deployment."
+  },
+  {
+    "id": "q-685",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A European insurer's data protection officer halts the launch of an AI underwriting tool, citing an unfulfilled obligation under Article 35 GDPR. What must the insurer complete before proceeding?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Collection of explicit consent from every applicant whose data will be processed"
+      },
+      {
+        "letter": "B",
+        "text": "A structured assessment of the processing's risks to individuals and the measures planned to address them"
+      },
+      {
+        "letter": "C",
+        "text": "Designation of a representative established within the European Union"
+      },
+      {
+        "letter": "D",
+        "text": "Notification to the supervisory authority within 72 hours of any personal data incident"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Article 35 GDPR requires a Data Protection Impact Assessment before processing that is likely to result in a high risk to individuals — a threshold AI underwriting typically meets. Explicit consent relates to lawful bases under Articles 6 and 9, appointing an EU representative is Article 27, and 72-hour breach notification is Article 33."
+  },
+  {
+    "id": "q-686",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "During pre-deployment evaluation, a testing team flags a warehouse-robotics vision model for brittleness. Which observation most directly supports that finding?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Accuracy collapses when packages appear under lighting conditions slightly different from the training footage"
+      },
+      {
+        "letter": "B",
+        "text": "Response times exceed acceptable limits when many robots query the model at once"
+      },
+      {
+        "letter": "C",
+        "text": "The model returns slightly different predictions on repeated runs over the same image"
+      },
+      {
+        "letter": "D",
+        "text": "Performance erodes gradually over months as warehouse inventory patterns change"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Brittleness is a model's tendency to fail catastrophically on inputs only slightly outside its training distribution, indicating poor robustness and generalization — a sudden accuracy collapse under marginally different lighting is the classic sign. Slow response under load is a performance or scalability issue, run-to-run variation is nondeterminism, and gradual erosion as real-world patterns shift is model drift."
+  },
+  {
+    "id": "q-687",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A manufacturer beginning its ISO/IEC 42001 implementation is asked by the certification auditor for evidence addressing the context of the organization. Which artifact best responds to that request?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The AI policy signed by top management demonstrating leadership commitment"
+      },
+      {
+        "letter": "B",
+        "text": "The register of identified AI risks and their selected treatment options"
+      },
+      {
+        "letter": "C",
+        "text": "Internal audit results and minutes from the latest management review"
+      },
+      {
+        "letter": "D",
+        "text": "An analysis of internal and external issues and interested-party expectations relevant to the AI management system"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Context of the organization is ISO/IEC 42001 Clause 4: understanding the internal and external factors, stakeholder needs, and legal requirements that shape the scope of the AI management system. A signed policy evidences leadership (Clause 5), a risk register evidences planning (Clause 6), and audit results with management review minutes evidence performance evaluation (Clause 9)."
+  },
+  {
+    "id": "q-688",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "A retail company outsources data annotation for the image set that will train its shelf-monitoring model. What will the contractor's staff actually do with the images?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Attach descriptive tags to each image while leaving the underlying files unchanged"
+      },
+      {
+        "letter": "B",
+        "text": "Remove blurry and duplicate images so only usable examples remain"
+      },
+      {
+        "letter": "C",
+        "text": "Edit the images to blur any shoppers' faces before training begins"
+      },
+      {
+        "letter": "D",
+        "text": "Generate additional synthetic images to enlarge the training set"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Data annotation adds descriptive information to data without altering the data itself — here, tagging images so the model can learn from them. Removing bad examples is data cleansing, blurring faces alters the data and is a form of masking or de-identification, and generating synthetic images is data augmentation."
+  },
+  {
+    "id": "q-689",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A former job applicant submits a data subject access request to a company that screened her with an AI hiring tool. Which response by the company satisfies the request?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Erasing her records from the applicant-tracking system"
+      },
+      {
+        "letter": "B",
+        "text": "Providing her a copy of her personal data along with details of how it was processed"
+      },
+      {
+        "letter": "C",
+        "text": "Suspending any further processing of her file while she disputes the outcome"
+      },
+      {
+        "letter": "D",
+        "text": "Correcting the score the screening tool inaccurately assigned to her"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A data subject access request entitles the individual to obtain her personal data and information about how it is processed — which can be difficult when AI models have memorized training data. Erasure, restriction of processing, and rectification are distinct data subject rights that respond to different requests."
+  },
+  {
+    "id": "q-690",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "In August 2024, a compliance officer tells leadership that although the EU AI Act's entry into force has occurred, the company faces no enforceable requirements yet. Why is the officer correct?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "As with EU directives, the Act first requires transposition into each member state's national law"
+      },
+      {
+        "letter": "B",
+        "text": "The Act cannot bind anyone until the Commission publishes the supporting harmonized standards"
+      },
+      {
+        "letter": "C",
+        "text": "That date merely started the phased compliance timeline, with obligations becoming applicable in later staggered stages"
+      },
+      {
+        "letter": "D",
+        "text": "The Act exempts a company until it first places a high-risk system on the EU market"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The EU AI Act entered into force on August 1, 2024, which started the clock on a staggered applicability schedule but imposed no immediate obligations — prohibitions, GPAI rules, and high-risk requirements apply at later dates. The Act is a regulation, so it needs no national transposition; harmonized standards support compliance but do not gate the Act's binding effect; and applicability dates are calendar-based, not triggered by a company's first product placement."
+  },
+  {
+    "id": "q-691",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "While training a deep neural network for electricity demand forecasting, an engineer reports an exploding gradient problem. What is the engineer observing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The training job's memory consumption grows until it crashes the GPU hardware"
+      },
+      {
+        "letter": "B",
+        "text": "Error signals compound during backpropagation, producing weight updates so large that training destabilizes"
+      },
+      {
+        "letter": "C",
+        "text": "Updates to early layers shrink toward zero, so learning in those layers stalls"
+      },
+      {
+        "letter": "D",
+        "text": "The model memorizes its training examples and performs poorly on new data"
+      }
+    ],
+    "answer": "B",
+    "explanation": "An exploding gradient occurs when large error gradients accumulate during backpropagation, causing very large weight updates that make the model unstable. Runaway memory use is a resource problem, updates shrinking toward zero is the vanishing gradient problem, and memorizing training data is overfitting."
+  },
+  {
+    "id": "q-692",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Before training a dermatology triage model, a hospital's data governance board conducts a fit-for-purpose review of the proposed dataset. Which question is the board primarily trying to answer?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Whether every record in the dataset was collected under a valid lawful basis"
+      },
+      {
+        "letter": "B",
+        "text": "Whether each record can be traced back to its original source system"
+      },
+      {
+        "letter": "C",
+        "text": "Whether the dataset is stored in formats compatible with the hospital's retention tooling"
+      },
+      {
+        "letter": "D",
+        "text": "Whether the data's quality, quantity, and representativeness are adequate for this specific use case"
+      }
+    ],
+    "answer": "D",
+    "explanation": "A fit-for-purpose assessment asks whether data is appropriate and adequate for the specific AI use case, weighing quality, quantity, representativeness, and relevance to the intended task. Lawful basis is a compliance question, traceability to source is data provenance or lineage, and storage formats concern interoperability and records management."
+  },
+  {
+    "id": "q-693",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A bank configures its AI loan-adjudication workflow to operate with a human in the loop. How does the workflow function?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A credit officer reviews each model recommendation and can override it before any decision is issued"
+      },
+      {
+        "letter": "B",
+        "text": "The system decides autonomously while staff periodically audit aggregate outcomes for anomalies"
+      },
+      {
+        "letter": "C",
+        "text": "Customer feedback ratings are folded into the model's next retraining cycle"
+      },
+      {
+        "letter": "D",
+        "text": "An ethics committee approved the system's design before it was deployed"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Human in the loop means a human reviews, validates, or overrides individual AI decisions in high-stakes scenarios, preserving accountability for each consequential outcome. Periodic auditing of an autonomous system is human-on-the-loop oversight, feedback-driven retraining is a learning mechanism rather than decision review, and a pre-deployment ethics approval is a one-time governance gate."
+  },
+  {
+    "id": "q-694",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A fintech team replaces its basic recurrent network with a long short-term memory architecture for transaction-fraud detection. What improvement is the team most likely seeking?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Processing entire transaction sequences in parallel through attention mechanisms"
+      },
+      {
+        "letter": "B",
+        "text": "A smaller footprint so the model can run on point-of-sale devices"
+      },
+      {
+        "letter": "C",
+        "text": "Capturing dependencies across both distant and recent events in a transaction sequence"
+      },
+      {
+        "letter": "D",
+        "text": "The ability to learn fraud patterns without any labeled fraud examples"
+      }
+    ],
+    "answer": "C",
+    "explanation": "A long short-term memory network is a recurrent architecture that performs well on sequential data with both long- and short-term dependencies, overcoming the plain RNN's difficulty retaining distant context. Parallel attention-based processing describes Transformers, a small on-device footprint is an efficiency concern the name does not imply, and learning without labels is unsupervised learning."
+  },
+  {
+    "id": "q-695",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "A city deploys a traffic-management AI that behaved benignly in every test, yet a post-incident governance review attributes the harms that emerged in production to misalignment. What did the review most likely conclude?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The system pursued a poorly specified objective, producing unintended harmful behavior once deployed"
+      },
+      {
+        "letter": "B",
+        "text": "Live traffic data had shifted away from the distribution the model was trained on"
+      },
+      {
+        "letter": "C",
+        "text": "Integration faults between the model and the city's signal infrastructure corrupted its outputs"
+      },
+      {
+        "letter": "D",
+        "text": "The project had drifted from the priorities set out in the city's adopted AI strategy"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Misalignment is the risk that an AI system whose behavior appears benign in testing causes unintended harm in deployment, typically because its objectives were poorly specified. Distribution shift in live data is drift, faulty interconnection is an engineering integration defect, and deviation from a strategy document is organizational misalignment rather than the AI risk the term denotes."
+  },
+  {
+    "id": "q-696",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An insurer's claims platform routes every incoming customer email through a natural language understanding module before a human ever sees it. What is this module's job?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Drafting fluent reply messages for adjusters to send back to customers"
+      },
+      {
+        "letter": "B",
+        "text": "Converting recorded customer voicemails into written text"
+      },
+      {
+        "letter": "C",
+        "text": "Translating messages written in foreign languages into English"
+      },
+      {
+        "letter": "D",
+        "text": "Extracting each message's meaning into a structured representation of intent and key details"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Natural language understanding extracts information from text or speech in natural language and produces a description or representation of it — here, structured intents and entities from free-text emails. Producing fluent replies is natural language generation, voice-to-text conversion is speech recognition, and cross-language conversion is machine translation."
+  },
+  {
+    "id": "q-697",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Completing a NIST AI RMF profile, a public benefits agency must rate its eligibility-screening system against the privacy-enhanced trustworthiness characteristic. Which evidence is most relevant to that rating?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Penetration-test results and the role-based access controls protecting the system"
+      },
+      {
+        "letter": "B",
+        "text": "Proof that only necessary data fields are collected, records are de-identified, and consent choices are honored"
+      },
+      {
+        "letter": "C",
+        "text": "Model documentation explaining to reviewers how the system reaches its outputs"
+      },
+      {
+        "letter": "D",
+        "text": "Statistical parity metrics comparing outcomes across applicant demographic groups"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The privacy-enhanced characteristic in the NIST AI RMF concerns safeguards for human autonomy, identity, and dignity, evidenced by data minimization, anonymization or de-identification, and consent mechanisms. Penetration tests and access controls speak to the secure and resilient characteristic, output documentation to explainability, and demographic parity metrics to fairness and bias management."
+  },
+  {
+    "id": "q-698",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A vendor markets its university help-desk bot as performing question answering as defined in ISO/IEC 22989. Which behavior distinguishes the bot from a conventional search tool?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It returns a ranked list of documents likely to contain relevant material"
+      },
+      {
+        "letter": "B",
+        "text": "It determines the single most appropriate response to what a student asked in everyday language"
+      },
+      {
+        "letter": "C",
+        "text": "It maintains conversational context and manages turn-taking across a long dialogue"
+      },
+      {
+        "letter": "D",
+        "text": "It condenses lengthy policy documents into short overviews for students"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Question answering is the task of determining the most appropriate answer to a question posed in natural language, rather than pointing the user at material to read. A ranked document list is information retrieval, managing conversational state is dialogue management, and condensing documents is text summarization."
+  },
+  {
+    "id": "q-699",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "After a regional cloud outage and an attempted data-poisoning attack, a hospital reviews whether its sepsis-prediction system proved secure and resilient in the NIST AI RMF sense. Which outcome would support a positive finding?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Clinicians retained the ability to override every prediction throughout both events"
+      },
+      {
+        "letter": "B",
+        "text": "The system's outputs remained interpretable to clinical reviewers during the disruption"
+      },
+      {
+        "letter": "C",
+        "text": "The system protected its data and operations during both events and returned to normal function afterward"
+      },
+      {
+        "letter": "D",
+        "text": "The system collected no more patient information than necessary during the incident window"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The secure and resilient characteristic in the NIST AI RMF means the system can withstand adverse events and recover to normal function while maintaining confidentiality, integrity, and availability. Human override capability relates to accountability and oversight, interpretability of outputs to explainability, and limiting data collection to the privacy-enhanced characteristic."
+  },
+  {
+    "id": "q-700",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A media-streaming company schedules stress testing of its recommendation service for the week before public launch. Which activity belongs in that test plan?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Collecting satisfaction scores from beta users about recommendation quality"
+      },
+      {
+        "letter": "B",
+        "text": "Auditing the licenses attached to the datasets used in training"
+      },
+      {
+        "letter": "C",
+        "text": "Tracking gradual shifts in output quality over the first months after release"
+      },
+      {
+        "letter": "D",
+        "text": "Measuring response times and failover behavior while the service is pushed past expected peak load"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Stress testing an AI system before release covers latency and throughput benchmarks, memory and compute usage under load, failover behavior during outages, and evaluation against adversarial or malicious prompts. Gathering beta-user satisfaction is acceptance testing, license auditing is a data compliance review, and tracking gradual post-release quality shifts is production drift monitoring."
+  },
+  {
+    "id": "q-701",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "In an AI-literacy course, an instructor places theory of mind AI between limited-memory systems and self-aware AI on a capability spectrum. What defines this middle category?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Systems that react to current inputs without retaining any record of past experience"
+      },
+      {
+        "letter": "B",
+        "text": "Systems that use stored past observations to inform their current decisions"
+      },
+      {
+        "letter": "C",
+        "text": "Hypothetical machines able to grasp and simulate human emotions, beliefs, and intentions"
+      },
+      {
+        "letter": "D",
+        "text": "Hypothetical machines possessing consciousness of their own internal states"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Theory of mind AI is a theoretical advanced category of AI that could understand and simulate human emotions, beliefs, intentions, and thoughts — fiction's HAL-9000 is the standard illustration. Purely input-driven systems are reactive machines, systems drawing on stored observations are limited-memory AI, and machines conscious of their own states describe self-aware AI."
+  },
+  {
+    "id": "q-702",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A grocery chain applies unsupervised machine learning to its loyalty-card transaction history to discover shopper segments. What characterizes the training data used for this project?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Transactions that analysts have tagged with the segment each shopper belongs to"
+      },
+      {
+        "letter": "B",
+        "text": "A feedback signal rewarding the system after each successful grouping attempt"
+      },
+      {
+        "letter": "C",
+        "text": "A small hand-tagged seed set blended with a large volume of untagged records"
+      },
+      {
+        "letter": "D",
+        "text": "Raw transaction records with no target labels attached to any of them"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Unsupervised machine learning uses only unlabeled data during training, letting the model discover structure such as customer segments on its own. Analyst-tagged targets describe supervised learning, reward signals describe reinforcement learning, and mixing a labeled seed set with unlabeled data describes semi-supervised learning."
+  },
+  {
+    "id": "q-703",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A freight brokerage licenses a route-optimization model from a software vendor and runs it in daily operations. When mapping stakeholders under ISO/IEC 22989, which party should the governance team record as the AI customer?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The software vendor that developed the model and licenses it out"
+      },
+      {
+        "letter": "B",
+        "text": "The shippers who receive quotes generated with the model's help"
+      },
+      {
+        "letter": "C",
+        "text": "The freight brokerage that acquired the model and operates it"
+      },
+      {
+        "letter": "D",
+        "text": "The transport regulator that oversees the brokerage's operations"
+      }
+    ],
+    "answer": "C",
+    "explanation": "In ISO/IEC 22989's stakeholder taxonomy, the AI customer is the entity that acquires or uses the AI system — here, the brokerage. Option A is the AI provider, option B describes end consumers of the brokerage's service (a natural lay reading of 'customer'), and option D is a relevant authority, a separate stakeholder role."
+  },
+  {
+    "id": "q-704",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An HR-technology firm builds a resume-screening system and sells it to employers across the EU. Under the EU AI Act, the AI provider must complete conformity assessment and affix CE marking to this high-risk system. Who holds these obligations?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The firm that developed the system and placed it on the market"
+      },
+      {
+        "letter": "B",
+        "text": "Each employer that uses the system to screen its applicants"
+      },
+      {
+        "letter": "C",
+        "text": "The cloud platform that hosts the system's inference workloads"
+      },
+      {
+        "letter": "D",
+        "text": "The reseller that distributes the system in national markets"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The AI provider is the entity that develops an AI system (or has one developed) and makes it available on the market, and the EU AI Act places the heaviest high-risk obligations — including conformity assessment and CE marking — on it. Option B describes deployers, who have their own lighter duties; option C is a lay misreading of 'provider' as a cloud service provider; option D is a distributor, a distinct operator role under the Act."
+  },
+  {
+    "id": "q-705",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A general-purpose AI model developer becomes a signatory to the code of practice established under Article 56 of the EU AI Act. What legal effect does adherence have?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It creates a safe harbor precluding enforcement action by the AI Office"
+      },
+      {
+        "letter": "B",
+        "text": "It offers a recognized means of demonstrating compliance, without conclusively establishing it"
+      },
+      {
+        "letter": "C",
+        "text": "It exempts the developer from the Act's transparency and documentation duties"
+      },
+      {
+        "letter": "D",
+        "text": "It substitutes for the required conformity assessment of the model"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Article 56 of the EU AI Act is the legal basis for the GPAI Code of Practice facilitated by the European AI Office; adherence helps providers demonstrate compliance with their GPAI obligations but is neither conclusive evidence of compliance nor a safe harbor. Options A and C overstate its effect — signatories remain fully subject to enforcement and to the Act's duties — and option D confuses the code with conformity assessment procedures, which it does not replace."
+  },
+  {
+    "id": "q-706",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "An insurer maintains separate governance review tracks for classic AI and for generative systems. Which of its tools belongs on the classic AI track?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A fine-tuned large language model that drafts claim-denial letters"
+      },
+      {
+        "letter": "B",
+        "text": "A diffusion model that produces synthetic accident images for training"
+      },
+      {
+        "letter": "C",
+        "text": "A foundation-model assistant that summarizes adjusters' case notes"
+      },
+      {
+        "letter": "D",
+        "text": "A logistic-regression engine that scores incoming claims for fraud"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Classic AI refers to traditional approaches — rule-based systems, statistical methods, and simpler machine-learning algorithms such as regression — as contrasted with modern generative AI and LLMs. Options A, B, and C are all generative or foundation-model systems, even though tools like chatbots may now feel 'classic' in the everyday sense of being commonplace."
+  },
+  {
+    "id": "q-707",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A hospital's AI management system, aligned to ISO/IEC 42001, requires continuous validation for its deployed sepsis-prediction model. Which practice fulfills the requirement?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ongoing checks that the live model still meets its specified requirements as production conditions change"
+      },
+      {
+        "letter": "B",
+        "text": "Repetition of the full acceptance test suite before each new model version is released"
+      },
+      {
+        "letter": "C",
+        "text": "A standing pipeline that automatically retrains the model on the latest patient data each month"
+      },
+      {
+        "letter": "D",
+        "text": "An annual third-party audit of the model's technical documentation and event logs"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Continuous validation is the ongoing verification that a system continues to meet its requirements in production, not just at release points. Option B only re-verifies at discrete release milestones, option C is model maintenance (retraining), which changes the system rather than verifying it, and option D is a periodic documentation audit rather than verification of live performance against requirements."
+  },
+  {
+    "id": "q-708",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A supervisory authority's guidance lists data dependency among the characteristics that make AI systems harder to govern than conventional software. What risk does this characteristic point to?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Operations halt whenever the system loses its connection to live data feeds"
+      },
+      {
+        "letter": "B",
+        "text": "Staff come to rely on the system's outputs and stop applying their own judgment"
+      },
+      {
+        "letter": "C",
+        "text": "The system's outcomes inherit the quality and skew of its data, yielding inaccurate or unfair results"
+      },
+      {
+        "letter": "D",
+        "text": "The organization becomes locked into a single data vendor's proprietary formats"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Data dependency refers to AI systems' heavy reliance on the quality, volume, and diversity of the data they learn from, so poor or biased data produces inaccurate or unfair outcomes — a core reason bias governance is needed. Option A is an availability concern, option B describes automation bias among users, and option D is vendor lock-in; each is a plausible lay reading of 'depending on data' but not what the characteristic means."
+  },
+  {
+    "id": "q-709",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "During a model-risk audit at a regional bank, the examiner asks to see the deactivation policy for a legacy credit-scoring system. Which document satisfies the request?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The procedure for revoking user accounts and access rights when employees depart"
+      },
+      {
+        "letter": "B",
+        "text": "The documented triggers and controlled steps for safely taking the system out of service"
+      },
+      {
+        "letter": "C",
+        "text": "The data retention schedule governing deletion of the system's historical records"
+      },
+      {
+        "letter": "D",
+        "text": "The incident runbook for failing over to a backup model during service outages"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A deactivation policy documents how an AI system is safely retired — the regulatory, performance, or safety triggers for shutdown and the controlled steps to take it offline. Option A is access management ('deactivating' accounts, a lay misreading), option C is records management, and option D is business continuity, which keeps the system running rather than winding it down."
+  },
+  {
+    "id": "q-710",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A medical-device startup tells investors its AI development process follows ethics by design. Which practice best substantiates the claim?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An independent ethics board reviews and approves each product shortly before launch"
+      },
+      {
+        "letter": "B",
+        "text": "A corporate code of AI ethics is published and signed annually by all employees"
+      },
+      {
+        "letter": "C",
+        "text": "A retrospective audit checks released products against ethical principles each year"
+      },
+      {
+        "letter": "D",
+        "text": "Ethical considerations are weighed at every stage, from problem framing through deployment and monitoring"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Ethics by design means integrating ethical considerations throughout the AI lifecycle, beginning at problem definition and continuing through deployment and monitoring — not bolting them on at a single point. Option A is an end-stage gate, option B is a statement of principles without process integration, and option C is after-the-fact review; all are legitimate practices but none embeds ethics into the design process itself."
+  },
+  {
+    "id": "q-711",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Before any model is built, a retail analytics team spends two weeks on exploratory data analysis of the loyalty-card dataset. What is the team doing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Examining distributions, patterns, and anomalies to understand the data's salient features and quality"
+      },
+      {
+        "letter": "B",
+        "text": "Engineering new predictive variables from the raw transaction fields"
+      },
+      {
+        "letter": "C",
+        "text": "Comparing candidate algorithms' accuracy on a held-out validation sample"
+      },
+      {
+        "letter": "D",
+        "text": "Generating synthetic records to enlarge underrepresented customer segments"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Exploratory data analysis is the initial examination of data to identify its salient features and assess its quality before modeling begins. Option B is feature engineering, option C is model selection and evaluation, and option D is data augmentation — all later or different lifecycle activities that a lay reading of 'exploring the data' could plausibly suggest."
+  },
+  {
+    "id": "q-712",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A U.S. media company already using the NIST AI RMF asks its risk team to also apply the Generative AI Profile as it rolls out synthetic-content tools. What does the profile add?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A certifiable standard the company can be formally audited against for the new tools"
+      },
+      {
+        "letter": "B",
+        "text": "Binding federal requirements for companies deploying synthetic-content systems"
+      },
+      {
+        "letter": "C",
+        "text": "A cross-sectoral set of risks unique to this technology class, with actions organized by the framework's functions"
+      },
+      {
+        "letter": "D",
+        "text": "A benchmark suite for scoring the factual accuracy of the tools' outputs"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The Generative AI Profile (NIST AI 600-1, July 2024) is a cross-sectoral companion to the AI RMF developed under Executive Order 14110; it identifies twelve GAI-specific risks and suggests actions organized by the Govern, Map, Measure, and Manage functions. It is voluntary guidance, not a certifiable standard (A) or binding regulation (B), and it offers risk-management actions rather than technical benchmarks for output accuracy (D)."
+  },
+  {
+    "id": "q-713",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An air-navigation service provider designs its new conflict-detection tool around human-machine teaming. Which operating arrangement reflects that design choice?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Controllers audit a random sample of the tool's alerts at the end of each shift"
+      },
+      {
+        "letter": "B",
+        "text": "Controllers and the tool work traffic together, integrating human judgment with machine analysis in one workflow"
+      },
+      {
+        "letter": "C",
+        "text": "The tool manages routine traffic autonomously while a controller stands by to take over on failure"
+      },
+      {
+        "letter": "D",
+        "text": "Controllers and the tool alternate responsibility for the airspace on a fixed schedule"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Human-machine teaming, per ISO/IEC 22989, is the integration of human interaction and machine intelligence — humans and the AI system working jointly within the same task. Option A is after-the-fact sampling oversight, option C is a human-on-the-loop fallback arrangement, and option D divides the work rather than integrating it; none combines human and machine contributions in a shared workflow."
+  },
+  {
+    "id": "q-714",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A humanitarian logistics NGO procures a machine translation system to support field operations across several countries. Which capability is it buying?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Transcription of spoken radio traffic into written text"
+      },
+      {
+        "letter": "B",
+        "text": "Extraction of printed text from photographed shipping documents"
+      },
+      {
+        "letter": "C",
+        "text": "Conversion of legacy software code into a modern programming language"
+      },
+      {
+        "letter": "D",
+        "text": "Automatic rendering of text or speech from one human language into another"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Machine translation is the task of automatically translating text or speech from one natural language into another using a computer system. Option A is speech recognition (speech-to-text), option B is optical character recognition, and option C is code migration — 'translating' code, a plausible lay reading, but not the natural-language task the term denotes."
+  },
+  {
+    "id": "q-715",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "After a suspected model-poisoning attempt, a fintech's security team is directed to map the observed activity to MITRE ATLAS. What kind of resource will they be working with?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A knowledge base of adversary tactics and techniques aimed specifically at AI systems"
+      },
+      {
+        "letter": "B",
+        "text": "A public registry of software vulnerabilities indexed by CVE identifiers"
+      },
+      {
+        "letter": "C",
+        "text": "A framework cataloging attacker behavior across enterprise IT networks generally"
+      },
+      {
+        "letter": "D",
+        "text": "A crowdsourced repository of reported real-world AI incidents and harms"
+      }
+    ],
+    "answer": "A",
+    "explanation": "MITRE ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems) is a knowledge base of adversary tactics and techniques specific to attacks on AI systems, modeled after MITRE ATT&CK. Option B describes CVE/NVD vulnerability databases, option C describes MITRE ATT&CK itself, which covers enterprise IT rather than AI-specific threats, and option D describes an AI incident database."
+  },
+  {
+    "id": "q-716",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An education nonprofit adopting the AI RMF wants concrete suggestions rather than high-level principles, so its risk lead consults the NIST AI RMF Playbook. What should the lead expect to find?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A scored self-assessment that assigns the organization a formal maturity rating"
+      },
+      {
+        "letter": "B",
+        "text": "A compliance checklist that U.S. federal contractors are required to complete"
+      },
+      {
+        "letter": "C",
+        "text": "Voluntary suggested actions, references, and guidance for putting each framework function into practice"
+      },
+      {
+        "letter": "D",
+        "text": "The certification criteria that accredited auditors use to assess conformance"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The NIST AI RMF Playbook is the companion guide to the AI RMF, offering practical implementation guidance, suggested actions, use-case examples, and references for operationalizing the Govern, Map, Measure, and Manage functions. It is voluntary and non-prescriptive: it is not a scored maturity model (A), not a mandatory contractor checklist (B), and the AI RMF has no certification scheme for auditors to apply (D)."
+  },
+  {
+    "id": "q-717",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "During procurement, a vendor discloses that its diagnostic model produces probabilistic output. What should the hospital's clinical team expect from the system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It will decline to answer whenever it is uncertain about a case"
+      },
+      {
+        "letter": "B",
+        "text": "It will attach likelihoods to its findings rather than issue definitive yes-or-no determinations"
+      },
+      {
+        "letter": "C",
+        "text": "It will select patient cases for clinician review on a randomized basis"
+      },
+      {
+        "letter": "D",
+        "text": "It will change its answers over time because it retrains on each new case"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Probabilistic output means the system's results are expressed as probabilities rather than certainties, in contrast to deterministic systems whose outputs are fully predictable. Option A describes an abstention or rejection mechanism, option C misreads 'probabilistic' as random sampling, and option D describes continuous learning — none of which follows from outputs being probability-based."
+  },
+  {
+    "id": "q-718",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "In a briefing on types of AI, a consultant classifies a factory's optical defect-detection system among reactive machines. What did the consultant conclude about the system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It responds to alerts within milliseconds, fast enough for real-time production lines"
+      },
+      {
+        "letter": "B",
+        "text": "It builds on stored records of past defects to refine its future judgments"
+      },
+      {
+        "letter": "C",
+        "text": "It anticipates operators' intentions by modeling their goals and attention"
+      },
+      {
+        "letter": "D",
+        "text": "It maps each current input to a response using fixed rules, with no memory or learning"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Reactive machines are AI systems that respond to the current stimulus using pre-programmed rules, with no memory of past inputs and no learning capability — IBM's Deep Blue is the classic example. Option A is a lay misreading of 'reactive' as fast reaction time, option B describes limited-memory AI, and option C describes theory-of-mind AI, the next levels up in the standard typology."
+  },
+  {
+    "id": "q-719",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A board member asks whether the company's conversational assistant, which readily describes its own limitations, qualifies as self-aware AI. What is the accurate answer?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "No — that category is purely theoretical, requiring machine consciousness, and no existing system meets it"
+      },
+      {
+        "letter": "B",
+        "text": "Yes, if the assistant can accurately describe its own capabilities and confidence levels"
+      },
+      {
+        "letter": "C",
+        "text": "Yes, provided the assistant passes a rigorous Turing-style evaluation"
+      },
+      {
+        "letter": "D",
+        "text": "Only if the assistant monitors its own performance and flags its own errors"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Self-aware AI is the highest theoretical level in the types-of-AI hierarchy: a system possessing consciousness that recognizes its own existence, which does not currently exist. Options B and D mistake self-description and self-monitoring — behaviors today's systems can exhibit — for consciousness, and option C confuses the category with the Turing test, which measures conversational indistinguishability, not awareness."
+  },
+  {
+    "id": "q-720",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "An insurer's third-party risk lead is criticized for assessing only the contracted AI vendor and ignoring sub-tier dependencies. What should the assessment additionally cover?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The vendor's cheaper service plans, which carry weaker uptime and support commitments"
+      },
+      {
+        "letter": "B",
+        "text": "The insurer's own downstream applications that consume the vendor's model outputs"
+      },
+      {
+        "letter": "C",
+        "text": "The layers beneath the vendor: subcontracted labeling firms, scraped training data, and outdated libraries"
+      },
+      {
+        "letter": "D",
+        "text": "The vendor's financial solvency, insurance coverage, and business-continuity posture"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Sub-tier dependencies are the hidden supply-chain risks below a contracted AI vendor — subcontracted data-labeling teams, models trained on scraped or copyrighted data, and aging code libraries — and a core TPRM challenge is deciding how many levels down to probe. Option A misreads 'tier' as pricing tiers, option B looks downstream inside the insurer rather than upstream in the supply chain, and option D is standard first-tier vendor due diligence."
+  },
+  {
+    "id": "q-721",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A telecom operator concludes that the vendor running its AI churn-prediction platform acts as a third-party processor of subscriber data under the GDPR. What must the operator put in place before the processing continues?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A joint-controllership arrangement allocating responsibilities between the two companies"
+      },
+      {
+        "letter": "B",
+        "text": "Fresh consent from every subscriber authorizing the vendor's involvement"
+      },
+      {
+        "letter": "C",
+        "text": "Prior authorization for the arrangement from the competent supervisory authority"
+      },
+      {
+        "letter": "D",
+        "text": "A contract binding the vendor to its instructions and specifying scope, safeguards, and responsibilities"
+      }
+    ],
+    "answer": "D",
+    "explanation": "A third-party processor handles personal data on behalf of the controller, and GDPR Article 28 requires a binding contract (data processing agreement) defining the processing's scope, safeguards, and each party's responsibilities. Option A applies only where two parties jointly determine purposes and means (Article 26), option B is unnecessary because engaging a processor does not itself require consent, and option C reflects no general GDPR authorization requirement for processor engagements."
+  },
+  {
+    "id": "q-722",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A NIST AI RMF assessment concludes that a utility's load-forecasting model fails the valid and reliable trustworthiness characteristic. Which finding supports that conclusion?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Grid operators cannot obtain an understandable rationale for the model's forecasts"
+      },
+      {
+        "letter": "B",
+        "text": "The forecasts are frequently inaccurate, and performance swings widely between runs under the same conditions"
+      },
+      {
+        "letter": "C",
+        "text": "The training data includes household smart-meter records collected without a lawful basis"
+      },
+      {
+        "letter": "D",
+        "text": "The model forecasts demand less accurately for rural districts than for urban ones"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Valid and reliable is the NIST AI RMF trustworthiness characteristic requiring accurate outputs (validity) delivered consistently under specified conditions (reliability), so frequent inaccuracy plus inconsistent run-to-run performance is a direct failure. Option A maps to the explainable-and-interpretable characteristic, option C to privacy-enhanced, and option D to fair-with-harmful-bias-managed — each a different characteristic in the framework."
+  },
+  {
+    "id": "q-723",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A streaming-media company is updating its AI data retention policy as part of a broader AI governance rollout. Which issue, commonly missed when adapting traditional retention rules, must the new policy address?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "How long system logs and access records must be kept to support security investigations"
+      },
+      {
+        "letter": "B",
+        "text": "Whether archived data sits in a jurisdiction with adequate data protection law"
+      },
+      {
+        "letter": "C",
+        "text": "That deleted training data may effectively persist in the parameters of models trained on it"
+      },
+      {
+        "letter": "D",
+        "text": "How frequently backup media are rotated and then securely destroyed"
+      }
+    ],
+    "answer": "C",
+    "explanation": "An AI data retention policy governs how long training data is kept after model development and must confront the fact that information can persist inside the trained model itself even after the raw data is deleted — a common gap when privacy policies are updated for AI. Option A is conventional log-retention practice, B is a cross-border transfer question, and D is ordinary records-management hygiene; none captures the AI-specific persistence problem."
+  },
+  {
+    "id": "q-724",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "An AI governance team wants a ready-made catalog of AI risk sources, such as system opacity and degree of automation, to seed its risk register. A consultant points them to ISO/IEC 23894. Which part of the standard serves this purpose?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Annex B, which is offered as informative guidance"
+      },
+      {
+        "letter": "B",
+        "text": "Annex A, which is offered as informative guidance"
+      },
+      {
+        "letter": "C",
+        "text": "Annex C, which is offered as informative guidance"
+      },
+      {
+        "letter": "D",
+        "text": "Clause 6, which sets out normative process requirements"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Annex B of ISO/IEC 23894 is the informative annex cataloging AI-specific origins of risk. Annex A instead lists common AI-related objectives, Annex C maps risk management processes onto the AI system life cycle, and the core clauses (including Clause 6) describe the risk management process itself rather than a catalog to draw from."
+  },
+  {
+    "id": "q-725",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A DPO reviewing a health-tech startup's model training pipeline halts the project, citing Article 9 GDPR. Which characteristic of the training data most likely triggered the objection?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It was collected from EU residents but is stored on servers in the United States"
+      },
+      {
+        "letter": "B",
+        "text": "It was scraped from public websites without informing the individuals concerned"
+      },
+      {
+        "letter": "C",
+        "text": "It will be used to make fully automated decisions about individual patients"
+      },
+      {
+        "letter": "D",
+        "text": "It includes patients' medical histories, which may not be processed unless an exception applies"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Article 9 GDPR prohibits processing special categories of personal data — including health, race, religion, and biometric data — unless one of its specific exceptions applies, which makes it a central constraint on AI training data. Option A raises Chapter V cross-border transfer rules, B concerns transparency duties under Article 14, and C implicates Article 22 on automated decision-making."
+  },
+  {
+    "id": "q-726",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A vendor brochure describes its hospital assistant platform as cognitive computing, using the term in its ISO/IEC 22989 sense. What capability is the vendor actually claiming?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The system reasons with human-level general intelligence across unrelated domains"
+      },
+      {
+        "letter": "B",
+        "text": "The system supports more natural interaction between people and machines"
+      },
+      {
+        "letter": "C",
+        "text": "The system's hardware mimics the structure of biological neurons"
+      },
+      {
+        "letter": "D",
+        "text": "The system can fully explain the internal logic behind each of its outputs"
+      }
+    ],
+    "answer": "B",
+    "explanation": "In ISO/IEC 22989, cognitive computing is a category of AI systems that enables more natural interaction between humans and machines. Option A describes artificial general intelligence, C describes neuromorphic hardware, and D describes explainability — all easy lay misreadings of a system that 'thinks,' but none is what the term denotes."
+  },
+  {
+    "id": "q-727",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "An ISO/IEC 22989-based audit of an autonomous parcel-sorting robot includes a controllability assessment. What must the auditors verify?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "That a human or an external agent can step in and intervene while the system is operating"
+      },
+      {
+        "letter": "B",
+        "text": "That the system produces the same output every time it receives the same input"
+      },
+      {
+        "letter": "C",
+        "text": "That only authorized personnel are able to access and reconfigure the system"
+      },
+      {
+        "letter": "D",
+        "text": "That the system keeps performing within specification as input conditions drift"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Controllability is the property of an AI system that enables a human or another external agent to intervene in the system's operation. Option B describes determinism or reliability, C describes access control (a natural but incorrect reading of 'control'), and D describes robustness under changing conditions."
+  },
+  {
+    "id": "q-728",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "During an audit of a manufacturing defect-detection model, the lead engineer raises a data integrity concern about the sensor feeds used for training. What is she questioning?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Whether the sensor data was gathered with a lawful basis and proper notice"
+      },
+      {
+        "letter": "B",
+        "text": "Whether individual machines could be re-identified from the collected readings"
+      },
+      {
+        "letter": "C",
+        "text": "Whether the training sample represents every product line the model will inspect"
+      },
+      {
+        "letter": "D",
+        "text": "Whether the readings have stayed accurate, consistent, and untampered over their lifecycle"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Data integrity refers to the accuracy, consistency, and trustworthiness of data throughout its lifecycle; corrupted or tampered data makes an AI system's outputs unreliable. Option A is about lawfulness of collection, B is a privacy and re-identification issue, and C is about representativeness and bias — adjacent data-quality concerns, but not integrity."
+  },
+  {
+    "id": "q-729",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A bank must explain to a regulator how its credit model, a decision tree, denied a specific application. What can the bank walk the regulator through?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The weighted connections the applicant's data passed through across successive layers"
+      },
+      {
+        "letter": "B",
+        "text": "The sequence of branching feature tests the application followed from the start to a final outcome"
+      },
+      {
+        "letter": "C",
+        "text": "The most similar past applicants whose recorded outcomes determined this prediction"
+      },
+      {
+        "letter": "D",
+        "text": "The independent per-feature likelihoods that were combined into a single final score"
+      }
+    ],
+    "answer": "B",
+    "explanation": "In a decision tree, inference is encoded as a path from the root to a leaf node, so a denial can be traced as a readable series of branching tests on the applicant's features. Option A describes a neural network, C describes a nearest-neighbor method, and D describes a naive Bayes-style probabilistic model."
+  },
+  {
+    "id": "q-730",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A social-media firm is found to have run a banned emotion-inference system on its employees, and the regulator applies the EU AI Act penalty tiers. What is the maximum administrative fine the firm faces?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Up to EUR 20 million or 4 percent of worldwide annual turnover, whichever is higher"
+      },
+      {
+        "letter": "B",
+        "text": "Up to EUR 15 million or 3 percent of worldwide annual turnover, whichever is higher"
+      },
+      {
+        "letter": "C",
+        "text": "Up to EUR 35 million or 7 percent of worldwide annual turnover, whichever is higher"
+      },
+      {
+        "letter": "D",
+        "text": "Up to EUR 7.5 million or 1 percent of worldwide annual turnover, whichever is higher"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Emotion inference in the workplace is a prohibited practice under Article 5, which sits in the top penalty tier: up to EUR 35 million or 7 percent of global annual turnover, whichever is higher. Option B is the tier for non-compliance with high-risk obligations, D is the tier for supplying incorrect or misleading information to authorities, and A is the GDPR's maximum, not the AI Act's."
+  },
+  {
+    "id": "q-731",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An airport security briefing states that the new gate cameras perform face recognition as defined in ISO/IEC 22989. What does the system do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Compares each captured image against stored facial images and returns identifying data for any match"
+      },
+      {
+        "letter": "B",
+        "text": "Locates and counts faces appearing in the video stream without linking them to individuals"
+      },
+      {
+        "letter": "C",
+        "text": "Estimates travelers' emotional state from facial expressions in order to flag agitation"
+      },
+      {
+        "letter": "D",
+        "text": "Checks that a presented face belongs to a live person rather than a photo or a mask"
+      }
+    ],
+    "answer": "A",
+    "explanation": "ISO/IEC 22989 defines face recognition as automatic pattern recognition that compares stored images of human faces with an actual face image and displays any match together with identifying data. Option B is face detection, C is emotion recognition, and D is liveness or presentation-attack detection — related biometric functions that do not identify a person."
+  },
+  {
+    "id": "q-732",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A university adopting the NIST AI RMF begins with the Govern function before touching any individual system. Which activity belongs to this phase?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Cataloging the context, purpose, and stakeholders of each AI system in use"
+      },
+      {
+        "letter": "B",
+        "text": "Selecting quantitative metrics and testing regimes to assess identified risks"
+      },
+      {
+        "letter": "C",
+        "text": "Prioritizing assessed risks and allocating resources to respond to the largest ones"
+      },
+      {
+        "letter": "D",
+        "text": "Standing up accountability structures, policies, and a risk-aware culture across the institution"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The Govern function of the NIST AI RMF establishes the organizational culture of risk management — policies, accountability structures, workforce considerations, and third-party oversight — and it cuts across the other three functions. Option A belongs to Map, B to Measure, and C to Manage."
+  },
+  {
+    "id": "q-733",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Before releasing a sepsis-prediction model, a hospital's validation team schedules interpretability testing. What will the team evaluate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Whether accuracy holds when the model is applied to new patient populations"
+      },
+      {
+        "letter": "B",
+        "text": "Whether crafted inputs can push the model into dangerous misclassifications"
+      },
+      {
+        "letter": "C",
+        "text": "Whether clinicians can understand and explain in human terms why the model reached its outputs"
+      },
+      {
+        "letter": "D",
+        "text": "Whether the model's on-screen guidance is accurately translated for non-English-speaking staff"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Interpretability testing assesses whether an AI system's decisions can be understood and explained in human terms, which is critical in high-stakes domains like healthcare. Option A is generalization testing, B is adversarial robustness testing, and D trades on the everyday sense of 'interpreting' language rather than the machine learning meaning."
+  },
+  {
+    "id": "q-734",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An insurer has finished its Map and Measure work under the NIST AI RMF and now turns to the Manage function. What does this stage involve?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Documenting each system's intended purpose, context of use, and affected stakeholders"
+      },
+      {
+        "letter": "B",
+        "text": "Prioritizing the assessed risks, acting on the most significant, and monitoring and recovering from incidents"
+      },
+      {
+        "letter": "C",
+        "text": "Defining board-level accountability, policies, and risk culture for the organization"
+      },
+      {
+        "letter": "D",
+        "text": "Applying quantitative benchmarks and test protocols to gauge each identified risk"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The Manage function allocates risk resources to the risks that were mapped and measured: prioritizing them, responding to and recovering from AI incidents, and maintaining ongoing monitoring. Option A describes the Map function, C describes Govern, and D describes Measure."
+  },
+  {
+    "id": "q-735",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A life insurer exposes its underwriting model through a public quoting API. The security team warns that a model inversion attack could create GDPR liability. What is the team worried an attacker will do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Reconstruct sensitive attributes of the people whose records trained the model by probing its outputs"
+      },
+      {
+        "letter": "B",
+        "text": "Submit subtly perturbed applications that force the model into favorable misclassifications"
+      },
+      {
+        "letter": "C",
+        "text": "Replicate a working copy of the underwriting model through systematic bulk queries"
+      },
+      {
+        "letter": "D",
+        "text": "Seed the insurer's future training data with records that implant a hidden backdoor"
+      }
+    ],
+    "answer": "A",
+    "explanation": "A model inversion attack reconstructs sensitive training data from a model's outputs or parameters, which is why a trained model can itself become a source of personal-data exposure. Option B is an evasion attack using adversarial examples, C is model extraction or theft, and D is data poisoning."
+  },
+  {
+    "id": "q-736",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A U.S. retailer's HR chief argues its new AI resume screener is effectively unregulated because the state has passed no AI statute. The general counsel disagrees, pointing to non-discrimination law. What is the counsel's strongest point?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The EU AI Act reaches U.S. employers whenever any job applicant holds EU citizenship"
+      },
+      {
+        "letter": "B",
+        "text": "The FTC has issued binding rules that classify all hiring algorithms as high-risk systems"
+      },
+      {
+        "letter": "C",
+        "text": "Comprehensive state privacy statutes require an opt-out from any profiling used in employment"
+      },
+      {
+        "letter": "D",
+        "text": "Statutes such as Title VII cover hiring outcomes whether a human or an algorithm produced them"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Non-discrimination law — Title VII, the ADA, and the ADEA in employment, along with ECOA in credit and the FHA in housing — prohibits unfair treatment based on protected characteristics, and it applies to AI-driven decisions just as it does to human ones. Option A overstates the AI Act's extraterritorial reach, B describes FTC rules that do not exist, and C misstates how state privacy laws treat employment screening."
+  },
+  {
+    "id": "q-737",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "An AI governance committee at a logistics firm reviews the probability severity matrix produced during the annual risk assessment. What does this artifact show?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A calibration check comparing the model's predicted likelihoods with observed outcomes"
+      },
+      {
+        "letter": "B",
+        "text": "Identified risks placed on a grid by how likely they are and how much harm they would cause"
+      },
+      {
+        "letter": "C",
+        "text": "Past incidents classified into response-priority levels with target resolution times for each"
+      },
+      {
+        "letter": "D",
+        "text": "A table crossing the model's predicted classes against actual classes from test data"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A probability severity matrix plots each risk's likelihood against its potential impact, typically on a grid, so the organization can quantify and prioritize risks. Option A is model calibration analysis, C is incident triage classification, and D is a confusion matrix — each a plausible reading of 'probability' or 'severity,' but not this risk assessment tool."
+  },
+  {
+    "id": "q-738",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "An AIGP study session classifies today's frontier large language models as reasoning AI within a capability taxonomy. What does that classification convey about these models?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "They deduce conclusions from an explicit knowledge base using formal logic rules"
+      },
+      {
+        "letter": "B",
+        "text": "They match human-level general intelligence across any domain they encounter"
+      },
+      {
+        "letter": "C",
+        "text": "They perform advanced pattern analysis and prediction, enough to pass standardized tests"
+      },
+      {
+        "letter": "D",
+        "text": "They possess genuine understanding and awareness of the content they produce"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Reasoning AI denotes systems with advanced pattern analysis and prediction capabilities — the category where most current LLMs sit, capable of passing standardized tests. Option A describes symbolic, logic-based AI (a natural misreading of 'reasoning'), B describes artificial general intelligence, and D attributes consciousness that no current classification claims."
+  },
+  {
+    "id": "q-739",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A retail analytics team can afford to hand-label only two percent of its forty million product images, so it adopts semi-supervised learning. How will the team train its classifier?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Learn from the small labeled portion, then use those patterns to assign labels to the unlabeled remainder"
+      },
+      {
+        "letter": "B",
+        "text": "Let the model discover natural clusters in the images without using any labels at all"
+      },
+      {
+        "letter": "C",
+        "text": "Train on fully labeled data while human reviewers audit half of the model's outputs"
+      },
+      {
+        "letter": "D",
+        "text": "Reward or penalize the model as it interacts with an environment and observes the results"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Semi-supervised learning combines a small amount of labeled data with a large amount of unlabeled data: the model learns from the labeled examples and then predicts labels for the rest. Option B is unsupervised learning, C reads 'semi-supervised' as partial human oversight of outputs, and D is reinforcement learning."
+  },
+  {
+    "id": "q-740",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "In an ISO/IEC 22989 training course, an instructor classifies a deep learning vision model as subsymbolic AI. Which characteristic of the model justifies that label?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It pursues its assigned objectives without any ongoing human direction"
+      },
+      {
+        "letter": "B",
+        "text": "It processes images rather than words or other linguistic input"
+      },
+      {
+        "letter": "C",
+        "text": "Its outputs are probabilistic estimates rather than definitive answers"
+      },
+      {
+        "letter": "D",
+        "text": "It encodes what it has learned implicitly in parameters derived from raw data"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Subsymbolic AI is based on techniques and models that use an implicit encoding of information derived from experience or raw data — as in a neural network's learned weights — in contrast to symbolic AI's explicit, human-readable representations. Option A describes autonomy, B misreads 'symbolic' as meaning linguistic content, and C confuses the classification with probabilistic output."
+  },
+  {
+    "id": "q-741",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A logistics company licenses a pretrained routing model and outsources data labeling, then asks its AI governance lead to review the existing third-party risk management program. She concludes the program cannot handle these suppliers as written. Which gap is she most likely citing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The program reviews vendors only annually rather than continuously monitoring their financial health"
+      },
+      {
+        "letter": "B",
+        "text": "Its questionnaires were built for conventional software, not opaque models, unknown data origins, or shifting API behavior"
+      },
+      {
+        "letter": "C",
+        "text": "It does not extend its assessments down to the subcontractors used by each direct vendor"
+      },
+      {
+        "letter": "D",
+        "text": "It lacks any requirement for periodic onsite security audits at each supplier's facilities"
+      }
+    ],
+    "answer": "B",
+    "explanation": "For AI, third-party risk management must evolve beyond traditional vendor checklists to govern outsourced components like pretrained models, labeling services, and algorithmic APIs — covering black-box algorithms, datasets of unknown origin, and unpredictable model behavior. Options A, C, and D are ordinary TPRM maturity improvements that would still leave the AI-specific blind spot untouched."
+  },
+  {
+    "id": "q-742",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A hospital signs a vendor agreement for a clinical note-taking LLM service. Months later it discovers the provider has been fine-tuning its public models on the hospital's prompts. Which element of the contract was most likely missing or deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A cap limiting each party's liability for indirect and consequential damages"
+      },
+      {
+        "letter": "B",
+        "text": "Service-level guarantees covering uptime and response latency"
+      },
+      {
+        "letter": "C",
+        "text": "Terms specifying how the provider may use the customer's data"
+      },
+      {
+        "letter": "D",
+        "text": "A right to terminate for convenience with a pro-rated refund"
+      }
+    ],
+    "answer": "C",
+    "explanation": "A vendor agreement with an AI provider should specify data usage rights along with performance guarantees, liability allocation, audit rights, and compliance obligations; here the missing piece is the data usage provision that would have barred training on the hospital's inputs. Options A, B, and D are standard commercial terms that would not have prevented the provider's reuse of customer data."
   }
 ];
