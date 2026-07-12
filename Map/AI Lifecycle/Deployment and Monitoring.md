@@ -12,7 +12,6 @@ related:
  - "[[AI Lifecycle Index]]"
  - "[[Data Governance and Model Training]]"
  - "[[AI Risk Management and Assurance]]"
- - "[[AIGP Exam Questions]]"
 ---
 
 # Deployment and Monitoring

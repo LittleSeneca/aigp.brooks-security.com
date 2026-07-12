@@ -51,8 +51,6 @@ Artificial Intelligence Governance Professional (AIGP) certification — complet
 |----------|-------------|
 | [[AIGP Body of Knowledge — Exam Blueprint]] | IAPP BOK v2.0.1 — all domains, competencies, performance indicators, question counts |
 | [[AIGP FSG — Official Study Guide]] | IAPP official candidate guide — exam format, study tips, 3 sample questions |
-| [[AIGP Exam Questions]] | 120 curated review questions with answers |
-| [[AIGP Practice Questions — 500 External]] | 501 external questions (Easy/Medium/Hard) by domain, with explanations |
 
 ---
 

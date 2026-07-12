@@ -34,28 +34,6 @@
    "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/AIGP FSG — Official Study Guide.md"
   },
   {
-   "id": "95a20a03b215",
-   "type": "text",
-   "text": "## 📝 120 Review Qs\n\n chapters\nAnswers + explanations\nAppendix A",
-   "x": -480,
-   "y": -400,
-   "width": 280,
-   "height": 170,
-   "color": "5",
-   "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/Exam Questions/AIGP Exam Questions.md"
-  },
-  {
-   "id": "3c3979cb586c",
-   "type": "text",
-   "text": "## 📝 500 External Qs\n\nEasy/Medium/Hard\n4 domains\nAnswers + explanations",
-   "x": -480,
-   "y": -200,
-   "width": 280,
-   "height": 170,
-   "color": "5",
-   "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/Exam Questions/AIGP Practice Questions — 500 External.md"
-  },
-  {
    "id": "8e3686fca09f",
    "type": "text",
    "text": "## Domain I\n### Foundations of\n### AI Governance\n\n16-20 questions",
@@ -388,22 +366,6 @@
    "fromSide": "right",
    "toSide": "left",
    "label": "companion"
-  },
-  {
-   "id": "a62c68a2dd40",
-   "fromNode": "cd5890fbcb10",
-   "toNode": "95a20a03b215",
-   "fromSide": "right",
-   "toSide": "left",
-   "label": "chapter questions"
-  },
-  {
-   "id": "769e390402ee",
-   "fromNode": "cd5890fbcb10",
-   "toNode": "3c3979cb586c",
-   "fromSide": "right",
-   "toSide": "left",
-   "label": "practice bank"
   },
   {
    "id": "333a3ada93ab",

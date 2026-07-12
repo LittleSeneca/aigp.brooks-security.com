@@ -10,7 +10,6 @@ subdomain: "IV.C: Govern the Deployment and Use of the AI Model"
 related:
  - "[[AI Lifecycle Index]]"
  - "[[AI Risk Management and Assurance]]"
- - "[[AIGP Exam Questions]]"
 ---
 
 # Ongoing AI Operations

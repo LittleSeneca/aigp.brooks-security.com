@@ -11,7 +11,6 @@ related:
  - "[[AI Lifecycle Index]]"
  - "[[AI Standards and Frameworks]]"
  - "[[Data Governance and Model Training]]"
- - "[[AIGP Exam Questions]]"
 ---
 
 # AI System Design

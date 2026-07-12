@@ -10,7 +10,6 @@ related:
  - "[[Legal and Regulatory Index]]"
  - "[[Privacy and Data Protection Law]]"
  - "[[The EU AI Act]]"
- - "[[AIGP Exam Questions]]"
 ---
 
 # Sectoral and Civil Laws

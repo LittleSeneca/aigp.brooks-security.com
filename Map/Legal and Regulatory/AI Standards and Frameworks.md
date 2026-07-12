@@ -10,7 +10,6 @@ related:
  - "[[Legal and Regulatory Index]]"
  - "[[The EU AI Act]]"
  - "[[AI System Design]]"
- - "[[AIGP Exam Questions]]"
 ---
 
 # AI Standards and Frameworks

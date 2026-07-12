@@ -260,7 +260,7 @@ def tag_text(text, domain=None, chapter=None):
         need = 1 if (dnode is None or NODE_DOMAIN.get(nid) == dnode) else 2
         if s >= need:
             tags.add(nid)
-    if chapter:  # authoritative (Sybex)
+    if chapter:  # authoritative area tag from question metadata
         tags.add(chapter)
     else:
         # ponytail: keyword heuristic for chapter inference; needs >=2 total

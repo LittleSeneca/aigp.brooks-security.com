@@ -10,7 +10,6 @@ related:
  - "[[Foundations Index]]"
  - "[[Organizational Readiness]]"
  - "[[Privacy and Data Protection Law]]"
- - "[[AIGP Exam Questions]]"
 ---
 
 # Updating Policies for AI

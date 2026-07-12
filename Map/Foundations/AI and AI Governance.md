@@ -10,7 +10,6 @@ related:
  - "[[Foundations Index]]"
  - "[[Organizational Readiness]]"
  - "[[Updating Policies for AI]]"
- - "[[AIGP Exam Questions]]"
 ---
 
 # AI and AI Governance

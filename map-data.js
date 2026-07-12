@@ -2248,302 +2248,341 @@ const MM_NODES = [
  }
 ];
 const QUESTION_TAGS = {
-"sybex-1-1": [
+"a1-1": [
 "ch1",
 "d1",
-"kt133",
+"kt166",
 "kt185",
-"kt8",
+"kt241",
+"kt34",
+"t_ai_char",
 "t_ai_types"
 ],
-"sybex-1-2": [
+"a1-2": [
 "ch1",
 "d1",
-"kt133",
+"kt118",
+"kt199",
 "kt8",
+"t_ai_char",
 "t_ai_types"
 ],
-"sybex-1-3": [
+"a1-3": [
 "ch1",
 "d1",
-"kt197",
+"kt11",
+"kt230",
 "kt24",
+"kt52",
+"kt87",
 "t_ai_types",
-"t_consent"
+"t_consent",
+"t_controller",
+"t_policy"
 ],
-"sybex-1-4": [
+"a1-4": [
 "ch1",
 "d1",
 "kt241",
-"kt259",
 "kt275",
 "kt301",
+"kt313",
 "t_ai_types"
 ],
-"sybex-1-5": [
+"a1-5": [
 "ch1",
 "d1",
+"kt106",
 "kt109",
-"kt27",
+"kt155",
+"kt45",
 "t_ai_risks",
-"t_bias"
+"t_bias",
+"t_nondiscrim"
 ],
-"sybex-1-6": [
+"a1-6": [
 "ch1",
 "d1",
-"kt141",
 "kt143",
-"kt275",
-"t_ai_risks",
+"kt24",
 "t_ai_types",
 "t_oversight"
 ],
-"sybex-1-7": [
+"a1-7": [
 "ch1",
 "d1",
 "kt110",
 "kt27",
-"kt39",
-"kt40",
-"t_ai_char",
 "t_ai_risks",
 "t_bias"
 ],
-"sybex-1-8": [
+"a1-8": [
 "ch1",
 "d1",
 "kt119",
+"kt143",
 "kt166",
 "kt191",
-"kt256",
 "t_ai_char",
 "t_ai_types",
+"t_oversight",
 "t_rai"
 ],
-"sybex-1-9": [
+"a1-9": [
 "ch1",
 "d1",
-"kt256",
-"kt40",
-"t_ai_char"
+"kt112",
+"kt119",
+"kt221",
+"kt244",
+"t_ai_char",
+"t_ai_risks",
+"t_rai"
 ],
-"sybex-1-10": [
+"a1-10": [
 "ch1",
 "d1",
-"kt24",
-"kt256",
-"t_ai_types"
+"kt145",
+"kt209",
+"kt244",
+"kt250",
+"t_rai",
+"t_sensitive"
 ],
-"sybex-2-1": [
+"a2-1": [
 "ch2",
 "d1",
 "kt12",
 "kt13",
 "kt45",
+"kt88",
 "t_bias",
 "t_devdeploy"
 ],
-"sybex-2-2": [
+"a2-2": [
 "ch1",
 "ch2",
 "d1",
+"kt258",
 "kt76",
-"kt8",
 "t_ai_types",
 "t_roles"
 ],
-"sybex-2-3": [
+"a2-3": [
 "ch1",
 "ch2",
 "d1",
-"kt24",
+"kt167",
+"kt169",
 "kt303",
 "kt76",
 "t_ai_types",
-"t_roles"
+"t_records",
+"t_roles",
+"t_usecase"
 ],
-"sybex-2-4": [
+"a2-4": [
 "ch1",
 "ch2",
+"ch6",
 "d1",
-"kt15",
+"kt114",
 "kt162",
 "kt24",
-"kt39",
+"kt25",
+"kt51",
 "t_ai_types",
-"t_roles"
+"t_devdeploy",
+"t_highrisk_req"
 ],
-"sybex-2-5": [
+"a2-5": [
 "ch2",
 "d1",
+"kt17",
 "kt180",
 "kt245",
 "kt25",
 "t_ai_risks",
 "t_devdeploy",
-"t_monitoring"
+"t_highrisk_req"
 ],
-"sybex-2-6": [
-"ch2",
-"d1",
-"kt76",
-"t_roles"
-],
-"sybex-2-7": [
-"ch2",
-"d1",
-"kt233",
-"t_roles"
-],
-"sybex-2-8": [
+"a2-6": [
 "ch1",
+"ch2",
+"d1",
+"kt108",
+"kt24",
+"kt76",
+"t_ai_types",
+"t_audit",
+"t_roles"
+],
+"a2-7": [
+"ch1",
+"ch2",
+"d1",
+"kt133",
+"kt233",
+"t_ai_types",
+"t_roles"
+],
+"a2-8": [
 "ch2",
 "d1",
 "kt12",
-"kt141",
 "kt68",
-"t_ai_risks",
 "t_devdeploy",
 "t_monitoring"
 ],
-"sybex-2-9": [
+"a2-9": [
 "ch2",
 "d1",
-"kt303",
-"kt76",
+"kt15",
 "t_roles"
 ],
-"sybex-2-10": [
+"a2-10": [
 "ch1",
 "ch2",
 "d1",
+"kt169",
 "kt289",
-"kt57",
 "t_ai_types",
 "t_training"
 ],
-"sybex-3-1": [
+"a3-1": [
 "ch1",
 "ch3",
 "d1",
-"kt136",
-"kt151",
-"kt20",
+"kt144",
+"kt175",
 "kt261",
-"kt285",
-"kt303",
-"kt304",
+"kt77",
 "kt84",
-"t_ai_types",
+"kt98",
+"t_ai_risks",
 "t_deployment",
 "t_lifecycle",
-"t_thirdparty"
+"t_oversight",
+"t_retire"
 ],
-"sybex-3-2": [
+"a3-2": [
 "ch3",
 "d1",
-"kt11",
 "kt128",
 "kt152",
+"kt183",
+"kt29",
 "t_minimization",
 "t_policy"
 ],
-"sybex-3-3": [
+"a3-3": [
 "ch3",
 "d1",
+"kt160",
 "kt26",
+"kt37",
 "kt89",
+"t_audit",
+"t_lineage",
 "t_thirdparty"
 ],
-"sybex-3-4": [
+"a3-4": [
 "ch3",
 "d1",
 "kt0",
 "kt11",
-"kt290",
-"kt303",
+"kt307",
 "kt68",
 "kt77",
 "t_deployment",
 "t_monitoring",
 "t_policy"
 ],
-"sybex-3-5": [
+"a3-5": [
 "ch3",
 "d1",
+"kt229",
+"kt27",
 "kt273",
-"kt290",
 "kt37",
 "t_audit",
 "t_bias",
+"t_incident",
 "t_thirdparty"
 ],
-"sybex-3-6": [
+"a3-6": [
 "ch3",
 "d1",
-"kt152",
-"kt183",
+"kt11",
+"kt169",
+"kt287",
 "kt41",
+"t_ai_types",
 "t_policy"
 ],
-"sybex-3-7": [
+"a3-7": [
 "ch3",
 "d1",
 "kt26",
 "kt261",
+"kt68",
 "t_thirdparty"
 ],
-"sybex-3-8": [
+"a3-8": [
 "ch3",
 "d1",
 "kt11",
 "kt230",
-"kt303",
-"t_policy",
-"t_usecase"
+"kt52",
+"t_consent",
+"t_policy"
 ],
-"sybex-3-9": [
+"a3-9": [
 "ch3",
 "d1",
-"kt106",
 "kt11",
-"kt113",
+"kt282",
 "kt290",
 "t_bias",
 "t_policy",
-"t_rai"
+"t_train"
 ],
-"sybex-3-10": [
+"a3-10": [
 "ch3",
 "d1",
+"kt131",
 "kt183",
 "kt245",
 "t_policy"
 ],
-"sybex-4-1": [
+"a4-1": [
 "ch4",
 "d2",
 "kt209",
 "kt265",
 "kt64",
+"kt87",
 "ref_gdpr",
 "t_consent",
+"t_controller",
 "t_sensitive"
 ],
-"sybex-4-2": [
+"a4-2": [
 "ch4",
 "d2",
 "kt230",
 "kt52",
-"t_consent"
+"kt94",
+"ref_gdpr",
+"t_consent",
+"t_controller"
 ],
-"sybex-4-3": [
+"a4-3": [
 "ch4",
 "d2",
 "kt149",
 "kt209",
 "kt224",
-"kt261",
 "kt265",
 "kt87",
 "ref_gdpr",
@@ -2551,14 +2590,18 @@ const QUESTION_TAGS = {
 "t_risktiers",
 "t_sensitive"
 ],
-"sybex-4-4": [
+"a4-4": [
 "ch4",
 "d2",
+"kt169",
+"kt229",
 "kt80",
-"kt87",
-"t_controller"
+"kt94",
+"ref_gdpr",
+"t_controller",
+"t_incident"
 ],
-"sybex-4-5": [
+"a4-5": [
 "ch4",
 "d2",
 "kt0",
@@ -2568,75 +2611,73 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_sensitive"
 ],
-"sybex-4-6": [
+"a4-6": [
 "ch4",
 "d2",
-"kt119",
-"kt140",
 "kt152",
-"kt209",
-"kt261",
-"kt64",
-"t_consent",
-"t_sensitive",
-"t_train"
+"kt203",
+"kt33",
+"ref_gdpr"
 ],
-"sybex-4-7": [
+"a4-7": [
 "ch4",
 "d2",
 "kt217",
 "kt26",
-"kt87",
-"kt98",
-"t_controller",
+"kt80",
+"ref_gdpr",
 "t_minimization",
 "t_thirdparty"
 ],
-"sybex-4-8": [
+"a4-8": [
 "ch4",
 "d2",
-"kt100",
+"kt128",
 "kt86",
 "t_minimization"
 ],
-"sybex-4-9": [
+"a4-9": [
 "ch4",
 "d2",
-"kt197",
 "kt26",
-"kt284",
+"kt37",
+"kt64",
+"kt87",
+"kt95",
 "ref_gdpr",
+"t_audit",
 "t_consent",
+"t_controller",
 "t_thirdparty"
 ],
-"sybex-4-10": [
+"a4-10": [
 "ch4",
 "d2",
-"kt144",
 "kt30",
-"ref_gdpr",
-"t_oversight"
+"ref_gdpr"
 ],
-"sybex-5-1": [
+"a5-1": [
 "ch5",
 "d2",
 "kt126",
+"kt155",
+"kt286",
 "kt72",
 "t_ip"
 ],
-"sybex-5-2": [
+"a5-2": [
 "ch5",
 "d2",
 "kt106",
 "t_nondiscrim"
 ],
-"sybex-5-3": [
+"a5-3": [
 "ch5",
 "d2",
 "kt65",
 "t_consumer"
 ],
-"sybex-5-4": [
+"a5-4": [
 "ch5",
 "d2",
 "kt103",
@@ -2644,7 +2685,7 @@ const QUESTION_TAGS = {
 "kt221",
 "t_liability"
 ],
-"sybex-5-5": [
+"a5-5": [
 "ch5",
 "d2",
 "kt196",
@@ -2652,46 +2693,53 @@ const QUESTION_TAGS = {
 "t_ip",
 "t_nondiscrim"
 ],
-"sybex-5-6": [
+"a5-6": [
 "ch5",
 "d2",
-"kt286",
 "kt298",
 "kt65",
+"kt72",
 "t_consumer",
 "t_ip"
 ],
-"sybex-5-7": [
+"a5-7": [
 "ch5",
 "d2",
 "kt103",
 "kt221",
-"kt57",
+"kt40",
+"t_ai_char",
 "t_liability"
 ],
-"sybex-5-8": [
+"a5-8": [
 "ch5",
 "d2",
 "kt106",
-"kt155",
 "kt72",
 "t_ip",
 "t_nondiscrim"
 ],
-"sybex-5-9": [
+"a5-9": [
 "ch5",
 "d2",
 "kt106",
-"kt57",
+"kt128",
+"kt72",
+"kt86",
+"t_ip",
+"t_minimization",
 "t_nondiscrim"
 ],
-"sybex-5-10": [
+"a5-10": [
 "ch5",
 "d2",
+"kt169",
+"kt37",
 "kt65",
+"t_audit",
 "t_consumer"
 ],
-"sybex-6-1": [
+"a6-1": [
 "ch6",
 "d2",
 "kt114",
@@ -2700,38 +2748,49 @@ const QUESTION_TAGS = {
 "t_risktiers",
 "t_sensitive"
 ],
-"sybex-6-2": [
+"a6-2": [
 "ch6",
 "d2",
-"kt114",
-"kt144",
-"kt149",
-"kt205",
+"kt155",
 "kt224",
+"kt229",
 "kt281",
+"kt37",
+"kt62",
+"kt83",
+"t_audit",
 "t_highrisk_req",
+"t_incident",
 "t_ip",
 "t_risktiers"
 ],
-"sybex-6-3": [
+"a6-3": [
 "ch6",
 "d2",
-"kt14",
+"kt114",
+"kt12",
+"kt211",
+"kt51",
+"kt61",
+"t_devdeploy",
 "t_highrisk_req"
 ],
-"sybex-6-4": [
+"a6-4": [
 "ch6",
 "d2",
 "kt12",
+"kt126",
 "kt144",
 "kt224",
 "kt51",
+"kt61",
 "t_devdeploy",
 "t_highrisk_req",
+"t_ip",
 "t_oversight",
 "t_risktiers"
 ],
-"sybex-6-5": [
+"a6-5": [
 "ch6",
 "d2",
 "kt114",
@@ -2740,103 +2799,123 @@ const QUESTION_TAGS = {
 "t_gpai",
 "t_risktiers"
 ],
-"sybex-6-6": [
+"a6-6": [
 "ch6",
 "d2",
+"kt114",
 "kt135",
-"t_gpai"
+"kt226",
+"t_gpai",
+"t_vendorterms"
 ],
-"sybex-6-7": [
+"a6-7": [
 "ch6",
 "d2",
-"kt216",
+"kt12",
+"kt205",
+"kt224",
+"kt281",
+"kt310",
 "kt51",
 "kt61",
+"t_devdeploy",
 "t_highrisk_req",
-"t_minimization"
+"t_ip",
+"t_risktiers"
 ],
-"sybex-6-8": [
+"a6-8": [
 "ch6",
 "d2",
 "kt115",
 "kt224",
+"kt88",
+"ref_gdpr",
 "t_enforcement",
 "t_risktiers"
 ],
-"sybex-6-9": [
+"a6-9": [
 "ch6",
 "d2",
 "kt114",
-"kt14",
+"kt51",
 "t_highrisk_req"
 ],
-"sybex-6-10": [
+"a6-10": [
 "ch6",
 "d2",
 "kt135",
-"kt256",
+"kt155",
 "kt279",
+"kt61",
 "t_gpai",
+"t_highrisk_req",
 "t_ip",
 "t_lifecycle"
 ],
-"sybex-7-1": [
+"a7-1": [
+"ch6",
 "ch7",
 "d2",
+"kt114",
+"kt119",
 "kt198",
-"ref_oecd"
+"kt250",
+"kt51",
+"ref_oecd",
+"t_highrisk_req",
+"t_rai"
 ],
-"sybex-7-2": [
+"a7-2": [
 "ch7",
 "d2",
 "kt176",
 "ref_nist_rmf"
 ],
-"sybex-7-3": [
+"a7-3": [
 "ch7",
 "d2",
-"kt108",
-"kt193",
+"kt178",
 "kt195",
 "kt224",
-"kt296",
 "ref_aria",
 "ref_nist_rmf",
-"t_audit",
 "t_risktiers"
 ],
-"sybex-7-4": [
+"a7-4": [
 "ch7",
 "d2",
 "kt160",
 "kt18",
-"kt256",
-"ref_42001"
+"kt206",
+"kt28",
+"kt37",
+"ref_42001",
+"t_audit"
 ],
-"sybex-7-5": [
+"a7-5": [
+"ch7",
+"d2",
+"kt158",
+"kt159",
+"kt287",
+"kt296",
+"ref_22989",
+"ref_23894"
+],
+"a7-6": [
 "ch7",
 "d2",
 "kt159",
 "ref_22989"
 ],
-"sybex-7-6": [
+"a7-7": [
 "ch7",
-"d2",
-"kt198",
-"ref_oecd"
-],
-"sybex-7-7": [
-"ch7",
-"ch8",
 "d2",
 "kt112",
-"kt256",
-"kt279",
 "kt35",
-"ref_22989",
-"t_lifecycle"
+"ref_22989"
 ],
-"sybex-7-8": [
+"a7-8": [
 "ch7",
 "d2",
 "kt120",
@@ -2848,7 +2927,7 @@ const QUESTION_TAGS = {
 "ref_nist_rmf",
 "t_rai"
 ],
-"sybex-7-9": [
+"a7-9": [
 "ch7",
 "d2",
 "kt160",
@@ -2856,233 +2935,266 @@ const QUESTION_TAGS = {
 "ref_23894",
 "ref_42001"
 ],
-"sybex-7-10": [
+"a7-10": [
 "ch7",
 "d2",
-"kt1",
-"ref_22989"
+"kt224",
+"kt55",
+"ref_22989",
+"t_risktiers"
 ],
-"sybex-8-1": [
+"a8-1": [
 "ch8",
 "d3",
+"kt108",
 "kt200",
-"kt223",
 "kt231",
-"kt27",
 "kt62",
-"t_bias",
+"t_audit",
 "t_deployment",
 "t_lifecycle",
-"t_readiness",
 "t_vendorterms"
 ],
-"sybex-8-2": [
+"a8-2": [
 "ch8",
 "d3",
+"kt307",
 "kt49",
-"kt50",
+"kt68",
+"t_monitoring",
 "t_usecase"
 ],
-"sybex-8-3": [
-"ch6",
+"a8-3": [
 "ch8",
 "d3",
-"kt114",
 "kt149",
 "kt16",
-"kt61",
-"t_highrisk_req",
-"t_impact"
-],
-"sybex-8-4": [
-"ch8",
-"d3",
-"kt144",
-"kt152",
-"kt281",
-"kt84",
-"t_lifecycle",
-"t_oversight"
-],
-"sybex-8-5": [
-"ch8",
-"d3",
-"kt279",
-"t_lifecycle"
-],
-"sybex-8-6": [
-"ch8",
-"d3",
-"kt149",
-"kt155",
 "kt220",
 "t_impact",
 "t_riskmgmt"
 ],
-"sybex-8-7": [
+"a8-4": [
+"ch8",
+"d3",
+"kt152",
+"kt167",
+"kt84",
+"t_lifecycle",
+"t_records"
+],
+"a8-5": [
+"ch8",
+"d3",
+"kt226",
+"kt279",
+"kt285",
+"t_lifecycle",
+"t_thirdparty",
+"t_vendorterms"
+],
+"a8-6": [
+"ch8",
+"d3",
+"kt165",
+"kt191",
+"kt220",
+"t_lifecycle",
+"t_riskmgmt"
+],
+"a8-7": [
 "ch8",
 "d3",
 "kt119",
+"kt152",
 "kt279",
-"t_lifecycle"
+"t_lifecycle",
+"t_rai"
 ],
-"sybex-8-8": [
+"a8-8": [
 "ch8",
 "d3",
-"kt231",
+"kt149",
 "kt270",
-"kt307",
-"t_lifecycle"
+"kt43",
+"t_impact",
+"t_testing"
 ],
-"sybex-8-9": [
+"a8-9": [
 "ch8",
 "d3",
-"kt0",
-"kt210",
-"kt223",
-"kt303",
-"kt307",
+"kt175",
+"kt304",
+"kt5",
 "t_deployment",
-"t_readiness",
+"t_testing",
 "t_usecase"
 ],
-"sybex-8-10": [
+"a8-10": [
 "ch6",
 "ch8",
 "d3",
 "kt114",
-"kt21",
-"kt279",
-"t_highrisk_req",
-"t_lifecycle"
+"kt12",
+"kt149",
+"kt224",
+"t_devdeploy",
+"t_impact",
+"t_risktiers"
 ],
-"sybex-9-1": [
+"a9-1": [
 "ch9",
 "d3",
 "kt83",
 "t_datagov"
 ],
-"sybex-9-2": [
+"a9-2": [
 "ch9",
 "d3",
+"kt203",
+"kt79",
+"kt82",
+"kt83",
 "kt89",
-"t_lineage"
+"t_datagov",
+"t_lineage",
+"t_monitoring",
+"t_train"
 ],
-"sybex-9-3": [
+"a9-3": [
 "ch9",
 "d3",
 "kt124",
+"kt152",
 "kt213",
 "t_testing"
 ],
-"sybex-9-4": [
-"ch9",
-"d3",
-"kt152",
-"kt27",
-"kt307",
-"t_bias"
-],
-"sybex-9-5": [
-"ch9",
-"d3",
-"kt84",
-"kt85",
-"kt89",
-"t_lifecycle",
-"t_lineage"
-],
-"sybex-9-6": [
-"ch9",
-"d3",
-"kt5",
-"t_testing"
-],
-"sybex-9-7": [
-"ch9",
-"d3",
-"kt74",
-"t_bias"
-],
-"sybex-9-8": [
-"ch9",
-"d3",
-"kt119",
-"kt154",
-"kt156",
-"t_rai",
-"t_testing"
-],
-"sybex-9-9": [
+"a9-4": [
 "ch9",
 "d3",
 "kt0",
-"kt203",
-"kt82",
+"kt106",
+"kt152",
+"kt245",
+"kt282",
+"kt307",
 "t_deployment",
 "t_monitoring",
 "t_train"
 ],
-"sybex-9-10": [
+"a9-5": [
+"ch9",
+"d3",
+"kt77",
+"kt85",
+"kt89",
+"t_datagov",
+"t_lineage"
+],
+"a9-6": [
+"ch9",
+"d3",
+"kt250",
+"kt257",
+"t_testing"
+],
+"a9-7": [
+"ch9",
+"d3",
+"kt152",
+"kt74",
+"t_bias"
+],
+"a9-8": [
 "ch9",
 "d3",
 "kt0",
-"kt147",
 "kt154",
+"kt203",
+"kt27",
+"t_bias",
+"t_deployment",
+"t_train"
+],
+"a9-9": [
+"ch9",
+"d3",
+"kt0",
+"kt152",
+"kt203",
 "kt279",
-"kt282",
 "kt307",
+"t_deployment",
+"t_lifecycle",
+"t_train"
+],
+"a9-10": [
+"ch9",
+"d3",
+"kt0",
+"kt112",
+"kt154",
+"kt203",
+"kt279",
 "t_deployment",
 "t_lifecycle",
 "t_testing",
 "t_train"
 ],
-"sybex-10-1": [
+"a10-1": [
 "ch10",
 "d3",
-"kt112",
 "kt203",
 "kt279",
+"kt281",
 "kt62",
 "t_deployment",
+"t_highrisk_req",
 "t_lifecycle",
 "t_train"
 ],
-"sybex-10-2": [
+"a10-2": [
 "ch10",
 "d3",
 "kt101",
+"kt152",
 "kt261",
 "kt54",
+"kt68",
 "t_deployment",
-"t_deployopts"
+"t_deployopts",
+"t_monitoring"
 ],
-"sybex-10-3": [
+"a10-3": [
 "ch10",
 "d3",
 "kt175",
 "t_deployment"
 ],
-"sybex-10-4": [
+"a10-4": [
 "ch10",
 "d3",
-"kt153",
+"kt203",
 "kt245",
 "kt59",
-"t_monitoring"
+"kt82",
+"t_monitoring",
+"t_train"
 ],
-"sybex-10-5": [
+"a10-5": [
 "ch10",
 "d3",
 "kt152",
 "kt162",
-"kt203",
+"kt245",
 "kt246",
-"kt59",
+"kt294",
+"kt60",
+"kt62",
+"t_deployment",
 "t_monitoring",
 "t_train"
 ],
-"sybex-10-6": [
+"a10-6": [
 "ch10",
 "d3",
 "kt202",
@@ -3092,141 +3204,139 @@ const QUESTION_TAGS = {
 "t_lineage",
 "t_monitoring"
 ],
-"sybex-10-7": [
+"a10-7": [
 "ch10",
 "d3",
-"kt109",
 "kt279",
 "kt62",
-"t_ai_risks",
 "t_deployment",
 "t_lifecycle"
 ],
-"sybex-10-8": [
+"a10-8": [
 "ch10",
 "d3",
-"kt152",
-"kt45",
-"kt62",
-"kt68",
+"kt44",
+"kt82",
 "t_bias",
-"t_deployment",
 "t_monitoring"
 ],
-"sybex-10-9": [
+"a10-9": [
 "ch10",
 "d3",
-"kt203",
+"kt223",
+"kt282",
 "kt68",
 "t_monitoring",
+"t_readiness",
 "t_train"
 ],
-"sybex-10-10": [
+"a10-10": [
 "ch10",
+"ch6",
 "d3",
-"kt210",
+"kt114",
+"kt115",
 "kt245",
+"t_enforcement",
 "t_monitoring"
 ],
-"sybex-11-1": [
+"a11-1": [
 "ch12",
 "d4",
 "kt109",
+"kt151",
 "kt152",
-"kt229",
+"kt270",
+"kt294",
 "kt39",
 "t_ai_risks",
-"t_incident"
+"t_incident",
+"t_train"
 ],
-"sybex-11-2": [
+"a11-2": [
 "ch12",
 "d4",
-"kt147",
-"kt195",
+"kt152",
 "kt240",
+"kt245",
 "kt37",
-"ref_aria",
 "t_audit",
 "t_readiness"
 ],
-"sybex-11-3": [
+"a11-3": [
 "ch12",
 "d4",
-"kt26",
-"kt309",
-"kt37",
+"kt238",
+"kt285",
 "kt83",
-"t_audit",
+"t_datagov",
+"t_records",
 "t_thirdparty"
 ],
-"sybex-11-4": [
+"a11-4": [
 "ch12",
 "d4",
-"kt220",
-"kt37",
-"kt59",
-"t_audit",
-"t_monitoring",
-"t_riskmgmt"
-],
-"sybex-11-5": [
-"ch12",
-"d4",
-"kt151",
+"kt201",
+"kt233",
 "kt82",
 "t_incident",
 "t_monitoring"
 ],
-"sybex-11-6": [
+"a11-5": [
 "ch12",
 "d4",
-"kt0",
-"kt229",
-"t_deployment",
+"kt109",
+"kt151",
+"t_ai_risks",
 "t_incident"
 ],
-"sybex-11-7": [
+"a11-6": [
+"ch12",
+"d4",
+"kt175",
+"kt98",
+"t_deployment",
+"t_retire"
+],
+"a11-7": [
 "ch12",
 "ch6",
 "d4",
 "kt114",
-"kt129",
 "kt151",
 "kt211",
 "kt224",
+"kt68",
 "t_highrisk_req",
 "t_incident",
 "t_monitoring",
 "t_risktiers"
 ],
-"sybex-11-8": [
+"a11-8": [
 "ch12",
 "d4",
-"kt256",
 "kt37",
 "t_audit"
 ],
-"sybex-11-9": [
+"a11-9": [
 "ch12",
 "d4",
 "kt136",
-"kt151",
 "kt152",
+"kt181",
 "kt225",
-"t_incident"
+"t_riskmgmt"
 ],
-"sybex-11-10": [
+"a11-10": [
 "ch12",
 "d4",
-"kt151",
 "kt152",
-"kt220",
-"kt26",
+"kt181",
+"kt201",
 "t_incident",
-"t_riskmgmt",
-"t_thirdparty"
+"t_riskmgmt"
 ],
-"sybex-12-1": [
+"a12-1": [
 "ch12",
 "d4",
 "kt108",
@@ -3236,72 +3346,84 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_retire"
 ],
-"sybex-12-2": [
+"a12-2": [
 "ch12",
 "d4",
-"kt161",
 "kt211",
+"kt229",
+"kt37",
 "kt68",
+"t_audit",
 "t_highrisk_req",
 "t_incident",
 "t_monitoring"
 ],
-"sybex-12-3": [
+"a12-3": [
 "ch12",
 "d4",
 "kt123",
-"kt144",
 "t_comms"
 ],
-"sybex-12-4": [
+"a12-4": [
 "ch12",
 "d4",
-"kt84",
 "kt98",
 "t_retire"
 ],
-"sybex-12-5": [
+"a12-5": [
 "ch12",
 "d4",
+"kt153",
 "kt167",
 "t_records"
 ],
-"sybex-12-6": [
+"a12-6": [
 "ch12",
 "d4",
 "kt161",
 "t_incident"
 ],
-"sybex-12-7": [
+"a12-7": [
 "ch12",
+"ch6",
 "d4",
-"kt37",
-"t_audit"
+"kt108",
+"kt114",
+"kt177",
+"kt98",
+"t_audit",
+"t_enforcement",
+"t_retire"
 ],
-"sybex-12-8": [
+"a12-8": [
 "ch12",
 "d4",
 "kt210",
-"kt215",
-"kt98",
+"kt96",
 "t_retire"
 ],
-"sybex-12-9": [
+"a12-9": [
 "ch12",
 "ch6",
 "d4",
 "kt114",
-"kt181",
+"kt160",
 "kt224",
+"kt229",
 "kt281",
-"t_riskmgmt",
+"kt31",
+"kt51",
+"ref_42001",
+"ref_gdpr",
+"t_highrisk_req",
+"t_incident",
 "t_risktiers"
 ],
-"sybex-12-10": [
+"a12-10": [
 "ch12",
 "d4",
-"kt123",
-"t_comms"
+"kt229",
+"t_incident"
 ],
 "ext-1": [
 "ch1",
@@ -3808,7 +3930,6 @@ const QUESTION_TAGS = {
 "d1",
 "kt136",
 "kt242",
-"kt256",
 "kt297",
 "t_ai_types",
 "t_train"
@@ -3817,7 +3938,6 @@ const QUESTION_TAGS = {
 "ch1",
 "d1",
 "kt109",
-"kt256",
 "t_ai_risks"
 ],
 "ext-57": [
@@ -3910,7 +4030,6 @@ const QUESTION_TAGS = {
 "d1",
 "kt166",
 "kt24",
-"kt256",
 "t_ai_char",
 "t_ai_types"
 ],
@@ -3958,7 +4077,6 @@ const QUESTION_TAGS = {
 "ch1",
 "d1",
 "kt109",
-"kt256",
 "kt40",
 "kt68",
 "t_ai_char",
@@ -4108,7 +4226,6 @@ const QUESTION_TAGS = {
 "kt165",
 "kt217",
 "kt230",
-"kt256",
 "kt86",
 "t_lifecycle",
 "t_minimization",
@@ -4117,7 +4234,6 @@ const QUESTION_TAGS = {
 "ext-92": [
 "ch1",
 "d1",
-"kt256",
 "kt298",
 "t_ai_risks"
 ],
@@ -4767,7 +4883,6 @@ const QUESTION_TAGS = {
 "ch4",
 "d2",
 "kt143",
-"kt256",
 "kt30",
 "kt64",
 "kt87",
@@ -4871,7 +4986,6 @@ const QUESTION_TAGS = {
 "ch4",
 "d2",
 "kt209",
-"kt256",
 "kt265",
 "kt46",
 "kt64",
@@ -5009,7 +5123,6 @@ const QUESTION_TAGS = {
 "kt128",
 "kt228",
 "kt243",
-"kt256",
 "kt41",
 "kt57",
 "ref_gdpr",
@@ -5193,7 +5306,6 @@ const QUESTION_TAGS = {
 "ch7",
 "d2",
 "kt0",
-"kt256",
 "kt290",
 "kt68",
 "kt69",
@@ -5327,7 +5439,6 @@ const QUESTION_TAGS = {
 "ch7",
 "d2",
 "kt209",
-"kt256",
 "kt296",
 "kt47",
 "ref_22989",
@@ -5503,7 +5614,6 @@ const QUESTION_TAGS = {
 "kt135",
 "kt242",
 "kt243",
-"kt256",
 "kt296",
 "ref_22989",
 "t_gpai"
@@ -5513,7 +5623,6 @@ const QUESTION_TAGS = {
 "d2",
 "kt242",
 "kt243",
-"kt256",
 "kt296",
 "ref_22989"
 ],
@@ -5647,7 +5756,6 @@ const QUESTION_TAGS = {
 "kt119",
 "kt210",
 "kt217",
-"kt256",
 "kt279",
 "kt90",
 "t_bias",
@@ -5661,7 +5769,6 @@ const QUESTION_TAGS = {
 "d3",
 "kt217",
 "kt230",
-"kt256",
 "kt279",
 "kt52",
 "kt86",
@@ -5800,7 +5907,6 @@ const QUESTION_TAGS = {
 "kt119",
 "kt154",
 "kt250",
-"kt256",
 "kt257",
 "kt45",
 "t_bias",
@@ -5913,7 +6019,6 @@ const QUESTION_TAGS = {
 "kt109",
 "kt151",
 "kt231",
-"kt256",
 "kt27",
 "t_ai_risks",
 "t_bias",
@@ -6015,7 +6120,6 @@ const QUESTION_TAGS = {
 "ch9",
 "d3",
 "kt231",
-"kt256",
 "kt83",
 "kt85",
 "t_datagov",
@@ -6165,7 +6269,6 @@ const QUESTION_TAGS = {
 "d3",
 "kt11",
 "kt154",
-"kt256",
 "kt94",
 "kt95",
 "t_controller",
@@ -6189,7 +6292,6 @@ const QUESTION_TAGS = {
 "ch10",
 "d3",
 "kt202",
-"kt256",
 "kt84",
 "t_lifecycle",
 "t_monitoring"
@@ -6200,7 +6302,6 @@ const QUESTION_TAGS = {
 "d3",
 "kt167",
 "kt203",
-"kt256",
 "kt37",
 "t_audit",
 "t_records",
@@ -6341,7 +6442,6 @@ const QUESTION_TAGS = {
 "ch4",
 "ch9",
 "d3",
-"kt256",
 "kt310",
 "kt80",
 "kt83",
@@ -6538,7 +6638,6 @@ const QUESTION_TAGS = {
 "kt152",
 "kt243",
 "kt250",
-"kt256",
 "kt257",
 "kt290",
 "t_bias",
@@ -6680,7 +6779,6 @@ const QUESTION_TAGS = {
 "d3",
 "kt152",
 "kt203",
-"kt256",
 "kt257",
 "t_train"
 ],
@@ -6689,7 +6787,6 @@ const QUESTION_TAGS = {
 "d3",
 "kt152",
 "kt203",
-"kt256",
 "kt257",
 "t_train"
 ],
@@ -7110,7 +7207,6 @@ const QUESTION_TAGS = {
 "d4",
 "kt0",
 "kt151",
-"kt256",
 "kt45",
 "t_bias",
 "t_deployment",
@@ -7232,7 +7328,6 @@ const QUESTION_TAGS = {
 "kt106",
 "kt16",
 "kt220",
-"kt256",
 "kt290",
 "kt62",
 "t_bias",
@@ -7421,7 +7516,6 @@ const QUESTION_TAGS = {
 "d4",
 "kt129",
 "kt201",
-"kt256",
 "kt27",
 "t_bias",
 "t_incident",
@@ -7478,7 +7572,6 @@ const QUESTION_TAGS = {
 "ext-435": [
 "ch12",
 "d4",
-"kt256",
 "kt37",
 "kt90",
 "t_audit",
@@ -7502,7 +7595,6 @@ const QUESTION_TAGS = {
 "d4",
 "kt108",
 "kt242",
-"kt256",
 "kt90",
 "t_audit",
 "t_bias"
@@ -7647,7 +7739,6 @@ const QUESTION_TAGS = {
 "ch12",
 "d4",
 "kt108",
-"kt256",
 "t_audit"
 ],
 "ext-455": [
@@ -7707,7 +7798,6 @@ const QUESTION_TAGS = {
 "ch12",
 "d4",
 "kt151",
-"kt256",
 "kt310",
 "t_incident"
 ],
@@ -8024,7 +8114,6 @@ const QUESTION_TAGS = {
 "ch3",
 "d4",
 "kt143",
-"kt256",
 "kt307",
 "kt37",
 "t_audit",

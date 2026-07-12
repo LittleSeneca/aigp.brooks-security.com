@@ -12,7 +12,6 @@ related:
  - "[[AI Lifecycle Index]]"
  - "[[Deployment and Monitoring]]"
  - "[[Ongoing AI Operations]]"
- - "[[AIGP Exam Questions]]"
 ---
 
 # AI Risk Management and Assurance

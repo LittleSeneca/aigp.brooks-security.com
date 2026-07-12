@@ -1,91 +1,91 @@
 // AIGP Quiz Questions — 621 total
 const ALL_QUESTIONS = [
   {
-    "id": "sybex-1-1",
+    "id": "a1-1",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "The Netflix Recommendation Engine and Google Search Autocomplete are examples of",
+    "difficulty": "Easy",
+    "question": "A music streaming service suggests playlists based on listening history, and an email provider automatically routes junk mail to a spam folder. In the AI capability taxonomy, both systems are examples of",
     "options": [
       {
         "letter": "A",
+        "text": "Artificial general intelligence"
+      },
+      {
+        "letter": "B",
+        "text": "AI agents"
+      },
+      {
+        "letter": "C",
         "text": "Narrow AI"
       },
       {
-        "letter": "B",
-        "text": "AI agent"
-      },
-      {
-        "letter": "C",
-        "text": "Training techniques"
-      },
-      {
         "letter": "D",
-        "text": "General AI"
-      }
-    ],
-    "answer": "A",
-    "explanation": "Narrow AI includes AI systems that perform highly focused tasks. Other examples are spam filters, license plate recognition systems, and Apple Face ID.",
-    "area": "ch1"
-  },
-  {
-    "id": "sybex-1-2",
-    "domain": "Domain I",
-    "difficulty": "",
-    "question": "An organization has developed an AI system that receives and analyzes input from sensors and takes action as needed. This system is an example of",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Operational technology"
-      },
-      {
-        "letter": "B",
-        "text": "General AI"
-      },
-      {
-        "letter": "C",
-        "text": "Robot"
-      },
-      {
-        "letter": "D",
-        "text": "AI agent"
-      }
-    ],
-    "answer": "D",
-    "explanation": "An AI agent is a system that receives input from systems and sensors and takes action to achieve specific goals.",
-    "area": "ch1"
-  },
-  {
-    "id": "sybex-1-3",
-    "domain": "Domain I",
-    "difficulty": "",
-    "question": "An EU-based retail organization retains data about individual transactions and maintains databases with detailed customer information. The organization wants to build an AI system to analyze its customers and transactions, to help better understand sales history, and to develop better sales and marketing strategies. What interaction, if any, is required with customers before launching this project?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "No customer interaction is required."
-      },
-      {
-        "letter": "B",
-        "text": "Customers can opt out of this activity."
-      },
-      {
-        "letter": "C",
-        "text": "Customers must explicitly consent to this activity."
-      },
-      {
-        "letter": "D",
-        "text": "Customers must be notified of this activity."
+        "text": "Reinforcement learning techniques"
       }
     ],
     "answer": "C",
-    "explanation": "According to the GDPR, organizations must obtain explicit consent from customers before their information can be used by the AI system for this (or any other) purpose.",
+    "explanation": "Both systems perform a single, highly focused task — recommending music or filtering junk mail — which is the defining trait of narrow (weak) AI. Every AI system in production today is narrow AI; general intelligence remains theoretical, and an agent would need to perceive an environment and take autonomous action toward goals.",
     "area": "ch1"
   },
   {
-    "id": "sybex-1-4",
+    "id": "a1-2",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "An IT department is building an AI system and will begin training it with labeled data. What kind of training is this?",
+    "difficulty": "Easy",
+    "question": "A smart-building system continuously reads temperature, occupancy, and air-quality sensors, then autonomously adjusts ventilation and heating to meet efficiency targets. In AI terms, this system is best classified as",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An expert system"
+      },
+      {
+        "letter": "B",
+        "text": "An AI agent"
+      },
+      {
+        "letter": "C",
+        "text": "A generative model"
+      },
+      {
+        "letter": "D",
+        "text": "A data pipeline"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The perceive-decide-act loop is the signature of an AI agent: it senses its environment through inputs and autonomously takes actions to achieve defined goals. Expert systems apply hand-coded rules without environmental interaction, and generative models produce content rather than take actions.",
+    "area": "ch1"
+  },
+  {
+    "id": "a1-3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "An online marketplace established in the EU holds years of customer purchase records collected to fulfill orders. It now wants to train an AI model on those records to develop new marketing strategies. Under the GDPR, what must the company do before proceeding?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Nothing — the data was lawfully collected and remains available for any internal use"
+      },
+      {
+        "letter": "B",
+        "text": "Rely on the consent customers gave at checkout, since marketing is a related activity"
+      },
+      {
+        "letter": "C",
+        "text": "Update the privacy policy silently and begin training after thirty days"
+      },
+      {
+        "letter": "D",
+        "text": "Establish a lawful basis for the new purpose, such as obtaining explicit customer consent"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Purpose limitation prevents silently repurposing data collected for order fulfillment into AI training for marketing. The company must establish a lawful basis for the new, incompatible purpose — in practice, obtaining explicit consent for the analytics use. Checkout consent covered the original purpose only, and a quiet policy update is not a lawful basis.",
+    "area": "ch1"
+  },
+  {
+    "id": "a1-4",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A hospital data science team trains a diagnostic model using thousands of radiology images, each tagged by physicians as showing or not showing a tumor. Which learning approach is the team using?",
     "options": [
       {
         "letter": "A",
@@ -97,134 +97,134 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Semi-supervised learning"
-      },
-      {
-        "letter": "D",
         "text": "Reinforcement learning"
+      },
+      {
+        "letter": "D",
+        "text": "Zero-shot learning"
       }
     ],
     "answer": "A",
-    "explanation": "Training an AI system with labeled data is known as supervised learning.",
+    "explanation": "Training on data where each example carries a known correct label (tumor / no tumor) is supervised learning — the model learns to map inputs to labeled outputs. Unsupervised learning finds structure in unlabeled data, and reinforcement learning improves behavior through reward signals rather than labels.",
     "area": "ch1"
   },
   {
-    "id": "sybex-1-5",
+    "id": "a1-5",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "A regional bank is building an AI system to help analyze loan applications and make approval and interest rate recommendations. What kind of harm must the bank ensure is not realized?",
+    "difficulty": "Medium",
+    "question": "An insurance company is developing an AI model that recommends premium rates for individual applicants. Which category of harm should the company's governance program treat as the primary risk of this system?",
     "options": [
       {
         "letter": "A",
-        "text": "Financial"
+        "text": "Environmental impact from model training"
       },
       {
         "letter": "B",
-        "text": "Social cohesion"
+        "text": "Discriminatory bias against protected groups in pricing decisions"
       },
       {
         "letter": "C",
-        "text": "Privacy"
+        "text": "Erosion of employee morale in the underwriting department"
       },
       {
         "letter": "D",
-        "text": "Bias"
+        "text": "Intellectual property leakage through the model's outputs"
       }
     ],
-    "answer": "D",
-    "explanation": "The type of harm that the bank must watch for is bias, where individuals of certain demographics may be denied loans or favorable loan terms.",
+    "answer": "B",
+    "explanation": "Consequential financial decisions about individuals — pricing, credit, coverage — carry bias as their primary harm: the model may systematically disadvantage protected demographics through learned proxies. Non-discrimination laws such as fair lending and insurance regulation make this both an ethical and a legal exposure.",
     "area": "ch1"
   },
   {
-    "id": "sybex-1-6",
+    "id": "a1-6",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "A regional bank is building an AI system to help analyze loan applications and make approval and interest rate recommendations. What safeguard should the bank implement to ensure fairness?",
+    "difficulty": "Medium",
+    "question": "The same insurance company wants a safeguard ensuring its premium-recommendation AI does not produce unfair outcomes for individual applicants. Which control most directly addresses this goal?",
     "options": [
       {
         "letter": "A",
-        "text": "Supervised learning"
+        "text": "Human-in-the-loop review of the model's recommendations before they take effect"
       },
       {
         "letter": "B",
-        "text": "Event detection"
+        "text": "Encrypting the model weights at rest and in transit"
       },
       {
         "letter": "C",
-        "text": "Human in the loop"
+        "text": "Migrating the model to a larger foundation model"
       },
       {
         "letter": "D",
-        "text": "Hallucination detection"
+        "text": "Increasing the model's training dataset size"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Human-in-the-loop review places a person between the model's recommendation and the consequential decision, allowing unfair or anomalous outputs to be caught before they affect applicants. Encryption protects confidentiality, and more data or bigger models may improve accuracy but provide no direct fairness safeguard.",
+    "area": "ch1"
+  },
+  {
+    "id": "a1-7",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A short-video platform's recommendation algorithm decides which clips each user sees next. If the algorithm develops a bias toward inflammatory political content, which societal harm is most directly at stake?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Job displacement among professional video editors"
+      },
+      {
+        "letter": "B",
+        "text": "Unauthorized collection of viewer location data"
+      },
+      {
+        "letter": "C",
+        "text": "Manipulation of public opinion through amplified, skewed content exposure"
+      },
+      {
+        "letter": "D",
+        "text": "Excessive energy consumption in the platform's data centers"
       }
     ],
     "answer": "C",
-    "explanation": "The bank should implement a human in the loop to review loan applications and the AI system’s recommendations to ensure that the AI system is producing correct outputs.",
+    "explanation": "A biased content-ranking algorithm shapes what millions of people see, amplifying certain narratives and suppressing others — the mechanism behind opinion manipulation and echo chambers. The other options describe real but unrelated harm categories that do not follow from ranking bias.",
     "area": "ch1"
   },
   {
-    "id": "sybex-1-7",
+    "id": "a1-8",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "A social media platform uses an AI algorithm to select items to appear in users’ data feeds. What potential harm could result if the AI algorithm is biased?",
+    "difficulty": "Hard",
+    "question": "A university screens applications with a deep neural network that scores each candidate. A rejected applicant formally requests the reasons for the decision. What challenge is the university most likely to face?",
     "options": [
       {
         "letter": "A",
-        "text": "Privacy violations resulting from unauthorized collection and use of personal data"
+        "text": "Restoring the application data, which is deleted immediately after each decision"
       },
       {
         "letter": "B",
-        "text": "Job displacement and economic disruption from AI-driven automation of routine tasks"
+        "text": "Proving the applicant actually submitted an application"
       },
       {
         "letter": "C",
-        "text": "Erosion of human autonomy in decision-making as AI systems become more pervasive"
+        "text": "Defending the security of the admissions portal against intrusion"
       },
       {
         "letter": "D",
-        "text": "Manipulation of public opinion through algorithmic content amplification and curation"
+        "text": "Producing a meaningful explanation of why the model rejected this specific applicant"
       }
     ],
     "answer": "D",
-    "explanation": "A biased AI algorithm in a social media platform could sway public opinion.",
+    "explanation": "Deep neural networks are opaque: their decisions emerge from millions of learned weights rather than legible rules, so producing a faithful, specific explanation for one rejection is genuinely difficult. This opacity is precisely why explainability requirements and contestability rights exist for consequential automated decisions.",
     "area": "ch1"
   },
   {
-    "id": "sybex-1-8",
+    "id": "a1-9",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "An organization has implemented a neural network AI system to review job applications and make interview recommendations. An employment candidate recently applied for a position, was rejected by the AI system, and requests an explanation for the rejection. What potential challenge is the organization about to face?",
+    "difficulty": "Easy",
+    "question": "When designing the AI system that pilots an autonomous delivery drone over populated areas, which responsible AI principle must rank above all others?",
     "options": [
       {
         "letter": "A",
-        "text": "Difficulty providing a meaningful explanation for the automated rejection to affected applicants"
-      },
-      {
-        "letter": "B",
-        "text": "A security incident involving unauthorized access to the AI training data pipeline"
-      },
-      {
-        "letter": "C",
-        "text": "Economic inequality exacerbated by AI-driven hiring decisions across demographic groups"
-      },
-      {
-        "letter": "D",
-        "text": "A privacy violation resulting from inadequate consent mechanisms for data processing"
-      }
-    ],
-    "answer": "A",
-    "explanation": "Because the organization uses a neural network, known for its opacity and lack of explainability, the organization will have difficulty explaining why the AI system rejected the application.",
-    "area": "ch1"
-  },
-  {
-    "id": "sybex-1-9",
-    "domain": "Domain I",
-    "difficulty": "",
-    "question": "The highest priority in the design of the AI system controlling an autonomous vehicle should be",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Fairness"
+        "text": "Transparency"
       },
       {
         "letter": "B",
@@ -232,22 +232,22 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Privacy"
+        "text": "Cost efficiency"
       },
       {
         "letter": "D",
-        "text": "Security"
+        "text": "Explainability"
       }
     ],
     "answer": "B",
-    "explanation": "The safety of passengers and others should be the highest priority for an autonomous vehicle.",
+    "explanation": "When a physical system operates around people, safety is the overriding design priority — failures cause bodily harm, not just bad predictions. Other principles still apply, but they are subordinate to preventing physical harm in embodied, safety-critical AI.",
     "area": "ch1"
   },
   {
-    "id": "sybex-1-10",
+    "id": "a1-10",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "The highest priority in the design of an AI system visually identifying returning customers in a retail store is",
+    "difficulty": "Medium",
+    "question": "A stadium operator deploys facial recognition so staff can greet season-ticket holders by name as they enter. Which responsible AI principle should dominate the system's design?",
     "options": [
       {
         "letter": "A",
@@ -255,1172 +255,1172 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Safety"
+        "text": "Robustness"
       },
       {
         "letter": "C",
-        "text": "Fairness"
+        "text": "Human-centricity"
       },
       {
         "letter": "D",
-        "text": "Security"
+        "text": "Accuracy"
       }
     ],
     "answer": "A",
-    "explanation": "The design and operation of an AI system employing facial recognition to detect returning customers in a retail store should prioritize privacy above other considerations.",
+    "explanation": "The system processes biometric identifiers of thousands of people for a convenience purpose — a maximally privacy-sensitive design. Biometric identification triggers special-category data protections, so privacy (minimization, consent, retention limits) must lead the design, outranking performance concerns.",
     "area": "ch1"
   },
   {
-    "id": "sybex-2-1",
+    "id": "a2-1",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "Which role is primarily responsible for selecting training data and conducting bias testing during model development?",
+    "difficulty": "Easy",
+    "question": "During model development, which role in the AI value chain is primarily responsible for curating the training dataset and running fairness evaluations?",
     "options": [
       {
         "letter": "A",
-        "text": "Compliance officer"
+        "text": "The AI deployer"
       },
       {
         "letter": "B",
-        "text": "AI deployer"
+        "text": "The AI developer"
       },
       {
         "letter": "C",
-        "text": "End user"
+        "text": "The end user"
       },
       {
         "letter": "D",
-        "text": "AI developer"
+        "text": "The data protection officer"
       }
     ],
-    "answer": "D",
-    "explanation": "Developers build and train models, which include curating datasets and running fairness evaluations.",
+    "answer": "B",
+    "explanation": "Developers build and train the model, which makes dataset curation and bias testing theirs: the decisions that shape the model's behavior happen in their hands. Deployers operationalize and monitor a finished model; users operate it; the DPO advises on privacy compliance rather than performing model development.",
     "area": "ch2"
   },
   {
-    "id": "sybex-2-2",
+    "id": "a2-2",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "What is the most appropriate governance structure for a small startup with limited AI resources?",
+    "difficulty": "Medium",
+    "question": "A ten-person startup is embedding AI into its product but has no dedicated compliance staff. Which governance structure fits its context best?",
     "options": [
       {
         "letter": "A",
-        "text": "Fully automated audit pipelines"
+        "text": "A board-level AI oversight committee with quarterly formal reviews"
       },
       {
         "letter": "B",
-        "text": "Centralized AI governance office with legal authority"
+        "text": "A centralized AI governance office holding veto authority over releases"
       },
       {
         "letter": "C",
-        "text": "Lightweight governance with designated role champions"
+        "text": "Postponing all governance activity until the company reaches 100 employees"
       },
       {
         "letter": "D",
-        "text": "A board-level AI oversight committee"
+        "text": "A lightweight framework with named cross-functional champions owning key duties"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Governance scales to organizational context: a small startup needs clear ownership without heavy machinery, which named champions across functions provide. Board committees and governance offices fit larger organizations, and deferring governance entirely leaves the highest-risk growth phase uncontrolled.",
+    "area": "ch2"
+  },
+  {
+    "id": "a2-3",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "Which situation best demonstrates cross-functional collaboration in AI governance?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A machine learning engineer independently approving their own model for release"
+      },
+      {
+        "letter": "B",
+        "text": "The legal department circulating a memo on new AI regulations"
+      },
+      {
+        "letter": "C",
+        "text": "Privacy counsel, a product owner, and a data scientist jointly reviewing a proposed AI use case"
+      },
+      {
+        "letter": "D",
+        "text": "The IT help desk logging user complaints about a chatbot"
       }
     ],
     "answer": "C",
-    "explanation": "Startups typically employ simplified governance structures with a few cross-functional leads, due to their limited staff and resources.",
+    "explanation": "Cross-functional collaboration means multiple disciplines sharing a governance decision — here legal, business, and technical perspectives jointly evaluating one use case. A memo is one-way communication, self-approval is the absence of governance, and complaint logging is a single-function activity.",
     "area": "ch2"
   },
   {
-    "id": "sybex-2-3",
+    "id": "a2-4",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "Which of the following best illustrates cross-functional collaboration in AI governance?",
+    "difficulty": "Easy",
+    "question": "Why should AI governance training be tailored to each stakeholder role rather than delivered as one generic course?",
     "options": [
       {
         "letter": "A",
-        "text": "An ethics lead, product manager, and ML engineer co-reviewing an AI use case"
+        "text": "Each role interacts with AI systems differently and needs guidance specific to its duties"
       },
       {
         "letter": "B",
-        "text": "Engineers writing code based on user feedback"
+        "text": "Generic training would violate the EU AI Act's literacy requirements"
       },
       {
         "letter": "C",
-        "text": "A legal team monitoring AI regulatory updates"
+        "text": "Only engineers can understand AI governance content"
       },
       {
         "letter": "D",
-        "text": "A data scientist leading all model deployment tasks"
+        "text": "Tailored training reduces the number of governance roles the organization needs"
       }
     ],
     "answer": "A",
-    "explanation": "Cross-functional collaboration means multiple departments sharing responsibility for governance decisions.",
+    "explanation": "An executive weighing AI risk, a developer embedding controls, and a user deciding when to trust output each need different knowledge — training is effective when it maps to actual duties. Role-tailoring is best practice, not a literal legal mandate, and governance literacy matters for every role, not just engineers.",
     "area": "ch2"
   },
   {
-    "id": "sybex-2-4",
+    "id": "a2-5",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "Why is it important to tailor AI governance training to different stakeholder roles?",
+    "difficulty": "Medium",
+    "question": "In governance terms, what distinguishes AI users from the developers and deployers of the same system?",
     "options": [
       {
         "letter": "A",
-        "text": "To increase overall automation in governance processes and reduce manual oversight"
+        "text": "Users select the model architecture and training algorithms"
       },
       {
         "letter": "B",
-        "text": "To reduce the total number of governance roles and streamline reporting structures"
+        "text": "Users own the data pipeline and retraining schedule"
       },
       {
         "letter": "C",
-        "text": "Because only technical staff require governance training on AI system operations"
+        "text": "Users operate the system in real situations and are often the first to notice harmful or unexpected behavior"
       },
       {
         "letter": "D",
-        "text": "Because each role interacts with AI systems differently and needs role-specific knowledge and responsibilities"
+        "text": "Users conduct the pre-deployment conformity assessments"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Users sit closest to the system's real-world effects — they see the odd recommendation, the unfair pattern, the confusing output — making them a critical detection layer when trained and given reporting channels. Architecture, pipelines, and conformity assessments belong to developers and deployers.",
+    "area": "ch2"
+  },
+  {
+    "id": "a2-6",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A company building AI-assisted diagnostic tools for hospitals is deciding how formal its AI governance should be. Given the heavily regulated healthcare context, which approach is most appropriate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Informal team agreements revisited when problems arise"
+      },
+      {
+        "letter": "B",
+        "text": "A short ethics statement published on the company website"
+      },
+      {
+        "letter": "C",
+        "text": "Delegating governance entirely to each product team's judgment"
+      },
+      {
+        "letter": "D",
+        "text": "Formal review gates, thorough documentation, and audit-ready processes"
       }
     ],
     "answer": "D",
-    "explanation": "Training must reflect how stakeholders utilize AI to be relevant and effective.",
+    "explanation": "Highly regulated sectors demand governance that can withstand regulator and auditor scrutiny: documented reviews, evidence trails, and repeatable processes. Informal or purely aspirational approaches cannot demonstrate compliance where health, safety, and sectoral law are engaged.",
     "area": "ch2"
   },
   {
-    "id": "sybex-2-5",
+    "id": "a2-7",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "What distinguishes an AI user from a developer or deployer in governance terms?",
+    "difficulty": "Easy",
+    "question": "In a RACI matrix used to assign AI governance duties, the letter 'A' designates the person who is",
     "options": [
       {
         "letter": "A",
-        "text": "Users interact with the AI in real-world scenarios and may identify harm or unexpected behavior that developers miss"
+        "text": "Advised"
       },
       {
         "letter": "B",
-        "text": "Users control the data pipeline, feature engineering, and model retraining schedule"
-      },
-      {
-        "letter": "C",
-        "text": "Users design and configure model architectures and select training algorithms"
-      },
-      {
-        "letter": "D",
-        "text": "Users monitor system performance drift and track key operational metrics over time"
-      }
-    ],
-    "answer": "A",
-    "explanation": "Users are closest to the operational impact of AI and are often the first to detect unintended outcomes.",
-    "area": "ch2"
-  },
-  {
-    "id": "sybex-2-6",
-    "domain": "Domain I",
-    "difficulty": "",
-    "question": "Which governance strategy is most appropriate for a highly regulated industry like healthcare?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "No oversight beyond the product team"
-      },
-      {
-        "letter": "B",
-        "text": "Formal reviews, documentation, and auditability"
-      },
-      {
-        "letter": "C",
-        "text": "Lightweight ethics principles"
-      },
-      {
-        "letter": "D",
-        "text": "Informal team agreements"
-      }
-    ],
-    "answer": "B",
-    "explanation": "Regulated industries require strict controls, impact assessments, and compliance documentation.",
-    "area": "ch2"
-  },
-  {
-    "id": "sybex-2-7",
-    "domain": "Domain I",
-    "difficulty": "",
-    "question": "In a RACI matrix, what does the “A” stand for?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Analyzed"
-      },
-      {
-        "letter": "B",
-        "text": "Authorized"
-      },
-      {
-        "letter": "C",
         "text": "Accountable"
       },
       {
+        "letter": "C",
+        "text": "Assigned"
+      },
+      {
         "letter": "D",
-        "text": "Audited"
+        "text": "Authorized"
       }
     ],
-    "answer": "C",
-    "explanation": "“Accountable” means the person who ultimately owns the task or process and ensures it’s completed correctly.",
+    "answer": "B",
+    "explanation": "RACI stands for Responsible, Accountable, Consulted, Informed. The Accountable party ultimately owns the outcome and answers for it — and sound practice assigns exactly one Accountable person per activity, preventing the diffuse ownership that lets governance tasks fall through gaps.",
     "area": "ch2"
   },
   {
-    "id": "sybex-2-8",
+    "id": "a2-8",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "Which of the following is a governance responsibility specific to AI deployers?",
+    "difficulty": "Medium",
+    "question": "Which governance responsibility belongs specifically to the deployer of an AI system rather than its developer?",
     "options": [
       {
         "letter": "A",
-        "text": "Designing the initial AI model architecture and selecting training algorithms"
+        "text": "Monitoring the operating system for performance degradation, drift, and emerging risks"
       },
       {
         "letter": "B",
-        "text": "Conducting pre-deployment conformity assessments and regulatory compliance checks"
+        "text": "Selecting the model architecture and tuning its hyperparameters"
       },
       {
         "letter": "C",
-        "text": "Monitoring deployed AI systems for performance degradation, drift, and emerging risks during operation"
+        "text": "Curating and labeling the original training dataset"
       },
       {
         "letter": "D",
-        "text": "Defining the organization's overall AI governance strategy and policy framework"
-      }
-    ],
-    "answer": "C",
-    "explanation": "Deployers operationalize models, ensuring they function reliably and are monitored for risk.",
-    "area": "ch2"
-  },
-  {
-    "id": "sybex-2-9",
-    "domain": "Domain I",
-    "difficulty": "",
-    "question": "What is a primary governance benefit of cross-functional AI use case reviews?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Reduced need for end-user input"
-      },
-      {
-        "letter": "B",
-        "text": "Avoiding documentation of model design"
-      },
-      {
-        "letter": "C",
-        "text": "Increased software development speed"
-      },
-      {
-        "letter": "D",
-        "text": "Holistic risk evaluation from multiple perspectives"
-      }
-    ],
-    "answer": "D",
-    "explanation": "Collaborative reviews ensure that ethical, legal, business, and technical risks are considered together.",
-    "area": "ch2"
-  },
-  {
-    "id": "sybex-2-10",
-    "domain": "Domain I",
-    "difficulty": "",
-    "question": "Which of the following would most likely appear in a well-designed AI governance training program?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "A tutorial on secure coding practices and software vulnerability assessment"
-      },
-      {
-        "letter": "B",
-        "text": "An introductory primer explaining basic generative art techniques and applications"
-      },
-      {
-        "letter": "C",
-        "text": "A detailed case study showing a real governance failure, its root causes, and the corrective measures implemented"
-      },
-      {
-        "letter": "D",
-        "text": "A financial literacy quiz covering fundamental investment and budgeting concepts"
-      }
-    ],
-    "answer": "C",
-    "explanation": "Real-world examples help stakeholders understand the consequences of poor governance and how to respond.",
-    "area": "ch2"
-  },
-  {
-    "id": "sybex-3-1",
-    "domain": "Domain I",
-    "difficulty": "",
-    "question": "Which of the following best describes a key principle of lifecycle-based AI governance?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Embed accountability mechanisms at each phase of the AI development process."
-      },
-      {
-        "letter": "B",
-        "text": "Apply oversight only at the deployment stage."
-      },
-      {
-        "letter": "C",
-        "text": "Use governance only for models trained on sensitive data."
-      },
-      {
-        "letter": "D",
-        "text": "Delegate AI governance solely to the data science team."
+        "text": "Publishing the model's architecture research"
       }
     ],
     "answer": "A",
-    "explanation": "AI governance must be continuous and span the entire lifecycle, from use case assessment to incident management. Limiting governance to deployment or specific data types introduces risk.",
-    "area": "ch3"
+    "explanation": "Deployers operationalize the system and own its behavior in context: monitoring performance, watching for drift, overseeing day-to-day risk. Architecture, tuning, and training-data work happen on the development side before the system ever reaches the deployer.",
+    "area": "ch2"
   },
   {
-    "id": "sybex-3-2",
+    "id": "a2-9",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "What is the primary risk associated with using anonymized training data in AI models?",
+    "difficulty": "Easy",
+    "question": "What is the primary governance benefit of reviewing proposed AI use cases with a cross-functional group rather than a single department?",
     "options": [
       {
         "letter": "A",
-        "text": "Anonymized data always improves model fairness."
+        "text": "It shortens the development timeline"
       },
       {
         "letter": "B",
-        "text": "Anonymized data increases training time."
+        "text": "It eliminates the need for written documentation"
       },
       {
         "letter": "C",
-        "text": "The data cannot be used under GDPR."
+        "text": "It transfers legal liability to the review group"
       },
       {
         "letter": "D",
-        "text": "AI models can potentially reidentify individuals through inference."
+        "text": "Risks are evaluated holistically — legal, ethical, technical, and business perspectives together"
       }
     ],
     "answer": "D",
-    "explanation": "Even anonymized data can be reverse-engineered or inferred from model behavior. This is a known risk in AI privacy and requires stronger safeguards.",
-    "area": "ch3"
+    "explanation": "Each discipline sees failure modes the others miss: lawyers spot regulatory exposure, ethicists spot fairness issues, engineers spot technical fragility, business owners spot operational impact. Joint review surfaces the full risk picture before commitment — it does not speed development, replace documentation, or move liability.",
+    "area": "ch2"
   },
   {
-    "id": "sybex-3-3",
+    "id": "a2-10",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "Which of the following is a valid policy control for managing third-party AI risk?",
+    "difficulty": "Medium",
+    "question": "Which element would add the most value to an organization's AI governance training program?",
     "options": [
       {
         "letter": "A",
-        "text": "Limiting partnerships to vendors with ISO 42001 certification only"
+        "text": "A screensaver reminding staff that AI policies exist"
       },
       {
         "letter": "B",
-        "text": "Prohibiting all third-party AI tools entirely"
+        "text": "A case study walking through a real AI governance failure, its root causes, and the response"
       },
       {
         "letter": "C",
-        "text": "Requiring model documentation and training data provenance"
+        "text": "A generic overview of programming languages used in machine learning"
       },
       {
         "letter": "D",
-        "text": "Relying on vendor self-attestations without further review"
+        "text": "An annual email linking to the unchanged policy document"
       }
     ],
-    "answer": "C",
-    "explanation": "Governance policies should demand transparency about the model and data. Documentation helps evaluate fairness, legality, and risk exposure.",
-    "area": "ch3"
+    "answer": "B",
+    "explanation": "Concrete failure case studies teach stakeholders what governance breakdown actually looks like, why it happened, and how to respond — converting abstract policy into recognizable patterns. Passive reminders and generic technical overviews build neither judgment nor accountability.",
+    "area": "ch2"
   },
   {
-    "id": "sybex-3-4",
+    "id": "a3-1",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "A policy that mandates periodic monitoring for model drift is best aligned with which lifecycle stage?",
+    "difficulty": "Easy",
+    "question": "An organization is drafting its AI governance policy set. Which statement reflects the correct scope for lifecycle-based governance?",
     "options": [
       {
         "letter": "A",
+        "text": "Governance activities should concentrate on the deployment stage, where risk materializes"
+      },
+      {
+        "letter": "B",
+        "text": "Governance applies only to systems that process personal or sensitive data"
+      },
+      {
+        "letter": "C",
+        "text": "Accountability and oversight mechanisms should attach to every stage, from use-case assessment through retirement"
+      },
+      {
+        "letter": "D",
+        "text": "Governance decisions belong to the data science team that best understands the models"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Lifecycle-based governance is continuous: risks are introduced at every stage — use-case selection, data acquisition, training, release, operation, retirement — so accountability must attach at each of them. Deployment-only oversight misses design-stage risk, data-sensitivity scoping misses non-privacy harms, and single-team ownership defeats multidisciplinary review.",
+    "area": "ch3"
+  },
+  {
+    "id": "a3-2",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "A company strips names and contact details from customer records before using them to train a model, then treats the data as anonymous. What residual privacy risk should its policies address?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Anonymized data categorically may not be used for AI training in the EU"
+      },
+      {
+        "letter": "B",
+        "text": "The model or remaining attributes may enable re-identification of individuals through inference"
+      },
+      {
+        "letter": "C",
+        "text": "Anonymization always degrades model accuracy below usable levels"
+      },
+      {
+        "letter": "D",
+        "text": "Anonymized records consume substantially more storage than raw records"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Removing direct identifiers is not anonymization: combinations of remaining quasi-identifiers, linkage with external datasets, and model-level attacks like inversion can re-identify individuals. Policies must treat claimed-anonymous training data as a live privacy risk requiring evaluation, not a solved problem.",
+    "area": "ch3"
+  },
+  {
+    "id": "a3-3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Which requirement belongs in an organization's policy for managing third-party AI risk?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vendors must supply model documentation and evidence of training-data provenance"
+      },
+      {
+        "letter": "B",
+        "text": "All third-party AI tools are banned to eliminate the risk category"
+      },
+      {
+        "letter": "C",
+        "text": "Vendor self-attestation questionnaires are accepted as sufficient assurance"
+      },
+      {
+        "letter": "D",
+        "text": "Only vendors holding an ISO/IEC 42001 certificate may be considered"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Documentation and data provenance let the organization actually evaluate a vendor's model for legality, fairness, and fitness — the substance of third-party AI diligence. Blanket bans forfeit legitimate capability, unverified self-attestation is not assurance, and a single-certification gate both over-restricts and under-examines.",
+    "area": "ch3"
+  },
+  {
+    "id": "a3-4",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "An AI policy requires scheduled checks for model drift and performance degradation. To which lifecycle stage does this policy primarily apply?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Use-case approval"
+      },
+      {
+        "letter": "B",
         "text": "Data acquisition"
       },
       {
-        "letter": "B",
-        "text": "Training and testing"
-      },
-      {
         "letter": "C",
-        "text": "Use case approval"
+        "text": "Model training"
       },
       {
         "letter": "D",
-        "text": "Deployment and monitoring"
+        "text": "Post-deployment operation and monitoring"
       }
     ],
     "answer": "D",
-    "explanation": "Monitoring is a post-deployment function that ensures models continue to perform ethically and effectively under real-world conditions, for example, to detect emerging bias and drift issues.",
+    "explanation": "Drift only exists once a model meets live data, so drift-monitoring policy governs the operational stage: watching deployed behavior against the world as it changes. Earlier stages have their own controls — approval gates, data rights checks, validation — but drift detection is inherently post-deployment.",
     "area": "ch3"
   },
   {
-    "id": "sybex-3-5",
+    "id": "a3-5",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "Which of the following is a recommended contractual clause when procuring an AI-enabled service?",
+    "difficulty": "Medium",
+    "question": "When contracting for an AI-enabled service, which clause most strengthens the customer's governance position?",
     "options": [
       {
         "letter": "A",
-        "text": "The vendor is exempt from bias-related complaints."
+        "text": "A clause exempting the vendor from responsibility for discriminatory outcomes"
       },
       {
         "letter": "B",
-        "text": "The vendor must allow audit access and disclose data sources."
+        "text": "A requirement that the vendor disclose its complete proprietary source code"
       },
       {
         "letter": "C",
-        "text": "The vendor must disclose all proprietary source code."
+        "text": "Audit rights plus disclosure of data sources and fairness-testing evidence"
       },
       {
         "letter": "D",
-        "text": "The vendor will maintain confidentiality for three months only."
-      }
-    ],
-    "answer": "B",
-    "explanation": "Contracts should require transparency and auditability, especially for high-risk AI applications. This includes data origin, fairness testing, and monitoring results.",
-    "area": "ch3"
-  },
-  {
-    "id": "sybex-3-6",
-    "domain": "Domain I",
-    "difficulty": "",
-    "question": "What is one reason traditional privacy policies may be insufficient for AI systems?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "They do not address the retention of inference outputs."
-      },
-      {
-        "letter": "B",
-        "text": "They prohibit all personal data processing."
-      },
-      {
-        "letter": "C",
-        "text": "They assume all data is structured."
-      },
-      {
-        "letter": "D",
-        "text": "They focus only on system availability."
-      }
-    ],
-    "answer": "A",
-    "explanation": "AI models may “remember” or leak training data. Traditional policies rarely account for the retention risks related to what a model has learned or memorized.",
-    "area": "ch3"
-  },
-  {
-    "id": "sybex-3-7",
-    "domain": "Domain I",
-    "difficulty": "",
-    "question": "What is the purpose of assigning risk tiers to AI vendors?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "To apply appropriate governance controls based on risk level"
-      },
-      {
-        "letter": "B",
-        "text": "To determine marketing budgets for the AI solution"
-      },
-      {
-        "letter": "C",
-        "text": "To limit the number of contracts issued"
-      },
-      {
-        "letter": "D",
-        "text": "To allow procurement to bypass risk reviews for large vendors"
-      }
-    ],
-    "answer": "A",
-    "explanation": "Risk-based tiering ensures that higher-risk vendors (for example, those processing sensitive data or supporting critical functions) are subject to more thorough review and oversight.",
-    "area": "ch3"
-  },
-  {
-    "id": "sybex-3-8",
-    "domain": "Domain I",
-    "difficulty": "",
-    "question": "Which policy control helps enforce purpose limitation in AI pipelines?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Prohibiting the use of cloud storage"
-      },
-      {
-        "letter": "B",
-        "text": "Using a use case registry to tag approved applications of data"
-      },
-      {
-        "letter": "C",
-        "text": "Allowing unlimited data reuse for internal projects"
-      },
-      {
-        "letter": "D",
-        "text": "Allowing only unstructured data in training"
-      }
-    ],
-    "answer": "B",
-    "explanation": "A use case registry enables organizations to track and enforce approved purposes for data use, preventing unauthorized repurposing.",
-    "area": "ch3"
-  },
-  {
-    "id": "sybex-3-9",
-    "domain": "Domain I",
-    "difficulty": "",
-    "question": "Which of the following would most effectively reduce bias in AI model development?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Optimizing models solely for accuracy"
-      },
-      {
-        "letter": "B",
-        "text": "Using only synthetic data in training"
-      },
-      {
-        "letter": "C",
-        "text": "Testing model outputs against diverse population subgroups"
-      },
-      {
-        "letter": "D",
-        "text": "Encrypting all datasets before training"
+        "text": "A confidentiality term limited to ninety days after signature"
       }
     ],
     "answer": "C",
-    "explanation": "Fairness testing against different groups helps identify and reduce disparate impact, which is essential for ethical AI development.",
+    "explanation": "Audit access and transparency about data origins and fairness testing give the customer the means to verify claims and manage inherited risk — the practical core of AI vendor contracting. Bias exemptions shift risk the wrong way, full source disclosure is unnecessary and unobtainable, and truncated confidentiality protects no one.",
     "area": "ch3"
   },
   {
-    "id": "sybex-3-10",
+    "id": "a3-6",
     "domain": "Domain I",
-    "difficulty": "",
-    "question": "What does “model inversion” refer to in the context of AI privacy risk?",
+    "difficulty": "Medium",
+    "question": "Why do privacy policies written before the AI era often fall short when applied to machine learning systems?",
     "options": [
       {
         "letter": "A",
-        "text": "Recovering training data from model outputs"
+        "text": "They prohibit all processing of personal data"
       },
       {
         "letter": "B",
-        "text": "Changing labels after training is complete"
+        "text": "They apply only to paper records rather than digital ones"
       },
       {
         "letter": "C",
-        "text": "A method of retraining a model on augmented data"
+        "text": "They cover security incidents but not availability targets"
       },
       {
         "letter": "D",
-        "text": "Reversing a model’s optimization objective"
+        "text": "They never contemplated that trained models retain and can leak what they learned from data"
       }
     ],
-    "answer": "A",
-    "explanation": "Model inversion is a privacy threat in which attackers use access to a model to reconstruct inputs from its outputs, posing serious risks to data confidentiality.",
+    "answer": "D",
+    "explanation": "Legacy policies govern data in databases; they say nothing about data persisting inside model weights, memorization leaking through outputs, or what a deletion request means for a trained model. That retention-in-the-model gap is a defining reason AI demands policy updates.",
     "area": "ch3"
   },
   {
-    "id": "sybex-4-1",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "Under the GDPR, which legal basis is most often required for processing special category (sensitive) data?",
+    "id": "a3-7",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "Why do mature procurement programs assign risk tiers to AI vendors?",
     "options": [
       {
         "letter": "A",
-        "text": "Legitimate consent"
+        "text": "To fast-track contracts with the largest suppliers"
       },
       {
         "letter": "B",
-        "text": "Implied consent"
+        "text": "To scale the depth of diligence and ongoing controls to each vendor's risk level"
       },
       {
         "letter": "C",
-        "text": "Performance of a contract"
+        "text": "To rank vendors for co-marketing opportunities"
       },
       {
         "letter": "D",
-        "text": "Explicit consent"
-      }
-    ],
-    "answer": "D",
-    "explanation": "Article 9 of the GDPR generally prohibits the processing of special category data unless an exception applies; the most common exception is explicit consent, which must be freely given, specific, and informed.",
-    "area": "ch4"
-  },
-  {
-    "id": "sybex-4-2",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "Which of the following best describes*purpose limitation*in the context of AI?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Using third-party datasets without reviewing their original purpose"
-      },
-      {
-        "letter": "B",
-        "text": "Allowing reuse of data for any purpose deemed profitable"
-      },
-      {
-        "letter": "C",
-        "text": "Collecting data from as many sources as possible"
-      },
-      {
-        "letter": "D",
-        "text": "Ensuring data is collected for a specific, explicit purpose and not reused incompatibly"
-      }
-    ],
-    "answer": "D",
-    "explanation": "Purpose limitation requires that personal data be used only for the purpose for which it was collected, and not repurposed unless the new use is compatible or consent is reobtained.",
-    "area": "ch4"
-  },
-  {
-    "id": "sybex-4-3",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "A Data Protection Impact Assessment (DPIA) is required when",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Processing involves special category data and could pose high risks to the rights and freedoms of individuals"
-      },
-      {
-        "letter": "B",
-        "text": "A system is used internally by employees without any external or customer-facing impact"
-      },
-      {
-        "letter": "C",
-        "text": "Any personal data, regardless of sensitivity, is used for direct marketing purposes"
-      },
-      {
-        "letter": "D",
-        "text": "A low-risk AI system is deployed for purely internal administrative support tasks"
-      }
-    ],
-    "answer": "A",
-    "explanation": "DPIAs are mandated under Article 35 of the GDPR when processing is likely to result in a high risk to individuals, including when AI systems process sensitive data.",
-    "area": "ch4"
-  },
-  {
-    "id": "sybex-4-4",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "What role does a data controller play in the AI lifecycle?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Manages the physical server infrastructure"
-      },
-      {
-        "letter": "B",
-        "text": "Develops algorithms for all third parties"
-      },
-      {
-        "letter": "C",
-        "text": "Handles data breaches only"
-      },
-      {
-        "letter": "D",
-        "text": "Determines the purpose and means of data processing"
-      }
-    ],
-    "answer": "D",
-    "explanation": "A data controller is responsible for deciding why and how personal data is processed and carries the accountability for compliance with data protection laws.",
-    "area": "ch4"
-  },
-  {
-    "id": "sybex-4-5",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "Which of the following would likely require heightened safeguards under privacy law?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Facial recognition used for retail surveillance"
-      },
-      {
-        "letter": "B",
-        "text": "User preferences on website themes"
-      },
-      {
-        "letter": "C",
-        "text": "A/B testing of homepage layout"
-      },
-      {
-        "letter": "D",
-        "text": "Email addresses used for newsletter signups"
-      }
-    ],
-    "answer": "A",
-    "explanation": "Facial recognition is a form of biometric data used for identification, which qualifies as special category data and requires strict controls under laws such as the GDPR.",
-    "area": "ch4"
-  },
-  {
-    "id": "sybex-4-6",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "What is a common risk of AI systems inferring sensitive data?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Triggering data protection obligations by inferring sensitive attributes the organization never explicitly collected"
-      },
-      {
-        "letter": "B",
-        "text": "Preventing independent evaluation of inference accuracy against ground truth measurements"
-      },
-      {
-        "letter": "C",
-        "text": "Reducing model training costs through more efficient use of available training data"
-      },
-      {
-        "letter": "D",
-        "text": "Decreasing model explainability due to reliance on inferred rather than collected features"
-      }
-    ],
-    "answer": "A",
-    "explanation": "When AI systems infer special category attributes (for example, religion, sexual orientation), this processing is still subject to the same legal protections and may require consent or an Article 9 exception.",
-    "area": "ch4"
-  },
-  {
-    "id": "sybex-4-7",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "What is a key element of privacy by design in AI systems?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Conducting a DPIA only if explicitly requested to do so by a regulatory authority"
-      },
-      {
-        "letter": "B",
-        "text": "Embedding privacy protections throughout the entire system lifecycle, from design through decommissioning"
-      },
-      {
-        "letter": "C",
-        "text": "Focusing development effort on maximizing model accuracy before addressing privacy concerns"
-      },
-      {
-        "letter": "D",
-        "text": "Delegating all privacy compliance obligations to external third-party vendors"
+        "text": "To cap the total number of vendor relationships"
       }
     ],
     "answer": "B",
-    "explanation": "Privacy by design calls for integrating privacy considerations at every stage of development, from problem definition to deployment and monitoring.",
-    "area": "ch4"
+    "explanation": "Tiering is proportionality applied to procurement: a vendor processing sensitive data or supporting critical functions warrants deep diligence and continuous monitoring, while a low-stakes tool gets a lighter path. Uniform treatment either wastes effort or under-controls the vendors that matter.",
+    "area": "ch3"
   },
   {
-    "id": "sybex-4-8",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "Which scenario best reflects the principle of data minimization?",
+    "id": "a3-8",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Which policy mechanism most directly enforces purpose limitation across an organization's AI data pipelines?",
     "options": [
       {
         "letter": "A",
-        "text": "Archiving full user profiles for at least ten years"
+        "text": "A use-case registry that records each dataset's approved applications and blocks unregistered uses"
       },
       {
         "letter": "B",
-        "text": "Collecting all available user data for future analysis"
+        "text": "A mandate that all datasets be stored on-premises"
       },
       {
         "letter": "C",
-        "text": "Combining datasets from unrelated apps to improve personalization"
+        "text": "A standing authorization for any internal team to reuse existing data"
       },
       {
         "letter": "D",
-        "text": "Using anonymized transaction data limited to the current model’s purpose"
+        "text": "A rule that only aggregated data may ever be collected"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Purpose limitation fails through quiet repurposing, and a use-case registry attacks exactly that: every dataset's approved purposes are recorded, so a new use is visible, reviewable, and blockable. Storage location doesn't govern purpose, and blanket reuse authorization is the violation itself, formalized.",
+    "area": "ch3"
+  },
+  {
+    "id": "a3-9",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Which practice would most effectively reduce bias during AI model development?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Optimizing exclusively for overall accuracy on the full test set"
+      },
+      {
+        "letter": "B",
+        "text": "Encrypting the training data before model training begins"
+      },
+      {
+        "letter": "C",
+        "text": "Replacing all real training data with synthetic data"
+      },
+      {
+        "letter": "D",
+        "text": "Evaluating model performance separately across diverse demographic subgroups"
       }
     ],
     "answer": "D",
-    "explanation": "Data minimization refers to collecting and using only the information necessary for a specific task. Anonymized, purpose-limited data use is a textbook example.",
-    "area": "ch4"
+    "explanation": "Bias hides inside aggregate metrics: a model can post excellent overall accuracy while failing one subgroup badly. Disaggregated evaluation across demographic slices is what surfaces disparate performance so it can be corrected. Encryption addresses confidentiality, not fairness, and synthetic data inherits the biases of whatever generated it.",
+    "area": "ch3"
   },
   {
-    "id": "sybex-4-9",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "Which obligation must a controller meet when using third-party AI processors?",
+    "id": "a3-10",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "In AI privacy risk, a 'model inversion' attack refers to",
     "options": [
       {
         "letter": "A",
-        "text": "Accept vendor liability for privacy compliance."
+        "text": "Flipping a model's classification labels after deployment"
       },
       {
         "letter": "B",
-        "text": "Include model logic in the user privacy notice."
+        "text": "Retraining a model on adversarially augmented data"
       },
       {
         "letter": "C",
-        "text": "Allow unlimited use of training data by the vendor."
+        "text": "Exploiting access to a model to reconstruct the data it was trained on"
       },
       {
         "letter": "D",
-        "text": "Sign a DPA with required contractual terms under Article 28 GDPR."
-      }
-    ],
-    "answer": "D",
-    "explanation": "Controllers must have contracts with processors that define the scope, safeguards, instructions, and responsibilities as outlined in Article 28 of the GDPR.",
-    "area": "ch4"
-  },
-  {
-    "id": "sybex-4-10",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "Under GDPR Article 22, what must be provided when a decision based solely on automated processing significantly affects an individual?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Permanent deletion of all personal data held by the organization across all processing systems"
-      },
-      {
-        "letter": "B",
-        "text": "Unrestricted data portability allowing transfer of all processing records to another provider"
-      },
-      {
-        "letter": "C",
-        "text": "Meaningful human review of the automated decision and the right to contest the outcome"
-      },
-      {
-        "letter": "D",
-        "text": "Full access to the model's source code, training methodology, and architecture documentation"
+        "text": "Reversing a model's optimization objective during fine-tuning"
       }
     ],
     "answer": "C",
-    "explanation": "Article 22 of the GDPR requires that individuals subject to significant automated decisions have the right to obtain human intervention, express their point of view, and contest the outcome.",
+    "explanation": "Model inversion turns the model itself into a disclosure channel: by systematically querying it, an attacker reconstructs training inputs — recognizable faces from a recognition model, sensitive records from a classifier. It is a core reason 'the model is not the data' fails as a privacy argument.",
+    "area": "ch3"
+  },
+  {
+    "id": "a4-1",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A wellness app wants its AI to process users' health information. Under GDPR Article 9, which condition most commonly legitimizes processing this special category data?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Implied consent inferred from continued app usage"
+      },
+      {
+        "letter": "B",
+        "text": "Explicit consent given by the user for the health-data processing"
+      },
+      {
+        "letter": "C",
+        "text": "The company's legitimate commercial interest in product improvement"
+      },
+      {
+        "letter": "D",
+        "text": "Performance of the app's standard terms of service"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Article 9 prohibits processing special categories like health data unless a specific condition applies, and for consumer contexts the workhorse condition is explicit consent — a clear affirmative statement specific to the sensitive processing. Implied consent fails the standard entirely, and legitimate interests is not an Article 9 condition.",
     "area": "ch4"
   },
   {
-    "id": "sybex-5-1",
+    "id": "a4-2",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "Which of the following best describes a potential copyright issue with AI training data?",
+    "difficulty": "Easy",
+    "question": "In the AI context, the GDPR principle of purpose limitation means",
     "options": [
       {
         "letter": "A",
-        "text": "Training on public domain materials"
+        "text": "Personal data is collected for specified, explicit purposes and not reused in incompatible ways"
       },
       {
         "letter": "B",
-        "text": "Using data from government websites"
+        "text": "Each AI system may serve no more than one business function"
       },
       {
         "letter": "C",
-        "text": "Using statistical summaries of datasets"
+        "text": "Data collection should maximize future analytical options"
       },
       {
         "letter": "D",
-        "text": "Using copyrighted images without permission"
+        "text": "Third-party datasets may be used without examining their original collection purpose"
       }
     ],
-    "answer": "D",
-    "explanation": "Using copyrighted images without permission may infringe on reproduction rights and does not automatically qualify as fair use.",
-    "area": "ch5"
+    "answer": "A",
+    "explanation": "Purpose limitation binds data to the purposes stated at collection; a new use — such as training an AI model — requires either compatibility with the original purpose or a fresh lawful basis. It limits data reuse, not system functionality, and it makes 'collect everything for later' the anti-pattern rather than the strategy.",
+    "area": "ch4"
   },
   {
-    "id": "sybex-5-2",
+    "id": "a4-3",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "Under U.S. law, which of the following is a protected characteristic in employment discrimination cases involving AI tools?",
+    "difficulty": "Medium",
+    "question": "Under GDPR Article 35, a Data Protection Impact Assessment is required when",
     "options": [
       {
         "letter": "A",
-        "text": "Education level"
+        "text": "Any personal data is processed for any purpose, however routine"
       },
       {
         "letter": "B",
-        "text": "Political affiliation"
+        "text": "A system is used only by employees rather than customers"
       },
       {
         "letter": "C",
-        "text": "Internet usage history"
+        "text": "Processing — such as large-scale use of special category data or systematic profiling — is likely to pose high risk to individuals' rights"
       },
       {
         "letter": "D",
-        "text": "Race"
-      }
-    ],
-    "answer": "D",
-    "explanation": "Race is explicitly protected under Title VII of the Civil Rights Act. AI tools must be audited for disparate impact across such categories.",
-    "area": "ch5"
-  },
-  {
-    "id": "sybex-5-3",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "What is a key principle behind the FTC’s approach to AI under Section 5 of the FTC Act?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "AI disclosures must be approved by a federal judge."
-      },
-      {
-        "letter": "B",
-        "text": "Only AI used for profit is regulated."
-      },
-      {
-        "letter": "C",
-        "text": "Undisclosed use of AI may be considered deceptive."
-      },
-      {
-        "letter": "D",
-        "text": "AI is not subject to consumer protection laws."
+        "text": "A low-risk administrative tool is rolled out to a single department"
       }
     ],
     "answer": "C",
-    "explanation": "The FTC has warned that failing to disclose AI interactions may mislead reasonable consumers and violate deceptive practice standards.",
-    "area": "ch5"
+    "explanation": "The DPIA trigger is likely high risk to individuals: Article 35 names systematic and extensive automated evaluation, large-scale special-category processing, and systematic public monitoring as canonical cases — AI profiling routinely qualifies. Routine, low-risk processing does not require one, whoever the users are.",
+    "area": "ch4"
   },
   {
-    "id": "sybex-5-4",
+    "id": "a4-4",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "In product liability law, what type of defect occurs when a product’s original design is inherently unsafe?",
+    "difficulty": "Easy",
+    "question": "Within an AI project, the party acting as the GDPR data controller is the one that",
     "options": [
       {
         "letter": "A",
+        "text": "Operates the cloud infrastructure hosting the training pipeline"
+      },
+      {
+        "letter": "B",
+        "text": "Determines why and how personal data will be processed"
+      },
+      {
+        "letter": "C",
+        "text": "Responds to security incidents affecting the dataset"
+      },
+      {
+        "letter": "D",
+        "text": "Writes the machine learning code under contract"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The controller decides purposes and means — why the data is processed and how — and carries accountability for compliance. Hosting, incident response, and contracted development are activities a processor can perform on instructions; the decision-making role is what confers controller status, whatever the contract says.",
+    "area": "ch4"
+  },
+  {
+    "id": "a4-5",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Which of the following data uses would demand the most stringent safeguards under privacy law?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Saving users' preferred display language"
+      },
+      {
+        "letter": "B",
+        "text": "A/B testing two versions of a landing page"
+      },
+      {
+        "letter": "C",
+        "text": "Scanning shoppers' faces to identify individuals entering a store"
+      },
+      {
+        "letter": "D",
+        "text": "Collecting email addresses for a requested newsletter"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Facial identification processes biometric data to uniquely identify people — special category data under GDPR Article 9 — and does so in a surveillance context, compounding the sensitivity. Display preferences, layout tests, and requested newsletters involve ordinary data with low risk.",
+    "area": "ch4"
+  },
+  {
+    "id": "a4-6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "An AI system analyzing supermarket purchase patterns can predict which customers are likely pregnant. What privacy risk does this illustrate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Overfitting to the training population's purchasing habits"
+      },
+      {
+        "letter": "B",
+        "text": "Excessive data retention beyond the stated storage period"
+      },
+      {
+        "letter": "C",
+        "text": "Inadequate encryption of the transaction database"
+      },
+      {
+        "letter": "D",
+        "text": "Inference of sensitive attributes the organization never collected, triggering heightened legal obligations"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The system derives health-related information from ordinary shopping data — and inferred special-category data carries the same legal protections as collected special-category data. Inference risk means an organization can stumble into Article 9 territory without ever asking a sensitive question.",
+    "area": "ch4"
+  },
+  {
+    "id": "a4-7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Which practice exemplifies privacy by design in an AI system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Commissioning a privacy review after the system reaches production"
+      },
+      {
+        "letter": "B",
+        "text": "Building privacy protections into every lifecycle stage, from problem definition through monitoring"
+      },
+      {
+        "letter": "C",
+        "text": "Perfecting model accuracy first and retrofitting privacy controls afterward"
+      },
+      {
+        "letter": "D",
+        "text": "Transferring privacy compliance duties to the hosting vendor"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Privacy by design — codified in GDPR Article 25 — makes privacy a design requirement from the start: minimization in the pipeline, protective defaults, retention limits in the architecture. Post-hoc reviews and retrofits are the pattern it exists to replace, and compliance accountability cannot be delegated to a vendor.",
+    "area": "ch4"
+  },
+  {
+    "id": "a4-8",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Which scenario best demonstrates the data minimization principle in AI development?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Training on de-identified transaction records limited to the fields the model's purpose requires"
+      },
+      {
+        "letter": "B",
+        "text": "Ingesting every available customer attribute in case it proves useful later"
+      },
+      {
+        "letter": "C",
+        "text": "Merging datasets from unrelated products to enrich user profiles"
+      },
+      {
+        "letter": "D",
+        "text": "Retaining complete user histories indefinitely to support future models"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Minimization means adequate, relevant, and limited to what the purpose needs — narrow fields, de-identified where possible, kept no longer than necessary. Speculative collection, cross-product enrichment, and indefinite retention are each the opposite instinct.",
+    "area": "ch4"
+  },
+  {
+    "id": "a4-9",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A controller engages an external AI service that will process its customers' personal data. What does GDPR Article 28 require?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A data processing agreement binding the vendor to documented instructions, security measures, sub-processor controls, and audit rights"
+      },
+      {
+        "letter": "B",
+        "text": "Transfer of all privacy liability to the vendor"
+      },
+      {
+        "letter": "C",
+        "text": "Publication of the vendor's model logic in the customer privacy notice"
+      },
+      {
+        "letter": "D",
+        "text": "A license permitting the vendor unlimited reuse of the training data"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Article 28 requires a binding contract with any processor covering instructions, confidentiality, security, sub-processing, data subject rights support, breach notice, deletion or return, and audit rights. Accountability stays with the controller — it cannot be contracted away, and unlimited vendor data reuse would violate the instruction requirement outright.",
+    "area": "ch4"
+  },
+  {
+    "id": "a4-10",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A loan applicant is denied by a fully automated credit model with no human involvement. Under GDPR Article 22, what is the applicant entitled to?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Disclosure of the model's source code and training corpus"
+      },
+      {
+        "letter": "B",
+        "text": "Human intervention in the decision, the chance to present their view, and the right to contest the outcome"
+      },
+      {
+        "letter": "C",
+        "text": "Automatic reversal of the denial and approval of the loan"
+      },
+      {
+        "letter": "D",
+        "text": "Erasure of all their personal data from the lender's systems"
+      }
+    ],
+    "answer": "B",
+    "explanation": "For solely automated decisions with legal or similarly significant effects, Article 22's safeguards guarantee human intervention, the ability to express one's point of view, and the right to contest. It does not grant source-code access, automatic reversal, or erasure — it guarantees a human route of challenge.",
+    "area": "ch4"
+  },
+  {
+    "id": "a5-1",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A startup scrapes professional stock-photography sites and trains an image generator on the collected works without licenses. Which intellectual property concern does this raise most directly?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Patent infringement of the photographers' camera technology"
+      },
+      {
+        "letter": "B",
+        "text": "Copyright infringement through unauthorized reproduction of protected works in training"
+      },
+      {
+        "letter": "C",
+        "text": "Trademark dilution of the photography sites' brands"
+      },
+      {
+        "letter": "D",
+        "text": "Trade secret misappropriation of the sites' recommendation algorithms"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Copying protected creative works into a training corpus without permission implicates the reproduction right, and fair use for AI training remains contested rather than settled. Patents, trademarks, and trade secrets protect different subject matter that scraping photographs does not touch.",
+    "area": "ch5"
+  },
+  {
+    "id": "a5-2",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A company uses an AI screening tool to rank job applicants. Under US federal employment law, which applicant characteristic is legally protected against discrimination?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Religion"
+      },
+      {
+        "letter": "B",
+        "text": "Commute distance"
+      },
+      {
+        "letter": "C",
+        "text": "Typing speed"
+      },
+      {
+        "letter": "D",
+        "text": "Preferred work schedule"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Title VII of the Civil Rights Act protects race, color, religion, sex, and national origin in employment — AI screening tools must be evaluated for disparate impact across these categories. Commute distance, typing speed, and schedule preferences are not protected classes, though they can act as risky proxies for ones that are.",
+    "area": "ch5"
+  },
+  {
+    "id": "a5-3",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An online retailer's support 'representatives' are actually AI chatbots, and customers are never told. Under FTC Act Section 5, why is this practice risky?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Chatbots are prohibited from handling payment disputes"
+      },
+      {
+        "letter": "B",
+        "text": "The FTC requires all AI systems to be registered before consumer use"
+      },
+      {
+        "letter": "C",
+        "text": "AI-generated text is automatically classified as advertising"
+      },
+      {
+        "letter": "D",
+        "text": "Concealing that customers are interacting with AI can constitute a deceptive practice"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Section 5 prohibits deceptive practices, and the FTC has signaled that leading reasonable consumers to believe they are dealing with a human when they are not can qualify. There is no federal AI registration regime — the exposure comes from the misleading impression, not from using AI itself.",
+    "area": "ch5"
+  },
+  {
+    "id": "a5-4",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "An autonomous lawn mower's obstacle-detection logic cannot reliably distinguish small children from shrubbery — a flaw present in every unit as specified. In product liability terms, this is a",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Manufacturing defect"
+      },
+      {
+        "letter": "B",
         "text": "Marketing defect"
       },
       {
-        "letter": "B",
+        "letter": "C",
         "text": "Design defect"
       },
       {
-        "letter": "C",
-        "text": "Distribution defect"
-      },
-      {
         "letter": "D",
-        "text": "Manufacturing defect"
-      }
-    ],
-    "answer": "B",
-    "explanation": "Design defects refer to flaws in the product’s intended specifications, regardless of how well it was manufactured.",
-    "area": "ch5"
-  },
-  {
-    "id": "sybex-5-5",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "Which legal framework prohibits discrimination in loan decisions made by AI?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Computer Fraud and Abuse Act (CFAA)"
-      },
-      {
-        "letter": "B",
-        "text": "Digital Millennium Copyright Act (DMCA)"
-      },
-      {
-        "letter": "C",
-        "text": "Sherman Antitrust Act"
-      },
-      {
-        "letter": "D",
-        "text": "Equal Credit Opportunity Act (ECOA)"
-      }
-    ],
-    "answer": "D",
-    "explanation": "ECOA bars discriminatory loan and credit practices and applies to both human and algorithmic decision-making processes.",
-    "area": "ch5"
-  },
-  {
-    "id": "sybex-5-6",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "A chatbot giving unlicensed medical advice without disclosure most likely violates which type of law?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Patent law"
-      },
-      {
-        "letter": "B",
-        "text": "Trade secret law"
-      },
-      {
-        "letter": "C",
-        "text": "Consumer protection law"
-      },
-      {
-        "letter": "D",
-        "text": "Employment law"
+        "text": "Documentation defect"
       }
     ],
     "answer": "C",
-    "explanation": "Providing health advice without disclaimers or licenses can mislead consumers and trigger enforcement under UDAP (unfair, deceptive, or abusive practices) laws.",
+    "explanation": "The danger lives in the product's intended design — every correctly built unit carries it — which is the definition of a design defect. A manufacturing defect would be a deviation in particular units from an otherwise safe design; failure to warn (marketing defect) concerns uncommunicated risks, not the flawed specification itself.",
     "area": "ch5"
   },
   {
-    "id": "sybex-5-7",
+    "id": "a5-5",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "Which of the following is not typically a valid defense against a product liability claim involving AI?",
+    "difficulty": "Easy",
+    "question": "A fintech's AI model systematically offers worse credit terms to applicants from certain neighborhoods. Which US statute most directly prohibits this discriminatory credit outcome?",
     "options": [
       {
         "letter": "A",
-        "text": "The product caused foreseeable harm."
+        "text": "The Digital Millennium Copyright Act"
       },
       {
         "letter": "B",
-        "text": "A safer design was available."
+        "text": "The Sherman Antitrust Act"
       },
       {
         "letter": "C",
-        "text": "The AI was too complex to predict."
+        "text": "The Equal Credit Opportunity Act"
       },
       {
         "letter": "D",
-        "text": "The product was used as intended."
+        "text": "The Computer Fraud and Abuse Act"
       }
     ],
     "answer": "C",
-    "explanation": "Complexity is not a valid defense. Manufacturers are still responsible for designing reasonably safe products.",
+    "explanation": "ECOA prohibits discrimination in credit decisions and applies with full force to algorithmic underwriting — neighborhood-based disparities often proxy for race, triggering fair-lending scrutiny. The other statutes govern copyright, competition, and computer intrusion, none of which reach credit discrimination.",
     "area": "ch5"
   },
   {
-    "id": "sybex-5-8",
+    "id": "a5-6",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "Which regulatory body issued guidance clarifying employer obligations when using AI tools in hiring?",
+    "difficulty": "Medium",
+    "question": "A wellness app's chatbot dispenses specific treatment recommendations while presenting itself as a friendly companion, with no disclosure or medical licensure. Which body of law does this most directly implicate?",
     "options": [
       {
         "letter": "A",
-        "text": "The Equal Employment Opportunity Commission, which enforces federal anti-discrimination laws in hiring"
+        "text": "Consumer protection law prohibiting unfair and deceptive practices"
       },
       {
         "letter": "B",
-        "text": "The National Labor Relations Board, which governs collective bargaining and union activities"
+        "text": "Copyright law governing the chatbot's responses"
       },
       {
         "letter": "C",
-        "text": "The U.S. Copyright Office, which administers intellectual property registration and records"
+        "text": "Antitrust law on market concentration"
       },
       {
         "letter": "D",
-        "text": "The Federal Reserve, which oversees monetary policy and banking system regulation"
+        "text": "Securities law on forward-looking statements"
       }
     ],
     "answer": "A",
-    "explanation": "The EEOC has explicitly stated that employers are responsible for ensuring that AI hiring tools do not discriminate.",
+    "explanation": "Misleading consumers about the nature and qualifications behind health advice is classic UDAP territory — deception with a real risk of consumer injury. Sector health law may compound the exposure, but the direct hook among the options is consumer protection.",
     "area": "ch5"
   },
   {
-    "id": "sybex-5-9",
+    "id": "a5-7",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "What is a key risk of using proxy variables in AI decision-making?",
+    "difficulty": "Hard",
+    "question": "In an AI product liability suit, which defense argument is LEAST likely to succeed?",
     "options": [
       {
         "letter": "A",
-        "text": "They reduce model complexity."
+        "text": "The plaintiff substantially misused the product beyond any foreseeable use"
       },
       {
         "letter": "B",
-        "text": "They can be more efficient than direct attributes."
+        "text": "The AI's behavior was too complex and emergent for the manufacturer to predict"
       },
       {
         "letter": "C",
-        "text": "They may have a disparate impact on protected groups."
+        "text": "The alleged harm was not caused by the product"
       },
       {
         "letter": "D",
-        "text": "They are required by most civil rights laws."
+        "text": "The product conformed to a reasonable, state-of-the-art design"
+      }
+    ],
+    "answer": "B",
+    "explanation": "'Our own system was too complex to predict' is an admission, not a defense — manufacturers remain responsible for delivering reasonably safe products, and unpredictability argues for more testing and constraint, not absolution. Unforeseeable misuse, lack of causation, and reasonable design are recognized defenses.",
+    "area": "ch5"
+  },
+  {
+    "id": "a5-8",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Which US agency has issued guidance making clear that employers remain responsible for discrimination produced by the AI hiring tools they use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The Federal Communications Commission"
+      },
+      {
+        "letter": "B",
+        "text": "The U.S. Copyright Office"
+      },
+      {
+        "letter": "C",
+        "text": "The Equal Employment Opportunity Commission"
+      },
+      {
+        "letter": "D",
+        "text": "The Securities and Exchange Commission"
       }
     ],
     "answer": "C",
-    "explanation": "Proxy variables (like postal code) can correlate with race or income, potentially causing discriminatory outcomes.",
+    "explanation": "The EEOC enforces federal employment anti-discrimination law and has stated explicitly that using a vendor's AI tool does not transfer responsibility — the employer answers for disparate impact in its hiring process. The FCC, Copyright Office, and SEC regulate different domains.",
     "area": "ch5"
   },
   {
-    "id": "sybex-5-10",
+    "id": "a5-9",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "Which of the following best describes the FTC’s stance on AI performance claims?",
+    "difficulty": "Medium",
+    "question": "An insurer's pricing model never uses race as an input, but it heavily weights postal code and shopping patterns. What is the key legal risk?",
     "options": [
       {
         "letter": "A",
-        "text": "They must be approved by a third-party certifier."
+        "text": "The model violates data minimization by using too few variables"
       },
       {
         "letter": "B",
-        "text": "They require substantiation like any other product claim."
+        "text": "Postal codes are copyrighted works requiring a license"
       },
       {
         "letter": "C",
-        "text": "They are exempt from scrutiny if the AI is open source."
+        "text": "The model's accuracy will be too low for regulatory approval"
       },
       {
         "letter": "D",
-        "text": "They are allowed as long as results are plausible."
+        "text": "The variables may act as proxies for protected characteristics, producing disparate impact"
       }
     ],
-    "answer": "B",
-    "explanation": "AI performance claims must be supported by evidence and testing—just like any other advertising or product representation.",
+    "answer": "D",
+    "explanation": "Facially neutral features that correlate strongly with protected traits let a model reconstruct and discriminate on those traits without ever seeing them — the proxy-discrimination pattern that disparate impact doctrine catches. Excluding the protected attribute is not a defense when its proxies carry the signal.",
     "area": "ch5"
   },
   {
-    "id": "sybex-6-1",
+    "id": "a5-10",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "Under the EU AI Act, which of the following is considered a prohibited AI practice?",
+    "difficulty": "Easy",
+    "question": "A vendor advertises that its product 'uses AI to detect fraud with 99.9% accuracy.' What does the FTC expect before such a claim is published?",
     "options": [
       {
         "letter": "A",
-        "text": "AI systems used for spam filtering and email classification in consumer applications"
+        "text": "Certification of the claim by an accredited standards body"
       },
       {
         "letter": "B",
-        "text": "Real-time remote biometric identification in publicly accessible spaces, without targeted exceptions"
+        "text": "Competent and reliable evidence substantiating the claim, as with any advertising claim"
       },
       {
         "letter": "C",
-        "text": "AI systems used in autonomous vehicle navigation, control, and collision avoidance"
+        "text": "Nothing, provided the product genuinely uses machine learning"
       },
       {
         "letter": "D",
-        "text": "AI systems used for personalized shopping recommendations and product suggestions"
+        "text": "Registration of the claim in a federal AI marketing database"
       }
     ],
     "answer": "B",
-    "explanation": "The EU AI Act bans real-time biometric identification in public spaces unless specific public safety exceptions apply. This practice is considered unacceptably risky.",
-    "area": "ch6"
+    "explanation": "The FTC applies ordinary advertising-substantiation doctrine to AI: performance claims need competent and reliable evidence before they are made. There is no certification or registration regime — and 'it plausibly might be true' has never been the standard.",
+    "area": "ch5"
   },
   {
-    "id": "sybex-6-2",
+    "id": "a6-1",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "What is the key documentation requirement for high-risk AI systems under the EU AI Act?",
+    "difficulty": "Medium",
+    "question": "Under the EU AI Act, which of the following practices falls in the prohibited (unacceptable-risk) category?",
     "options": [
       {
         "letter": "A",
-        "text": "An environmental footprint report documenting energy consumption and carbon impact"
+        "text": "An AI copilot that assists pilots with weather-routing decisions"
       },
       {
         "letter": "B",
-        "text": "Comprehensive technical documentation covering system design, risk management, and human oversight measures"
+        "text": "A recommender system suggesting films on a streaming service"
       },
       {
         "letter": "C",
-        "text": "A patent registration filing for the underlying AI algorithms and methods"
+        "text": "Live facial-recognition scanning of crowds in a public square by authorities, outside the Act's narrow exceptions"
       },
       {
         "letter": "D",
-        "text": "A social impact assessment and stakeholder consultation summary report"
+        "text": "A machine-vision system inspecting welds on a factory line"
       }
     ],
-    "answer": "B",
-    "explanation": "High-risk AI systems must include detailed technical documentation that supports transparency, traceability, and accountability.",
+    "answer": "C",
+    "explanation": "Real-time remote biometric identification in publicly accessible spaces is on the Article 5 prohibited list, permitted only under narrow, judicially controlled law-enforcement exceptions. Routing assistance, media recommenders, and industrial inspection are minimal- or limited-risk uses.",
     "area": "ch6"
   },
   {
-    "id": "sybex-6-3",
+    "id": "a6-2",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "Which type of organization is responsible for placing an AI system on the EU market under its own name?",
+    "difficulty": "Medium",
+    "question": "Before a high-risk AI system reaches the EU market, what documentation must its provider prepare and maintain?",
     "options": [
       {
         "letter": "A",
-        "text": "Importer"
+        "text": "Technical documentation covering the system's design, risk management, data, testing, and performance per Annex IV"
       },
       {
         "letter": "B",
+        "text": "A patent filing covering the system's core algorithms"
+      },
+      {
+        "letter": "C",
+        "text": "An environmental audit of training-related energy use"
+      },
+      {
+        "letter": "D",
+        "text": "A shareholder disclosure describing AI-related revenue"
+      }
+    ],
+    "answer": "A",
+    "explanation": "High-risk providers must produce comprehensive technical documentation — design, development process, risk management, data governance, testing and performance evidence — kept current and available to authorities for ten years. Patents, environmental audits, and investor disclosures are not AI Act conformity requirements.",
+    "area": "ch6"
+  },
+  {
+    "id": "a6-3",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Under the EU AI Act, the entity that develops an AI system and places it on the EU market under its own name or trademark is the",
+    "options": [
+      {
+        "letter": "A",
         "text": "Distributor"
       },
       {
-        "letter": "C",
+        "letter": "B",
         "text": "Deployer"
+      },
+      {
+        "letter": "C",
+        "text": "Importer"
       },
       {
         "letter": "D",
@@ -1428,45 +1428,45 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "A provider develops and markets the AI system under its own name and is responsible for ensuring compliance.",
+    "explanation": "That is the Act's definition of the provider — the central duty-bearer owning conformity assessment, documentation, CE marking, and post-market monitoring. Importers bring foreign systems in, distributors pass them along, and deployers use them professionally; note that rebranding or substantially modifying a system can convert those roles into provider.",
     "area": "ch6"
   },
   {
-    "id": "sybex-6-4",
+    "id": "a6-4",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "What is a key obligation for deployers of high-risk AI systems?",
+    "difficulty": "Medium",
+    "question": "A hospital adopts a third-party high-risk AI system for triage. As the deployer, which obligation belongs to the hospital?",
     "options": [
       {
         "letter": "A",
-        "text": "Affixing a CE marking to the AI system indicating conformity with EU requirements"
+        "text": "Affixing the CE marking to the system"
       },
       {
         "letter": "B",
-        "text": "Ensuring meaningful human oversight is maintained during the system's use and operation"
+        "text": "Performing the pre-market conformity assessment"
       },
       {
         "letter": "C",
-        "text": "Conducting environmental impact testing of the AI system's infrastructure"
+        "text": "Assigning trained staff to exercise meaningful human oversight during use"
       },
       {
         "letter": "D",
-        "text": "Notifying customs authorities about cross-border AI system deployments"
+        "text": "Registering the system's architecture with the European Patent Office"
       }
     ],
-    "answer": "B",
-    "explanation": "Deployers must ensure human oversight during operation to support safety and mitigate unintended consequences.",
+    "answer": "C",
+    "explanation": "Deployers owe operational duties: using the system per its instructions, ensuring competent human oversight, monitoring operation, and reporting serious incidents. Conformity assessment and CE marking are the provider's pre-market obligations, and patent registration is not an AI Act concept.",
     "area": "ch6"
   },
   {
-    "id": "sybex-6-5",
+    "id": "a6-5",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "Which of the following AI system categories is mostly exempt from mandatory regulation?",
+    "difficulty": "Easy",
+    "question": "Which EU AI Act risk category carries essentially no new mandatory obligations?",
     "options": [
       {
         "letter": "A",
-        "text": "Limited-risk AI"
+        "text": "Minimal-risk AI"
       },
       {
         "letter": "B",
@@ -1478,1395 +1478,1395 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Minimal-risk AI"
-      }
-    ],
-    "answer": "D",
-    "explanation": "Minimal-risk AI systems, like grammar checkers and spam filters, are largely unregulated under the EU AI Act.",
-    "area": "ch6"
-  },
-  {
-    "id": "sybex-6-6",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "What triggers enhanced requirements for a GPAI system?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Use of open-source code"
-      },
-      {
-        "letter": "B",
-        "text": "Use in a single domain"
-      },
-      {
-        "letter": "C",
-        "text": "Training with European data"
-      },
-      {
-        "letter": "D",
-        "text": "Systemic risk designation"
-      }
-    ],
-    "answer": "D",
-    "explanation": "GPAI systems deemed to pose systemic risk, due to scale or influence, face stricter obligations such as external audits and real-time monitoring.",
-    "area": "ch6"
-  },
-  {
-    "id": "sybex-6-7",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "Importers of AI systems must ensure that the system",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Is CE marked and has passed conformity assessment"
-      },
-      {
-        "letter": "B",
-        "text": "Contains only anonymized data"
-      },
-      {
-        "letter": "C",
-        "text": "Includes a software license"
-      },
-      {
-        "letter": "D",
-        "text": "Is developed in an EU member state"
+        "text": "Limited-risk AI"
       }
     ],
     "answer": "A",
-    "explanation": "Importers are responsible for verifying that the AI system complies with EU conformity standards, including CE marking.",
+    "explanation": "Minimal-risk systems — spam filters, game AI, inventory forecasting — are left essentially unregulated, with voluntary codes encouraged. Limited-risk systems carry transparency duties, high-risk systems carry the full compliance program, and systemic-risk GPAI carries evaluation and mitigation obligations.",
     "area": "ch6"
   },
   {
-    "id": "sybex-6-8",
+    "id": "a6-6",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "What is the maximum financial penalty for prohibited AI practices?",
+    "difficulty": "Medium",
+    "question": "What subjects a general-purpose AI model to the EU AI Act's enhanced 'systemic risk' obligations?",
     "options": [
       {
         "letter": "A",
-        "text": "Up to €1 million or 2% of the total worldwide annual turnover"
+        "text": "Releasing the model under an open-source license"
       },
       {
         "letter": "B",
-        "text": "Up to €7.5 million or 1.5% of the total worldwide annual turnover"
+        "text": "A systemic-risk designation — presumed when training compute exceeds 10^25 FLOPs"
       },
       {
         "letter": "C",
-        "text": "Up to €35 million or 7% of the total worldwide annual turnover, whichever is higher"
+        "text": "Training the model on data collected within the EU"
       },
       {
         "letter": "D",
-        "text": "Up to €15 million or 3% of the total worldwide annual turnover"
-      }
-    ],
-    "answer": "C",
-    "explanation": "The most serious violations, such as using prohibited AI, can incur penalties of up to €35 million or 7 percent of global revenue, whichever is greater.",
-    "area": "ch6"
-  },
-  {
-    "id": "sybex-6-9",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "A distributor becomes legally liable under the EU AI Act if they",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Provide AI training datasets"
-      },
-      {
-        "letter": "B",
-        "text": "Manufacture hardware for AI use"
-      },
-      {
-        "letter": "C",
-        "text": "Use AI internally"
-      },
-      {
-        "letter": "D",
-        "text": "Ignore known signs of non-compliance"
-      }
-    ],
-    "answer": "D",
-    "explanation": "Distributors must act if they become aware of non-compliance; failing to do so triggers liability.",
-    "area": "ch6"
-  },
-  {
-    "id": "sybex-6-10",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "What is the purpose of a “model card” in the context of GPAI?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "It describes the hardware compatibility of the system."
-      },
-      {
-        "letter": "B",
-        "text": "It registers the system with the European Patent Office."
-      },
-      {
-        "letter": "C",
-        "text": "It summarizes technical specifications and known limitations."
-      },
-      {
-        "letter": "D",
-        "text": "It licenses the model for public use."
-      }
-    ],
-    "answer": "C",
-    "explanation": "A model card is a transparency tool that describes an AI model’s design, training data, capabilities, and risks to inform responsible downstream use.",
-    "area": "ch6"
-  },
-  {
-    "id": "sybex-7-1",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "What is the primary purpose of the OECD AI Principles?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "To define technical testing protocols for AI safety"
-      },
-      {
-        "letter": "B",
-        "text": "To establish ethical guidelines for trustworthy AI"
-      },
-      {
-        "letter": "C",
-        "text": "To create mandatory AI regulations for OECD countries"
-      },
-      {
-        "letter": "D",
-        "text": "To categorize AI systems by risk level"
+        "text": "Deploying the model in more than one member state"
       }
     ],
     "answer": "B",
-    "explanation": "The OECD AI Principles offer non-binding ethical guidelines designed to foster responsible, human-centered AI across member countries. They focus on values like transparency, fairness, and accountability.",
-    "area": "ch7"
+    "explanation": "Enhanced obligations — model evaluations, adversarial testing, risk mitigation, incident reporting, cybersecurity — attach to GPAI with systemic risk, presumed at training compute above 10^25 FLOPs or by Commission designation. Licensing model, data geography, and deployment breadth are not the trigger.",
+    "area": "ch6"
   },
   {
-    "id": "sybex-7-2",
+    "id": "a6-7",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "Which NIST AI RMF function is responsible for identifying the context and intended purpose of an AI system?",
+    "difficulty": "Medium",
+    "question": "An EU company imports a high-risk AI system built by a non-EU developer. Before placing it on the market, the importer must verify that",
     "options": [
       {
         "letter": "A",
-        "text": "Measure"
+        "text": "The system was retrained on European data"
       },
       {
         "letter": "B",
-        "text": "Map"
+        "text": "The developer holds an EU software patent"
       },
       {
         "letter": "C",
+        "text": "The system's source code has been escrowed with a notified body"
+      },
+      {
+        "letter": "D",
+        "text": "The provider completed conformity assessment and the system bears CE marking with required documentation"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Importers are a verification checkpoint: they confirm the foreign provider performed conformity assessment, drew up the technical documentation, and affixed CE marking before the system enters the EU market. They verify conformity evidence — they do not re-perform the assessment, and no data-localization or escrow duty exists.",
+    "area": "ch6"
+  },
+  {
+    "id": "a6-8",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "An enterprise deploys a prohibited AI practice in the EU. What is the maximum administrative fine the AI Act authorizes?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "€7.5 million or 1% of worldwide annual turnover"
+      },
+      {
+        "letter": "B",
+        "text": "€15 million or 3% of worldwide annual turnover"
+      },
+      {
+        "letter": "C",
+        "text": "€35 million or 7% of worldwide annual turnover, whichever is higher"
+      },
+      {
+        "letter": "D",
+        "text": "€20 million or 4% of worldwide annual turnover"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Prohibited-practice violations sit at the top of the penalty ladder: up to €35 million or 7% of global annual turnover, whichever is higher. The 15/3 tier covers most other obligations, 7.5/1 covers misleading information to authorities — and 20/4 is GDPR's ceiling, a deliberate distractor.",
+    "area": "ch6"
+  },
+  {
+    "id": "a6-9",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Under the EU AI Act, a distributor of an AI system becomes exposed to liability when it",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Continues making the system available despite reason to believe it is non-conforming"
+      },
+      {
+        "letter": "B",
+        "text": "Sells the system to more than one member state"
+      },
+      {
+        "letter": "C",
+        "text": "Offers the system alongside competing products"
+      },
+      {
+        "letter": "D",
+        "text": "Provides customer support in only one language"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Distributors must verify CE marking and documentation and must not supply systems they have reason to consider non-compliant — awareness plus inaction is the liability trigger, and they must take corrective action or withdraw. Multi-state sales, product assortment, and support languages carry no such consequence.",
+    "area": "ch6"
+  },
+  {
+    "id": "a6-10",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "In the GPAI context, what function does a model card serve?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It certifies the model's compliance in place of conformity assessment"
+      },
+      {
+        "letter": "B",
+        "text": "It documents the model's characteristics, intended uses, and known limitations for downstream users"
+      },
+      {
+        "letter": "C",
+        "text": "It records the model's ownership for intellectual property registries"
+      },
+      {
+        "letter": "D",
+        "text": "It lists the hardware the model requires to run"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A model card is transparency documentation: capabilities, training data summary, evaluation results, limitations, and appropriate uses — exactly the information downstream providers and deployers need to use the model responsibly. It informs; it does not certify, register ownership, or specify hardware.",
+    "area": "ch6"
+  },
+  {
+    "id": "a7-1",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "What role do the OECD AI Principles play in the global AI governance landscape?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "They impose binding regulations on OECD member countries"
+      },
+      {
+        "letter": "B",
+        "text": "They define laboratory testing protocols for AI safety claims"
+      },
+      {
+        "letter": "C",
+        "text": "They classify AI systems into enforceable risk tiers"
+      },
+      {
+        "letter": "D",
+        "text": "They provide a voluntary, values-based foundation for trustworthy AI that later frameworks build on"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The OECD Principles are the first intergovernmental AI standard: five non-binding values (inclusive growth, human rights and fairness, transparency and explainability, robustness and safety, accountability) plus policy recommendations. They set shared vocabulary and values — risk tiers and enforcement came later, in instruments like the EU AI Act that drew on them.",
+    "area": "ch7"
+  },
+  {
+    "id": "a7-2",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A team working with the NIST AI RMF is characterizing an AI system's intended purpose, deployment context, stakeholders, and potential risks. Which Core function are they performing?",
+    "options": [
+      {
+        "letter": "A",
         "text": "Govern"
+      },
+      {
+        "letter": "B",
+        "text": "Measure"
+      },
+      {
+        "letter": "C",
+        "text": "Map"
       },
       {
         "letter": "D",
         "text": "Manage"
       }
     ],
-    "answer": "B",
-    "explanation": "The Map function focuses on understanding the AI system’s design, context of use, stakeholder impacts, and associated risks.",
+    "answer": "C",
+    "explanation": "Map is the context function: establish what the system is for, where it operates, who it affects, and what risks arise in that frame. Govern is the cross-cutting culture-and-accountability layer, Measure assesses and tracks the mapped risks, and Manage prioritizes and responds to them.",
     "area": "ch7"
   },
   {
-    "id": "sybex-7-3",
+    "id": "a7-3",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "What distinguishes NIST ARIA from the NIST AI RMF?",
+    "difficulty": "Medium",
+    "question": "How does NIST ARIA relate to the NIST AI RMF?",
     "options": [
       {
         "letter": "A",
-        "text": "ARIA addresses regulatory compliance, while RMF does"
+        "text": "ARIA is an evaluation program supplying testing methods and metrics that complement the RMF's risk process"
       },
       {
         "letter": "B",
-        "text": "ARIA focuses on assurance methods and testing techniques"
+        "text": "ARIA supersedes the RMF for high-risk sectors"
       },
       {
         "letter": "C",
-        "text": "ARIA replaces the RMF in high-risk sectors"
+        "text": "ARIA is the certification scheme organizations use to prove RMF compliance"
       },
       {
         "letter": "D",
-        "text": "ARIA is a certification framework"
-      }
-    ],
-    "answer": "B",
-    "explanation": "NIST ARIA complements the AI RMF by providing practical tools, metrics, and methodologies to test and evaluate AI systems for safety and trustworthiness.",
-    "area": "ch7"
-  },
-  {
-    "id": "sybex-7-4",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "What is a defining feature of ISO/IEC 42001?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "It offers a certifiable AI management system"
-      },
-      {
-        "letter": "B",
-        "text": "It is a privacy-focused AI framework"
-      },
-      {
-        "letter": "C",
-        "text": "It standardizes AI ethics assessments"
-      },
-      {
-        "letter": "D",
-        "text": "It provides a taxonomy of AI capabilities"
+        "text": "ARIA translates the RMF into binding federal regulation"
       }
     ],
     "answer": "A",
-    "explanation": "ISO/IEC 42001 is the first AI-specific management system standard that organizations can certify against, similar to ISO/IEC 27001 for information security management.",
+    "explanation": "ARIA evaluates AI systems in realistic conditions — model testing, red-teaming, and field testing — producing the kind of empirical evidence the RMF's Measure function calls for. It complements rather than replaces the framework, and neither instrument certifies or legally binds anyone.",
     "area": "ch7"
   },
   {
-    "id": "sybex-7-5",
+    "id": "a7-4",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "What is the purpose of ISO/IEC 22989?",
+    "difficulty": "Easy",
+    "question": "What makes ISO/IEC 42001 distinctive among AI governance instruments?",
     "options": [
       {
         "letter": "A",
-        "text": "To standardize AI terminology and concepts"
+        "text": "It catalogs the capabilities of frontier AI models"
       },
       {
         "letter": "B",
-        "text": "To guide AI procurement strategies"
+        "text": "It defines a certifiable AI management system that organizations can be audited against"
       },
       {
         "letter": "C",
-        "text": "To define global AI enforcement mechanisms"
+        "text": "It is the only legally binding AI standard in the EU"
       },
       {
         "letter": "D",
-        "text": "To regulate foundation models"
+        "text": "It focuses exclusively on privacy engineering for AI"
       }
     ],
-    "answer": "A",
-    "explanation": "ISO/IEC 22989 offers foundational definitions for AI systems, capabilities, and lifecycle stages, facilitating consistency across industries.",
+    "answer": "B",
+    "explanation": "ISO/IEC 42001 is the first certifiable AI management system standard — the ISO 27001 of AI: Annex SL structure, PDCA cycle, required risk and impact assessments, and third-party certification audits. It is voluntary, organization-wide, and management-system-scoped rather than model-scoped.",
     "area": "ch7"
   },
   {
-    "id": "sybex-7-6",
+    "id": "a7-5",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "Which G7 initiative provides guidance on AI governance?",
+    "difficulty": "Easy",
+    "question": "An AI contract dispute turns on what 'AI system' and 'trained model' precisely mean. Which standard exists to settle exactly this kind of terminology question?",
     "options": [
       {
         "letter": "A",
-        "text": "OECD Code of Conduct"
+        "text": "ISO/IEC 27001"
       },
       {
         "letter": "B",
-        "text": "Tokyo AI Alignment Act"
+        "text": "ISO/IEC 23894"
       },
       {
         "letter": "C",
-        "text": "Hiroshima Process"
+        "text": "ISO/IEC 22989"
       },
       {
         "letter": "D",
-        "text": "Kyoto Protocol"
+        "text": "ISO 31000"
       }
     ],
     "answer": "C",
-    "explanation": "The G7 Hiroshima Process includes a voluntary code of conduct aimed at developers of AI and foundation models to promote responsible innovation.",
+    "explanation": "ISO/IEC 22989 is the AI vocabulary standard: 110+ formal definitions of AI concepts, lifecycle stages, roles, and trustworthiness properties, created so parties argue about substance rather than semantics. 27001 governs information security, 23894 gives AI risk guidance, and 31000 is generic risk management.",
     "area": "ch7"
   },
   {
-    "id": "sybex-7-7",
+    "id": "a7-6",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "The IEEE 7000 series focuses on which aspect of AI systems?",
+    "difficulty": "Medium",
+    "question": "Which G7 initiative produced international guidance — including a voluntary code of conduct — for organizations developing advanced AI systems?",
     "options": [
       {
         "letter": "A",
-        "text": "High-frequency trading algorithms"
+        "text": "The Bletchley Declaration"
       },
       {
         "letter": "B",
-        "text": "Ethical alignment during system design"
+        "text": "The Hiroshima AI Process"
       },
       {
         "letter": "C",
-        "text": "National security applications of AI"
+        "text": "The Basel Framework"
       },
       {
         "letter": "D",
-        "text": "Model compression and optimization"
+        "text": "The Ramsar Convention"
       }
     ],
     "answer": "B",
-    "explanation": "The IEEE 7000 series supports embedding ethical considerations directly into AI system design and engineering processes.",
+    "explanation": "The G7's Hiroshima AI Process (2023) produced international guiding principles and a voluntary code of conduct for developers of advanced AI and foundation models. Bletchley was the UK AI Safety Summit declaration (broader, non-G7), Basel governs banking, and Ramsar protects wetlands.",
     "area": "ch7"
   },
   {
-    "id": "sybex-7-8",
+    "id": "a7-7",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "Which of the following is a key trustworthiness characteristic emphasized by NIST ARIA?",
+    "difficulty": "Medium",
+    "question": "The IEEE 7000 series of standards addresses which dimension of AI and autonomous systems?",
     "options": [
       {
         "letter": "A",
-        "text": "Interpretability"
+        "text": "Semiconductor fabrication tolerances"
       },
       {
         "letter": "B",
-        "text": "Profitability"
+        "text": "Network transport protocols for model serving"
       },
       {
         "letter": "C",
-        "text": "Licensing model"
+        "text": "Financial reporting of AI development costs"
       },
       {
         "letter": "D",
-        "text": "Processing speed"
-      }
-    ],
-    "answer": "A",
-    "explanation": "NIST ARIA supports measurement and assurance techniques for trustworthiness traits, including interpretability, robustness, and fairness.",
-    "area": "ch7"
-  },
-  {
-    "id": "sybex-7-9",
-    "domain": "Domain II",
-    "difficulty": "",
-    "question": "What distinguishes ISO/IEC 23894 from ISO/IEC 42001?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "23894 provides legal enforcement guidance"
-      },
-      {
-        "letter": "B",
-        "text": "23894 defines training standards for AI teams"
-      },
-      {
-        "letter": "C",
-        "text": "23894 only applies to AI in manufacturing"
-      },
-      {
-        "letter": "D",
-        "text": "23894 is focused on risk management, while 42001 is a management system"
+        "text": "Embedding ethical considerations into system design and engineering"
       }
     ],
     "answer": "D",
-    "explanation": "ISO/IEC 23894 provides detailed guidance on AI risk management processes, while ISO/IEC 42001 defines a complete management system for AI.",
+    "explanation": "IEEE 7000-series standards operationalize ethics-by-design: translating human values and ethical concerns into concrete engineering requirements during system development. They are engineering-process standards, not hardware, networking, or accounting specifications.",
     "area": "ch7"
   },
   {
-    "id": "sybex-7-10",
+    "id": "a7-8",
     "domain": "Domain II",
-    "difficulty": "",
-    "question": "Why is UNESCO’s AI recommendation particularly influential in the global south?",
+    "difficulty": "Medium",
+    "question": "NIST's ARIA program measures AI systems against trustworthiness attributes. Which of the following is one of them?",
     "options": [
       {
         "letter": "A",
-        "text": "It provides hardware specifications for AI systems"
+        "text": "Quarterly revenue contribution"
       },
       {
         "letter": "B",
-        "text": "It aligns with principles of cultural inclusion and human rights"
+        "text": "Interpretability of system outputs"
       },
       {
         "letter": "C",
-        "text": "It enforces AI bans on specific use cases"
+        "text": "Compatibility with legacy mainframes"
       },
       {
         "letter": "D",
-        "text": "It offers a prescriptive legal framework"
+        "text": "Brand recognition of the developer"
       }
     ],
     "answer": "B",
-    "explanation": "UNESCO’s recommendation focuses on equity, sustainability, and cultural diversity, making it a practical and values-driven resource in countries without detailed AI regulations.",
+    "explanation": "ARIA evaluates trustworthiness characteristics — interpretability, robustness, fairness, safety — through model testing, red-teaming, and field testing with real users. Commercial and infrastructure attributes like revenue or mainframe compatibility are outside the trustworthiness construct.",
     "area": "ch7"
   },
   {
-    "id": "sybex-8-1",
-    "domain": "Domain III",
-    "difficulty": "",
-    "question": "What is the primary purpose of documenting the AI system lifecycle?",
+    "id": "a7-9",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An organization already certified against ISO/IEC 42001 asks what ISO/IEC 23894 would add. What is the correct answer?",
     "options": [
       {
         "letter": "A",
-        "text": "To enable traceability and support governance"
+        "text": "Detailed AI risk management guidance — extending ISO 31000 — to deepen the risk discipline inside the management system"
       },
       {
         "letter": "B",
-        "text": "To reduce storage costs"
+        "text": "A second certification covering the same management system scope"
       },
       {
         "letter": "C",
-        "text": "To comply with open-source licensing requirements"
+        "text": "Legal enforcement mechanisms for AI incidents"
       },
       {
         "letter": "D",
-        "text": "To accelerate deployment timelines"
+        "text": "Sector-specific rules applicable only to manufacturing"
       }
     ],
     "answer": "A",
-    "explanation": "Lifecycle documentation supports traceability, governance, and audit readiness, especially when evaluating compliance, fairness, or model behavior over time.",
-    "area": "ch8"
+    "explanation": "The two standards divide labor: 42001 builds the certifiable management system; 23894 supplies non-certifiable guidance on the AI risk management process itself, mirroring and extending ISO 31000 with AI-specific risk sources, objectives, and lifecycle mapping. It adds depth, not a second certificate.",
+    "area": "ch7"
   },
   {
-    "id": "sybex-8-2",
-    "domain": "Domain III",
-    "difficulty": "",
-    "question": "Which factor is most important when defining the business context for an AI system?",
+    "id": "a7-10",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Why has UNESCO's Recommendation on the Ethics of AI gained particular traction in developing countries?",
     "options": [
       {
         "letter": "A",
-        "text": "The organizational objective(s) the system supports"
+        "text": "It supplies government-subsidized computing infrastructure"
       },
       {
         "letter": "B",
-        "text": "The number of employees on the data team"
+        "text": "It legally requires technology transfer from AI-producing nations"
       },
       {
         "letter": "C",
-        "text": "The vendor’s market share"
+        "text": "Its emphasis on human rights, equity, and cultural diversity offers a values framework where national AI law is absent"
       },
       {
         "letter": "D",
-        "text": "Whether the system uses neural networks"
-      }
-    ],
-    "answer": "A",
-    "explanation": "AI systems should be aligned with business objectives to ensure they serve real-world needs and deliver measurable value.",
-    "area": "ch8"
-  },
-  {
-    "id": "sybex-8-3",
-    "domain": "Domain III",
-    "difficulty": "",
-    "question": "An AI impact assessment should be conducted primarily to",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Document proprietary model architectures for publication"
-      },
-      {
-        "letter": "B",
-        "text": "Certify the model for ISO 27001"
-      },
-      {
-        "letter": "C",
-        "text": "Increase investor visibility"
-      },
-      {
-        "letter": "D",
-        "text": "Identify and mitigate risks associated with AI system use"
-      }
-    ],
-    "answer": "D",
-    "explanation": "Impact assessments help surface potential harms, compliance gaps, and ethical issues early in the development process. The EU AI Act requires impact assessments for high-risk AI systems.",
-    "area": "ch8"
-  },
-  {
-    "id": "sybex-8-4",
-    "domain": "Domain III",
-    "difficulty": "",
-    "question": "What is a typical reason for integrating human-in-the-loop (HITL) mechanisms into AI design?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "To increase model inference speed and overall computational throughput"
-      },
-      {
-        "letter": "B",
-        "text": "To eliminate the need for detailed technical documentation and record-keeping"
-      },
-      {
-        "letter": "C",
-        "text": "To reduce power consumption and computational resource utilization"
-      },
-      {
-        "letter": "D",
-        "text": "To allow for meaningful human oversight and the ability to intervene in critical AI-driven decisions"
-      }
-    ],
-    "answer": "D",
-    "explanation": "HITL ensures that humans can review, override, or validate AI decisions in high-stakes scenarios, increasing organizational accountability and safety.",
-    "area": "ch8"
-  },
-  {
-    "id": "sybex-8-5",
-    "domain": "Domain III",
-    "difficulty": "",
-    "question": "Which of the following is a disadvantage of developing a proprietary AI model?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Increased liability and regulatory obligations"
-      },
-      {
-        "letter": "B",
-        "text": "Inability to access APIs"
-      },
-      {
-        "letter": "C",
-        "text": "Increased dependency on open-source data"
-      },
-      {
-        "letter": "D",
-        "text": "Reduced system accuracy"
-      }
-    ],
-    "answer": "A",
-    "explanation": "Developing proprietary models gives organizations more control, but also increases exposure to legal, regulatory, and ethical responsibilities.",
-    "area": "ch8"
-  },
-  {
-    "id": "sybex-8-6",
-    "domain": "Domain III",
-    "difficulty": "",
-    "question": "What does a probability/severity matrix help teams accomplish during design risk assessments?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Score and prioritize potential risks"
-      },
-      {
-        "letter": "B",
-        "text": "Optimize GPU usage"
-      },
-      {
-        "letter": "C",
-        "text": "Determine intellectual property value"
-      },
-      {
-        "letter": "D",
-        "text": "Choose a programming language"
-      }
-    ],
-    "answer": "A",
-    "explanation": "A probability/severity matrix helps quantify and prioritize risks based on their likelihood and potential impact.",
-    "area": "ch8"
-  },
-  {
-    "id": "sybex-8-7",
-    "domain": "Domain III",
-    "difficulty": "",
-    "question": "Which of the following best supports explainability in AI systems?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Publishing training code without documentation"
-      },
-      {
-        "letter": "B",
-        "text": "Obfuscation of model weights"
-      },
-      {
-        "letter": "C",
-        "text": "Encrypting data pipelines"
-      },
-      {
-        "letter": "D",
-        "text": "Feature importance scoring and user-facing explanations"
-      }
-    ],
-    "answer": "D",
-    "explanation": "Feature importance metrics and clear, contextual explanations enhance understanding for users and stakeholders.",
-    "area": "ch8"
-  },
-  {
-    "id": "sybex-8-8",
-    "domain": "Domain III",
-    "difficulty": "",
-    "question": "Why is stakeholder mapping critical during risk identification?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "It helps classify model types according to their underlying algorithm architecture"
-      },
-      {
-        "letter": "B",
-        "text": "It ensures that all server API endpoints are properly documented and secured"
-      },
-      {
-        "letter": "C",
-        "text": "It identifies how different stakeholder groups perceive and are differentially affected by AI system risks"
-      },
-      {
-        "letter": "D",
-        "text": "It replaces the need for formalized testing and validation procedures during development"
+        "text": "It bans the import of high-risk AI systems into signatory states"
       }
     ],
     "answer": "C",
-    "explanation": "Stakeholder mapping reveals who is impacted, what their concerns are, and how risks differ across roles and perspectives.",
-    "area": "ch8"
+    "explanation": "UNESCO's Recommendation (adopted by 190+ states) centers human rights, inclusion, sustainability, and cultural diversity — providing a ready-made, values-driven governance reference for countries without domestic AI legislation. It is normative, not a funding program, technology-transfer mandate, or import regime.",
+    "area": "ch7"
   },
   {
-    "id": "sybex-8-9",
+    "id": "a8-1",
     "domain": "Domain III",
-    "difficulty": "",
-    "question": "Which of the following would best demonstrate readiness to deploy a proprietary AI model?",
+    "difficulty": "Easy",
+    "question": "Why should an organization document an AI system's lifecycle from the earliest design conversations onward?",
     "options": [
       {
         "letter": "A",
-        "text": "Outsourcing testing to a third party without internal review"
+        "text": "To reduce cloud storage expenditure"
       },
       {
         "letter": "B",
-        "text": "Publishing a press release"
+        "text": "To create the traceability that governance, audits, and incident investigations depend on"
       },
       {
         "letter": "C",
-        "text": "Completing shadow mode testing with documented outcomes"
+        "text": "To satisfy open-source license attribution rules"
       },
       {
         "letter": "D",
-        "text": "Having a high-performing model with no documented metrics"
+        "text": "To shorten the deployment timeline"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Lifecycle documentation is governance's memory: it lets auditors verify decisions, investigators trace failures to root causes, and regulators confirm compliance. Contemporaneous records are evidence; retroactive reconstruction is scrambling. Storage costs, licensing, and speed are not what documentation exists for.",
+    "area": "ch8"
+  },
+  {
+    "id": "a8-2",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "When establishing the business context for a proposed AI system, which question matters most?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Whether the model will use transformers or gradient boosting"
+      },
+      {
+        "letter": "B",
+        "text": "Which cloud region will host the training jobs"
+      },
+      {
+        "letter": "C",
+        "text": "Which organizational objectives the system will serve, and how success will be measured"
+      },
+      {
+        "letter": "D",
+        "text": "How many data scientists the vendor employs"
       }
     ],
     "answer": "C",
-    "explanation": "Shadow mode testing simulates real-world conditions without affecting users, enabling risk detection and performance validation. Shadow mode testing is similar to parallel testing in IT disaster recovery planning.",
+    "explanation": "Business context anchors everything downstream: objectives define success criteria, which define validation thresholds, monitoring targets, and eventually retirement triggers. Architecture and hosting are means, decided after the ends are clear — a system without defined objectives cannot even be evaluated.",
     "area": "ch8"
   },
   {
-    "id": "sybex-8-10",
+    "id": "a8-3",
     "domain": "Domain III",
-    "difficulty": "",
-    "question": "Under the EU AI Act, a company that develops and deploys its own AI model is considered which of the following?",
+    "difficulty": "Easy",
+    "question": "The primary purpose of conducting an AI impact assessment during system design is to",
     "options": [
       {
         "letter": "A",
-        "text": "Provider"
+        "text": "Surface and mitigate potential harms, compliance gaps, and ethical issues before resources are committed"
       },
       {
         "letter": "B",
-        "text": "Deployer"
+        "text": "Generate marketing material describing the system's benefits"
       },
       {
         "letter": "C",
-        "text": "Tester"
+        "text": "Qualify the system for an ISO 27001 certificate"
       },
       {
         "letter": "D",
-        "text": "Consumer"
+        "text": "Estimate the project's return on investment for the board"
       }
     ],
     "answer": "A",
-    "explanation": "A company that develops and deploys its own AI system is legally classified as a “provider,” carrying additional obligations under the EU AI Act.",
+    "explanation": "Impact assessments are the look-before-you-leap instrument: identify who could be affected and how, evaluate severity and likelihood, and change the design while change is cheap. They are risk instruments, not marketing collateral, security certifications, or financial models.",
     "area": "ch8"
   },
   {
-    "id": "sybex-9-1",
+    "id": "a8-4",
     "domain": "Domain III",
-    "difficulty": "",
-    "question": "What is the primary purpose of data governance in AI development?",
+    "difficulty": "Easy",
+    "question": "Why do designers build human-in-the-loop checkpoints into AI systems that make consequential decisions?",
     "options": [
       {
         "letter": "A",
-        "text": "To improve marketing performance"
+        "text": "To increase the system's inference throughput"
       },
       {
         "letter": "B",
-        "text": "To reduce software development costs"
+        "text": "To remove the need for audit logging"
       },
       {
         "letter": "C",
-        "text": "To eliminate the need for human review"
+        "text": "To guarantee a human can review, override, or halt the system's decisions in critical situations"
       },
       {
         "letter": "D",
-        "text": "To ensure lawful, high-quality, and appropriate data use"
+        "text": "To lower the system's energy consumption"
+      }
+    ],
+    "answer": "C",
+    "explanation": "HITL design gives humans real intervention power at the moments that matter — reviewing high-stakes outputs before they take effect and overriding failures. It costs throughput rather than adding it, complements rather than replaces logging, and exists for accountability and safety.",
+    "area": "ch8"
+  },
+  {
+    "id": "a8-5",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "An organization weighing whether to build its own AI model instead of licensing one should recognize which downside of the proprietary path?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Losing access to third-party APIs"
+      },
+      {
+        "letter": "B",
+        "text": "Being forced to open-source the resulting model"
+      },
+      {
+        "letter": "C",
+        "text": "Automatically lower model accuracy"
+      },
+      {
+        "letter": "D",
+        "text": "Carrying the full regulatory, legal, and ethical obligations of the system's creator"
       }
     ],
     "answer": "D",
-    "explanation": "Data governance ensures that data is lawfully collected, accurate, sufficient, and suitable for its intended AI use, forming the foundation of trustworthy system development.",
+    "explanation": "Building your own model makes you its provider: conformity duties, documentation, liability for training-data rights, and answerability for its behavior all land in-house rather than being shared with a vendor. Control comes bundled with accountability — nothing about building in-house forces open-sourcing or degrades accuracy.",
+    "area": "ch8"
+  },
+  {
+    "id": "a8-6",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "During design-phase risk assessment, what does a probability/severity matrix contribute?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It selects the optimal neural network architecture"
+      },
+      {
+        "letter": "B",
+        "text": "It scores risks by likelihood and impact so treatment effort goes to the worst quadrant first"
+      },
+      {
+        "letter": "C",
+        "text": "It calculates the licensing value of the model's IP"
+      },
+      {
+        "letter": "D",
+        "text": "It schedules the project's development sprints"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The matrix plots each identified risk on likelihood and severity axes, making priorities visible: high-likelihood/high-impact risks get treated first, trivial ones get accepted. It is a prioritization tool for finite mitigation resources, not an engineering or financial instrument.",
+    "area": "ch8"
+  },
+  {
+    "id": "a8-7",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Which design choice most directly improves an AI system's explainability for its users?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Surfacing feature-importance information and plain-language reasons alongside each output"
+      },
+      {
+        "letter": "B",
+        "text": "Encrypting the model weights against tampering"
+      },
+      {
+        "letter": "C",
+        "text": "Publishing the raw training code without commentary"
+      },
+      {
+        "letter": "D",
+        "text": "Compressing the model for faster inference"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Explainability means users can understand why an output happened — feature-importance scoring and contextual, human-readable explanations deliver exactly that. Weight encryption serves security, uncommented code serves nobody, and compression serves latency; none helps a user comprehend a decision.",
+    "area": "ch8"
+  },
+  {
+    "id": "a8-8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "During design-phase risk identification, what does stakeholder mapping contribute that other techniques miss?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It benchmarks the model against competitor systems"
+      },
+      {
+        "letter": "B",
+        "text": "It documents the system's API endpoints"
+      },
+      {
+        "letter": "C",
+        "text": "It selects the training algorithm"
+      },
+      {
+        "letter": "D",
+        "text": "It reveals how different groups are differently affected by the system, exposing risks concentrated on specific populations"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Risk is unevenly distributed: a system fine for most users may seriously harm one group. Stakeholder mapping enumerates everyone affected or influential — internal and external — and how, so impact assessments and design decisions account for differential effects instead of average ones.",
+    "area": "ch8"
+  },
+  {
+    "id": "a8-9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Which evidence best demonstrates that a newly built AI model is ready for production deployment?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Documented results from shadow-mode operation alongside the existing process, meeting predefined criteria"
+      },
+      {
+        "letter": "B",
+        "text": "A press release announcing the model's launch date"
+      },
+      {
+        "letter": "C",
+        "text": "Strong benchmark scores reported verbally by the development team"
+      },
+      {
+        "letter": "D",
+        "text": "An executive's confidence after a product demonstration"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Shadow mode runs the model on real inputs without affecting real decisions — producing documented, real-world evidence of behavior at zero user risk, judged against criteria set in advance. Announcements, undocumented scores, and demo impressions are not evidence.",
+    "area": "ch8"
+  },
+  {
+    "id": "a8-10",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "A software firm builds an AI screening system in-house and runs it in its own EU hiring process. Under the EU AI Act, the firm's role is",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Distributor only"
+      },
+      {
+        "letter": "B",
+        "text": "Provider — and simultaneously deployer — carrying the provider's compliance obligations"
+      },
+      {
+        "letter": "C",
+        "text": "Importer"
+      },
+      {
+        "letter": "D",
+        "text": "Exempt, because the system is not sold externally"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Developing a system and putting it into service under your own name makes you its provider even without selling it — and using it professionally makes you its deployer too. Both duty sets apply, and in-house use is no exemption; employment screening is squarely Annex III high-risk.",
+    "area": "ch8"
+  },
+  {
+    "id": "a9-1",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Within AI development, what is data governance fundamentally meant to guarantee?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "That models train faster on optimized storage"
+      },
+      {
+        "letter": "B",
+        "text": "That the data feeding models is lawfully held, high quality, and fit for the intended use"
+      },
+      {
+        "letter": "C",
+        "text": "That data scientists can access any dataset without friction"
+      },
+      {
+        "letter": "D",
+        "text": "That marketing teams receive richer customer profiles"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Data governance is the upstream half of model governance: confirming legal authority to use each source, measuring quality, verifying fitness for the specific purpose, and assigning stewardship. Most model failures trace back to data failures — governance exists to catch them before training does.",
     "area": "ch9"
   },
   {
-    "id": "sybex-9-2",
+    "id": "a9-2",
     "domain": "Domain III",
-    "difficulty": "",
-    "question": "Which of the following best describes data provenance?",
+    "difficulty": "Easy",
+    "question": "A regulator asks where a training dataset came from, how it was collected, and under what terms. Which data governance concept answers those questions?",
     "options": [
       {
         "letter": "A",
-        "text": "The real-time path data takes through memory"
+        "text": "Data provenance"
       },
       {
         "letter": "B",
-        "text": "The pipeline that transforms and stores data"
+        "text": "Data drift"
       },
       {
         "letter": "C",
-        "text": "The origin and collection context of a dataset"
+        "text": "Feature engineering"
       },
       {
         "letter": "D",
-        "text": "The statistical summary of model inputs"
+        "text": "Data augmentation"
       }
     ],
-    "answer": "C",
-    "explanation": "Data provenance refers to the origin of the data, its collection method, and the conditions under which it was collected, which is essential for legal, ethical, and contextual evaluation.",
+    "answer": "A",
+    "explanation": "Provenance is the data's birth certificate: origin, collection method, date, and the legal terms attached at acquisition. It is recorded when data arrives because it cannot be reconstructed later — and it underwrites every downstream claim that the training data was lawfully sourced.",
     "area": "ch9"
   },
   {
-    "id": "sybex-9-3",
+    "id": "a9-3",
     "domain": "Domain III",
-    "difficulty": "",
-    "question": "In AI testing, which metric is most appropriate for an imbalanced classification problem?",
+    "difficulty": "Medium",
+    "question": "A fraud-detection model is evaluated on a dataset where only 1% of transactions are fraudulent. Which metric gives the most honest picture of its performance?",
     "options": [
       {
         "letter": "A",
+        "text": "Overall accuracy"
+      },
+      {
+        "letter": "B",
+        "text": "Training loss"
+      },
+      {
+        "letter": "C",
+        "text": "Inference latency"
+      },
+      {
+        "letter": "D",
         "text": "F1 score"
+      }
+    ],
+    "answer": "D",
+    "explanation": "With 99% legitimate transactions, a model that flags nothing scores 99% accuracy while catching zero fraud — accuracy flatters do-nothing models on imbalanced data. The F1 score, balancing precision (trustworthy flags) and recall (fraud actually caught), exposes what accuracy hides.",
+    "area": "ch9"
+  },
+  {
+    "id": "a9-4",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A model passes validation with strong aggregate metrics, but the team never evaluated performance by demographic subgroup. What risk remains hidden?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Severe performance gaps for specific subpopulations, masked by the healthy averages"
       },
       {
         "letter": "B",
-        "text": "Precision"
+        "text": "Excessive memory consumption during inference"
       },
       {
         "letter": "C",
-        "text": "Accuracy"
+        "text": "License incompatibility in the training data"
       },
       {
         "letter": "D",
-        "text": "Recall"
+        "text": "Slow convergence in future retraining runs"
       }
     ],
     "answer": "A",
-    "explanation": "The F1 score balances precision and recall, making it more reliable than raw accuracy when class distributions are uneven, such as in fraud or medical detection.",
+    "explanation": "Aggregate metrics are averages, and averages hide minorities: a model can post excellent overall numbers while failing one demographic badly. Subgroup validation is the only way to see disparate performance before deployment turns it into disparate impact.",
     "area": "ch9"
   },
   {
-    "id": "sybex-9-4",
+    "id": "a9-5",
     "domain": "Domain III",
-    "difficulty": "",
-    "question": "What is a common risk when model testing lacks subgroup validation?",
+    "difficulty": "Easy",
+    "question": "How do data lineage and data provenance differ?",
     "options": [
       {
         "letter": "A",
-        "text": "Overuse of memory resources during training and inference processing"
+        "text": "Lineage applies to structured data; provenance to unstructured data"
       },
       {
         "letter": "B",
-        "text": "Decreased model size and reduced storage requirements from simplified architectures"
+        "text": "They are interchangeable terms for the same record"
       },
       {
         "letter": "C",
-        "text": "Fairness disparities or bias issues affecting specific subpopulations may remain undetected"
+        "text": "Provenance records where data originated; lineage tracks its journey through transformations to the training set"
       },
       {
         "letter": "D",
-        "text": "Reduced overall training time from optimized data loading and preprocessing pipelines"
+        "text": "Provenance is technical metadata; lineage is a legal concept"
       }
     ],
     "answer": "C",
-    "explanation": "Neglecting subgroup validation can mask performance disparities across demographic groups, introducing or perpetuating algorithmic bias.",
+    "explanation": "Provenance is the origin story — source, method, terms; lineage is the biography — every transformation, join, and filter between source and model. Together they let an organization trace any model behavior back through its data, and neither substitutes for the other.",
     "area": "ch9"
   },
   {
-    "id": "sybex-9-5",
+    "id": "a9-6",
     "domain": "Domain III",
-    "difficulty": "",
-    "question": "What is the main distinction between data lineage and data provenance?",
+    "difficulty": "Easy",
+    "question": "Which situation is an example of an adversarial risk to an AI system?",
     "options": [
       {
         "letter": "A",
-        "text": "Lineage is legal; provenance is technical"
+        "text": "The model converges slowly during training"
       },
       {
         "letter": "B",
-        "text": "There is no practical difference"
+        "text": "Response times spike during peak traffic"
       },
       {
         "letter": "C",
-        "text": "Lineage tracks flow and transformations; provenance identifies origin and context"
+        "text": "The model underperforms on rare classes"
       },
       {
         "letter": "D",
-        "text": "Lineage refers to external sources; provenance refers to internal flows"
-      }
-    ],
-    "answer": "C",
-    "explanation": "Data lineage tracks the lifecycle and processing of data, while provenance identifies its origin, licensing, and collection context. Both are necessary for traceability.",
-    "area": "ch9"
-  },
-  {
-    "id": "sybex-9-6",
-    "domain": "Domain III",
-    "difficulty": "",
-    "question": "Which of the following is an example of an adversarial risk in AI systems?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Poor recall on minority class samples"
-      },
-      {
-        "letter": "B",
-        "text": "Inputs crafted to cause model misclassification"
-      },
-      {
-        "letter": "C",
-        "text": "Long response times under peak load"
-      },
-      {
-        "letter": "D",
-        "text": "Model convergence failure during training"
-      }
-    ],
-    "answer": "B",
-    "explanation": "Adversarial examples are intentionally designed inputs that cause AI models to produce incorrect or unexpected outputs, often without obvious errors to humans.",
-    "area": "ch9"
-  },
-  {
-    "id": "sybex-9-7",
-    "domain": "Domain III",
-    "difficulty": "",
-    "question": "What is the goal of counterfactual fairness testing?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "To test model performance on future datasets"
-      },
-      {
-        "letter": "B",
-        "text": "To measure runtime performance under varying loads"
-      },
-      {
-        "letter": "C",
-        "text": "To simulate random inputs"
-      },
-      {
-        "letter": "D",
-        "text": "To evaluate if changing a protected attribute affects model output"
+        "text": "An attacker submits subtly perturbed inputs engineered to force misclassification"
       }
     ],
     "answer": "D",
-    "explanation": "Counterfactual fairness assesses whether a model’s decision would change if a sensitive attribute (for example, gender, race, or political affiliation) were altered, while keeping all other factors constant.",
+    "explanation": "Adversarial examples are deliberately crafted inputs — often imperceptibly altered — that flip a model's output. They are attacks, not accidents, which is why AI security testing includes adversarial robustness alongside conventional measures. Slow convergence, latency, and class imbalance are engineering problems, not adversaries.",
     "area": "ch9"
   },
   {
-    "id": "sybex-9-8",
+    "id": "a9-7",
     "domain": "Domain III",
-    "difficulty": "",
-    "question": "Why is integration testing important for AI systems?",
+    "difficulty": "Hard",
+    "question": "In counterfactual fairness testing, what exactly is being checked?",
     "options": [
       {
         "letter": "A",
-        "text": "It guarantees interpretability and explainability of all individual model outputs"
+        "text": "Whether the model performs equally well on future data"
       },
       {
         "letter": "B",
-        "text": "It ensures that all model predictions are legally compliant with applicable regulations"
+        "text": "Whether the model's decision for an individual would change if their protected attribute were different, all else equal"
       },
       {
         "letter": "C",
-        "text": "It confirms that different system components and modules function correctly together as an integrated whole"
+        "text": "Whether the model responds consistently to randomly generated inputs"
       },
       {
         "letter": "D",
-        "text": "It reduces GPU computing costs by optimizing computational resource allocation"
+        "text": "Whether inference latency varies across user groups"
       }
     ],
-    "answer": "C",
-    "explanation": "Integration testing validates the end-to-end functionality of the system, ensuring that data flows, API calls, and downstream systems properly interact with the AI model.",
+    "answer": "B",
+    "explanation": "Counterfactual fairness asks the individual-level question: hold everything else constant, flip the protected attribute — does the decision change? If it does, the attribute (or its proxies) is driving outcomes. It complements group-level statistical metrics like demographic parity with a causal, per-person lens.",
     "area": "ch9"
   },
   {
-    "id": "sybex-9-9",
+    "id": "a9-8",
     "domain": "Domain III",
-    "difficulty": "",
-    "question": "Which activity is most critical during the training phase for identifying model learning problems?",
+    "difficulty": "Medium",
+    "question": "A model performs flawlessly in isolated testing, yet the team still runs integration tests before release. What do integration tests catch that model tests cannot?",
     "options": [
       {
         "letter": "A",
-        "text": "Monitoring convergence and loss curves"
+        "text": "Failures in how the model interacts with pipelines, APIs, interfaces, and downstream systems"
       },
       {
         "letter": "B",
-        "text": "Inspecting feature importance"
+        "text": "Errors in the model's mathematical foundations"
       },
       {
         "letter": "C",
-        "text": "Reviewing deployment logs"
+        "text": "Legal noncompliance in the training data"
       },
       {
         "letter": "D",
-        "text": "Testing production APIs"
+        "text": "Excess GPU costs during training"
       }
     ],
     "answer": "A",
-    "explanation": "Monitoring loss curves and training metrics during the training phase helps detect problems such as non-convergence, vanishing gradients, or early overfitting.",
+    "explanation": "Users experience the system, not the model: a perfect model fed by a silently reformatting pipeline or presented through a bias-amplifying interface still produces harm. Integration testing validates the assembled whole — data flows, API contracts, UI behavior, downstream consumption — which is where component-level assurance goes to die.",
     "area": "ch9"
   },
   {
-    "id": "sybex-9-10",
+    "id": "a9-9",
     "domain": "Domain III",
-    "difficulty": "",
-    "question": "What is the benefit of using model cards or fact sheets in AI testing and deployment?",
+    "difficulty": "Medium",
+    "question": "During model training, which practice gives the earliest warning that learning is going wrong?",
     "options": [
       {
         "letter": "A",
-        "text": "They eliminate the need for separate validation and holdout testing of model performance"
+        "text": "Reviewing production deployment logs"
       },
       {
         "letter": "B",
-        "text": "They provide structured transparency about model behavior, intended use, and known limitations"
+        "text": "Load-testing the inference API"
       },
       {
         "letter": "C",
-        "text": "They increase the learning rate during training, enabling faster model convergence on test data"
+        "text": "Watching convergence behavior and loss curves as training proceeds"
       },
       {
         "letter": "D",
-        "text": "They automate hyperparameter tuning and model architecture optimization"
+        "text": "Auditing the project's cloud spend"
       }
     ],
-    "answer": "B",
-    "explanation": "Model cards summarize key information about a model’s training data, performance, limitations, and intended use, thereby supporting transparency and fostering stakeholder trust.",
+    "answer": "C",
+    "explanation": "Loss curves are training's vital signs: divergence, plateaus, or a validation loss climbing while training loss falls (overfitting's signature) appear during training, when intervention is cheap. Deployment logs and API load tests come later in the lifecycle; they cannot see a training run failing in real time.",
     "area": "ch9"
   },
   {
-    "id": "sybex-10-1",
+    "id": "a9-10",
     "domain": "Domain III",
-    "difficulty": "",
-    "question": "What is the primary purpose of a model card in AI governance?",
+    "difficulty": "Easy",
+    "question": "What value do model cards add during testing and deployment?",
     "options": [
       {
         "letter": "A",
-        "text": "To encrypt model parameters and weights for secure deployment across environments"
+        "text": "They replace holdout testing with documented claims"
       },
       {
         "letter": "B",
-        "text": "To document key information about the model including intended use, performance characteristics, and known limitations"
+        "text": "They accelerate training convergence"
       },
       {
         "letter": "C",
-        "text": "To record source code architecture and implementation details for internal reuse"
+        "text": "They tune hyperparameters automatically"
       },
       {
         "letter": "D",
-        "text": "To certify model performance metrics for use as admissible evidence in legal proceedings"
+        "text": "They give stakeholders structured transparency into the model's intended use, performance, and limitations"
       }
     ],
-    "answer": "B",
-    "explanation": "Model cards are standardized documentation tools that provide an explanation of an AI model’s intended use, training data, evaluation results, ethical considerations, and limitations. They support transparency and accountability.",
-    "area": "ch10"
+    "answer": "D",
+    "explanation": "A model card is standardized disclosure: purpose, training data summary, evaluation results across conditions, known limitations, and ethical considerations — the information deployers and reviewers need to use the model responsibly. Documentation informs judgment; it never substitutes for the testing itself.",
+    "area": "ch9"
   },
   {
-    "id": "sybex-10-2",
+    "id": "a10-1",
     "domain": "Domain III",
-    "difficulty": "",
-    "question": "Which deployment environment is most suitable for low-latency, privacy-sensitive AI applications?",
+    "difficulty": "Easy",
+    "question": "In AI governance documentation, the model card's job is to",
     "options": [
       {
         "letter": "A",
-        "text": "Edge device"
+        "text": "Serve as the legal contract between provider and deployer"
       },
       {
         "letter": "B",
-        "text": "Public cloud"
+        "text": "Encrypt and checkpoint the model's weights"
       },
       {
         "letter": "C",
-        "text": "Shared hosting platform"
+        "text": "Record the model's intended use, training data, evaluation results, and known limitations in a standard format"
       },
       {
         "letter": "D",
-        "text": "On-premises data center"
-      }
-    ],
-    "answer": "A",
-    "explanation": "Edge deployment reduces latency and avoids transmitting sensitive data to centralized servers, making it ideal for real-time, privacy-focused applications.",
-    "area": "ch10"
-  },
-  {
-    "id": "sybex-10-3",
-    "domain": "Domain III",
-    "difficulty": "",
-    "question": "What is the role of version control in AI deployment?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "It stores user feedback from production systems"
-      },
-      {
-        "letter": "B",
-        "text": "It prevents users from accessing outdated documentation"
-      },
-      {
-        "letter": "C",
-        "text": "It tracks changes to model code, configurations, and data over time"
-      },
-      {
-        "letter": "D",
-        "text": "It encrypts the model before it goes live"
+        "text": "Prove conformity in place of required technical documentation"
       }
     ],
     "answer": "C",
-    "explanation": "Version control enables traceability and auditability by tracking model changes and ensuring consistency across development and deployment environments.",
+    "explanation": "The model card is the model's disclosure document — a standardized summary of what it is for, what it was trained on, how it performs, and where it fails. It complements rather than replaces contracts and regulatory technical documentation, and it has nothing to do with securing weights.",
     "area": "ch10"
   },
   {
-    "id": "sybex-10-4",
+    "id": "a10-2",
     "domain": "Domain III",
-    "difficulty": "",
-    "question": "Which of the following best describes concept drift?",
+    "difficulty": "Medium",
+    "question": "A hospital wants AI-powered monitoring on bedside devices where decisions are needed in milliseconds and patient data must not leave the room. Which deployment environment fits?",
     "options": [
       {
         "letter": "A",
-        "text": "A scheduled retraining event"
+        "text": "A multi-tenant public cloud region"
       },
       {
         "letter": "B",
-        "text": "An update that changes model hyperparameters"
+        "text": "A shared hosting platform"
       },
       {
         "letter": "C",
-        "text": "A shift in the relationship between inputs and outputs"
+        "text": "A centralized on-premises data center in another building"
       },
       {
         "letter": "D",
-        "text": "A temporary system outage"
-      }
-    ],
-    "answer": "C",
-    "explanation": "Concept drift refers to changes in the underlying patterns between input data and expected outputs, often due to real-world shifts.",
-    "area": "ch10"
-  },
-  {
-    "id": "sybex-10-5",
-    "domain": "Domain III",
-    "difficulty": "",
-    "question": "What is a key feature of retrieval augmented generation (RAG)?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "The model automatically self-retrains based on user input"
-      },
-      {
-        "letter": "B",
-        "text": "It compresses the model to reduce latency"
-      },
-      {
-        "letter": "C",
-        "text": "It anonymizes training data for compliance"
-      },
-      {
-        "letter": "D",
-        "text": "It queries external data sources during inference to enhance accuracy"
+        "text": "Edge deployment on the device itself"
       }
     ],
     "answer": "D",
-    "explanation": "RAG systems supplement model outputs by retrieving recent, relevant data from an external knowledge base, reducing hallucinations and improving accuracy.",
+    "explanation": "Edge inference runs on the local device: no network round-trip (millisecond latency) and no transmission of sensitive data off-device (privacy) — exactly this scenario's constraints. The trade-off is harder updates and monitoring, which is why edge suits latency- and privacy-critical uses specifically.",
     "area": "ch10"
   },
   {
-    "id": "sybex-10-6",
+    "id": "a10-3",
     "domain": "Domain III",
-    "difficulty": "",
-    "question": "Which team typically owns the responsibility for monitoring data lineage and access compliance?",
+    "difficulty": "Easy",
+    "question": "Why is version control considered a governance requirement, not just an engineering convenience, in AI deployment?",
     "options": [
       {
         "letter": "A",
-        "text": "End users"
+        "text": "It blocks users from reading outdated manuals"
       },
       {
         "letter": "B",
-        "text": "Marketing"
+        "text": "It creates the traceable history of models, data, code, and configurations that reproducibility, rollback, and audits depend on"
       },
       {
         "letter": "C",
-        "text": "IT operations"
+        "text": "It encrypts models before release"
       },
       {
         "letter": "D",
-        "text": "Data governance"
-      }
-    ],
-    "answer": "D",
-    "explanation": "Data governance teams are responsible for ensuring data usage aligns with policies, including tracking lineage, enforcing access controls, and maintaining compliance.",
-    "area": "ch10"
-  },
-  {
-    "id": "sybex-10-7",
-    "domain": "Domain III",
-    "difficulty": "",
-    "question": "Why is it essential to include a rollback plan in AI deployment procedures?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "To avoid the need to create and maintain separate model cards and documentation"
-      },
-      {
-        "letter": "B",
-        "text": "To enable rapid restoration of a previously validated safe state if the deployment causes failure or harm"
-      },
-      {
-        "letter": "C",
-        "text": "To reduce ongoing software licensing and subscription costs for deployment tools"
-      },
-      {
-        "letter": "D",
-        "text": "To satisfy encryption-at-rest requirements for all stored model artifacts and data"
+        "text": "It collects user feedback from production"
       }
     ],
     "answer": "B",
-    "explanation": "Rollback plans enable rapid recovery from harmful or faulty AI behaviors by reverting to a safe model version or configuration.",
+    "explanation": "Governance questions are historical questions — which model version made this decision, trained on which data snapshot, under which configuration? Version control across models, data, code, and config is what makes those questions answerable, and rollback possible. Encryption and feedback collection are different controls entirely.",
     "area": "ch10"
   },
   {
-    "id": "sybex-10-8",
+    "id": "a10-4",
     "domain": "Domain III",
-    "difficulty": "",
-    "question": "Which of the following is a good indicator that a deployed AI model may be exhibiting fairness issues?",
+    "difficulty": "Medium",
+    "question": "A credit model's accuracy decays even though incoming application data looks statistically identical to the training data. Economic conditions have changed how applicant features relate to default. This is",
     "options": [
       {
         "letter": "A",
-        "text": "Reduced GPU utilization and computational efficiency during model inference"
+        "text": "Concept drift"
       },
       {
         "letter": "B",
-        "text": "Fewer API requests originating from end users of the production system"
+        "text": "Data drift"
       },
       {
         "letter": "C",
-        "text": "Consistent latency measurements across all geographic deployment regions"
+        "text": "Overfitting"
       },
       {
         "letter": "D",
-        "text": "Significant disparities in model performance or error rates across different demographic groups"
-      }
-    ],
-    "answer": "D",
-    "explanation": "Fairness issues often appear as unequal treatment across groups. Monitoring these disparities is a key ethical and governance practice.",
-    "area": "ch10"
-  },
-  {
-    "id": "sybex-10-9",
-    "domain": "Domain III",
-    "difficulty": "",
-    "question": "What is the primary function of a “shadow model” in AI operations?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "To generate synthetic training data for model improvement and augmentation"
-      },
-      {
-        "letter": "B",
-        "text": "To simulate adversarial attacks for penetration testing and vulnerability assessment"
-      },
-      {
-        "letter": "C",
-        "text": "To operate alongside the live production model for continuous comparison and early drift detection"
-      },
-      {
-        "letter": "D",
-        "text": "To block unauthorized access attempts and cybersecurity threats from external actors"
-      }
-    ],
-    "answer": "C",
-    "explanation": "Shadow models run in parallel with production models to detect drift or performance degradation by comparing outputs over time.",
-    "area": "ch10"
-  },
-  {
-    "id": "sybex-10-10",
-    "domain": "Domain III",
-    "difficulty": "",
-    "question": "Why should AI retraining schedules be based on model volatility and risk exposure?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "To ensure that models are always retrained on a fixed, predetermined schedule"
-      },
-      {
-        "letter": "B",
-        "text": "Because model behavior changes at different rates and risk exposure should dictate the frequency of retraining"
-      },
-      {
-        "letter": "C",
-        "text": "To minimize cloud computing costs by reducing training job execution frequency"
-      },
-      {
-        "letter": "D",
-        "text": "To align retraining activities with standard quarterly business planning cycles"
-      }
-    ],
-    "answer": "B",
-    "explanation": "Frequent retraining helps maintain relevance but incurs costs. High-risk, fast-changing contexts require more frequent updates to prevent harm and maintain accuracy.",
-    "area": "ch10"
-  },
-  {
-    "id": "sybex-11-1",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "Which of the following is most critical when forecasting downstream harm from an AI system?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Data labeling automation"
-      },
-      {
-        "letter": "B",
-        "text": "Algorithm version numbering"
-      },
-      {
-        "letter": "C",
-        "text": "Model inference speed"
-      },
-      {
-        "letter": "D",
-        "text": "Stakeholder impact mapping"
-      }
-    ],
-    "answer": "D",
-    "explanation": "Stakeholder impact mapping helps forecast downstream harm by identifying who may be affected by unintended consequences of the AI system.",
-    "area": "ch12"
-  },
-  {
-    "id": "sybex-11-2",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "What is the primary goal of red teaming in AI assurance?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Automating model updates through continuous deployment and delivery pipelines"
-      },
-      {
-        "letter": "B",
-        "text": "Identifying adversarial vulnerabilities, misuse scenarios, and potential failure modes through adversarial testing"
-      },
-      {
-        "letter": "C",
-        "text": "Reducing training costs by using more efficient algorithms and data pipelines"
-      },
-      {
-        "letter": "D",
-        "text": "Increasing model accuracy through systematic hyperparameter optimization and tuning"
-      }
-    ],
-    "answer": "B",
-    "explanation": "Red teaming focuses on simulating attacks or misuse scenarios to uncover vulnerabilities that typical testing might miss.",
-    "area": "ch12"
-  },
-  {
-    "id": "sybex-11-3",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "Which clause in a vendor agreement could most directly affect the organization’s data governance obligations?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Model refresh schedule"
-      },
-      {
-        "letter": "B",
-        "text": "Termination clause"
-      },
-      {
-        "letter": "C",
-        "text": "Warranty exclusions"
-      },
-      {
-        "letter": "D",
-        "text": "Data usage rights"
-      }
-    ],
-    "answer": "D",
-    "explanation": "Data usage rights define how vendor systems can access, use, or retain data—impacting privacy compliance and ownership.",
-    "area": "ch12"
-  },
-  {
-    "id": "sybex-11-4",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "What is the best method for detecting model drift after deployment?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Monitoring shifts in input or output data distributions"
-      },
-      {
-        "letter": "B",
-        "text": "Conducting monthly user surveys"
-      },
-      {
-        "letter": "C",
-        "text": "Rereading the model documentation"
-      },
-      {
-        "letter": "D",
-        "text": "Comparing audit logs with the risk register"
+        "text": "Data poisoning"
       }
     ],
     "answer": "A",
-    "explanation": "Model drift is typically detected by monitoring statistical changes in input/output distributions over time.",
-    "area": "ch12"
+    "explanation": "The inputs haven't shifted — the world has: the relationship between features and outcomes changed underneath the model, which is concept drift. Data drift would show shifted input distributions; overfitting is a training-time failure; poisoning is an attack. The remedy is retraining on data reflecting the new reality.",
+    "area": "ch10"
   },
   {
-    "id": "sybex-11-5",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "An AI chatbot begins generating biased or toxic responses. What is the most appropriate first step?",
+    "id": "a10-5",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "What characterizes a retrieval-augmented generation (RAG) deployment?",
     "options": [
       {
         "letter": "A",
-        "text": "Retrain the model on different hardware"
+        "text": "The model retrains itself nightly on user conversations"
       },
       {
         "letter": "B",
-        "text": "Increase its training epochs"
+        "text": "The model is compressed to fit on edge hardware"
       },
       {
         "letter": "C",
-        "text": "Ignore the issue and monitor it over time"
+        "text": "The system retrieves relevant documents from a knowledge store at inference time and grounds its answers in them"
       },
       {
         "letter": "D",
-        "text": "Escalate the incident and disable the model temporarily"
+        "text": "All training data is anonymized before ingestion"
       }
     ],
-    "answer": "D",
-    "explanation": "In safety-critical contexts, containment is essential. Disabling the model limits exposure while the investigation is ongoing.",
-    "area": "ch12"
+    "answer": "C",
+    "explanation": "RAG bolts retrieval onto generation: fetch relevant sources, condition the model's answer on them — keeping knowledge current without retraining, enabling citations, and reducing (not eliminating) confabulation. Its new risk surface is the retrieval path, where poisoned documents can carry indirect prompt injections.",
+    "area": "ch10"
   },
   {
-    "id": "sybex-11-6",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "Which of the following best describes a “shadow deployment”?",
+    "id": "a10-6",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Which function typically owns the tracking of data lineage and the enforcement of data-access policy in an AI-operating organization?",
     "options": [
       {
         "letter": "A",
-        "text": "A model run in parallel without impacting end users"
+        "text": "The marketing department"
       },
       {
         "letter": "B",
-        "text": "A deployment of an untested model to the public"
+        "text": "The data governance function"
       },
       {
         "letter": "C",
-        "text": "An outdated model left running without documentation"
+        "text": "Individual end users"
       },
       {
         "letter": "D",
-        "text": "A model released under a different product name"
+        "text": "The facilities team"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Lineage tracking, access control enforcement, and policy compliance for data are the data governance function's core mandate — with named data stewards accountable per dataset. Users follow the policies; governance owns them.",
+    "area": "ch10"
+  },
+  {
+    "id": "a10-7",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Why must a rollback plan exist before an AI deployment goes live?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "So the system can be rapidly restored to a known-safe prior state the moment the new deployment misbehaves"
+      },
+      {
+        "letter": "B",
+        "text": "So the team can skip writing a model card"
+      },
+      {
+        "letter": "C",
+        "text": "So licensing costs can be renegotiated after launch"
+      },
+      {
+        "letter": "D",
+        "text": "So encryption-at-rest requirements are satisfied"
       }
     ],
     "answer": "A",
-    "explanation": "A shadow deployment enables the testing of a new model in production without affecting users, thereby supporting a safe evaluation.",
+    "explanation": "When a deployed model starts causing harm, the fastest safe response is usually retreat to the previously validated version — but only if the retreat path (artifacts, criteria, authority to invoke) was prepared in advance. Improvising rollback during an incident multiplies the damage window.",
+    "area": "ch10"
+  },
+  {
+    "id": "a10-8",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Which monitoring signal most strongly suggests a deployed model has developed a fairness problem?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "GPU utilization dropping during off-peak hours"
+      },
+      {
+        "letter": "B",
+        "text": "A gradual decline in total API traffic"
+      },
+      {
+        "letter": "C",
+        "text": "Error rates diverging significantly between demographic groups"
+      },
+      {
+        "letter": "D",
+        "text": "Uniform latency across geographic regions"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Fairness failures manifest as differential treatment: error or approval rates pulling apart across groups over time. That is why production monitoring must track fairness metrics by subgroup, not just aggregate performance — infrastructure signals like GPU load and latency say nothing about equity.",
+    "area": "ch10"
+  },
+  {
+    "id": "a10-9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "In AI operations, what is a 'shadow model' used for?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Generating synthetic data to augment training sets"
+      },
+      {
+        "letter": "B",
+        "text": "Blocking unauthorized access to the production API"
+      },
+      {
+        "letter": "C",
+        "text": "Simulating attacker behavior during penetration tests"
+      },
+      {
+        "letter": "D",
+        "text": "Running in parallel with the production model so outputs can be compared continuously without affecting decisions"
+      }
+    ],
+    "answer": "D",
+    "explanation": "A shadow model sees the same live inputs as production but its outputs go nowhere — enabling continuous comparison that surfaces drift, degradation, or a challenger's readiness at zero user risk. It is an evaluation instrument, not a security control or data generator.",
+    "area": "ch10"
+  },
+  {
+    "id": "a10-10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Why should retraining frequency be driven by each model's volatility and risk exposure rather than a uniform calendar?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Because fixed schedules violate the EU AI Act"
+      },
+      {
+        "letter": "B",
+        "text": "Because models decay at different rates — fast-changing, high-stakes contexts need frequent updates while stable, low-risk ones don't"
+      },
+      {
+        "letter": "C",
+        "text": "Because retraining is only permitted during annual maintenance windows"
+      },
+      {
+        "letter": "D",
+        "text": "Because uniform schedules maximize cloud spend efficiency"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A fraud model facing adaptive adversaries decays in weeks; a stable document classifier may hold for years. Retraining cadence is a risk decision: match update frequency to how fast the modeled world moves and how costly staleness is. Uniform calendars either waste resources or leave high-risk models stale — and no law mandates them.",
+    "area": "ch10"
+  },
+  {
+    "id": "a11-1",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "An organization wants to anticipate the downstream harms an AI system could cause once deployed. Which practice contributes most directly to that forecast?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tracking the model's inference latency"
+      },
+      {
+        "letter": "B",
+        "text": "Mapping stakeholders to understand who could be affected and how"
+      },
+      {
+        "letter": "C",
+        "text": "Standardizing the version-numbering scheme"
+      },
+      {
+        "letter": "D",
+        "text": "Automating the data-labeling workflow"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Downstream harm lands on people, so forecasting it starts by enumerating the people: stakeholder mapping identifies every group the system touches — directly, indirectly, and unintentionally — and how each could be hurt. Latency, versioning, and labeling automation are operational concerns that reveal nothing about who bears the consequences.",
     "area": "ch12"
   },
   {
-    "id": "sybex-11-7",
+    "id": "a11-2",
     "domain": "Domain IV",
-    "difficulty": "",
-    "question": "Which regulatory framework explicitly requires post-market monitoring for high-risk AI systems?",
+    "difficulty": "Easy",
+    "question": "When an AI assurance program commissions a red-team exercise, what is it trying to achieve?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Faster model convergence during retraining"
+      },
+      {
+        "letter": "B",
+        "text": "Lower inference costs through optimization"
+      },
+      {
+        "letter": "C",
+        "text": "Discovery of adversarial vulnerabilities, misuse paths, and failure modes that routine testing misses"
+      },
+      {
+        "letter": "D",
+        "text": "Automated promotion of models through the CI/CD pipeline"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Red teaming is deliberate offense: dedicated attackers probe the system with jailbreaks, adversarial inputs, and misuse scenarios to find what cooperative testing never will. It exists because real adversaries and real users are creative — the exercise finds the failures before they do.",
+    "area": "ch12"
+  },
+  {
+    "id": "a11-3",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "When reviewing an AI vendor contract, which clause has the greatest bearing on the customer's own data governance obligations?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The data usage rights clause defining what the vendor may access, retain, and reuse"
+      },
+      {
+        "letter": "B",
+        "text": "The invoice payment schedule"
+      },
+      {
+        "letter": "C",
+        "text": "The marketing co-branding provisions"
+      },
+      {
+        "letter": "D",
+        "text": "The choice of arbitration venue"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Whatever the vendor may do with your data becomes your compliance posture: retention beyond your schedules, reuse beyond your purposes, or training on your customers' records all flow from the data usage rights clause. Payment terms, branding, and venue matter commercially but do not shape data governance.",
+    "area": "ch12"
+  },
+  {
+    "id": "a11-4",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "After deployment, what is the most reliable way to detect that a model is drifting?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Re-reading the original design documentation quarterly"
+      },
+      {
+        "letter": "B",
+        "text": "Waiting for user complaints to accumulate"
+      },
+      {
+        "letter": "C",
+        "text": "Statistically monitoring input and output distributions for shifts against training baselines"
+      },
+      {
+        "letter": "D",
+        "text": "Comparing the org chart against the RACI matrix"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Drift is a statistical phenomenon and is caught statistically: compare live input and output distributions against training-time baselines and alert on divergence. Complaints arrive only after harm has occurred, and documentation review tells you what the model was, not what it has become.",
+    "area": "ch12"
+  },
+  {
+    "id": "a11-5",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A customer-facing AI assistant begins producing toxic responses in production. What should the operations team do first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Contain the incident — take the assistant offline or restrict it — and escalate through the incident process"
+      },
+      {
+        "letter": "B",
+        "text": "Schedule additional training epochs for the next release"
+      },
+      {
+        "letter": "C",
+        "text": "Keep the system running while gathering a larger sample of failures"
+      },
+      {
+        "letter": "D",
+        "text": "Migrate the model to different hardware"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Incident response order is containment first: stop ongoing harm by disabling or constraining the system, then investigate root cause with the pressure off. Continuing to run a system actively producing harmful output to 'gather data' extends the damage window, and hardware or training changes are remedies that come after diagnosis.",
+    "area": "ch12"
+  },
+  {
+    "id": "a11-6",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "In deployment terminology, a 'shadow deployment' means",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Releasing a model publicly without announcing it"
+      },
+      {
+        "letter": "B",
+        "text": "Running an undocumented legacy model past its retirement date"
+      },
+      {
+        "letter": "C",
+        "text": "Rebranding an existing model under a new product name"
+      },
+      {
+        "letter": "D",
+        "text": "Running a candidate model on live inputs in parallel, with its outputs affecting no real decisions"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Shadow deployment gives a candidate model real-world exposure with zero user risk: it sees production traffic, its outputs are recorded and compared, and nothing it says takes effect. It is the standard evidence-generating step before trusting a new model with consequences.",
+    "area": "ch12"
+  },
+  {
+    "id": "a11-7",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Which legal instrument expressly obligates providers of high-risk AI systems to run post-market monitoring?",
     "options": [
       {
         "letter": "A",
@@ -2874,370 +2874,370 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "California CPRA"
+        "text": "The EU AI Act"
       },
       {
         "letter": "C",
-        "text": "EU AI Act"
+        "text": "The California Consumer Privacy Act"
       },
       {
         "letter": "D",
-        "text": "Brazil LGPD"
+        "text": "Brazil's LGPD"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The EU AI Act requires high-risk providers to operate documented post-market monitoring systems and report serious incidents — approval is conditional on continued good behavior, a pattern borrowed from medical-device law. ISO 27001 is a voluntary security standard, and CCPA/LGPD are privacy statutes without AI post-market regimes.",
+    "area": "ch12"
+  },
+  {
+    "id": "a11-8",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "How does threat modeling differ from a performance audit in AI assurance?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Threat modeling anticipates how attackers could compromise the system; a performance audit verifies its functional behavior against intended outcomes"
+      },
+      {
+        "letter": "B",
+        "text": "Threat modeling can only be performed after deployment"
+      },
+      {
+        "letter": "C",
+        "text": "Performance audits apply to infrastructure, never to AI systems"
+      },
+      {
+        "letter": "D",
+        "text": "They are two names for the same activity"
+      }
+    ],
+    "answer": "A",
+    "explanation": "They answer different questions: threat modeling is prospective and adversarial (what attack vectors exist — poisoning, inversion, injection?), while a performance audit is evaluative (does the system do what it claims, within tolerances?). Both belong in the assurance stack, ideally with threat modeling starting at design time.",
+    "area": "ch12"
+  },
+  {
+    "id": "a11-9",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "Why does prompt injection rank among the most serious risks for deployed generative AI?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It doubles the compute cost of each inference"
+      },
+      {
+        "letter": "B",
+        "text": "It corrupts training checkpoints stored on disk"
+      },
+      {
+        "letter": "C",
+        "text": "It only affects models during offline evaluation"
+      },
+      {
+        "letter": "D",
+        "text": "Crafted inputs can override the system's instructions and safety controls, producing harmful or unauthorized behavior"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Prompt injection weaponizes the model's obedience to text: adversarial instructions — typed directly or hidden in retrieved documents — can hijack behavior, exfiltrate data, or bypass guardrails at inference time in production. It attacks the running system, not stored checkpoints, and defenses mitigate rather than eliminate it.",
+    "area": "ch12"
+  },
+  {
+    "id": "a11-10",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "After an AI incident is resolved, why should its record be linked into the organization's AI risk register?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To reduce future inference costs"
+      },
+      {
+        "letter": "B",
+        "text": "To consolidate all engineering documentation in one repository"
+      },
+      {
+        "letter": "C",
+        "text": "So the revealed risk is formally tracked, assigned an owner, and managed rather than forgotten once the incident closes"
+      },
+      {
+        "letter": "D",
+        "text": "To speed up vendor contract negotiations"
       }
     ],
     "answer": "C",
-    "explanation": "The EU AI Act mandates post-market monitoring of high-risk AI systems, including documenting incidents and developing incident response plans.",
+    "explanation": "An incident is empirical evidence that a risk is real: linking it to the register converts a one-time response into standing governance — the risk gets an owner, a treatment, and monitoring. Unlinked incidents produce organizations that fix the same failure repeatedly without ever learning.",
     "area": "ch12"
   },
   {
-    "id": "sybex-11-8",
+    "id": "a12-1",
     "domain": "Domain IV",
-    "difficulty": "",
-    "question": "What is the key difference between a performance audit and a threat model?",
+    "difficulty": "Easy",
+    "question": "Why must AI incidents be formally documented rather than just fixed?",
     "options": [
       {
         "letter": "A",
-        "text": "Performance audits assess legal compliance"
+        "text": "Documentation automatically improves the model's accuracy"
       },
       {
         "letter": "B",
-        "text": "Threat modeling is conducted after deployment"
+        "text": "Records are needed to plan future marketing campaigns"
       },
       {
         "letter": "C",
-        "text": "Performance audits focus on infrastructure, not on AI"
+        "text": "The records underpin audits, accountability, regulatory reporting, and organizational learning"
       },
       {
         "letter": "D",
-        "text": "Threat modeling identifies attack vectors; audits evaluate functional behavior"
-      }
-    ],
-    "answer": "D",
-    "explanation": "Threat modeling is a security-focused approach, while performance audits verify system behavior against its intended outcomes.",
-    "area": "ch12"
-  },
-  {
-    "id": "sybex-11-9",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "Why is prompt injection a significant concern for generative AI systems?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "It significantly slows model inference times and increases end-user response latency"
-      },
-      {
-        "letter": "B",
-        "text": "It can inadvertently overwrite critical training hyperparameters stored in configuration files"
-      },
-      {
-        "letter": "C",
-        "text": "It only affects offline training models and has no impact on production inference systems"
-      },
-      {
-        "letter": "D",
-        "text": "It can bypass built-in safety mechanisms and cause the model to produce harmful or unauthorized outputs"
-      }
-    ],
-    "answer": "D",
-    "explanation": "Prompt injection manipulates the model’s behavior, potentially causing it to generate outputs outside its safety constraints.",
-    "area": "ch12"
-  },
-  {
-    "id": "sybex-11-10",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "What is the purpose of linking incident records to the AI risk register?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "To consolidate training logs and development documentation in a central repository"
-      },
-      {
-        "letter": "B",
-        "text": "To ensure that discovered risks are systematically tracked, evaluated, and managed through the governance process"
-      },
-      {
-        "letter": "C",
-        "text": "To simplify contract negotiation and procurement processes with third-party vendors"
-      },
-      {
-        "letter": "D",
-        "text": "To reduce model inference latency and operational computing costs"
-      }
-    ],
-    "answer": "B",
-    "explanation": "Linking incidents to the risk register ensures new or recurring risks are formally tracked and mitigated in governance processes.",
-    "area": "ch12"
-  },
-  {
-    "id": "sybex-12-1",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "Which of the following is the primary purpose of documenting AI system incidents?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "To automate retirement decisions"
-      },
-      {
-        "letter": "B",
-        "text": "To prepare for marketing campaigns"
-      },
-      {
-        "letter": "C",
-        "text": "To increase model accuracy during training"
-      },
-      {
-        "letter": "D",
-        "text": "To support audits, accountability, and compliance"
-      }
-    ],
-    "answer": "D",
-    "explanation": "Documenting incidents supports transparency, regulatory compliance, and audit readiness by providing a detailed record of deviations from expected behavior.",
-    "area": "ch12"
-  },
-  {
-    "id": "sybex-12-2",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "What is a key feature of a post-market monitoring plan for AI systems?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Legal review of all user interactions"
-      },
-      {
-        "letter": "B",
-        "text": "Real-time stock trading integration"
-      },
-      {
-        "letter": "C",
-        "text": "Dynamic pricing optimization"
-      },
-      {
-        "letter": "D",
-        "text": "Ongoing evaluation of system performance and risks"
-      }
-    ],
-    "answer": "D",
-    "explanation": "Post-market monitoring ensures that deployed AI systems are continuously evaluated for accuracy, fairness, and unintended harms in real-world use.",
-    "area": "ch12"
-  },
-  {
-    "id": "sybex-12-3",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "In an external communication strategy, what should be included when describing an AI system?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "System purpose, limitations, and human involvement"
-      },
-      {
-        "letter": "B",
-        "text": "Marketing slogans and social media plans"
-      },
-      {
-        "letter": "C",
-        "text": "User passwords and login behavior"
-      },
-      {
-        "letter": "D",
-        "text": "Source code and API credentials"
-      }
-    ],
-    "answer": "A",
-    "explanation": "Effective communication includes disclosing what the system does, its limitations, and the extent of human oversight involved.",
-    "area": "ch12"
-  },
-  {
-    "id": "sybex-12-4",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "What is the primary function of an AI system retirement policy?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "To extend AI model use indefinitely"
-      },
-      {
-        "letter": "B",
-        "text": "To guide the responsible deactivation of systems"
-      },
-      {
-        "letter": "C",
-        "text": "To prevent transparency in decommissioning"
-      },
-      {
-        "letter": "D",
-        "text": "To suppress complaints from end users"
-      }
-    ],
-    "answer": "B",
-    "explanation": "A retirement policy ensures systems are deactivated in a controlled, risk-aware manner, preserving data integrity and compliance.",
-    "area": "ch12"
-  },
-  {
-    "id": "sybex-12-5",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "Which of the following most likely triggers the localization of an AI system?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Cultural or legal differences across regions"
-      },
-      {
-        "letter": "B",
-        "text": "Shared model weights across all use cases"
-      },
-      {
-        "letter": "C",
-        "text": "High user satisfaction in one market"
-      },
-      {
-        "letter": "D",
-        "text": "Stable training data distributions"
-      }
-    ],
-    "answer": "A",
-    "explanation": "Legal mandates (for example, data sovereignty) and cultural norms often require that AI systems be localized or redeployed regionally.",
-    "area": "ch12"
-  },
-  {
-    "id": "sybex-12-6",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "What distinguishes an “issue” from an “incident” in AI operations?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Issues are generally lower in severity and may not require immediate response"
-      },
-      {
-        "letter": "B",
-        "text": "Issues always involve user data loss"
-      },
-      {
-        "letter": "C",
-        "text": "Incidents only occur in training environments"
-      },
-      {
-        "letter": "D",
-        "text": "Incidents are optional to report; issues are mandatory"
-      }
-    ],
-    "answer": "A",
-    "explanation": "Issues are often minor problems or observations, whereas incidents typically involve significant failures that require prompt action.",
-    "area": "ch12"
-  },
-  {
-    "id": "sybex-12-7",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "Why should deactivated AI models be archived rather than deleted immediately?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "To avoid incurring unnecessary data storage and infrastructure maintenance costs"
-      },
-      {
-        "letter": "B",
-        "text": "To support potential legal discovery, audit requirements, and accountability investigations in the future"
-      },
-      {
-        "letter": "C",
-        "text": "To enable unauthorized reuse of model components in other products and services"
-      },
-      {
-        "letter": "D",
-        "text": "To meet search engine optimization guidelines for public-facing documentation"
-      }
-    ],
-    "answer": "B",
-    "explanation": "Archiving models allows organizations to retain historical performance data and evidence of compliance with governance obligations.",
-    "area": "ch12"
-  },
-  {
-    "id": "sybex-12-8",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "What is a key consideration when preparing for AI system retirement?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Assessing dependencies and planning fallback options"
-      },
-      {
-        "letter": "B",
-        "text": "Disabling user feedback channels"
-      },
-      {
-        "letter": "C",
-        "text": "Releasing source code into the public domain"
-      },
-      {
-        "letter": "D",
-        "text": "Increasing the model’s prediction speed"
-      }
-    ],
-    "answer": "A",
-    "explanation": "Understanding how other systems rely on the AI model enables a smoother transition and prevents service disruptions.",
-    "area": "ch12"
-  },
-  {
-    "id": "sybex-12-9",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "Under which regulation is public registration of high-risk AI systems required?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "GDPR"
-      },
-      {
-        "letter": "B",
-        "text": "EU AI Act"
-      },
-      {
-        "letter": "C",
-        "text": "California Consumer Privacy Act"
-      },
-      {
-        "letter": "D",
-        "text": "ISO/IEC 27001"
-      }
-    ],
-    "answer": "B",
-    "explanation": "The EU AI Act requires that high-risk AI systems be registered, accompanied by technical documentation and risk mitigation plans.",
-    "area": "ch12"
-  },
-  {
-    "id": "sybex-12-10",
-    "domain": "Domain IV",
-    "difficulty": "",
-    "question": "What is a best practice for communicating AI limitations to users?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Use vague language to avoid liability"
-      },
-      {
-        "letter": "B",
-        "text": "Avoid mentioning limitations to prevent user doubt"
-      },
-      {
-        "letter": "C",
-        "text": "Use clear, plain language with real-world examples"
-      },
-      {
-        "letter": "D",
-        "text": "Provide highly technical white papers only"
+        "text": "Documentation triggers the system's automatic retirement"
       }
     ],
     "answer": "C",
-    "explanation": "Using plain language and relatable examples helps users understand system constraints, promoting informed and responsible use.",
+    "explanation": "Incident records are governance evidence: they satisfy regulatory reporting duties, give auditors the trail they ask for, establish who decided what, and feed lessons back into controls. A fixed-but-undocumented incident leaves the organization unable to prove its response — or to learn from it.",
+    "area": "ch12"
+  },
+  {
+    "id": "a12-2",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "What defines a sound post-market monitoring plan for a deployed AI system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ongoing, documented evaluation of the system's real-world performance, risks, and unintended effects"
+      },
+      {
+        "letter": "B",
+        "text": "A one-time performance certification at launch"
+      },
+      {
+        "letter": "C",
+        "text": "Integration with real-time stock trading feeds"
+      },
+      {
+        "letter": "D",
+        "text": "Legal review of every individual user interaction"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Post-market monitoring is continuous and documented by design: collect operating data, evaluate performance and fairness against expectations, watch for unintended effects, and feed findings into corrective action. Launch-time certification is exactly the one-and-done pattern the requirement exists to prevent.",
+    "area": "ch12"
+  },
+  {
+    "id": "a12-3",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "An organization is drafting public-facing communications about its AI system. What belongs in that description?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The API keys and system credentials"
+      },
+      {
+        "letter": "B",
+        "text": "The complete source code repository"
+      },
+      {
+        "letter": "C",
+        "text": "Promotional slogans emphasizing capabilities only"
+      },
+      {
+        "letter": "D",
+        "text": "The system's purpose, its known limitations, and the role humans play in its decisions"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Honest external communication covers what the system does, where it falls short, and how humans oversee it — the transparency that builds justified trust and survives FTC scrutiny. Credentials and source code are security disasters, and capability-only messaging is the AI-washing pattern regulators target.",
+    "area": "ch12"
+  },
+  {
+    "id": "a12-4",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "What purpose does an AI system retirement policy serve?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ensuring systems remain in service as long as technically possible"
+      },
+      {
+        "letter": "B",
+        "text": "Defining the triggers and controlled procedures for responsibly deactivating systems"
+      },
+      {
+        "letter": "C",
+        "text": "Concealing decommissioning decisions from stakeholders"
+      },
+      {
+        "letter": "D",
+        "text": "Routing user complaints away from support channels"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A retirement (deactivation) policy predefines when a system should die — risk thresholds, obsolescence, regulatory change — and how: dependency wind-down, data disposition, stakeholder notice, record preservation. It turns end-of-life into a governed decision instead of an emergency or an indefinite drift.",
+    "area": "ch12"
+  },
+  {
+    "id": "a12-5",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "Which circumstance would most likely require localizing an AI system for a particular market?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Uniform user behavior across all regions"
+      },
+      {
+        "letter": "B",
+        "text": "Consistently high satisfaction scores in the home market"
+      },
+      {
+        "letter": "C",
+        "text": "Regional legal requirements — such as data residency mandates — or significant cultural differences"
+      },
+      {
+        "letter": "D",
+        "text": "Stable input data distributions worldwide"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Localization is driven by divergence: data sovereignty laws requiring in-country processing, regional regulations imposing different obligations, or cultural and linguistic differences that change what appropriate behavior means. Uniformity and stability argue for the opposite — one global deployment.",
+    "area": "ch12"
+  },
+  {
+    "id": "a12-6",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "In AI operations, how do 'issues' differ from 'incidents'?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Issues are lower-severity problems tracked and remediated routinely; incidents are significant failures that trigger response protocols"
+      },
+      {
+        "letter": "B",
+        "text": "Issues always involve loss of user data"
+      },
+      {
+        "letter": "C",
+        "text": "Incidents occur only in training environments"
+      },
+      {
+        "letter": "D",
+        "text": "Incidents are optional to record, while issues must be reported to regulators"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The distinction is severity and response: issues (bugs, degradations, complaints) flow through routine tracking and prioritization, while incidents (significant failures, harm events) invoke containment, investigation, and possibly disclosure. Mature programs predefine the threshold — and watch issue trends as the early-warning system for incidents.",
+    "area": "ch12"
+  },
+  {
+    "id": "a12-7",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "When an AI model is deactivated, why should it be archived instead of immediately deleted?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To leave open the option of undocumented reuse in other products"
+      },
+      {
+        "letter": "B",
+        "text": "To reduce storage and maintenance costs"
+      },
+      {
+        "letter": "C",
+        "text": "To improve search rankings for the product documentation"
+      },
+      {
+        "letter": "D",
+        "text": "Because legal discovery, audits, and accountability obligations may require examining the retired model and its records"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The questions don't retire with the model: litigation may demand reconstruction of a past decision, auditors may examine historical behavior, and regulatory retention duties — like the EU AI Act's ten-year documentation period — outlive deployment. Archival per the retention schedule preserves that evidence; premature deletion can look like spoliation.",
+    "area": "ch12"
+  },
+  {
+    "id": "a12-8",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "What is a critical step when preparing to retire an AI system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Disabling user feedback channels ahead of the shutdown"
+      },
+      {
+        "letter": "B",
+        "text": "Inventorying everything that depends on the system and planning transitions or fallbacks"
+      },
+      {
+        "letter": "C",
+        "text": "Publishing the model weights publicly"
+      },
+      {
+        "letter": "D",
+        "text": "Boosting the model's throughput for its final months"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Systems accumulate silent dependents — downstream applications, workflows, integrations — and switching one off without a dependency inventory breaks them without warning. Retirement planning maps those dependencies and arranges successors or fallbacks so the shutdown is a transition, not an outage.",
+    "area": "ch12"
+  },
+  {
+    "id": "a12-9",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Under which instrument must high-risk AI systems be registered in a public EU database?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The EU AI Act"
+      },
+      {
+        "letter": "B",
+        "text": "The GDPR"
+      },
+      {
+        "letter": "C",
+        "text": "The California Consumer Privacy Act"
+      },
+      {
+        "letter": "D",
+        "text": "ISO/IEC 42001"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The EU AI Act requires providers to register high-risk systems in the EU database before placing them on the market — part of the transparency infrastructure alongside technical documentation and CE marking. GDPR governs personal data without an AI registry, CCPA is state privacy law, and ISO 42001 is a voluntary standard.",
+    "area": "ch12"
+  },
+  {
+    "id": "a12-10",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Which approach best communicates an AI system's limitations to its users?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Omitting limitations so users don't lose confidence"
+      },
+      {
+        "letter": "B",
+        "text": "Plain-language explanations illustrated with concrete, realistic examples"
+      },
+      {
+        "letter": "C",
+        "text": "Deliberately vague phrasing to limit liability exposure"
+      },
+      {
+        "letter": "D",
+        "text": "Publishing only a dense technical appendix"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Users calibrate their reliance correctly only when limitations are stated clearly and made tangible — 'the assistant can cite documents that don't exist; verify references' beats a paragraph of hedged legalese. Hiding or burying limitations invites over-reliance and, when harm follows, deception exposure.",
     "area": "ch12"
   },
   {

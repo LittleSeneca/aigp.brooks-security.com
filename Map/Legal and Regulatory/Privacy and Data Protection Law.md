@@ -11,7 +11,6 @@ related:
  - "[[Legal and Regulatory Index]]"
  - "[[Sectoral and Civil Laws]]"
  - "[[Updating Policies for AI]]"
- - "[[AIGP Exam Questions]]"
 ---
 
 # Privacy and Data Protection Law

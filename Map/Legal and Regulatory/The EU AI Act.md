@@ -11,7 +11,6 @@ related:
  - "[[Legal and Regulatory Index]]"
  - "[[Sectoral and Civil Laws]]"
  - "[[AI Standards and Frameworks]]"
- - "[[AIGP Exam Questions]]"
 ---
 
 # The EU AI Act

@@ -11,7 +11,6 @@ related:
  - "[[AI Lifecycle Index]]"
  - "[[AI System Design]]"
  - "[[Deployment and Monitoring]]"
- - "[[AIGP Exam Questions]]"
 ---
 
 # Data Governance and Model Training
