@@ -1,7 +1,8 @@
 // AIGP Quiz Questions — 621 total
 const ALL_QUESTIONS = [
   {
-    "id": "a1-1",
+    "id": "q-1",
+    "area": "ch1",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "A music streaming service suggests playlists based on listening history, and an email provider automatically routes junk mail to a spam folder. In the AI capability taxonomy, both systems are examples of",
@@ -24,11 +25,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Both systems perform a single, highly focused task — recommending music or filtering junk mail — which is the defining trait of narrow (weak) AI. Every AI system in production today is narrow AI; general intelligence remains theoretical, and an agent would need to perceive an environment and take autonomous action toward goals.",
-    "area": "ch1"
+    "explanation": "Both systems perform a single, highly focused task — recommending music or filtering junk mail — which is the defining trait of narrow (weak) AI. Every AI system in production today is narrow AI; general intelligence remains theoretical, and an agent would need to perceive an environment and take autonomous action toward goals."
   },
   {
-    "id": "a1-2",
+    "id": "q-2",
+    "area": "ch1",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "A smart-building system continuously reads temperature, occupancy, and air-quality sensors, then autonomously adjusts ventilation and heating to meet efficiency targets. In AI terms, this system is best classified as",
@@ -51,11 +52,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "The perceive-decide-act loop is the signature of an AI agent: it senses its environment through inputs and autonomously takes actions to achieve defined goals. Expert systems apply hand-coded rules without environmental interaction, and generative models produce content rather than take actions.",
-    "area": "ch1"
+    "explanation": "The perceive-decide-act loop is the signature of an AI agent: it senses its environment through inputs and autonomously takes actions to achieve defined goals. Expert systems apply hand-coded rules without environmental interaction, and generative models produce content rather than take actions."
   },
   {
-    "id": "a1-3",
+    "id": "q-3",
+    "area": "ch1",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "An online marketplace established in the EU holds years of customer purchase records collected to fulfill orders. It now wants to train an AI model on those records to develop new marketing strategies. Under the GDPR, what must the company do before proceeding?",
@@ -78,11 +79,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Purpose limitation prevents silently repurposing data collected for order fulfillment into AI training for marketing. The company must establish a lawful basis for the new, incompatible purpose — in practice, obtaining explicit consent for the analytics use. Checkout consent covered the original purpose only, and a quiet policy update is not a lawful basis.",
-    "area": "ch1"
+    "explanation": "Purpose limitation prevents silently repurposing data collected for order fulfillment into AI training for marketing. The company must establish a lawful basis for the new, incompatible purpose — in practice, obtaining explicit consent for the analytics use. Checkout consent covered the original purpose only, and a quiet policy update is not a lawful basis."
   },
   {
-    "id": "a1-4",
+    "id": "q-4",
+    "area": "ch1",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "A hospital data science team trains a diagnostic model using thousands of radiology images, each tagged by physicians as showing or not showing a tumor. Which learning approach is the team using?",
@@ -105,11 +106,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Training on data where each example carries a known correct label (tumor / no tumor) is supervised learning — the model learns to map inputs to labeled outputs. Unsupervised learning finds structure in unlabeled data, and reinforcement learning improves behavior through reward signals rather than labels.",
-    "area": "ch1"
+    "explanation": "Training on data where each example carries a known correct label (tumor / no tumor) is supervised learning — the model learns to map inputs to labeled outputs. Unsupervised learning finds structure in unlabeled data, and reinforcement learning improves behavior through reward signals rather than labels."
   },
   {
-    "id": "a1-5",
+    "id": "q-5",
+    "area": "ch1",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "An insurance company is developing an AI model that recommends premium rates for individual applicants. Which category of harm should the company's governance program treat as the primary risk of this system?",
@@ -132,11 +133,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Consequential financial decisions about individuals — pricing, credit, coverage — carry bias as their primary harm: the model may systematically disadvantage protected demographics through learned proxies. Non-discrimination laws such as fair lending and insurance regulation make this both an ethical and a legal exposure.",
-    "area": "ch1"
+    "explanation": "Consequential financial decisions about individuals — pricing, credit, coverage — carry bias as their primary harm: the model may systematically disadvantage protected demographics through learned proxies. Non-discrimination laws such as fair lending and insurance regulation make this both an ethical and a legal exposure."
   },
   {
-    "id": "a1-6",
+    "id": "q-6",
+    "area": "ch1",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "The same insurance company wants a safeguard ensuring its premium-recommendation AI does not produce unfair outcomes for individual applicants. Which control most directly addresses this goal?",
@@ -159,11 +160,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Human-in-the-loop review places a person between the model's recommendation and the consequential decision, allowing unfair or anomalous outputs to be caught before they affect applicants. Encryption protects confidentiality, and more data or bigger models may improve accuracy but provide no direct fairness safeguard.",
-    "area": "ch1"
+    "explanation": "Human-in-the-loop review places a person between the model's recommendation and the consequential decision, allowing unfair or anomalous outputs to be caught before they affect applicants. Encryption protects confidentiality, and more data or bigger models may improve accuracy but provide no direct fairness safeguard."
   },
   {
-    "id": "a1-7",
+    "id": "q-7",
+    "area": "ch1",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "A short-video platform's recommendation algorithm decides which clips each user sees next. If the algorithm develops a bias toward inflammatory political content, which societal harm is most directly at stake?",
@@ -186,11 +187,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "A biased content-ranking algorithm shapes what millions of people see, amplifying certain narratives and suppressing others — the mechanism behind opinion manipulation and echo chambers. The other options describe real but unrelated harm categories that do not follow from ranking bias.",
-    "area": "ch1"
+    "explanation": "A biased content-ranking algorithm shapes what millions of people see, amplifying certain narratives and suppressing others — the mechanism behind opinion manipulation and echo chambers. The other options describe real but unrelated harm categories that do not follow from ranking bias."
   },
   {
-    "id": "a1-8",
+    "id": "q-8",
+    "area": "ch1",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "A university screens applications with a deep neural network that scores each candidate. A rejected applicant formally requests the reasons for the decision. What challenge is the university most likely to face?",
@@ -213,11 +214,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Deep neural networks are opaque: their decisions emerge from millions of learned weights rather than legible rules, so producing a faithful, specific explanation for one rejection is genuinely difficult. This opacity is precisely why explainability requirements and contestability rights exist for consequential automated decisions.",
-    "area": "ch1"
+    "explanation": "Deep neural networks are opaque: their decisions emerge from millions of learned weights rather than legible rules, so producing a faithful, specific explanation for one rejection is genuinely difficult. This opacity is precisely why explainability requirements and contestability rights exist for consequential automated decisions."
   },
   {
-    "id": "a1-9",
+    "id": "q-9",
+    "area": "ch1",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "When designing the AI system that pilots an autonomous delivery drone over populated areas, which responsible AI principle must rank above all others?",
@@ -240,11 +241,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "When a physical system operates around people, safety is the overriding design priority — failures cause bodily harm, not just bad predictions. Other principles still apply, but they are subordinate to preventing physical harm in embodied, safety-critical AI.",
-    "area": "ch1"
+    "explanation": "When a physical system operates around people, safety is the overriding design priority — failures cause bodily harm, not just bad predictions. Other principles still apply, but they are subordinate to preventing physical harm in embodied, safety-critical AI."
   },
   {
-    "id": "a1-10",
+    "id": "q-10",
+    "area": "ch1",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "A stadium operator deploys facial recognition so staff can greet season-ticket holders by name as they enter. Which responsible AI principle should dominate the system's design?",
@@ -267,11 +268,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "The system processes biometric identifiers of thousands of people for a convenience purpose — a maximally privacy-sensitive design. Biometric identification triggers special-category data protections, so privacy (minimization, consent, retention limits) must lead the design, outranking performance concerns.",
-    "area": "ch1"
+    "explanation": "The system processes biometric identifiers of thousands of people for a convenience purpose — a maximally privacy-sensitive design. Biometric identification triggers special-category data protections, so privacy (minimization, consent, retention limits) must lead the design, outranking performance concerns."
   },
   {
-    "id": "a2-1",
+    "id": "q-11",
+    "area": "ch2",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "During model development, which role in the AI value chain is primarily responsible for curating the training dataset and running fairness evaluations?",
@@ -294,11 +295,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Developers build and train the model, which makes dataset curation and bias testing theirs: the decisions that shape the model's behavior happen in their hands. Deployers operationalize and monitor a finished model; users operate it; the DPO advises on privacy compliance rather than performing model development.",
-    "area": "ch2"
+    "explanation": "Developers build and train the model, which makes dataset curation and bias testing theirs: the decisions that shape the model's behavior happen in their hands. Deployers operationalize and monitor a finished model; users operate it; the DPO advises on privacy compliance rather than performing model development."
   },
   {
-    "id": "a2-2",
+    "id": "q-12",
+    "area": "ch2",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "A ten-person startup is embedding AI into its product but has no dedicated compliance staff. Which governance structure fits its context best?",
@@ -321,11 +322,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Governance scales to organizational context: a small startup needs clear ownership without heavy machinery, which named champions across functions provide. Board committees and governance offices fit larger organizations, and deferring governance entirely leaves the highest-risk growth phase uncontrolled.",
-    "area": "ch2"
+    "explanation": "Governance scales to organizational context: a small startup needs clear ownership without heavy machinery, which named champions across functions provide. Board committees and governance offices fit larger organizations, and deferring governance entirely leaves the highest-risk growth phase uncontrolled."
   },
   {
-    "id": "a2-3",
+    "id": "q-13",
+    "area": "ch2",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "Which situation best demonstrates cross-functional collaboration in AI governance?",
@@ -348,11 +349,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Cross-functional collaboration means multiple disciplines sharing a governance decision — here legal, business, and technical perspectives jointly evaluating one use case. A memo is one-way communication, self-approval is the absence of governance, and complaint logging is a single-function activity.",
-    "area": "ch2"
+    "explanation": "Cross-functional collaboration means multiple disciplines sharing a governance decision — here legal, business, and technical perspectives jointly evaluating one use case. A memo is one-way communication, self-approval is the absence of governance, and complaint logging is a single-function activity."
   },
   {
-    "id": "a2-4",
+    "id": "q-14",
+    "area": "ch2",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "Why should AI governance training be tailored to each stakeholder role rather than delivered as one generic course?",
@@ -375,11 +376,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "An executive weighing AI risk, a developer embedding controls, and a user deciding when to trust output each need different knowledge — training is effective when it maps to actual duties. Role-tailoring is best practice, not a literal legal mandate, and governance literacy matters for every role, not just engineers.",
-    "area": "ch2"
+    "explanation": "An executive weighing AI risk, a developer embedding controls, and a user deciding when to trust output each need different knowledge — training is effective when it maps to actual duties. Role-tailoring is best practice, not a literal legal mandate, and governance literacy matters for every role, not just engineers."
   },
   {
-    "id": "a2-5",
+    "id": "q-15",
+    "area": "ch2",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "In governance terms, what distinguishes AI users from the developers and deployers of the same system?",
@@ -402,11 +403,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Users sit closest to the system's real-world effects — they see the odd recommendation, the unfair pattern, the confusing output — making them a critical detection layer when trained and given reporting channels. Architecture, pipelines, and conformity assessments belong to developers and deployers.",
-    "area": "ch2"
+    "explanation": "Users sit closest to the system's real-world effects — they see the odd recommendation, the unfair pattern, the confusing output — making them a critical detection layer when trained and given reporting channels. Architecture, pipelines, and conformity assessments belong to developers and deployers."
   },
   {
-    "id": "a2-6",
+    "id": "q-16",
+    "area": "ch2",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "A company building AI-assisted diagnostic tools for hospitals is deciding how formal its AI governance should be. Given the heavily regulated healthcare context, which approach is most appropriate?",
@@ -429,11 +430,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Highly regulated sectors demand governance that can withstand regulator and auditor scrutiny: documented reviews, evidence trails, and repeatable processes. Informal or purely aspirational approaches cannot demonstrate compliance where health, safety, and sectoral law are engaged.",
-    "area": "ch2"
+    "explanation": "Highly regulated sectors demand governance that can withstand regulator and auditor scrutiny: documented reviews, evidence trails, and repeatable processes. Informal or purely aspirational approaches cannot demonstrate compliance where health, safety, and sectoral law are engaged."
   },
   {
-    "id": "a2-7",
+    "id": "q-17",
+    "area": "ch2",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "In a RACI matrix used to assign AI governance duties, the letter 'A' designates the person who is",
@@ -456,11 +457,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "RACI stands for Responsible, Accountable, Consulted, Informed. The Accountable party ultimately owns the outcome and answers for it — and sound practice assigns exactly one Accountable person per activity, preventing the diffuse ownership that lets governance tasks fall through gaps.",
-    "area": "ch2"
+    "explanation": "RACI stands for Responsible, Accountable, Consulted, Informed. The Accountable party ultimately owns the outcome and answers for it — and sound practice assigns exactly one Accountable person per activity, preventing the diffuse ownership that lets governance tasks fall through gaps."
   },
   {
-    "id": "a2-8",
+    "id": "q-18",
+    "area": "ch2",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "Which governance responsibility belongs specifically to the deployer of an AI system rather than its developer?",
@@ -483,11 +484,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Deployers operationalize the system and own its behavior in context: monitoring performance, watching for drift, overseeing day-to-day risk. Architecture, tuning, and training-data work happen on the development side before the system ever reaches the deployer.",
-    "area": "ch2"
+    "explanation": "Deployers operationalize the system and own its behavior in context: monitoring performance, watching for drift, overseeing day-to-day risk. Architecture, tuning, and training-data work happen on the development side before the system ever reaches the deployer."
   },
   {
-    "id": "a2-9",
+    "id": "q-19",
+    "area": "ch2",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is the primary governance benefit of reviewing proposed AI use cases with a cross-functional group rather than a single department?",
@@ -510,11 +511,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Each discipline sees failure modes the others miss: lawyers spot regulatory exposure, ethicists spot fairness issues, engineers spot technical fragility, business owners spot operational impact. Joint review surfaces the full risk picture before commitment — it does not speed development, replace documentation, or move liability.",
-    "area": "ch2"
+    "explanation": "Each discipline sees failure modes the others miss: lawyers spot regulatory exposure, ethicists spot fairness issues, engineers spot technical fragility, business owners spot operational impact. Joint review surfaces the full risk picture before commitment — it does not speed development, replace documentation, or move liability."
   },
   {
-    "id": "a2-10",
+    "id": "q-20",
+    "area": "ch2",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "Which element would add the most value to an organization's AI governance training program?",
@@ -537,11 +538,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Concrete failure case studies teach stakeholders what governance breakdown actually looks like, why it happened, and how to respond — converting abstract policy into recognizable patterns. Passive reminders and generic technical overviews build neither judgment nor accountability.",
-    "area": "ch2"
+    "explanation": "Concrete failure case studies teach stakeholders what governance breakdown actually looks like, why it happened, and how to respond — converting abstract policy into recognizable patterns. Passive reminders and generic technical overviews build neither judgment nor accountability."
   },
   {
-    "id": "a3-1",
+    "id": "q-21",
+    "area": "ch3",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "An organization is drafting its AI governance policy set. Which statement reflects the correct scope for lifecycle-based governance?",
@@ -564,11 +565,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Lifecycle-based governance is continuous: risks are introduced at every stage — use-case selection, data acquisition, training, release, operation, retirement — so accountability must attach at each of them. Deployment-only oversight misses design-stage risk, data-sensitivity scoping misses non-privacy harms, and single-team ownership defeats multidisciplinary review.",
-    "area": "ch3"
+    "explanation": "Lifecycle-based governance is continuous: risks are introduced at every stage — use-case selection, data acquisition, training, release, operation, retirement — so accountability must attach at each of them. Deployment-only oversight misses design-stage risk, data-sensitivity scoping misses non-privacy harms, and single-team ownership defeats multidisciplinary review."
   },
   {
-    "id": "a3-2",
+    "id": "q-22",
+    "area": "ch3",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "A company strips names and contact details from customer records before using them to train a model, then treats the data as anonymous. What residual privacy risk should its policies address?",
@@ -591,11 +592,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Removing direct identifiers is not anonymization: combinations of remaining quasi-identifiers, linkage with external datasets, and model-level attacks like inversion can re-identify individuals. Policies must treat claimed-anonymous training data as a live privacy risk requiring evaluation, not a solved problem.",
-    "area": "ch3"
+    "explanation": "Removing direct identifiers is not anonymization: combinations of remaining quasi-identifiers, linkage with external datasets, and model-level attacks like inversion can re-identify individuals. Policies must treat claimed-anonymous training data as a live privacy risk requiring evaluation, not a solved problem."
   },
   {
-    "id": "a3-3",
+    "id": "q-23",
+    "area": "ch3",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "Which requirement belongs in an organization's policy for managing third-party AI risk?",
@@ -618,11 +619,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Documentation and data provenance let the organization actually evaluate a vendor's model for legality, fairness, and fitness — the substance of third-party AI diligence. Blanket bans forfeit legitimate capability, unverified self-attestation is not assurance, and a single-certification gate both over-restricts and under-examines.",
-    "area": "ch3"
+    "explanation": "Documentation and data provenance let the organization actually evaluate a vendor's model for legality, fairness, and fitness — the substance of third-party AI diligence. Blanket bans forfeit legitimate capability, unverified self-attestation is not assurance, and a single-certification gate both over-restricts and under-examines."
   },
   {
-    "id": "a3-4",
+    "id": "q-24",
+    "area": "ch3",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "An AI policy requires scheduled checks for model drift and performance degradation. To which lifecycle stage does this policy primarily apply?",
@@ -645,11 +646,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Drift only exists once a model meets live data, so drift-monitoring policy governs the operational stage: watching deployed behavior against the world as it changes. Earlier stages have their own controls — approval gates, data rights checks, validation — but drift detection is inherently post-deployment.",
-    "area": "ch3"
+    "explanation": "Drift only exists once a model meets live data, so drift-monitoring policy governs the operational stage: watching deployed behavior against the world as it changes. Earlier stages have their own controls — approval gates, data rights checks, validation — but drift detection is inherently post-deployment."
   },
   {
-    "id": "a3-5",
+    "id": "q-25",
+    "area": "ch3",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "When contracting for an AI-enabled service, which clause most strengthens the customer's governance position?",
@@ -672,11 +673,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Audit access and transparency about data origins and fairness testing give the customer the means to verify claims and manage inherited risk — the practical core of AI vendor contracting. Bias exemptions shift risk the wrong way, full source disclosure is unnecessary and unobtainable, and truncated confidentiality protects no one.",
-    "area": "ch3"
+    "explanation": "Audit access and transparency about data origins and fairness testing give the customer the means to verify claims and manage inherited risk — the practical core of AI vendor contracting. Bias exemptions shift risk the wrong way, full source disclosure is unnecessary and unobtainable, and truncated confidentiality protects no one."
   },
   {
-    "id": "a3-6",
+    "id": "q-26",
+    "area": "ch3",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "Why do privacy policies written before the AI era often fall short when applied to machine learning systems?",
@@ -699,11 +700,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Legacy policies govern data in databases; they say nothing about data persisting inside model weights, memorization leaking through outputs, or what a deletion request means for a trained model. That retention-in-the-model gap is a defining reason AI demands policy updates.",
-    "area": "ch3"
+    "explanation": "Legacy policies govern data in databases; they say nothing about data persisting inside model weights, memorization leaking through outputs, or what a deletion request means for a trained model. That retention-in-the-model gap is a defining reason AI demands policy updates."
   },
   {
-    "id": "a3-7",
+    "id": "q-27",
+    "area": "ch3",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "Why do mature procurement programs assign risk tiers to AI vendors?",
@@ -726,11 +727,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Tiering is proportionality applied to procurement: a vendor processing sensitive data or supporting critical functions warrants deep diligence and continuous monitoring, while a low-stakes tool gets a lighter path. Uniform treatment either wastes effort or under-controls the vendors that matter.",
-    "area": "ch3"
+    "explanation": "Tiering is proportionality applied to procurement: a vendor processing sensitive data or supporting critical functions warrants deep diligence and continuous monitoring, while a low-stakes tool gets a lighter path. Uniform treatment either wastes effort or under-controls the vendors that matter."
   },
   {
-    "id": "a3-8",
+    "id": "q-28",
+    "area": "ch3",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "Which policy mechanism most directly enforces purpose limitation across an organization's AI data pipelines?",
@@ -753,11 +754,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Purpose limitation fails through quiet repurposing, and a use-case registry attacks exactly that: every dataset's approved purposes are recorded, so a new use is visible, reviewable, and blockable. Storage location doesn't govern purpose, and blanket reuse authorization is the violation itself, formalized.",
-    "area": "ch3"
+    "explanation": "Purpose limitation fails through quiet repurposing, and a use-case registry attacks exactly that: every dataset's approved purposes are recorded, so a new use is visible, reviewable, and blockable. Storage location doesn't govern purpose, and blanket reuse authorization is the violation itself, formalized."
   },
   {
-    "id": "a3-9",
+    "id": "q-29",
+    "area": "ch3",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "Which practice would most effectively reduce bias during AI model development?",
@@ -780,11 +781,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Bias hides inside aggregate metrics: a model can post excellent overall accuracy while failing one subgroup badly. Disaggregated evaluation across demographic slices is what surfaces disparate performance so it can be corrected. Encryption addresses confidentiality, not fairness, and synthetic data inherits the biases of whatever generated it.",
-    "area": "ch3"
+    "explanation": "Bias hides inside aggregate metrics: a model can post excellent overall accuracy while failing one subgroup badly. Disaggregated evaluation across demographic slices is what surfaces disparate performance so it can be corrected. Encryption addresses confidentiality, not fairness, and synthetic data inherits the biases of whatever generated it."
   },
   {
-    "id": "a3-10",
+    "id": "q-30",
+    "area": "ch3",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "In AI privacy risk, a 'model inversion' attack refers to",
@@ -807,11 +808,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Model inversion turns the model itself into a disclosure channel: by systematically querying it, an attacker reconstructs training inputs — recognizable faces from a recognition model, sensitive records from a classifier. It is a core reason 'the model is not the data' fails as a privacy argument.",
-    "area": "ch3"
+    "explanation": "Model inversion turns the model itself into a disclosure channel: by systematically querying it, an attacker reconstructs training inputs — recognizable faces from a recognition model, sensitive records from a classifier. It is a core reason 'the model is not the data' fails as a privacy argument."
   },
   {
-    "id": "a4-1",
+    "id": "q-31",
+    "area": "ch4",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "A wellness app wants its AI to process users' health information. Under GDPR Article 9, which condition most commonly legitimizes processing this special category data?",
@@ -834,11 +835,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Article 9 prohibits processing special categories like health data unless a specific condition applies, and for consumer contexts the workhorse condition is explicit consent — a clear affirmative statement specific to the sensitive processing. Implied consent fails the standard entirely, and legitimate interests is not an Article 9 condition.",
-    "area": "ch4"
+    "explanation": "Article 9 prohibits processing special categories like health data unless a specific condition applies, and for consumer contexts the workhorse condition is explicit consent — a clear affirmative statement specific to the sensitive processing. Implied consent fails the standard entirely, and legitimate interests is not an Article 9 condition."
   },
   {
-    "id": "a4-2",
+    "id": "q-32",
+    "area": "ch4",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "In the AI context, the GDPR principle of purpose limitation means",
@@ -861,11 +862,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Purpose limitation binds data to the purposes stated at collection; a new use — such as training an AI model — requires either compatibility with the original purpose or a fresh lawful basis. It limits data reuse, not system functionality, and it makes 'collect everything for later' the anti-pattern rather than the strategy.",
-    "area": "ch4"
+    "explanation": "Purpose limitation binds data to the purposes stated at collection; a new use — such as training an AI model — requires either compatibility with the original purpose or a fresh lawful basis. It limits data reuse, not system functionality, and it makes 'collect everything for later' the anti-pattern rather than the strategy."
   },
   {
-    "id": "a4-3",
+    "id": "q-33",
+    "area": "ch4",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "Under GDPR Article 35, a Data Protection Impact Assessment is required when",
@@ -888,11 +889,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "The DPIA trigger is likely high risk to individuals: Article 35 names systematic and extensive automated evaluation, large-scale special-category processing, and systematic public monitoring as canonical cases — AI profiling routinely qualifies. Routine, low-risk processing does not require one, whoever the users are.",
-    "area": "ch4"
+    "explanation": "The DPIA trigger is likely high risk to individuals: Article 35 names systematic and extensive automated evaluation, large-scale special-category processing, and systematic public monitoring as canonical cases — AI profiling routinely qualifies. Routine, low-risk processing does not require one, whoever the users are."
   },
   {
-    "id": "a4-4",
+    "id": "q-34",
+    "area": "ch4",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "Within an AI project, the party acting as the GDPR data controller is the one that",
@@ -915,11 +916,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "The controller decides purposes and means — why the data is processed and how — and carries accountability for compliance. Hosting, incident response, and contracted development are activities a processor can perform on instructions; the decision-making role is what confers controller status, whatever the contract says.",
-    "area": "ch4"
+    "explanation": "The controller decides purposes and means — why the data is processed and how — and carries accountability for compliance. Hosting, incident response, and contracted development are activities a processor can perform on instructions; the decision-making role is what confers controller status, whatever the contract says."
   },
   {
-    "id": "a4-5",
+    "id": "q-35",
+    "area": "ch4",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "Which of the following data uses would demand the most stringent safeguards under privacy law?",
@@ -942,11 +943,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Facial identification processes biometric data to uniquely identify people — special category data under GDPR Article 9 — and does so in a surveillance context, compounding the sensitivity. Display preferences, layout tests, and requested newsletters involve ordinary data with low risk.",
-    "area": "ch4"
+    "explanation": "Facial identification processes biometric data to uniquely identify people — special category data under GDPR Article 9 — and does so in a surveillance context, compounding the sensitivity. Display preferences, layout tests, and requested newsletters involve ordinary data with low risk."
   },
   {
-    "id": "a4-6",
+    "id": "q-36",
+    "area": "ch4",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "An AI system analyzing supermarket purchase patterns can predict which customers are likely pregnant. What privacy risk does this illustrate?",
@@ -969,11 +970,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "The system derives health-related information from ordinary shopping data — and inferred special-category data carries the same legal protections as collected special-category data. Inference risk means an organization can stumble into Article 9 territory without ever asking a sensitive question.",
-    "area": "ch4"
+    "explanation": "The system derives health-related information from ordinary shopping data — and inferred special-category data carries the same legal protections as collected special-category data. Inference risk means an organization can stumble into Article 9 territory without ever asking a sensitive question."
   },
   {
-    "id": "a4-7",
+    "id": "q-37",
+    "area": "ch4",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "Which practice exemplifies privacy by design in an AI system?",
@@ -996,11 +997,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Privacy by design — codified in GDPR Article 25 — makes privacy a design requirement from the start: minimization in the pipeline, protective defaults, retention limits in the architecture. Post-hoc reviews and retrofits are the pattern it exists to replace, and compliance accountability cannot be delegated to a vendor.",
-    "area": "ch4"
+    "explanation": "Privacy by design — codified in GDPR Article 25 — makes privacy a design requirement from the start: minimization in the pipeline, protective defaults, retention limits in the architecture. Post-hoc reviews and retrofits are the pattern it exists to replace, and compliance accountability cannot be delegated to a vendor."
   },
   {
-    "id": "a4-8",
+    "id": "q-38",
+    "area": "ch4",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "Which scenario best demonstrates the data minimization principle in AI development?",
@@ -1023,11 +1024,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Minimization means adequate, relevant, and limited to what the purpose needs — narrow fields, de-identified where possible, kept no longer than necessary. Speculative collection, cross-product enrichment, and indefinite retention are each the opposite instinct.",
-    "area": "ch4"
+    "explanation": "Minimization means adequate, relevant, and limited to what the purpose needs — narrow fields, de-identified where possible, kept no longer than necessary. Speculative collection, cross-product enrichment, and indefinite retention are each the opposite instinct."
   },
   {
-    "id": "a4-9",
+    "id": "q-39",
+    "area": "ch4",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "A controller engages an external AI service that will process its customers' personal data. What does GDPR Article 28 require?",
@@ -1050,11 +1051,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Article 28 requires a binding contract with any processor covering instructions, confidentiality, security, sub-processing, data subject rights support, breach notice, deletion or return, and audit rights. Accountability stays with the controller — it cannot be contracted away, and unlimited vendor data reuse would violate the instruction requirement outright.",
-    "area": "ch4"
+    "explanation": "Article 28 requires a binding contract with any processor covering instructions, confidentiality, security, sub-processing, data subject rights support, breach notice, deletion or return, and audit rights. Accountability stays with the controller — it cannot be contracted away, and unlimited vendor data reuse would violate the instruction requirement outright."
   },
   {
-    "id": "a4-10",
+    "id": "q-40",
+    "area": "ch4",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "A loan applicant is denied by a fully automated credit model with no human involvement. Under GDPR Article 22, what is the applicant entitled to?",
@@ -1077,11 +1078,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "For solely automated decisions with legal or similarly significant effects, Article 22's safeguards guarantee human intervention, the ability to express one's point of view, and the right to contest. It does not grant source-code access, automatic reversal, or erasure — it guarantees a human route of challenge.",
-    "area": "ch4"
+    "explanation": "For solely automated decisions with legal or similarly significant effects, Article 22's safeguards guarantee human intervention, the ability to express one's point of view, and the right to contest. It does not grant source-code access, automatic reversal, or erasure — it guarantees a human route of challenge."
   },
   {
-    "id": "a5-1",
+    "id": "q-41",
+    "area": "ch5",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "A startup scrapes professional stock-photography sites and trains an image generator on the collected works without licenses. Which intellectual property concern does this raise most directly?",
@@ -1104,11 +1105,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Copying protected creative works into a training corpus without permission implicates the reproduction right, and fair use for AI training remains contested rather than settled. Patents, trademarks, and trade secrets protect different subject matter that scraping photographs does not touch.",
-    "area": "ch5"
+    "explanation": "Copying protected creative works into a training corpus without permission implicates the reproduction right, and fair use for AI training remains contested rather than settled. Patents, trademarks, and trade secrets protect different subject matter that scraping photographs does not touch."
   },
   {
-    "id": "a5-2",
+    "id": "q-42",
+    "area": "ch5",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "A company uses an AI screening tool to rank job applicants. Under US federal employment law, which applicant characteristic is legally protected against discrimination?",
@@ -1131,11 +1132,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Title VII of the Civil Rights Act protects race, color, religion, sex, and national origin in employment — AI screening tools must be evaluated for disparate impact across these categories. Commute distance, typing speed, and schedule preferences are not protected classes, though they can act as risky proxies for ones that are.",
-    "area": "ch5"
+    "explanation": "Title VII of the Civil Rights Act protects race, color, religion, sex, and national origin in employment — AI screening tools must be evaluated for disparate impact across these categories. Commute distance, typing speed, and schedule preferences are not protected classes, though they can act as risky proxies for ones that are."
   },
   {
-    "id": "a5-3",
+    "id": "q-43",
+    "area": "ch5",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "An online retailer's support 'representatives' are actually AI chatbots, and customers are never told. Under FTC Act Section 5, why is this practice risky?",
@@ -1158,11 +1159,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Section 5 prohibits deceptive practices, and the FTC has signaled that leading reasonable consumers to believe they are dealing with a human when they are not can qualify. There is no federal AI registration regime — the exposure comes from the misleading impression, not from using AI itself.",
-    "area": "ch5"
+    "explanation": "Section 5 prohibits deceptive practices, and the FTC has signaled that leading reasonable consumers to believe they are dealing with a human when they are not can qualify. There is no federal AI registration regime — the exposure comes from the misleading impression, not from using AI itself."
   },
   {
-    "id": "a5-4",
+    "id": "q-44",
+    "area": "ch5",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "An autonomous lawn mower's obstacle-detection logic cannot reliably distinguish small children from shrubbery — a flaw present in every unit as specified. In product liability terms, this is a",
@@ -1185,11 +1186,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "The danger lives in the product's intended design — every correctly built unit carries it — which is the definition of a design defect. A manufacturing defect would be a deviation in particular units from an otherwise safe design; failure to warn (marketing defect) concerns uncommunicated risks, not the flawed specification itself.",
-    "area": "ch5"
+    "explanation": "The danger lives in the product's intended design — every correctly built unit carries it — which is the definition of a design defect. A manufacturing defect would be a deviation in particular units from an otherwise safe design; failure to warn (marketing defect) concerns uncommunicated risks, not the flawed specification itself."
   },
   {
-    "id": "a5-5",
+    "id": "q-45",
+    "area": "ch5",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "A fintech's AI model systematically offers worse credit terms to applicants from certain neighborhoods. Which US statute most directly prohibits this discriminatory credit outcome?",
@@ -1212,11 +1213,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "ECOA prohibits discrimination in credit decisions and applies with full force to algorithmic underwriting — neighborhood-based disparities often proxy for race, triggering fair-lending scrutiny. The other statutes govern copyright, competition, and computer intrusion, none of which reach credit discrimination.",
-    "area": "ch5"
+    "explanation": "ECOA prohibits discrimination in credit decisions and applies with full force to algorithmic underwriting — neighborhood-based disparities often proxy for race, triggering fair-lending scrutiny. The other statutes govern copyright, competition, and computer intrusion, none of which reach credit discrimination."
   },
   {
-    "id": "a5-6",
+    "id": "q-46",
+    "area": "ch5",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "A wellness app's chatbot dispenses specific treatment recommendations while presenting itself as a friendly companion, with no disclosure or medical licensure. Which body of law does this most directly implicate?",
@@ -1239,11 +1240,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Misleading consumers about the nature and qualifications behind health advice is classic UDAP territory — deception with a real risk of consumer injury. Sector health law may compound the exposure, but the direct hook among the options is consumer protection.",
-    "area": "ch5"
+    "explanation": "Misleading consumers about the nature and qualifications behind health advice is classic UDAP territory — deception with a real risk of consumer injury. Sector health law may compound the exposure, but the direct hook among the options is consumer protection."
   },
   {
-    "id": "a5-7",
+    "id": "q-47",
+    "area": "ch5",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "In an AI product liability suit, which defense argument is LEAST likely to succeed?",
@@ -1266,11 +1267,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "'Our own system was too complex to predict' is an admission, not a defense — manufacturers remain responsible for delivering reasonably safe products, and unpredictability argues for more testing and constraint, not absolution. Unforeseeable misuse, lack of causation, and reasonable design are recognized defenses.",
-    "area": "ch5"
+    "explanation": "'Our own system was too complex to predict' is an admission, not a defense — manufacturers remain responsible for delivering reasonably safe products, and unpredictability argues for more testing and constraint, not absolution. Unforeseeable misuse, lack of causation, and reasonable design are recognized defenses."
   },
   {
-    "id": "a5-8",
+    "id": "q-48",
+    "area": "ch5",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "Which US agency has issued guidance making clear that employers remain responsible for discrimination produced by the AI hiring tools they use?",
@@ -1293,11 +1294,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "The EEOC enforces federal employment anti-discrimination law and has stated explicitly that using a vendor's AI tool does not transfer responsibility — the employer answers for disparate impact in its hiring process. The FCC, Copyright Office, and SEC regulate different domains.",
-    "area": "ch5"
+    "explanation": "The EEOC enforces federal employment anti-discrimination law and has stated explicitly that using a vendor's AI tool does not transfer responsibility — the employer answers for disparate impact in its hiring process. The FCC, Copyright Office, and SEC regulate different domains."
   },
   {
-    "id": "a5-9",
+    "id": "q-49",
+    "area": "ch5",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "An insurer's pricing model never uses race as an input, but it heavily weights postal code and shopping patterns. What is the key legal risk?",
@@ -1320,11 +1321,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Facially neutral features that correlate strongly with protected traits let a model reconstruct and discriminate on those traits without ever seeing them — the proxy-discrimination pattern that disparate impact doctrine catches. Excluding the protected attribute is not a defense when its proxies carry the signal.",
-    "area": "ch5"
+    "explanation": "Facially neutral features that correlate strongly with protected traits let a model reconstruct and discriminate on those traits without ever seeing them — the proxy-discrimination pattern that disparate impact doctrine catches. Excluding the protected attribute is not a defense when its proxies carry the signal."
   },
   {
-    "id": "a5-10",
+    "id": "q-50",
+    "area": "ch5",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "A vendor advertises that its product 'uses AI to detect fraud with 99.9% accuracy.' What does the FTC expect before such a claim is published?",
@@ -1347,11 +1348,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "The FTC applies ordinary advertising-substantiation doctrine to AI: performance claims need competent and reliable evidence before they are made. There is no certification or registration regime — and 'it plausibly might be true' has never been the standard.",
-    "area": "ch5"
+    "explanation": "The FTC applies ordinary advertising-substantiation doctrine to AI: performance claims need competent and reliable evidence before they are made. There is no certification or registration regime — and 'it plausibly might be true' has never been the standard."
   },
   {
-    "id": "a6-1",
+    "id": "q-51",
+    "area": "ch6",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "Under the EU AI Act, which of the following practices falls in the prohibited (unacceptable-risk) category?",
@@ -1374,11 +1375,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Real-time remote biometric identification in publicly accessible spaces is on the Article 5 prohibited list, permitted only under narrow, judicially controlled law-enforcement exceptions. Routing assistance, media recommenders, and industrial inspection are minimal- or limited-risk uses.",
-    "area": "ch6"
+    "explanation": "Real-time remote biometric identification in publicly accessible spaces is on the Article 5 prohibited list, permitted only under narrow, judicially controlled law-enforcement exceptions. Routing assistance, media recommenders, and industrial inspection are minimal- or limited-risk uses."
   },
   {
-    "id": "a6-2",
+    "id": "q-52",
+    "area": "ch6",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "Before a high-risk AI system reaches the EU market, what documentation must its provider prepare and maintain?",
@@ -1401,11 +1402,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "High-risk providers must produce comprehensive technical documentation — design, development process, risk management, data governance, testing and performance evidence — kept current and available to authorities for ten years. Patents, environmental audits, and investor disclosures are not AI Act conformity requirements.",
-    "area": "ch6"
+    "explanation": "High-risk providers must produce comprehensive technical documentation — design, development process, risk management, data governance, testing and performance evidence — kept current and available to authorities for ten years. Patents, environmental audits, and investor disclosures are not AI Act conformity requirements."
   },
   {
-    "id": "a6-3",
+    "id": "q-53",
+    "area": "ch6",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "Under the EU AI Act, the entity that develops an AI system and places it on the EU market under its own name or trademark is the",
@@ -1428,11 +1429,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "That is the Act's definition of the provider — the central duty-bearer owning conformity assessment, documentation, CE marking, and post-market monitoring. Importers bring foreign systems in, distributors pass them along, and deployers use them professionally; note that rebranding or substantially modifying a system can convert those roles into provider.",
-    "area": "ch6"
+    "explanation": "That is the Act's definition of the provider — the central duty-bearer owning conformity assessment, documentation, CE marking, and post-market monitoring. Importers bring foreign systems in, distributors pass them along, and deployers use them professionally; note that rebranding or substantially modifying a system can convert those roles into provider."
   },
   {
-    "id": "a6-4",
+    "id": "q-54",
+    "area": "ch6",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "A hospital adopts a third-party high-risk AI system for triage. As the deployer, which obligation belongs to the hospital?",
@@ -1455,11 +1456,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Deployers owe operational duties: using the system per its instructions, ensuring competent human oversight, monitoring operation, and reporting serious incidents. Conformity assessment and CE marking are the provider's pre-market obligations, and patent registration is not an AI Act concept.",
-    "area": "ch6"
+    "explanation": "Deployers owe operational duties: using the system per its instructions, ensuring competent human oversight, monitoring operation, and reporting serious incidents. Conformity assessment and CE marking are the provider's pre-market obligations, and patent registration is not an AI Act concept."
   },
   {
-    "id": "a6-5",
+    "id": "q-55",
+    "area": "ch6",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "Which EU AI Act risk category carries essentially no new mandatory obligations?",
@@ -1482,11 +1483,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Minimal-risk systems — spam filters, game AI, inventory forecasting — are left essentially unregulated, with voluntary codes encouraged. Limited-risk systems carry transparency duties, high-risk systems carry the full compliance program, and systemic-risk GPAI carries evaluation and mitigation obligations.",
-    "area": "ch6"
+    "explanation": "Minimal-risk systems — spam filters, game AI, inventory forecasting — are left essentially unregulated, with voluntary codes encouraged. Limited-risk systems carry transparency duties, high-risk systems carry the full compliance program, and systemic-risk GPAI carries evaluation and mitigation obligations."
   },
   {
-    "id": "a6-6",
+    "id": "q-56",
+    "area": "ch6",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What subjects a general-purpose AI model to the EU AI Act's enhanced 'systemic risk' obligations?",
@@ -1509,11 +1510,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Enhanced obligations — model evaluations, adversarial testing, risk mitigation, incident reporting, cybersecurity — attach to GPAI with systemic risk, presumed at training compute above 10^25 FLOPs or by Commission designation. Licensing model, data geography, and deployment breadth are not the trigger.",
-    "area": "ch6"
+    "explanation": "Enhanced obligations — model evaluations, adversarial testing, risk mitigation, incident reporting, cybersecurity — attach to GPAI with systemic risk, presumed at training compute above 10^25 FLOPs or by Commission designation. Licensing model, data geography, and deployment breadth are not the trigger."
   },
   {
-    "id": "a6-7",
+    "id": "q-57",
+    "area": "ch6",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "An EU company imports a high-risk AI system built by a non-EU developer. Before placing it on the market, the importer must verify that",
@@ -1536,11 +1537,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Importers are a verification checkpoint: they confirm the foreign provider performed conformity assessment, drew up the technical documentation, and affixed CE marking before the system enters the EU market. They verify conformity evidence — they do not re-perform the assessment, and no data-localization or escrow duty exists.",
-    "area": "ch6"
+    "explanation": "Importers are a verification checkpoint: they confirm the foreign provider performed conformity assessment, drew up the technical documentation, and affixed CE marking before the system enters the EU market. They verify conformity evidence — they do not re-perform the assessment, and no data-localization or escrow duty exists."
   },
   {
-    "id": "a6-8",
+    "id": "q-58",
+    "area": "ch6",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "An enterprise deploys a prohibited AI practice in the EU. What is the maximum administrative fine the AI Act authorizes?",
@@ -1563,11 +1564,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Prohibited-practice violations sit at the top of the penalty ladder: up to €35 million or 7% of global annual turnover, whichever is higher. The 15/3 tier covers most other obligations, 7.5/1 covers misleading information to authorities — and 20/4 is GDPR's ceiling, a deliberate distractor.",
-    "area": "ch6"
+    "explanation": "Prohibited-practice violations sit at the top of the penalty ladder: up to €35 million or 7% of global annual turnover, whichever is higher. The 15/3 tier covers most other obligations, 7.5/1 covers misleading information to authorities — and 20/4 is GDPR's ceiling, a deliberate distractor."
   },
   {
-    "id": "a6-9",
+    "id": "q-59",
+    "area": "ch6",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "Under the EU AI Act, a distributor of an AI system becomes exposed to liability when it",
@@ -1590,11 +1591,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Distributors must verify CE marking and documentation and must not supply systems they have reason to consider non-compliant — awareness plus inaction is the liability trigger, and they must take corrective action or withdraw. Multi-state sales, product assortment, and support languages carry no such consequence.",
-    "area": "ch6"
+    "explanation": "Distributors must verify CE marking and documentation and must not supply systems they have reason to consider non-compliant — awareness plus inaction is the liability trigger, and they must take corrective action or withdraw. Multi-state sales, product assortment, and support languages carry no such consequence."
   },
   {
-    "id": "a6-10",
+    "id": "q-60",
+    "area": "ch6",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "In the GPAI context, what function does a model card serve?",
@@ -1617,11 +1618,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "A model card is transparency documentation: capabilities, training data summary, evaluation results, limitations, and appropriate uses — exactly the information downstream providers and deployers need to use the model responsibly. It informs; it does not certify, register ownership, or specify hardware.",
-    "area": "ch6"
+    "explanation": "A model card is transparency documentation: capabilities, training data summary, evaluation results, limitations, and appropriate uses — exactly the information downstream providers and deployers need to use the model responsibly. It informs; it does not certify, register ownership, or specify hardware."
   },
   {
-    "id": "a7-1",
+    "id": "q-61",
+    "area": "ch7",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What role do the OECD AI Principles play in the global AI governance landscape?",
@@ -1644,11 +1645,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "The OECD Principles are the first intergovernmental AI standard: five non-binding values (inclusive growth, human rights and fairness, transparency and explainability, robustness and safety, accountability) plus policy recommendations. They set shared vocabulary and values — risk tiers and enforcement came later, in instruments like the EU AI Act that drew on them.",
-    "area": "ch7"
+    "explanation": "The OECD Principles are the first intergovernmental AI standard: five non-binding values (inclusive growth, human rights and fairness, transparency and explainability, robustness and safety, accountability) plus policy recommendations. They set shared vocabulary and values — risk tiers and enforcement came later, in instruments like the EU AI Act that drew on them."
   },
   {
-    "id": "a7-2",
+    "id": "q-62",
+    "area": "ch7",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "A team working with the NIST AI RMF is characterizing an AI system's intended purpose, deployment context, stakeholders, and potential risks. Which Core function are they performing?",
@@ -1671,11 +1672,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Map is the context function: establish what the system is for, where it operates, who it affects, and what risks arise in that frame. Govern is the cross-cutting culture-and-accountability layer, Measure assesses and tracks the mapped risks, and Manage prioritizes and responds to them.",
-    "area": "ch7"
+    "explanation": "Map is the context function: establish what the system is for, where it operates, who it affects, and what risks arise in that frame. Govern is the cross-cutting culture-and-accountability layer, Measure assesses and tracks the mapped risks, and Manage prioritizes and responds to them."
   },
   {
-    "id": "a7-3",
+    "id": "q-63",
+    "area": "ch7",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "How does NIST ARIA relate to the NIST AI RMF?",
@@ -1698,11 +1699,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "ARIA evaluates AI systems in realistic conditions — model testing, red-teaming, and field testing — producing the kind of empirical evidence the RMF's Measure function calls for. It complements rather than replaces the framework, and neither instrument certifies or legally binds anyone.",
-    "area": "ch7"
+    "explanation": "ARIA evaluates AI systems in realistic conditions — model testing, red-teaming, and field testing — producing the kind of empirical evidence the RMF's Measure function calls for. It complements rather than replaces the framework, and neither instrument certifies or legally binds anyone."
   },
   {
-    "id": "a7-4",
+    "id": "q-64",
+    "area": "ch7",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What makes ISO/IEC 42001 distinctive among AI governance instruments?",
@@ -1725,11 +1726,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "ISO/IEC 42001 is the first certifiable AI management system standard — the ISO 27001 of AI: Annex SL structure, PDCA cycle, required risk and impact assessments, and third-party certification audits. It is voluntary, organization-wide, and management-system-scoped rather than model-scoped.",
-    "area": "ch7"
+    "explanation": "ISO/IEC 42001 is the first certifiable AI management system standard — the ISO 27001 of AI: Annex SL structure, PDCA cycle, required risk and impact assessments, and third-party certification audits. It is voluntary, organization-wide, and management-system-scoped rather than model-scoped."
   },
   {
-    "id": "a7-5",
+    "id": "q-65",
+    "area": "ch7",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "An AI contract dispute turns on what 'AI system' and 'trained model' precisely mean. Which standard exists to settle exactly this kind of terminology question?",
@@ -1752,11 +1753,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "ISO/IEC 22989 is the AI vocabulary standard: 110+ formal definitions of AI concepts, lifecycle stages, roles, and trustworthiness properties, created so parties argue about substance rather than semantics. 27001 governs information security, 23894 gives AI risk guidance, and 31000 is generic risk management.",
-    "area": "ch7"
+    "explanation": "ISO/IEC 22989 is the AI vocabulary standard: 110+ formal definitions of AI concepts, lifecycle stages, roles, and trustworthiness properties, created so parties argue about substance rather than semantics. 27001 governs information security, 23894 gives AI risk guidance, and 31000 is generic risk management."
   },
   {
-    "id": "a7-6",
+    "id": "q-66",
+    "area": "ch7",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "Which G7 initiative produced international guidance — including a voluntary code of conduct — for organizations developing advanced AI systems?",
@@ -1779,11 +1780,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "The G7's Hiroshima AI Process (2023) produced international guiding principles and a voluntary code of conduct for developers of advanced AI and foundation models. Bletchley was the UK AI Safety Summit declaration (broader, non-G7), Basel governs banking, and Ramsar protects wetlands.",
-    "area": "ch7"
+    "explanation": "The G7's Hiroshima AI Process (2023) produced international guiding principles and a voluntary code of conduct for developers of advanced AI and foundation models. Bletchley was the UK AI Safety Summit declaration (broader, non-G7), Basel governs banking, and Ramsar protects wetlands."
   },
   {
-    "id": "a7-7",
+    "id": "q-67",
+    "area": "ch7",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "The IEEE 7000 series of standards addresses which dimension of AI and autonomous systems?",
@@ -1806,11 +1807,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "IEEE 7000-series standards operationalize ethics-by-design: translating human values and ethical concerns into concrete engineering requirements during system development. They are engineering-process standards, not hardware, networking, or accounting specifications.",
-    "area": "ch7"
+    "explanation": "IEEE 7000-series standards operationalize ethics-by-design: translating human values and ethical concerns into concrete engineering requirements during system development. They are engineering-process standards, not hardware, networking, or accounting specifications."
   },
   {
-    "id": "a7-8",
+    "id": "q-68",
+    "area": "ch7",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "NIST's ARIA program measures AI systems against trustworthiness attributes. Which of the following is one of them?",
@@ -1833,11 +1834,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "ARIA evaluates trustworthiness characteristics — interpretability, robustness, fairness, safety — through model testing, red-teaming, and field testing with real users. Commercial and infrastructure attributes like revenue or mainframe compatibility are outside the trustworthiness construct.",
-    "area": "ch7"
+    "explanation": "ARIA evaluates trustworthiness characteristics — interpretability, robustness, fairness, safety — through model testing, red-teaming, and field testing with real users. Commercial and infrastructure attributes like revenue or mainframe compatibility are outside the trustworthiness construct."
   },
   {
-    "id": "a7-9",
+    "id": "q-69",
+    "area": "ch7",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "An organization already certified against ISO/IEC 42001 asks what ISO/IEC 23894 would add. What is the correct answer?",
@@ -1860,11 +1861,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "The two standards divide labor: 42001 builds the certifiable management system; 23894 supplies non-certifiable guidance on the AI risk management process itself, mirroring and extending ISO 31000 with AI-specific risk sources, objectives, and lifecycle mapping. It adds depth, not a second certificate.",
-    "area": "ch7"
+    "explanation": "The two standards divide labor: 42001 builds the certifiable management system; 23894 supplies non-certifiable guidance on the AI risk management process itself, mirroring and extending ISO 31000 with AI-specific risk sources, objectives, and lifecycle mapping. It adds depth, not a second certificate."
   },
   {
-    "id": "a7-10",
+    "id": "q-70",
+    "area": "ch7",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "Why has UNESCO's Recommendation on the Ethics of AI gained particular traction in developing countries?",
@@ -1887,11 +1888,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "UNESCO's Recommendation (adopted by 190+ states) centers human rights, inclusion, sustainability, and cultural diversity — providing a ready-made, values-driven governance reference for countries without domestic AI legislation. It is normative, not a funding program, technology-transfer mandate, or import regime.",
-    "area": "ch7"
+    "explanation": "UNESCO's Recommendation (adopted by 190+ states) centers human rights, inclusion, sustainability, and cultural diversity — providing a ready-made, values-driven governance reference for countries without domestic AI legislation. It is normative, not a funding program, technology-transfer mandate, or import regime."
   },
   {
-    "id": "a8-1",
+    "id": "q-71",
+    "area": "ch8",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "Why should an organization document an AI system's lifecycle from the earliest design conversations onward?",
@@ -1914,11 +1915,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Lifecycle documentation is governance's memory: it lets auditors verify decisions, investigators trace failures to root causes, and regulators confirm compliance. Contemporaneous records are evidence; retroactive reconstruction is scrambling. Storage costs, licensing, and speed are not what documentation exists for.",
-    "area": "ch8"
+    "explanation": "Lifecycle documentation is governance's memory: it lets auditors verify decisions, investigators trace failures to root causes, and regulators confirm compliance. Contemporaneous records are evidence; retroactive reconstruction is scrambling. Storage costs, licensing, and speed are not what documentation exists for."
   },
   {
-    "id": "a8-2",
+    "id": "q-72",
+    "area": "ch8",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "When establishing the business context for a proposed AI system, which question matters most?",
@@ -1941,11 +1942,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Business context anchors everything downstream: objectives define success criteria, which define validation thresholds, monitoring targets, and eventually retirement triggers. Architecture and hosting are means, decided after the ends are clear — a system without defined objectives cannot even be evaluated.",
-    "area": "ch8"
+    "explanation": "Business context anchors everything downstream: objectives define success criteria, which define validation thresholds, monitoring targets, and eventually retirement triggers. Architecture and hosting are means, decided after the ends are clear — a system without defined objectives cannot even be evaluated."
   },
   {
-    "id": "a8-3",
+    "id": "q-73",
+    "area": "ch8",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "The primary purpose of conducting an AI impact assessment during system design is to",
@@ -1968,11 +1969,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Impact assessments are the look-before-you-leap instrument: identify who could be affected and how, evaluate severity and likelihood, and change the design while change is cheap. They are risk instruments, not marketing collateral, security certifications, or financial models.",
-    "area": "ch8"
+    "explanation": "Impact assessments are the look-before-you-leap instrument: identify who could be affected and how, evaluate severity and likelihood, and change the design while change is cheap. They are risk instruments, not marketing collateral, security certifications, or financial models."
   },
   {
-    "id": "a8-4",
+    "id": "q-74",
+    "area": "ch8",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "Why do designers build human-in-the-loop checkpoints into AI systems that make consequential decisions?",
@@ -1995,11 +1996,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "HITL design gives humans real intervention power at the moments that matter — reviewing high-stakes outputs before they take effect and overriding failures. It costs throughput rather than adding it, complements rather than replaces logging, and exists for accountability and safety.",
-    "area": "ch8"
+    "explanation": "HITL design gives humans real intervention power at the moments that matter — reviewing high-stakes outputs before they take effect and overriding failures. It costs throughput rather than adding it, complements rather than replaces logging, and exists for accountability and safety."
   },
   {
-    "id": "a8-5",
+    "id": "q-75",
+    "area": "ch8",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "An organization weighing whether to build its own AI model instead of licensing one should recognize which downside of the proprietary path?",
@@ -2022,11 +2023,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Building your own model makes you its provider: conformity duties, documentation, liability for training-data rights, and answerability for its behavior all land in-house rather than being shared with a vendor. Control comes bundled with accountability — nothing about building in-house forces open-sourcing or degrades accuracy.",
-    "area": "ch8"
+    "explanation": "Building your own model makes you its provider: conformity duties, documentation, liability for training-data rights, and answerability for its behavior all land in-house rather than being shared with a vendor. Control comes bundled with accountability — nothing about building in-house forces open-sourcing or degrades accuracy."
   },
   {
-    "id": "a8-6",
+    "id": "q-76",
+    "area": "ch8",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "During design-phase risk assessment, what does a probability/severity matrix contribute?",
@@ -2049,11 +2050,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "The matrix plots each identified risk on likelihood and severity axes, making priorities visible: high-likelihood/high-impact risks get treated first, trivial ones get accepted. It is a prioritization tool for finite mitigation resources, not an engineering or financial instrument.",
-    "area": "ch8"
+    "explanation": "The matrix plots each identified risk on likelihood and severity axes, making priorities visible: high-likelihood/high-impact risks get treated first, trivial ones get accepted. It is a prioritization tool for finite mitigation resources, not an engineering or financial instrument."
   },
   {
-    "id": "a8-7",
+    "id": "q-77",
+    "area": "ch8",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "Which design choice most directly improves an AI system's explainability for its users?",
@@ -2076,11 +2077,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Explainability means users can understand why an output happened — feature-importance scoring and contextual, human-readable explanations deliver exactly that. Weight encryption serves security, uncommented code serves nobody, and compression serves latency; none helps a user comprehend a decision.",
-    "area": "ch8"
+    "explanation": "Explainability means users can understand why an output happened — feature-importance scoring and contextual, human-readable explanations deliver exactly that. Weight encryption serves security, uncommented code serves nobody, and compression serves latency; none helps a user comprehend a decision."
   },
   {
-    "id": "a8-8",
+    "id": "q-78",
+    "area": "ch8",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "During design-phase risk identification, what does stakeholder mapping contribute that other techniques miss?",
@@ -2103,11 +2104,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Risk is unevenly distributed: a system fine for most users may seriously harm one group. Stakeholder mapping enumerates everyone affected or influential — internal and external — and how, so impact assessments and design decisions account for differential effects instead of average ones.",
-    "area": "ch8"
+    "explanation": "Risk is unevenly distributed: a system fine for most users may seriously harm one group. Stakeholder mapping enumerates everyone affected or influential — internal and external — and how, so impact assessments and design decisions account for differential effects instead of average ones."
   },
   {
-    "id": "a8-9",
+    "id": "q-79",
+    "area": "ch8",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "Which evidence best demonstrates that a newly built AI model is ready for production deployment?",
@@ -2130,11 +2131,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Shadow mode runs the model on real inputs without affecting real decisions — producing documented, real-world evidence of behavior at zero user risk, judged against criteria set in advance. Announcements, undocumented scores, and demo impressions are not evidence.",
-    "area": "ch8"
+    "explanation": "Shadow mode runs the model on real inputs without affecting real decisions — producing documented, real-world evidence of behavior at zero user risk, judged against criteria set in advance. Announcements, undocumented scores, and demo impressions are not evidence."
   },
   {
-    "id": "a8-10",
+    "id": "q-80",
+    "area": "ch8",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "A software firm builds an AI screening system in-house and runs it in its own EU hiring process. Under the EU AI Act, the firm's role is",
@@ -2157,11 +2158,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Developing a system and putting it into service under your own name makes you its provider even without selling it — and using it professionally makes you its deployer too. Both duty sets apply, and in-house use is no exemption; employment screening is squarely Annex III high-risk.",
-    "area": "ch8"
+    "explanation": "Developing a system and putting it into service under your own name makes you its provider even without selling it — and using it professionally makes you its deployer too. Both duty sets apply, and in-house use is no exemption; employment screening is squarely Annex III high-risk."
   },
   {
-    "id": "a9-1",
+    "id": "q-81",
+    "area": "ch9",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "Within AI development, what is data governance fundamentally meant to guarantee?",
@@ -2184,11 +2185,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Data governance is the upstream half of model governance: confirming legal authority to use each source, measuring quality, verifying fitness for the specific purpose, and assigning stewardship. Most model failures trace back to data failures — governance exists to catch them before training does.",
-    "area": "ch9"
+    "explanation": "Data governance is the upstream half of model governance: confirming legal authority to use each source, measuring quality, verifying fitness for the specific purpose, and assigning stewardship. Most model failures trace back to data failures — governance exists to catch them before training does."
   },
   {
-    "id": "a9-2",
+    "id": "q-82",
+    "area": "ch9",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "A regulator asks where a training dataset came from, how it was collected, and under what terms. Which data governance concept answers those questions?",
@@ -2211,11 +2212,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Provenance is the data's birth certificate: origin, collection method, date, and the legal terms attached at acquisition. It is recorded when data arrives because it cannot be reconstructed later — and it underwrites every downstream claim that the training data was lawfully sourced.",
-    "area": "ch9"
+    "explanation": "Provenance is the data's birth certificate: origin, collection method, date, and the legal terms attached at acquisition. It is recorded when data arrives because it cannot be reconstructed later — and it underwrites every downstream claim that the training data was lawfully sourced."
   },
   {
-    "id": "a9-3",
+    "id": "q-83",
+    "area": "ch9",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "A fraud-detection model is evaluated on a dataset where only 1% of transactions are fraudulent. Which metric gives the most honest picture of its performance?",
@@ -2238,11 +2239,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "With 99% legitimate transactions, a model that flags nothing scores 99% accuracy while catching zero fraud — accuracy flatters do-nothing models on imbalanced data. The F1 score, balancing precision (trustworthy flags) and recall (fraud actually caught), exposes what accuracy hides.",
-    "area": "ch9"
+    "explanation": "With 99% legitimate transactions, a model that flags nothing scores 99% accuracy while catching zero fraud — accuracy flatters do-nothing models on imbalanced data. The F1 score, balancing precision (trustworthy flags) and recall (fraud actually caught), exposes what accuracy hides."
   },
   {
-    "id": "a9-4",
+    "id": "q-84",
+    "area": "ch9",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "A model passes validation with strong aggregate metrics, but the team never evaluated performance by demographic subgroup. What risk remains hidden?",
@@ -2265,11 +2266,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Aggregate metrics are averages, and averages hide minorities: a model can post excellent overall numbers while failing one demographic badly. Subgroup validation is the only way to see disparate performance before deployment turns it into disparate impact.",
-    "area": "ch9"
+    "explanation": "Aggregate metrics are averages, and averages hide minorities: a model can post excellent overall numbers while failing one demographic badly. Subgroup validation is the only way to see disparate performance before deployment turns it into disparate impact."
   },
   {
-    "id": "a9-5",
+    "id": "q-85",
+    "area": "ch9",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "How do data lineage and data provenance differ?",
@@ -2292,11 +2293,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Provenance is the origin story — source, method, terms; lineage is the biography — every transformation, join, and filter between source and model. Together they let an organization trace any model behavior back through its data, and neither substitutes for the other.",
-    "area": "ch9"
+    "explanation": "Provenance is the origin story — source, method, terms; lineage is the biography — every transformation, join, and filter between source and model. Together they let an organization trace any model behavior back through its data, and neither substitutes for the other."
   },
   {
-    "id": "a9-6",
+    "id": "q-86",
+    "area": "ch9",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "Which situation is an example of an adversarial risk to an AI system?",
@@ -2319,11 +2320,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Adversarial examples are deliberately crafted inputs — often imperceptibly altered — that flip a model's output. They are attacks, not accidents, which is why AI security testing includes adversarial robustness alongside conventional measures. Slow convergence, latency, and class imbalance are engineering problems, not adversaries.",
-    "area": "ch9"
+    "explanation": "Adversarial examples are deliberately crafted inputs — often imperceptibly altered — that flip a model's output. They are attacks, not accidents, which is why AI security testing includes adversarial robustness alongside conventional measures. Slow convergence, latency, and class imbalance are engineering problems, not adversaries."
   },
   {
-    "id": "a9-7",
+    "id": "q-87",
+    "area": "ch9",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "In counterfactual fairness testing, what exactly is being checked?",
@@ -2346,11 +2347,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Counterfactual fairness asks the individual-level question: hold everything else constant, flip the protected attribute — does the decision change? If it does, the attribute (or its proxies) is driving outcomes. It complements group-level statistical metrics like demographic parity with a causal, per-person lens.",
-    "area": "ch9"
+    "explanation": "Counterfactual fairness asks the individual-level question: hold everything else constant, flip the protected attribute — does the decision change? If it does, the attribute (or its proxies) is driving outcomes. It complements group-level statistical metrics like demographic parity with a causal, per-person lens."
   },
   {
-    "id": "a9-8",
+    "id": "q-88",
+    "area": "ch9",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "A model performs flawlessly in isolated testing, yet the team still runs integration tests before release. What do integration tests catch that model tests cannot?",
@@ -2373,11 +2374,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Users experience the system, not the model: a perfect model fed by a silently reformatting pipeline or presented through a bias-amplifying interface still produces harm. Integration testing validates the assembled whole — data flows, API contracts, UI behavior, downstream consumption — which is where component-level assurance goes to die.",
-    "area": "ch9"
+    "explanation": "Users experience the system, not the model: a perfect model fed by a silently reformatting pipeline or presented through a bias-amplifying interface still produces harm. Integration testing validates the assembled whole — data flows, API contracts, UI behavior, downstream consumption — which is where component-level assurance goes to die."
   },
   {
-    "id": "a9-9",
+    "id": "q-89",
+    "area": "ch9",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "During model training, which practice gives the earliest warning that learning is going wrong?",
@@ -2400,11 +2401,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Loss curves are training's vital signs: divergence, plateaus, or a validation loss climbing while training loss falls (overfitting's signature) appear during training, when intervention is cheap. Deployment logs and API load tests come later in the lifecycle; they cannot see a training run failing in real time.",
-    "area": "ch9"
+    "explanation": "Loss curves are training's vital signs: divergence, plateaus, or a validation loss climbing while training loss falls (overfitting's signature) appear during training, when intervention is cheap. Deployment logs and API load tests come later in the lifecycle; they cannot see a training run failing in real time."
   },
   {
-    "id": "a9-10",
+    "id": "q-90",
+    "area": "ch9",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What value do model cards add during testing and deployment?",
@@ -2427,11 +2428,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "A model card is standardized disclosure: purpose, training data summary, evaluation results across conditions, known limitations, and ethical considerations — the information deployers and reviewers need to use the model responsibly. Documentation informs judgment; it never substitutes for the testing itself.",
-    "area": "ch9"
+    "explanation": "A model card is standardized disclosure: purpose, training data summary, evaluation results across conditions, known limitations, and ethical considerations — the information deployers and reviewers need to use the model responsibly. Documentation informs judgment; it never substitutes for the testing itself."
   },
   {
-    "id": "a10-1",
+    "id": "q-91",
+    "area": "ch10",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "In AI governance documentation, the model card's job is to",
@@ -2454,11 +2455,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "The model card is the model's disclosure document — a standardized summary of what it is for, what it was trained on, how it performs, and where it fails. It complements rather than replaces contracts and regulatory technical documentation, and it has nothing to do with securing weights.",
-    "area": "ch10"
+    "explanation": "The model card is the model's disclosure document — a standardized summary of what it is for, what it was trained on, how it performs, and where it fails. It complements rather than replaces contracts and regulatory technical documentation, and it has nothing to do with securing weights."
   },
   {
-    "id": "a10-2",
+    "id": "q-92",
+    "area": "ch10",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "A hospital wants AI-powered monitoring on bedside devices where decisions are needed in milliseconds and patient data must not leave the room. Which deployment environment fits?",
@@ -2481,11 +2482,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Edge inference runs on the local device: no network round-trip (millisecond latency) and no transmission of sensitive data off-device (privacy) — exactly this scenario's constraints. The trade-off is harder updates and monitoring, which is why edge suits latency- and privacy-critical uses specifically.",
-    "area": "ch10"
+    "explanation": "Edge inference runs on the local device: no network round-trip (millisecond latency) and no transmission of sensitive data off-device (privacy) — exactly this scenario's constraints. The trade-off is harder updates and monitoring, which is why edge suits latency- and privacy-critical uses specifically."
   },
   {
-    "id": "a10-3",
+    "id": "q-93",
+    "area": "ch10",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "Why is version control considered a governance requirement, not just an engineering convenience, in AI deployment?",
@@ -2508,11 +2509,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Governance questions are historical questions — which model version made this decision, trained on which data snapshot, under which configuration? Version control across models, data, code, and config is what makes those questions answerable, and rollback possible. Encryption and feedback collection are different controls entirely.",
-    "area": "ch10"
+    "explanation": "Governance questions are historical questions — which model version made this decision, trained on which data snapshot, under which configuration? Version control across models, data, code, and config is what makes those questions answerable, and rollback possible. Encryption and feedback collection are different controls entirely."
   },
   {
-    "id": "a10-4",
+    "id": "q-94",
+    "area": "ch10",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "A credit model's accuracy decays even though incoming application data looks statistically identical to the training data. Economic conditions have changed how applicant features relate to default. This is",
@@ -2535,11 +2536,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "The inputs haven't shifted — the world has: the relationship between features and outcomes changed underneath the model, which is concept drift. Data drift would show shifted input distributions; overfitting is a training-time failure; poisoning is an attack. The remedy is retraining on data reflecting the new reality.",
-    "area": "ch10"
+    "explanation": "The inputs haven't shifted — the world has: the relationship between features and outcomes changed underneath the model, which is concept drift. Data drift would show shifted input distributions; overfitting is a training-time failure; poisoning is an attack. The remedy is retraining on data reflecting the new reality."
   },
   {
-    "id": "a10-5",
+    "id": "q-95",
+    "area": "ch10",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What characterizes a retrieval-augmented generation (RAG) deployment?",
@@ -2562,11 +2563,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "RAG bolts retrieval onto generation: fetch relevant sources, condition the model's answer on them — keeping knowledge current without retraining, enabling citations, and reducing (not eliminating) confabulation. Its new risk surface is the retrieval path, where poisoned documents can carry indirect prompt injections.",
-    "area": "ch10"
+    "explanation": "RAG bolts retrieval onto generation: fetch relevant sources, condition the model's answer on them — keeping knowledge current without retraining, enabling citations, and reducing (not eliminating) confabulation. Its new risk surface is the retrieval path, where poisoned documents can carry indirect prompt injections."
   },
   {
-    "id": "a10-6",
+    "id": "q-96",
+    "area": "ch10",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "Which function typically owns the tracking of data lineage and the enforcement of data-access policy in an AI-operating organization?",
@@ -2589,11 +2590,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Lineage tracking, access control enforcement, and policy compliance for data are the data governance function's core mandate — with named data stewards accountable per dataset. Users follow the policies; governance owns them.",
-    "area": "ch10"
+    "explanation": "Lineage tracking, access control enforcement, and policy compliance for data are the data governance function's core mandate — with named data stewards accountable per dataset. Users follow the policies; governance owns them."
   },
   {
-    "id": "a10-7",
+    "id": "q-97",
+    "area": "ch10",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "Why must a rollback plan exist before an AI deployment goes live?",
@@ -2616,11 +2617,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "When a deployed model starts causing harm, the fastest safe response is usually retreat to the previously validated version — but only if the retreat path (artifacts, criteria, authority to invoke) was prepared in advance. Improvising rollback during an incident multiplies the damage window.",
-    "area": "ch10"
+    "explanation": "When a deployed model starts causing harm, the fastest safe response is usually retreat to the previously validated version — but only if the retreat path (artifacts, criteria, authority to invoke) was prepared in advance. Improvising rollback during an incident multiplies the damage window."
   },
   {
-    "id": "a10-8",
+    "id": "q-98",
+    "area": "ch10",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "Which monitoring signal most strongly suggests a deployed model has developed a fairness problem?",
@@ -2643,11 +2644,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Fairness failures manifest as differential treatment: error or approval rates pulling apart across groups over time. That is why production monitoring must track fairness metrics by subgroup, not just aggregate performance — infrastructure signals like GPU load and latency say nothing about equity.",
-    "area": "ch10"
+    "explanation": "Fairness failures manifest as differential treatment: error or approval rates pulling apart across groups over time. That is why production monitoring must track fairness metrics by subgroup, not just aggregate performance — infrastructure signals like GPU load and latency say nothing about equity."
   },
   {
-    "id": "a10-9",
+    "id": "q-99",
+    "area": "ch10",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "In AI operations, what is a 'shadow model' used for?",
@@ -2670,11 +2671,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "A shadow model sees the same live inputs as production but its outputs go nowhere — enabling continuous comparison that surfaces drift, degradation, or a challenger's readiness at zero user risk. It is an evaluation instrument, not a security control or data generator.",
-    "area": "ch10"
+    "explanation": "A shadow model sees the same live inputs as production but its outputs go nowhere — enabling continuous comparison that surfaces drift, degradation, or a challenger's readiness at zero user risk. It is an evaluation instrument, not a security control or data generator."
   },
   {
-    "id": "a10-10",
+    "id": "q-100",
+    "area": "ch10",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "Why should retraining frequency be driven by each model's volatility and risk exposure rather than a uniform calendar?",
@@ -2697,11 +2698,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "A fraud model facing adaptive adversaries decays in weeks; a stable document classifier may hold for years. Retraining cadence is a risk decision: match update frequency to how fast the modeled world moves and how costly staleness is. Uniform calendars either waste resources or leave high-risk models stale — and no law mandates them.",
-    "area": "ch10"
+    "explanation": "A fraud model facing adaptive adversaries decays in weeks; a stable document classifier may hold for years. Retraining cadence is a risk decision: match update frequency to how fast the modeled world moves and how costly staleness is. Uniform calendars either waste resources or leave high-risk models stale — and no law mandates them."
   },
   {
-    "id": "a11-1",
+    "id": "q-101",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "An organization wants to anticipate the downstream harms an AI system could cause once deployed. Which practice contributes most directly to that forecast?",
@@ -2724,11 +2725,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Downstream harm lands on people, so forecasting it starts by enumerating the people: stakeholder mapping identifies every group the system touches — directly, indirectly, and unintentionally — and how each could be hurt. Latency, versioning, and labeling automation are operational concerns that reveal nothing about who bears the consequences.",
-    "area": "ch12"
+    "explanation": "Downstream harm lands on people, so forecasting it starts by enumerating the people: stakeholder mapping identifies every group the system touches — directly, indirectly, and unintentionally — and how each could be hurt. Latency, versioning, and labeling automation are operational concerns that reveal nothing about who bears the consequences."
   },
   {
-    "id": "a11-2",
+    "id": "q-102",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "When an AI assurance program commissions a red-team exercise, what is it trying to achieve?",
@@ -2751,11 +2752,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Red teaming is deliberate offense: dedicated attackers probe the system with jailbreaks, adversarial inputs, and misuse scenarios to find what cooperative testing never will. It exists because real adversaries and real users are creative — the exercise finds the failures before they do.",
-    "area": "ch12"
+    "explanation": "Red teaming is deliberate offense: dedicated attackers probe the system with jailbreaks, adversarial inputs, and misuse scenarios to find what cooperative testing never will. It exists because real adversaries and real users are creative — the exercise finds the failures before they do."
   },
   {
-    "id": "a11-3",
+    "id": "q-103",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "When reviewing an AI vendor contract, which clause has the greatest bearing on the customer's own data governance obligations?",
@@ -2778,11 +2779,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Whatever the vendor may do with your data becomes your compliance posture: retention beyond your schedules, reuse beyond your purposes, or training on your customers' records all flow from the data usage rights clause. Payment terms, branding, and venue matter commercially but do not shape data governance.",
-    "area": "ch12"
+    "explanation": "Whatever the vendor may do with your data becomes your compliance posture: retention beyond your schedules, reuse beyond your purposes, or training on your customers' records all flow from the data usage rights clause. Payment terms, branding, and venue matter commercially but do not shape data governance."
   },
   {
-    "id": "a11-4",
+    "id": "q-104",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "After deployment, what is the most reliable way to detect that a model is drifting?",
@@ -2805,11 +2806,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Drift is a statistical phenomenon and is caught statistically: compare live input and output distributions against training-time baselines and alert on divergence. Complaints arrive only after harm has occurred, and documentation review tells you what the model was, not what it has become.",
-    "area": "ch12"
+    "explanation": "Drift is a statistical phenomenon and is caught statistically: compare live input and output distributions against training-time baselines and alert on divergence. Complaints arrive only after harm has occurred, and documentation review tells you what the model was, not what it has become."
   },
   {
-    "id": "a11-5",
+    "id": "q-105",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "A customer-facing AI assistant begins producing toxic responses in production. What should the operations team do first?",
@@ -2832,11 +2833,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Incident response order is containment first: stop ongoing harm by disabling or constraining the system, then investigate root cause with the pressure off. Continuing to run a system actively producing harmful output to 'gather data' extends the damage window, and hardware or training changes are remedies that come after diagnosis.",
-    "area": "ch12"
+    "explanation": "Incident response order is containment first: stop ongoing harm by disabling or constraining the system, then investigate root cause with the pressure off. Continuing to run a system actively producing harmful output to 'gather data' extends the damage window, and hardware or training changes are remedies that come after diagnosis."
   },
   {
-    "id": "a11-6",
+    "id": "q-106",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "In deployment terminology, a 'shadow deployment' means",
@@ -2859,11 +2860,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Shadow deployment gives a candidate model real-world exposure with zero user risk: it sees production traffic, its outputs are recorded and compared, and nothing it says takes effect. It is the standard evidence-generating step before trusting a new model with consequences.",
-    "area": "ch12"
+    "explanation": "Shadow deployment gives a candidate model real-world exposure with zero user risk: it sees production traffic, its outputs are recorded and compared, and nothing it says takes effect. It is the standard evidence-generating step before trusting a new model with consequences."
   },
   {
-    "id": "a11-7",
+    "id": "q-107",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "Which legal instrument expressly obligates providers of high-risk AI systems to run post-market monitoring?",
@@ -2886,11 +2887,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "The EU AI Act requires high-risk providers to operate documented post-market monitoring systems and report serious incidents — approval is conditional on continued good behavior, a pattern borrowed from medical-device law. ISO 27001 is a voluntary security standard, and CCPA/LGPD are privacy statutes without AI post-market regimes.",
-    "area": "ch12"
+    "explanation": "The EU AI Act requires high-risk providers to operate documented post-market monitoring systems and report serious incidents — approval is conditional on continued good behavior, a pattern borrowed from medical-device law. ISO 27001 is a voluntary security standard, and CCPA/LGPD are privacy statutes without AI post-market regimes."
   },
   {
-    "id": "a11-8",
+    "id": "q-108",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "How does threat modeling differ from a performance audit in AI assurance?",
@@ -2913,11 +2914,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "They answer different questions: threat modeling is prospective and adversarial (what attack vectors exist — poisoning, inversion, injection?), while a performance audit is evaluative (does the system do what it claims, within tolerances?). Both belong in the assurance stack, ideally with threat modeling starting at design time.",
-    "area": "ch12"
+    "explanation": "They answer different questions: threat modeling is prospective and adversarial (what attack vectors exist — poisoning, inversion, injection?), while a performance audit is evaluative (does the system do what it claims, within tolerances?). Both belong in the assurance stack, ideally with threat modeling starting at design time."
   },
   {
-    "id": "a11-9",
+    "id": "q-109",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "Why does prompt injection rank among the most serious risks for deployed generative AI?",
@@ -2940,11 +2941,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Prompt injection weaponizes the model's obedience to text: adversarial instructions — typed directly or hidden in retrieved documents — can hijack behavior, exfiltrate data, or bypass guardrails at inference time in production. It attacks the running system, not stored checkpoints, and defenses mitigate rather than eliminate it.",
-    "area": "ch12"
+    "explanation": "Prompt injection weaponizes the model's obedience to text: adversarial instructions — typed directly or hidden in retrieved documents — can hijack behavior, exfiltrate data, or bypass guardrails at inference time in production. It attacks the running system, not stored checkpoints, and defenses mitigate rather than eliminate it."
   },
   {
-    "id": "a11-10",
+    "id": "q-110",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "After an AI incident is resolved, why should its record be linked into the organization's AI risk register?",
@@ -2967,11 +2968,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "An incident is empirical evidence that a risk is real: linking it to the register converts a one-time response into standing governance — the risk gets an owner, a treatment, and monitoring. Unlinked incidents produce organizations that fix the same failure repeatedly without ever learning.",
-    "area": "ch12"
+    "explanation": "An incident is empirical evidence that a risk is real: linking it to the register converts a one-time response into standing governance — the risk gets an owner, a treatment, and monitoring. Unlinked incidents produce organizations that fix the same failure repeatedly without ever learning."
   },
   {
-    "id": "a12-1",
+    "id": "q-111",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "Why must AI incidents be formally documented rather than just fixed?",
@@ -2994,11 +2995,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Incident records are governance evidence: they satisfy regulatory reporting duties, give auditors the trail they ask for, establish who decided what, and feed lessons back into controls. A fixed-but-undocumented incident leaves the organization unable to prove its response — or to learn from it.",
-    "area": "ch12"
+    "explanation": "Incident records are governance evidence: they satisfy regulatory reporting duties, give auditors the trail they ask for, establish who decided what, and feed lessons back into controls. A fixed-but-undocumented incident leaves the organization unable to prove its response — or to learn from it."
   },
   {
-    "id": "a12-2",
+    "id": "q-112",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What defines a sound post-market monitoring plan for a deployed AI system?",
@@ -3021,11 +3022,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Post-market monitoring is continuous and documented by design: collect operating data, evaluate performance and fairness against expectations, watch for unintended effects, and feed findings into corrective action. Launch-time certification is exactly the one-and-done pattern the requirement exists to prevent.",
-    "area": "ch12"
+    "explanation": "Post-market monitoring is continuous and documented by design: collect operating data, evaluate performance and fairness against expectations, watch for unintended effects, and feed findings into corrective action. Launch-time certification is exactly the one-and-done pattern the requirement exists to prevent."
   },
   {
-    "id": "a12-3",
+    "id": "q-113",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "An organization is drafting public-facing communications about its AI system. What belongs in that description?",
@@ -3048,11 +3049,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Honest external communication covers what the system does, where it falls short, and how humans oversee it — the transparency that builds justified trust and survives FTC scrutiny. Credentials and source code are security disasters, and capability-only messaging is the AI-washing pattern regulators target.",
-    "area": "ch12"
+    "explanation": "Honest external communication covers what the system does, where it falls short, and how humans oversee it — the transparency that builds justified trust and survives FTC scrutiny. Credentials and source code are security disasters, and capability-only messaging is the AI-washing pattern regulators target."
   },
   {
-    "id": "a12-4",
+    "id": "q-114",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What purpose does an AI system retirement policy serve?",
@@ -3075,11 +3076,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "A retirement (deactivation) policy predefines when a system should die — risk thresholds, obsolescence, regulatory change — and how: dependency wind-down, data disposition, stakeholder notice, record preservation. It turns end-of-life into a governed decision instead of an emergency or an indefinite drift.",
-    "area": "ch12"
+    "explanation": "A retirement (deactivation) policy predefines when a system should die — risk thresholds, obsolescence, regulatory change — and how: dependency wind-down, data disposition, stakeholder notice, record preservation. It turns end-of-life into a governed decision instead of an emergency or an indefinite drift."
   },
   {
-    "id": "a12-5",
+    "id": "q-115",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "Which circumstance would most likely require localizing an AI system for a particular market?",
@@ -3102,11 +3103,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Localization is driven by divergence: data sovereignty laws requiring in-country processing, regional regulations imposing different obligations, or cultural and linguistic differences that change what appropriate behavior means. Uniformity and stability argue for the opposite — one global deployment.",
-    "area": "ch12"
+    "explanation": "Localization is driven by divergence: data sovereignty laws requiring in-country processing, regional regulations imposing different obligations, or cultural and linguistic differences that change what appropriate behavior means. Uniformity and stability argue for the opposite — one global deployment."
   },
   {
-    "id": "a12-6",
+    "id": "q-116",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "In AI operations, how do 'issues' differ from 'incidents'?",
@@ -3129,11 +3130,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "The distinction is severity and response: issues (bugs, degradations, complaints) flow through routine tracking and prioritization, while incidents (significant failures, harm events) invoke containment, investigation, and possibly disclosure. Mature programs predefine the threshold — and watch issue trends as the early-warning system for incidents.",
-    "area": "ch12"
+    "explanation": "The distinction is severity and response: issues (bugs, degradations, complaints) flow through routine tracking and prioritization, while incidents (significant failures, harm events) invoke containment, investigation, and possibly disclosure. Mature programs predefine the threshold — and watch issue trends as the early-warning system for incidents."
   },
   {
-    "id": "a12-7",
+    "id": "q-117",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "When an AI model is deactivated, why should it be archived instead of immediately deleted?",
@@ -3156,11 +3157,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "The questions don't retire with the model: litigation may demand reconstruction of a past decision, auditors may examine historical behavior, and regulatory retention duties — like the EU AI Act's ten-year documentation period — outlive deployment. Archival per the retention schedule preserves that evidence; premature deletion can look like spoliation.",
-    "area": "ch12"
+    "explanation": "The questions don't retire with the model: litigation may demand reconstruction of a past decision, auditors may examine historical behavior, and regulatory retention duties — like the EU AI Act's ten-year documentation period — outlive deployment. Archival per the retention schedule preserves that evidence; premature deletion can look like spoliation."
   },
   {
-    "id": "a12-8",
+    "id": "q-118",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is a critical step when preparing to retire an AI system?",
@@ -3183,11 +3184,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Systems accumulate silent dependents — downstream applications, workflows, integrations — and switching one off without a dependency inventory breaks them without warning. Retirement planning maps those dependencies and arranges successors or fallbacks so the shutdown is a transition, not an outage.",
-    "area": "ch12"
+    "explanation": "Systems accumulate silent dependents — downstream applications, workflows, integrations — and switching one off without a dependency inventory breaks them without warning. Retirement planning maps those dependencies and arranges successors or fallbacks so the shutdown is a transition, not an outage."
   },
   {
-    "id": "a12-9",
+    "id": "q-119",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "Under which instrument must high-risk AI systems be registered in a public EU database?",
@@ -3210,11 +3211,11 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "The EU AI Act requires providers to register high-risk systems in the EU database before placing them on the market — part of the transparency infrastructure alongside technical documentation and CE marking. GDPR governs personal data without an AI registry, CCPA is state privacy law, and ISO 42001 is a voluntary standard.",
-    "area": "ch12"
+    "explanation": "The EU AI Act requires providers to register high-risk systems in the EU database before placing them on the market — part of the transparency infrastructure alongside technical documentation and CE marking. GDPR governs personal data without an AI registry, CCPA is state privacy law, and ISO 42001 is a voluntary standard."
   },
   {
-    "id": "a12-10",
+    "id": "q-120",
+    "area": "ch12",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "Which approach best communicates an AI system's limitations to its users?",
@@ -3237,11 +3238,10 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Users calibrate their reliance correctly only when limitations are stated clearly and made tangible — 'the assistant can cite documents that don't exist; verify references' beats a paragraph of hedged legalese. Hiding or burying limitations invites over-reliance and, when harm follows, deception exposure.",
-    "area": "ch12"
+    "explanation": "Users calibrate their reliance correctly only when limitations are stated clearly and made tangible — 'the assistant can cite documents that don't exist; verify references' beats a paragraph of hedged legalese. Hiding or burying limitations invites over-reliance and, when harm follows, deception exposure."
   },
   {
-    "id": "ext-1",
+    "id": "q-121",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is the primary purpose of AI governance?",
@@ -3267,7 +3267,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI governance aims to ensure responsible development, deployment, and use of AI systems by establishing frameworks, policies, and practices that address ethical, legal, and societal concerns. 2. 3. 4. 5. 6. 2 itizes cost over governance principles. by establishing frameworks and practices that address ethical, legal, and societal concerns."
   },
   {
-    "id": "ext-2",
+    "id": "q-122",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "Which of the following best defines “AI governance”?",
@@ -3293,7 +3293,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI governance is a comprehensive framework encompassing policies, processes, and controls that manage AI systems throughout their entire lifecycle, from conception to retirement."
   },
   {
-    "id": "ext-3",
+    "id": "q-123",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "An organization is establishing its AI governance program. Which element should be prioritized first?",
@@ -3319,7 +3319,7 @@ const ALL_QUESTIONS = [
     "explanation": "Establishing clear governance objectives aligned with organizational values and risk appetite provides the foundation for all other governance activities. This ensures that subsequent decisions about tools (A), personnel (B), and standards (C) are purposeful and aligned with organizational needs. Without clear objectives, other investments may be misdirected or ineffective. to provide the foundation for all other governance activities."
   },
   {
-    "id": "ext-4",
+    "id": "q-124",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What distinguishes AI governance from traditional IT governance?",
@@ -3345,7 +3345,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI governance must address unique challenges specific to AI systems, including algorithmic bias, model explainability, autonomous decision-making, and evolving capabilities. While building on IT governance principles, it requires specialized approaches. that traditional IT governance does not cover."
   },
   {
-    "id": "ext-5",
+    "id": "q-125",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "Which stakeholder group typically has PRIMARY accountability for AI governance in an organization?",
@@ -3371,7 +3371,7 @@ const ALL_QUESTIONS = [
     "explanation": "Senior leadership and the board of directors hold primary accountability for AI governance as they set organizational strategy, risk appetite, and ensure adequate resources and oversight. While data science teams (A) implement governance, they don’t hold ultimate accountability. External consultants (B) provide guidance but don’t have organizational accountability. Marketing (D) may be stakeholders but not primary accountable parties. hold primary accountability as they set organizational strategy, risk appetite, and ensure adequate resources and oversight."
   },
   {
-    "id": "ext-6",
+    "id": "q-126",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "A multinational corporation is designing its AI governance structure. The company operates in healthcare, finance, and retail sectors across 15 countries. Which approach would be MOST effective?",
@@ -3397,7 +3397,7 @@ const ALL_QUESTIONS = [
     "explanation": "A centralized framework with sector-specific and regional adaptations balances consistency with necessary flexibility. This approach ensures core principles are maintained while accommodating different regulatory requirements (healthcare vs. finance) and regional laws (15 countries)."
   },
   {
-    "id": "ext-7",
+    "id": "q-127",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is the relationship between AI governance and AI ethics?",
@@ -3423,7 +3423,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI ethics provides the philosophical and moral principles (fairness, transparency, accountability) that inform and guide the development of AI governance frameworks and policies. Governance operationalizes ethical principles into practical controls."
   },
   {
-    "id": "ext-8",
+    "id": "q-128",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "Which of the following is a key characteristic of effective AI governance?",
@@ -3449,7 +3449,7 @@ const ALL_QUESTIONS = [
     "explanation": "Effective AI governance requires continuous monitoring and adaptation because AI technologies, risks, regulations, and societal expectations evolve rapidly."
   },
   {
-    "id": "ext-9",
+    "id": "q-129",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What does “AI literacy” mean in the context of AI governance?",
@@ -3475,7 +3475,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI literacy in governance contexts means having sufficient understanding of AI capabilities, limitations, risks, and implications to make informed decisions about AI systems, regardless of technical coding ability."
   },
   {
-    "id": "ext-10",
+    "id": "q-130",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "An organization’s AI governance committee includes representatives from legal, IT, business units, ethics, and risk management. What is the PRIMARY benefit of this multidisciplinary approach?",
@@ -3501,7 +3501,7 @@ const ALL_QUESTIONS = [
     "explanation": "A multidisciplinary governance committee ensures that AI decisions consider technical feasibility, legal compliance, ethical implications, business value, and risk management—providing comprehensive oversight. providing holistic oversight of AI decisions."
   },
   {
-    "id": "ext-11",
+    "id": "q-131",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "A company’s AI governance framework includes a tiered risk classification system. A proposed AI system would make autonomous decisions about employee performance reviews and terminations. How should this system MOST likely be classified?",
@@ -3527,7 +3527,7 @@ const ALL_QUESTIONS = [
     "explanation": "An AI system making autonomous decisions about employment termination involves significant individual rights, potential discrimination, and legal implications, warranting high-risk classification with enhanced governance, mandatory human oversight, and extensive documentation. While not necessarily prohibited (D), it requires stringent controls. due to significant impact on individual rights, potential discrimination, and legal implications."
   },
   {
-    "id": "ext-12",
+    "id": "q-132",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is the purpose of an AI governance policy?",
@@ -3553,7 +3553,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI governance policies establish the principles, rules, and guidelines that define how an organization will responsibly develop, deploy, and use AI systems. 6"
   },
   {
-    "id": "ext-13",
+    "id": "q-133",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "Which of the following scenarios BEST illustrates the need for AI governance?",
@@ -3579,7 +3579,7 @@ const ALL_QUESTIONS = [
     "explanation": "Facial recognition for employee access involves AI technology with significant privacy, bias, and rights implications, clearly requiring governance oversight. involving significant privacy, bias, and rights implications that require governance oversight."
   },
   {
-    "id": "ext-14",
+    "id": "q-134",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is meant by “AI accountability” in governance contexts?",
@@ -3605,7 +3605,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI accountability means clearly assigning responsibility for AI system decisions, outcomes, and impacts to specific human actors or organizational roles, ensuring someone is answerable for the system’s behavior."
   },
   {
-    "id": "ext-15",
+    "id": "q-135",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "An organization is developing its first AI governance framework. Which document should typically be created FIRST?",
@@ -3631,7 +3631,7 @@ const ALL_QUESTIONS = [
     "explanation": "An AI governance charter or policy should be created first as it establishes the foundation: scope, principles, governance structure, roles, and responsibilities. This guides all subsequent documents. Technical procedures (A), vendor templates (C), and incident playbooks (D) are important but should be developed based on the foundational governance framework. 7 which establishes the foundation for all subsequent documents."
   },
   {
-    "id": "ext-16",
+    "id": "q-136",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "A financial services company is establishing AI governance. Regulators have not yet issued specific AI guidance for their sector. What approach should the company take?",
@@ -3657,7 +3657,7 @@ const ALL_QUESTIONS = [
     "explanation": "Organizations should proactively establish governance based on existing applicable regulations (data protection, non-discrimination), industry standards (NIST AI RMF), and ethical principles, rather than waiting for sector-specific AI regulations. This demonstrates due diligence and prepares for future regulations."
   },
   {
-    "id": "ext-17",
+    "id": "q-137",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What role does transparency play in AI governance?",
@@ -3683,7 +3683,7 @@ const ALL_QUESTIONS = [
     "explanation": "Transparency in AI governance means providing stakeholders with appropriate information about AI system capabilities, limitations, and decision-making processes to enable informed decisions and build trust. to enable informed decisions and build trust."
   },
   {
-    "id": "ext-18",
+    "id": "q-138",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "Which of the following is an example of an AI governance control?",
@@ -3709,7 +3709,7 @@ const ALL_QUESTIONS = [
     "explanation": "Requiring impact assessments before deploying high-risk AI systems is a governance control that ensures risks are identified and evaluated before deployment. 8 to ensure risks are identified and evaluated before deployment."
   },
   {
-    "id": "ext-19",
+    "id": "q-139",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is the primary difference between AI governance and AI risk management?",
@@ -3735,7 +3735,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI governance is the comprehensive framework of policies, processes, and controls for managing AI systems, while AI risk management is a critical component within governance focused specifically on identifying, assessing, and mitigating AI-related risks."
   },
   {
-    "id": "ext-20",
+    "id": "q-140",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "An AI governance program includes regular training for employees. What is the PRIMARY purpose of this training?",
@@ -3761,7 +3761,7 @@ const ALL_QUESTIONS = [
     "explanation": "Training builds AI literacy across the organization and ensures employees understand their specific roles and responsibilities in responsible AI development and use, supporting governance implementation. supporting governance implementation across the organization."
   },
   {
-    "id": "ext-21",
+    "id": "q-141",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "A company’s AI governance framework requires different approval levels based on risk. A proposed chatbot for customer service would access customer data but not make binding decisions. Which approval level is MOST appropriate?",
@@ -3787,7 +3787,7 @@ const ALL_QUESTIONS = [
     "explanation": "A customer service chatbot accessing customer data presents moderate risks (privacy, data protection, customer experience) warranting mid-level approval with review by relevant stakeholders (data protection, legal, business). It’s not high-risk enough for board approval (D) but requires more than team-level decisions (A, B) due to data access and customer interaction. 9 given moderate risks from customer data access and interaction."
   },
   {
-    "id": "ext-22",
+    "id": "q-142",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is an AI governance framework?",
@@ -3813,7 +3813,7 @@ const ALL_QUESTIONS = [
     "explanation": "An AI governance framework is a structured approach that defines how an organization will govern AI systems throughout their lifecycle, including policies, processes, roles, and controls."
   },
   {
-    "id": "ext-23",
+    "id": "q-143",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "Which principle is MOST important when establishing AI governance in a global organization?",
@@ -3839,7 +3839,7 @@ const ALL_QUESTIONS = [
     "explanation": "Global AI governance should balance consistency in core principles and practices with necessary adaptations for local regulations, cultural norms, and business contexts."
   },
   {
-    "id": "ext-24",
+    "id": "q-144",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "Who should be involved in AI governance within an organization?",
@@ -3865,7 +3865,7 @@ const ALL_QUESTIONS = [
     "explanation": "Effective AI governance requires cross-functional involvement including technical experts, legal counsel, ethics specialists, business leaders, and risk management professionals to address the multifaceted nature of AI systems. 10 to address the multifaceted nature of AI systems."
   },
   {
-    "id": "ext-25",
+    "id": "q-145",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "An organization’s AI governance maturity is being assessed. Which characteristic indicates a MATURE governance program?",
@@ -3891,7 +3891,7 @@ const ALL_QUESTIONS = [
     "explanation": "Mature AI governance is characterized by integration into lifecycle processes, continuous monitoring, regular updates, and ongoing improvement—demonstrating that governance is operational and adaptive."
   },
   {
-    "id": "ext-26",
+    "id": "q-146",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is machine learning?",
@@ -3917,7 +3917,7 @@ const ALL_QUESTIONS = [
     "explanation": "Machine learning is a subset of AI that enables systems to learn patterns from data and improve performance without being explicitly programmed for every possible scenario."
   },
   {
-    "id": "ext-501",
+    "id": "q-147",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What distinguishes “narrow AI” from “general AI”?",
@@ -3943,7 +3943,7 @@ const ALL_QUESTIONS = [
     "explanation": "Narrow AI (also called weak AI) is designed for specific tasks like image recognition or language translation, while general AI (strong AI) would possess human-like intelligence capable of 11 performing diverse tasks and transferring knowledge between domains. General AI does not currently exist."
   },
   {
-    "id": "ext-27",
+    "id": "q-148",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is supervised learning?",
@@ -3969,7 +3969,7 @@ const ALL_QUESTIONS = [
     "explanation": "Supervised learning is a machine learning approach where models are trained on labeled data (input-output pairs), learning to map inputs to correct outputs."
   },
   {
-    "id": "ext-28",
+    "id": "q-149",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "A company is developing an AI system to detect fraudulent transactions. Which type of machine learning is MOST appropriate?",
@@ -3995,7 +3995,7 @@ const ALL_QUESTIONS = [
     "explanation": "Fraud detection typically benefits from supervised learning using historical labeled examples of fraudulent and legitimate transactions, often combined with unsupervised anomaly detection to identify novel fraud patterns."
   },
   {
-    "id": "ext-29",
+    "id": "q-150",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is a neural network in AI?",
@@ -4021,7 +4021,7 @@ const ALL_QUESTIONS = [
     "explanation": "A neural network is a computing system inspired by biological neural networks, consisting of interconnected nodes (neurons) that process information through weighted connections, enabling pattern recognition and learning."
   },
   {
-    "id": "ext-30",
+    "id": "q-151",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “deep learning”?",
@@ -4047,7 +4047,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deep learning is a subset of machine learning that uses neural networks with multiple layers (deep neural networks) to automatically learn hierarchical representations of data, enabling sophisticated pattern recognition."
   },
   {
-    "id": "ext-31",
+    "id": "q-152",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is natural language processing (NLP)?",
@@ -4073,7 +4073,7 @@ const ALL_QUESTIONS = [
     "explanation": "Natural language processing (NLP) is an AI technology that enables computers to understand, interpret, and generate human language, powering applications like chatbots, translation, and sentiment analysis."
   },
   {
-    "id": "ext-32",
+    "id": "q-153",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "A large language model (LLM) is being considered for customer service. What is a key characteristic of LLMs that governance should address?",
@@ -4099,7 +4099,7 @@ const ALL_QUESTIONS = [
     "explanation": "LLMs can generate plausible-sounding but factually incorrect information (hallucinations), which is a critical governance concern requiring verification mechanisms and appropriate use case selection."
   },
   {
-    "id": "ext-33",
+    "id": "q-154",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is computer vision in AI?",
@@ -4125,7 +4125,7 @@ const ALL_QUESTIONS = [
     "explanation": "Computer vision is AI technology that enables computers to interpret and understand visual information from images and videos, powering applications like facial recognition, object detection, and medical image analysis."
   },
   {
-    "id": "ext-34",
+    "id": "q-155",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is the primary difference between traditional software and AI systems?",
@@ -4151,7 +4151,7 @@ const ALL_QUESTIONS = [
     "explanation": "Traditional software follows explicit rules programmed by developers, while AI systems learn patterns and behaviors from data, making their behavior more probabilistic and data-dependent. This fundamental difference drives unique governance needs."
   },
   {
-    "id": "ext-35",
+    "id": "q-156",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "An organization is evaluating whether to build a custom AI model or use a pre-trained foundation model. From a governance perspective, what is a key consideration?",
@@ -4177,7 +4177,7 @@ const ALL_QUESTIONS = [
     "explanation": "Custom models provide greater control over training data, architecture, and behavior but require significant resources and expertise. Pre-trained models offer faster deployment but may contain unknown biases, limitations, or behaviors from their original training. Both require governance but with different focus areas."
   },
   {
-    "id": "ext-36",
+    "id": "q-157",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is reinforcement learning?",
@@ -4203,7 +4203,7 @@ const ALL_QUESTIONS = [
     "explanation": "Reinforcement learning is a machine learning approach where agents learn optimal behaviors by interacting with an environment and receiving rewards for desired actions and penalties for undesired ones."
   },
   {
-    "id": "ext-37",
+    "id": "q-158",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “transfer learning” in AI?",
@@ -4229,7 +4229,7 @@ const ALL_QUESTIONS = [
     "explanation": "Transfer learning involves applying knowledge learned from one task or domain to improve performance on a related task, often by fine-tuning pre-trained models. This is common with foundation models."
   },
   {
-    "id": "ext-38",
+    "id": "q-159",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is an AI algorithm?",
@@ -4255,7 +4255,7 @@ const ALL_QUESTIONS = [
     "explanation": "An AI algorithm is a set of rules, procedures, and mathematical operations that an AI system follows to process data, learn patterns, and make decisions or predictions."
   },
   {
-    "id": "ext-39",
+    "id": "q-160",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “explainable AI” (XAI)?",
@@ -4281,7 +4281,7 @@ const ALL_QUESTIONS = [
     "explanation": "Explainable AI (XAI) refers to AI systems designed to provide understandable explanations for their decisions, predictions, and behaviors, enabling humans to understand how and why the system reached specific conclusions. This is crucial for governance, trust, and accountability.”"
   },
   {
-    "id": "ext-40",
+    "id": "q-161",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "A healthcare organization is implementing an AI diagnostic tool. The tool is highly accurate but operates as a “black box” with limited explainability. From a governance perspective, what is the MOST appropriate action?",
@@ -4307,7 +4307,7 @@ const ALL_QUESTIONS = [
     "explanation": "High-stakes healthcare applications require enhanced governance even with accurate systems. Implementing with strong controls (mandatory human oversight, clear documentation of limitations, continuous monitoring, and appropriate use case restrictions) balances the tool’s value with explainability limitations."
   },
   {
-    "id": "ext-41",
+    "id": "q-162",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is training data in machine learning?",
@@ -4333,7 +4333,7 @@ const ALL_QUESTIONS = [
     "explanation": "Training data is the dataset used to teach a machine learning model by exposing it to examples from which it learns patterns, relationships, and behaviors. The quality and representativeness of training data significantly impact model performance and fairness."
   },
   {
-    "id": "ext-42",
+    "id": "q-163",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “overfitting” in machine learning?",
@@ -4359,7 +4359,7 @@ const ALL_QUESTIONS = [
     "explanation": "Overfitting occurs when a model learns the training data too specifically, including noise and peculiarities, resulting in excellent performance on training data but poor generalization to new, unseen data. This is a key concern in model development and testing."
   },
   {
-    "id": "ext-43",
+    "id": "q-164",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is a “feature” in machine learning?",
@@ -4385,7 +4385,7 @@ const ALL_QUESTIONS = [
     "explanation": "A feature is an individual measurable property or characteristic of the data used as input to a machine learning model (e.g., age, income, temperature). Feature selection and engineering significantly impact model performance."
   },
   {
-    "id": "ext-44",
+    "id": "q-165",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “bias” in the context of AI systems?",
@@ -4411,7 +4411,7 @@ const ALL_QUESTIONS = [
     "explanation": "Bias in AI refers to systematic errors or unfair outcomes that favor or disadvantage particular groups, often resulting from biased training data, algorithm design, or deployment contexts. This has significant ethical and legal implications."
   },
   {
-    "id": "ext-45",
+    "id": "q-166",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "An AI model trained primarily on data from one demographic group is being considered for deployment across diverse populations. What is the PRIMARY governance concern?",
@@ -4437,7 +4437,7 @@ const ALL_QUESTIONS = [
     "explanation": "Training data that doesn’t represent the deployment population can lead to biased models that perform poorly for underrepresented groups, causing unfair outcomes and potential discrimination. This is a critical governance concern requiring data representativeness assessment and bias testing."
   },
   {
-    "id": "ext-46",
+    "id": "q-167",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is an AI model?",
@@ -4463,7 +4463,7 @@ const ALL_QUESTIONS = [
     "explanation": "An AI model is a mathematical representation of patterns and relationships learned from data, used to make predictions, classifications, or decisions on new data. It’s the output of the training process. on new inputs. It's the output of the training process."
   },
   {
-    "id": "ext-47",
+    "id": "q-168",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “model drift” in AI systems?",
@@ -4489,7 +4489,7 @@ const ALL_QUESTIONS = [
     "explanation": "Model drift (or concept drift) occurs when the statistical properties of real-world data change over time, causing model performance to degrade as the model becomes less aligned with current patterns. This requires ongoing monitoring and potential retraining."
   },
   {
-    "id": "ext-48",
+    "id": "q-169",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is the purpose of testing data in machine learning?",
@@ -4515,7 +4515,7 @@ const ALL_QUESTIONS = [
     "explanation": "Testing data (or test set) is used to evaluate how well a trained model performs on new, unseen data, providing an estimate of real-world performance and helping detect overfitting."
   },
   {
-    "id": "ext-49",
+    "id": "q-170",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “ensemble learning” in AI?",
@@ -4541,7 +4541,7 @@ const ALL_QUESTIONS = [
     "explanation": "Ensemble learning combines multiple AI models (often diverse types) to improve overall performance, accuracy, and robustness beyond what individual models achieve. Common techniques include bagging, boosting, and stacking."
   },
   {
-    "id": "ext-50",
+    "id": "q-171",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "An organization is implementing a generative AI system that creates content. Which technical characteristic poses the GREATEST governance challenge?",
@@ -4567,7 +4567,7 @@ const ALL_QUESTIONS = [
     "explanation": "Generative AI’s ability to create novel content poses significant governance challenges including potential generation of misinformation, biased or harmful content, privacy violations, and copyright infringement. These risks require robust governance controls including content filtering, human review, and use case restrictions."
   },
   {
-    "id": "ext-51",
+    "id": "q-172",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is algorithmic bias?",
@@ -4593,7 +4593,7 @@ const ALL_QUESTIONS = [
     "explanation": "Algorithmic bias refers to systematic and unfair discrimination in AI system outputs that disadvantages certain groups based on characteristics like race, gender, age, or other protected attributes. This can result from biased training data, algorithm design, or deployment contexts."
   },
   {
-    "id": "ext-52",
+    "id": "q-173",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "Which of the following is an example of AI-related harm?",
@@ -4619,7 +4619,7 @@ const ALL_QUESTIONS = [
     "explanation": "A facial recognition system with higher error rates for certain demographic groups represents AI-related harm through discriminatory performance that can lead to misidentification and unfair treatment. representing discriminatory performance that can lead to misidentification and unfair treatment."
   },
   {
-    "id": "ext-53",
+    "id": "q-174",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “privacy harm” in the context of AI systems?",
@@ -4645,7 +4645,7 @@ const ALL_QUESTIONS = [
     "explanation": "Privacy harm in AI contexts includes unauthorized collection, use, or disclosure of personal information, as well as invasive inferences about individuals that they haven’t consented to or may not be aware of. AI systems can aggregate data to make sensitive inferences. AI systems can aggregate data to make sensitive inferences about individuals."
   },
   {
-    "id": "ext-54",
+    "id": "q-175",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "An AI system used for credit decisions consistently denies applications from a particular neighborhood. What type of harm does this potentially represent?",
@@ -4671,7 +4671,7 @@ const ALL_QUESTIONS = [
     "explanation": "Systematically denying credit to a particular neighborhood may constitute discriminatory harm, potentially violating fair lending laws (like the Equal Credit Opportunity Act) and perpetuating systemic inequality, even if correlated with default rates. This requires investigation for proxy discrimination and disparate impact."
   },
   {
-    "id": "ext-55",
+    "id": "q-176",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is “data poisoning” in AI security?",
@@ -4697,7 +4697,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data poisoning is a security attack where adversaries intentionally manipulate training data to cause AI systems to learn incorrect patterns, behaviors, or backdoors, compromising system integrity and reliability."
   },
   {
-    "id": "ext-56",
+    "id": "q-177",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is an “adversarial attack” on an AI system?",
@@ -4723,7 +4723,7 @@ const ALL_QUESTIONS = [
     "explanation": "Adversarial attacks involve deliberately crafted inputs (often imperceptible to humans) designed to cause AI systems to make mistakes, misclassify data, or behave unexpectedly. This is a significant security concern."
   },
   {
-    "id": "ext-57",
+    "id": "q-178",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "A healthcare AI system occasionally makes diagnostic errors. When evaluating the harm, which factor is MOST important from a governance perspective?",
@@ -4749,7 +4749,7 @@ const ALL_QUESTIONS = [
     "explanation": "Governance must evaluate harm comprehensively: severity (minor vs. life-threatening), affected populations (whether errors disproportionately impact certain groups), and whether errors are systematic (indicating bias) or random. This informs appropriate risk mitigation."
   },
   {
-    "id": "ext-58",
+    "id": "q-179",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is “automation bias”?",
@@ -4775,7 +4775,7 @@ const ALL_QUESTIONS = [
     "explanation": "Automation bias is the human tendency to favor suggestions or decisions from automated systems, even when they’re incorrect or when contradictory information is available. This can lead to over-reliance on AI systems and failure to exercise appropriate human judgment."
   },
   {
-    "id": "ext-59",
+    "id": "q-180",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “model inversion” as a privacy risk?",
@@ -4801,7 +4801,7 @@ const ALL_QUESTIONS = [
     "explanation": "Model inversion is a privacy attack where adversaries use model outputs and queries to reconstruct training data or infer sensitive information about individuals in the training set, potentially exposing private information."
   },
   {
-    "id": "ext-60",
+    "id": "q-181",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is “fairness” in the context of AI systems?",
@@ -4827,7 +4827,7 @@ const ALL_QUESTIONS = [
     "explanation": "Fairness in AI means ensuring systems don’t discriminate unfairly against individuals or groups and provide equitable outcomes, though defining and measuring fairness can be complex with multiple mathematical definitions."
   },
   {
-    "id": "ext-61",
+    "id": "q-182",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "Which of the following represents a “dual-use” concern with AI?",
@@ -4853,7 +4853,7 @@ const ALL_QUESTIONS = [
     "explanation": "Dual-use concerns arise when AI technology developed for beneficial purposes (e.g., deepfake detection, language models) could also be misused for harmful purposes (e.g., creating deepfakes, generating misinformation). This requires governance consideration of potential misuse.”"
   },
   {
-    "id": "ext-62",
+    "id": "q-183",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "An AI system for resume screening is found to disadvantage female candidates. Investigation reveals the training data included historical hiring decisions that reflected past discrimination. What type of harm is this, and what’s the root cause?",
@@ -4879,7 +4879,7 @@ const ALL_QUESTIONS = [
     "explanation": "This is discriminatory harm where historical bias in training data (past discriminatory hiring decisions) is learned and perpetuated by the AI system, amplifying existing inequality. This demonstrates how AI can encode and scale historical discrimination."
   },
   {
-    "id": "ext-63",
+    "id": "q-184",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is “transparency” as it relates to AI harms?",
@@ -4905,7 +4905,7 @@ const ALL_QUESTIONS = [
     "explanation": "Transparency in AI means providing appropriate visibility into system capabilities, limitations, decision-making processes, and potential harms, enabling stakeholders to make informed decisions and hold systems accountable."
   },
   {
-    "id": "ext-64",
+    "id": "q-185",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “representational harm” in AI?",
@@ -4931,7 +4931,7 @@ const ALL_QUESTIONS = [
     "explanation": "Representational harm occurs when AI systems reinforce stereotypes, denigrate certain groups, or fail to recognize them appropriately (e.g., image recognition failing to recognize certain ethnicities, or language models generating stereotypical content). This affects dignity and social standing."
   },
   {
-    "id": "ext-65",
+    "id": "q-186",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is a “false positive” in AI system errors?",
@@ -4957,7 +4957,7 @@ const ALL_QUESTIONS = [
     "explanation": "A false positive occurs when an AI system incorrectly identifies something as present, true, or positive when it’s actually absent, false, or negative (e.g., flagging a legitimate transaction as 24 fraudulent). The impact depends on the use case."
   },
   {
-    "id": "ext-66",
+    "id": "q-187",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "In a criminal justice AI system, which type of error is typically considered MORE harmful from an ethical perspective?",
@@ -4983,7 +4983,7 @@ const ALL_QUESTIONS = [
     "explanation": "In criminal justice contexts, false positives (incorrectly predicting reoffending) are often considered more ethically problematic because they may result in unjust detention or denial of liberty based on incorrect predictions. However, this involves complex ethical trade-offs."
   },
   {
-    "id": "ext-67",
+    "id": "q-188",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is “model opacity”?",
@@ -5009,7 +5009,7 @@ const ALL_QUESTIONS = [
     "explanation": "Model opacity (or the “black box” problem) refers to the difficulty in understanding how complex AI models, particularly deep neural networks, make decisions, which creates challenges for accountability, debugging, and trust."
   },
   {
-    "id": "ext-68",
+    "id": "q-189",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “allocative harm” in AI systems?",
@@ -5035,7 +5035,7 @@ const ALL_QUESTIONS = [
     "explanation": "Allocative harm occurs when AI systems unfairly distribute opportunities, resources, or services (e.g., credit, jobs, healthcare) to different groups, resulting in material disadvantage. This is 25 distinct from representational harm."
   },
   {
-    "id": "ext-69",
+    "id": "q-190",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "An AI system exhibits high overall accuracy but significantly lower accuracy for a minority group. From a harm perspective, what is the PRIMARY concern?",
@@ -5061,7 +5061,7 @@ const ALL_QUESTIONS = [
     "explanation": "Significantly lower accuracy for a minority group represents disparate impact and discriminatory harm, regardless of high overall accuracy. This can violate anti-discrimination laws and ethical principles. Governance must address performance disparities across groups."
   },
   {
-    "id": "ext-70",
+    "id": "q-191",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is “informed consent” in the context of AI and data?",
@@ -5087,7 +5087,7 @@ const ALL_QUESTIONS = [
     "explanation": "Informed consent means individuals voluntarily agree to data collection and use based on clear, understandable information about purposes, risks, implications, and their rights. This is fundamental to privacy and autonomy.”"
   },
   {
-    "id": "ext-71",
+    "id": "q-192",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “function creep” in AI systems?",
@@ -5113,7 +5113,7 @@ const ALL_QUESTIONS = [
     "explanation": "Function creep occurs when an AI system gradually expands beyond its original purpose or scope without proper governance, risk assessment, or consent, potentially creating new harms. For example, a health monitoring system used for employee surveillance."
   },
   {
-    "id": "ext-72",
+    "id": "q-193",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is “data minimization” as a principle for reducing AI harms?",
@@ -5139,7 +5139,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data minimization is the principle of collecting and processing only the minimum personal data necessary for the specified purpose, reducing privacy risks and potential harms from data breaches or misuse."
   },
   {
-    "id": "ext-73",
+    "id": "q-194",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “surveillance harm” in AI contexts?",
@@ -5165,7 +5165,7 @@ const ALL_QUESTIONS = [
     "explanation": "Surveillance harm arises from excessive or inappropriate monitoring enabled by AI systems (e.g., facial recognition, behavior tracking) that chills free behavior, invades privacy, or enables inappropriate control or discrimination. This affects autonomy and freedom."
   },
   {
-    "id": "ext-74",
+    "id": "q-195",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "A city implements an AI system for predictive policing that directs officers to certain neighborhoods. The system is trained on historical crime data. What is the MOST significant potential harm?",
@@ -5191,7 +5191,7 @@ const ALL_QUESTIONS = [
     "explanation": "Predictive policing systems trained on historical data can create feedback loops: over- policed communities generate more crime data, leading to more predicted crime, resulting in more policing, perpetuating and amplifying historical bias and discriminatory enforcement."
   },
   {
-    "id": "ext-75",
+    "id": "q-196",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “environmental harm” related to AI systems?",
@@ -5217,7 +5217,7 @@ const ALL_QUESTIONS = [
     "explanation": "Environmental harm from AI includes significant energy consumption and carbon emissions from training and operating large AI models, particularly large language models and deep learning systems, contributing to climate change."
   },
   {
-    "id": "ext-76",
+    "id": "q-197",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is the primary goal of “Responsible AI”?",
@@ -5243,7 +5243,7 @@ const ALL_QUESTIONS = [
     "explanation": "Responsible AI aims to develop and deploy AI systems that embody ethical principles including fairness, transparency, accountability, privacy, and safety, ensuring AI benefits society while minimizing harms."
   },
   {
-    "id": "ext-77",
+    "id": "q-198",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "Which of the following is a core principle of AI ethics?",
@@ -5269,7 +5269,7 @@ const ALL_QUESTIONS = [
     "explanation": "Fairness and non-discrimination is a core principle of AI ethics, ensuring AI systems don’t unfairly disadvantage individuals or groups. Other core principles include transparency, accountability, privacy, and safety."
   },
   {
-    "id": "ext-78",
+    "id": "q-199",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What does “accountability” mean in the context of AI ethics?",
@@ -5295,7 +5295,7 @@ const ALL_QUESTIONS = [
     "explanation": "Accountability in AI ethics means clearly assigning responsibility for AI system decisions, outcomes, and impacts to specific individuals or organizations, with mechanisms for explanation, redress, and remedy when harms occur."
   },
   {
-    "id": "ext-79",
+    "id": "q-200",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is “human agency” in AI ethics?",
@@ -5321,7 +5321,7 @@ const ALL_QUESTIONS = [
     "explanation": "Human agency in AI ethics refers to preserving human autonomy, control, and meaningful decision-making authority, ensuring AI systems augment rather than replace human judgment in significant decisions."
   },
   {
-    "id": "ext-80",
+    "id": "q-201",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "An AI system makes recommendations that humans typically follow without review. From an ethical perspective, what is the PRIMARY concern?",
@@ -5347,7 +5347,7 @@ const ALL_QUESTIONS = [
     "explanation": "When humans routinely accept AI recommendations without meaningful review, this erodes human agency and accountability, with automation bias leading to uncritical acceptance even of errors. This is ethically problematic, especially for high-stakes decisions."
   },
   {
-    "id": "ext-81",
+    "id": "q-202",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is “beneficence” as an AI ethics principle?",
@@ -5373,7 +5373,7 @@ const ALL_QUESTIONS = [
     "explanation": "Beneficence is the ethical principle that AI systems should promote well-being and provide benefits to individuals and society, actively contributing to human flourishing. This is paired with non-maleficence (avoiding harm)."
   },
   {
-    "id": "ext-82",
+    "id": "q-203",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “non-maleficence” in AI ethics?",
@@ -5399,7 +5399,7 @@ const ALL_QUESTIONS = [
     "explanation": "Non-maleficence is the ethical obligation to avoid causing harm through AI systems, requiring proactive identification and mitigation of potential harms. This is a foundational principle from medical ethics applied to AI."
   },
   {
-    "id": "ext-83",
+    "id": "q-204",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "Two AI ethics principles appear to conflict: transparency (explaining decisions) and privacy (protecting data). How should this tension BEST be resolved?",
@@ -5425,7 +5425,7 @@ const ALL_QUESTIONS = [
     "explanation": "Ethical tensions require context-specific balancing rather than absolute prioritization. Privacy-preserving explanation techniques, aggregate explanations, and appropriate disclosure levels 30 can balance transparency and privacy."
   },
   {
-    "id": "ext-84",
+    "id": "q-205",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is “dignity” in the context of AI ethics?",
@@ -5451,7 +5451,7 @@ const ALL_QUESTIONS = [
     "explanation": "Dignity in AI ethics means respecting the inherent worth, rights, and humanity of individuals, ensuring AI systems don’t dehumanize, objectify, or treat people merely as data points. This includes respecting autonomy and avoiding degrading treatment."
   },
   {
-    "id": "ext-85",
+    "id": "q-206",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “value alignment” in AI ethics?",
@@ -5477,7 +5477,7 @@ const ALL_QUESTIONS = [
     "explanation": "Value alignment refers to ensuring AI systems’ goals, behaviors, and outcomes align with human values, ethical principles, and societal norms, rather than pursuing objectives that conflict with human interests. This is particularly important for advanced AI systems."
   },
   {
-    "id": "ext-86",
+    "id": "q-207",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is “justice” as an AI ethics principle?",
@@ -5503,7 +5503,7 @@ const ALL_QUESTIONS = [
     "explanation": "Justice in AI ethics concerns fair distribution of AI benefits and burdens across society, ensuring AI doesn’t exacerbate existing inequalities or create new ones, and that all groups can benefit from AI advances. 31"
   },
   {
-    "id": "ext-87",
+    "id": "q-208",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "An AI system could significantly benefit wealthy users but may disadvantage low-income users who lack access. Which ethical principle is MOST relevant?",
@@ -5529,7 +5529,7 @@ const ALL_QUESTIONS = [
     "explanation": "Justice and equitable access are most relevant when AI benefits are distributed unequally, potentially exacerbating existing inequalities. Ethical AI development should consider accessibility and avoid creating or widening digital divides."
   },
   {
-    "id": "ext-88",
+    "id": "q-209",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is “explicability” in AI ethics?",
@@ -5555,7 +5555,7 @@ const ALL_QUESTIONS = [
     "explanation": "Explicability (closely related to explainability) is the ability to explain AI system decisions, behaviors, and outcomes in terms that relevant stakeholders can understand, supporting transparency and accountability."
   },
   {
-    "id": "ext-89",
+    "id": "q-210",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “contestability” in AI ethics?",
@@ -5581,7 +5581,7 @@ const ALL_QUESTIONS = [
     "explanation": "Contestability is the principle that individuals should be able to challenge, appeal, or seek human review of AI system decisions that significantly affect them, ensuring accountability and redress mechanisms. This is particularly important for high-stakes decisions. 32"
   },
   {
-    "id": "ext-90",
+    "id": "q-211",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "An organization must choose between two AI systems: System A is more accurate but less explainable; System B is less accurate but more explainable. The application is loan approval. Which ethical consideration should MOST influence the decision?",
@@ -5607,7 +5607,7 @@ const ALL_QUESTIONS = [
     "explanation": "Loan approval involves significant individual impact and legal requirements (e.g., adverse action notices under ECOA). The decision should balance accuracy with explainability, considering legal obligations, the need for contestability, and the ability to identify and address discrimination. Absolute prioritization (A or C) ignores important trade-offs."
   },
   {
-    "id": "ext-91",
+    "id": "q-212",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is “privacy by design” in AI ethics?",
@@ -5633,7 +5633,7 @@ const ALL_QUESTIONS = [
     "explanation": "Privacy by design means integrating privacy protections into AI system design from the beginning, making privacy a core feature rather than an afterthought or add-on. This includes data minimization, purpose limitation, and security measures."
   },
   {
-    "id": "ext-92",
+    "id": "q-213",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “dual use” as an ethical concern in AI?",
@@ -5659,7 +5659,7 @@ const ALL_QUESTIONS = [
     "explanation": "Dual use refers to AI technologies that can be used for both beneficial and harmful purposes (e.g., facial recognition for security vs. surveillance, language models for education vs. misinformation). This creates ethical obligations to consider potential misuse. 33"
   },
   {
-    "id": "ext-93",
+    "id": "q-214",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is “informed consent” in AI ethics?",
@@ -5685,7 +5685,7 @@ const ALL_QUESTIONS = [
     "explanation": "Informed consent requires individuals to voluntarily agree to data collection and use based on clear, understandable information about purposes, risks, implications, and their rights, respecting autonomy.”"
   },
   {
-    "id": "ext-94",
+    "id": "q-215",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "An AI system collects data for one purpose but the organization wants to use it for a different purpose. What ethical principle is MOST relevant?",
@@ -5711,7 +5711,7 @@ const ALL_QUESTIONS = [
     "explanation": "Purpose limitation (using data only for specified purposes) and informed consent (obtaining agreement for new uses) are most relevant. Using data for purposes beyond original consent violates privacy principles and may violate data protection laws."
   },
   {
-    "id": "ext-95",
+    "id": "q-216",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "An AI ethics framework includes principles of fairness, transparency, and accountability. However, implementing all three fully would make the system commercially unviable. How should this be approached?",
@@ -5737,7 +5737,7 @@ const ALL_QUESTIONS = [
     "explanation": "Ethical tensions require thoughtful analysis: assess whether the use case is appropriate for AI given constraints, explore technical solutions (e.g., privacy-preserving techniques), and find acceptable balances that meet minimum ethical and legal standards. If this isn’t possible, the use case 34 may be inappropriate."
   },
   {
-    "id": "ext-96",
+    "id": "q-217",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is “algorithmic transparency”?",
@@ -5763,7 +5763,7 @@ const ALL_QUESTIONS = [
     "explanation": "Algorithmic transparency means providing appropriate visibility into how algorithms work, make decisions, and impact individuals, enabling understanding, accountability, and trust. The level of transparency should be appropriate for stakeholders."
   },
   {
-    "id": "ext-97",
+    "id": "q-218",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “meaningful human control” in AI ethics?",
@@ -5789,7 +5789,7 @@ const ALL_QUESTIONS = [
     "explanation": "Meaningful human control ensures humans retain appropriate authority and ability to oversee, intervene in, and override AI system decisions, particularly for high-stakes applications. This preserves human agency and accountability."
   },
   {
-    "id": "ext-98",
+    "id": "q-219",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is “safety” as an AI ethics principle?",
@@ -5815,7 +5815,7 @@ const ALL_QUESTIONS = [
     "explanation": "Safety in AI ethics means ensuring systems operate reliably, predictably, and securely without causing unintended harm, including technical safety (avoiding failures) and broader safety (avoiding harmful outcomes). 35"
   },
   {
-    "id": "ext-99",
+    "id": "q-220",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “sustainability” as an emerging AI ethics principle?",
@@ -5841,7 +5841,7 @@ const ALL_QUESTIONS = [
     "explanation": "Sustainability in AI ethics involves considering environmental impacts (energy consumption, carbon emissions) and long-term societal effects, ensuring AI development doesn’t compromise future generations’ well-being."
   },
   {
-    "id": "ext-100",
+    "id": "q-221",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "An AI system embodies all major ethical principles but would displace 30% of a company’s workforce. From an ethical perspective, what is the MOST appropriate approach?",
@@ -5867,7 +5867,7 @@ const ALL_QUESTIONS = [
     "explanation": "Ethical AI deployment requires considering broader obligations beyond system-level ethics, including impacts on workers, just transition planning, retraining opportunities, stakeholder engagement, and societal effects. System ethics alone is insufficient."
   },
   {
-    "id": "ext-101",
+    "id": "q-222",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "Who are “stakeholders” in AI governance?",
@@ -5893,7 +5893,7 @@ const ALL_QUESTIONS = [
     "explanation": "Stakeholders in AI governance include all individuals, groups, and entities affected by or having legitimate interest in AI systems, including developers, users, affected individuals, regulators, civil society, and the broader public."
   },
   {
-    "id": "ext-102",
+    "id": "q-223",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "Which stakeholder group typically has PRIMARY responsibility for implementing AI governance within an organization?",
@@ -5919,7 +5919,7 @@ const ALL_QUESTIONS = [
     "explanation": "Senior leadership and designated governance roles (AI ethics boards, compliance officers, risk management) have primary responsibility for implementing AI governance, though implementation requires cross-functional collaboration."
   },
   {
-    "id": "ext-103",
+    "id": "q-224",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What role do “affected individuals” play as stakeholders in AI governance?",
@@ -5945,7 +5945,7 @@ const ALL_QUESTIONS = [
     "explanation": "Affected individuals are crucial stakeholders who provide important perspectives on AI impacts, risks, and fairness. Meaningful stakeholder engagement includes their voices in governance decisions, impact assessments, and system design."
   },
   {
-    "id": "ext-104",
+    "id": "q-225",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is the role of regulators as stakeholders in AI governance?",
@@ -5971,7 +5971,7 @@ const ALL_QUESTIONS = [
     "explanation": "Regulators establish legal requirements, provide guidance and standards, and enforce compliance, creating the external governance environment within which organizations operate. They don’t develop systems (A), replace organizational governance (C), or primarily fund development (D)."
   },
   {
-    "id": "ext-105",
+    "id": "q-226",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "An organization is developing an AI system for healthcare. Which stakeholders should be engaged in governance decisions?",
@@ -5997,7 +5997,7 @@ const ALL_QUESTIONS = [
     "explanation": "Healthcare AI requires engagement with diverse stakeholders including healthcare providers (users), patients (affected individuals), ethicists (ethical implications), legal experts (compliance), data protection officers (privacy), and affected communities (broader impacts)."
   },
   {
-    "id": "ext-106",
+    "id": "q-227",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is “stakeholder engagement” in AI governance?",
@@ -6023,7 +6023,7 @@ const ALL_QUESTIONS = [
     "explanation": "Stakeholder engagement means systematically involving relevant stakeholders in governance decisions, impact assessments, and system design through consultation, participation, and collaboration."
   },
   {
-    "id": "ext-107",
+    "id": "q-228",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is the role of civil society organizations as stakeholders in AI governance?",
@@ -6049,7 +6049,7 @@ const ALL_QUESTIONS = [
     "explanation": "Civil society organizations play important roles advocating for public interest, providing independent oversight, representing affected communities, and contributing expertise on social impacts and rights. They don’t control development (C) but provide valuable external perspectives."
   },
   {
-    "id": "ext-108",
+    "id": "q-229",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "Different stakeholder groups have conflicting interests regarding an AI system: developers want rapid deployment, legal wants extensive review, affected communities want more transparency, and business wants cost minimization. How should these conflicts be BEST resolved?",
@@ -6075,7 +6075,7 @@ const ALL_QUESTIONS = [
     "explanation": "Stakeholder conflicts require structured governance processes that balance legitimate interests while prioritizing legal compliance, harm prevention, and ethical principles. This may involve trade-offs but should not simply defer to power (A), ignore stakeholders (B), or delay addressing concerns (D)."
   },
   {
-    "id": "ext-109",
+    "id": "q-230",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is the role of data subjects as stakeholders?",
@@ -6101,7 +6101,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data subjects are individuals whose personal data is collected and used by AI systems. They have legal rights (under laws like GDPR) to information, access, correction, and control over their data, making them key stakeholders."
   },
   {
-    "id": "ext-110",
+    "id": "q-231",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “participatory design” in AI governance?",
@@ -6127,7 +6127,7 @@ const ALL_QUESTIONS = [
     "explanation": "Participatory design involves meaningfully involving affected stakeholders in the AI system design process to ensure systems meet actual needs, address concerns, and incorporate diverse perspectives. This goes beyond consultation to active participation."
   },
   {
-    "id": "ext-111",
+    "id": "q-232",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What role do AI developers play as stakeholders?",
@@ -6153,7 +6153,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI developers are key stakeholders who implement governance requirements and have professional responsibility for ethical development, including considering impacts, following best practices, and raising concerns."
   },
   {
-    "id": "ext-112",
+    "id": "q-233",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "An AI system will significantly impact a marginalized community. What is the MOST appropriate approach to stakeholder engagement?",
@@ -6179,7 +6179,7 @@ const ALL_QUESTIONS = [
     "explanation": "Significant impacts on marginalized communities require proactive, meaningful engagement with community representatives throughout development, with attention to power dynamics, accessibility, and ensuring genuine influence on decisions."
   },
   {
-    "id": "ext-113",
+    "id": "q-234",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is the role of ethics committees or boards in AI governance?",
@@ -6205,7 +6205,7 @@ const ALL_QUESTIONS = [
     "explanation": "Ethics committees or boards provide ethical oversight, review high-risk AI systems, advise on ethical issues, and help organizations navigate ethical dilemmas. They complement but don’t replace legal compliance (C) and don’t develop systems (D)."
   },
   {
-    "id": "ext-114",
+    "id": "q-235",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “stakeholder mapping” in AI governance?",
@@ -6231,7 +6231,7 @@ const ALL_QUESTIONS = [
     "explanation": "Stakeholder mapping is the process of systematically identifying relevant stakeholders, analyzing their interests, concerns, influence, and relationships to inform engagement strategies and governance decisions."
   },
   {
-    "id": "ext-115",
+    "id": "q-236",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "An organization’s AI governance includes a stakeholder advisory board with representatives from affected communities. The board raises concerns about a planned AI system, but addressing concerns would significantly delay deployment. What should the organization do?",
@@ -6257,7 +6257,7 @@ const ALL_QUESTIONS = [
     "explanation": "Advisory boards provide valuable perspectives that should be seriously considered. Concerns from affected community representatives warrant investigation and may indicate significant risks requiring mitigation before deployment. Ignoring stakeholders (A), deploying despite concerns (B), or disbanding the board (D) undermines governance and stakeholder engagement."
   },
   {
-    "id": "ext-116",
+    "id": "q-237",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is the role of legal counsel as stakeholders in AI governance?",
@@ -6283,7 +6283,7 @@ const ALL_QUESTIONS = [
     "explanation": "Legal counsel ensures AI systems comply with applicable laws and regulations, advises on legal risks, and helps navigate regulatory requirements. They don’t prevent development (A), develop algorithms (C), or handle marketing (D)."
   },
   {
-    "id": "ext-117",
+    "id": "q-238",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “transparency to stakeholders” in AI governance?",
@@ -6309,7 +6309,7 @@ const ALL_QUESTIONS = [
     "explanation": "Transparency to stakeholders means providing appropriate information about AI systems relevant to their interests, rights, and needs—which varies by stakeholder group. This doesn’t require revealing all technical details (A) or trade secrets."
   },
   {
-    "id": "ext-118",
+    "id": "q-239",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What role do customers or users play as stakeholders?",
@@ -6335,7 +6335,7 @@ const ALL_QUESTIONS = [
     "explanation": "Customers and users are key stakeholders who provide feedback, have rights to information and safety, and are directly affected by system performance, usability, and impacts."
   },
   {
-    "id": "ext-119",
+    "id": "q-240",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "An AI system affects multiple stakeholder groups differently: it benefits customers but may disadvantage workers. How should governance address this?",
@@ -6361,7 +6361,7 @@ const ALL_QUESTIONS = [
     "explanation": "Governance should consider impacts on all stakeholder groups and seek fair balancing of benefits and harms, not simply prioritizing by size (A), ignoring groups (B), or focusing only on financial stakeholders (D). This may involve mitigation measures for disadvantaged groups."
   },
   {
-    "id": "ext-120",
+    "id": "q-241",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What is the role of industry associations as stakeholders?",
@@ -6387,7 +6387,7 @@ const ALL_QUESTIONS = [
     "explanation": "Industry associations develop standards, share best practices, facilitate industry-wide governance approaches, and provide forums for collaboration. They complement but don’t replace regulation (C)."
   },
   {
-    "id": "ext-121",
+    "id": "q-242",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “accountability to stakeholders” in AI governance?",
@@ -6413,7 +6413,7 @@ const ALL_QUESTIONS = [
     "explanation": "Accountability to stakeholders means being answerable to them for AI system decisions, impacts, and governance practices, including providing explanations, addressing concerns, and offering redress when appropriate."
   },
   {
-    "id": "ext-122",
+    "id": "q-243",
     "domain": "Domain I",
     "difficulty": "Hard",
     "question": "An organization’s AI governance framework requires stakeholder engagement, but engaging all potentially affected stakeholders for every AI system is impractical. What is the MOST appropriate approach?",
@@ -6439,7 +6439,7 @@ const ALL_QUESTIONS = [
     "explanation": "A risk-based approach to stakeholder engagement is practical and appropriate: higher- risk systems warrant more extensive engagement with affected stakeholders, while lower-risk systems may use representative engagement or other proportionate approaches."
   },
   {
-    "id": "ext-123",
+    "id": "q-244",
     "domain": "Domain I",
     "difficulty": "Easy",
     "question": "What role do academic researchers play as stakeholders?",
@@ -6465,7 +6465,7 @@ const ALL_QUESTIONS = [
     "explanation": "Academic researchers contribute valuable research, expertise, and independent analysis of AI systems, impacts, and governance approaches, informing evidence-based governance."
   },
   {
-    "id": "ext-124",
+    "id": "q-245",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "What is “stakeholder trust” and why is it important in AI governance?",
@@ -6491,7 +6491,7 @@ const ALL_QUESTIONS = [
     "explanation": "Stakeholder trust is confidence in AI systems and governance practices, essential for acceptance, adoption, and sustainable deployment. Trust is built through transparency, accountability, engagement, and demonstrated responsibility."
   },
   {
-    "id": "ext-125",
+    "id": "q-246",
     "domain": "Domain I",
     "difficulty": "Medium",
     "question": "An AI system’s stakeholders include regulators, users, affected individuals, developers, and civil society. These groups have different information needs. How should transparency be approached?",
@@ -6517,7 +6517,7 @@ const ALL_QUESTIONS = [
     "explanation": "Effective transparency tailors information to different stakeholder needs (e.g., technical details for developers, impact information for affected individuals, compliance documentation for regulators) while meeting minimum legal requirements for all. Domain II:"
   },
   {
-    "id": "ext-126",
+    "id": "q-247",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is the EU AI Act?",
@@ -6543,7 +6543,7 @@ const ALL_QUESTIONS = [
     "explanation": "The EU AI Act is a comprehensive legal framework that regulates AI systems based on risk levels (unacceptable, high, limited, minimal), establishing requirements for high-risk systems and prohibiting certain applications. It’s legally binding, not voluntary (A), and is regulation, not a trade agreement (C) or technical standard (D)."
   },
   {
-    "id": "ext-127",
+    "id": "q-248",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "Under the EU AI Act, which of the following is classified as an “unacceptable risk” AI practice?",
@@ -6569,7 +6569,7 @@ const ALL_QUESTIONS = [
     "explanation": "The EU AI Act prohibits “unacceptable risk” practices including social scoring by governments, which threatens fundamental rights. 45"
   },
   {
-    "id": "ext-128",
+    "id": "q-249",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is a “high-risk” AI system under the EU AI Act?",
@@ -6595,7 +6595,7 @@ const ALL_QUESTIONS = [
     "explanation": "High-risk AI systems under the EU AI Act are those that pose significant risks to health, safety, or fundamental rights, such as AI in critical infrastructure, employment, law enforcement, or biometric identification. Classification is based on risk to rights and safety, not cost (A), energy use (C), or company size (D)."
   },
   {
-    "id": "ext-129",
+    "id": "q-250",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "Under the EU AI Act, what are the key obligations for providers of high-risk AI systems?",
@@ -6621,7 +6621,7 @@ const ALL_QUESTIONS = [
     "explanation": "Providers of high-risk AI systems must implement comprehensive obligations including risk management systems, data governance, technical documentation, transparency, human oversight, and accuracy/robustness requirements."
   },
   {
-    "id": "ext-130",
+    "id": "q-251",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "A company develops an AI system for resume screening that will be used by employers in the EU. How should this be classified under the EU AI Act, and what are the implications?",
@@ -6647,7 +6647,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI systems for employment decisions (including resume screening) are explicitly listed as high-risk under the EU AI Act, requiring compliance with extensive requirements including risk management, bias testing, data governance, documentation, and human oversight. It’s not minimal risk (A), not prohibited (C), and is clearly covered (D). 46 AI systems for employment decisions are explicitly listed as high-risk under the EU AI Act."
   },
   {
-    "id": "ext-131",
+    "id": "q-252",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is the primary purpose of AI regulation?",
@@ -6673,7 +6673,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI regulation aims to ensure AI systems are safe, trustworthy, and respect fundamental rights while enabling beneficial innovation—balancing protection with innovation."
   },
   {
-    "id": "ext-132",
+    "id": "q-253",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “extraterritorial application” of AI regulations?",
@@ -6699,7 +6699,7 @@ const ALL_QUESTIONS = [
     "explanation": "Extraterritorial application means regulations apply to organizations outside the jurisdiction if they offer AI systems or services to individuals within it. For example, the EU AI Act applies to non-EU companies offering AI systems in the EU."
   },
   {
-    "id": "ext-133",
+    "id": "q-254",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is algorithmic accountability legislation?",
@@ -6725,7 +6725,7 @@ const ALL_QUESTIONS = [
     "explanation": "Algorithmic accountability legislation requires transparency, explanation, and responsibility for algorithmic decision-making, often including impact assessments, auditing, and redress mechanisms. 47"
   },
   {
-    "id": "ext-134",
+    "id": "q-255",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "Which legal principle is MOST relevant when AI systems make decisions affecting individuals?",
@@ -6751,7 +6751,7 @@ const ALL_QUESTIONS = [
     "explanation": "Due process and the right to explanation are fundamental legal principles when AI systems make decisions affecting individuals, ensuring fairness, transparency, and the ability to challenge decisions."
   },
   {
-    "id": "ext-135",
+    "id": "q-256",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "A US company develops an AI system, trains it on data from multiple countries, and deploys it globally. Which regulations might apply?",
@@ -6777,7 +6777,7 @@ const ALL_QUESTIONS = [
     "explanation": "Global AI systems may be subject to multiple jurisdictions’ regulations based on where data is collected, where the system is deployed, and where individuals are affected. This includes the EU AI Act (extraterritorial application), GDPR (for EU data subjects), and various national laws."
   },
   {
-    "id": "ext-136",
+    "id": "q-257",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is the purpose of AI impact assessments required by some regulations?",
@@ -6803,7 +6803,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI impact assessments systematically evaluate potential risks, harms, and impacts on fundamental rights, safety, and other concerns before deployment, informing risk mitigation and governance decisions. 48 informing risk mitigation and governance decisions."
   },
   {
-    "id": "ext-137",
+    "id": "q-258",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “regulatory sandboxing” in AI regulation?",
@@ -6829,7 +6829,7 @@ const ALL_QUESTIONS = [
     "explanation": "Regulatory sandboxes are controlled environments where organizations can test innovative AI systems under regulatory supervision, often with some regulatory flexibility, enabling innovation while managing risks."
   },
   {
-    "id": "ext-138",
+    "id": "q-259",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “sectoral regulation” of AI?",
@@ -6855,7 +6855,7 @@ const ALL_QUESTIONS = [
     "explanation": "Sectoral regulation refers to industry-specific regulations addressing AI in particular sectors (healthcare, finance, transportation) that may have unique requirements beyond general AI regulations."
   },
   {
-    "id": "ext-139",
+    "id": "q-260",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "Under emerging AI regulations, what is typically required for “high-risk” AI systems?",
@@ -6881,7 +6881,7 @@ const ALL_QUESTIONS = [
     "explanation": "High-risk AI systems typically require conformity assessments, comprehensive documentation, risk management systems, and ongoing monitoring under regulations like the EU AI Act. 49"
   },
   {
-    "id": "ext-140",
+    "id": "q-261",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "An AI system is classified as high-risk under the EU AI Act. The organization argues it should be reclassified as lower risk because it includes human oversight. Is this argument valid?",
@@ -6907,7 +6907,7 @@ const ALL_QUESTIONS = [
     "explanation": "Risk classification under the EU AI Act is based on the system’s intended purpose and context (e.g., employment, law enforcement), not on mitigation measures. Human oversight is a requirement for high-risk systems, not a factor that reduces classification."
   },
   {
-    "id": "ext-141",
+    "id": "q-262",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “AI transparency legislation”?",
@@ -6933,7 +6933,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI transparency legislation requires disclosure of AI use, capabilities, limitations, and decision-making processes to enable informed decisions and accountability."
   },
   {
-    "id": "ext-142",
+    "id": "q-263",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is the relationship between the EU AI Act and GDPR?",
@@ -6959,7 +6959,7 @@ const ALL_QUESTIONS = [
     "explanation": "The EU AI Act complements GDPR rather than replacing it. GDPR continues to apply to personal data processing in AI systems, while the EU AI Act addresses broader AI-specific risks. Organizations must comply with both. 50"
   },
   {
-    "id": "ext-143",
+    "id": "q-264",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “prohibited AI” under emerging regulations?",
@@ -6985,7 +6985,7 @@ const ALL_QUESTIONS = [
     "explanation": "Prohibited AI refers to practices deemed unacceptable due to serious threats to fundamental rights, such as social scoring by governments or manipulative AI. Prohibition is based on rights threats, not cost (A), developer identity (C), or complexity (D)."
   },
   {
-    "id": "ext-144",
+    "id": "q-265",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “algorithmic auditing” as required by some regulations?",
@@ -7011,7 +7011,7 @@ const ALL_QUESTIONS = [
     "explanation": "Algorithmic auditing is systematic examination of AI systems to assess compliance with regulations, fairness, accuracy, and other requirements, often by independent third parties."
   },
   {
-    "id": "ext-145",
+    "id": "q-266",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "A company uses an AI system that was compliant with regulations when deployed two years ago. New regulations have since been enacted. What is the company’s obligation?",
@@ -7037,7 +7037,7 @@ const ALL_QUESTIONS = [
     "explanation": "Organizations must assess existing systems against new regulations and implement necessary changes, typically within specified transition periods. Regulations often include provisions for existing systems."
   },
   {
-    "id": "ext-146",
+    "id": "q-267",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “regulatory compliance” in AI governance?",
@@ -7063,7 +7063,7 @@ const ALL_QUESTIONS = [
     "explanation": "Regulatory compliance means adhering to applicable laws, regulations, and legal requirements for AI systems, which is mandatory."
   },
   {
-    "id": "ext-147",
+    "id": "q-268",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “right to explanation” in AI regulation?",
@@ -7089,7 +7089,7 @@ const ALL_QUESTIONS = [
     "explanation": "Right to explanation refers to individuals’ right to receive meaningful information about how algorithmic decisions affecting them were made, enabling understanding and contestation. This is recognized in various regulations including GDPR."
   },
   {
-    "id": "ext-148",
+    "id": "q-269",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “AI governance framework” in regulatory context?",
@@ -7115,7 +7115,7 @@ const ALL_QUESTIONS = [
     "explanation": "An AI governance framework in regulatory context refers to the structure of laws, regulations, standards, and policies that govern AI development and deployment.”"
   },
   {
-    "id": "ext-149",
+    "id": "q-270",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "Under the EU AI Act, who is considered a “provider” of an AI system?",
@@ -7141,7 +7141,7 @@ const ALL_QUESTIONS = [
     "explanation": "Under the EU AI Act, a “provider” is an entity that develops an AI system or has it developed and places it on the market or puts it into service under their own name or trademark. This includes various business models."
   },
   {
-    "id": "ext-150",
+    "id": "q-271",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "An organization modifies an open-source AI model significantly and deploys it for high-risk use. Under the EU AI Act, what is their likely regulatory status?",
@@ -7167,7 +7167,7 @@ const ALL_QUESTIONS = [
     "explanation": "Significantly modifying an AI system and deploying it for high-risk use typically makes the organization a “provider” under the EU AI Act with full obligations, regardless of the original open- source status."
   },
   {
-    "id": "ext-151",
+    "id": "q-272",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “legal liability” in AI contexts?",
@@ -7193,7 +7193,7 @@ const ALL_QUESTIONS = [
     "explanation": "Legal liability in AI contexts refers to legal responsibility for harms or damages caused by AI systems, determining who can be held accountable and must provide compensation."
   },
   {
-    "id": "ext-152",
+    "id": "q-273",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “product liability” as it applies to AI systems?",
@@ -7219,7 +7219,7 @@ const ALL_QUESTIONS = [
     "explanation": "Product liability is legal responsibility for harm caused by defective products. As AI systems are increasingly treated as products, product liability frameworks may apply, though questions remain about how traditional product liability applies to learning systems."
   },
   {
-    "id": "ext-153",
+    "id": "q-274",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “regulatory enforcement” in AI?",
@@ -7245,7 +7245,7 @@ const ALL_QUESTIONS = [
     "explanation": "Regulatory enforcement refers to government actions to ensure compliance with AI regulations, including investigations, audits, and penalties for non-compliance."
   },
   {
-    "id": "ext-154",
+    "id": "q-275",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What are typical penalties for non-compliance with the EU AI Act?",
@@ -7271,7 +7271,7 @@ const ALL_QUESTIONS = [
     "explanation": "The EU AI Act includes significant penalties for non-compliance, with fines up to €35 million or 7% of global annual turnover (whichever is higher) for the most serious violations, similar to GDPR’s penalty structure."
   },
   {
-    "id": "ext-155",
+    "id": "q-276",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "A company’s AI system complies with all technical requirements of the EU AI Act but is used in a discriminatory manner by deployers. Who bears primary legal responsibility?",
@@ -7297,7 +7297,7 @@ const ALL_QUESTIONS = [
     "explanation": "The EU AI Act establishes obligations for both providers and deployers. While providers must ensure technical compliance, deployers have obligations for proper use, monitoring, and human oversight. Discriminatory use by deployers may create deployer liability, though providers may also have obligations regarding foreseeable misuse."
   },
   {
-    "id": "ext-156",
+    "id": "q-277",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “regulatory harmonization” in AI?",
@@ -7323,7 +7323,7 @@ const ALL_QUESTIONS = [
     "explanation": "Regulatory harmonization refers to efforts to align AI regulations across jurisdictions to reduce conflicts, compliance complexity, and barriers to innovation while maintaining protection standards."
   },
   {
-    "id": "ext-157",
+    "id": "q-278",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “regulatory fragmentation” and why is it a concern for AI?",
@@ -7349,7 +7349,7 @@ const ALL_QUESTIONS = [
     "explanation": "Regulatory fragmentation refers to divergent or conflicting regulations across jurisdictions, creating compliance complexity, increased costs, and potential barriers to innovation for organizations operating globally. This is a significant concern for AI given its global nature."
   },
   {
-    "id": "ext-158",
+    "id": "q-279",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “regulatory guidance” in AI?",
@@ -7375,7 +7375,7 @@ const ALL_QUESTIONS = [
     "explanation": "Regulatory guidance is non-binding advice from regulators on interpreting and complying with regulations, helping organizations understand requirements and expectations. It’s not mandatory (C) but is influential."
   },
   {
-    "id": "ext-159",
+    "id": "q-280",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “regulatory uncertainty” and how does it affect AI governance?",
@@ -7401,7 +7401,7 @@ const ALL_QUESTIONS = [
     "explanation": "Regulatory uncertainty refers to lack of clarity about current or future regulations, making it difficult for organizations to plan compliance strategies and investments. This is common in rapidly evolving AI regulation."
   },
   {
-    "id": "ext-160",
+    "id": "q-281",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "An organization operates in multiple jurisdictions with different AI regulations. Some regulations conflict. What is the MOST appropriate approach?",
@@ -7427,7 +7427,7 @@ const ALL_QUESTIONS = [
     "explanation": "When facing conflicting regulations, organizations typically either comply with the most stringent regulation (ensuring compliance everywhere) or implement jurisdiction-specific approaches where necessary. This may require technical measures to differentiate by jurisdiction."
   },
   {
-    "id": "ext-161",
+    "id": "q-282",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “regulatory reporting” for AI systems?",
@@ -7453,7 +7453,7 @@ const ALL_QUESTIONS = [
     "explanation": "Regulatory reporting refers to required disclosure of information about AI systems to regulatory authorities, such as incident reports, compliance documentation, or system registrations."
   },
   {
-    "id": "ext-162",
+    "id": "q-283",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “regulatory oversight” of AI systems?",
@@ -7479,7 +7479,7 @@ const ALL_QUESTIONS = [
     "explanation": "Regulatory oversight refers to ongoing monitoring and supervision of AI systems by regulatory authorities to ensure compliance, including audits, investigations, and enforcement actions."
   },
   {
-    "id": "ext-163",
+    "id": "q-284",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "Under emerging AI regulations, what is typically required when an AI system causes significant harm?",
@@ -7505,7 +7505,7 @@ const ALL_QUESTIONS = [
     "explanation": "Emerging AI regulations typically require incident reporting to authorities within specified timeframes when AI systems cause or contribute to significant harm, similar to data breach notification requirements."
   },
   {
-    "id": "ext-164",
+    "id": "q-285",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is GDPR?",
@@ -7531,7 +7531,7 @@ const ALL_QUESTIONS = [
     "explanation": "GDPR (General Data Protection Regulation) is the EU’s comprehensive data protection law governing the processing of personal data, with significant implications for AI systems that process personal data."
   },
   {
-    "id": "ext-165",
+    "id": "q-286",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “personal data” under GDPR?",
@@ -7557,7 +7557,7 @@ const ALL_QUESTIONS = [
     "explanation": "Personal data under GDPR is any information relating to an identified or identifiable natural person, including names, identification numbers, location data, online identifiers, and factors specific to identity."
   },
   {
-    "id": "ext-166",
+    "id": "q-287",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "How does GDPR apply to AI systems?",
@@ -7583,7 +7583,7 @@ const ALL_QUESTIONS = [
     "explanation": "GDPR applies when AI systems process personal data, requiring organizations to establish lawful basis, ensure transparency, respect data subject rights, and implement appropriate safeguards. AI doesn’t receive special exemptions."
   },
   {
-    "id": "ext-167",
+    "id": "q-288",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “automated decision-making” under GDPR Article 22?",
@@ -7609,7 +7609,7 @@ const ALL_QUESTIONS = [
     "explanation": "GDPR Article 22 addresses decisions based solely on automated processing (including profiling) that produce legal effects or similarly significantly affect individuals, providing special protections including the right not to be subject to such decisions in certain circumstances. 58"
   },
   {
-    "id": "ext-168",
+    "id": "q-289",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "An AI system processes personal data to make credit decisions. Under GDPR, what are the key requirements?",
@@ -7635,7 +7635,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI systems making credit decisions involve automated decision-making with significant effects, requiring lawful basis (likely legitimate interest or contract), transparency about the automated decision-making, rights to human intervention and explanation under Article 22, and other GDPR requirements."
   },
   {
-    "id": "ext-169",
+    "id": "q-290",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “data minimization” under GDPR?",
@@ -7661,7 +7661,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data minimization is a GDPR principle requiring that personal data collected be adequate, relevant, and limited to what is necessary for the specified purposes. This is particularly important for AI training data."
   },
   {
-    "id": "ext-170",
+    "id": "q-291",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “purpose limitation” under GDPR?",
@@ -7687,7 +7687,7 @@ const ALL_QUESTIONS = [
     "explanation": "Purpose limitation requires that personal data be collected for specified, explicit, and legitimate purposes and not further processed in a manner incompatible with those purposes. This affects AI systems that might repurpose data. 59"
   },
   {
-    "id": "ext-171",
+    "id": "q-292",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “consent” under GDPR?",
@@ -7713,7 +7713,7 @@ const ALL_QUESTIONS = [
     "explanation": "GDPR requires consent to be freely given, specific, informed, and unambiguous, with clear affirmative action. Pre-ticked boxes or inactivity don’t constitute consent."
   },
   {
-    "id": "ext-172",
+    "id": "q-293",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "An AI system was trained on personal data collected with consent for one purpose. The organization wants to use the trained model for a different purpose. What does GDPR require?",
@@ -7739,7 +7739,7 @@ const ALL_QUESTIONS = [
     "explanation": "GDPR’s purpose limitation principle requires assessing whether the new purpose is compatible with the original purpose. If incompatible, a new lawful basis (potentially new consent) is required. AI training doesn’t exempt organizations from this requirement."
   },
   {
-    "id": "ext-173",
+    "id": "q-294",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is a “Data Protection Impact Assessment” (DPIA) under GDPR?",
@@ -7765,7 +7765,7 @@ const ALL_QUESTIONS = [
     "explanation": "A DPIA is a systematic assessment of processing operations likely to result in high risk to individuals’ rights and freedoms, required before such processing begins. Many AI systems require DPIAs. 60"
   },
   {
-    "id": "ext-174",
+    "id": "q-295",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "When is a DPIA required for AI systems under GDPR?",
@@ -7791,7 +7791,7 @@ const ALL_QUESTIONS = [
     "explanation": "DPIAs are required when processing is likely to result in high risk to individuals’ rights, including systematic monitoring, large-scale processing of special category data, or automated decision-making with legal or similarly significant effects—common in AI systems."
   },
   {
-    "id": "ext-175",
+    "id": "q-296",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "An organization conducts a DPIA for an AI system and identifies high residual risks that cannot be adequately mitigated. What should the organization do under GDPR?",
@@ -7817,7 +7817,7 @@ const ALL_QUESTIONS = [
     "explanation": "Under GDPR, if a DPIA indicates high residual risks that cannot be adequately mitigated, the organization must consult with the supervisory authority before proceeding with the processing."
   },
   {
-    "id": "ext-176",
+    "id": "q-297",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “special category data” under GDPR?",
@@ -7843,7 +7843,7 @@ const ALL_QUESTIONS = [
     "explanation": "Special category data (formerly “sensitive data”) includes personal data revealing racial/ethnic origin, political opinions, religious beliefs, health, sex life, sexual orientation, biometric data, and genetic data, requiring additional protections under GDPR. 61"
   },
   {
-    "id": "ext-177",
+    "id": "q-298",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "An AI system processes biometric data for identification. What additional GDPR requirements apply?",
@@ -7869,7 +7869,7 @@ const ALL_QUESTIONS = [
     "explanation": "Biometric data used for identification is special category data under GDPR, requiring explicit consent or another Article 9 exception (e.g., substantial public interest with appropriate safeguards), plus enhanced protections."
   },
   {
-    "id": "ext-178",
+    "id": "q-299",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is the “right to access” under GDPR?",
@@ -7895,7 +7895,7 @@ const ALL_QUESTIONS = [
     "explanation": "The right to access (Article 15) allows data subjects to obtain confirmation of whether their personal data is being processed and access to that data, plus information about processing."
   },
   {
-    "id": "ext-179",
+    "id": "q-300",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "A data subject requests access to their personal data processed by an AI system. What information must be provided under GDPR?",
@@ -7921,7 +7921,7 @@ const ALL_QUESTIONS = [
     "explanation": "GDPR requires providing the personal data plus comprehensive information about processing including purposes, categories, recipients, retention periods, rights, and meaningful information about automated decision-making logic. 62"
   },
   {
-    "id": "ext-180",
+    "id": "q-301",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "An AI model was trained on personal data. A data subject exercises their right to erasure (“right to be forgotten”). What are the organization’s obligations?",
@@ -7947,7 +7947,7 @@ const ALL_QUESTIONS = [
     "explanation": "The right to erasure creates complex obligations for AI systems. Organizations must erase the personal data where required and assess whether the trained model perpetuates the data (potentially requiring retraining or other measures). Simply erasing original data while retaining a model trained on it may be insufficient."
   },
   {
-    "id": "ext-181",
+    "id": "q-302",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “data portability” under GDPR?",
@@ -7973,7 +7973,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data portability (Article 20) allows data subjects to receive their personal data in a structured, commonly used, machine-readable format and transmit it to another controller."
   },
   {
-    "id": "ext-182",
+    "id": "q-303",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “privacy by design” under GDPR?",
@@ -7999,7 +7999,7 @@ const ALL_QUESTIONS = [
     "explanation": "Privacy by design (Article 25) requires integrating data protection into processing activities and business practices from the design stage, implementing appropriate technical and organizational measures. This is crucial for AI systems. 63"
   },
   {
-    "id": "ext-183",
+    "id": "q-304",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “privacy by default” under GDPR?",
@@ -8025,7 +8025,7 @@ const ALL_QUESTIONS = [
     "explanation": "Privacy by default (Article 25) requires that by default, only personal data necessary for each specific purpose is processed, regarding amount, extent of processing, storage period, and accessibility."
   },
   {
-    "id": "ext-184",
+    "id": "q-305",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "An AI system processes personal data of EU residents but the company is based outside the EU. Does GDPR apply?",
@@ -8051,7 +8051,7 @@ const ALL_QUESTIONS = [
     "explanation": "GDPR has extraterritorial application, applying to organizations outside the EU if they offer goods/services to EU data subjects or monitor their behavior, regardless of where the organization is established."
   },
   {
-    "id": "ext-185",
+    "id": "q-306",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "An AI system makes inferences about individuals (e.g., predicting health conditions) from non-sensitive data. Are these inferences protected under GDPR?",
@@ -8077,7 +8077,7 @@ const ALL_QUESTIONS = [
     "explanation": "Inferences about identified or identifiable individuals constitute personal data under GDPR. If inferences reveal special category information (e.g., health), additional protections may apply even if derived from non-sensitive data. This is a significant issue for AI systems. 64"
   },
   {
-    "id": "ext-186",
+    "id": "q-307",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “lawful basis” under GDPR?",
@@ -8103,7 +8103,7 @@ const ALL_QUESTIONS = [
     "explanation": "Lawful basis refers to one of six legal grounds required for processing personal data under GDPR: consent, contract, legal obligation, vital interests, public task, or legitimate interests. Every processing operation requires a lawful basis."
   },
   {
-    "id": "ext-187",
+    "id": "q-308",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "For an AI system that analyzes customer behavior for marketing, which lawful basis is MOST appropriate under GDPR?",
@@ -8129,7 +8129,7 @@ const ALL_QUESTIONS = [
     "explanation": "Marketing analytics typically relies on legitimate interests (after conducting a balancing test showing interests aren’t overridden by data subjects’ rights) or consent. Vital interests (A) is for life-or-death situations. Legal obligation (C) and public task (D) don’t apply to commercial marketing."
   },
   {
-    "id": "ext-188",
+    "id": "q-309",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “transparency” under GDPR?",
@@ -8155,7 +8155,7 @@ const ALL_QUESTIONS = [
     "explanation": "Transparency under GDPR requires providing clear, accessible, and understandable information to data subjects about how their personal data is processed, including purposes, legal basis, retention, and rights."
   },
   {
-    "id": "ext-189",
+    "id": "q-310",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What information must be provided to data subjects when collecting personal data for AI training under GDPR?",
@@ -8181,7 +8181,7 @@ const ALL_QUESTIONS = [
     "explanation": "GDPR requires comprehensive information at collection including controller identity, purposes, lawful basis, retention period, data subject rights, and information about automated decision-making. This applies to AI training data."
   },
   {
-    "id": "ext-190",
+    "id": "q-311",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "An organization uses “legitimate interests” as lawful basis for AI processing. A data subject objects to the processing. What must the organization do?",
@@ -8207,7 +8207,7 @@ const ALL_QUESTIONS = [
     "explanation": "Under GDPR Article 21, when a data subject objects to processing based on legitimate interests, the organization must stop processing unless it can demonstrate compelling legitimate grounds that override the individual’s interests, rights, and freedoms, or for legal claims."
   },
   {
-    "id": "ext-191",
+    "id": "q-312",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “data security” under GDPR?",
@@ -8233,7 +8233,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data security under GDPR (Article 32) requires appropriate technical and organizational measures to ensure security appropriate to the risk, including encryption, pseudonymization, confidentiality, integrity, availability, and resilience."
   },
   {
-    "id": "ext-192",
+    "id": "q-313",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “pseudonymization” under GDPR and why is it relevant for AI?",
@@ -8259,7 +8259,7 @@ const ALL_QUESTIONS = [
     "explanation": "Pseudonymization processes personal data so it can no longer be attributed to a specific data subject without additional information (kept separately), reducing risk while maintaining data utility for AI. It’s not full anonymization (C) and is more specific than encryption (D)."
   },
   {
-    "id": "ext-193",
+    "id": "q-314",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “anonymization” under GDPR?",
@@ -8285,7 +8285,7 @@ const ALL_QUESTIONS = [
     "explanation": "Anonymization irreversibly removes identifying information so individuals can no longer be identified by any means, taking the data outside GDPR’s scope. True anonymization is difficult, especially for AI datasets."
   },
   {
-    "id": "ext-194",
+    "id": "q-315",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "An AI system is trained on “anonymized” data, but the model can be used to re-identify individuals. What are the GDPR implications?",
@@ -8311,7 +8311,7 @@ const ALL_QUESTIONS = [
     "explanation": "If individuals can be re-identified (including through model inversion or other attacks), the data may not be truly anonymized and GDPR may still apply. True anonymization is difficult with AI systems."
   },
   {
-    "id": "ext-195",
+    "id": "q-316",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "An organization transfers personal data to a third country for AI processing. What GDPR requirements apply?",
@@ -8337,7 +8337,7 @@ const ALL_QUESTIONS = [
     "explanation": "GDPR Chapter V governs international transfers, requiring adequacy decisions, appropriate safeguards (Standard Contractual Clauses, Binding Corporate Rules), or specific derogations. Post-Schrems II, additional assessment of third country laws is required."
   },
   {
-    "id": "ext-196",
+    "id": "q-317",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is the purpose of AI standards?",
@@ -8363,7 +8363,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI standards provide common frameworks, guidelines, and technical specifications for responsible AI development, promoting consistency, interoperability, and best practices. They complement regulations. They complement regulations by promoting consistency and best practices."
   },
   {
-    "id": "ext-197",
+    "id": "q-318",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is ISO/IEC 42001?",
@@ -8389,7 +8389,7 @@ const ALL_QUESTIONS = [
     "explanation": "ISO/IEC 42001 is an international standard specifying requirements for establishing, implementing, maintaining, and continually improving an AI management system within organizations. 68"
   },
   {
-    "id": "ext-198",
+    "id": "q-319",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is the NIST AI Risk Management Framework (AI RMF)?",
@@ -8415,7 +8415,7 @@ const ALL_QUESTIONS = [
     "explanation": "The NIST AI RMF is a voluntary framework providing guidance for managing AI risks throughout the lifecycle, organized around four functions: Govern, Map, Measure, and Manage. It’s not mandatory regulation (A), not technical specifications (C), and not a certification (D)."
   },
   {
-    "id": "ext-199",
+    "id": "q-320",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What are the four functions of the NIST AI RMF?",
@@ -8441,7 +8441,7 @@ const ALL_QUESTIONS = [
     "explanation": "The NIST AI RMF is organized around four functions: Govern (cultivate culture and structures), Map (understand context and risks), Measure (assess and benchmark), and Manage (prioritize and respond to risks)."
   },
   {
-    "id": "ext-200",
+    "id": "q-321",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is the purpose of the OECD AI Principles?",
@@ -8467,7 +8467,7 @@ const ALL_QUESTIONS = [
     "explanation": "The OECD AI Principles provide internationally agreed principles for responsible AI stewardship, including inclusive growth, sustainable development, human-centered values, transparency, robustness, and accountability. They’re not binding law (A), don’t develop algorithms (C), or certify systems (D)."
   },
   {
-    "id": "ext-201",
+    "id": "q-322",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What are “AI ethics guidelines”?",
@@ -8493,7 +8493,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI ethics guidelines are frameworks providing principles and recommendations for ethical AI development and deployment, often addressing fairness, transparency, accountability, and human rights. They’re typically not legally binding (C) and are broader than technical specs (D)."
   },
   {
-    "id": "ext-202",
+    "id": "q-323",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “algorithmic impact assessment” as a best practice?",
@@ -8519,7 +8519,7 @@ const ALL_QUESTIONS = [
     "explanation": "Algorithmic impact assessment is a best practice involving systematic evaluation of potential impacts, risks, and harms (including on rights, fairness, and society) before deploying AI systems, informing risk mitigation."
   },
   {
-    "id": "ext-203",
+    "id": "q-324",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is a “model card” in AI best practices?",
@@ -8545,7 +8545,7 @@ const ALL_QUESTIONS = [
     "explanation": "A model card is documentation providing transparent information about a machine learning model including intended use, training data, performance metrics, limitations, and fairness considerations."
   },
   {
-    "id": "ext-204",
+    "id": "q-325",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What information should a model card typically include?",
@@ -8571,7 +8571,7 @@ const ALL_QUESTIONS = [
     "explanation": "Model cards should include comprehensive information: model details, intended use cases, training data characteristics, performance metrics (including across demographic groups), known limitations, and ethical considerations."
   },
   {
-    "id": "ext-205",
+    "id": "q-326",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “red teaming” in AI?",
@@ -8597,7 +8597,7 @@ const ALL_QUESTIONS = [
     "explanation": "Red teaming in AI involves adversarial testing where a team deliberately attempts to find vulnerabilities, biases, failure modes, or ways to cause the AI system to behave inappropriately, improving robustness."
   },
   {
-    "id": "ext-206",
+    "id": "q-327",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “fairness testing” as an AI best practice?",
@@ -8623,7 +8623,7 @@ const ALL_QUESTIONS = [
     "explanation": "Fairness testing systematically evaluates AI system performance and outcomes across different demographic groups to identify disparities, biases, or discriminatory impacts, enabling mitigation."
   },
   {
-    "id": "ext-207",
+    "id": "q-328",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "An organization conducts fairness testing and finds their AI system has 95% accuracy overall but only 75% accuracy for a minority group. What should be done according to best practices?",
@@ -8649,7 +8649,7 @@ const ALL_QUESTIONS = [
     "explanation": "Best practices require investigating root causes of performance disparities, attempting to improve performance for disadvantaged groups (through better data, algorithm adjustments, or other means), assessing whether deployment is appropriate given remaining disparities, and documenting decisions. and document decisions about any remaining disparities."
   },
   {
-    "id": "ext-208",
+    "id": "q-329",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “explainability testing” in AI?",
@@ -8675,7 +8675,7 @@ const ALL_QUESTIONS = [
     "explanation": "Explainability testing evaluates whether AI system explanations are accurate (faithful to actual system behavior), understandable to intended audiences, and useful for their purposes (decision-making, debugging, accountability)."
   },
   {
-    "id": "ext-209",
+    "id": "q-330",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “continuous monitoring” as an AI best practice?",
@@ -8701,7 +8701,7 @@ const ALL_QUESTIONS = [
     "explanation": "Continuous monitoring involves ongoing monitoring of AI system performance, fairness, accuracy, and impacts after deployment to detect model drift, emerging biases, or other issues requiring intervention."
   },
   {
-    "id": "ext-210",
+    "id": "q-331",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “human-in-the-loop” (HITL) as a best practice?",
@@ -8727,7 +8727,7 @@ const ALL_QUESTIONS = [
     "explanation": "Human-in-the-loop (HITL) maintains meaningful human involvement in AI system operation and decision-making, ensuring human oversight, intervention capability, and final authority for important decisions."
   },
   {
-    "id": "ext-211",
+    "id": "q-332",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “human-on-the-loop” (HOTL)?",
@@ -8753,7 +8753,7 @@ const ALL_QUESTIONS = [
     "explanation": "Human-on-the-loop (HOTL) involves humans monitoring AI system operation with the ability to intervene when necessary, but not reviewing every individual decision—appropriate for lower-risk applications. This differs from HITL (A) where humans review each decision."
   },
   {
-    "id": "ext-212",
+    "id": "q-333",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "An AI system makes thousands of decisions daily. Implementing human-in-the-loop for every decision is impractical. What is the MOST appropriate approach according to best practices?",
@@ -8779,7 +8779,7 @@ const ALL_QUESTIONS = [
     "explanation": "Best practices suggest a risk-based approach: human-in-the-loop for high-stakes decisions, human-on-the-loop with exception-based review (flagging unusual cases) for routine decisions, plus continuous monitoring for patterns. This balances oversight with practicality."
   },
   {
-    "id": "ext-213",
+    "id": "q-334",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “version control” for AI systems?",
@@ -8805,7 +8805,7 @@ const ALL_QUESTIONS = [
     "explanation": "Version control for AI systems involves tracking and managing different versions of models, training data, code, and configurations, enabling reproducibility, rollback, and audit trails."
   },
   {
-    "id": "ext-214",
+    "id": "q-335",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “reproducibility” as an AI best practice?",
@@ -8831,7 +8831,7 @@ const ALL_QUESTIONS = [
     "explanation": "Reproducibility is the ability to recreate AI system results and behaviors using the same data, code, and conditions, essential for validation, debugging, and accountability. This requires careful version control and documentation."
   },
   {
-    "id": "ext-215",
+    "id": "q-336",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “data quality assessment” in AI best practices?",
@@ -8857,7 +8857,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data quality assessment evaluates training and operational data for accuracy, completeness, representativeness, and potential biases, as data quality fundamentally impacts AI system performance and fairness."
   },
   {
-    "id": "ext-216",
+    "id": "q-337",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “bias testing” in AI development?",
@@ -8883,7 +8883,7 @@ const ALL_QUESTIONS = [
     "explanation": "Bias testing systematically evaluates AI systems for unfair biases in outputs, performance, or impacts across different demographic or other groups, using various fairness metrics and testing methodologies."
   },
   {
-    "id": "ext-217",
+    "id": "q-338",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "An organization follows all technical best practices for AI development but doesn’t engage stakeholders or consider societal impacts. Is this sufficient?",
@@ -8909,7 +8909,7 @@ const ALL_QUESTIONS = [
     "explanation": "Comprehensive AI best practices extend beyond technical measures to include stakeholder engagement, impact assessment, consideration of societal implications, and ongoing governance. Technical excellence alone is insufficient for responsible AI."
   },
   {
-    "id": "ext-218",
+    "id": "q-339",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is “documentation” as an AI best practice?",
@@ -8935,7 +8935,7 @@ const ALL_QUESTIONS = [
     "explanation": "Documentation as a best practice involves comprehensive recording of AI system development processes, design decisions, testing results, performance metrics, limitations, and governance decisions, supporting accountability and knowledge transfer."
   },
   {
-    "id": "ext-219",
+    "id": "q-340",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “incident response planning” for AI systems?",
@@ -8961,7 +8961,7 @@ const ALL_QUESTIONS = [
     "explanation": "Incident response planning for AI involves preparing procedures for detecting, responding to, mitigating, and learning from AI system failures, harms, biases, or unexpected behaviors, including communication, remediation, and improvement processes."
   },
   {
-    "id": "ext-220",
+    "id": "q-341",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "Why do some industries have specific AI regulations?",
@@ -8987,7 +8987,7 @@ const ALL_QUESTIONS = [
     "explanation": "Industry-specific AI regulations exist because AI risks, impacts, and appropriate governance vary significantly by industry context (healthcare vs. finance vs. transportation), requiring tailored requirements beyond general AI regulations."
   },
   {
-    "id": "ext-221",
+    "id": "q-342",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is unique about AI regulation in healthcare?",
@@ -9013,7 +9013,7 @@ const ALL_QUESTIONS = [
     "explanation": "Healthcare AI faces unique regulatory requirements addressing patient safety, medical device regulations (FDA in US, MDR in EU), clinical validation, health data privacy (HIPAA, GDPR), and diagnostic accuracy."
   },
   {
-    "id": "ext-222",
+    "id": "q-343",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "An AI system provides diagnostic suggestions to physicians. How might it be regulated in healthcare?",
@@ -9039,7 +9039,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI systems providing diagnostic suggestions may be regulated as medical devices (Software as a Medical Device - SaMD) requiring regulatory approval (FDA clearance/approval in US, CE marking in EU), clinical validation, and ongoing safety monitoring."
   },
   {
-    "id": "ext-223",
+    "id": "q-344",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is HIPAA and how does it relate to AI in healthcare?",
@@ -9065,7 +9065,7 @@ const ALL_QUESTIONS = [
     "explanation": "HIPAA (Health Insurance Portability and Accountability Act) is US law protecting health information privacy and security, applying to AI systems that process protected health information (PHI), requiring safeguards, patient rights, and breach notification."
   },
   {
-    "id": "ext-224",
+    "id": "q-345",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is unique about AI regulation in financial services?",
@@ -9091,7 +9091,7 @@ const ALL_QUESTIONS = [
     "explanation": "Financial services AI faces unique regulatory requirements addressing fair lending (ECOA, Fair Housing Act), credit reporting (FCRA), anti-discrimination, market manipulation, algorithmic trading, and financial stability risks."
   },
   {
-    "id": "ext-225",
+    "id": "q-346",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "An AI system makes credit decisions. What US laws are MOST relevant?",
@@ -9117,7 +9117,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI credit decisions are subject to ECOA (prohibiting discrimination, requiring adverse action notices), FCRA (governing credit reporting), and Fair Housing Act (for housing-related credit), plus general AI regulations."
   },
   {
-    "id": "ext-226",
+    "id": "q-347",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "A bank’s AI credit model is accurate but has disparate impact on a protected class. The bank argues there’s no intentional discrimination. What is the legal situation?",
@@ -9143,7 +9143,7 @@ const ALL_QUESTIONS = [
     "explanation": "Fair lending laws prohibit both disparate treatment (intentional discrimination) and disparate impact (policies with discriminatory effects even without intent). If disparate impact exists, the bank must demonstrate business necessity and that less discriminatory alternatives aren’t available."
   },
   {
-    "id": "ext-227",
+    "id": "q-348",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is unique about AI regulation in employment?",
@@ -9169,7 +9169,7 @@ const ALL_QUESTIONS = [
     "explanation": "Employment AI faces unique regulatory requirements addressing anti-discrimination laws (Title VII, ADA, ADEA), labor laws, worker rights, and transparency requirements for automated employment decisions."
   },
   {
-    "id": "ext-228",
+    "id": "q-349",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "An AI system screens job applications. What legal requirements typically apply?",
@@ -9195,7 +9195,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI employment screening is subject to anti-discrimination laws (Title VII, ADA, ADEA), potential requirements for transparency and human review (EEOC guidance, NYC Local Law 144), and validation that screening criteria are job-related and consistent with business necessity."
   },
   {
-    "id": "ext-229",
+    "id": "q-350",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is unique about AI regulation in law enforcement?",
@@ -9221,7 +9221,7 @@ const ALL_QUESTIONS = [
     "explanation": "Law enforcement AI faces heightened scrutiny and restrictions regarding civil rights, due process, Fourth Amendment concerns, and potential for discriminatory enforcement, with some jurisdictions banning certain applications like facial recognition."
   },
   {
-    "id": "ext-230",
+    "id": "q-351",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What are common concerns about AI in criminal justice?",
@@ -9247,7 +9247,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI in criminal justice raises serious concerns about bias perpetuating discriminatory enforcement, lack of transparency in consequential decisions, due process violations, and feedback loops that amplify existing inequality in the justice system."
   },
   {
-    "id": "ext-231",
+    "id": "q-352",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "A jurisdiction uses AI for predictive policing. Civil rights groups challenge it as discriminatory. What factors would courts likely consider?",
@@ -9273,7 +9273,7 @@ const ALL_QUESTIONS = [
     "explanation": "Courts would likely consider disparate impact on protected groups, whether the system perpetuates historical bias in policing data, due process and Fourth Amendment concerns, whether there’s adequate justification, and whether less discriminatory alternatives exist."
   },
   {
-    "id": "ext-232",
+    "id": "q-353",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is unique about AI regulation in transportation?",
@@ -9299,7 +9299,7 @@ const ALL_QUESTIONS = [
     "explanation": "Transportation AI, particularly autonomous vehicles, faces unique regulatory requirements addressing safety standards, testing requirements, liability frameworks, and sector-specific regulations from transportation authorities."
   },
   {
-    "id": "ext-233",
+    "id": "q-354",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What regulatory challenges are unique to autonomous vehicles?",
@@ -9325,7 +9325,7 @@ const ALL_QUESTIONS = [
     "explanation": "Autonomous vehicles face unique regulatory challenges including safety validation methodologies, liability determination when AI is driving, ethical decision-making frameworks for unavoidable accidents, and regulatory approval processes that differ from traditional vehicles."
   },
   {
-    "id": "ext-234",
+    "id": "q-355",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is unique about AI regulation in education?",
@@ -9351,7 +9351,7 @@ const ALL_QUESTIONS = [
     "explanation": "Education AI faces unique requirements addressing student privacy (FERPA in US), fairness in educational opportunities and outcomes, developmental appropriateness, and concerns about automated decisions affecting educational trajectories."
   },
   {
-    "id": "ext-235",
+    "id": "q-356",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "An AI system makes college admissions decisions. What regulatory and ethical concerns apply?",
@@ -9377,7 +9377,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI admissions systems raise concerns about anti-discrimination laws (Title VI), fairness in educational opportunity, transparency in consequential decisions, and potential for perpetuating or amplifying educational inequality."
   },
   {
-    "id": "ext-236",
+    "id": "q-357",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "A university’s AI admissions system has disparate impact on certain racial groups but the university argues it’s based on “objective” academic metrics. Is this legally defensible?",
@@ -9403,7 +9403,7 @@ const ALL_QUESTIONS = [
     "explanation": "Under Title VI and related laws, disparate impact can be illegal even with facially neutral criteria. The university must demonstrate educational necessity and that less discriminatory alternatives aren’t available. “Objective” metrics that perpetuate historical inequality may not be defensible."
   },
   {
-    "id": "ext-237",
+    "id": "q-358",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is unique about AI regulation in insurance?",
@@ -9429,7 +9429,7 @@ const ALL_QUESTIONS = [
     "explanation": "Insurance AI faces unique requirements balancing actuarial fairness with anti-discrimination laws, state insurance regulations, and concerns about proxy discrimination and access to insurance."
   },
   {
-    "id": "ext-238",
+    "id": "q-359",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is “proxy discrimination” in insurance AI?",
@@ -9455,7 +9455,7 @@ const ALL_QUESTIONS = [
     "explanation": "Proxy discrimination occurs when AI uses seemingly neutral variables (e.g., zip code, occupation) that correlate with protected characteristics (race, gender), resulting in discriminatory outcomes even without explicitly using protected characteristics. This is a significant concern in insurance."
   },
   {
-    "id": "ext-239",
+    "id": "q-360",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is unique about AI regulation in content moderation?",
@@ -9481,7 +9481,7 @@ const ALL_QUESTIONS = [
     "explanation": "Content moderation AI faces unique challenges balancing free speech concerns, platform liability (Section 230 in US, DSA in EU), removal of harmful content, and concerns about bias in moderation decisions."
   },
   {
-    "id": "ext-240",
+    "id": "q-361",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What is the EU Digital Services Act (DSA) and how does it relate to AI?",
@@ -9507,7 +9507,7 @@ const ALL_QUESTIONS = [
     "explanation": "The DSA is EU regulation governing online platforms and services, including requirements for algorithmic transparency, content moderation, risk assessment for very large platforms, and user rights. It significantly affects AI used in content moderation and recommendation."
   },
   {
-    "id": "ext-241",
+    "id": "q-362",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "A social media platform’s AI content moderation system removes more content from certain political viewpoints. What regulatory and ethical issues arise?",
@@ -9533,7 +9533,7 @@ const ALL_QUESTIONS = [
     "explanation": "Viewpoint-based content moderation raises concerns about bias, free speech implications (especially for government-related platforms), transparency requirements under laws like the DSA, and need for effective appeal mechanisms. While platforms have discretion, it’s not unlimited."
   },
   {
-    "id": "ext-242",
+    "id": "q-363",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is unique about AI regulation in advertising?",
@@ -9559,7 +9559,7 @@ const ALL_QUESTIONS = [
     "explanation": "Advertising AI faces requirements addressing consumer protection, truth in advertising (FTC in US), anti-discrimination in ad targeting (particularly for housing, employment, credit), and transparency."
   },
   {
-    "id": "ext-243",
+    "id": "q-364",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What legal issues arise from AI-targeted advertising?",
@@ -9585,7 +9585,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI-targeted advertising raises legal issues including discriminatory ad targeting (particularly problematic for housing, employment, credit under Fair Housing Act, ECOA), privacy concerns, potential manipulation, and deceptive practices."
   },
   {
-    "id": "ext-244",
+    "id": "q-365",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is unique about AI regulation in critical infrastructure?",
@@ -9611,7 +9611,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI in critical infrastructure (energy, water, telecommunications) faces heightened requirements for security, safety, resilience, and reliability due to potential for catastrophic failures affecting public safety and national security."
   },
   {
-    "id": "ext-245",
+    "id": "q-366",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What additional considerations apply to AI in critical infrastructure?",
@@ -9637,7 +9637,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI in critical infrastructure requires additional considerations including cybersecurity against attacks, physical safety of the public, resilience and redundancy, fail-safe mechanisms, and national security implications of AI failures or compromises."
   },
   {
-    "id": "ext-246",
+    "id": "q-367",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "An energy company uses AI to manage the electrical grid. What regulatory framework likely applies?",
@@ -9663,7 +9663,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI managing electrical grids faces a combination of energy sector regulations (FERC in US), critical infrastructure protection requirements (NERC CIP), safety standards, cybersecurity requirements, and general AI regulations. This multi-layered regulatory framework reflects the critical nature of the infrastructure. reflecting the critical nature of energy infrastructure."
   },
   {
-    "id": "ext-247",
+    "id": "q-368",
     "domain": "Domain II",
     "difficulty": "Easy",
     "question": "What is unique about AI regulation in government services?",
@@ -9689,7 +9689,7 @@ const ALL_QUESTIONS = [
     "explanation": "Government AI faces unique requirements including constitutional constraints (Fourth Amendment, Equal Protection), due process requirements, transparency obligations, heightened accountability, and restrictions on certain applications."
   },
   {
-    "id": "ext-248",
+    "id": "q-369",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "What constitutional issues arise from government use of AI?",
@@ -9715,7 +9715,7 @@ const ALL_QUESTIONS = [
     "explanation": "Government AI raises constitutional issues including Fourth Amendment concerns (surveillance, searches), Fifth/Fourteenth Amendment due process (fair procedures, notice), Equal Protection (discrimination), and First Amendment (chilling effects on speech/association)."
   },
   {
-    "id": "ext-249",
+    "id": "q-370",
     "domain": "Domain II",
     "difficulty": "Hard",
     "question": "A government agency uses AI for benefit eligibility determinations. What legal requirements likely apply?",
@@ -9741,7 +9741,7 @@ const ALL_QUESTIONS = [
     "explanation": "Government AI for benefit determinations must comply with due process requirements (notice, explanation, meaningful appeal), Equal Protection (non-discrimination), Administrative Procedure Act (reasoned decision-making), and transparency requirements. Government discretion is constrained by constitutional and statutory requirements. Government discretion is constrained by constitutional and statutory law."
   },
   {
-    "id": "ext-250",
+    "id": "q-371",
     "domain": "Domain II",
     "difficulty": "Medium",
     "question": "Why is sector-specific AI regulation important?",
@@ -9767,7 +9767,7 @@ const ALL_QUESTIONS = [
     "explanation": "Sector-specific AI regulation is important because AI risks, impacts, stakeholder concerns, and appropriate governance vary significantly by context (healthcare vs. finance vs. law enforcement), requiring tailored approaches that address sector-specific concerns beyond what general AI regulations can provide. Domain III:"
   },
   {
-    "id": "ext-251",
+    "id": "q-372",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is the AI lifecycle?",
@@ -9793,7 +9793,7 @@ const ALL_QUESTIONS = [
     "explanation": "The AI lifecycle encompasses all stages of AI system development, deployment, and management from initial conception and planning through design, development, testing, deployment, monitoring, and eventual retirement. encompassing planning, design, development, testing, deployment, monitoring, and decommissioning."
   },
   {
-    "id": "ext-252",
+    "id": "q-373",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What are the typical stages of the AI lifecycle?",
@@ -9819,7 +9819,7 @@ const ALL_QUESTIONS = [
     "explanation": "The AI lifecycle typically includes planning/scoping, design, development/training, testing/validation, deployment, monitoring, maintenance/updates, and retirement/decommissioning."
   },
   {
-    "id": "ext-253",
+    "id": "q-374",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "Why is lifecycle governance important for AI systems?",
@@ -9845,7 +9845,7 @@ const ALL_QUESTIONS = [
     "explanation": "Lifecycle governance is crucial because AI systems evolve, their performance changes, new risks emerge, and different governance activities are appropriate at different stages. Governance must be integrated throughout the lifecycle, not just at deployment. rather than discovering problems only after deployment."
   },
   {
-    "id": "ext-254",
+    "id": "q-375",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What should occur during the planning stage of the AI lifecycle?",
@@ -9871,7 +9871,7 @@ const ALL_QUESTIONS = [
     "explanation": "The planning stage should include defining clear objectives, assessing feasibility and appropriateness of AI, identifying potential risks and impacts, determining governance requirements, 87 establishing success criteria, and considering alternatives. to establish a clear foundation before design begins."
   },
   {
-    "id": "ext-255",
+    "id": "q-376",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What is a “use case assessment” in AI lifecycle governance?",
@@ -9897,7 +9897,7 @@ const ALL_QUESTIONS = [
     "explanation": "Use case assessment evaluates whether AI is appropriate and beneficial for the intended use case, considering potential risks, benefits, ethical implications, and whether non-AI alternatives might be more appropriate. This is a critical early governance activity. including whether non-AI alternatives might be more suitable."
   },
   {
-    "id": "ext-256",
+    "id": "q-377",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "During use case assessment, an organization identifies that an AI system could automate a task but would eliminate jobs and has high bias risk. What should governance recommend?",
@@ -9923,7 +9923,7 @@ const ALL_QUESTIONS = [
     "explanation": "Governance should recommend comprehensive impact assessment, exploration of bias mitigation strategies, consideration of just transition planning for affected workers, stakeholder engagement, and careful evaluation of whether benefits justify risks and whether the use case is appropriate. engage stakeholders, and carefully weigh automation benefits against social impacts."
   },
   {
-    "id": "ext-257",
+    "id": "q-378",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “requirements definition” in AI lifecycle governance?",
@@ -9949,7 +9949,7 @@ const ALL_QUESTIONS = [
     "explanation": "Requirements definition specifies what the AI system must do (functional), how well it must perform (performance), ethical requirements (fairness, transparency), and governance requirements (documentation, oversight), guiding development. to guide development and ensure all necessary dimensions are addressed."
   },
   {
-    "id": "ext-258",
+    "id": "q-379",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What governance activities should occur during the design stage?",
@@ -9975,7 +9975,7 @@ const ALL_QUESTIONS = [
     "explanation": "Design stage governance includes architecture review for governance requirements, privacy by design, fairness considerations in algorithm selection, explainability planning, security design, and documentation of design decisions."
   },
   {
-    "id": "ext-259",
+    "id": "q-380",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “privacy by design” in the AI lifecycle?",
@@ -10001,7 +10001,7 @@ const ALL_QUESTIONS = [
     "explanation": "Privacy by design means integrating privacy protections into AI system design from the beginning, including data minimization, purpose limitation, security measures, and privacy-enhancing technologies, rather than adding privacy as an afterthought. including data minimization, purpose limitation, security measures, and privacy-enhancing technologies."
   },
   {
-    "id": "ext-260",
+    "id": "q-381",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What is “fairness by design” in AI development?",
@@ -10027,7 +10027,7 @@ const ALL_QUESTIONS = [
     "explanation": "Fairness by design means proactively designing AI systems to promote fairness and mitigate bias from the beginning, including careful feature selection, representative training data, fair89 ness-aware algorithms, and bias testing, rather than addressing fairness after development. including careful feature selection, representative training data, and fairness-aware algorithms."
   },
   {
-    "id": "ext-261",
+    "id": "q-382",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "During design, a team must choose between two algorithms: one is more accurate but less explainable; the other is less accurate but more explainable. The application is loan approval. What factors should governance consider?",
@@ -10053,7 +10053,7 @@ const ALL_QUESTIONS = [
     "explanation": "Governance should balance accuracy with explainability considering legal requirements (adverse action notices), contestability needs, risk of discrimination (explainability helps identify bias), stakeholder expectations, and the specific use case. Loan approval’s significant impact and legal requirements favor explainability. Loan approval's significant impact and legal requirements favor explainability."
   },
   {
-    "id": "ext-262",
+    "id": "q-383",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “data collection” in the AI lifecycle?",
@@ -10079,7 +10079,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data collection involves gathering training, validation, and testing data for AI system development, with governance ensuring data quality, representativeness, lawful collection, and appropriate consent."
   },
   {
-    "id": "ext-263",
+    "id": "q-384",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What governance considerations apply to training data collection?",
@@ -10105,7 +10105,7 @@ const ALL_QUESTIONS = [
     "explanation": "Training data collection governance includes ensuring lawful collection, appropriate consent or legal basis, representativeness of deployment population, bias assessment, data quality evaluation, and comprehensive documentation of data sources and characteristics."
   },
   {
-    "id": "ext-264",
+    "id": "q-385",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “model training” in the AI lifecycle?",
@@ -10131,7 +10131,7 @@ const ALL_QUESTIONS = [
     "explanation": "Model training is the process of teaching an AI model to recognize patterns and relationships from training data through iterative learning algorithms, producing a trained model for deployment."
   },
   {
-    "id": "ext-265",
+    "id": "q-386",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What governance activities should occur during model training?",
@@ -10157,7 +10157,7 @@ const ALL_QUESTIONS = [
     "explanation": "Training governance includes monitoring for emerging bias, tracking experiments and hyperparameters, version control of models and data, documentation of decisions and trade-offs, and validation of intermediate results."
   },
   {
-    "id": "ext-266",
+    "id": "q-387",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "During training, a model shows high accuracy on training data but exhibits bias against a protected group. What should governance recommend?",
@@ -10183,7 +10183,7 @@ const ALL_QUESTIONS = [
     "explanation": "Governance should recommend investigating root causes of bias, attempting mitigation strategies (collecting more representative data, adjusting algorithms, applying fairness constraints), retesting after mitigation, and documenting decisions and trade-offs. Deploying biased systems (A) or ignoring bias (C) is irresponsible. Documentation alone (D) is insufficient. retest after mitigation, and document decisions and trade-offs."
   },
   {
-    "id": "ext-267",
+    "id": "q-388",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “model validation” in the AI lifecycle?",
@@ -10209,7 +10209,7 @@ const ALL_QUESTIONS = [
     "explanation": "Model validation evaluates whether a trained model meets functional, performance, fairness, and safety requirements before deployment, using validation data and various testing methodologies."
   },
   {
-    "id": "ext-268",
+    "id": "q-389",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What should model validation include from a governance perspective?",
@@ -10235,7 +10235,7 @@ const ALL_QUESTIONS = [
     "explanation": "Comprehensive model validation includes accuracy/performance metrics, fairness testing across demographic groups, robustness to adversarial inputs, explainability verification, safety testing, and confirmation of alignment with all requirements."
   },
   {
-    "id": "ext-269",
+    "id": "q-390",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “testing” in the AI lifecycle?",
@@ -10261,7 +10261,7 @@ const ALL_QUESTIONS = [
     "explanation": "Testing systematically evaluates AI system functionality, performance, safety, fairness, robustness, and other requirements using various testing methodologies before deployment. using various testing methodologies."
   },
   {
-    "id": "ext-270",
+    "id": "q-391",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What types of testing should be conducted for AI systems?",
@@ -10287,7 +10287,7 @@ const ALL_QUESTIONS = [
     "explanation": "Comprehensive AI testing includes functional testing (does it work as intended), performance testing (accuracy, speed), fairness testing (across groups), robustness testing (edge cases, adversarial inputs), security testing, explainability testing, and integration testing."
   },
   {
-    "id": "ext-271",
+    "id": "q-392",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "An AI system passes all technical tests but stakeholder testing reveals it’s confusing to users and explanations are inadequate. Should it be deployed?",
@@ -10313,7 +10313,7 @@ const ALL_QUESTIONS = [
     "explanation": "Technical performance alone is insufficient. Usability and explainability issues affect real-world effectiveness, user trust, and accountability. Governance should require addressing these issues before deployment, as confused users may misuse the system or be unable to exercise oversight. and user trust."
   },
   {
-    "id": "ext-272",
+    "id": "q-393",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “deployment” in the AI lifecycle?",
@@ -10339,7 +10339,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment is releasing the AI system into production use in the real-world environment where it will make actual decisions or provide actual services to users."
   },
   {
-    "id": "ext-273",
+    "id": "q-394",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What governance activities should occur at deployment?",
@@ -10365,7 +10365,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment governance includes final approval based on testing results, comprehensive deployment documentation, user training on appropriate use and limitations, monitoring system setup, and incident response preparation."
   },
   {
-    "id": "ext-274",
+    "id": "q-395",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “monitoring” in the AI lifecycle?",
@@ -10391,7 +10391,7 @@ const ALL_QUESTIONS = [
     "explanation": "Monitoring involves ongoing observation of AI system performance, accuracy, fairness, impacts, and behavior after deployment to detect issues like model drift, emerging bias, or unexpected behaviors requiring intervention. to detect issues like model drift, emerging bias, or unexpected behaviors."
   },
   {
-    "id": "ext-275",
+    "id": "q-396",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What should be monitored in deployed AI systems?",
@@ -10417,7 +10417,7 @@ const ALL_QUESTIONS = [
     "explanation": "Comprehensive monitoring includes performance metrics (accuracy, latency), fairness metrics across demographic groups, model drift detection, user feedback, incident tracking, and real- world impacts. 94"
   },
   {
-    "id": "ext-276",
+    "id": "q-397",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "Monitoring detects that an AI system’s accuracy has degraded from 95% to 85% over six months. What should governance recommend?",
@@ -10443,7 +10443,7 @@ const ALL_QUESTIONS = [
     "explanation": "Significant performance degradation requires investigation of root causes (model drift, changing data distributions), impact assessment, determination of whether retraining or other intervention is needed, and documentation. Continuing without investigation (A) or ignoring the issue (C) is irresponsible. Notification alone (D) is insufficient. and document all findings and decisions."
   },
   {
-    "id": "ext-277",
+    "id": "q-398",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “model maintenance” in the AI lifecycle?",
@@ -10469,7 +10469,7 @@ const ALL_QUESTIONS = [
     "explanation": "Model maintenance includes ongoing activities to keep AI systems performing appropriately, such as retraining with new data, updating algorithms, fixing bugs, and adapting to changing conditions."
   },
   {
-    "id": "ext-278",
+    "id": "q-399",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "When should an AI model be retrained?",
@@ -10495,7 +10495,7 @@ const ALL_QUESTIONS = [
     "explanation": "Models should be retrained when monitoring detects performance degradation, emerging bias, significant changes in data distributions, or at planned intervals based on the use case. Waiting for complete failure (C) or relying only on complaints (D) is reactive and risky. 95"
   },
   {
-    "id": "ext-279",
+    "id": "q-400",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “model updating” in the AI lifecycle?",
@@ -10521,7 +10521,7 @@ const ALL_QUESTIONS = [
     "explanation": "Model updating involves modifying AI models to improve performance, address identified issues (bias, errors), adapt to changing conditions, or incorporate new capabilities."
   },
   {
-    "id": "ext-280",
+    "id": "q-401",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What governance considerations apply when updating deployed AI models?",
@@ -10547,7 +10547,7 @@ const ALL_QUESTIONS = [
     "explanation": "Model update governance includes testing updated models (ensuring improvements don’t introduce new issues), assessing impacts of changes, version control, comprehensive documentation of changes and rationale, and appropriate user notification."
   },
   {
-    "id": "ext-281",
+    "id": "q-402",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "An organization updates an AI model to improve accuracy. The update improves overall accuracy but worsens fairness for a minority group. What should governance recommend?",
@@ -10573,7 +10573,7 @@ const ALL_QUESTIONS = [
     "explanation": "Governance should not approve updates that worsen fairness, even if overall accuracy improves. The organization should investigate the fairness regression, attempt to achieve both improvements, and carefully document trade-offs if simultaneous improvement proves impossible. Deploying despite fairness regression (A, C) or ignoring fairness (D) is irresponsible. 96"
   },
   {
-    "id": "ext-282",
+    "id": "q-403",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “incident management” in the AI lifecycle?",
@@ -10599,7 +10599,7 @@ const ALL_QUESTIONS = [
     "explanation": "Incident management encompasses processes for detecting, responding to, mitigating, and learning from AI system failures, harms, biases, or unexpected behaviors, including root cause analysis and corrective actions."
   },
   {
-    "id": "ext-283",
+    "id": "q-404",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What should an AI incident response process include?",
@@ -10625,7 +10625,7 @@ const ALL_QUESTIONS = [
     "explanation": "Comprehensive incident response includes detection mechanisms, impact assessment, containment (stopping harm), investigation of root causes, remediation, appropriate communication to stakeholders, and learning/improvement to prevent recurrence."
   },
   {
-    "id": "ext-284",
+    "id": "q-405",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “decommissioning” in the AI lifecycle?",
@@ -10651,7 +10651,7 @@ const ALL_QUESTIONS = [
     "explanation": "Decommissioning is the process of retiring an AI system from use, including decisions about data retention/deletion, transition to alternative systems, user notification, and documentation of the system’s history and lessons learned. and documentation of the system's history and lessons learned."
   },
   {
-    "id": "ext-285",
+    "id": "q-406",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What governance considerations apply when decommissioning an AI system?",
@@ -10677,7 +10677,7 @@ const ALL_QUESTIONS = [
     "explanation": "Decommissioning governance includes decisions about data retention or deletion (considering legal requirements and privacy), transition planning to alternative systems, user notification, comprehensive documentation of the system’s history, and capturing lessons learned."
   },
   {
-    "id": "ext-286",
+    "id": "q-407",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "An AI system is being decommissioned. It was trained on personal data. What are the data governance obligations?",
@@ -10703,7 +10703,7 @@ const ALL_QUESTIONS = [
     "explanation": "Decommissioning requires assessing legal retention requirements (some data may need to be retained), considering data subject rights (including erasure requests), determining appropriate retention or deletion based on legal and business needs, documenting decisions, and ensuring secure deletion of data not retained. document decisions, and ensure secure deletion of data not retained."
   },
   {
-    "id": "ext-287",
+    "id": "q-408",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “lifecycle documentation” in AI governance?",
@@ -10729,7 +10729,7 @@ const ALL_QUESTIONS = [
     "explanation": "Lifecycle documentation involves comprehensive recording of decisions, processes, testing results, incidents, and outcomes throughout the AI system lifecycle, supporting accountability, knowledge transfer, and compliance."
   },
   {
-    "id": "ext-288",
+    "id": "q-409",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "Why is comprehensive lifecycle documentation important?",
@@ -10755,7 +10755,7 @@ const ALL_QUESTIONS = [
     "explanation": "Comprehensive lifecycle documentation supports accountability for decisions, enables internal and external auditing, facilitates knowledge transfer, demonstrates regulatory compliance, and enables organizational learning from successes and failures."
   },
   {
-    "id": "ext-289",
+    "id": "q-410",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “version control” in AI lifecycle governance?",
@@ -10781,7 +10781,7 @@ const ALL_QUESTIONS = [
     "explanation": "Version control in AI involves tracking and managing different versions of models, training data, code, configurations, and documentation throughout the lifecycle, enabling reproducibility, rollback, and audit trails."
   },
   {
-    "id": "ext-290",
+    "id": "q-411",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What is “change management” in the AI lifecycle?",
@@ -10807,7 +10807,7 @@ const ALL_QUESTIONS = [
     "explanation": "Change management in AI involves processes for proposing, reviewing, approving, implementing, and documenting changes to AI systems throughout the lifecycle, ensuring changes are controlled and their impacts assessed. ensuring changes are reviewed, approved, and their impacts assessed."
   },
   {
-    "id": "ext-291",
+    "id": "q-412",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "An organization has multiple AI systems at different lifecycle stages. How should lifecycle governance be structured?",
@@ -10833,7 +10833,7 @@ const ALL_QUESTIONS = [
     "explanation": "Effective lifecycle governance uses a risk-based approach where governance intensity is proportional to system risk, but maintains consistent processes and standards across all systems for efficiency and consistency."
   },
   {
-    "id": "ext-292",
+    "id": "q-413",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What is “lifecycle governance integration”?",
@@ -10859,7 +10859,7 @@ const ALL_QUESTIONS = [
     "explanation": "Lifecycle governance integration means embedding governance activities, requirements, and checkpoints into each lifecycle stage rather than treating governance as a separate, parallel process. This ensures governance is proactive and integrated into development workflows."
   },
   {
-    "id": "ext-293",
+    "id": "q-414",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is data governance for AI?",
@@ -10885,7 +10885,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data governance for AI encompasses policies, processes, and controls for managing data quality, privacy, security, lineage, and appropriate use throughout the AI lifecycle, from collection through retention and deletion. 100"
   },
   {
-    "id": "ext-294",
+    "id": "q-415",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "Why is data governance particularly important for AI?",
@@ -10911,7 +10911,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data governance is critical for AI because AI system quality, accuracy, fairness, and behavior depend fundamentally on training data quality, representativeness, and appropriate use. “Garbage in, garbage out” is particularly relevant for AI. —'garbage in, garbage out' is particularly relevant for AI."
   },
   {
-    "id": "ext-295",
+    "id": "q-416",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What is “data quality” in AI governance?",
@@ -10937,7 +10937,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data quality for AI encompasses accuracy (correctness), completeness (no critical gaps), consistency (no contradictions), timeliness (current enough), and fitness for purpose (appropriate for the AI task). Poor data quality leads to poor AI performance. — poor data quality leads to poor AI performance."
   },
   {
-    "id": "ext-296",
+    "id": "q-417",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What data quality issues can affect AI systems?",
@@ -10963,7 +10963,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data quality issues affecting AI include inaccurate labels (wrong training signals), missing values (incomplete information), inconsistent formats (integration problems), outdated data (not reflecting current patterns), and unrepresentative samples (bias). 101"
   },
   {
-    "id": "ext-297",
+    "id": "q-418",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "Training data contains 90% examples from one demographic group and 10% from another. The AI system will be deployed equally across both groups. What data governance issue exists?",
@@ -10989,7 +10989,7 @@ const ALL_QUESTIONS = [
     "explanation": "This is a representativeness issue where training data doesn’t reflect the deployment population, likely causing the AI system to perform better for the overrepresented group. Data governance should identify this issue and require more representative data collection or other mitigation."
   },
   {
-    "id": "ext-298",
+    "id": "q-419",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “data lineage” in AI governance?",
@@ -11015,7 +11015,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data lineage documents data origins (sources), transformations (processing steps), and movement through the AI lifecycle, enabling traceability, reproducibility, and accountability."
   },
   {
-    "id": "ext-299",
+    "id": "q-420",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "Why is data lineage important for AI governance?",
@@ -11041,7 +11041,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data lineage enables traceability of data sources, reproducibility of results, assessment of data change impacts, demonstration of compliance with data regulations, and root cause analysis when issues arise. 102"
   },
   {
-    "id": "ext-300",
+    "id": "q-421",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “data provenance” in AI?",
@@ -11067,7 +11067,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data provenance provides information about data origins, ownership, collection methods, and chain of custody, supporting trust, quality assessment, and compliance."
   },
   {
-    "id": "ext-301",
+    "id": "q-422",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What is “training data bias” in AI governance?",
@@ -11093,7 +11093,7 @@ const ALL_QUESTIONS = [
     "explanation": "Training data bias refers to systematic skews, unrepresentativeness, or historical biases in training data that can lead to biased AI system outputs and discriminatory outcomes. Addressing training data bias is a critical governance activity."
   },
   {
-    "id": "ext-302",
+    "id": "q-423",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "Historical hiring data shows a company predominantly hired men for technical roles. This data is used to train an AI resume screening system. What governance issue exists?",
@@ -11119,7 +11119,7 @@ const ALL_QUESTIONS = [
     "explanation": "Historical bias in training data (past discriminatory hiring) will likely be learned and perpetuated by the AI system, amplifying historical discrimination. Governance should identify this issue and require mitigation (data augmentation, fairness constraints) or alternative approaches. 103"
   },
   {
-    "id": "ext-303",
+    "id": "q-424",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “data representativeness” in AI governance?",
@@ -11145,7 +11145,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data representativeness means training data adequately represents the population, scenarios, and conditions the AI system will encounter in deployment, ensuring the system performs appropriately across all deployment contexts."
   },
   {
-    "id": "ext-304",
+    "id": "q-425",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "How can data representativeness be assessed?",
@@ -11171,7 +11171,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data representativeness can be assessed by comparing training data demographics and characteristics to the expected deployment population, analyzing coverage of relevant scenarios and edge cases, and identifying gaps or underrepresented groups."
   },
   {
-    "id": "ext-305",
+    "id": "q-426",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “data minimization” in AI governance?",
@@ -11197,7 +11197,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data minimization is the principle of collecting and retaining only the minimum personal data necessary for specified AI purposes, reducing privacy risks and compliance obligations. 104"
   },
   {
-    "id": "ext-306",
+    "id": "q-427",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "An AI system could use 50 data features but analysis shows 15 features provide similar performance. What does data minimization suggest?",
@@ -11223,7 +11223,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data minimization suggests using only the 15 necessary features, reducing privacy risk (less personal data processed), model complexity, and potential for spurious correlations, while maintaining performance."
   },
   {
-    "id": "ext-307",
+    "id": "q-428",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “data retention” in AI governance?",
@@ -11249,7 +11249,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data retention encompasses policies and practices for how long different types of data (training data, operational data, personal data) are kept and when they must be deleted, balancing legal requirements, business needs, and privacy principles."
   },
   {
-    "id": "ext-308",
+    "id": "q-429",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What factors should inform data retention policies for AI?",
@@ -11275,7 +11275,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data retention policies should balance legal requirements (some data must be retained, some must be deleted), data subject rights (erasure requests), legitimate business needs (model improvement), privacy principles (storage limitation), and security considerations. 105"
   },
   {
-    "id": "ext-309",
+    "id": "q-430",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "An organization wants to retain all training data indefinitely for potential future model improvements. What governance issues arise?",
@@ -11301,7 +11301,7 @@ const ALL_QUESTIONS = [
     "explanation": "Indefinite retention conflicts with the storage limitation principle (GDPR), increases privacy risk (more data at risk of breach), may violate data subject rights (erasure requests), and requires strong justification of ongoing necessity. Governance should require defined retention periods with justification."
   },
   {
-    "id": "ext-310",
+    "id": "q-431",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “data security” in AI governance?",
@@ -11327,7 +11327,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data security encompasses technical and organizational measures to protect data from unauthorized access, loss, alteration, or misuse throughout the AI lifecycle, including encryption, access controls, and security monitoring."
   },
   {
-    "id": "ext-311",
+    "id": "q-432",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What data security measures are particularly important for AI training data?",
@@ -11353,7 +11353,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI training data requires access controls (limiting who can access), encryption (at rest and in transit), secure storage, audit logging (tracking access), and protection against data poisoning attacks."
   },
   {
-    "id": "ext-312",
+    "id": "q-433",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “data privacy” in AI governance?",
@@ -11379,7 +11379,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data privacy in AI governance involves protecting personal information and respecting individuals’ privacy rights (consent, access, erasure) throughout the AI lifecycle, implementing privacy-by-design principles and complying with privacy regulations."
   },
   {
-    "id": "ext-313",
+    "id": "q-434",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What is “synthetic data” and how does it relate to data governance?",
@@ -11405,7 +11405,7 @@ const ALL_QUESTIONS = [
     "explanation": "Synthetic data is artificially generated data that mimics real data’s statistical properties and characteristics without containing actual personal information, potentially reducing privacy risks while maintaining utility for AI training. However, governance must ensure synthetic data doesn’t enable re-identification."
   },
   {
-    "id": "ext-314",
+    "id": "q-435",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "An organization generates synthetic data from real personal data for AI training. Does this eliminate privacy concerns?",
@@ -11431,7 +11431,7 @@ const ALL_QUESTIONS = [
     "explanation": "Synthetic data doesn’t automatically eliminate privacy concerns. Depending on generation methods, synthetic data may still enable re-identification, reveal information about individuals in the original dataset, or inherit biases. Privacy assessment is still needed."
   },
   {
-    "id": "ext-315",
+    "id": "q-436",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “data labeling” in AI governance?",
@@ -11457,7 +11457,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data labeling is the process of annotating training data with correct outputs, categories, or tags that the AI system should learn to predict. Label quality significantly impacts AI system performance and fairness."
   },
   {
-    "id": "ext-316",
+    "id": "q-437",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What governance considerations apply to data labeling?",
@@ -11483,7 +11483,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data labeling governance includes labeler training (ensuring understanding of categories), quality control (checking label accuracy), bias mitigation (diverse labelers, clear guidelines), inter- rater reliability measurement, and documentation of labeling processes and decisions."
   },
   {
-    "id": "ext-317",
+    "id": "q-438",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "Data labelers consistently mislabel examples from a particular demographic group due to unfamiliarity. What governance issue exists and how should it be addressed?",
@@ -11509,7 +11509,7 @@ const ALL_QUESTIONS = [
     "explanation": "Systematic mislabeling due to unfamiliarity creates labeling bias that will be learned by the AI system, causing biased outputs. Governance should address this through labeler training, diverse labeling teams with relevant expertise, clear guidelines, and quality audits focusing on potentially problematic categories."
   },
   {
-    "id": "ext-318",
+    "id": "q-439",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “data augmentation” in AI?",
@@ -11535,7 +11535,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data augmentation uses techniques to artificially increase training data diversity and size (e.g., rotating images, paraphrasing text) to improve model robustness and address data scarcity."
   },
   {
-    "id": "ext-319",
+    "id": "q-440",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "How can data augmentation support fairness in AI?",
@@ -11561,7 +11561,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data augmentation can support fairness by generating additional examples for underrepresented groups, helping balance training data and improve model performance across all groups. However, augmentation must be done carefully to avoid introducing artifacts."
   },
   {
-    "id": "ext-320",
+    "id": "q-441",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “data preprocessing” in AI?",
@@ -11587,7 +11587,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data preprocessing transforms raw data into a format suitable for AI model training through cleaning, normalization, feature engineering, and other transformations. Preprocessing decisions significantly impact model behavior."
   },
   {
-    "id": "ext-321",
+    "id": "q-442",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What governance considerations apply to data preprocessing?",
@@ -11613,7 +11613,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data preprocessing governance includes documenting all transformations (enabling reproducibility), assessing whether preprocessing introduces or amplifies bias, ensuring important information isn’t lost, and maintaining preprocessing reproducibility."
   },
   {
-    "id": "ext-322",
+    "id": "q-443",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "During preprocessing, missing values for income are filled with the median income. This disproportionately affects low-income individuals who are more likely to have missing data. What governance issue exists?",
@@ -11639,7 +11639,7 @@ const ALL_QUESTIONS = [
     "explanation": "This preprocessing decision may introduce bias by systematically misrepresenting low- income individuals (who are more likely to have missing data) as having median income, potentially affecting model fairness. Governance should identify this issue and consider alternative approaches (separate models, different imputation methods)."
   },
   {
-    "id": "ext-323",
+    "id": "q-444",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “feature engineering” in AI?",
@@ -11665,7 +11665,7 @@ const ALL_QUESTIONS = [
     "explanation": "Feature engineering involves creating, selecting, or transforming input variables (features) for AI models to improve performance, often requiring domain expertise. Feature choices significantly impact model behavior and fairness."
   },
   {
-    "id": "ext-324",
+    "id": "q-445",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What governance considerations apply to feature engineering?",
@@ -11691,7 +11691,7 @@ const ALL_QUESTIONS = [
     "explanation": "Feature engineering governance includes avoiding features that serve as proxies for protected characteristics, documenting feature choices and rationale, assessing fairness implications, and ensuring legal compliance (e.g., not using prohibited factors in credit decisions)."
   },
   {
-    "id": "ext-325",
+    "id": "q-446",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "A feature that improves model accuracy is highly correlated with a protected characteristic. Should it be used?",
@@ -11717,7 +11717,7 @@ const ALL_QUESTIONS = [
     "explanation": "Features correlated with protected characteristics require careful analysis: assess whether they serve as proxies causing discrimination, evaluate fairness implications, consider legal requirements (some jurisdictions prohibit proxies), explore alternatives, and document the decision with justification. Simple rules (A, C, D) don’t account for context and trade-offs."
   },
   {
-    "id": "ext-326",
+    "id": "q-447",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “data sharing” in AI governance?",
@@ -11743,7 +11743,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data sharing involves providing data to other parties (partners, researchers, vendors) and requires governance to ensure appropriate use, adequate protection, legal compliance, and respect for data subject rights."
   },
   {
-    "id": "ext-327",
+    "id": "q-448",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What governance controls should apply to data sharing for AI?",
@@ -11769,7 +11769,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data sharing governance includes data sharing agreements (defining permitted uses), purpose limitations, security requirements for recipients, compliance verification, and appropriate data subject notification or consent."
   },
   {
-    "id": "ext-328",
+    "id": "q-449",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “data anonymization” in AI governance?",
@@ -11795,7 +11795,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data anonymization involves removing or transforming identifying information so individuals cannot be re-identified by any reasonable means. True anonymization is challenging, especially for rich AI datasets."
   },
   {
-    "id": "ext-329",
+    "id": "q-450",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What challenges exist in anonymizing data for AI?",
@@ -11821,7 +11821,7 @@ const ALL_QUESTIONS = [
     "explanation": "Anonymizing AI data is challenging because rich datasets with many features enable re- identification through combination, anonymization techniques may reduce data utility for AI, and AI models themselves may enable inference attacks revealing information about training data."
   },
   {
-    "id": "ext-330",
+    "id": "q-451",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "An organization anonymizes training data by removing names and addresses. The data includes age, zip code, and medical conditions. Is this sufficient anonymization?",
@@ -11847,7 +11847,7 @@ const ALL_QUESTIONS = [
     "explanation": "Removing direct identifiers (names, addresses) is insufficient. Combinations of quasi- identifiers (age, zip code, medical conditions) may enable re-identification, especially with external datasets. Additional techniques (generalization, suppression, differential privacy) may be needed."
   },
   {
-    "id": "ext-331",
+    "id": "q-452",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “data access control” in AI governance?",
@@ -11873,7 +11873,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data access control encompasses policies and technical mechanisms determining who can access what data for AI purposes, implementing least privilege and need-to-know principles. The other options describe unrelated activities."
   },
   {
-    "id": "ext-332",
+    "id": "q-453",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What principles should guide data access control for AI?",
@@ -11899,7 +11899,7 @@ const ALL_QUESTIONS = [
     "explanation": "Data access control should follow least privilege (minimum necessary access), need-to- know (access only for legitimate purposes), role-based access control, comprehensive audit logging, and regular access reviews."
   },
   {
-    "id": "ext-333",
+    "id": "q-454",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "A data scientist requests access to production data containing personal information for model improvement. What governance considerations apply?",
@@ -11925,7 +11925,7 @@ const ALL_QUESTIONS = [
     "explanation": "Governance should assess whether access is necessary, consider alternatives (anonymized or synthetic data), implement appropriate access controls and monitoring if access is granted, time-limit the access, and document justification. Blanket approval (A) or denial (C) don’t account for legitimate needs and risk management."
   },
   {
-    "id": "ext-334",
+    "id": "q-455",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “model development” in AI?",
@@ -11951,7 +11951,7 @@ const ALL_QUESTIONS = [
     "explanation": "Model development encompasses the process of designing AI model architecture, training models on data, and refining them through iterative improvement to meet requirements.”"
   },
   {
-    "id": "ext-335",
+    "id": "q-456",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “algorithm selection” in model development?",
@@ -11977,7 +11977,7 @@ const ALL_QUESTIONS = [
     "explanation": "Algorithm selection involves choosing appropriate machine learning algorithms based on the problem type, data characteristics, performance requirements, explainability needs, and other constraints. 114"
   },
   {
-    "id": "ext-336",
+    "id": "q-457",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What factors should influence algorithm selection from a governance perspective?",
@@ -12003,7 +12003,7 @@ const ALL_QUESTIONS = [
     "explanation": "Algorithm selection should consider accuracy/performance, explainability needs (especially for high-stakes decisions), fairness characteristics, computational requirements, and alignment with use case risk level. High-risk applications may require more explainable algorithms."
   },
   {
-    "id": "ext-337",
+    "id": "q-458",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “hyperparameter tuning” in AI?",
@@ -12029,7 +12029,7 @@ const ALL_QUESTIONS = [
     "explanation": "Hyperparameter tuning involves adjusting algorithm configuration parameters (learning rate, number of layers, etc.) to optimize model performance, requiring systematic experimentation.”"
   },
   {
-    "id": "ext-338",
+    "id": "q-459",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What governance considerations apply to hyperparameter tuning?",
@@ -12055,7 +12055,7 @@ const ALL_QUESTIONS = [
     "explanation": "Hyperparameter tuning governance includes documenting experiments and decisions, avoiding overfitting to validation data, considering fairness implications of different configurations, and ensuring reproducibility."
   },
   {
-    "id": "ext-339",
+    "id": "q-460",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “model training” in AI development?",
@@ -12081,7 +12081,7 @@ const ALL_QUESTIONS = [
     "explanation": "Model training is the process of teaching an AI model to recognize patterns and relationships from training data through iterative learning algorithms, producing a trained model. The other options describe unrelated activities."
   },
   {
-    "id": "ext-340",
+    "id": "q-461",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What should be monitored during model training from a governance perspective?",
@@ -12107,7 +12107,7 @@ const ALL_QUESTIONS = [
     "explanation": "Training monitoring should include performance metrics (accuracy, loss), fairness metrics across groups, convergence behavior, overfitting indicators (training vs. validation performance), and resource usage."
   },
   {
-    "id": "ext-341",
+    "id": "q-462",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "During training, a model achieves 98% accuracy on training data but only 75% on validation data. What does this indicate and what should governance recommend?",
@@ -12133,7 +12133,7 @@ const ALL_QUESTIONS = [
     "explanation": "Large gap between training and validation performance indicates overfitting—the model learned training data too specifically and doesn’t generalize. Governance should recommend overfitting reduction techniques (regularization, more training data, simpler model architecture) before deployment."
   },
   {
-    "id": "ext-342",
+    "id": "q-463",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “model validation” in AI development?",
@@ -12159,7 +12159,7 @@ const ALL_QUESTIONS = [
     "explanation": "Model validation evaluates whether a trained model meets functional, performance, fairness, and other requirements using validation data (separate from training data) before deployment. The other options describe unrelated activities."
   },
   {
-    "id": "ext-343",
+    "id": "q-464",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What is the purpose of using separate validation data?",
@@ -12185,7 +12185,7 @@ const ALL_QUESTIONS = [
     "explanation": "Separate validation data provides unbiased evaluation of how the model performs on data it hasn’t seen during training, helping detect overfitting and estimate real-world performance. Using training data for validation would give overly optimistic results."
   },
   {
-    "id": "ext-344",
+    "id": "q-465",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “model testing” in AI development?",
@@ -12211,7 +12211,7 @@ const ALL_QUESTIONS = [
     "explanation": "Model testing systematically evaluates model functionality (does it work as intended), performance (accuracy, speed), safety (failure modes), and fairness (across groups) using various testing methodologies before deployment. The other options describe unrelated activities."
   },
   {
-    "id": "ext-345",
+    "id": "q-466",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What types of testing should AI models undergo?",
@@ -12237,7 +12237,7 @@ const ALL_QUESTIONS = [
     "explanation": "Comprehensive AI model testing includes functional testing (correct behavior), performance testing (accuracy, speed), fairness testing (across groups), robustness testing (edge cases, adversarial inputs), security testing, explainability testing, and edge case testing."
   },
   {
-    "id": "ext-346",
+    "id": "q-467",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "A model passes accuracy testing with 92% overall accuracy but fairness testing reveals 95% accuracy for one group and 85% for another. Should it be deployed?",
@@ -12263,7 +12263,7 @@ const ALL_QUESTIONS = [
     "explanation": "A 10-point accuracy gap between groups may indicate bias and could lead to discriminatory outcomes. Governance should require investigation of root causes, attempted mitigation, and careful evaluation of whether remaining disparities are acceptable given the use case and legal requirements."
   },
   {
-    "id": "ext-347",
+    "id": "q-468",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “performance testing” for AI models?",
@@ -12289,7 +12289,7 @@ const ALL_QUESTIONS = [
     "explanation": "Performance testing evaluates model accuracy, precision, recall, speed, resource usage, and other performance metrics against requirements. The other options describe unrelated activities."
   },
   {
-    "id": "ext-348",
+    "id": "q-469",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What performance metrics should be evaluated for AI models?",
@@ -12315,7 +12315,7 @@ const ALL_QUESTIONS = [
     "explanation": "Comprehensive performance evaluation includes overall accuracy, precision (positive prediction accuracy), recall (sensitivity), F1 score (balance), false positive/negative rates (error types), and critically, performance across demographic groups to identify disparities."
   },
   {
-    "id": "ext-349",
+    "id": "q-470",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “fairness testing” for AI models?",
@@ -12341,7 +12341,7 @@ const ALL_QUESTIONS = [
     "explanation": "Fairness testing evaluates whether model performance (accuracy, error rates) and outcomes (predictions, decisions) are equitable across different demographic groups, identifying potential discrimination."
   },
   {
-    "id": "ext-350",
+    "id": "q-471",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What fairness metrics might be used in AI model testing?",
@@ -12367,7 +12367,7 @@ const ALL_QUESTIONS = [
     "explanation": "Fairness metrics include demographic parity (equal positive prediction rates), equalized odds (equal true/false positive rates), equal opportunity (equal true positive rates), predictive parity (equal precision), and disparate impact ratios. Different metrics may be appropriate for different contexts."
   },
   {
-    "id": "ext-351",
+    "id": "q-472",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "Different fairness metrics sometimes conflict—optimizing for one worsens another. How should this be addressed in governance?",
@@ -12393,7 +12393,7 @@ const ALL_QUESTIONS = [
     "explanation": "Fairness metric conflicts require choosing the most appropriate metric(s) for the specific use case, legal context, and stakeholder values, documenting trade-offs, and ensuring minimum fairness standards are met even if perfect fairness across all metrics is impossible."
   },
   {
-    "id": "ext-352",
+    "id": "q-473",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “robustness testing” for AI models?",
@@ -12419,7 +12419,7 @@ const ALL_QUESTIONS = [
     "explanation": "Robustness testing evaluates how models perform on edge cases, unusual inputs, distribution shifts, and adversarial examples, assessing whether models fail gracefully or catastrophically."
   },
   {
-    "id": "ext-353",
+    "id": "q-474",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What is “adversarial testing” for AI models?",
@@ -12445,7 +12445,7 @@ const ALL_QUESTIONS = [
     "explanation": "Adversarial testing deliberately attempts to cause model failures, incorrect outputs, or unintended behaviors through carefully crafted inputs, helping identify vulnerabilities and improve robustness."
   },
   {
-    "id": "ext-354",
+    "id": "q-475",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "Adversarial testing reveals that small, imperceptible changes to inputs can cause a model to make incorrect predictions. What does this indicate and what should governance recommend?",
@@ -12471,7 +12471,7 @@ const ALL_QUESTIONS = [
     "explanation": "Vulnerability to adversarial examples indicates the model could be manipulated in deployment. Governance should recommend robustness improvements (adversarial training, input validation), consider whether the use case is appropriate given the vulnerability, and implement monitoring for potential attacks."
   },
   {
-    "id": "ext-355",
+    "id": "q-476",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “explainability testing” for AI models?",
@@ -12497,7 +12497,7 @@ const ALL_QUESTIONS = [
     "explanation": "Explainability testing evaluates whether model explanations are accurate (faithful to actual model behavior), understandable to intended audiences, and useful for their purposes (decision- making, debugging, accountability)."
   },
   {
-    "id": "ext-356",
+    "id": "q-477",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What should explainability testing verify?",
@@ -12523,7 +12523,7 @@ const ALL_QUESTIONS = [
     "explanation": "Explainability testing should verify explanation accuracy/faithfulness (do explanations reflect actual model behavior), comprehensibility for intended audiences, consistency across similar cases, and usefulness for intended purposes."
   },
   {
-    "id": "ext-357",
+    "id": "q-478",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “edge case testing” for AI models?",
@@ -12549,7 +12549,7 @@ const ALL_QUESTIONS = [
     "explanation": "Edge case testing evaluates model behavior on unusual, rare, or boundary conditions that may not be well-represented in training data but could occur in deployment, identifying potential failure modes. 121"
   },
   {
-    "id": "ext-358",
+    "id": "q-479",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "Why is edge case testing particularly important for AI models?",
@@ -12575,7 +12575,7 @@ const ALL_QUESTIONS = [
     "explanation": "Edge case testing is important because AI models may perform poorly or fail on rare cases not well-represented in training data, and these edge cases may involve high-stakes situations (medical emergencies, safety-critical scenarios) where failures cause significant harm."
   },
   {
-    "id": "ext-359",
+    "id": "q-480",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "Edge case testing reveals a model performs poorly on a rare but high-stakes scenario. The scenario occurs in less than 0.1% of cases. What should governance recommend?",
@@ -12601,7 +12601,7 @@ const ALL_QUESTIONS = [
     "explanation": "Even rare edge cases warrant attention if they’re high-stakes. Governance should recommend assessing potential harm, implementing safeguards (human review when edge cases are detected, user warnings), considering whether use case restrictions are needed, and clearly documenting the limitation. Rarity doesn’t eliminate responsibility for high-stakes failures."
   },
   {
-    "id": "ext-360",
+    "id": "q-481",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “security testing” for AI models?",
@@ -12627,7 +12627,7 @@ const ALL_QUESTIONS = [
     "explanation": "Security testing evaluates AI model vulnerabilities to various attacks including data poisoning, model inversion (extracting training data), membership inference (determining if data was in training set), and adversarial examples."
   },
   {
-    "id": "ext-361",
+    "id": "q-482",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What security threats should AI model testing address?",
@@ -12653,7 +12653,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI model security testing should address data poisoning (manipulating training data), model inversion (extracting training data), membership inference (privacy attacks), adversarial examples (causing misclassification), and model theft (stealing model parameters)."
   },
   {
-    "id": "ext-362",
+    "id": "q-483",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “integration testing” for AI systems?",
@@ -12679,7 +12679,7 @@ const ALL_QUESTIONS = [
     "explanation": "Integration testing evaluates how AI models integrate with other system components, data pipelines, user interfaces, and workflows, ensuring the complete system functions correctly."
   },
   {
-    "id": "ext-363",
+    "id": "q-484",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "Why is integration testing important for AI systems?",
@@ -12705,7 +12705,7 @@ const ALL_QUESTIONS = [
     "explanation": "Integration testing is important because AI models operate within larger systems, and integration issues can cause system failures, amplify biases, create unintended feedback loops, or res123 ult in inappropriate use of model outputs."
   },
   {
-    "id": "ext-364",
+    "id": "q-485",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "Integration testing reveals that while the AI model is fair, the system’s user interface presents results in a way that amplifies bias. What should governance recommend?",
@@ -12731,7 +12731,7 @@ const ALL_QUESTIONS = [
     "explanation": "Fairness must be evaluated at the system level, not just the model level. If the user interface amplifies bias (e.g., by how results are presented or ordered), the overall system is unfair regardless of model fairness. Governance should require addressing the UI issue."
   },
   {
-    "id": "ext-365",
+    "id": "q-486",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “user acceptance testing” (UAT) for AI systems?",
@@ -12757,7 +12757,7 @@ const ALL_QUESTIONS = [
     "explanation": "User acceptance testing evaluates whether the AI system meets user needs, expectations, and workflows in realistic scenarios, involving actual users testing the system before full deployment."
   },
   {
-    "id": "ext-366",
+    "id": "q-487",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What value does user acceptance testing provide for AI governance?",
@@ -12783,7 +12783,7 @@ const ALL_QUESTIONS = [
     "explanation": "UAT provides governance value by identifying usability issues, inappropriate trust or distrust in the system, misunderstandings about capabilities/limitations, and real-world applicability 124 problems that technical testing might miss."
   },
   {
-    "id": "ext-367",
+    "id": "q-488",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “regression testing” for AI models?",
@@ -12809,7 +12809,7 @@ const ALL_QUESTIONS = [
     "explanation": "Regression testing verifies that model updates, retraining, or changes don’t introduce new problems, degrade existing functionality, or worsen fairness, ensuring improvements don’t come with unacceptable trade-offs."
   },
   {
-    "id": "ext-368",
+    "id": "q-489",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "When should regression testing be performed for AI models?",
@@ -12835,7 +12835,7 @@ const ALL_QUESTIONS = [
     "explanation": "Regression testing should be performed whenever models are updated, retrained, or system changes are made to ensure changes don’t introduce new problems or degrade existing performance/fairness."
   },
   {
-    "id": "ext-369",
+    "id": "q-490",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "Regression testing after a model update shows improved overall accuracy but worsened fairness. What should governance recommend?",
@@ -12861,7 +12861,7 @@ const ALL_QUESTIONS = [
     "explanation": "Governance should not approve updates that worsen fairness even if accuracy improves. The organization should investigate the fairness regression, attempt to achieve both improvements, and only proceed if trade-offs are carefully evaluated and documented as unavoidable. 125"
   },
   {
-    "id": "ext-370",
+    "id": "q-491",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “test data” in AI development?",
@@ -12887,7 +12887,7 @@ const ALL_QUESTIONS = [
     "explanation": "Test data is a separate dataset (distinct from training and validation data) used to evaluate final model performance, providing an unbiased estimate of real-world performance."
   },
   {
-    "id": "ext-371",
+    "id": "q-492",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "Why must test data be kept separate from training and validation data?",
@@ -12913,7 +12913,7 @@ const ALL_QUESTIONS = [
     "explanation": "Test data must be kept completely separate to provide unbiased evaluation of model performance without any data leakage from training or validation, giving the most accurate estimate of real-world performance. Using training or validation data for final testing would give overly optimistic results."
   },
   {
-    "id": "ext-372",
+    "id": "q-493",
     "domain": "Domain III",
     "difficulty": "Easy",
     "question": "What is “test coverage” in AI model testing?",
@@ -12939,7 +12939,7 @@ const ALL_QUESTIONS = [
     "explanation": "Test coverage refers to the extent to which testing evaluates different scenarios, edge cases, input variations, and demographic groups, ensuring comprehensive evaluation rather than narrow testing. The other options describe unrelated activities."
   },
   {
-    "id": "ext-373",
+    "id": "q-494",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What indicates inadequate test coverage for an AI model?",
@@ -12965,7 +12965,7 @@ const ALL_QUESTIONS = [
     "explanation": "Inadequate test coverage is indicated by testing that doesn’t include edge cases, all relevant demographic groups, adversarial examples, realistic scenarios, or various input conditions, leaving potential issues undetected."
   },
   {
-    "id": "ext-374",
+    "id": "q-495",
     "domain": "Domain III",
     "difficulty": "Hard",
     "question": "An AI model passes all defined tests, but post-deployment, issues arise in scenarios that weren’t tested. What does this indicate about the testing process?",
@@ -12991,7 +12991,7 @@ const ALL_QUESTIONS = [
     "explanation": "Post-deployment issues in untested scenarios indicate inadequate test coverage—testing didn’t include scenarios that occur in real-world deployment. Governance should require more comprehensive test coverage including realistic scenarios, edge cases, and diverse conditions."
   },
   {
-    "id": "ext-375",
+    "id": "q-496",
     "domain": "Domain III",
     "difficulty": "Medium",
     "question": "What is “continuous testing” in AI model governance?",
@@ -13017,7 +13017,7 @@ const ALL_QUESTIONS = [
     "explanation": "Continuous testing involves ongoing testing throughout development (not just at the end) and after deployment to detect issues early, monitor for model drift, and ensure continued performance and fairness. Domain IV:"
   },
   {
-    "id": "ext-376",
+    "id": "q-497",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is AI deployment?",
@@ -13043,7 +13043,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI deployment is releasing an AI system into production use in real-world environments where it makes actual decisions or provides actual services, transitioning from development/testing to operational use."
   },
   {
-    "id": "ext-377",
+    "id": "q-498",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is a “deployment strategy” for AI systems?",
@@ -13069,7 +13069,7 @@ const ALL_QUESTIONS = [
     "explanation": "A deployment strategy is a plan defining how (technical approach), when (timing and conditions), and where (scope and locations) to release an AI system into production, including rollout approach and risk mitigation."
   },
   {
-    "id": "ext-378",
+    "id": "q-499",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What deployment approaches can be used for AI systems?",
@@ -13095,7 +13095,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI deployment approaches include phased rollout (gradual expansion), pilot programs (limited initial deployment), A/B testing (comparing with existing system), canary deployment (small percentage of users first), or full deployment. The choice depends on risk level and context. 128"
   },
   {
-    "id": "ext-379",
+    "id": "q-500",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What is “phased rollout” for AI deployment?",
@@ -13121,7 +13121,7 @@ const ALL_QUESTIONS = [
     "explanation": "Phased rollout gradually expands AI system deployment across users, geographic locations, or use cases, allowing monitoring and issue resolution at each phase before broader deployment. This reduces risk compared to full immediate deployment."
   },
   {
-    "id": "ext-380",
+    "id": "q-501",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "A high-risk AI system has passed all testing. What deployment approach does governance typically recommend?",
@@ -13147,7 +13147,7 @@ const ALL_QUESTIONS = [
     "explanation": "For high-risk AI systems, governance typically recommends phased rollout or pilot programs with enhanced monitoring, allowing real-world issue detection and resolution before full deployment, even after successful testing. This manages residual risk."
   },
   {
-    "id": "ext-381",
+    "id": "q-502",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is a “pilot program” for AI deployment?",
@@ -13173,7 +13173,7 @@ const ALL_QUESTIONS = [
     "explanation": "A pilot program is limited initial deployment of an AI system to a subset of users, locations, or use cases to test real-world performance, identify issues, and refine the system before broader rollout.” 129"
   },
   {
-    "id": "ext-382",
+    "id": "q-503",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What should be monitored during an AI pilot program?",
@@ -13199,7 +13199,7 @@ const ALL_QUESTIONS = [
     "explanation": "Pilot program monitoring should include technical performance (accuracy, reliability), user experience and feedback, fairness across groups, unintended consequences, real-world impacts, and lessons learned."
   },
   {
-    "id": "ext-383",
+    "id": "q-504",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "A pilot program reveals the AI system performs well technically but users over-rely on it, not exercising appropriate judgment. What should governance recommend?",
@@ -13225,7 +13225,7 @@ const ALL_QUESTIONS = [
     "explanation": "Over-reliance (automation bias) is a significant governance concern that can lead to poor outcomes. Governance should require addressing it through user training, interface changes that promote appropriate skepticism, additional safeguards, or other interventions before broader deployment."
   },
   {
-    "id": "ext-384",
+    "id": "q-505",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “A/B testing” in AI deployment?",
@@ -13251,7 +13251,7 @@ const ALL_QUESTIONS = [
     "explanation": "A/B testing compares AI system performance against an existing system or alternative by deploying different versions to different user groups, measuring comparative performance and impacts. 130"
   },
   {
-    "id": "ext-385",
+    "id": "q-506",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What governance considerations apply to A/B testing of AI systems?",
@@ -13277,7 +13277,7 @@ const ALL_QUESTIONS = [
     "explanation": "A/B testing governance includes informed consent or appropriate notification, ensuring fairness in group assignment, monitoring for harm to either group, ethical review of differential treatment, and clear stopping criteria if one version causes harm."
   },
   {
-    "id": "ext-386",
+    "id": "q-507",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “canary deployment” for AI systems?",
@@ -13303,7 +13303,7 @@ const ALL_QUESTIONS = [
     "explanation": "Canary deployment releases an AI system to a small percentage of users first (like canaries in coal mines detecting danger), monitoring for issues before gradually expanding to more users. This allows early issue detection with limited impact.”"
   },
   {
-    "id": "ext-387",
+    "id": "q-508",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What is “deployment readiness assessment” in AI governance?",
@@ -13329,7 +13329,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment readiness assessment evaluates whether an AI system is ready for deployment based on testing completion, governance requirements satisfaction, risk mitigation adequacy, and stakeholder approval. 131"
   },
   {
-    "id": "ext-388",
+    "id": "q-509",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "A deployment readiness assessment reveals all technical requirements are met but stakeholder concerns remain unaddressed. Should deployment proceed?",
@@ -13355,7 +13355,7 @@ const ALL_QUESTIONS = [
     "explanation": "Unaddressed stakeholder concerns may indicate important risks, impacts, or issues that technical testing didn’t capture. Governance should require addressing legitimate stakeholder concerns before deployment, as they often provide valuable perspectives on real-world impacts."
   },
   {
-    "id": "ext-389",
+    "id": "q-510",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “deployment documentation” in AI governance?",
@@ -13381,7 +13381,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment documentation includes comprehensive records of deployment decisions, system configurations, procedures, approval processes, known limitations, and monitoring plans, supporting accountability and knowledge transfer."
   },
   {
-    "id": "ext-390",
+    "id": "q-511",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What should deployment documentation include?",
@@ -13407,7 +13407,7 @@ const ALL_QUESTIONS = [
     "explanation": "Comprehensive deployment documentation includes deployment decisions and rationale, system configurations, known limitations and risks, monitoring plans, incident response procedures, approval records, and user guidance. 132"
   },
   {
-    "id": "ext-391",
+    "id": "q-512",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “user training” in AI deployment?",
@@ -13433,7 +13433,7 @@ const ALL_QUESTIONS = [
     "explanation": "User training educates users on appropriate AI system use, capabilities, limitations, when to trust or question outputs, and their oversight responsibilities, supporting effective and responsible use."
   },
   {
-    "id": "ext-392",
+    "id": "q-513",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What should user training for AI systems include?",
@@ -13459,7 +13459,7 @@ const ALL_QUESTIONS = [
     "explanation": "User training should include system capabilities and limitations, appropriate use cases, when to trust or question outputs, user oversight responsibilities, escalation procedures for concerns, and understanding of the AI’s role in decision-making."
   },
   {
-    "id": "ext-393",
+    "id": "q-514",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "Users receive minimal training on an AI system’s limitations. Post-deployment, users over- rely on the system, leading to poor outcomes. Who bears responsibility?",
@@ -13485,7 +13485,7 @@ const ALL_QUESTIONS = [
     "explanation": "The organization bears responsibility for inadequate user training and deploying without ensuring users understand limitations and appropriate use. While users have responsibilities, the organization must provide adequate training and safeguards. Blaming only users (A) or developers (C) ignores organizational deployment responsibilities."
   },
   {
-    "id": "ext-394",
+    "id": "q-515",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “change management” in AI deployment?",
@@ -13511,7 +13511,7 @@ const ALL_QUESTIONS = [
     "explanation": "Change management addresses organizational and process changes accompanying AI system deployment, including workflow modifications, role changes, stakeholder communication, and resistance management."
   },
   {
-    "id": "ext-395",
+    "id": "q-516",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "Why is change management important for AI deployment?",
@@ -13537,7 +13537,7 @@ const ALL_QUESTIONS = [
     "explanation": "Change management is important because AI systems often significantly change workflows, roles, and decision-making processes. Poor change management leads to user resistance, system misuse, or deployment failure despite technical success."
   },
   {
-    "id": "ext-396",
+    "id": "q-517",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “stakeholder communication” in AI deployment?",
@@ -13563,7 +13563,7 @@ const ALL_QUESTIONS = [
     "explanation": "Stakeholder communication involves informing relevant stakeholders (users, affected individuals, oversight bodies, public) about AI system deployment, capabilities, limitations, and potential impacts, supporting transparency and trust."
   },
   {
-    "id": "ext-397",
+    "id": "q-518",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What should be communicated to stakeholders about AI system deployment?",
@@ -13589,7 +13589,7 @@ const ALL_QUESTIONS = [
     "explanation": "Stakeholder communication should include system purpose and capabilities, limitations and risks, how it affects stakeholders, their rights (e.g., to explanation or appeal), and how to provide feedback or raise concerns."
   },
   {
-    "id": "ext-398",
+    "id": "q-519",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "An organization deploys an AI system affecting customers without informing them it’s AI- based. Customers later discover this and feel deceived. What governance principle was violated?",
@@ -13615,7 +13615,7 @@ const ALL_QUESTIONS = [
     "explanation": "The transparency principle was violated. Stakeholders should be informed about AI use in decisions affecting them, enabling informed decisions and appropriate trust calibration. Lack of disclosure can damage trust and may violate regulations. [Extended: affecting them]"
   },
   {
-    "id": "ext-399",
+    "id": "q-520",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “deployment monitoring” in AI governance?",
@@ -13641,7 +13641,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment monitoring involves ongoing observation of AI system performance, fairness, user experience, impacts, and issues after deployment to detect problems requiring intervention."
   },
   {
-    "id": "ext-400",
+    "id": "q-521",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What should be monitored after AI system deployment?",
@@ -13667,7 +13667,7 @@ const ALL_QUESTIONS = [
     "explanation": "Post-deployment monitoring should include performance metrics, fairness across groups, user feedback, incident tracking, model drift detection, unintended consequences, and real- world impacts. [Extended: consequences, and]"
   },
   {
-    "id": "ext-401",
+    "id": "q-522",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "Post-deployment monitoring detects gradual performance degradation over three months. What should governance recommend?",
@@ -13693,7 +13693,7 @@ const ALL_QUESTIONS = [
     "explanation": "Gradual performance degradation requires investigation of root causes (model drift, data distribution changes), impact assessment, determination of whether intervention is needed, and documentation. Ignoring degradation (A, C) risks increasing harm. Notification alone (D) is insufficient. [Extended: updates) is needed,]"
   },
   {
-    "id": "ext-402",
+    "id": "q-523",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “deployment rollback” in AI governance?",
@@ -13719,7 +13719,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment rollback involves reverting to a previous system version or removing an AI system from production when serious issues are detected, protecting users from harm while issues are addressed. [Extended: to issues]"
   },
   {
-    "id": "ext-403",
+    "id": "q-524",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "Under what circumstances should AI system deployment be rolled back?",
@@ -13745,7 +13745,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment should be rolled back when serious issues are detected that pose unacceptable risk, such as safety problems, significant bias causing harm, critical system failures, or security vulnerabilities. Waiting for universal complaints (C) or regulatory action (D) delays necessary protection. [Extended: failures) that pose]"
   },
   {
-    "id": "ext-404",
+    "id": "q-525",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “deployment approval” in AI governance?",
@@ -13771,7 +13771,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment approval is formal authorization to deploy an AI system based on satisfaction of governance criteria including testing completion, risk assessment, stakeholder review, and compliance verification."
   },
   {
-    "id": "ext-405",
+    "id": "q-526",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "Who should approve AI system deployment?",
@@ -13797,7 +13797,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment approval authority should be appropriate to risk level: project leads may approve low-risk systems, while high-risk systems require senior leadership or governance board approval. This ensures appropriate oversight. [Extended: leadership or]"
   },
   {
-    "id": "ext-406",
+    "id": "q-527",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "A high-risk AI system is ready for deployment. The development team recommends approval, but the ethics board has concerns. What should happen?",
@@ -13823,7 +13823,7 @@ const ALL_QUESTIONS = [
     "explanation": "High-risk AI systems require comprehensive approval including ethical review. Ethics board concerns should be addressed before deployment, as they may identify important risks or impacts. Proceeding despite concerns (A, C) or delaying resolution (D) is inappropriate for high-risk systems."
   },
   {
-    "id": "ext-407",
+    "id": "q-528",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “deployment planning” in AI governance?",
@@ -13849,7 +13849,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment planning involves systematic planning of deployment approach (phased, pilot, full), timing, required resources, risk mitigation strategies, monitoring plans, and contingency plans."
   },
   {
-    "id": "ext-408",
+    "id": "q-529",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What should deployment planning include?",
@@ -13875,7 +13875,7 @@ const ALL_QUESTIONS = [
     "explanation": "Comprehensive deployment planning includes deployment approach selection, timing, required resources, risk mitigation strategies, monitoring plans, rollback procedures, stakeholder communication plans, and success criteria. [Extended: procedures, and]"
   },
   {
-    "id": "ext-409",
+    "id": "q-530",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “deployment success criteria” in AI governance?",
@@ -13901,7 +13901,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment success criteria are defined metrics and conditions indicating successful deployment, including performance targets, user adoption, absence of critical issues, and achievement of intended benefits."
   },
   {
-    "id": "ext-410",
+    "id": "q-531",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What might deployment success criteria include?",
@@ -13927,7 +13927,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment success criteria should include performance metrics, user adoption rates, fairness metrics, absence of critical incidents, user satisfaction, and achievement of intended business objectives."
   },
   {
-    "id": "ext-411",
+    "id": "q-532",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "An AI system meets technical performance criteria but fails to achieve intended business benefits. Is the deployment successful?",
@@ -13953,7 +13953,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment success requires achieving intended benefits and objectives, not just technical performance. If business benefits aren’t realized, the deployment hasn’t achieved its purpose, requiring investigation and potential adjustments. [Extended: performance]"
   },
   {
-    "id": "ext-412",
+    "id": "q-533",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “deployment risk assessment” in AI governance?",
@@ -13979,7 +13979,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment risk assessment evaluates potential risks associated with deploying an AI system, including technical risks, fairness risks, safety risks, and organizational risks, informing de139 ployment decisions and mitigation strategies."
   },
   {
-    "id": "ext-413",
+    "id": "q-534",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What risks should deployment risk assessment consider?",
@@ -14005,7 +14005,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment risk assessment should consider technical failures, bias and discrimination, safety issues, security vulnerabilities, potential user misuse, unintended consequences, and organizational risks. [Extended: vulnerabilities, user misuse, and]"
   },
   {
-    "id": "ext-414",
+    "id": "q-535",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "Deployment risk assessment identifies moderate risks that can be mitigated but not eliminated. Should deployment proceed?",
@@ -14031,7 +14031,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment decisions with residual risk require risk-benefit analysis, evaluation of mitigation adequacy, and determination of whether residual risk is acceptable given benefits, context, and stakeholder values. Zero risk (A) is unrealistic. Ignoring risk (C) is irresponsible. Insurance (D) doesn’t determine acceptability. [Extended: whether residual risk is acceptable]"
   },
   {
-    "id": "ext-415",
+    "id": "q-536",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “deployment governance” in AI?",
@@ -14057,7 +14057,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment governance encompasses policies, processes, and controls for managing AI system deployment including approval processes, risk assessment, monitoring requirements, and accountability."
   },
   {
-    "id": "ext-416",
+    "id": "q-537",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "How does deployment governance differ from development governance?",
@@ -14083,7 +14083,7 @@ const ALL_QUESTIONS = [
     "explanation": "Deployment governance focuses on real-world use, ongoing monitoring, user interaction, operational risks, and impacts rather than development activities. Both are important but address different lifecycle stages. [Extended: operational]"
   },
   {
-    "id": "ext-417",
+    "id": "q-538",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "An organization has strong development governance but weak deployment governance. What risks does this create?",
@@ -14109,7 +14109,7 @@ const ALL_QUESTIONS = [
     "explanation": "Weak deployment governance creates risks of inappropriate use, undetected post-deployment issues, inadequate monitoring, failure to address real-world problems, and lack of accountability for operational impacts, even if development was well-governed."
   },
   {
-    "id": "ext-418",
+    "id": "q-539",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is AI system monitoring?",
@@ -14135,7 +14135,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI system monitoring involves ongoing observation of system performance, behavior, fairness, and impacts after deployment to detect issues, model drift, or unintended consequences requiring intervention."
   },
   {
-    "id": "ext-419",
+    "id": "q-540",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "Why is continuous monitoring important for deployed AI systems?",
@@ -14161,7 +14161,7 @@ const ALL_QUESTIONS = [
     "explanation": "Continuous monitoring is important because AI systems can experience performance degradation, model drift, emerging bias, or other issues over time as conditions change. Monitoring enables early detection and intervention before significant harm occurs. [Extended: monitoring enables early detection and]"
   },
   {
-    "id": "ext-420",
+    "id": "q-541",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What should be monitored in deployed AI systems?",
@@ -14187,7 +14187,7 @@ const ALL_QUESTIONS = [
     "explanation": "Comprehensive monitoring includes performance metrics (accuracy, latency), fairness metrics across groups, prediction distributions (detecting drift), user feedback, incident tracking, and real-world outcomes. [Extended: real-]"
   },
   {
-    "id": "ext-421",
+    "id": "q-542",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What is “model drift” and why is it important to monitor?",
@@ -14213,7 +14213,7 @@ const ALL_QUESTIONS = [
     "explanation": "Model drift (or concept drift) occurs when real-world data patterns change from training data patterns, causing model performance to degrade. Monitoring for drift enables timely retraining or updates. [Extended: training data]"
   },
   {
-    "id": "ext-422",
+    "id": "q-543",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "Monitoring detects that an AI model’s prediction distribution has shifted significantly, though accuracy remains stable. What might this indicate?",
@@ -14239,7 +14239,7 @@ const ALL_QUESTIONS = [
     "explanation": "Significant prediction distribution shifts even with stable accuracy may indicate data drift, population changes, or emerging fairness issues (e.g., the model is making different types of predictions for different groups). This warrants investigation even if accuracy hasn’t degraded yet. [Extended: indicate current fairness]"
   },
   {
-    "id": "ext-423",
+    "id": "q-544",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “performance monitoring” for AI systems?",
@@ -14265,7 +14265,7 @@ const ALL_QUESTIONS = [
     "explanation": "Performance monitoring tracks AI system accuracy, precision, recall, speed, resource usage, and other performance metrics over time to detect degradation or issues."
   },
   {
-    "id": "ext-424",
+    "id": "q-545",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What performance metrics should be monitored for AI systems?",
@@ -14291,7 +14291,7 @@ const ALL_QUESTIONS = [
     "explanation": "Performance monitoring should include overall accuracy, precision, recall, false positive/ negative rates, latency, resource usage, and critically, performance across demographic groups to detect emerging disparities. [Extended: performance across]"
   },
   {
-    "id": "ext-425",
+    "id": "q-546",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “fairness monitoring” for AI systems?",
@@ -14317,7 +14317,7 @@ const ALL_QUESTIONS = [
     "explanation": "Fairness monitoring tracks fairness metrics and performance across demographic groups over time to detect emerging bias or disparities that may develop post-deployment."
   },
   {
-    "id": "ext-426",
+    "id": "q-547",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What fairness metrics should be monitored post-deployment?",
@@ -14343,7 +14343,7 @@ const ALL_QUESTIONS = [
     "explanation": "Fairness monitoring should track performance disparities across demographic groups, differences in false positive/negative rates, outcome distributions, and other fairness metrics to detect emerging bias. [Extended: outcome distri-]"
   },
   {
-    "id": "ext-427",
+    "id": "q-548",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "Fairness monitoring detects that an AI system’s performance gap between demographic groups has widened from 2% to 8% over six months. What should governance recommend?",
@@ -14369,7 +14369,7 @@ const ALL_QUESTIONS = [
     "explanation": "A widening performance gap indicates emerging bias requiring investigation of root causes, impact assessment, and mitigation through retraining, algorithm adjustment, or other inter144 ventions. Significant harm may warrant temporary suspension while issues are addressed. [Extended: adjustment),]"
   },
   {
-    "id": "ext-428",
+    "id": "q-549",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “incident monitoring” for AI systems?",
@@ -14395,7 +14395,7 @@ const ALL_QUESTIONS = [
     "explanation": "Incident monitoring tracks AI system failures, errors, harmful outcomes, and unexpected behaviors to identify patterns, root causes, and necessary interventions."
   },
   {
-    "id": "ext-429",
+    "id": "q-550",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What should incident monitoring track?",
@@ -14421,7 +14421,7 @@ const ALL_QUESTIONS = [
     "explanation": "Incident monitoring should track system failures, incorrect predictions with significant consequences, bias incidents, security breaches, user-reported issues, and near-misses. [Extended: breaches, and]"
   },
   {
-    "id": "ext-430",
+    "id": "q-551",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “user feedback monitoring” for AI systems?",
@@ -14447,7 +14447,7 @@ const ALL_QUESTIONS = [
     "explanation": "User feedback monitoring involves collecting and analyzing user feedback about AI system performance, usability, issues, and impacts to identify problems and improvement opportunities. 145"
   },
   {
-    "id": "ext-431",
+    "id": "q-552",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "Why is user feedback important for AI system monitoring?",
@@ -14473,7 +14473,7 @@ const ALL_QUESTIONS = [
     "explanation": "User feedback is important because users may detect issues that automated monitoring misses, including usability problems, inappropriate trust or distrust, context-specific failures, and real-world impacts."
   },
   {
-    "id": "ext-432",
+    "id": "q-553",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "User feedback reveals that an AI system is technically accurate but users find it confusing, leading to misuse. Automated monitoring shows no technical issues. What should governance recommend?",
@@ -14499,7 +14499,7 @@ const ALL_QUESTIONS = [
     "explanation": "User confusion leading to misuse is a significant issue requiring action even if automated monitoring shows no technical problems. Governance should require addressing usability through interface improvements, enhanced training, or better documentation. [Extended: as confusion]"
   },
   {
-    "id": "ext-433",
+    "id": "q-554",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “outcome monitoring” for AI systems?",
@@ -14525,7 +14525,7 @@ const ALL_QUESTIONS = [
     "explanation": "Outcome monitoring tracks real-world outcomes and impacts of AI system decisions to verify the system achieves intended benefits and doesn’t cause unintended harm. 146"
   },
   {
-    "id": "ext-434",
+    "id": "q-555",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "Why is outcome monitoring important beyond performance monitoring?",
@@ -14551,7 +14551,7 @@ const ALL_QUESTIONS = [
     "explanation": "Outcome monitoring is important because performance metrics (accuracy) may not capture real-world impacts, benefits, or unintended consequences. A technically accurate system may still produce poor outcomes or unexpected effects."
   },
   {
-    "id": "ext-435",
+    "id": "q-556",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is AI system auditing?",
@@ -14577,7 +14577,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI system auditing is systematic examination of AI systems to assess compliance with regulations and policies, performance, fairness, security, and governance effectiveness."
   },
   {
-    "id": "ext-436",
+    "id": "q-557",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is the purpose of AI system audits?",
@@ -14603,7 +14603,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI system audits independently verify compliance, identify issues requiring attention, assess governance effectiveness, and provide assurance to stakeholders about responsible AI use."
   },
   {
-    "id": "ext-437",
+    "id": "q-558",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What types of AI audits might be conducted?",
@@ -14629,7 +14629,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI audits include compliance audits (regulatory requirements), fairness audits (bias and discrimination), security audits (vulnerabilities), performance audits (accuracy and reliability), and governance audits (process effectiveness). [Extended: governance audits]"
   },
   {
-    "id": "ext-438",
+    "id": "q-559",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What is a “fairness audit” for AI systems?",
@@ -14655,7 +14655,7 @@ const ALL_QUESTIONS = [
     "explanation": "A fairness audit systematically examines AI system fairness, bias, discriminatory impacts, and performance across demographic groups, often by independent auditors."
   },
   {
-    "id": "ext-439",
+    "id": "q-560",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "A fairness audit reveals bias that the organization’s internal monitoring didn’t detect. What does this indicate?",
@@ -14681,7 +14681,7 @@ const ALL_QUESTIONS = [
     "explanation": "External audits detecting issues that internal monitoring missed indicates monitoring may be inadequate. Governance should strengthen monitoring capabilities and address the identified bias. [Extended: address the]"
   },
   {
-    "id": "ext-440",
+    "id": "q-561",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “internal auditing” for AI systems?",
@@ -14707,7 +14707,7 @@ const ALL_QUESTIONS = [
     "explanation": "Internal auditing involves audits conducted by the organization’s own internal audit function to assess AI governance, compliance, and risk management."
   },
   {
-    "id": "ext-441",
+    "id": "q-562",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What is “external auditing” for AI systems?",
@@ -14733,7 +14733,7 @@ const ALL_QUESTIONS = [
     "explanation": "External auditing involves audits conducted by independent third parties (external auditors, regulators, certification bodies) providing independent assessment and assurance."
   },
   {
-    "id": "ext-442",
+    "id": "q-563",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What are the advantages of external AI audits over internal audits?",
@@ -14759,7 +14759,7 @@ const ALL_QUESTIONS = [
     "explanation": "External audits provide independence from organizational pressures, objectivity, specialized expertise, and greater stakeholder trust in findings. Internal audits are valuable but may lack these advantages."
   },
   {
-    "id": "ext-443",
+    "id": "q-564",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "An organization conducts only internal AI audits. Stakeholders question the credibility of audit findings. What should governance recommend?",
@@ -14785,7 +14785,7 @@ const ALL_QUESTIONS = [
     "explanation": "When stakeholders question internal audit credibility, governance should recommend supplementing internal audits with periodic external audits to provide independent assurance and build trust. Both internal and external audits have value. [Extended: assurance and]"
   },
   {
-    "id": "ext-444",
+    "id": "q-565",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “algorithmic auditing”?",
@@ -14811,7 +14811,7 @@ const ALL_QUESTIONS = [
     "explanation": "Algorithmic auditing systematically examines algorithms for fairness, accuracy, transparency, compliance with regulations, and alignment with ethical principles."
   },
   {
-    "id": "ext-445",
+    "id": "q-566",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What challenges exist in auditing AI systems?",
@@ -14837,7 +14837,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI auditing challenges include model complexity (black boxes), data access limitations (privacy, proprietary concerns), lack of standardized auditing methodologies, and difficulty assessing real-world impacts. [Extended: difficulty assessing real-world im-]"
   },
   {
-    "id": "ext-446",
+    "id": "q-567",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “audit documentation” for AI systems?",
@@ -14863,7 +14863,7 @@ const ALL_QUESTIONS = [
     "explanation": "Audit documentation includes records of audit scope, methodology, evidence examined, findings, recommendations, and management responses, supporting accountability and follow-up."
   },
   {
-    "id": "ext-447",
+    "id": "q-568",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What should organizations do with AI audit findings?",
@@ -14889,7 +14889,7 @@ const ALL_QUESTIONS = [
     "explanation": "Organizations should review audit findings, develop remediation plans for identified issues, implement corrections, track resolution, and verify effectiveness."
   },
   {
-    "id": "ext-448",
+    "id": "q-569",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "An audit identifies significant bias in an AI system. Management argues remediation is too expensive. What should governance recommend?",
@@ -14915,7 +14915,7 @@ const ALL_QUESTIONS = [
     "explanation": "Significant bias may make continued operation unacceptable regardless of remediation costs. Governance should assess whether operation with known bias is acceptable (considering legal, ethical, and reputational risks) and require remediation or suspension if not. [Extended: if not acceptable,]"
   },
   {
-    "id": "ext-449",
+    "id": "q-570",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “audit frequency” for AI systems?",
@@ -14941,7 +14941,7 @@ const ALL_QUESTIONS = [
     "explanation": "Audit frequency refers to how often AI systems are audited, which should be based on risk level, regulatory requirements, and rate of system changes."
   },
   {
-    "id": "ext-450",
+    "id": "q-571",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What factors should determine AI audit frequency?",
@@ -14967,7 +14967,7 @@ const ALL_QUESTIONS = [
     "explanation": "Audit frequency should be based on system risk level (high-risk systems need more frequent audits), regulatory requirements, rate of system changes (frequently updated systems need more audits), and previous audit findings."
   },
   {
-    "id": "ext-451",
+    "id": "q-572",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “continuous auditing” for AI systems?",
@@ -14993,7 +14993,7 @@ const ALL_QUESTIONS = [
     "explanation": "Continuous auditing uses ongoing automated monitoring and assessment rather than periodic manual audits, enabling real-time issue detection. This complements but doesn’t replace periodic comprehensive audits."
   },
   {
-    "id": "ext-452",
+    "id": "q-573",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What is “audit independence” and why is it important?",
@@ -15019,7 +15019,7 @@ const ALL_QUESTIONS = [
     "explanation": "Audit independence means auditors are free from conflicts of interest and organizational pressure, ensuring objective assessment and credible findings. This is fundamental to audit value. 152 [Extended: objective assess-]"
   },
   {
-    "id": "ext-453",
+    "id": "q-574",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "An organization’s AI audit function reports to the AI development team. What governance issue exists?",
@@ -15045,7 +15045,7 @@ const ALL_QUESTIONS = [
     "explanation": "Auditors reporting to those they audit lacks independence, creating conflicts of interest and pressure that may compromise objectivity. Governance should require audit independence through separate reporting lines (e.g., to board audit committee). [Extended: of interest and]"
   },
   {
-    "id": "ext-454",
+    "id": "q-575",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “audit scope” for AI systems?",
@@ -15071,7 +15071,7 @@ const ALL_QUESTIONS = [
     "explanation": "Audit scope defines the boundaries and extent of what an audit will examine, including which systems, processes, time periods, and aspects (fairness, compliance, security) are included."
   },
   {
-    "id": "ext-455",
+    "id": "q-576",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What should determine AI audit scope?",
@@ -15097,7 +15097,7 @@ const ALL_QUESTIONS = [
     "explanation": "Audit scope should be determined by audit objectives, system risk level (high-risk systems warrant comprehensive scope), regulatory requirements, stakeholder concerns, and available resources."
   },
   {
-    "id": "ext-456",
+    "id": "q-577",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “audit evidence” for AI systems?",
@@ -15123,7 +15123,7 @@ const ALL_QUESTIONS = [
     "explanation": "Audit evidence includes information, documentation, test results, and other materials used to support audit findings and conclusions, ensuring findings are well-founded."
   },
   {
-    "id": "ext-457",
+    "id": "q-578",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What types of evidence might AI auditors examine?",
@@ -15149,7 +15149,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI auditors may examine system documentation, test results, monitoring data, incident reports, code and algorithms, training data characteristics, model outputs, and conduct stakeholder interviews. [Extended: training data, and]"
   },
   {
-    "id": "ext-458",
+    "id": "q-579",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "An organization refuses to provide auditors with access to training data, citing proprietary concerns. What should governance recommend?",
@@ -15175,7 +15175,7 @@ const ALL_QUESTIONS = [
     "explanation": "Governance should balance proprietary concerns with audit needs through confidentiality agreements, limited access with appropriate safeguards, or alternative evidence. However, complete fairness audits may require training data access. Accepting refusal (A) or canceling (C) may leave critical issues unexamined. Documentation alone (D) may be insufficient."
   },
   {
-    "id": "ext-459",
+    "id": "q-580",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is an “AI incident”?",
@@ -15201,7 +15201,7 @@ const ALL_QUESTIONS = [
     "explanation": "An AI incident is an event where an AI system causes or contributes to harm, failure, unexpected behavior, bias manifestation, or other problematic outcomes."
   },
   {
-    "id": "ext-460",
+    "id": "q-581",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “incident response” for AI systems?",
@@ -15227,7 +15227,7 @@ const ALL_QUESTIONS = [
     "explanation": "Incident response encompasses processes for detecting, responding to, mitigating, investigating, and learning from AI system incidents to minimize harm and prevent recurrence."
   },
   {
-    "id": "ext-461",
+    "id": "q-582",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What are the key stages of AI incident response?",
@@ -15253,7 +15253,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI incident response includes detection (identifying incidents), assessment (evaluating severity), containment (stopping harm), investigation (root cause analysis), remediation (fixing issues), communication (stakeholder notification), and learning (preventing recurrence). 155 [Extended: learning]"
   },
   {
-    "id": "ext-462",
+    "id": "q-583",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “incident detection” for AI systems?",
@@ -15279,7 +15279,7 @@ const ALL_QUESTIONS = [
     "explanation": "Incident detection involves identifying when AI systems cause harm, fail, exhibit bias, or behave unexpectedly through monitoring, user reports, or other mechanisms."
   },
   {
-    "id": "ext-463",
+    "id": "q-584",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "How can AI incidents be detected?",
@@ -15305,7 +15305,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI incidents can be detected through automated monitoring systems, user reports, internal audits, media coverage, stakeholder feedback, and regulatory inquiries. Multiple detection channels are important."
   },
   {
-    "id": "ext-464",
+    "id": "q-585",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "An AI incident is detected through media coverage before internal monitoring identified it. What does this indicate?",
@@ -15331,7 +15331,7 @@ const ALL_QUESTIONS = [
     "explanation": "Incidents detected externally before internal monitoring suggests monitoring may be inadequate. Governance should strengthen detection capabilities to identify issues proactively rather than reactively."
   },
   {
-    "id": "ext-465",
+    "id": "q-586",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “incident assessment” in AI incident response?",
@@ -15357,7 +15357,7 @@ const ALL_QUESTIONS = [
     "explanation": "Incident assessment evaluates incident severity, scope, affected individuals, actual and potential impacts, and root causes to prioritize response and determine appropriate actions."
   },
   {
-    "id": "ext-466",
+    "id": "q-587",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What factors should incident severity assessment consider?",
@@ -15383,7 +15383,7 @@ const ALL_QUESTIONS = [
     "explanation": "Incident severity assessment should consider harm to individuals, number of people affected, legal implications, reputational impact, potential for escalation, and whether vulnerable populations are affected. [Extended: potential for es-]"
   },
   {
-    "id": "ext-467",
+    "id": "q-588",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “incident containment” in AI incident response?",
@@ -15409,7 +15409,7 @@ const ALL_QUESTIONS = [
     "explanation": "Incident containment involves actions to stop ongoing harm and prevent incident escalation, such as suspending the AI system, implementing manual review, or restricting use."
   },
   {
-    "id": "ext-468",
+    "id": "q-589",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What containment actions might be appropriate for AI incidents?",
@@ -15435,7 +15435,7 @@ const ALL_QUESTIONS = [
     "explanation": "Containment actions may include suspending the AI system, implementing mandatory manual review, restricting use to lower-risk scenarios, or rolling back to a previous version, depending on incident severity. [Extended: previous version]"
   },
   {
-    "id": "ext-469",
+    "id": "q-590",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "An AI incident causes moderate harm to a small number of users. Management wants to continue operation while investigating. What should governance recommend?",
@@ -15461,7 +15461,7 @@ const ALL_QUESTIONS = [
     "explanation": "Governance should assess whether continued operation poses unacceptable risk given the incident. Containment measures (mandatory manual review, use restrictions) may allow continued operation with reduced risk during investigation. Blanket rules (A, C) don’t account for context. Documentation alone (D) doesn’t address ongoing risk. [Extended: may require containment measures]"
   },
   {
-    "id": "ext-470",
+    "id": "q-591",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “root cause analysis” in AI incident response?",
@@ -15487,7 +15487,7 @@ const ALL_QUESTIONS = [
     "explanation": "Root cause analysis investigates underlying causes of incidents (technical failures, data issues, process gaps, human factors) to understand why incidents occurred and prevent recurrence."
   },
   {
-    "id": "ext-471",
+    "id": "q-592",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What might root cause analysis for AI incidents examine?",
@@ -15513,7 +15513,7 @@ const ALL_QUESTIONS = [
     "explanation": "Root cause analysis should examine technical issues (bugs, model failures), data problems (bias, quality), process gaps (inadequate testing), human factors (misuse, training gaps), and governance weaknesses."
   },
   {
-    "id": "ext-472",
+    "id": "q-593",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "Root cause analysis reveals an incident resulted from inadequate testing, not technical failure. What does this indicate?",
@@ -15539,7 +15539,7 @@ const ALL_QUESTIONS = [
     "explanation": "Incidents resulting from inadequate testing indicate governance process failure. Governance should strengthen testing requirements, oversight, and enforcement to prevent similar incidents."
   },
   {
-    "id": "ext-473",
+    "id": "q-594",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “incident remediation” in AI incident response?",
@@ -15565,7 +15565,7 @@ const ALL_QUESTIONS = [
     "explanation": "Incident remediation includes actions to fix technical issues, compensate or provide redress to affected individuals, implement preventive measures, and restore trust."
   },
   {
-    "id": "ext-474",
+    "id": "q-595",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What should incident remediation include?",
@@ -15591,7 +15591,7 @@ const ALL_QUESTIONS = [
     "explanation": "Comprehensive remediation includes technical fixes, notification and redress for affected individuals, process improvements to prevent recurrence, preventive measures, and documentation updates. [Extended: preventive]"
   },
   {
-    "id": "ext-475",
+    "id": "q-596",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “incident communication” in AI incident response?",
@@ -15617,7 +15617,7 @@ const ALL_QUESTIONS = [
     "explanation": "Incident communication involves informing relevant stakeholders (affected individuals, regulators, public) about incidents, impacts, response actions, and preventive measures, supporting transparency and accountability."
   },
   {
-    "id": "ext-476",
+    "id": "q-597",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "Who should be notified about AI incidents?",
@@ -15643,7 +15643,7 @@ const ALL_QUESTIONS = [
     "explanation": "Incident notification should include affected individuals, regulators (when legally required), senior leadership, and potentially the public depending on severity and impact. Transparency supports accountability and trust. [Extended: potentially the public,]"
   },
   {
-    "id": "ext-477",
+    "id": "q-598",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "An organization experiences an AI incident affecting customers. Legal counsel advises minimal communication to limit liability. What should governance recommend?",
@@ -15669,7 +15669,7 @@ const ALL_QUESTIONS = [
     "explanation": "Governance should balance legal considerations with ethical obligations to transparency, affected individuals’ rights to know, regulatory requirements, and long-term trust. Minimal com160 munication (A, C) may violate ethical obligations or regulations. Waiting for regulatory force (D) is reactive. Legal advice should inform but not solely determine communication. [Extended: individual rights, and]"
   },
   {
-    "id": "ext-478",
+    "id": "q-599",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “incident documentation” in AI incident response?",
@@ -15695,7 +15695,7 @@ const ALL_QUESTIONS = [
     "explanation": "Incident documentation records incident details, timeline, response actions, root causes, remediation, and lessons learned, supporting accountability, learning, and regulatory compliance."
   },
   {
-    "id": "ext-479",
+    "id": "q-600",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "Why is comprehensive incident documentation important?",
@@ -15721,7 +15721,7 @@ const ALL_QUESTIONS = [
     "explanation": "Comprehensive incident documentation supports accountability, enables organizational learning, demonstrates regulatory compliance, provides evidence for investigations, and helps prevent recurrence. [Extended: provides evidence for in-]"
   },
   {
-    "id": "ext-480",
+    "id": "q-601",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “lessons learned” in AI incident response?",
@@ -15747,7 +15747,7 @@ const ALL_QUESTIONS = [
     "explanation": "Lessons learned captures insights, improvements, and preventive measures identified from incidents to prevent recurrence and improve governance, turning incidents into learning opportunities. 161"
   },
   {
-    "id": "ext-481",
+    "id": "q-602",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What should “lessons learned” analysis produce?",
@@ -15773,7 +15773,7 @@ const ALL_QUESTIONS = [
     "explanation": "Lessons learned analysis should produce process improvements, governance enhancements, training needs identification, preventive measures, and knowledge sharing to prevent similar incidents."
   },
   {
-    "id": "ext-482",
+    "id": "q-603",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "An organization experiences similar AI incidents repeatedly. What does this indicate?",
@@ -15799,7 +15799,7 @@ const ALL_QUESTIONS = [
     "explanation": "Repeated similar incidents indicate lessons learned are not being effectively implemented. Governance should strengthen learning processes, ensure recommendations are implemented, and verify effectiveness."
   },
   {
-    "id": "ext-483",
+    "id": "q-604",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “accountability” in AI governance?",
@@ -15825,7 +15825,7 @@ const ALL_QUESTIONS = [
     "explanation": "Accountability in AI governance means clearly assigning responsibility for AI system decisions, outcomes, and impacts to specific individuals or roles, ensuring someone is answerable."
   },
   {
-    "id": "ext-484",
+    "id": "q-605",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "Why is accountability important in AI governance?",
@@ -15851,7 +15851,7 @@ const ALL_QUESTIONS = [
     "explanation": "Accountability ensures someone is responsible for AI outcomes, enables redress when harms occur, promotes responsible development and use, and supports trust. [Extended: promotes responsible development]"
   },
   {
-    "id": "ext-485",
+    "id": "q-606",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "Who should be accountable for AI system outcomes?",
@@ -15877,7 +15877,7 @@ const ALL_QUESTIONS = [
     "explanation": "Accountability is distributed based on roles: developers for development quality, deployers for appropriate deployment and use, users for proper oversight, and leadership for governance. AI systems aren’t autonomous moral agents (A). [Extended: users for]"
   },
   {
-    "id": "ext-486",
+    "id": "q-607",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "An AI system causes harm. The developer claims they built it correctly, the deployer claims they used it as intended, and leadership claims they had governance. Who is accountable?",
@@ -15903,7 +15903,7 @@ const ALL_QUESTIONS = [
     "explanation": "Accountability may be shared across multiple parties depending on where failures occurred. Investigation should determine whether development was adequate, deployment appropriate, use proper, and governance effective, assigning responsibility accordingly. [Extended: and assign]"
   },
   {
-    "id": "ext-487",
+    "id": "q-608",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “redress” in AI governance?",
@@ -15929,7 +15929,7 @@ const ALL_QUESTIONS = [
     "explanation": "Redress refers to remedies, compensation, or other relief provided to individuals harmed by AI systems, supporting accountability and justice.”"
   },
   {
-    "id": "ext-488",
+    "id": "q-609",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What forms might redress for AI harms take?",
@@ -15955,7 +15955,7 @@ const ALL_QUESTIONS = [
     "explanation": "Redress may include apologies, financial compensation, correction of erroneous records or decisions, policy changes, systemic improvements, and other remedies appropriate to the harm."
   },
   {
-    "id": "ext-489",
+    "id": "q-610",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “contestability” in AI governance?",
@@ -15981,7 +15981,7 @@ const ALL_QUESTIONS = [
     "explanation": "Contestability is the principle that individuals should be able to challenge, appeal, or seek review of AI system decisions that significantly affect them, supporting accountability and fairness."
   },
   {
-    "id": "ext-490",
+    "id": "q-611",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What should contestability mechanisms include?",
@@ -16007,7 +16007,7 @@ const ALL_QUESTIONS = [
     "explanation": "Contestability mechanisms should include clear processes for challenging decisions, meaningful human review, explanation of how decisions were made, timely resolution, and appropriate remedies. [Extended: timely resol-]"
   },
   {
-    "id": "ext-491",
+    "id": "q-612",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "An AI system makes thousands of decisions daily. Providing human review for every appeal is impractical. How should contestability be implemented?",
@@ -16033,7 +16033,7 @@ const ALL_QUESTIONS = [
     "explanation": "Contestability should use risk-based approaches: prioritize high-stakes decisions for human review, implement efficient review processes, ensure meaningful review for significant impacts, and potentially use assisted review for lower-stakes decisions. Eliminating contestability (A) violates principles. Fees (C) may be inappropriate. Automated-only appeals (D) may be insufficient. [Extended: efficient review]"
   },
   {
-    "id": "ext-492",
+    "id": "q-613",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “transparency” in AI accountability?",
@@ -16059,7 +16059,7 @@ const ALL_QUESTIONS = [
     "explanation": "Transparency in accountability means providing appropriate visibility into AI system decisions, decision-making processes, and governance to enable understanding, oversight, and accountability."
   },
   {
-    "id": "ext-493",
+    "id": "q-614",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What should AI transparency include?",
@@ -16085,7 +16085,7 @@ const ALL_QUESTIONS = [
     "explanation": "AI transparency should include information about AI use, capabilities, limitations, factors influencing decisions, and governance appropriate for different stakeholders, balancing transparency with legitimate proprietary concerns. [Extended: governance appropriate for]"
   },
   {
-    "id": "ext-494",
+    "id": "q-615",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “explainability” in AI accountability?",
@@ -16111,7 +16111,7 @@ const ALL_QUESTIONS = [
     "explanation": "Explainability means providing understandable explanations of how AI systems make decisions, enabling individuals to understand decisions affecting them and supporting accountability."
   },
   {
-    "id": "ext-495",
+    "id": "q-616",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What makes an AI explanation adequate for accountability?",
@@ -16137,7 +16137,7 @@ const ALL_QUESTIONS = [
     "explanation": "Adequate explanations must be accurate (faithful to actual system behavior), comprehensible for the intended audience, and useful for the purpose (understanding, challenging, or accepting decisions). [Extended: usefulness for the pur-]"
   },
   {
-    "id": "ext-496",
+    "id": "q-617",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "An AI system provides technically accurate explanations that most users don’t understand. Is this adequate for accountability?",
@@ -16163,7 +16163,7 @@ const ALL_QUESTIONS = [
     "explanation": "Explanations must be comprehensible to intended audiences, not just technically accurate. Incomprehensible explanations don’t support accountability, informed decisions, or meaningful 166 contestability. [Extended: technical accuracy alone is insuf-]"
   },
   {
-    "id": "ext-497",
+    "id": "q-618",
     "domain": "Domain IV",
     "difficulty": "Easy",
     "question": "What is “governance accountability” in AI?",
@@ -16189,7 +16189,7 @@ const ALL_QUESTIONS = [
     "explanation": "Governance accountability means holding governance processes and decision-makers accountable for AI oversight effectiveness, ensuring governance itself is responsible and effective."
   },
   {
-    "id": "ext-498",
+    "id": "q-619",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "How can governance accountability be ensured?",
@@ -16215,7 +16215,7 @@ const ALL_QUESTIONS = [
     "explanation": "Governance accountability requires clear roles and responsibilities, documentation of governance decisions and rationale, regular reviews of governance effectiveness, and oversight (board, regulators) of governance. [Extended: governance]"
   },
   {
-    "id": "ext-499",
+    "id": "q-620",
     "domain": "Domain IV",
     "difficulty": "Hard",
     "question": "An organization has comprehensive AI governance policies but they’re not followed in practice. Who is accountable?",
@@ -16241,7 +16241,7 @@ const ALL_QUESTIONS = [
     "explanation": "Leadership is accountable for ensuring governance is implemented and enforced, not just documented. Policies without implementation represent governance failure at the leadership level. 167 [Extended: just docu-]"
   },
   {
-    "id": "ext-500",
+    "id": "q-621",
     "domain": "Domain IV",
     "difficulty": "Medium",
     "question": "What is the relationship between accountability and AI governance?",

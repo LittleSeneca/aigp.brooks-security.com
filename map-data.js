@@ -2248,7 +2248,7 @@ const MM_NODES = [
  }
 ];
 const QUESTION_TAGS = {
-"a1-1": [
+"q-1": [
 "ch1",
 "d1",
 "kt166",
@@ -2258,7 +2258,7 @@ const QUESTION_TAGS = {
 "t_ai_char",
 "t_ai_types"
 ],
-"a1-2": [
+"q-2": [
 "ch1",
 "d1",
 "kt118",
@@ -2267,7 +2267,7 @@ const QUESTION_TAGS = {
 "t_ai_char",
 "t_ai_types"
 ],
-"a1-3": [
+"q-3": [
 "ch1",
 "d1",
 "kt11",
@@ -2280,7 +2280,7 @@ const QUESTION_TAGS = {
 "t_controller",
 "t_policy"
 ],
-"a1-4": [
+"q-4": [
 "ch1",
 "d1",
 "kt241",
@@ -2289,7 +2289,7 @@ const QUESTION_TAGS = {
 "kt313",
 "t_ai_types"
 ],
-"a1-5": [
+"q-5": [
 "ch1",
 "d1",
 "kt106",
@@ -2300,7 +2300,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_nondiscrim"
 ],
-"a1-6": [
+"q-6": [
 "ch1",
 "d1",
 "kt143",
@@ -2308,7 +2308,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_oversight"
 ],
-"a1-7": [
+"q-7": [
 "ch1",
 "d1",
 "kt110",
@@ -2316,7 +2316,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_bias"
 ],
-"a1-8": [
+"q-8": [
 "ch1",
 "d1",
 "kt119",
@@ -2328,7 +2328,7 @@ const QUESTION_TAGS = {
 "t_oversight",
 "t_rai"
 ],
-"a1-9": [
+"q-9": [
 "ch1",
 "d1",
 "kt112",
@@ -2339,7 +2339,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_rai"
 ],
-"a1-10": [
+"q-10": [
 "ch1",
 "d1",
 "kt145",
@@ -2349,7 +2349,7 @@ const QUESTION_TAGS = {
 "t_rai",
 "t_sensitive"
 ],
-"a2-1": [
+"q-11": [
 "ch2",
 "d1",
 "kt12",
@@ -2359,7 +2359,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_devdeploy"
 ],
-"a2-2": [
+"q-12": [
 "ch1",
 "ch2",
 "d1",
@@ -2368,7 +2368,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_roles"
 ],
-"a2-3": [
+"q-13": [
 "ch1",
 "ch2",
 "d1",
@@ -2381,7 +2381,7 @@ const QUESTION_TAGS = {
 "t_roles",
 "t_usecase"
 ],
-"a2-4": [
+"q-14": [
 "ch1",
 "ch2",
 "ch6",
@@ -2395,7 +2395,7 @@ const QUESTION_TAGS = {
 "t_devdeploy",
 "t_highrisk_req"
 ],
-"a2-5": [
+"q-15": [
 "ch2",
 "d1",
 "kt17",
@@ -2406,7 +2406,7 @@ const QUESTION_TAGS = {
 "t_devdeploy",
 "t_highrisk_req"
 ],
-"a2-6": [
+"q-16": [
 "ch1",
 "ch2",
 "d1",
@@ -2417,7 +2417,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_roles"
 ],
-"a2-7": [
+"q-17": [
 "ch1",
 "ch2",
 "d1",
@@ -2426,7 +2426,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_roles"
 ],
-"a2-8": [
+"q-18": [
 "ch2",
 "d1",
 "kt12",
@@ -2434,13 +2434,13 @@ const QUESTION_TAGS = {
 "t_devdeploy",
 "t_monitoring"
 ],
-"a2-9": [
+"q-19": [
 "ch2",
 "d1",
 "kt15",
 "t_roles"
 ],
-"a2-10": [
+"q-20": [
 "ch1",
 "ch2",
 "d1",
@@ -2449,7 +2449,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_training"
 ],
-"a3-1": [
+"q-21": [
 "ch1",
 "ch3",
 "d1",
@@ -2465,7 +2465,7 @@ const QUESTION_TAGS = {
 "t_oversight",
 "t_retire"
 ],
-"a3-2": [
+"q-22": [
 "ch3",
 "d1",
 "kt128",
@@ -2475,7 +2475,7 @@ const QUESTION_TAGS = {
 "t_minimization",
 "t_policy"
 ],
-"a3-3": [
+"q-23": [
 "ch3",
 "d1",
 "kt160",
@@ -2486,7 +2486,7 @@ const QUESTION_TAGS = {
 "t_lineage",
 "t_thirdparty"
 ],
-"a3-4": [
+"q-24": [
 "ch3",
 "d1",
 "kt0",
@@ -2498,7 +2498,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_policy"
 ],
-"a3-5": [
+"q-25": [
 "ch3",
 "d1",
 "kt229",
@@ -2510,7 +2510,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_thirdparty"
 ],
-"a3-6": [
+"q-26": [
 "ch3",
 "d1",
 "kt11",
@@ -2520,7 +2520,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_policy"
 ],
-"a3-7": [
+"q-27": [
 "ch3",
 "d1",
 "kt26",
@@ -2528,7 +2528,7 @@ const QUESTION_TAGS = {
 "kt68",
 "t_thirdparty"
 ],
-"a3-8": [
+"q-28": [
 "ch3",
 "d1",
 "kt11",
@@ -2537,7 +2537,7 @@ const QUESTION_TAGS = {
 "t_consent",
 "t_policy"
 ],
-"a3-9": [
+"q-29": [
 "ch3",
 "d1",
 "kt11",
@@ -2547,7 +2547,7 @@ const QUESTION_TAGS = {
 "t_policy",
 "t_train"
 ],
-"a3-10": [
+"q-30": [
 "ch3",
 "d1",
 "kt131",
@@ -2555,7 +2555,7 @@ const QUESTION_TAGS = {
 "kt245",
 "t_policy"
 ],
-"a4-1": [
+"q-31": [
 "ch4",
 "d2",
 "kt209",
@@ -2567,7 +2567,7 @@ const QUESTION_TAGS = {
 "t_controller",
 "t_sensitive"
 ],
-"a4-2": [
+"q-32": [
 "ch4",
 "d2",
 "kt230",
@@ -2577,7 +2577,7 @@ const QUESTION_TAGS = {
 "t_consent",
 "t_controller"
 ],
-"a4-3": [
+"q-33": [
 "ch4",
 "d2",
 "kt149",
@@ -2590,7 +2590,7 @@ const QUESTION_TAGS = {
 "t_risktiers",
 "t_sensitive"
 ],
-"a4-4": [
+"q-34": [
 "ch4",
 "d2",
 "kt169",
@@ -2601,7 +2601,7 @@ const QUESTION_TAGS = {
 "t_controller",
 "t_incident"
 ],
-"a4-5": [
+"q-35": [
 "ch4",
 "d2",
 "kt0",
@@ -2611,7 +2611,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_sensitive"
 ],
-"a4-6": [
+"q-36": [
 "ch4",
 "d2",
 "kt152",
@@ -2619,7 +2619,7 @@ const QUESTION_TAGS = {
 "kt33",
 "ref_gdpr"
 ],
-"a4-7": [
+"q-37": [
 "ch4",
 "d2",
 "kt217",
@@ -2629,14 +2629,14 @@ const QUESTION_TAGS = {
 "t_minimization",
 "t_thirdparty"
 ],
-"a4-8": [
+"q-38": [
 "ch4",
 "d2",
 "kt128",
 "kt86",
 "t_minimization"
 ],
-"a4-9": [
+"q-39": [
 "ch4",
 "d2",
 "kt26",
@@ -2650,13 +2650,13 @@ const QUESTION_TAGS = {
 "t_controller",
 "t_thirdparty"
 ],
-"a4-10": [
+"q-40": [
 "ch4",
 "d2",
 "kt30",
 "ref_gdpr"
 ],
-"a5-1": [
+"q-41": [
 "ch5",
 "d2",
 "kt126",
@@ -2665,19 +2665,19 @@ const QUESTION_TAGS = {
 "kt72",
 "t_ip"
 ],
-"a5-2": [
+"q-42": [
 "ch5",
 "d2",
 "kt106",
 "t_nondiscrim"
 ],
-"a5-3": [
+"q-43": [
 "ch5",
 "d2",
 "kt65",
 "t_consumer"
 ],
-"a5-4": [
+"q-44": [
 "ch5",
 "d2",
 "kt103",
@@ -2685,7 +2685,7 @@ const QUESTION_TAGS = {
 "kt221",
 "t_liability"
 ],
-"a5-5": [
+"q-45": [
 "ch5",
 "d2",
 "kt196",
@@ -2693,7 +2693,7 @@ const QUESTION_TAGS = {
 "t_ip",
 "t_nondiscrim"
 ],
-"a5-6": [
+"q-46": [
 "ch5",
 "d2",
 "kt298",
@@ -2702,7 +2702,7 @@ const QUESTION_TAGS = {
 "t_consumer",
 "t_ip"
 ],
-"a5-7": [
+"q-47": [
 "ch5",
 "d2",
 "kt103",
@@ -2711,7 +2711,7 @@ const QUESTION_TAGS = {
 "t_ai_char",
 "t_liability"
 ],
-"a5-8": [
+"q-48": [
 "ch5",
 "d2",
 "kt106",
@@ -2719,7 +2719,7 @@ const QUESTION_TAGS = {
 "t_ip",
 "t_nondiscrim"
 ],
-"a5-9": [
+"q-49": [
 "ch5",
 "d2",
 "kt106",
@@ -2730,7 +2730,7 @@ const QUESTION_TAGS = {
 "t_minimization",
 "t_nondiscrim"
 ],
-"a5-10": [
+"q-50": [
 "ch5",
 "d2",
 "kt169",
@@ -2739,7 +2739,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_consumer"
 ],
-"a6-1": [
+"q-51": [
 "ch6",
 "d2",
 "kt114",
@@ -2748,7 +2748,7 @@ const QUESTION_TAGS = {
 "t_risktiers",
 "t_sensitive"
 ],
-"a6-2": [
+"q-52": [
 "ch6",
 "d2",
 "kt155",
@@ -2764,7 +2764,7 @@ const QUESTION_TAGS = {
 "t_ip",
 "t_risktiers"
 ],
-"a6-3": [
+"q-53": [
 "ch6",
 "d2",
 "kt114",
@@ -2775,7 +2775,7 @@ const QUESTION_TAGS = {
 "t_devdeploy",
 "t_highrisk_req"
 ],
-"a6-4": [
+"q-54": [
 "ch6",
 "d2",
 "kt12",
@@ -2790,7 +2790,7 @@ const QUESTION_TAGS = {
 "t_oversight",
 "t_risktiers"
 ],
-"a6-5": [
+"q-55": [
 "ch6",
 "d2",
 "kt114",
@@ -2799,7 +2799,7 @@ const QUESTION_TAGS = {
 "t_gpai",
 "t_risktiers"
 ],
-"a6-6": [
+"q-56": [
 "ch6",
 "d2",
 "kt114",
@@ -2808,7 +2808,7 @@ const QUESTION_TAGS = {
 "t_gpai",
 "t_vendorterms"
 ],
-"a6-7": [
+"q-57": [
 "ch6",
 "d2",
 "kt12",
@@ -2823,7 +2823,7 @@ const QUESTION_TAGS = {
 "t_ip",
 "t_risktiers"
 ],
-"a6-8": [
+"q-58": [
 "ch6",
 "d2",
 "kt115",
@@ -2833,14 +2833,14 @@ const QUESTION_TAGS = {
 "t_enforcement",
 "t_risktiers"
 ],
-"a6-9": [
+"q-59": [
 "ch6",
 "d2",
 "kt114",
 "kt51",
 "t_highrisk_req"
 ],
-"a6-10": [
+"q-60": [
 "ch6",
 "d2",
 "kt135",
@@ -2852,7 +2852,7 @@ const QUESTION_TAGS = {
 "t_ip",
 "t_lifecycle"
 ],
-"a7-1": [
+"q-61": [
 "ch6",
 "ch7",
 "d2",
@@ -2865,13 +2865,13 @@ const QUESTION_TAGS = {
 "t_highrisk_req",
 "t_rai"
 ],
-"a7-2": [
+"q-62": [
 "ch7",
 "d2",
 "kt176",
 "ref_nist_rmf"
 ],
-"a7-3": [
+"q-63": [
 "ch7",
 "d2",
 "kt178",
@@ -2881,7 +2881,7 @@ const QUESTION_TAGS = {
 "ref_nist_rmf",
 "t_risktiers"
 ],
-"a7-4": [
+"q-64": [
 "ch7",
 "d2",
 "kt160",
@@ -2892,7 +2892,7 @@ const QUESTION_TAGS = {
 "ref_42001",
 "t_audit"
 ],
-"a7-5": [
+"q-65": [
 "ch7",
 "d2",
 "kt158",
@@ -2902,20 +2902,20 @@ const QUESTION_TAGS = {
 "ref_22989",
 "ref_23894"
 ],
-"a7-6": [
+"q-66": [
 "ch7",
 "d2",
 "kt159",
 "ref_22989"
 ],
-"a7-7": [
+"q-67": [
 "ch7",
 "d2",
 "kt112",
 "kt35",
 "ref_22989"
 ],
-"a7-8": [
+"q-68": [
 "ch7",
 "d2",
 "kt120",
@@ -2927,7 +2927,7 @@ const QUESTION_TAGS = {
 "ref_nist_rmf",
 "t_rai"
 ],
-"a7-9": [
+"q-69": [
 "ch7",
 "d2",
 "kt160",
@@ -2935,7 +2935,7 @@ const QUESTION_TAGS = {
 "ref_23894",
 "ref_42001"
 ],
-"a7-10": [
+"q-70": [
 "ch7",
 "d2",
 "kt224",
@@ -2943,7 +2943,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_risktiers"
 ],
-"a8-1": [
+"q-71": [
 "ch8",
 "d3",
 "kt108",
@@ -2955,7 +2955,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_vendorterms"
 ],
-"a8-2": [
+"q-72": [
 "ch8",
 "d3",
 "kt307",
@@ -2964,7 +2964,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_usecase"
 ],
-"a8-3": [
+"q-73": [
 "ch8",
 "d3",
 "kt149",
@@ -2973,7 +2973,7 @@ const QUESTION_TAGS = {
 "t_impact",
 "t_riskmgmt"
 ],
-"a8-4": [
+"q-74": [
 "ch8",
 "d3",
 "kt152",
@@ -2982,7 +2982,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_records"
 ],
-"a8-5": [
+"q-75": [
 "ch8",
 "d3",
 "kt226",
@@ -2992,7 +2992,7 @@ const QUESTION_TAGS = {
 "t_thirdparty",
 "t_vendorterms"
 ],
-"a8-6": [
+"q-76": [
 "ch8",
 "d3",
 "kt165",
@@ -3001,7 +3001,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_riskmgmt"
 ],
-"a8-7": [
+"q-77": [
 "ch8",
 "d3",
 "kt119",
@@ -3010,7 +3010,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_rai"
 ],
-"a8-8": [
+"q-78": [
 "ch8",
 "d3",
 "kt149",
@@ -3019,7 +3019,7 @@ const QUESTION_TAGS = {
 "t_impact",
 "t_testing"
 ],
-"a8-9": [
+"q-79": [
 "ch8",
 "d3",
 "kt175",
@@ -3029,7 +3029,7 @@ const QUESTION_TAGS = {
 "t_testing",
 "t_usecase"
 ],
-"a8-10": [
+"q-80": [
 "ch6",
 "ch8",
 "d3",
@@ -3041,13 +3041,13 @@ const QUESTION_TAGS = {
 "t_impact",
 "t_risktiers"
 ],
-"a9-1": [
+"q-81": [
 "ch9",
 "d3",
 "kt83",
 "t_datagov"
 ],
-"a9-2": [
+"q-82": [
 "ch9",
 "d3",
 "kt203",
@@ -3060,7 +3060,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_train"
 ],
-"a9-3": [
+"q-83": [
 "ch9",
 "d3",
 "kt124",
@@ -3068,7 +3068,7 @@ const QUESTION_TAGS = {
 "kt213",
 "t_testing"
 ],
-"a9-4": [
+"q-84": [
 "ch9",
 "d3",
 "kt0",
@@ -3081,7 +3081,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_train"
 ],
-"a9-5": [
+"q-85": [
 "ch9",
 "d3",
 "kt77",
@@ -3090,21 +3090,21 @@ const QUESTION_TAGS = {
 "t_datagov",
 "t_lineage"
 ],
-"a9-6": [
+"q-86": [
 "ch9",
 "d3",
 "kt250",
 "kt257",
 "t_testing"
 ],
-"a9-7": [
+"q-87": [
 "ch9",
 "d3",
 "kt152",
 "kt74",
 "t_bias"
 ],
-"a9-8": [
+"q-88": [
 "ch9",
 "d3",
 "kt0",
@@ -3115,7 +3115,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_train"
 ],
-"a9-9": [
+"q-89": [
 "ch9",
 "d3",
 "kt0",
@@ -3127,7 +3127,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_train"
 ],
-"a9-10": [
+"q-90": [
 "ch9",
 "d3",
 "kt0",
@@ -3140,7 +3140,7 @@ const QUESTION_TAGS = {
 "t_testing",
 "t_train"
 ],
-"a10-1": [
+"q-91": [
 "ch10",
 "d3",
 "kt203",
@@ -3152,7 +3152,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_train"
 ],
-"a10-2": [
+"q-92": [
 "ch10",
 "d3",
 "kt101",
@@ -3164,13 +3164,13 @@ const QUESTION_TAGS = {
 "t_deployopts",
 "t_monitoring"
 ],
-"a10-3": [
+"q-93": [
 "ch10",
 "d3",
 "kt175",
 "t_deployment"
 ],
-"a10-4": [
+"q-94": [
 "ch10",
 "d3",
 "kt203",
@@ -3180,7 +3180,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_train"
 ],
-"a10-5": [
+"q-95": [
 "ch10",
 "d3",
 "kt152",
@@ -3194,7 +3194,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_train"
 ],
-"a10-6": [
+"q-96": [
 "ch10",
 "d3",
 "kt202",
@@ -3204,7 +3204,7 @@ const QUESTION_TAGS = {
 "t_lineage",
 "t_monitoring"
 ],
-"a10-7": [
+"q-97": [
 "ch10",
 "d3",
 "kt279",
@@ -3212,7 +3212,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_lifecycle"
 ],
-"a10-8": [
+"q-98": [
 "ch10",
 "d3",
 "kt44",
@@ -3220,7 +3220,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_monitoring"
 ],
-"a10-9": [
+"q-99": [
 "ch10",
 "d3",
 "kt223",
@@ -3230,7 +3230,7 @@ const QUESTION_TAGS = {
 "t_readiness",
 "t_train"
 ],
-"a10-10": [
+"q-100": [
 "ch10",
 "ch6",
 "d3",
@@ -3240,7 +3240,7 @@ const QUESTION_TAGS = {
 "t_enforcement",
 "t_monitoring"
 ],
-"a11-1": [
+"q-101": [
 "ch12",
 "d4",
 "kt109",
@@ -3253,7 +3253,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_train"
 ],
-"a11-2": [
+"q-102": [
 "ch12",
 "d4",
 "kt152",
@@ -3263,7 +3263,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_readiness"
 ],
-"a11-3": [
+"q-103": [
 "ch12",
 "d4",
 "kt238",
@@ -3273,7 +3273,7 @@ const QUESTION_TAGS = {
 "t_records",
 "t_thirdparty"
 ],
-"a11-4": [
+"q-104": [
 "ch12",
 "d4",
 "kt201",
@@ -3282,7 +3282,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"a11-5": [
+"q-105": [
 "ch12",
 "d4",
 "kt109",
@@ -3290,7 +3290,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_incident"
 ],
-"a11-6": [
+"q-106": [
 "ch12",
 "d4",
 "kt175",
@@ -3298,7 +3298,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_retire"
 ],
-"a11-7": [
+"q-107": [
 "ch12",
 "ch6",
 "d4",
@@ -3312,13 +3312,13 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_risktiers"
 ],
-"a11-8": [
+"q-108": [
 "ch12",
 "d4",
 "kt37",
 "t_audit"
 ],
-"a11-9": [
+"q-109": [
 "ch12",
 "d4",
 "kt136",
@@ -3327,7 +3327,7 @@ const QUESTION_TAGS = {
 "kt225",
 "t_riskmgmt"
 ],
-"a11-10": [
+"q-110": [
 "ch12",
 "d4",
 "kt152",
@@ -3336,7 +3336,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_riskmgmt"
 ],
-"a12-1": [
+"q-111": [
 "ch12",
 "d4",
 "kt108",
@@ -3346,7 +3346,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_retire"
 ],
-"a12-2": [
+"q-112": [
 "ch12",
 "d4",
 "kt211",
@@ -3358,32 +3358,32 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"a12-3": [
+"q-113": [
 "ch12",
 "d4",
 "kt123",
 "t_comms"
 ],
-"a12-4": [
+"q-114": [
 "ch12",
 "d4",
 "kt98",
 "t_retire"
 ],
-"a12-5": [
+"q-115": [
 "ch12",
 "d4",
 "kt153",
 "kt167",
 "t_records"
 ],
-"a12-6": [
+"q-116": [
 "ch12",
 "d4",
 "kt161",
 "t_incident"
 ],
-"a12-7": [
+"q-117": [
 "ch12",
 "ch6",
 "d4",
@@ -3395,14 +3395,14 @@ const QUESTION_TAGS = {
 "t_enforcement",
 "t_retire"
 ],
-"a12-8": [
+"q-118": [
 "ch12",
 "d4",
 "kt210",
 "kt96",
 "t_retire"
 ],
-"a12-9": [
+"q-119": [
 "ch12",
 "ch6",
 "d4",
@@ -3419,13 +3419,13 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_risktiers"
 ],
-"a12-10": [
+"q-120": [
 "ch12",
 "d4",
 "kt229",
 "t_incident"
 ],
-"ext-1": [
+"q-121": [
 "ch1",
 "d1",
 "kt109",
@@ -3433,7 +3433,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_deployment"
 ],
-"ext-2": [
+"q-122": [
 "ch1",
 "d1",
 "kt169",
@@ -3441,7 +3441,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_lifecycle"
 ],
-"ext-3": [
+"q-123": [
 "ch1",
 "d1",
 "kt169",
@@ -3449,7 +3449,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_riskmgmt"
 ],
-"ext-4": [
+"q-124": [
 "ch1",
 "d1",
 "kt119",
@@ -3460,7 +3460,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_rai"
 ],
-"ext-5": [
+"q-125": [
 "ch1",
 "d1",
 "kt136",
@@ -3470,20 +3470,20 @@ const QUESTION_TAGS = {
 "t_riskmgmt",
 "t_roles"
 ],
-"ext-6": [
+"q-126": [
 "ch1",
 "d1",
 "kt40",
 "t_ai_char"
 ],
-"ext-7": [
+"q-127": [
 "ch1",
 "d1",
 "kt112",
 "kt113",
 "t_rai"
 ],
-"ext-8": [
+"q-128": [
 "ch1",
 "d1",
 "kt110",
@@ -3491,7 +3491,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_monitoring"
 ],
-"ext-9": [
+"q-129": [
 "ch1",
 "d1",
 "kt169",
@@ -3499,7 +3499,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_training"
 ],
-"ext-10": [
+"q-130": [
 "ch1",
 "ch2",
 "d1",
@@ -3510,7 +3510,7 @@ const QUESTION_TAGS = {
 "t_roles",
 "t_thirdparty"
 ],
-"ext-11": [
+"q-131": [
 "ch1",
 "d1",
 "kt106",
@@ -3523,14 +3523,14 @@ const QUESTION_TAGS = {
 "t_oversight",
 "t_risktiers"
 ],
-"ext-12": [
+"q-132": [
 "ch1",
 "d1",
 "kt145",
 "kt244",
 "t_rai"
 ],
-"ext-13": [
+"q-133": [
 "ch1",
 "ch9",
 "d1",
@@ -3539,13 +3539,13 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_bias"
 ],
-"ext-14": [
+"q-134": [
 "ch1",
 "d1",
 "kt24",
 "t_ai_types"
 ],
-"ext-15": [
+"q-135": [
 "ch1",
 "d1",
 "kt24",
@@ -3555,7 +3555,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_thirdparty"
 ],
-"ext-16": [
+"q-136": [
 "ch1",
 "ch7",
 "d1",
@@ -3564,13 +3564,13 @@ const QUESTION_TAGS = {
 "ref_nist_rmf",
 "t_ai_types"
 ],
-"ext-17": [
+"q-137": [
 "ch1",
 "d1",
 "kt24",
 "t_ai_types"
 ],
-"ext-18": [
+"q-138": [
 "ch1",
 "d1",
 "kt0",
@@ -3582,13 +3582,13 @@ const QUESTION_TAGS = {
 "t_impact",
 "t_risktiers"
 ],
-"ext-19": [
+"q-139": [
 "ch1",
 "d1",
 "kt24",
 "t_ai_types"
 ],
-"ext-20": [
+"q-140": [
 "ch1",
 "d1",
 "kt113",
@@ -3599,7 +3599,7 @@ const QUESTION_TAGS = {
 "t_rai",
 "t_training"
 ],
-"ext-21": [
+"q-141": [
 "ch1",
 "d1",
 "kt285",
@@ -3607,7 +3607,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_thirdparty"
 ],
-"ext-22": [
+"q-142": [
 "ch1",
 "d1",
 "kt169",
@@ -3616,13 +3616,13 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_lifecycle"
 ],
-"ext-23": [
+"q-143": [
 "ch1",
 "d1",
 "kt261",
 "t_ai_risks"
 ],
-"ext-24": [
+"q-144": [
 "ch1",
 "d1",
 "kt298",
@@ -3630,7 +3630,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_roles"
 ],
-"ext-25": [
+"q-145": [
 "ch1",
 "d1",
 "kt231",
@@ -3640,13 +3640,13 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_monitoring"
 ],
-"ext-26": [
+"q-146": [
 "ch1",
 "d1",
 "kt169",
 "t_ai_types"
 ],
-"ext-501": [
+"q-147": [
 "ch1",
 "d1",
 "kt133",
@@ -3655,14 +3655,14 @@ const QUESTION_TAGS = {
 "kt185",
 "t_ai_types"
 ],
-"ext-27": [
+"q-148": [
 "ch1",
 "d1",
 "kt169",
 "kt275",
 "t_ai_types"
 ],
-"ext-28": [
+"q-149": [
 "ch1",
 "d1",
 "kt166",
@@ -3673,7 +3673,7 @@ const QUESTION_TAGS = {
 "t_ai_char",
 "t_ai_types"
 ],
-"ext-29": [
+"q-150": [
 "ch1",
 "d1",
 "kt12",
@@ -3681,14 +3681,14 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_devdeploy"
 ],
-"ext-30": [
+"q-151": [
 "ch1",
 "d1",
 "kt169",
 "kt99",
 "t_ai_types"
 ],
-"ext-31": [
+"q-152": [
 "ch1",
 "d1",
 "kt187",
@@ -3697,7 +3697,7 @@ const QUESTION_TAGS = {
 "kt35",
 "t_ai_types"
 ],
-"ext-32": [
+"q-153": [
 "ch1",
 "d1",
 "kt141",
@@ -3709,14 +3709,14 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_train"
 ],
-"ext-33": [
+"q-154": [
 "ch1",
 "d1",
 "kt133",
 "kt58",
 "t_ai_types"
 ],
-"ext-34": [
+"q-155": [
 "ch1",
 "d1",
 "kt104",
@@ -3724,7 +3724,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_devdeploy"
 ],
-"ext-35": [
+"q-156": [
 "ch1",
 "d1",
 "kt0",
@@ -3734,7 +3734,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_deployment"
 ],
-"ext-36": [
+"q-157": [
 "ch1",
 "d1",
 "kt169",
@@ -3744,7 +3744,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_enforcement"
 ],
-"ext-37": [
+"q-158": [
 "ch1",
 "ch13",
 "d1",
@@ -3756,20 +3756,20 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_deployopts"
 ],
-"ext-38": [
+"q-159": [
 "ch1",
 "d1",
 "kt182",
 "t_ai_types"
 ],
-"ext-39": [
+"q-160": [
 "ch1",
 "d1",
 "kt119",
 "kt57",
 "t_rai"
 ],
-"ext-40": [
+"q-161": [
 "ch1",
 "d1",
 "kt119",
@@ -3782,7 +3782,7 @@ const QUESTION_TAGS = {
 "t_oversight",
 "t_rai"
 ],
-"ext-41": [
+"q-162": [
 "ch1",
 "ch9",
 "d1",
@@ -3796,7 +3796,7 @@ const QUESTION_TAGS = {
 "t_train",
 "t_training"
 ],
-"ext-42": [
+"q-163": [
 "ch1",
 "ch9",
 "d1",
@@ -3805,7 +3805,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_train"
 ],
-"ext-43": [
+"q-164": [
 "ch1",
 "d1",
 "kt169",
@@ -3814,7 +3814,7 @@ const QUESTION_TAGS = {
 "kt99",
 "t_ai_types"
 ],
-"ext-44": [
+"q-165": [
 "ch1",
 "ch9",
 "d1",
@@ -3825,7 +3825,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_devdeploy"
 ],
-"ext-45": [
+"q-166": [
 "ch1",
 "ch9",
 "d1",
@@ -3839,13 +3839,13 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_nondiscrim"
 ],
-"ext-46": [
+"q-167": [
 "ch1",
 "d1",
 "kt182",
 "t_ai_types"
 ],
-"ext-47": [
+"q-168": [
 "ch1",
 "ch10",
 "d1",
@@ -3855,7 +3855,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_monitoring"
 ],
-"ext-48": [
+"q-169": [
 "ch1",
 "ch9",
 "d1",
@@ -3867,7 +3867,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_train"
 ],
-"ext-49": [
+"q-170": [
 "ch1",
 "d1",
 "kt169",
@@ -3875,7 +3875,7 @@ const QUESTION_TAGS = {
 "kt301",
 "t_ai_types"
 ],
-"ext-50": [
+"q-171": [
 "ch1",
 "d1",
 "kt136",
@@ -3888,7 +3888,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_ip"
 ],
-"ext-51": [
+"q-172": [
 "ch1",
 "ch9",
 "d1",
@@ -3899,7 +3899,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_nondiscrim"
 ],
-"ext-52": [
+"q-173": [
 "ch1",
 "d1",
 "kt107",
@@ -3907,7 +3907,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_nondiscrim"
 ],
-"ext-53": [
+"q-174": [
 "ch1",
 "d1",
 "kt229",
@@ -3915,7 +3915,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_incident"
 ],
-"ext-54": [
+"q-175": [
 "ch1",
 "ch5",
 "d1",
@@ -3924,7 +3924,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_nondiscrim"
 ],
-"ext-55": [
+"q-176": [
 "ch1",
 "ch9",
 "d1",
@@ -3934,19 +3934,19 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_train"
 ],
-"ext-56": [
+"q-177": [
 "ch1",
 "d1",
 "kt109",
 "t_ai_risks"
 ],
-"ext-57": [
+"q-178": [
 "ch1",
 "d1",
 "kt109",
 "t_ai_risks"
 ],
-"ext-58": [
+"q-179": [
 "ch1",
 "ch9",
 "d1",
@@ -3956,7 +3956,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_bias"
 ],
-"ext-59": [
+"q-180": [
 "ch1",
 "ch9",
 "d1",
@@ -3966,7 +3966,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_train"
 ],
-"ext-60": [
+"q-181": [
 "ch1",
 "ch9",
 "d1",
@@ -3977,13 +3977,13 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_nondiscrim"
 ],
-"ext-61": [
+"q-182": [
 "ch1",
 "d1",
 "kt298",
 "t_ai_risks"
 ],
-"ext-62": [
+"q-183": [
 "ch1",
 "d1",
 "kt106",
@@ -3997,20 +3997,20 @@ const QUESTION_TAGS = {
 "t_nondiscrim",
 "t_train"
 ],
-"ext-63": [
+"q-184": [
 "ch1",
 "d1",
 "kt305",
 "t_ai_risks"
 ],
-"ext-64": [
+"q-185": [
 "ch1",
 "d1",
 "kt109",
 "kt148",
 "t_ai_risks"
 ],
-"ext-65": [
+"q-186": [
 "ch1",
 "d1",
 "kt140",
@@ -4019,13 +4019,13 @@ const QUESTION_TAGS = {
 "kt303",
 "t_ai_types"
 ],
-"ext-66": [
+"q-187": [
 "ch1",
 "d1",
 "kt180",
 "t_ai_risks"
 ],
-"ext-67": [
+"q-188": [
 "ch1",
 "d1",
 "kt166",
@@ -4033,13 +4033,13 @@ const QUESTION_TAGS = {
 "t_ai_char",
 "t_ai_types"
 ],
-"ext-68": [
+"q-189": [
 "ch1",
 "d1",
 "kt109",
 "t_ai_risks"
 ],
-"ext-69": [
+"q-190": [
 "ch1",
 "ch5",
 "d1",
@@ -4049,7 +4049,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_nondiscrim"
 ],
-"ext-70": [
+"q-191": [
 "ch1",
 "ch4",
 "d1",
@@ -4058,13 +4058,13 @@ const QUESTION_TAGS = {
 "t_ai_char",
 "t_consent"
 ],
-"ext-71": [
+"q-192": [
 "ch1",
 "d1",
 "kt109",
 "t_ai_risks"
 ],
-"ext-72": [
+"q-193": [
 "ch1",
 "d1",
 "kt128",
@@ -4073,7 +4073,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_minimization"
 ],
-"ext-73": [
+"q-194": [
 "ch1",
 "d1",
 "kt109",
@@ -4083,7 +4083,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_monitoring"
 ],
-"ext-74": [
+"q-195": [
 "ch1",
 "d1",
 "kt261",
@@ -4091,7 +4091,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_bias"
 ],
-"ext-75": [
+"q-196": [
 "ch1",
 "d1",
 "kt109",
@@ -4099,7 +4099,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_ai_types"
 ],
-"ext-76": [
+"q-197": [
 "ch1",
 "d1",
 "kt109",
@@ -4108,7 +4108,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_rai"
 ],
-"ext-77": [
+"q-198": [
 "ch1",
 "ch9",
 "d1",
@@ -4120,7 +4120,7 @@ const QUESTION_TAGS = {
 "t_nondiscrim",
 "t_rai"
 ],
-"ext-78": [
+"q-199": [
 "ch1",
 "d1",
 "kt109",
@@ -4130,7 +4130,7 @@ const QUESTION_TAGS = {
 "t_oversight",
 "t_rai"
 ],
-"ext-79": [
+"q-200": [
 "ch1",
 "d1",
 "kt145",
@@ -4138,7 +4138,7 @@ const QUESTION_TAGS = {
 "t_ai_char",
 "t_rai"
 ],
-"ext-80": [
+"q-201": [
 "ch1",
 "ch9",
 "d1",
@@ -4148,7 +4148,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_bias"
 ],
-"ext-81": [
+"q-202": [
 "ch1",
 "d1",
 "kt109",
@@ -4156,7 +4156,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_rai"
 ],
-"ext-82": [
+"q-203": [
 "ch1",
 "d1",
 "kt109",
@@ -4164,13 +4164,13 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_rai"
 ],
-"ext-83": [
+"q-204": [
 "ch1",
 "d1",
 "kt113",
 "t_rai"
 ],
-"ext-84": [
+"q-205": [
 "ch1",
 "d1",
 "kt113",
@@ -4178,38 +4178,38 @@ const QUESTION_TAGS = {
 "t_ai_char",
 "t_rai"
 ],
-"ext-85": [
+"q-206": [
 "ch1",
 "d1",
 "kt113",
 "kt210",
 "t_rai"
 ],
-"ext-86": [
+"q-207": [
 "ch1",
 "d1",
 "kt145",
 "t_rai"
 ],
-"ext-87": [
+"q-208": [
 "ch1",
 "d1",
 "kt113",
 "t_rai"
 ],
-"ext-88": [
+"q-209": [
 "ch1",
 "d1",
 "kt119",
 "t_rai"
 ],
-"ext-89": [
+"q-210": [
 "ch1",
 "d1",
 "kt157",
 "t_rai"
 ],
-"ext-90": [
+"q-211": [
 "ch1",
 "d1",
 "kt106",
@@ -4217,7 +4217,7 @@ const QUESTION_TAGS = {
 "t_nondiscrim",
 "t_rai"
 ],
-"ext-91": [
+"q-212": [
 "ch1",
 "ch4",
 "ch8",
@@ -4231,13 +4231,13 @@ const QUESTION_TAGS = {
 "t_minimization",
 "t_rai"
 ],
-"ext-92": [
+"q-213": [
 "ch1",
 "d1",
 "kt298",
 "t_ai_risks"
 ],
-"ext-93": [
+"q-214": [
 "ch1",
 "ch4",
 "d1",
@@ -4248,7 +4248,7 @@ const QUESTION_TAGS = {
 "t_consent",
 "t_rai"
 ],
-"ext-94": [
+"q-215": [
 "ch1",
 "ch4",
 "d1",
@@ -4258,7 +4258,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_consent"
 ],
-"ext-95": [
+"q-216": [
 "ch1",
 "ch8",
 "d1",
@@ -4267,19 +4267,19 @@ const QUESTION_TAGS = {
 "t_rai",
 "t_usecase"
 ],
-"ext-96": [
+"q-217": [
 "ch1",
 "d1",
 "kt169",
 "t_ai_types"
 ],
-"ext-97": [
+"q-218": [
 "ch1",
 "d1",
 "kt157",
 "t_rai"
 ],
-"ext-98": [
+"q-219": [
 "ch1",
 "d1",
 "kt119",
@@ -4289,13 +4289,13 @@ const QUESTION_TAGS = {
 "t_devdeploy",
 "t_rai"
 ],
-"ext-99": [
+"q-220": [
 "ch1",
 "d1",
 "kt145",
 "t_rai"
 ],
-"ext-100": [
+"q-221": [
 "ch1",
 "ch10",
 "d1",
@@ -4309,7 +4309,7 @@ const QUESTION_TAGS = {
 "t_rai",
 "t_roles"
 ],
-"ext-101": [
+"q-222": [
 "ch1",
 "d1",
 "kt25",
@@ -4319,7 +4319,7 @@ const QUESTION_TAGS = {
 "t_controller",
 "t_devdeploy"
 ],
-"ext-102": [
+"q-223": [
 "ch1",
 "d1",
 "kt113",
@@ -4327,7 +4327,7 @@ const QUESTION_TAGS = {
 "t_rai",
 "t_roles"
 ],
-"ext-103": [
+"q-224": [
 "ch1",
 "d1",
 "kt109",
@@ -4337,13 +4337,13 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_roles"
 ],
-"ext-104": [
+"q-225": [
 "ch1",
 "d1",
 "kt24",
 "t_ai_types"
 ],
-"ext-105": [
+"q-226": [
 "ch1",
 "d1",
 "kt268",
@@ -4351,7 +4351,7 @@ const QUESTION_TAGS = {
 "t_ai_char",
 "t_thirdparty"
 ],
-"ext-106": [
+"q-227": [
 "ch1",
 "ch8",
 "d1",
@@ -4362,13 +4362,13 @@ const QUESTION_TAGS = {
 "t_impact",
 "t_roles"
 ],
-"ext-107": [
+"q-228": [
 "ch1",
 "d1",
 "kt40",
 "t_ai_char"
 ],
-"ext-108": [
+"q-229": [
 "ch1",
 "d1",
 "kt109",
@@ -4378,7 +4378,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_devdeploy"
 ],
-"ext-109": [
+"q-230": [
 "ch1",
 "ch4",
 "d1",
@@ -4387,25 +4387,25 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_controller"
 ],
-"ext-110": [
+"q-231": [
 "ch1",
 "d1",
 "kt109",
 "t_ai_risks"
 ],
-"ext-111": [
+"q-232": [
 "ch2",
 "d1",
 "kt13",
 "t_devdeploy"
 ],
-"ext-112": [
+"q-233": [
 "ch2",
 "d1",
 "kt270",
 "t_roles"
 ],
-"ext-113": [
+"q-234": [
 "ch1",
 "ch6",
 "d1",
@@ -4416,14 +4416,14 @@ const QUESTION_TAGS = {
 "t_risktiers",
 "t_thirdparty"
 ],
-"ext-114": [
+"q-235": [
 "ch1",
 "d1",
 "kt24",
 "kt270",
 "t_ai_types"
 ],
-"ext-115": [
+"q-236": [
 "ch1",
 "ch10",
 "d1",
@@ -4434,7 +4434,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_roles"
 ],
-"ext-116": [
+"q-237": [
 "ch1",
 "ch11",
 "d1",
@@ -4445,37 +4445,37 @@ const QUESTION_TAGS = {
 "t_deployimpact",
 "t_roles"
 ],
-"ext-117": [
+"q-238": [
 "ch1",
 "d1",
 "kt24",
 "t_ai_types"
 ],
-"ext-118": [
+"q-239": [
 "ch1",
 "d1",
 "kt24",
 "t_ai_types"
 ],
-"ext-119": [
+"q-240": [
 "ch1",
 "d1",
 "kt109",
 "t_ai_risks"
 ],
-"ext-120": [
+"q-241": [
 "ch1",
 "d1",
 "kt24",
 "t_ai_types"
 ],
-"ext-121": [
+"q-242": [
 "ch1",
 "d1",
 "kt305",
 "t_ai_risks"
 ],
-"ext-122": [
+"q-243": [
 "ch1",
 "ch2",
 "d1",
@@ -4484,13 +4484,13 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_roles"
 ],
-"ext-123": [
+"q-244": [
 "ch1",
 "d1",
 "kt24",
 "t_ai_types"
 ],
-"ext-124": [
+"q-245": [
 "ch1",
 "ch3",
 "d1",
@@ -4502,28 +4502,28 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_thirdparty"
 ],
-"ext-125": [
+"q-246": [
 "ch2",
 "d1",
 "kt25",
 "kt281",
 "t_devdeploy"
 ],
-"ext-126": [
+"q-247": [
 "ch6",
 "d2",
 "kt114",
 "kt224",
 "t_risktiers"
 ],
-"ext-127": [
+"q-248": [
 "ch6",
 "d2",
 "kt114",
 "kt224",
 "t_risktiers"
 ],
-"ext-128": [
+"q-249": [
 "ch6",
 "d2",
 "kt100",
@@ -4534,7 +4534,7 @@ const QUESTION_TAGS = {
 "t_risktiers",
 "t_sensitive"
 ],
-"ext-129": [
+"q-250": [
 "ch6",
 "d2",
 "kt114",
@@ -4550,7 +4550,7 @@ const QUESTION_TAGS = {
 "t_oversight",
 "t_risktiers"
 ],
-"ext-130": [
+"q-251": [
 "ch6",
 "d2",
 "kt114",
@@ -4560,25 +4560,25 @@ const QUESTION_TAGS = {
 "kt83",
 "t_risktiers"
 ],
-"ext-131": [
+"q-252": [
 "ch7",
 "d2",
 "kt35",
 "ref_22989"
 ],
-"ext-132": [
+"q-253": [
 "ch6",
 "d2",
 "kt114",
 "t_timeline"
 ],
-"ext-133": [
+"q-254": [
 "ch4",
 "d2",
 "kt31",
 "ref_gdpr"
 ],
-"ext-134": [
+"q-255": [
 "ch5",
 "d2",
 "kt103",
@@ -4586,7 +4586,7 @@ const QUESTION_TAGS = {
 "t_ip",
 "t_liability"
 ],
-"ext-135": [
+"q-256": [
 "ch6",
 "d2",
 "kt114",
@@ -4596,7 +4596,7 @@ const QUESTION_TAGS = {
 "t_controller",
 "t_timeline"
 ],
-"ext-136": [
+"q-257": [
 "ch1",
 "ch7",
 "d2",
@@ -4609,21 +4609,21 @@ const QUESTION_TAGS = {
 "t_impact",
 "t_riskmgmt"
 ],
-"ext-137": [
+"q-258": [
 "ch6",
 "d2",
 "kt114",
 "kt154",
 "t_timeline"
 ],
-"ext-138": [
+"q-259": [
 "ch7",
 "d2",
 "kt1",
 "kt133",
 "ref_22989"
 ],
-"ext-139": [
+"q-260": [
 "ch6",
 "d2",
 "kt114",
@@ -4636,7 +4636,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_risktiers"
 ],
-"ext-140": [
+"q-261": [
 "ch6",
 "d2",
 "kt114",
@@ -4647,13 +4647,13 @@ const QUESTION_TAGS = {
 "t_riskmgmt",
 "t_risktiers"
 ],
-"ext-141": [
+"q-262": [
 "ch4",
 "d2",
 "kt30",
 "ref_gdpr"
 ],
-"ext-142": [
+"q-263": [
 "ch6",
 "d2",
 "kt114",
@@ -4662,14 +4662,14 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_highrisk_req"
 ],
-"ext-143": [
+"q-264": [
 "ch6",
 "d2",
 "kt224",
 "kt57",
 "t_risktiers"
 ],
-"ext-144": [
+"q-265": [
 "ch12",
 "ch7",
 "d2",
@@ -4680,13 +4680,13 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_bias"
 ],
-"ext-145": [
+"q-266": [
 "ch7",
 "d2",
 "kt10",
 "ref_22989"
 ],
-"ext-146": [
+"q-267": [
 "ch11",
 "ch4",
 "d2",
@@ -4695,13 +4695,13 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_deployimpact"
 ],
-"ext-147": [
+"q-268": [
 "ch4",
 "d2",
 "kt247",
 "ref_gdpr"
 ],
-"ext-148": [
+"q-269": [
 "ch1",
 "ch7",
 "d2",
@@ -4710,7 +4710,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_ai_types"
 ],
-"ext-149": [
+"q-270": [
 "ch6",
 "d2",
 "kt114",
@@ -4718,7 +4718,7 @@ const QUESTION_TAGS = {
 "kt17",
 "t_highrisk_req"
 ],
-"ext-150": [
+"q-271": [
 "ch6",
 "d2",
 "kt114",
@@ -4729,7 +4729,7 @@ const QUESTION_TAGS = {
 "t_risktiers",
 "t_vendorterms"
 ],
-"ext-151": [
+"q-272": [
 "ch1",
 "ch7",
 "d2",
@@ -4738,7 +4738,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_ai_risks"
 ],
-"ext-152": [
+"q-273": [
 "ch5",
 "d2",
 "kt103",
@@ -4746,7 +4746,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_liability"
 ],
-"ext-153": [
+"q-274": [
 "ch7",
 "d2",
 "kt1",
@@ -4754,7 +4754,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_enforcement"
 ],
-"ext-154": [
+"q-275": [
 "ch6",
 "d2",
 "kt114",
@@ -4763,7 +4763,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_enforcement"
 ],
-"ext-155": [
+"q-276": [
 "ch2",
 "ch6",
 "d2",
@@ -4776,7 +4776,7 @@ const QUESTION_TAGS = {
 "t_highrisk_req",
 "t_nondiscrim"
 ],
-"ext-156": [
+"q-277": [
 "ch1",
 "ch7",
 "d2",
@@ -4786,20 +4786,20 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_ai_risks"
 ],
-"ext-157": [
+"q-278": [
 "ch7",
 "d2",
 "kt1",
 "kt57",
 "ref_22989"
 ],
-"ext-158": [
+"q-279": [
 "ch7",
 "d2",
 "kt1",
 "ref_22989"
 ],
-"ext-159": [
+"q-280": [
 "ch1",
 "ch7",
 "d2",
@@ -4808,13 +4808,13 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_ai_types"
 ],
-"ext-160": [
+"q-281": [
 "ch4",
 "d2",
 "kt46",
 "ref_gdpr"
 ],
-"ext-161": [
+"q-282": [
 "ch12",
 "ch6",
 "d2",
@@ -4823,7 +4823,7 @@ const QUESTION_TAGS = {
 "t_highrisk_req",
 "t_incident"
 ],
-"ext-162": [
+"q-283": [
 "ch10",
 "ch6",
 "d2",
@@ -4834,7 +4834,7 @@ const QUESTION_TAGS = {
 "t_enforcement",
 "t_monitoring"
 ],
-"ext-163": [
+"q-284": [
 "ch12",
 "ch7",
 "d2",
@@ -4846,13 +4846,13 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_incident"
 ],
-"ext-164": [
+"q-285": [
 "ch4",
 "d2",
 "kt134",
 "ref_gdpr"
 ],
-"ext-165": [
+"q-286": [
 "ch4",
 "d2",
 "kt209",
@@ -4861,7 +4861,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_sensitive"
 ],
-"ext-166": [
+"q-287": [
 "ch4",
 "d2",
 "kt169",
@@ -4870,7 +4870,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_controller"
 ],
-"ext-167": [
+"q-288": [
 "ch4",
 "d2",
 "kt169",
@@ -4879,7 +4879,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_oversight"
 ],
-"ext-168": [
+"q-289": [
 "ch4",
 "d2",
 "kt143",
@@ -4891,7 +4891,7 @@ const QUESTION_TAGS = {
 "t_controller",
 "t_oversight"
 ],
-"ext-169": [
+"q-290": [
 "ch4",
 "d2",
 "kt128",
@@ -4899,7 +4899,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_minimization"
 ],
-"ext-170": [
+"q-291": [
 "ch4",
 "d2",
 "kt230",
@@ -4909,7 +4909,7 @@ const QUESTION_TAGS = {
 "t_consent",
 "t_controller"
 ],
-"ext-171": [
+"q-292": [
 "ch4",
 "d2",
 "kt228",
@@ -4919,7 +4919,7 @@ const QUESTION_TAGS = {
 "t_consent",
 "t_controller"
 ],
-"ext-172": [
+"q-293": [
 "ch4",
 "d2",
 "kt230",
@@ -4931,7 +4931,7 @@ const QUESTION_TAGS = {
 "t_consent",
 "t_controller"
 ],
-"ext-173": [
+"q-294": [
 "ch4",
 "d2",
 "kt149",
@@ -4943,7 +4943,7 @@ const QUESTION_TAGS = {
 "t_impact",
 "t_risktiers"
 ],
-"ext-174": [
+"q-295": [
 "ch4",
 "d2",
 "kt144",
@@ -4960,7 +4960,7 @@ const QUESTION_TAGS = {
 "t_risktiers",
 "t_sensitive"
 ],
-"ext-175": [
+"q-296": [
 "ch4",
 "d2",
 "kt220",
@@ -4972,7 +4972,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_riskmgmt"
 ],
-"ext-176": [
+"q-297": [
 "ch4",
 "d2",
 "kt209",
@@ -4982,7 +4982,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_sensitive"
 ],
-"ext-177": [
+"q-298": [
 "ch4",
 "d2",
 "kt209",
@@ -4995,7 +4995,7 @@ const QUESTION_TAGS = {
 "t_controller",
 "t_sensitive"
 ],
-"ext-178": [
+"q-299": [
 "ch4",
 "d2",
 "kt228",
@@ -5003,7 +5003,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_controller"
 ],
-"ext-179": [
+"q-300": [
 "ch4",
 "d2",
 "kt143",
@@ -5013,7 +5013,7 @@ const QUESTION_TAGS = {
 "t_controller",
 "t_oversight"
 ],
-"ext-180": [
+"q-301": [
 "ch4",
 "d2",
 "kt169",
@@ -5026,7 +5026,7 @@ const QUESTION_TAGS = {
 "t_controller",
 "t_monitoring"
 ],
-"ext-181": [
+"q-302": [
 "ch4",
 "d2",
 "kt247",
@@ -5034,7 +5034,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_controller"
 ],
-"ext-182": [
+"q-303": [
 "ch4",
 "d2",
 "kt217",
@@ -5042,7 +5042,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_minimization"
 ],
-"ext-183": [
+"q-304": [
 "ch4",
 "d2",
 "kt128",
@@ -5050,7 +5050,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_minimization"
 ],
-"ext-184": [
+"q-305": [
 "ch4",
 "d2",
 "kt114",
@@ -5062,7 +5062,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_timeline"
 ],
-"ext-185": [
+"q-306": [
 "ch4",
 "d2",
 "kt209",
@@ -5071,7 +5071,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_sensitive"
 ],
-"ext-186": [
+"q-307": [
 "ch4",
 "d2",
 "kt64",
@@ -5081,7 +5081,7 @@ const QUESTION_TAGS = {
 "t_consent",
 "t_controller"
 ],
-"ext-187": [
+"q-308": [
 "ch4",
 "d2",
 "kt30",
@@ -5091,7 +5091,7 @@ const QUESTION_TAGS = {
 "t_consent",
 "t_controller"
 ],
-"ext-188": [
+"q-309": [
 "ch4",
 "d2",
 "kt30",
@@ -5099,7 +5099,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_controller"
 ],
-"ext-189": [
+"q-310": [
 "ch4",
 "d2",
 "kt143",
@@ -5109,7 +5109,7 @@ const QUESTION_TAGS = {
 "t_controller",
 "t_oversight"
 ],
-"ext-190": [
+"q-311": [
 "ch4",
 "d2",
 "kt30",
@@ -5117,7 +5117,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_controller"
 ],
-"ext-191": [
+"q-312": [
 "ch4",
 "d2",
 "kt128",
@@ -5128,7 +5128,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_minimization"
 ],
-"ext-192": [
+"q-313": [
 "ch4",
 "d2",
 "kt128",
@@ -5139,7 +5139,7 @@ const QUESTION_TAGS = {
 "t_controller",
 "t_minimization"
 ],
-"ext-193": [
+"q-314": [
 "ch4",
 "d2",
 "kt100",
@@ -5147,7 +5147,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_minimization"
 ],
-"ext-194": [
+"q-315": [
 "ch4",
 "d2",
 "kt128",
@@ -5155,7 +5155,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_minimization"
 ],
-"ext-195": [
+"q-316": [
 "ch4",
 "d2",
 "kt26",
@@ -5165,7 +5165,7 @@ const QUESTION_TAGS = {
 "t_controller",
 "t_thirdparty"
 ],
-"ext-196": [
+"q-317": [
 "ch1",
 "ch7",
 "d2",
@@ -5177,7 +5177,7 @@ const QUESTION_TAGS = {
 "t_devdeploy",
 "t_rai"
 ],
-"ext-197": [
+"q-318": [
 "ch7",
 "d2",
 "kt160",
@@ -5185,7 +5185,7 @@ const QUESTION_TAGS = {
 "kt18",
 "ref_42001"
 ],
-"ext-198": [
+"q-319": [
 "ch7",
 "d2",
 "kt108",
@@ -5195,7 +5195,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_lifecycle"
 ],
-"ext-199": [
+"q-320": [
 "ch7",
 "d2",
 "kt0",
@@ -5205,7 +5205,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_lifecycle"
 ],
-"ext-200": [
+"q-321": [
 "ch7",
 "d2",
 "kt198",
@@ -5213,7 +5213,7 @@ const QUESTION_TAGS = {
 "kt250",
 "ref_oecd"
 ],
-"ext-201": [
+"q-322": [
 "ch1",
 "ch7",
 "d2",
@@ -5222,7 +5222,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_rai"
 ],
-"ext-202": [
+"q-323": [
 "ch7",
 "ch8",
 "d2",
@@ -5235,7 +5235,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_impact"
 ],
-"ext-203": [
+"q-324": [
 "ch7",
 "ch8",
 "d2",
@@ -5246,7 +5246,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_lifecycle"
 ],
-"ext-204": [
+"q-325": [
 "ch7",
 "ch8",
 "d2",
@@ -5258,7 +5258,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_train"
 ],
-"ext-205": [
+"q-326": [
 "ch7",
 "ch9",
 "d2",
@@ -5272,7 +5272,7 @@ const QUESTION_TAGS = {
 "t_readiness",
 "t_testing"
 ],
-"ext-206": [
+"q-327": [
 "ch7",
 "ch9",
 "d2",
@@ -5283,7 +5283,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_nondiscrim"
 ],
-"ext-207": [
+"q-328": [
 "ch10",
 "ch7",
 "d2",
@@ -5292,7 +5292,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_deployment"
 ],
-"ext-208": [
+"q-329": [
 "ch1",
 "ch7",
 "d2",
@@ -5301,7 +5301,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_rai"
 ],
-"ext-209": [
+"q-330": [
 "ch10",
 "ch7",
 "d2",
@@ -5314,7 +5314,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_monitoring"
 ],
-"ext-210": [
+"q-331": [
 "ch3",
 "ch7",
 "d2",
@@ -5323,7 +5323,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_oversight"
 ],
-"ext-211": [
+"q-332": [
 "ch3",
 "ch7",
 "d2",
@@ -5332,7 +5332,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_oversight"
 ],
-"ext-212": [
+"q-333": [
 "ch3",
 "ch7",
 "d2",
@@ -5343,7 +5343,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_oversight"
 ],
-"ext-213": [
+"q-334": [
 "ch6",
 "ch9",
 "d2",
@@ -5352,13 +5352,13 @@ const QUESTION_TAGS = {
 "t_highrisk_req",
 "t_train"
 ],
-"ext-214": [
+"q-335": [
 "ch7",
 "d2",
 "kt307",
 "ref_22989"
 ],
-"ext-215": [
+"q-336": [
 "ch7",
 "ch9",
 "d2",
@@ -5369,7 +5369,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_datagov"
 ],
-"ext-216": [
+"q-337": [
 "ch7",
 "ch9",
 "d2",
@@ -5378,7 +5378,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_bias"
 ],
-"ext-217": [
+"q-338": [
 "ch1",
 "ch7",
 "d2",
@@ -5392,13 +5392,13 @@ const QUESTION_TAGS = {
 "t_rai",
 "t_roles"
 ],
-"ext-218": [
+"q-339": [
 "ch7",
 "d2",
 "kt162",
 "ref_22989"
 ],
-"ext-219": [
+"q-340": [
 "ch12",
 "ch7",
 "d2",
@@ -5407,7 +5407,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_incident"
 ],
-"ext-220": [
+"q-341": [
 "ch1",
 "ch7",
 "d2",
@@ -5416,7 +5416,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_ai_types"
 ],
-"ext-221": [
+"q-342": [
 "ch4",
 "d2",
 "kt134",
@@ -5427,7 +5427,7 @@ const QUESTION_TAGS = {
 "t_gpai",
 "t_sensitive"
 ],
-"ext-222": [
+"q-343": [
 "ch7",
 "d2",
 "kt307",
@@ -5435,7 +5435,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_highrisk_req"
 ],
-"ext-223": [
+"q-344": [
 "ch7",
 "d2",
 "kt209",
@@ -5444,7 +5444,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_sensitive"
 ],
-"ext-224": [
+"q-345": [
 "ch5",
 "d2",
 "kt135",
@@ -5452,21 +5452,21 @@ const QUESTION_TAGS = {
 "t_gpai",
 "t_nondiscrim"
 ],
-"ext-225": [
+"q-346": [
 "ch5",
 "d2",
 "kt133",
 "kt196",
 "t_nondiscrim"
 ],
-"ext-226": [
+"q-347": [
 "ch5",
 "d2",
 "kt106",
 "kt107",
 "t_nondiscrim"
 ],
-"ext-227": [
+"q-348": [
 "ch5",
 "d2",
 "kt135",
@@ -5474,14 +5474,14 @@ const QUESTION_TAGS = {
 "t_gpai",
 "t_nondiscrim"
 ],
-"ext-228": [
+"q-349": [
 "ch5",
 "d2",
 "kt196",
 "kt307",
 "t_nondiscrim"
 ],
-"ext-229": [
+"q-350": [
 "ch5",
 "d2",
 "kt106",
@@ -5489,7 +5489,7 @@ const QUESTION_TAGS = {
 "t_gpai",
 "t_nondiscrim"
 ],
-"ext-230": [
+"q-351": [
 "ch7",
 "ch9",
 "d2",
@@ -5500,7 +5500,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_nondiscrim"
 ],
-"ext-231": [
+"q-352": [
 "ch5",
 "d2",
 "kt106",
@@ -5509,7 +5509,7 @@ const QUESTION_TAGS = {
 "t_nondiscrim",
 "t_thirdparty"
 ],
-"ext-232": [
+"q-353": [
 "ch1",
 "ch7",
 "d2",
@@ -5520,7 +5520,7 @@ const QUESTION_TAGS = {
 "t_ai_char",
 "t_gpai"
 ],
-"ext-233": [
+"q-354": [
 "ch1",
 "ch7",
 "d2",
@@ -5530,7 +5530,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_ai_char"
 ],
-"ext-234": [
+"q-355": [
 "ch4",
 "d2",
 "kt106",
@@ -5540,7 +5540,7 @@ const QUESTION_TAGS = {
 "t_gpai",
 "t_nondiscrim"
 ],
-"ext-235": [
+"q-356": [
 "ch5",
 "d2",
 "kt106",
@@ -5548,13 +5548,13 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_nondiscrim"
 ],
-"ext-236": [
+"q-357": [
 "ch5",
 "d2",
 "kt106",
 "t_nondiscrim"
 ],
-"ext-237": [
+"q-358": [
 "ch5",
 "d2",
 "kt135",
@@ -5562,13 +5562,13 @@ const QUESTION_TAGS = {
 "t_gpai",
 "t_nondiscrim"
 ],
-"ext-238": [
+"q-359": [
 "ch5",
 "d2",
 "kt106",
 "t_nondiscrim"
 ],
-"ext-239": [
+"q-360": [
 "ch4",
 "d2",
 "kt134",
@@ -5576,13 +5576,13 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_gpai"
 ],
-"ext-240": [
+"q-361": [
 "ch7",
 "d2",
 "kt296",
 "ref_22989"
 ],
-"ext-241": [
+"q-362": [
 "ch7",
 "d2",
 "kt107",
@@ -5590,7 +5590,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_nondiscrim"
 ],
-"ext-242": [
+"q-363": [
 "ch5",
 "d2",
 "kt135",
@@ -5600,7 +5600,7 @@ const QUESTION_TAGS = {
 "t_gpai",
 "t_nondiscrim"
 ],
-"ext-243": [
+"q-364": [
 "ch5",
 "d2",
 "kt196",
@@ -5608,7 +5608,7 @@ const QUESTION_TAGS = {
 "t_consumer",
 "t_nondiscrim"
 ],
-"ext-244": [
+"q-365": [
 "ch7",
 "d2",
 "kt135",
@@ -5618,7 +5618,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_gpai"
 ],
-"ext-245": [
+"q-366": [
 "ch7",
 "d2",
 "kt242",
@@ -5626,7 +5626,7 @@ const QUESTION_TAGS = {
 "kt296",
 "ref_22989"
 ],
-"ext-246": [
+"q-367": [
 "ch7",
 "d2",
 "kt1",
@@ -5636,7 +5636,7 @@ const QUESTION_TAGS = {
 "ref_22989",
 "t_gpai"
 ],
-"ext-247": [
+"q-368": [
 "ch4",
 "d2",
 "kt134",
@@ -5644,7 +5644,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_gpai"
 ],
-"ext-248": [
+"q-369": [
 "ch5",
 "d2",
 "kt106",
@@ -5652,7 +5652,7 @@ const QUESTION_TAGS = {
 "t_consent",
 "t_nondiscrim"
 ],
-"ext-249": [
+"q-370": [
 "ch5",
 "d2",
 "kt106",
@@ -5660,7 +5660,7 @@ const QUESTION_TAGS = {
 "t_consent",
 "t_nondiscrim"
 ],
-"ext-250": [
+"q-371": [
 "ch7",
 "d2",
 "kt1",
@@ -5668,7 +5668,7 @@ const QUESTION_TAGS = {
 "kt57",
 "ref_22989"
 ],
-"ext-251": [
+"q-372": [
 "ch10",
 "d3",
 "kt165",
@@ -5681,7 +5681,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_retire"
 ],
-"ext-252": [
+"q-373": [
 "ch10",
 "d3",
 "kt165",
@@ -5697,7 +5697,7 @@ const QUESTION_TAGS = {
 "t_retire",
 "t_thirdparty"
 ],
-"ext-253": [
+"q-374": [
 "ch8",
 "d3",
 "kt20",
@@ -5705,7 +5705,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_lifecycle"
 ],
-"ext-254": [
+"q-375": [
 "ch8",
 "d3",
 "kt165",
@@ -5717,7 +5717,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_usecase"
 ],
-"ext-255": [
+"q-376": [
 "ch8",
 "d3",
 "kt303",
@@ -5726,7 +5726,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_usecase"
 ],
-"ext-256": [
+"q-377": [
 "ch8",
 "d3",
 "kt132",
@@ -5741,7 +5741,7 @@ const QUESTION_TAGS = {
 "t_riskmgmt",
 "t_usecase"
 ],
-"ext-257": [
+"q-378": [
 "ch8",
 "d3",
 "kt27",
@@ -5749,7 +5749,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_lifecycle"
 ],
-"ext-258": [
+"q-379": [
 "ch1",
 "ch8",
 "d3",
@@ -5763,7 +5763,7 @@ const QUESTION_TAGS = {
 "t_minimization",
 "t_rai"
 ],
-"ext-259": [
+"q-380": [
 "ch4",
 "ch8",
 "d3",
@@ -5776,7 +5776,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_minimization"
 ],
-"ext-260": [
+"q-381": [
 "ch9",
 "d3",
 "kt181",
@@ -5786,7 +5786,7 @@ const QUESTION_TAGS = {
 "t_riskmgmt",
 "t_train"
 ],
-"ext-261": [
+"q-382": [
 "ch1",
 "ch9",
 "d3",
@@ -5799,7 +5799,7 @@ const QUESTION_TAGS = {
 "t_rai",
 "t_usecase"
 ],
-"ext-262": [
+"q-383": [
 "ch9",
 "d3",
 "kt132",
@@ -5810,7 +5810,7 @@ const QUESTION_TAGS = {
 "t_datagov",
 "t_lifecycle"
 ],
-"ext-263": [
+"q-384": [
 "ch9",
 "d3",
 "kt132",
@@ -5824,7 +5824,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_train"
 ],
-"ext-264": [
+"q-385": [
 "ch9",
 "d3",
 "kt0",
@@ -5835,7 +5835,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_train"
 ],
-"ext-265": [
+"q-386": [
 "ch10",
 "d3",
 "kt245",
@@ -5844,7 +5844,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_monitoring"
 ],
-"ext-266": [
+"q-387": [
 "ch9",
 "d3",
 "kt0",
@@ -5857,7 +5857,7 @@ const QUESTION_TAGS = {
 "t_riskmgmt",
 "t_train"
 ],
-"ext-267": [
+"q-388": [
 "ch10",
 "ch3",
 "d3",
@@ -5873,7 +5873,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_thirdparty"
 ],
-"ext-268": [
+"q-389": [
 "ch9",
 "d3",
 "kt119",
@@ -5889,7 +5889,7 @@ const QUESTION_TAGS = {
 "t_rai",
 "t_testing"
 ],
-"ext-269": [
+"q-390": [
 "ch9",
 "d3",
 "kt250",
@@ -5900,7 +5900,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_lifecycle"
 ],
-"ext-270": [
+"q-391": [
 "ch1",
 "ch9",
 "d3",
@@ -5912,7 +5912,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_rai"
 ],
-"ext-271": [
+"q-392": [
 "ch10",
 "d3",
 "kt119",
@@ -5920,7 +5920,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_rai"
 ],
-"ext-272": [
+"q-393": [
 "ch10",
 "d3",
 "kt231",
@@ -5929,7 +5929,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_lifecycle"
 ],
-"ext-273": [
+"q-394": [
 "ch10",
 "d3",
 "kt202",
@@ -5942,7 +5942,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_monitoring"
 ],
-"ext-274": [
+"q-395": [
 "ch10",
 "d3",
 "kt0",
@@ -5954,7 +5954,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_monitoring"
 ],
-"ext-275": [
+"q-396": [
 "ch10",
 "d3",
 "kt201",
@@ -5964,7 +5964,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-276": [
+"q-397": [
 "ch10",
 "d3",
 "kt149",
@@ -5972,7 +5972,7 @@ const QUESTION_TAGS = {
 "t_impact",
 "t_monitoring"
 ],
-"ext-277": [
+"q-398": [
 "ch10",
 "d3",
 "kt245",
@@ -5980,7 +5980,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_monitoring"
 ],
-"ext-278": [
+"q-399": [
 "ch10",
 "d3",
 "kt290",
@@ -5990,7 +5990,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_usecase"
 ],
-"ext-279": [
+"q-400": [
 "ch9",
 "d3",
 "kt231",
@@ -5998,13 +5998,13 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_lifecycle"
 ],
-"ext-280": [
+"q-401": [
 "ch9",
 "d3",
 "kt154",
 "t_testing"
 ],
-"ext-281": [
+"q-402": [
 "ch9",
 "d3",
 "kt0",
@@ -6012,7 +6012,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_deployment"
 ],
-"ext-282": [
+"q-403": [
 "ch12",
 "ch9",
 "d3",
@@ -6025,7 +6025,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_lifecycle"
 ],
-"ext-283": [
+"q-404": [
 "ch12",
 "ch9",
 "d3",
@@ -6036,7 +6036,7 @@ const QUESTION_TAGS = {
 "t_impact",
 "t_incident"
 ],
-"ext-284": [
+"q-405": [
 "ch12",
 "ch8",
 "d3",
@@ -6046,7 +6046,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_retire"
 ],
-"ext-285": [
+"q-406": [
 "ch3",
 "ch8",
 "d3",
@@ -6058,7 +6058,7 @@ const QUESTION_TAGS = {
 "t_policy",
 "t_retire"
 ],
-"ext-286": [
+"q-407": [
 "ch4",
 "ch9",
 "d3",
@@ -6070,14 +6070,14 @@ const QUESTION_TAGS = {
 "t_datagov",
 "t_retire"
 ],
-"ext-287": [
+"q-408": [
 "ch8",
 "d3",
 "kt162",
 "kt231",
 "t_lifecycle"
 ],
-"ext-288": [
+"q-409": [
 "ch8",
 "d3",
 "kt108",
@@ -6086,7 +6086,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_lifecycle"
 ],
-"ext-289": [
+"q-410": [
 "ch8",
 "d3",
 "kt0",
@@ -6096,13 +6096,13 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_train"
 ],
-"ext-290": [
+"q-411": [
 "ch8",
 "d3",
 "kt231",
 "t_lifecycle"
 ],
-"ext-291": [
+"q-412": [
 "ch8",
 "d3",
 "kt303",
@@ -6110,13 +6110,13 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_usecase"
 ],
-"ext-292": [
+"q-413": [
 "ch8",
 "d3",
 "kt165",
 "t_lifecycle"
 ],
-"ext-293": [
+"q-414": [
 "ch9",
 "d3",
 "kt231",
@@ -6126,7 +6126,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_lineage"
 ],
-"ext-294": [
+"q-415": [
 "ch9",
 "d3",
 "kt294",
@@ -6136,14 +6136,14 @@ const QUESTION_TAGS = {
 "t_datagov",
 "t_train"
 ],
-"ext-295": [
+"q-416": [
 "ch9",
 "d3",
 "kt242",
 "kt77",
 "t_datagov"
 ],
-"ext-296": [
+"q-417": [
 "ch9",
 "d3",
 "kt27",
@@ -6151,7 +6151,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_datagov"
 ],
-"ext-297": [
+"q-418": [
 "ch9",
 "d3",
 "kt0",
@@ -6163,7 +6163,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_train"
 ],
-"ext-298": [
+"q-419": [
 "ch9",
 "d3",
 "kt84",
@@ -6171,7 +6171,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_lineage"
 ],
-"ext-299": [
+"q-420": [
 "ch1",
 "ch9",
 "d3",
@@ -6184,14 +6184,14 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_lineage"
 ],
-"ext-300": [
+"q-421": [
 "ch9",
 "d3",
 "kt85",
 "kt89",
 "t_lineage"
 ],
-"ext-301": [
+"q-422": [
 "ch9",
 "d3",
 "kt27",
@@ -6199,7 +6199,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_train"
 ],
-"ext-302": [
+"q-423": [
 "ch9",
 "d3",
 "kt106",
@@ -6210,7 +6210,7 @@ const QUESTION_TAGS = {
 "t_nondiscrim",
 "t_train"
 ],
-"ext-303": [
+"q-424": [
 "ch9",
 "d3",
 "kt0",
@@ -6220,7 +6220,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_train"
 ],
-"ext-304": [
+"q-425": [
 "ch9",
 "d3",
 "kt101",
@@ -6230,7 +6230,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_train"
 ],
-"ext-305": [
+"q-426": [
 "ch4",
 "ch9",
 "d3",
@@ -6240,7 +6240,7 @@ const QUESTION_TAGS = {
 "t_datagov",
 "t_minimization"
 ],
-"ext-306": [
+"q-427": [
 "ch4",
 "ch9",
 "d3",
@@ -6251,7 +6251,7 @@ const QUESTION_TAGS = {
 "t_minimization",
 "t_train"
 ],
-"ext-307": [
+"q-428": [
 "ch10",
 "ch3",
 "d3",
@@ -6263,7 +6263,7 @@ const QUESTION_TAGS = {
 "t_policy",
 "t_train"
 ],
-"ext-308": [
+"q-429": [
 "ch3",
 "ch9",
 "d3",
@@ -6275,7 +6275,7 @@ const QUESTION_TAGS = {
 "t_policy",
 "t_testing"
 ],
-"ext-309": [
+"q-430": [
 "ch10",
 "ch4",
 "d3",
@@ -6288,7 +6288,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_train"
 ],
-"ext-310": [
+"q-431": [
 "ch10",
 "d3",
 "kt202",
@@ -6296,7 +6296,7 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_monitoring"
 ],
-"ext-311": [
+"q-432": [
 "ch12",
 "ch9",
 "d3",
@@ -6307,7 +6307,7 @@ const QUESTION_TAGS = {
 "t_records",
 "t_train"
 ],
-"ext-312": [
+"q-433": [
 "ch1",
 "ch9",
 "d3",
@@ -6318,7 +6318,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_lifecycle"
 ],
-"ext-313": [
+"q-434": [
 "ch9",
 "d3",
 "kt78",
@@ -6326,7 +6326,7 @@ const QUESTION_TAGS = {
 "t_datagov",
 "t_train"
 ],
-"ext-314": [
+"q-435": [
 "ch9",
 "d3",
 "kt203",
@@ -6334,7 +6334,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_train"
 ],
-"ext-315": [
+"q-436": [
 "ch9",
 "d3",
 "kt294",
@@ -6342,7 +6342,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_train"
 ],
-"ext-316": [
+"q-437": [
 "ch9",
 "d3",
 "kt181",
@@ -6355,7 +6355,7 @@ const QUESTION_TAGS = {
 "t_riskmgmt",
 "t_train"
 ],
-"ext-317": [
+"q-438": [
 "ch9",
 "d3",
 "kt27",
@@ -6365,7 +6365,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_train"
 ],
-"ext-318": [
+"q-439": [
 "ch9",
 "d3",
 "kt203",
@@ -6374,7 +6374,7 @@ const QUESTION_TAGS = {
 "kt79",
 "t_train"
 ],
-"ext-319": [
+"q-440": [
 "ch9",
 "d3",
 "kt203",
@@ -6383,20 +6383,20 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_train"
 ],
-"ext-320": [
+"q-441": [
 "ch9",
 "d3",
 "kt203",
 "kt77",
 "t_train"
 ],
-"ext-321": [
+"q-442": [
 "ch9",
 "d3",
 "kt290",
 "t_bias"
 ],
-"ext-322": [
+"q-443": [
 "ch9",
 "d3",
 "kt0",
@@ -6405,7 +6405,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_deployment"
 ],
-"ext-323": [
+"q-444": [
 "ch9",
 "d3",
 "kt203",
@@ -6413,7 +6413,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_train"
 ],
-"ext-324": [
+"q-445": [
 "ch9",
 "d3",
 "kt294",
@@ -6421,7 +6421,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_train"
 ],
-"ext-325": [
+"q-446": [
 "ch5",
 "ch9",
 "d3",
@@ -6431,14 +6431,14 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_nondiscrim"
 ],
-"ext-326": [
+"q-447": [
 "ch9",
 "d3",
 "kt81",
 "kt95",
 "t_bias"
 ],
-"ext-327": [
+"q-448": [
 "ch4",
 "ch9",
 "d3",
@@ -6448,7 +6448,7 @@ const QUESTION_TAGS = {
 "ref_gdpr",
 "t_datagov"
 ],
-"ext-328": [
+"q-449": [
 "ch4",
 "ch9",
 "d3",
@@ -6458,7 +6458,7 @@ const QUESTION_TAGS = {
 "t_minimization",
 "t_testing"
 ],
-"ext-329": [
+"q-450": [
 "ch4",
 "ch9",
 "d3",
@@ -6469,7 +6469,7 @@ const QUESTION_TAGS = {
 "t_minimization",
 "t_train"
 ],
-"ext-330": [
+"q-451": [
 "ch4",
 "ch9",
 "d3",
@@ -6479,7 +6479,7 @@ const QUESTION_TAGS = {
 "t_minimization",
 "t_train"
 ],
-"ext-331": [
+"q-452": [
 "ch10",
 "d3",
 "kt202",
@@ -6487,7 +6487,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_train"
 ],
-"ext-332": [
+"q-453": [
 "ch12",
 "ch9",
 "d3",
@@ -6498,7 +6498,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_records"
 ],
-"ext-333": [
+"q-454": [
 "ch4",
 "ch9",
 "d3",
@@ -6510,7 +6510,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_train"
 ],
-"ext-334": [
+"q-455": [
 "ch3",
 "ch9",
 "d3",
@@ -6519,7 +6519,7 @@ const QUESTION_TAGS = {
 "t_testing",
 "t_thirdparty"
 ],
-"ext-335": [
+"q-456": [
 "ch1",
 "ch10",
 "d3",
@@ -6532,7 +6532,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_thirdparty"
 ],
-"ext-336": [
+"q-457": [
 "ch1",
 "ch9",
 "d3",
@@ -6547,7 +6547,7 @@ const QUESTION_TAGS = {
 "t_testing",
 "t_usecase"
 ],
-"ext-337": [
+"q-458": [
 "ch8",
 "d3",
 "kt147",
@@ -6556,7 +6556,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_lifecycle"
 ],
-"ext-338": [
+"q-459": [
 "ch9",
 "d3",
 "kt147",
@@ -6567,7 +6567,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_train"
 ],
-"ext-339": [
+"q-460": [
 "ch9",
 "d3",
 "kt282",
@@ -6576,7 +6576,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_train"
 ],
-"ext-340": [
+"q-461": [
 "ch9",
 "d3",
 "kt203",
@@ -6587,7 +6587,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_train"
 ],
-"ext-341": [
+"q-462": [
 "ch9",
 "d3",
 "kt0",
@@ -6599,7 +6599,7 @@ const QUESTION_TAGS = {
 "t_testing",
 "t_train"
 ],
-"ext-342": [
+"q-463": [
 "ch9",
 "d3",
 "kt0",
@@ -6612,7 +6612,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_train"
 ],
-"ext-343": [
+"q-464": [
 "ch9",
 "d3",
 "kt203",
@@ -6622,7 +6622,7 @@ const QUESTION_TAGS = {
 "kt57",
 "t_train"
 ],
-"ext-344": [
+"q-465": [
 "ch9",
 "d3",
 "kt0",
@@ -6630,7 +6630,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_deployment"
 ],
-"ext-345": [
+"q-466": [
 "ch1",
 "ch9",
 "d3",
@@ -6643,7 +6643,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_rai"
 ],
-"ext-346": [
+"q-467": [
 "ch9",
 "d3",
 "kt0",
@@ -6655,13 +6655,13 @@ const QUESTION_TAGS = {
 "t_testing",
 "t_usecase"
 ],
-"ext-347": [
+"q-468": [
 "ch9",
 "d3",
 "kt213",
 "t_testing"
 ],
-"ext-348": [
+"q-469": [
 "ch9",
 "d3",
 "kt0",
@@ -6671,13 +6671,13 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_testing"
 ],
-"ext-349": [
+"q-470": [
 "ch9",
 "d3",
 "kt45",
 "t_bias"
 ],
-"ext-350": [
+"q-471": [
 "ch9",
 "d3",
 "kt106",
@@ -6688,7 +6688,7 @@ const QUESTION_TAGS = {
 "t_nondiscrim",
 "t_testing"
 ],
-"ext-351": [
+"q-472": [
 "ch9",
 "d3",
 "kt132",
@@ -6696,7 +6696,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_usecase"
 ],
-"ext-352": [
+"q-473": [
 "ch9",
 "d3",
 "kt243",
@@ -6704,14 +6704,14 @@ const QUESTION_TAGS = {
 "kt48",
 "t_testing"
 ],
-"ext-353": [
+"q-474": [
 "ch9",
 "d3",
 "kt250",
 "kt5",
 "t_testing"
 ],
-"ext-354": [
+"q-475": [
 "ch10",
 "d3",
 "kt0",
@@ -6725,7 +6725,7 @@ const QUESTION_TAGS = {
 "t_testing",
 "t_usecase"
 ],
-"ext-355": [
+"q-476": [
 "ch1",
 "ch9",
 "d3",
@@ -6734,7 +6734,7 @@ const QUESTION_TAGS = {
 "t_rai",
 "t_testing"
 ],
-"ext-356": [
+"q-477": [
 "ch1",
 "ch9",
 "d3",
@@ -6743,7 +6743,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_rai"
 ],
-"ext-357": [
+"q-478": [
 "ch9",
 "d3",
 "kt0",
@@ -6751,7 +6751,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_train"
 ],
-"ext-358": [
+"q-479": [
 "ch9",
 "d3",
 "kt109",
@@ -6761,7 +6761,7 @@ const QUESTION_TAGS = {
 "t_testing",
 "t_train"
 ],
-"ext-359": [
+"q-480": [
 "ch1",
 "ch9",
 "d3",
@@ -6774,7 +6774,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_usecase"
 ],
-"ext-360": [
+"q-481": [
 "ch9",
 "d3",
 "kt152",
@@ -6782,7 +6782,7 @@ const QUESTION_TAGS = {
 "kt257",
 "t_train"
 ],
-"ext-361": [
+"q-482": [
 "ch9",
 "d3",
 "kt152",
@@ -6790,14 +6790,14 @@ const QUESTION_TAGS = {
 "kt257",
 "t_train"
 ],
-"ext-362": [
+"q-483": [
 "ch9",
 "d3",
 "kt154",
 "kt4",
 "t_testing"
 ],
-"ext-363": [
+"q-484": [
 "ch9",
 "d3",
 "kt154",
@@ -6805,14 +6805,14 @@ const QUESTION_TAGS = {
 "kt45",
 "t_bias"
 ],
-"ext-364": [
+"q-485": [
 "ch9",
 "d3",
 "kt154",
 "kt45",
 "t_bias"
 ],
-"ext-365": [
+"q-486": [
 "ch9",
 "d3",
 "kt290",
@@ -6820,7 +6820,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_deployment"
 ],
-"ext-366": [
+"q-487": [
 "ch1",
 "ch10",
 "d3",
@@ -6830,7 +6830,7 @@ const QUESTION_TAGS = {
 "t_ai_types",
 "t_readiness"
 ],
-"ext-367": [
+"q-488": [
 "ch10",
 "d3",
 "kt245",
@@ -6838,7 +6838,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_monitoring"
 ],
-"ext-368": [
+"q-489": [
 "ch10",
 "d3",
 "kt175",
@@ -6848,7 +6848,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_monitoring"
 ],
-"ext-369": [
+"q-490": [
 "ch9",
 "d3",
 "kt0",
@@ -6856,7 +6856,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_deployment"
 ],
-"ext-370": [
+"q-491": [
 "ch9",
 "d3",
 "kt154",
@@ -6867,7 +6867,7 @@ const QUESTION_TAGS = {
 "t_datagov",
 "t_testing"
 ],
-"ext-371": [
+"q-492": [
 "ch9",
 "d3",
 "kt282",
@@ -6876,7 +6876,7 @@ const QUESTION_TAGS = {
 "kt57",
 "t_train"
 ],
-"ext-372": [
+"q-493": [
 "ch9",
 "d3",
 "kt0",
@@ -6884,19 +6884,19 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_testing"
 ],
-"ext-373": [
+"q-494": [
 "ch9",
 "d3",
 "kt5",
 "t_testing"
 ],
-"ext-374": [
+"q-495": [
 "ch10",
 "d3",
 "kt0",
 "t_deployment"
 ],
-"ext-375": [
+"q-496": [
 "ch10",
 "d3",
 "kt0",
@@ -6906,7 +6906,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_monitoring"
 ],
-"ext-376": [
+"q-497": [
 "ch10",
 "ch12",
 "d4",
@@ -6916,7 +6916,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_deployment"
 ],
-"ext-377": [
+"q-498": [
 "ch10",
 "ch12",
 "d4",
@@ -6926,7 +6926,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_riskmgmt"
 ],
-"ext-378": [
+"q-499": [
 "ch10",
 "ch13",
 "d4",
@@ -6939,7 +6939,7 @@ const QUESTION_TAGS = {
 "t_readiness",
 "t_testing"
 ],
-"ext-379": [
+"q-500": [
 "ch10",
 "ch12",
 "d4",
@@ -6950,7 +6950,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_usecase"
 ],
-"ext-380": [
+"q-501": [
 "ch10",
 "ch12",
 "d4",
@@ -6965,7 +6965,7 @@ const QUESTION_TAGS = {
 "t_riskmgmt",
 "t_risktiers"
 ],
-"ext-381": [
+"q-502": [
 "ch10",
 "ch13",
 "d4",
@@ -6976,7 +6976,7 @@ const QUESTION_TAGS = {
 "t_modeltypes",
 "t_readiness"
 ],
-"ext-382": [
+"q-503": [
 "ch10",
 "ch13",
 "d4",
@@ -6990,7 +6990,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_readiness"
 ],
-"ext-383": [
+"q-504": [
 "ch10",
 "ch12",
 "d4",
@@ -7001,7 +7001,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_riskmgmt"
 ],
-"ext-384": [
+"q-505": [
 "ch12",
 "ch9",
 "d4",
@@ -7011,7 +7011,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_testing"
 ],
-"ext-385": [
+"q-506": [
 "ch12",
 "ch9",
 "d4",
@@ -7029,7 +7029,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_testing"
 ],
-"ext-386": [
+"q-507": [
 "ch10",
 "ch12",
 "d4",
@@ -7040,7 +7040,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_readiness"
 ],
-"ext-387": [
+"q-508": [
 "ch10",
 "ch13",
 "d4",
@@ -7053,7 +7053,7 @@ const QUESTION_TAGS = {
 "t_readiness",
 "t_riskmgmt"
 ],
-"ext-388": [
+"q-509": [
 "ch10",
 "ch12",
 "d4",
@@ -7062,7 +7062,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_deployment"
 ],
-"ext-389": [
+"q-510": [
 "ch10",
 "ch12",
 "d4",
@@ -7072,7 +7072,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_deployment"
 ],
-"ext-390": [
+"q-511": [
 "ch10",
 "ch12",
 "d4",
@@ -7083,14 +7083,14 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-391": [
+"q-512": [
 "ch12",
 "d4",
 "kt229",
 "kt305",
 "t_incident"
 ],
-"ext-392": [
+"q-513": [
 "ch12",
 "ch8",
 "d4",
@@ -7100,7 +7100,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_usecase"
 ],
-"ext-393": [
+"q-514": [
 "ch10",
 "ch11",
 "d4",
@@ -7110,7 +7110,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_vendorterms"
 ],
-"ext-394": [
+"q-515": [
 "ch10",
 "ch12",
 "d4",
@@ -7120,7 +7120,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_incident"
 ],
-"ext-395": [
+"q-516": [
 "ch10",
 "ch12",
 "d4",
@@ -7130,7 +7130,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_records"
 ],
-"ext-396": [
+"q-517": [
 "ch10",
 "ch12",
 "d4",
@@ -7139,7 +7139,7 @@ const QUESTION_TAGS = {
 "t_comms",
 "t_deployment"
 ],
-"ext-397": [
+"q-518": [
 "ch10",
 "ch12",
 "d4",
@@ -7148,13 +7148,13 @@ const QUESTION_TAGS = {
 "t_comms",
 "t_deployment"
 ],
-"ext-398": [
+"q-519": [
 "ch12",
 "d4",
 "kt229",
 "t_incident"
 ],
-"ext-399": [
+"q-520": [
 "ch10",
 "ch12",
 "d4",
@@ -7167,7 +7167,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_monitoring"
 ],
-"ext-400": [
+"q-521": [
 "ch10",
 "ch12",
 "d4",
@@ -7182,7 +7182,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-401": [
+"q-522": [
 "ch10",
 "ch12",
 "d4",
@@ -7192,7 +7192,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-402": [
+"q-523": [
 "ch10",
 "ch12",
 "d4",
@@ -7201,7 +7201,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_incident"
 ],
-"ext-403": [
+"q-524": [
 "ch10",
 "ch12",
 "d4",
@@ -7212,7 +7212,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_incident"
 ],
-"ext-404": [
+"q-525": [
 "ch10",
 "ch12",
 "d4",
@@ -7224,7 +7224,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_riskmgmt"
 ],
-"ext-405": [
+"q-526": [
 "ch12",
 "ch6",
 "d4",
@@ -7235,7 +7235,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_risktiers"
 ],
-"ext-406": [
+"q-527": [
 "ch10",
 "ch13",
 "d4",
@@ -7248,7 +7248,7 @@ const QUESTION_TAGS = {
 "t_risktiers",
 "t_roles"
 ],
-"ext-407": [
+"q-528": [
 "ch10",
 "ch12",
 "d4",
@@ -7260,7 +7260,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_riskmgmt"
 ],
-"ext-408": [
+"q-529": [
 "ch10",
 "ch12",
 "d4",
@@ -7273,7 +7273,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_riskmgmt"
 ],
-"ext-409": [
+"q-530": [
 "ch10",
 "ch12",
 "d4",
@@ -7283,7 +7283,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_deployment"
 ],
-"ext-410": [
+"q-531": [
 "ch10",
 "ch12",
 "d4",
@@ -7298,7 +7298,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_incident"
 ],
-"ext-411": [
+"q-532": [
 "ch10",
 "ch12",
 "d4",
@@ -7308,7 +7308,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_incident"
 ],
-"ext-412": [
+"q-533": [
 "ch10",
 "ch12",
 "d4",
@@ -7321,7 +7321,7 @@ const QUESTION_TAGS = {
 "t_riskmgmt",
 "t_thirdparty"
 ],
-"ext-413": [
+"q-534": [
 "ch12",
 "ch5",
 "d4",
@@ -7336,7 +7336,7 @@ const QUESTION_TAGS = {
 "t_nondiscrim",
 "t_riskmgmt"
 ],
-"ext-414": [
+"q-535": [
 "ch12",
 "d4",
 "kt0",
@@ -7351,7 +7351,7 @@ const QUESTION_TAGS = {
 "t_riskmgmt",
 "t_thirdparty"
 ],
-"ext-415": [
+"q-536": [
 "ch10",
 "ch12",
 "d4",
@@ -7360,7 +7360,7 @@ const QUESTION_TAGS = {
 "t_deployment",
 "t_riskmgmt"
 ],
-"ext-416": [
+"q-537": [
 "ch10",
 "ch13",
 "d4",
@@ -7371,7 +7371,7 @@ const QUESTION_TAGS = {
 "t_modeltypes",
 "t_monitoring"
 ],
-"ext-417": [
+"q-538": [
 "ch10",
 "ch12",
 "d4",
@@ -7382,7 +7382,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-418": [
+"q-539": [
 "ch10",
 "ch12",
 "d4",
@@ -7393,7 +7393,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-419": [
+"q-540": [
 "ch10",
 "ch12",
 "d4",
@@ -7403,7 +7403,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-420": [
+"q-541": [
 "ch12",
 "ch9",
 "d4",
@@ -7416,7 +7416,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-421": [
+"q-542": [
 "ch10",
 "ch13",
 "d4",
@@ -7430,7 +7430,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_train"
 ],
-"ext-422": [
+"q-543": [
 "ch10",
 "ch12",
 "d4",
@@ -7442,7 +7442,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-423": [
+"q-544": [
 "ch13",
 "ch9",
 "d4",
@@ -7455,7 +7455,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_testing"
 ],
-"ext-424": [
+"q-545": [
 "ch13",
 "ch9",
 "d4",
@@ -7465,7 +7465,7 @@ const QUESTION_TAGS = {
 "t_deployopts",
 "t_testing"
 ],
-"ext-425": [
+"q-546": [
 "ch12",
 "ch9",
 "d4",
@@ -7477,7 +7477,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_monitoring"
 ],
-"ext-426": [
+"q-547": [
 "ch12",
 "ch9",
 "d4",
@@ -7486,7 +7486,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_riskmgmt"
 ],
-"ext-427": [
+"q-548": [
 "ch10",
 "ch12",
 "d4",
@@ -7500,7 +7500,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_riskmgmt"
 ],
-"ext-428": [
+"q-549": [
 "ch10",
 "ch12",
 "d4",
@@ -7511,7 +7511,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-429": [
+"q-550": [
 "ch12",
 "d4",
 "kt129",
@@ -7521,7 +7521,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-430": [
+"q-551": [
 "ch10",
 "ch12",
 "d4",
@@ -7530,7 +7530,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-431": [
+"q-552": [
 "ch10",
 "ch12",
 "d4",
@@ -7540,7 +7540,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-432": [
+"q-553": [
 "ch10",
 "ch12",
 "d4",
@@ -7549,7 +7549,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-433": [
+"q-554": [
 "ch10",
 "ch12",
 "d4",
@@ -7559,7 +7559,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-434": [
+"q-555": [
 "ch10",
 "ch13",
 "d4",
@@ -7569,7 +7569,7 @@ const QUESTION_TAGS = {
 "t_deployfactors",
 "t_monitoring"
 ],
-"ext-435": [
+"q-556": [
 "ch12",
 "d4",
 "kt37",
@@ -7577,7 +7577,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_bias"
 ],
-"ext-436": [
+"q-557": [
 "ch12",
 "d4",
 "kt119",
@@ -7590,7 +7590,7 @@ const QUESTION_TAGS = {
 "t_rai",
 "t_retire"
 ],
-"ext-437": [
+"q-558": [
 "ch12",
 "d4",
 "kt108",
@@ -7599,7 +7599,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_bias"
 ],
-"ext-438": [
+"q-559": [
 "ch11",
 "ch9",
 "d4",
@@ -7612,7 +7612,7 @@ const QUESTION_TAGS = {
 "t_nondiscrim",
 "t_vendorterms"
 ],
-"ext-439": [
+"q-560": [
 "ch10",
 "ch12",
 "d4",
@@ -7625,7 +7625,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_retire"
 ],
-"ext-440": [
+"q-561": [
 "ch12",
 "d4",
 "kt151",
@@ -7636,13 +7636,13 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_records"
 ],
-"ext-441": [
+"q-562": [
 "ch12",
 "d4",
 "kt37",
 "t_audit"
 ],
-"ext-442": [
+"q-563": [
 "ch12",
 "d4",
 "kt119",
@@ -7650,7 +7650,7 @@ const QUESTION_TAGS = {
 "kt37",
 "t_audit"
 ],
-"ext-443": [
+"q-564": [
 "ch12",
 "d4",
 "kt220",
@@ -7659,7 +7659,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_riskmgmt"
 ],
-"ext-444": [
+"q-565": [
 "ch12",
 "d4",
 "kt108",
@@ -7667,26 +7667,26 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_bias"
 ],
-"ext-445": [
+"q-566": [
 "ch12",
 "d4",
 "kt37",
 "kt57",
 "t_audit"
 ],
-"ext-446": [
+"q-567": [
 "ch12",
 "d4",
 "kt108",
 "t_audit"
 ],
-"ext-447": [
+"q-568": [
 "ch12",
 "d4",
 "kt37",
 "t_audit"
 ],
-"ext-448": [
+"q-569": [
 "ch12",
 "ch9",
 "d4",
@@ -7698,20 +7698,20 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_incident"
 ],
-"ext-449": [
+"q-570": [
 "ch12",
 "d4",
 "kt37",
 "t_audit"
 ],
-"ext-450": [
+"q-571": [
 "ch12",
 "d4",
 "kt37",
 "kt41",
 "t_audit"
 ],
-"ext-451": [
+"q-572": [
 "ch12",
 "d4",
 "kt37",
@@ -7719,7 +7719,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_monitoring"
 ],
-"ext-452": [
+"q-573": [
 "ch12",
 "d4",
 "kt108",
@@ -7727,7 +7727,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_incident"
 ],
-"ext-453": [
+"q-574": [
 "ch12",
 "d4",
 "kt37",
@@ -7735,25 +7735,25 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_retire"
 ],
-"ext-454": [
+"q-575": [
 "ch12",
 "d4",
 "kt108",
 "t_audit"
 ],
-"ext-455": [
+"q-576": [
 "ch12",
 "d4",
 "kt37",
 "t_audit"
 ],
-"ext-456": [
+"q-577": [
 "ch12",
 "d4",
 "kt108",
 "t_audit"
 ],
-"ext-457": [
+"q-578": [
 "ch12",
 "d4",
 "kt203",
@@ -7766,7 +7766,7 @@ const QUESTION_TAGS = {
 "t_monitoring",
 "t_train"
 ],
-"ext-458": [
+"q-579": [
 "ch12",
 "d4",
 "kt294",
@@ -7774,7 +7774,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_train"
 ],
-"ext-459": [
+"q-580": [
 "ch12",
 "d4",
 "kt109",
@@ -7784,7 +7784,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_incident"
 ],
-"ext-460": [
+"q-581": [
 "ch12",
 "d4",
 "kt151",
@@ -7794,14 +7794,14 @@ const QUESTION_TAGS = {
 "t_records",
 "t_riskmgmt"
 ],
-"ext-461": [
+"q-582": [
 "ch12",
 "d4",
 "kt151",
 "kt310",
 "t_incident"
 ],
-"ext-462": [
+"q-583": [
 "ch12",
 "d4",
 "kt151",
@@ -7813,7 +7813,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-463": [
+"q-584": [
 "ch12",
 "d4",
 "kt161",
@@ -7823,7 +7823,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-464": [
+"q-585": [
 "ch10",
 "ch12",
 "d4",
@@ -7832,13 +7832,13 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-465": [
+"q-586": [
 "ch12",
 "d4",
 "kt151",
 "t_incident"
 ],
-"ext-466": [
+"q-587": [
 "ch12",
 "d4",
 "kt109",
@@ -7846,7 +7846,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_incident"
 ],
-"ext-467": [
+"q-588": [
 "ch12",
 "d4",
 "kt109",
@@ -7858,7 +7858,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_records"
 ],
-"ext-468": [
+"q-589": [
 "ch12",
 "d4",
 "kt151",
@@ -7866,7 +7866,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_incident"
 ],
-"ext-469": [
+"q-590": [
 "ch12",
 "d4",
 "kt201",
@@ -7878,32 +7878,32 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_risktiers"
 ],
-"ext-470": [
+"q-591": [
 "ch12",
 "d4",
 "kt151",
 "t_incident"
 ],
-"ext-471": [
+"q-592": [
 "ch12",
 "d4",
 "kt161",
 "t_incident"
 ],
-"ext-472": [
+"q-593": [
 "ch12",
 "d4",
 "kt151",
 "kt39",
 "t_incident"
 ],
-"ext-473": [
+"q-594": [
 "ch12",
 "d4",
 "kt151",
 "t_incident"
 ],
-"ext-474": [
+"q-595": [
 "ch12",
 "ch9",
 "d4",
@@ -7914,14 +7914,14 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_retire"
 ],
-"ext-475": [
+"q-596": [
 "ch12",
 "d4",
 "kt201",
 "kt310",
 "t_incident"
 ],
-"ext-476": [
+"q-597": [
 "ch12",
 "ch9",
 "d4",
@@ -7931,7 +7931,7 @@ const QUESTION_TAGS = {
 "t_bias",
 "t_incident"
 ],
-"ext-477": [
+"q-598": [
 "ch12",
 "d4",
 "kt123",
@@ -7939,20 +7939,20 @@ const QUESTION_TAGS = {
 "t_comms",
 "t_incident"
 ],
-"ext-478": [
+"q-599": [
 "ch12",
 "d4",
 "kt201",
 "kt310",
 "t_incident"
 ],
-"ext-479": [
+"q-600": [
 "ch12",
 "d4",
 "kt229",
 "t_incident"
 ],
-"ext-480": [
+"q-601": [
 "ch12",
 "d4",
 "kt151",
@@ -7961,7 +7961,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_riskmgmt"
 ],
-"ext-481": [
+"q-602": [
 "ch12",
 "d4",
 "kt151",
@@ -7971,7 +7971,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_incident"
 ],
-"ext-482": [
+"q-603": [
 "ch12",
 "d4",
 "kt161",
@@ -7980,7 +7980,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_incident"
 ],
-"ext-483": [
+"q-604": [
 "ch1",
 "ch12",
 "d4",
@@ -7989,7 +7989,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_audit"
 ],
-"ext-484": [
+"q-605": [
 "ch1",
 "ch12",
 "d4",
@@ -7998,7 +7998,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_audit"
 ],
-"ext-485": [
+"q-606": [
 "ch12",
 "ch2",
 "d4",
@@ -8010,7 +8010,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_monitoring"
 ],
-"ext-486": [
+"q-607": [
 "ch12",
 "ch2",
 "d4",
@@ -8020,7 +8020,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_devdeploy"
 ],
-"ext-487": [
+"q-608": [
 "ch1",
 "ch12",
 "d4",
@@ -8029,7 +8029,7 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_incident"
 ],
-"ext-488": [
+"q-609": [
 "ch1",
 "ch12",
 "d4",
@@ -8038,20 +8038,20 @@ const QUESTION_TAGS = {
 "t_ai_risks",
 "t_incident"
 ],
-"ext-489": [
+"q-610": [
 "ch12",
 "d4",
 "kt229",
 "kt310",
 "t_incident"
 ],
-"ext-490": [
+"q-611": [
 "ch11",
 "d4",
 "kt16",
 "t_deployimpact"
 ],
-"ext-491": [
+"q-612": [
 "ch13",
 "d4",
 "kt201",
@@ -8060,7 +8060,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_modeltypes"
 ],
-"ext-492": [
+"q-613": [
 "ch12",
 "d4",
 "kt119",
@@ -8068,13 +8068,13 @@ const QUESTION_TAGS = {
 "kt310",
 "t_incident"
 ],
-"ext-493": [
+"q-614": [
 "ch12",
 "d4",
 "kt229",
 "t_incident"
 ],
-"ext-494": [
+"q-615": [
 "ch1",
 "ch12",
 "d4",
@@ -8083,7 +8083,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_rai"
 ],
-"ext-495": [
+"q-616": [
 "ch10",
 "ch12",
 "d4",
@@ -8095,7 +8095,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_readiness"
 ],
-"ext-496": [
+"q-617": [
 "ch13",
 "d4",
 "kt37",
@@ -8103,13 +8103,13 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_deployfactors"
 ],
-"ext-497": [
+"q-618": [
 "ch13",
 "d4",
 "kt263",
 "t_modeltypes"
 ],
-"ext-498": [
+"q-619": [
 "ch12",
 "ch3",
 "d4",
@@ -8119,7 +8119,7 @@ const QUESTION_TAGS = {
 "t_audit",
 "t_oversight"
 ],
-"ext-499": [
+"q-620": [
 "ch12",
 "ch3",
 "d4",
@@ -8128,7 +8128,7 @@ const QUESTION_TAGS = {
 "t_incident",
 "t_thirdparty"
 ],
-"ext-500": [
+"q-621": [
 "ch1",
 "ch12",
 "d4",
