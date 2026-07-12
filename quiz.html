@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIGP Exam Quiz</title>
+<style>
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d27;
+  --border: #2a2d3a;
+  --text: #e1e4ed;
+  --text-muted: #8b8fa3;
+  --accent: #6c8cff;
+  --correct: #2ecc71;
+  --incorrect: #e74c3c;
+  --warning: #f39c12;
+  --radius: 8px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+.container { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+/* Header */
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+.header h1 { font-size: 1.5rem; font-weight: 600; color: var(--accent); }
+.header p { color: var(--text-muted); font-size: 0.9rem; margin-top: 4px; }
+
+/* Stats bar */
+.stats {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+}
+.stat { display: flex; align-items: center; gap: 6px; }
+.stat-value { font-weight: 700; font-size: 1.1rem; }
+.stat-label { color: var(--text-muted); }
+.stat-correct .stat-value { color: var(--correct); }
+.stat-incorrect .stat-value { color: var(--incorrect); }
+.progress-bar {
+  flex: 1;
+  min-width: 120px;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+select, button {
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+select:hover, button:hover { border-color: var(--accent); }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+button.primary:hover { opacity: 0.9; }
+button.small { padding: 4px 10px; font-size: 0.8rem; }
+
+/* Question card */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 16px;
+}
+.question-meta {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+.question-meta span {
+  padding: 2px 8px;
+  background: rgba(108, 140, 255, 0.1);
+  border-radius: 4px;
+}
+.difficulty-easy { color: var(--correct); }
+.difficulty-medium { color: var(--warning); }
+.difficulty-hard { color: var(--incorrect); }
+.question-text {
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+/* Options */
+.options { display: flex; flex-direction: column; gap: 8px; }
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.option:hover { border-color: var(--accent); background: rgba(108, 140, 255, 0.05); }
+.option.selected { border-color: var(--accent); background: rgba(108, 140, 255, 0.1); }
+.option.correct { border-color: var(--correct); background: rgba(46, 204, 113, 0.1); }
+.option.incorrect { border-color: var(--incorrect); background: rgba(231, 76, 60, 0.1); }
+.option.dimmed { opacity: 0.5; }
+.option-letter {
+  width: 28px; height: 28px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+.option.correct .option-letter { border-color: var(--correct); color: var(--correct); }
+.option.incorrect .option-letter { border-color: var(--incorrect); color: var(--incorrect); }
+.option-text { padding-top: 3px; }
+
+/* Explanation */
+.explanation {
+  margin-top: 16px;
+  padding: 14px 16px;
+  background: rgba(108, 140, 255, 0.05);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  display: none;
+}
+.explanation.visible { display: block; }
+.explanation strong { color: var(--text); }
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 8px;
+}
+.nav-buttons { display: flex; gap: 8px; }
+.question-counter { color: var(--text-muted); font-size: 0.85rem; }
+
+/* Empty state */
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+}
+.empty h2 { font-size: 1.2rem; margin-bottom: 8px; color: var(--text); }
+.empty p { margin-bottom: 20px; }
+
+/* Filter tags */
+.filter-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+.filter-tag {
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  color: var(--text-muted);
+}
+.filter-tag:hover { border-color: var(--accent); color: var(--text); }
+.filter-tag.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* Keyboard hint */
+.kbd-hint {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  margin-top: 12px;
+}
+.kbd {
+  padding: 1px 6px;
+  background: var(--border);
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 0.8rem;
+}
+
+/* Reset button */
+.reset-area { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--border); text-align: center; }
+.reset-btn { color: var(--incorrect); border-color: rgba(231, 76, 60, 0.3); }
+.reset-btn:hover { border-color: var(--incorrect); }
+
+@media (max-width: 600px) {
+  .container { padding: 12px; }
+  .card { padding: 16px; }
+  .stats { gap: 10px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <h1>AIGP Exam Practice</h1>
+  <p>621 questions across all 4 domains — your progress saves automatically</p>
+</div>
+
+<div class="stats">
+  <div class="stat stat-correct"><span class="stat-value" id="correct-count">0</span><span class="stat-label">Correct</span></div>
+  <div class="stat stat-incorrect"><span class="stat-value" id="incorrect-count">0</span><span class="stat-label">Wrong</span></div>
+  <div class="stat"><span class="stat-value" id="answered-count">0</span><span class="stat-label">Answered</span></div>
+  <div class="stat"><span class="stat-value" id="total-count">621</span><span class="stat-label">Total</span></div>
+  <div class="stat"><span class="stat-value" id="pct">0%</span><span class="stat-label">Score</span></div>
+  <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+</div>
+
+<div class="controls">
+  <select id="domain-filter" onchange="onFilterChange()">
+    <option value="all">All Domains</option>
+    <option value="Domain I">Domain I: Foundations</option>
+    <option value="Domain II">Domain II: Laws & Standards</option>
+    <option value="Domain III">Domain III: AI Development</option>
+    <option value="Domain IV">Domain IV: Deployment & Use</option>
+  </select>
+  <select id="status-filter" onchange="onFilterChange()">
+    <option value="all">All Questions</option>
+    <option value="unanswered">Unanswered</option>
+    <option value="correct">Correct Only</option>
+    <option value="incorrect">Incorrect Only</option>
+  </select>
+  <select id="difficulty-filter" onchange="onFilterChange()">
+    <option value="all">All Difficulties</option>
+    <option value="Easy">Easy</option>
+    <option value="Medium">Medium</option>
+    <option value="Hard">Hard</option>
+  </select>
+  <button class="primary" onclick="pickRandom()">Random</button>
+  <button onclick="resetFilters()">Reset</button>
+</div>
+
+<div id="question-area">
+  <div class="empty">
+    <h2>Select a domain or click Random to begin</h2>
+    <p>Use keyboard: <span class="kbd">A</span>-<span class="kbd">D</span> to answer, <span class="kbd">→</span> for next, <span class="kbd">R</span> for random</p>
+  </div>
+</div>
+
+<div class="reset-area">
+  <button class="reset-btn" onclick="resetProgress()">Reset All Progress</button>
+</div>
+
+</div>
+
+<script src="quiz-data.js"></script>
+<script>
+// ── State ──
+let currentIndex = -1;
+let filteredQuestions = [];
+let selectedAnswer = null;
+let answered = false;
+
+// ── Storage ──
+const STORAGE_KEY = 'aigp-quiz-progress';
+function loadProgress() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+  catch(e) { return {}; }
+}
+function saveProgress(progress) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+}
+let progress = loadProgress();
+
+// ── Filtering ──
+function applyFilters() {
+  const domain = document.getElementById('domain-filter').value;
+  const status = document.getElementById('status-filter').value;
+  const difficulty = document.getElementById('difficulty-filter').value;
+
+  filteredQuestions = ALL_QUESTIONS.filter(q => {
+    if (domain !== 'all' && q.domain !== domain) return false;
+    if (difficulty !== 'all' && q.difficulty !== difficulty) return false;
+    if (status !== 'all') {
+      const p = progress[q.id];
+      if (status === 'unanswered' && p !== undefined) return false;
+      if (status === 'correct' && (!p || !p.correct)) return false;
+      if (status === 'incorrect' && (!p || p.correct)) return false;
+    }
+    return true;
+  });
+
+  document.getElementById('total-count').textContent = filteredQuestions.length;
+}
+
+// ── Stats ──
+function updateStats() {
+  applyFilters();
+  const allProgress = loadProgress();
+  let correct = 0, incorrect = 0, answered = 0;
+  for (const key in allProgress) {
+    answered++;
+    if (allProgress[key].correct) correct++;
+    else incorrect++;
+  }
+  document.getElementById('correct-count').textContent = correct;
+  document.getElementById('incorrect-count').textContent = incorrect;
+  document.getElementById('answered-count').textContent = answered;
+  const total = ALL_QUESTIONS.length;
+  const pct = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+  document.getElementById('pct').textContent = pct + '%';
+  document.getElementById('progress-fill').style.width = (answered / total * 100) + '%';
+}
+
+// ── Display question ──
+function showQuestion(index) {
+  if (filteredQuestions.length === 0) {
+    document.getElementById('question-area').innerHTML = `
+      <div class="empty">
+        <h2>No questions match this filter</h2>
+        <p>Try changing the domain or status filter.</p>
+      </div>`;
+    return;
+  }
+
+  if (index < 0) index = 0;
+  if (index >= filteredQuestions.length) index = filteredQuestions.length - 1;
+  currentIndex = index;
+  const q = filteredQuestions[index];
+  selectedAnswer = null;
+  answered = false;
+
+  const qProgress = progress[q.id];
+  const wasAnswered = qProgress !== undefined && qProgress.answer;
+
+  let metaHtml = '';
+  if (q.domain) metaHtml += `<span>${q.domain}</span>`;
+  if (q.difficulty) {
+    const cls = 'difficulty-' + q.difficulty.toLowerCase();
+    metaHtml += `<span class="${cls}">${q.difficulty}</span>`;
+  }
+  metaHtml += `<span>#${index + 1} of ${filteredQuestions.length}</span>`;
+
+  let optionsHtml = q.options.map((opt, i) => {
+    let cls = 'option';
+    const letter = opt.letter;
+    
+    if (wasAnswered) {
+      if (letter === q.answer) cls += ' correct';
+      else if (letter === qProgress.answer) cls += ' incorrect';
+      else cls += ' dimmed';
+    } else if (selectedAnswer === letter) {
+      cls += ' selected';
+    }
+
+    return `<div class="${cls}" data-letter="${letter}" onclick="selectAnswer('${letter}')">
+      <div class="option-letter">${letter}</div>
+      <div class="option-text">${opt.text}</div>
+    </div>`;
+  }).join('');
+
+  let explanationHtml = '';
+  if (wasAnswered || answered) {
+    const expl = q.explanation || '';
+    const isCorrect = wasAnswered ? qProgress.correct : (selectedAnswer === q.answer);
+    const resultIcon = isCorrect ? '✓' : '✗';
+    const resultText = isCorrect ? 'Correct' : 'Incorrect';
+    const resultColor = isCorrect ? 'var(--correct)' : 'var(--incorrect)';
+    explanationHtml = `
+      <div class="explanation visible">
+        <strong style="color:${resultColor}">${resultIcon} ${resultText}</strong>
+        ${expl ? '<br><br>' + expl : ''}
+      </div>`;
+  }
+
+  document.getElementById('question-area').innerHTML = `
+    <div class="card">
+      <div class="question-meta">${metaHtml}</div>
+      <div class="question-text">${q.question}</div>
+      <div class="options">${optionsHtml}</div>
+      ${explanationHtml}
+    </div>
+    <div class="nav">
+      <div class="nav-buttons">
+        <button onclick="prevQuestion()" ${index === 0 ? 'disabled' : ''}>← Previous</button>
+        <button onclick="nextQuestion()">Next →</button>
+      </div>
+      <div class="nav-buttons">
+        <button class="primary" onclick="pickRandom()">🎲 Random</button>
+      </div>
+    </div>
+    <div class="kbd-hint">
+      Keys: <span class="kbd">A</span><span class="kbd">B</span><span class="kbd">C</span><span class="kbd">D</span> to answer · <span class="kbd">→</span> next · <span class="kbd">←</span> prev · <span class="kbd">R</span> random
+    </div>`;
+}
+
+// ── Actions ──
+function selectAnswer(letter) {
+  if (answered) return;
+  const q = filteredQuestions[currentIndex];
+  selectedAnswer = letter;
+  answered = true;
+
+  const isCorrect = letter === q.answer;
+  progress[q.id] = {
+    answer: letter,
+    correct: isCorrect,
+    timestamp: Date.now()
+  };
+  saveProgress(progress);
+  updateStats();
+  showQuestion(currentIndex);
+}
+
+function nextQuestion() {
+  if (currentIndex < filteredQuestions.length - 1) {
+    showQuestion(currentIndex + 1);
+    window.scrollTo(0, 0);
+  }
+}
+
+function prevQuestion() {
+  if (currentIndex > 0) {
+    showQuestion(currentIndex - 1);
+    window.scrollTo(0, 0);
+  }
+}
+
+function pickRandom() {
+  if (filteredQuestions.length === 0) {
+    applyFilters();
+    if (filteredQuestions.length === 0) return;
+  }
+  const idx = Math.floor(Math.random() * filteredQuestions.length);
+  showQuestion(idx);
+  window.scrollTo(0, 0);
+}
+
+function resetFilters() {
+  document.getElementById('domain-filter').value = 'all';
+  document.getElementById('status-filter').value = 'all';
+  document.getElementById('difficulty-filter').value = 'all';
+  applyFilters();
+  updateStats();
+  pickRandom();
+}
+
+function onFilterChange() {
+  applyFilters();
+  updateStats();
+  currentIndex = 0;
+  if (filteredQuestions.length > 0) {
+    showQuestion(0);
+    window.scrollTo(0, 0);
+  } else {
+    document.getElementById('question-area').innerHTML = `
+      <div class="empty">
+        <h2>No questions match this filter</h2>
+        <p>Try changing the domain or status.</p>
+      </div>`;
+  }
+}
+
+function resetProgress() {
+  if (confirm('Delete all progress? This cannot be undone.')) {
+    localStorage.removeItem(STORAGE_KEY);
+    progress = {};
+    currentIndex = -1;
+    selectedAnswer = null;
+    answered = false;
+    updateStats();
+    document.getElementById('question-area').innerHTML = `
+      <div class="empty">
+        <h2>Progress cleared</h2>
+        <p>Click Random to start fresh.</p>
+      </div>`;
+  }
+}
+
+// ── Keyboard ──
+document.addEventListener('keydown', (e) => {
+  if (e.target.tagName === 'SELECT' || e.target.tagName === 'INPUT') return;
+  
+  const key = e.key.toUpperCase();
+  
+  if (['A','B','C','D'].includes(key) && !answered && filteredQuestions.length > 0) {
+    const q = filteredQuestions[currentIndex];
+    // Only select if the option exists
+    if (q.options.some(o => o.letter === key)) {
+      selectAnswer(key);
+    }
+  }
+  
+  if (key === 'ARROWRIGHT') { e.preventDefault(); nextQuestion(); }
+  if (key === 'ARROWLEFT') { e.preventDefault(); prevQuestion(); }
+  if (key === 'R') { e.preventDefault(); pickRandom(); }
+  if (key === 'ENTER' && answered) { e.preventDefault(); nextQuestion(); }
+});
+
+// ── Init ──
+applyFilters();
+updateStats();
+pickRandom();
+</script>
+</body>
+</html>

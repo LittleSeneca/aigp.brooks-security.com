@@ -1,0 +1,761 @@
+{
+ "nodes": [
+  {
+   "id": "3be83587d427",
+   "type": "text",
+   "text": "## 🎯 AIGP Certification\n\nAI Governance Professional\n\n**IAPP | 4 Domains | 100 Questions**\n3 Hours | 300/500 Passing",
+   "x": -100,
+   "y": 0,
+   "width": 360,
+   "height": 200,
+   "color": "1",
+   "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/AIGP Study Index.md"
+  },
+  {
+   "id": "cd5890fbcb10",
+   "type": "text",
+   "text": "## 📋 BOK Blueprint\n\nv2.0.1 (Feb 2025)\n4 Domains\nCompetencies + PIs\nQuestion counts",
+   "x": -100,
+   "y": -400,
+   "width": 300,
+   "height": 190,
+   "color": "5",
+   "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/AIGP Body of Knowledge — Exam Blueprint.md"
+  },
+  {
+   "id": "ba01460ca797",
+   "type": "text",
+   "text": "## 📋 Official FSG\n\nIAPP Study Guide\nExam format\n3 sample questions\n30hr study recommendation",
+   "x": -100,
+   "y": -650,
+   "width": 300,
+   "height": 190,
+   "color": "5",
+   "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/AIGP FSG — Official Study Guide.md"
+  },
+  {
+   "id": "95a20a03b215",
+   "type": "text",
+   "text": "## 📝 120 Review Qs\n\n chapters\nAnswers + explanations\nAppendix A",
+   "x": -480,
+   "y": -400,
+   "width": 280,
+   "height": 170,
+   "color": "5",
+   "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/Exam Questions/AIGP Exam Questions.md"
+  },
+  {
+   "id": "3c3979cb586c",
+   "type": "text",
+   "text": "## 📝 500 External Qs\n\nEasy/Medium/Hard\n4 domains\nAnswers + explanations",
+   "x": -480,
+   "y": -200,
+   "width": 280,
+   "height": 170,
+   "color": "5",
+   "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/Exam Questions/AIGP Practice Questions — 500 External.md"
+  },
+  {
+   "id": "8e3686fca09f",
+   "type": "text",
+   "text": "## Domain I\n### Foundations of\n### AI Governance\n\n16-20 questions",
+   "x": -700,
+   "y": 200,
+   "width": 280,
+   "height": 190,
+   "color": "2",
+   "file": "Foundations/Foundations Index.md"
+  },
+  {
+   "id": "16adb09c7e4e",
+   "type": "text",
+   "text": "### AI and AI Governance\nAI & AI Governance\n\nAI types, risks\nResponsible AI principles",
+   "x": -1100,
+   "y": 50,
+   "width": 260,
+   "height": 180,
+   "color": "3",
+   "file": "Foundations/AI and AI Governance.md"
+  },
+  {
+   "id": "61f5d439c4a3",
+   "type": "text",
+   "text": "### Organizational Readiness\nOrg Readiness\n\nRoles, collaboration\nTraining, context",
+   "x": -1100,
+   "y": 260,
+   "width": 260,
+   "height": 180,
+   "color": "3",
+   "file": "Foundations/Organizational Readiness.md"
+  },
+  {
+   "id": "4e9c2fa23eb0",
+   "type": "text",
+   "text": "### Updating Policies for AI\nUpdating Policies\n\nOversight, privacy\nThird-party risk",
+   "x": -1100,
+   "y": 470,
+   "width": 260,
+   "height": 180,
+   "color": "3",
+   "file": "Foundations/Updating Policies for AI.md"
+  },
+  {
+   "id": "7829424fcfaa",
+   "type": "text",
+   "text": "## Domain II\n### Laws, Standards\n### & Frameworks\n\n19-23 questions",
+   "x": -700,
+   "y": 600,
+   "width": 280,
+   "height": 190,
+   "color": "2",
+   "file": "Legal and Regulatory/Legal and Regulatory Index.md"
+  },
+  {
+   "id": "61c73c639f52",
+   "type": "text",
+   "text": "### Privacy and Data Protection Law\nPrivacy & Data Protection\n\nNotice, consent, DPIA\nController obligations",
+   "x": -1200,
+   "y": 550,
+   "width": 260,
+   "height": 180,
+   "color": "3",
+   "file": "Legal and Regulatory/Privacy and Data Protection Law.md"
+  },
+  {
+   "id": "6a18ea790930",
+   "type": "text",
+   "text": "### Sectoral and Civil Laws\nSectoral & Civil Laws\n\nIP, non-discrimination\nConsumer, product liability",
+   "x": -1200,
+   "y": 760,
+   "width": 260,
+   "height": 180,
+   "color": "3",
+   "file": "Legal and Regulatory/Sectoral and Civil Laws.md"
+  },
+  {
+   "id": "5d5019fb832c",
+   "type": "text",
+   "text": "### The EU AI Act\nThe EU AI Act\n\nRisk tiers, GPAI\nEnforcement, penalties",
+   "x": -1200,
+   "y": 970,
+   "width": 260,
+   "height": 180,
+   "color": "3",
+   "file": "Legal and Regulatory/The EU AI Act.md"
+  },
+  {
+   "id": "71300f939a5d",
+   "type": "text",
+   "text": "### AI Standards and Frameworks\nStandards & Frameworks\n\nOECD, NIST RMF\nISO 42001, 22989",
+   "x": -1200,
+   "y": 1180,
+   "width": 260,
+   "height": 180,
+   "color": "3",
+   "file": "Legal and Regulatory/AI Standards and Frameworks.md"
+  },
+  {
+   "id": "6fac380f4121",
+   "type": "text",
+   "text": "## Domain III\n### Governing AI\n### Development\n\n21-25 questions",
+   "x": 600,
+   "y": 200,
+   "width": 280,
+   "height": 190,
+   "color": "2",
+   "file": "AI Lifecycle/AI Lifecycle Index.md"
+  },
+  {
+   "id": "8cfa77a7d971",
+   "type": "text",
+   "text": "### AI System Design\nAI System Design\n\nLifecycle, impact assessment\nDesign risks",
+   "x": 1000,
+   "y": 50,
+   "width": 260,
+   "height": 180,
+   "color": "3",
+   "file": "AI Lifecycle/AI System Design.md"
+  },
+  {
+   "id": "979485db7b2c",
+   "type": "text",
+   "text": "### Data Governance and Model Training\nData & Model Training\n\nData governance, lineage\nTesting methodologies",
+   "x": 1000,
+   "y": 260,
+   "width": 260,
+   "height": 180,
+   "color": "3",
+   "file": "AI Lifecycle/Data Governance and Model Training.md"
+  },
+  {
+   "id": "727cc314d9b9",
+   "type": "text",
+   "text": "### Deployment and Monitoring\nDeployment & Monitoring\n\nPre-release, deployment\nContinuous monitoring",
+   "x": 1000,
+   "y": 470,
+   "width": 260,
+   "height": 180,
+   "color": "3",
+   "file": "AI Lifecycle/Deployment and Monitoring.md"
+  },
+  {
+   "id": "87be759732ea",
+   "type": "text",
+   "text": "### AI Risk Management and Assurance\nRisk & Assurance\n\nRisk forecasting, audits\nIncident management",
+   "x": 1000,
+   "y": 680,
+   "width": 260,
+   "height": 180,
+   "color": "3",
+   "file": "AI Lifecycle/AI Risk Management and Assurance.md"
+  },
+  {
+   "id": "07e82dba5d49",
+   "type": "text",
+   "text": "## Domain IV\n### Governing AI\n### Deployment & Use\n\n21-25 questions",
+   "x": 600,
+   "y": 600,
+   "width": 280,
+   "height": 190,
+   "color": "2",
+   "file": "AI Lifecycle/AI Lifecycle Index.md"
+  },
+  {
+   "id": "20582a1a3731",
+   "type": "text",
+   "text": "### Ongoing AI Operations\nOngoing Operations\n\nRecords, communications\nSystem retirement",
+   "x": 1000,
+   "y": 880,
+   "width": 260,
+   "height": 180,
+   "color": "3",
+   "file": "AI Lifecycle/Ongoing AI Operations.md"
+  },
+  {
+   "id": "c35e3b0000f2",
+   "type": "text",
+   "text": "## ⚖️ EU AI Act 2024\n\n4 risk tiers\nHigh-risk obligations\nGPAI requirements\n€35M / 7% penalties\nImplementation timeline",
+   "x": -1700,
+   "y": 600,
+   "width": 300,
+   "height": 220,
+   "color": "4",
+   "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/EU AI Act 2024 — Key Provisions.md"
+  },
+  {
+   "id": "ca87aa0f4e08",
+   "type": "text",
+   "text": "## ⚖️ GDPR\n\nArt 22: Automated decisions\nArt 9: Special categories\nArt 35: DPIAs\nArt 5: Principles",
+   "x": -1700,
+   "y": 900,
+   "width": 280,
+   "height": 200,
+   "color": "4",
+   "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/GDPR — AI-Relevant Provisions.md"
+  },
+  {
+   "id": "34886fbdc0fa",
+   "type": "text",
+   "text": "## 🔬 NIST AI RMF\n\nGOVERN → MAP\n→ MEASURE → MANAGE\nTrustworthiness chars\nPlaybook companion",
+   "x": 1500,
+   "y": 200,
+   "width": 280,
+   "height": 220,
+   "color": "4",
+   "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/NIST AI RMF — Structured Reference.md"
+  },
+  {
+   "id": "8b13a868cddb",
+   "type": "text",
+   "text": "## 🔬 NIST ARIA\n\nModel Testing\nRed Teaming\nField Testing\nMetrics & measurement",
+   "x": 1500,
+   "y": 470,
+   "width": 260,
+   "height": 190,
+   "color": "4",
+   "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/NIST ARIA — Structured Reference.md"
+  },
+  {
+   "id": "52d3181b0c3d",
+   "type": "text",
+   "text": "## 🔬 NIST AI 600-1\n\nRMF profiles\nGap analysis\nOrg implementation",
+   "x": 1500,
+   "y": 710,
+   "width": 260,
+   "height": 170,
+   "color": "4",
+   "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/NIST AI 600-1 — Structured Reference.md"
+  },
+  {
+   "id": "9b9795e3ed2e",
+   "type": "text",
+   "text": "## 🔬 OECD Principles\n\n5 principles\nInclusive growth\nFairness, transparency\nRobustness, accountability",
+   "x": 1500,
+   "y": 930,
+   "width": 270,
+   "height": 200,
+   "color": "4",
+   "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/OECD AI Principles — Structured Reference.md"
+  },
+  {
+   "id": "b53f035fdf09",
+   "type": "text",
+   "text": "## 🏭 ISO 42001\n\nAI Management System\nAnnex SL structure\nPDCA cycle\nCertifiable (like 27001)",
+   "x": 1850,
+   "y": 1200,
+   "width": 280,
+   "height": 200,
+   "color": "6",
+   "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/ISO 42001 — Structured Reference.md"
+  },
+  {
+   "id": "94a452ccd95f",
+   "type": "text",
+   "text": "## 📖 ISO 22989\n\nAI terminology\nKey definitions\nAI system, ML, bias\nRobustness, explainability",
+   "x": 1850,
+   "y": 1450,
+   "width": 260,
+   "height": 190,
+   "color": "6",
+   "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/ISO 22989 — Key Definitions.md"
+  },
+  {
+   "id": "8a66f378bde7",
+   "type": "text",
+   "text": "## 🔬 ISO 23894\n\nAI Risk Management\nRisk process\nIntegration with 42001\nvs NIST RMF",
+   "x": 1850,
+   "y": 1690,
+   "width": 260,
+   "height": 180,
+   "color": "6",
+   "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/ISO 23894 — AI Risk Management.md"
+  },
+  {
+   "id": "823ad0604be5",
+   "type": "text",
+   "text": "## 🤖 GPAI Code\n\nSystemic risk thresholds\nTransparency obligations\nModel evaluation\nIncident reporting",
+   "x": 1500,
+   "y": 1180,
+   "width": 270,
+   "height": 200,
+   "color": "4",
+   "file": "/Users/littleseneca/Projects/Personal/obsidian/AIGP Study/GPAI Code of Practice — Key Provisions.md"
+  },
+  {
+   "id": "0a1d424aac98",
+   "type": "text",
+   "text": "**AI Lifecycle**\n\nDesign → Data/Train\n→ Deploy → Monitor\n→ Retire\n\nGovernance gates\nat every stage",
+   "x": -50,
+   "y": -900,
+   "width": 260,
+   "height": 200,
+   "color": "2"
+  },
+  {
+   "id": "273e4b860abb",
+   "type": "text",
+   "text": "**EU AI Act Risk Tiers**\n\n🔴 Unacceptable: BANNED\n🟠 High: conformity assessment\n🟡 Limited: transparency\n🟢 Minimal: no regulation",
+   "x": -1700,
+   "y": 1200,
+   "width": 290,
+   "height": 200,
+   "color": "4"
+  },
+  {
+   "id": "62786ed88fa7",
+   "type": "text",
+   "text": "**Responsible AI**\n\nEthics → Fairness → Safety\nPrivacy → Security\nTransparency → Explainability\nAccountability → Human-centric",
+   "x": -1700,
+   "y": 50,
+   "width": 280,
+   "height": 220,
+   "color": "4"
+  }
+ ],
+ "edges": [
+  {
+   "id": "87cc975e4a6e",
+   "fromNode": "3be83587d427",
+   "toNode": "cd5890fbcb10",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "exam blueprint"
+  },
+  {
+   "id": "17e93831a8eb",
+   "fromNode": "cd5890fbcb10",
+   "toNode": "ba01460ca797",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "companion"
+  },
+  {
+   "id": "a62c68a2dd40",
+   "fromNode": "cd5890fbcb10",
+   "toNode": "95a20a03b215",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "chapter questions"
+  },
+  {
+   "id": "769e390402ee",
+   "fromNode": "cd5890fbcb10",
+   "toNode": "3c3979cb586c",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "practice bank"
+  },
+  {
+   "id": "333a3ada93ab",
+   "fromNode": "3be83587d427",
+   "toNode": "8e3686fca09f",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "Domain I"
+  },
+  {
+   "id": "733e59e6ba26",
+   "fromNode": "8e3686fca09f",
+   "toNode": "16adb09c7e4e",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "I.A"
+  },
+  {
+   "id": "f1a415cb571c",
+   "fromNode": "8e3686fca09f",
+   "toNode": "61f5d439c4a3",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "I.B"
+  },
+  {
+   "id": "07bb44e41956",
+   "fromNode": "8e3686fca09f",
+   "toNode": "4e9c2fa23eb0",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "I.C"
+  },
+  {
+   "id": "82acb25468f8",
+   "fromNode": "3be83587d427",
+   "toNode": "7829424fcfaa",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "Domain II"
+  },
+  {
+   "id": "9615cd09df50",
+   "fromNode": "7829424fcfaa",
+   "toNode": "61c73c639f52",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "II.A"
+  },
+  {
+   "id": "5ba333518ca3",
+   "fromNode": "7829424fcfaa",
+   "toNode": "6a18ea790930",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "II.B"
+  },
+  {
+   "id": "0f56c0a3f02e",
+   "fromNode": "7829424fcfaa",
+   "toNode": "5d5019fb832c",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "II.C"
+  },
+  {
+   "id": "1a20292f42c6",
+   "fromNode": "7829424fcfaa",
+   "toNode": "71300f939a5d",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "II.D"
+  },
+  {
+   "id": "b8aa76019adf",
+   "fromNode": "3be83587d427",
+   "toNode": "6fac380f4121",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "Domain III"
+  },
+  {
+   "id": "e6836222db1f",
+   "fromNode": "6fac380f4121",
+   "toNode": "8cfa77a7d971",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "III.A"
+  },
+  {
+   "id": "3d362330eaa1",
+   "fromNode": "6fac380f4121",
+   "toNode": "979485db7b2c",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "III.B"
+  },
+  {
+   "id": "739e1ec81239",
+   "fromNode": "6fac380f4121",
+   "toNode": "727cc314d9b9",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "III.C"
+  },
+  {
+   "id": "1743f0d9fd7f",
+   "fromNode": "6fac380f4121",
+   "toNode": "87be759732ea",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "III.C/IV.B"
+  },
+  {
+   "id": "6445814be62a",
+   "fromNode": "3be83587d427",
+   "toNode": "07e82dba5d49",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "Domain IV"
+  },
+  {
+   "id": "5b34951c3e81",
+   "fromNode": "07e82dba5d49",
+   "toNode": "20582a1a3731",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "IV.C"
+  },
+  {
+   "id": "405ebc05f445",
+   "fromNode": "5d5019fb832c",
+   "toNode": "c35e3b0000f2",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "primary source"
+  },
+  {
+   "id": "b75ac73d92e1",
+   "fromNode": "7829424fcfaa",
+   "toNode": "c35e3b0000f2",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "legislation"
+  },
+  {
+   "id": "aee5a19dd679",
+   "fromNode": "61c73c639f52",
+   "toNode": "ca87aa0f4e08",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "primary source"
+  },
+  {
+   "id": "14831ac81cf5",
+   "fromNode": "c35e3b0000f2",
+   "toNode": "ca87aa0f4e08",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "Art 22 ↔ AI Act"
+  },
+  {
+   "id": "4cd557998caa",
+   "fromNode": "71300f939a5d",
+   "toNode": "34886fbdc0fa",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "framework"
+  },
+  {
+   "id": "fa31d6ead202",
+   "fromNode": "7829424fcfaa",
+   "toNode": "34886fbdc0fa",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "standard"
+  },
+  {
+   "id": "44469804ef2f",
+   "fromNode": "34886fbdc0fa",
+   "toNode": "8b13a868cddb",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "evaluation companion"
+  },
+  {
+   "id": "f768e89a35cd",
+   "fromNode": "71300f939a5d",
+   "toNode": "8b13a868cddb",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "evaluation"
+  },
+  {
+   "id": "ddce255eb163",
+   "fromNode": "34886fbdc0fa",
+   "toNode": "52d3181b0c3d",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "implementation"
+  },
+  {
+   "id": "97b9e3843aeb",
+   "fromNode": "8b13a868cddb",
+   "toNode": "52d3181b0c3d",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "guidance"
+  },
+  {
+   "id": "39e254e73156",
+   "fromNode": "71300f939a5d",
+   "toNode": "9b9795e3ed2e",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "principles"
+  },
+  {
+   "id": "9c7762f75b02",
+   "fromNode": "34886fbdc0fa",
+   "toNode": "9b9795e3ed2e",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "aligned"
+  },
+  {
+   "id": "7a076f9fe08b",
+   "fromNode": "71300f939a5d",
+   "toNode": "b53f035fdf09",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "management system"
+  },
+  {
+   "id": "7e5f12cda46f",
+   "fromNode": "34886fbdc0fa",
+   "toNode": "b53f035fdf09",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "complementary"
+  },
+  {
+   "id": "1a412a46b78c",
+   "fromNode": "b53f035fdf09",
+   "toNode": "94a452ccd95f",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "definitions"
+  },
+  {
+   "id": "fd80b09e9c25",
+   "fromNode": "34886fbdc0fa",
+   "toNode": "94a452ccd95f",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "definitions"
+  },
+  {
+   "id": "af410f987131",
+   "fromNode": "b53f035fdf09",
+   "toNode": "8a66f378bde7",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "risk component"
+  },
+  {
+   "id": "68889eb208e6",
+   "fromNode": "34886fbdc0fa",
+   "toNode": "8a66f378bde7",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "risk management"
+  },
+  {
+   "id": "40f9f7694736",
+   "fromNode": "c35e3b0000f2",
+   "toNode": "823ad0604be5",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "GPAI provisions"
+  },
+  {
+   "id": "24154a1ba3d6",
+   "fromNode": "5d5019fb832c",
+   "toNode": "823ad0604be5",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "code of practice"
+  },
+  {
+   "id": "ebdfefa6069b",
+   "fromNode": "cd5890fbcb10",
+   "toNode": "0a1d424aac98",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "cross-cuts all domains"
+  },
+  {
+   "id": "0a4de906ce4c",
+   "fromNode": "c35e3b0000f2",
+   "toNode": "273e4b860abb",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "tiers"
+  },
+  {
+   "id": "6976c048caf3",
+   "fromNode": "16adb09c7e4e",
+   "toNode": "62786ed88fa7",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "principles"
+  },
+  {
+   "id": "e2bdff8a40e4",
+   "fromNode": "8e3686fca09f",
+   "toNode": "6fac380f4121",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "lifecycle foundation"
+  },
+  {
+   "id": "1540f63e8872",
+   "fromNode": "ca87aa0f4e08",
+   "toNode": "4e9c2fa23eb0",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "privacy policy updates"
+  },
+  {
+   "id": "fb0b7b817738",
+   "fromNode": "34886fbdc0fa",
+   "toNode": "87be759732ea",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "risk management"
+  },
+  {
+   "id": "1962fefdc070",
+   "fromNode": "34886fbdc0fa",
+   "toNode": "8cfa77a7d971",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "design governance"
+  },
+  {
+   "id": "43db533bf3a9",
+   "fromNode": "b53f035fdf09",
+   "toNode": "8e3686fca09f",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "management system"
+  }
+ ]
+}

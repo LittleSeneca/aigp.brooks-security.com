@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIGP Study — Quiz, Flashcards & Mind Map</title>
+<script src="d3.v7.min.js"></script>
+<script src="marked.min.js"></script>
+<style>
+:root {
+  --bg: #0f1117; --surface: #1a1d27; --border: #2a2d3a;
+  --text: #e1e4ed; --text-muted: #8b8fa3; --accent: #6c8cff;
+  --correct: #2ecc71; --incorrect: #e74c3c; --warning: #f39c12;
+  --radius: 8px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh; overflow: hidden; }
+.container { display: flex; height: 100vh; }
+.main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+
+.header { padding: 10px 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; background: var(--bg); z-index: 10; }
+.header h1 { font-size: 1.2rem; font-weight: 600; color: var(--accent); }
+.tabs { display: flex; gap: 4px; }
+.tab { padding: 6px 16px; border: 1px solid var(--border); border-radius: var(--radius); cursor: pointer; font-size: 0.82rem; background: var(--surface); color: var(--text-muted); transition: all 0.15s; }
+.tab:hover { border-color: var(--accent); color: var(--text); }
+.tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.tab-content { flex: 1; overflow: hidden; position: relative; }
+.tab-panel { position: absolute; inset: 0; overflow: hidden; display: flex; flex-direction: column; }
+.tab-panel.hidden { display: none; }
+
+/* Quiz */
+.quiz-scroll { flex: 1; overflow-y: auto; padding: 16px 20px; }
+.stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; padding: 8px 12px; background: var(--surface); border-radius: var(--radius); font-size: 0.8rem; align-items: center; }
+.stat { display: flex; align-items: center; gap: 4px; }
+.stat-value { font-weight: 700; font-size: 0.95rem; }
+.stat-label { color: var(--text-muted); }
+.stat-correct .stat-value { color: var(--correct); }
+.stat-incorrect .stat-value { color: var(--incorrect); }
+.progress-bar { flex: 1; min-width: 80px; height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--accent); border-radius: 2px; }
+.controls { display: flex; gap: 5px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+select, button { padding: 5px 10px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text); font-size: 0.8rem; cursor: pointer; }
+select:hover, button:hover { border-color: var(--accent); }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; margin-bottom: 12px; }
+.q-meta { display: flex; gap: 8px; margin-bottom: 8px; font-size: 0.75rem; color: var(--text-muted); flex-wrap: wrap; }
+.q-meta span { padding: 2px 7px; background: rgba(108,140,255,0.1); border-radius: 3px; }
+.diff-easy { color: var(--correct); } .diff-medium { color: var(--warning); } .diff-hard { color: var(--incorrect); }
+.q-text { font-size: 0.98rem; margin-bottom: 14px; line-height: 1.65; }
+.options { display: flex; flex-direction: column; gap: 5px; }
+.option { display: flex; align-items: flex-start; gap: 10px; padding: 9px 12px; border: 1px solid var(--border); border-radius: var(--radius); cursor: pointer; transition: all 0.1s; font-size: 0.9rem; }
+.option:hover { border-color: var(--accent); background: rgba(108,140,255,0.04); }
+.option.correct { border-color: var(--correct); background: rgba(46,204,113,0.08); }
+.option.incorrect { border-color: var(--incorrect); background: rgba(231,76,60,0.08); }
+.option.dimmed { opacity: 0.4; }
+.option-letter { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 2px solid var(--border); font-weight: 700; font-size: 0.75rem; flex-shrink: 0; }
+.option.correct .option-letter { border-color: var(--correct); color: var(--correct); }
+.option.incorrect .option-letter { border-color: var(--incorrect); color: var(--incorrect); }
+.option-text { padding-top: 1px; }
+.explanation { margin-top: 12px; padding: 10px 12px; background: rgba(108,140,255,0.04); border-left: 3px solid var(--accent); border-radius: 0 var(--radius) var(--radius) 0; font-size: 0.85rem; color: var(--text-muted); display: none; }
+.explanation.visible { display: block; }
+.nav-row { display: flex; justify-content: space-between; align-items: center; margin-top: 14px; gap: 8px; }
+.kbd-hint { text-align: center; color: var(--text-muted); font-size: 0.7rem; margin-top: 8px; }
+.kbd { padding: 1px 5px; background: var(--border); border-radius: 3px; font-family: monospace; }
+.empty { text-align: center; padding: 60px 20px; color: var(--text-muted); }
+
+/* Flashcard */
+.fc-wrap { width: 100%; margin: 0 auto; padding: 16px 24px; }
+.flashcard-wrap { perspective: 1000px; margin: 16px auto; }
+.flashcard { position: relative; width: 100%; height: 320px; cursor: pointer; }
+.flashcard-inner { position: relative; width: 100%; height: 100%; transition: transform 0.5s; transform-style: preserve-3d; }
+.flashcard-inner.flipped { transform: rotateY(180deg); }
+.flashcard-front, .flashcard-back { position: absolute; inset: 0; backface-visibility: hidden; border-radius: var(--radius); border: 1px solid var(--border); background: var(--surface); display: flex; flex-direction: column; align-items: center; padding: 24px; text-align: center; overflow-y: auto; transition: border-color 0.15s, box-shadow 0.15s; }
+.flashcard.rate-yes .flashcard-front, .flashcard.rate-yes .flashcard-back { border-color: var(--correct); box-shadow: 0 0 28px rgba(46,204,113,0.35); }
+.flashcard.rate-no .flashcard-front, .flashcard.rate-no .flashcard-back { border-color: var(--incorrect); box-shadow: 0 0 28px rgba(231,76,60,0.35); }
+/* margin-auto centering: centers short content, scrolls long content without clipping the top */
+.flashcard-front > :first-child, .flashcard-back > :first-child { margin-top: auto; }
+.flashcard-front > :last-child, .flashcard-back > :last-child { margin-bottom: auto; }
+.flashcard-back { transform: rotateY(180deg); }
+.flashcard-front h2 { font-size: 1.2rem; font-weight: 600; color: var(--accent); margin-bottom: 6px; }
+.flashcard-front .term-hint { font-size: 0.78rem; color: var(--text-muted); }
+.flashcard-back p { font-size: 0.95rem; line-height: 1.7; color: var(--text); }
+.card-nav { display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 12px; }
+.card-counter { color: var(--text-muted); font-size: 0.82rem; min-width: 70px; text-align: center; }
+.mode-toggle { display: flex; gap: 5px; justify-content: center; margin-bottom: 8px; }
+.fcard-search { width: 100%; padding: 7px 10px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text); font-size: 0.82rem; margin-bottom: 10px; }
+.fcard-search:focus { outline: none; border-color: var(--accent); }
+
+/* Mind Map */
+#mindmap-graph { position: absolute; inset: 0; background: var(--bg); cursor: grab; }
+#mindmap-graph:active { cursor: grabbing; }
+#mindmap-graph svg { width: 100%; height: 100%; display: block; }
+.mm-node circle { stroke-width: 1.5; cursor: pointer; transition: opacity 0.2s; }
+.mm-node text { font-size: 9.5px; pointer-events: none; user-select: none; fill: #b9bdcc; transition: opacity 0.2s; paint-order: stroke; stroke: #0f1117; stroke-width: 3px; }
+.mm-node text.node-label { font-size: 11.5px; font-weight: 600; fill: #e1e4ed; }
+.mm-node text.term-label { font-size: 7px; fill: #7d8195; stroke-width: 2.5px; }
+.mm-link { fill: none; stroke: #5a5d6a; stroke-width: 1.3; stroke-opacity: 0.7; transition: stroke-opacity 0.2s; }
+.chip { background: rgba(108,140,255,0.15); border-color: var(--accent); color: var(--accent); border-radius: 20px; }
+.chip.hidden { display: none; }
+.mm-grad { height: 8px; border-radius: 4px; background: linear-gradient(90deg, #e74c3c, #f39c12, #2ecc71); margin: 4px 0 2px; }
+.mm-grad-labels { display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.68rem; margin-bottom: 6px; }
+
+/* Mind map sidebar */
+.mm-sidebar { position: absolute; top: 12px; right: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; font-size: 0.76rem; z-index: 10; width: 175px; max-height: calc(100vh - 100px); overflow-y: auto; pointer-events: all; }
+.mm-sidebar h3 { font-size: 0.8rem; margin-bottom: 6px; color: var(--accent); }
+.mm-sidebar .legend-item { display: flex; align-items: center; gap: 5px; margin-bottom: 5px; }
+.mm-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+.mm-btn { padding: 4px 8px; font-size: 0.73rem; margin-top: 6px; width: 100%; }
+.mm-search { width: 100%; padding: 5px 8px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text); font-size: 0.75rem; margin-bottom: 6px; }
+.mm-search:focus { outline: none; border-color: var(--accent); }
+/* Node detail drawer */
+.mm-drawer { position: absolute; top: 0; right: 0; bottom: 0; width: min(600px, 92%); background: var(--surface); border-left: 1px solid var(--border); transform: translateX(102%); transition: transform 0.25s ease; z-index: 20; display: flex; flex-direction: column; box-shadow: -12px 0 32px rgba(0,0,0,0.45); }
+.mm-drawer.open { transform: none; }
+.mm-drawer-head { padding: 14px 18px 10px; border-bottom: 1px solid var(--border); flex-shrink: 0; }
+.mm-drawer-head h2 { font-size: 1.05rem; color: var(--accent); display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.mm-drawer-close { background: none; border: none; color: var(--text-muted); font-size: 1.1rem; cursor: pointer; padding: 2px 8px; }
+.mm-drawer-close:hover { color: var(--text); }
+.mm-drawer-stats { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; font-size: 0.74rem; }
+.mm-drawer-stats span { padding: 2px 9px; background: rgba(108,140,255,0.1); border-radius: 12px; color: var(--text-muted); }
+.mm-drawer-stats b { color: var(--text); }
+.mm-drawer-actions { display: flex; gap: 6px; margin-top: 10px; }
+.mm-drawer-body { flex: 1; overflow-y: auto; padding: 14px 18px 32px; font-size: 0.85rem; line-height: 1.65; }
+.mm-drawer-body h1 { font-size: 1.05rem; margin: 18px 0 8px; color: var(--text); }
+.mm-drawer-body h2 { font-size: 0.98rem; margin: 18px 0 8px; color: var(--accent); }
+.mm-drawer-body h3 { font-size: 0.9rem; margin: 14px 0 6px; color: var(--text); }
+.mm-drawer-body h4 { font-size: 0.84rem; margin: 12px 0 4px; color: var(--text-muted); }
+.mm-drawer-body p, .mm-drawer-body ul, .mm-drawer-body ol { margin-bottom: 10px; }
+.mm-drawer-body ul, .mm-drawer-body ol { padding-left: 20px; }
+.mm-drawer-body li { margin-bottom: 3px; }
+.mm-drawer-body table { border-collapse: collapse; margin: 10px 0; width: 100%; font-size: 0.78rem; display: block; overflow-x: auto; }
+.mm-drawer-body th, .mm-drawer-body td { border: 1px solid var(--border); padding: 5px 9px; text-align: left; vertical-align: top; }
+.mm-drawer-body th { background: rgba(108,140,255,0.08); color: var(--text); }
+.mm-drawer-body blockquote { border-left: 3px solid var(--accent); padding: 6px 12px; margin: 10px 0; background: rgba(108,140,255,0.05); border-radius: 0 var(--radius) var(--radius) 0; color: var(--text-muted); }
+.mm-drawer-body code { background: var(--border); padding: 1px 5px; border-radius: 3px; font-size: 0.78rem; }
+.mm-drawer-body hr { border: none; border-top: 1px solid var(--border); margin: 18px 0; }
+.mm-drawer-body .src-badge { display: inline-block; font-size: 0.7rem; padding: 2px 10px; border-radius: 12px; background: rgba(108,140,255,0.14); color: var(--accent); margin: 14px 0 6px; }
+.mm-drawer-body .wikilink { color: var(--accent); }
+
+@media (max-width: 768px) {
+  .container { flex-direction: column; }
+  .mm-sidebar { position: static; max-width: none; margin: 8px; }
+  .header { padding: 8px 12px; }
+  .tabs { gap: 2px; }
+  .tab { padding: 5px 10px; font-size: 0.75rem; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="main">
+
+<div class="header">
+  <h1>AIGP Study</h1>
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('quiz')" id="tab-quiz">Quiz</div>
+    <div class="tab" onclick="switchTab('flashcards')" id="tab-flashcards">Flashcards</div>
+    <div class="tab" onclick="switchTab('mindmap')" id="tab-mindmap">Mind Map</div>
+  </div>
+</div>
+
+<div class="tab-content">
+
+<!-- ═══ QUIZ ═══ -->
+<div class="tab-panel" id="panel-quiz">
+<div class="quiz-scroll">
+<div class="stats">
+  <div class="stat stat-correct"><span class="stat-value" id="correct-count">0</span><span class="stat-label">Correct</span></div>
+  <div class="stat stat-incorrect"><span class="stat-value" id="incorrect-count">0</span><span class="stat-label">Wrong</span></div>
+  <div class="stat"><span class="stat-value" id="answered-count">0</span><span class="stat-label">Done</span></div>
+  <div class="stat"><span class="stat-value" id="total-count">621</span><span class="stat-label">Total</span></div>
+  <div class="stat"><span class="stat-value" id="pct">0%</span><span class="stat-label">Score</span></div>
+  <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+</div>
+<div class="controls">
+  <select id="domain-filter" onchange="onFilterChange()"><option value="all">All Domains</option><option value="Domain I">Domain I</option><option value="Domain II">Domain II</option><option value="Domain III">Domain III</option><option value="Domain IV">Domain IV</option></select>
+  <select id="difficulty-filter" onchange="onFilterChange()"><option value="all">All Difficulty</option><option value="Easy">Easy</option><option value="Medium">Medium</option><option value="Hard">Hard</option></select>
+  <select id="status-filter" onchange="onFilterChange()"><option value="all">All Status</option><option value="unanswered">Unanswered</option><option value="correct">Correct</option><option value="incorrect">Incorrect</option></select>
+  <button class="primary" onclick="pickRandom()">Random</button>
+  <button onclick="resetFilters()">Reset</button>
+  <button class="chip hidden" id="quiz-node-chip" onclick="clearQuizNode()" title="Clear mind map filter"></button>
+  <button onclick="resetQuizProgress()" style="margin-left:auto;color:var(--incorrect);border-color:rgba(231,76,60,0.35)">Reset All Progress</button>
+</div>
+<div id="question-area"></div>
+</div>
+</div>
+
+<!-- ═══ FLASHCARDS ═══ -->
+<div class="tab-panel hidden" id="panel-flashcards">
+<div class="quiz-scroll fc-wrap">
+<div class="stats">
+  <div class="stat"><span class="stat-value" id="fcard-total"></span><span class="stat-label">Terms</span></div>
+  <div class="stat"><span class="stat-value" id="fcard-seen">0</span><span class="stat-label">Reviewed</span></div>
+  <div class="progress-bar"><div class="progress-fill" id="fcard-progress" style="width:0%"></div></div>
+</div>
+<div class="controls" style="justify-content:center">
+  <select id="fcard-domain" onchange="filterFlashcards()"><option value="all">All Domains</option><option value="d1">Domain I</option><option value="d2">Domain II</option><option value="d3">Domain III</option><option value="d4">Domain IV</option></select>
+  <select id="fcard-chapter" onchange="filterFlashcards()"><option value="all">All Areas</option></select>
+  <select id="fcard-filter" onchange="filterFlashcards()"><option value="all">All Status</option><option value="needs-review">Needs Review</option><option value="mastered">Mastered</option><option value="unrated">Unrated</option></select>
+  <button class="primary" onclick="randomCard()">Random</button>
+  <button onclick="resetFCFilters()">Reset</button>
+  <button class="chip hidden" id="fc-node-chip" onclick="clearFCNode()" title="Clear mind map filter"></button>
+</div>
+<div class="mode-toggle">
+  <button class="tab active" id="mode-term" onclick="setFCMode('term')">Term → Def</button>
+  <button class="tab" id="mode-def" onclick="setFCMode('def')">Def → Term</button>
+</div>
+<input class="fcard-search" type="text" id="fcard-search" placeholder="Search terms..." oninput="filterFlashcards()">
+<div class="flashcard-wrap">
+  <div class="flashcard" onclick="flipCard()">
+    <div class="flashcard-inner" id="flashcard-inner">
+      <div class="flashcard-front"><h2 id="fcard-front-title"></h2><span class="term-hint">Click to flip</span></div>
+      <div class="flashcard-back"><p id="fcard-back-text"></p></div>
+    </div>
+  </div>
+</div>
+<div class="card-nav">
+  <button onclick="prevCard()">←</button><span class="card-counter" id="fcard-counter"></span><button onclick="nextCard()">→</button><button onclick="randomCard()">🎲</button>
+</div>
+<div class="card-nav" style="margin-top:6px">
+  <button onclick="rateCard(false)" style="border-color:var(--incorrect);color:var(--incorrect)">✗ No</button>
+  <button onclick="rateCard(true)" style="border-color:var(--correct);color:var(--correct)">✓ Yes</button>
+</div>
+<div class="kbd-hint"><span class="kbd">←</span><span class="kbd">→</span> nav · <span class="kbd">Space</span> flip · <span class="kbd">1</span> no · <span class="kbd">2</span> yes · <span class="kbd">R</span> random</div>
+</div>
+</div>
+
+<!-- ═══ MIND MAP ═══ -->
+<div class="tab-panel hidden" id="panel-mindmap" style="overflow:visible">
+  <div id="mindmap-graph"></div>
+  <div class="mm-sidebar">
+    <h3>Knowledge Map</h3>
+    <div class="mm-grad"></div>
+    <div class="mm-grad-labels"><span>0%</span><span>score</span><span>100%</span></div>
+    <div class="legend-item"><span class="mm-dot" style="background:#4a4d5a"></span> Not tested yet</div>
+    <div class="legend-item" style="margin-top:4px"><span class="mm-dot" style="width:5px;height:5px;background:#7d8195"></span> Outer ring: key terms — scored by their questions + flashcard ✓/✗</div>
+    <input class="mm-search" type="text" id="mm-search" placeholder="Search titles & notes..." oninput="filterMMNodes()">
+    <div id="mm-search-count" style="font-size:0.7rem;color:var(--text-muted);margin:-2px 0 6px"></div>
+    <button class="mm-btn primary" onclick="resetMM()">Reset View</button>
+  </div>
+  <div class="mm-drawer" id="mm-drawer">
+    <div class="mm-drawer-head">
+      <h2><span id="mm-drawer-title"></span><button class="mm-drawer-close" onclick="selectMMNode(null)" title="Close (Esc)">✕</button></h2>
+      <div class="mm-drawer-stats" id="mm-drawer-stats"></div>
+      <div class="mm-drawer-actions">
+        <button class="primary" onclick="mmStudyNode()">Study Questions →</button>
+        <button onclick="mmReviewCards()">Review Flashcards →</button>
+      </div>
+    </div>
+    <div class="mm-drawer-body" id="mm-drawer-body"></div>
+  </div>
+</div>
+
+</div></div></div>
+
+<script src="quiz-data.js"></script>
+<script src="flashcard-data.js"></script>
+<script src="map-data.js"></script>
+<script src="node-details.js"></script>
+<script>
+// ═══════════ TABS ═══════════
+function switchTab(tab) {
+  ['quiz','flashcards','mindmap'].forEach(t => {
+    document.getElementById('panel-'+t).classList.toggle('hidden', t !== tab);
+    document.getElementById('tab-'+t).classList.toggle('active', t === tab);
+  });
+  if (tab === 'mindmap') setTimeout(buildMindMap, 50);
+}
+
+// ═══════════ QUIZ ═══════════
+let currentIndex = -1, filteredQuestions = [], selectedAnswer = null, answered = false;
+const QS_KEY = 'aigp-quiz-progress';
+let progress = (() => { try { return JSON.parse(localStorage.getItem(QS_KEY)) || {}; } catch(e) { return {}; } })();
+function applyFilters() {
+  const d = document.getElementById('domain-filter').value;
+  const diff = document.getElementById('difficulty-filter').value, st = document.getElementById('status-filter').value;
+  filteredQuestions = ALL_QUESTIONS.filter(q => {
+    if (quizNodeFilter && !NODE_QS[quizNodeFilter].has(q.id)) return false;
+    if (d !== 'all' && q.domain !== d) return false;
+    if (diff !== 'all' && q.difficulty !== diff) return false;
+    if (st !== 'all') { const p = progress[q.id]; if (st === 'unanswered' && p !== undefined) return false; if (st === 'correct' && (!p || !p.correct)) return false; if (st === 'incorrect' && (!p || p.correct)) return false; }
+    return true;
+  });
+  document.getElementById('total-count').textContent = filteredQuestions.length;
+}
+function updateStats() { applyFilters(); let c=0,ic=0,a=0; for(const k in progress){a++;if(progress[k].correct)c++;else ic++;} document.getElementById('correct-count').textContent=c; document.getElementById('incorrect-count').textContent=ic; document.getElementById('answered-count').textContent=a; document.getElementById('pct').textContent=(a>0?Math.round(c/a*100):0)+'%'; document.getElementById('progress-fill').style.width=(a/ALL_QUESTIONS.length*100)+'%'; }
+function showQuestion(i) {
+  if(!filteredQuestions.length){document.getElementById('question-area').innerHTML='<div class="empty"><h2>No questions</h2></div>';return;}
+  currentIndex=Math.max(0,Math.min(i,filteredQuestions.length-1));const q=filteredQuestions[currentIndex];selectedAnswer=null;answered=false;const qp=progress[q.id],wa=!!qp;
+  let meta=(q.domain?`<span>${q.domain}</span>`:'')+(q.difficulty?`<span class="diff-${q.difficulty.toLowerCase()}">${q.difficulty}</span>`:'')+`<span>#${currentIndex+1}/${filteredQuestions.length}</span>`;
+  let opts=q.options.map(o=>{let cls='option';if(wa)cls+=o.letter===q.answer?' correct':o.letter===qp.answer?' incorrect':' dimmed';return`<div class="${cls}" onclick="pickAnswer('${o.letter}')"><div class="option-letter">${o.letter}</div><div class="option-text">${o.text}</div></div>`}).join('');
+  let expl='';if(wa){const ok=qp.correct;expl=`<div class="explanation visible"><strong style="color:${ok?'var(--correct)':'var(--incorrect)'}">${ok?'✓':'✗'} ${ok?'Correct':'Incorrect'}</strong>${q.explanation?'<br><br>'+q.explanation:''}</div>`;}
+  document.getElementById('question-area').innerHTML=`<div class="card"><div class="q-meta">${meta}</div><div class="q-text">${q.question}</div><div class="options">${opts}</div>${expl}</div><div class="nav-row"><div><button onclick="prevQuestion()" ${currentIndex===0?'disabled':''}>← Prev</button><button onclick="nextQuestion()">Next →</button></div><button class="primary" onclick="pickRandom()">🎲</button></div><div class="kbd-hint"><span class="kbd">A</span>-<span class="kbd">D</span> answer · <span class="kbd">→</span> next · <span class="kbd">←</span> prev</div>`;
+}
+function pickAnswer(l){if(answered)return;const q=filteredQuestions[currentIndex];answered=true;progress[q.id]={answer:l,correct:l===q.answer,timestamp:Date.now()};localStorage.setItem(QS_KEY,JSON.stringify(progress));updateStats();showQuestion(currentIndex);}
+function nextQuestion(){if(currentIndex<filteredQuestions.length-1)showQuestion(currentIndex+1);}
+function prevQuestion(){if(currentIndex>0)showQuestion(currentIndex-1);}
+function pickRandom(){applyFilters();if(filteredQuestions.length)showQuestion(Math.floor(Math.random()*filteredQuestions.length));}
+function resetFilters(){['domain-filter','difficulty-filter','status-filter'].forEach(id=>document.getElementById(id).value='all');onFilterChange();}
+function onFilterChange(){applyFilters();updateStats();currentIndex=0;if(filteredQuestions.length>0)showQuestion(0);else document.getElementById('question-area').innerHTML='<div class="empty"><h2>No questions match</h2></div>';}
+function resetQuizProgress(){
+  if(!confirm('Delete all progress — question answers, flashcard ratings, and review history? This cannot be undone.'))return;
+  localStorage.removeItem(QS_KEY);
+  localStorage.removeItem(FC_MASTERY_KEY);
+  progress={};
+  onFilterChange();
+  applyFCFilter();
+  // clear review history last — refreshing the card view above re-records the visible card
+  localStorage.removeItem(FC_KEY);
+  updateFCStats();
+  selectMMNode(null);
+  buildMindMap();
+}
+
+// ═══════════ FLASHCARDS ═══════════
+let fcMode='term',fcIndex=0,fcFiltered=[...FLASHCARDS],fcFlipped=false;
+const FC_KEY='aigp-flashcard-progress',FC_MASTERY_KEY='aigp-flashcard-mastery';
+function getMastery(){try{return JSON.parse(localStorage.getItem(FC_MASTERY_KEY))||{}}catch(e){return{};}}
+function saveMastery(m){localStorage.setItem(FC_MASTERY_KEY,JSON.stringify(m));}
+function saveFCProgress(){const seen=(()=>{try{return JSON.parse(localStorage.getItem(FC_KEY))||[]}catch(e){return[]}})();const id=fcFiltered[fcIndex]?.term;if(id&&!seen.includes(id)){seen.push(id);localStorage.setItem(FC_KEY,JSON.stringify(seen));}updateFCStats();}
+function updateFCStats(){const seen=(()=>{try{return JSON.parse(localStorage.getItem(FC_KEY))||[]}catch(e){return[]}})();document.getElementById('fcard-seen').textContent=seen.length;document.getElementById('fcard-progress').style.width=(seen.length/FLASHCARDS.length*100)+'%';}
+function applyFCFilter(){const filter=document.getElementById('fcard-filter').value;const dom=document.getElementById('fcard-domain').value;const chp=document.getElementById('fcard-chapter').value;const q=(document.getElementById('fcard-search')?.value||'').toLowerCase();const mastery=getMastery();fcFiltered=FLASHCARDS.filter(f=>{if(fcNodeFilter&&!NODE_FCS[fcNodeFilter].has(f.term))return false;if(dom!=='all'&&FC_PLACE[f.term]?.domain!==dom)return false;if(chp!=='all'&&FC_PLACE[f.term]?.chapter!==chp)return false;if(q&&!f.term.toLowerCase().includes(q)&&!f.definition.toLowerCase().includes(q))return false;if(filter==='mastered'&&!mastery[f.term])return false;if(filter==='needs-review'&&mastery[f.term]!==false)return false;if(filter==='unrated'&&mastery[f.term]!==undefined)return false;return true;});fcIndex=0;fcFlipped=false;if(!fcFiltered.length){document.getElementById('fcard-front-title').textContent='No cards';document.getElementById('fcard-back-text').textContent='';document.getElementById('fcard-counter').textContent='0/0';return;}showCard(0);}
+function filterFlashcards(){applyFCFilter();}
+function setFCMode(m){fcMode=m;fcFlipped=false;document.getElementById('mode-term').classList.toggle('active',m==='term');document.getElementById('mode-def').classList.toggle('active',m==='def');document.getElementById('flashcard-inner').classList.remove('flipped');showCard(fcIndex);}
+function rateCard(knew){
+  if(!fcFiltered.length)return;
+  const el=document.querySelector('.flashcard');
+  if(el.classList.contains('rate-yes')||el.classList.contains('rate-no'))return; // ignore double-taps mid-flash
+  const mastery=getMastery();mastery[fcFiltered[fcIndex].term]=knew;saveMastery(mastery);updateFCStats();
+  el.classList.add(knew?'rate-yes':'rate-no');
+  setTimeout(()=>{el.classList.remove('rate-yes','rate-no');nextCard();},450);
+}
+function showCard(i){if(!fcFiltered.length)return;fcIndex=Math.max(0,Math.min(i,fcFiltered.length-1));fcFlipped=false;document.getElementById('flashcard-inner').classList.remove('flipped');const card=fcFiltered[fcIndex];document.getElementById('fcard-front-title').textContent=fcMode==='term'?card.term:card.definition;document.getElementById('fcard-back-text').textContent=fcMode==='term'?card.definition:card.term;document.getElementById('fcard-counter').textContent=`${fcIndex+1}/${fcFiltered.length}`;saveFCProgress();}
+function flipCard(){if(!fcFiltered.length)return;fcFlipped=!fcFlipped;document.getElementById('flashcard-inner').classList.toggle('flipped',fcFlipped);}
+function nextCard(){if(fcIndex<fcFiltered.length-1)showCard(fcIndex+1);}
+function prevCard(){if(fcIndex>0)showCard(fcIndex-1);}
+function randomCard(){if(fcFiltered.length)showCard(Math.floor(Math.random()*fcFiltered.length));}
+
+// ═══════════ MIND MAP (radial tree from map-data.js) ═══════════
+let mmSvg, mmZoom, mmSelectedNode = null, mmFitTransform = null;
+let quizNodeFilter = null, fcNodeFilter = null;
+const DOMAIN_COLORS = { d1:'#6c8cff', d2:'#a78bfa', d3:'#34d399', d4:'#f472b6' };
+const MM_BY_ID = Object.fromEntries(MM_NODES.map(n => [n.id, n]));
+const FC_BY_TERM = Object.fromEntries(FLASHCARDS.map(f => [f.term, f.definition]));
+// per-node search corpus: title + definition + full source notes
+const MM_SEARCH_TEXT = Object.fromEntries(MM_NODES.map(n => {
+  let t = n.label;
+  if (n.term !== undefined) t += ' ' + (FC_BY_TERM[n.term] || '');
+  if (NODE_DETAILS[n.id]) t += ' ' + NODE_DETAILS[n.id];
+  return [n.id, t.toLowerCase()];
+}));
+
+// Question ids / flashcard terms per node, rolled up through descendants
+const NODE_QS = {}, NODE_FCS = {}, MM_CHILDREN = {};
+(function buildNodeIndexes(){
+  MM_NODES.forEach(n => {
+    NODE_QS[n.id] = new Set(); NODE_FCS[n.id] = new Set();
+    if (n.parent) (MM_CHILDREN[n.parent] = MM_CHILDREN[n.parent] || []).push(n.id);
+  });
+  for (const [qid, tags] of Object.entries(QUESTION_TAGS)) tags.forEach(t => NODE_QS[t]?.add(qid));
+  // cards attach ONLY at their leaf; ancestors get them via rollup, so a
+  // node's card set is exactly its subtree's leaves — all leaves green ⇒ node green
+  MM_NODES.forEach(n => { if (n.term !== undefined) NODE_FCS[n.id].add(n.term); });
+  (function roll(id){
+    (MM_CHILDREN[id] || []).forEach(c => {
+      roll(c);
+      NODE_QS[c].forEach(q => NODE_QS[id].add(q));
+      NODE_FCS[c].forEach(f => NODE_FCS[id].add(f));
+    });
+  })('root');
+  ALL_QUESTIONS.forEach(q => NODE_QS.root.add(q.id));
+  FLASHCARDS.forEach(f => NODE_FCS.root.add(f.term));
+})();
+
+function nodeScore(id) {
+  let answered = 0, correct = 0, rated = 0, mastered = 0;
+  NODE_QS[id].forEach(qid => { const p = progress[qid]; if (p) { answered++; if (p.correct) correct++; } });
+  NODE_FCS[id].forEach(t => { const m = mmMastery[t]; if (m !== undefined) rated++; if (m === true) mastered++; });
+  const termTotal = NODE_FCS[id].size;
+  // blended score: correct answers + mastered terms, over answered questions +
+  // ALL descendant terms — unrated/unmastered leaves hold ancestors back from green
+  const denom = answered + termTotal;
+  const pct = denom ? Math.round((correct + mastered) / denom * 100) : 0;
+  return { total: NODE_QS[id].size, answered, correct, rated, mastered, termTotal, pct };
+}
+
+function lerpHex(a, b, t) {
+  const pa = parseInt(a.slice(1), 16), pb = parseInt(b.slice(1), 16);
+  const ch = s => [(s >> 16) & 255, (s >> 8) & 255, s & 255];
+  const [r1, g1, b1] = ch(pa), [r2, g2, b2] = ch(pb);
+  const m = (x, y) => Math.round(x + (y - x) * t);
+  return `rgb(${m(r1, r2)},${m(g1, g2)},${m(b1, b2)})`;
+}
+
+let mmMastery = {};
+// one formula everywhere — term leaves blend their matched questions with
+// their own flashcard rating, exactly like inner nodes blend their subtrees
+function nodeColor(id) {
+  const s = nodeScore(id);
+  if (!s.answered && !s.rated) return '#4a4d5a';           // grey: not tested yet
+  const p = s.pct / 100;
+  return p < 0.5 ? lerpHex('#e74c3c', '#f39c12', p * 2)    // red → amber
+                 : lerpHex('#f39c12', '#2ecc71', (p - 0.5) * 2); // amber → green
+}
+
+function nodeDomain(id) { // walk up to the d1-d4 ancestor
+  let n = MM_BY_ID[id];
+  while (n && !DOMAIN_COLORS[n.id]) n = MM_BY_ID[n.parent];
+  return n ? n.id : null;
+}
+
+function buildMindMap() {
+  const container = document.getElementById('mindmap-graph');
+  container.innerHTML = '';
+  const W = container.clientWidth || 1000, H = container.clientHeight || 700;
+
+  // hierarchy from MM_NODES
+  const wrap = Object.fromEntries(MM_NODES.map(n => [n.id, { ...n, children: [] }]));
+  MM_NODES.forEach(n => { if (n.parent) wrap[n.parent].children.push(wrap[n.id]); });
+  const root = d3.hierarchy(wrap.root);
+  mmMastery = getMastery();
+  // radius grows with leaf count so outer key-term labels don't collide;
+  // 16px of arc per leaf keeps labels clear of each other
+  const R = Math.max(Math.min(W, H) / 2 - 40, root.leaves().length * 16 / (2 * Math.PI));
+  d3.tree().size([2 * Math.PI, R]).separation((a, b) => (a.parent === b.parent ? 1 : 2) / a.depth)(root);
+
+  mmSvg = d3.select(container).append('svg').attr('viewBox', [-W / 2, -H / 2, W, H]);
+  const g = mmSvg.append('g');
+  mmZoom = d3.zoom().scaleExtent([0.15, 6]).on('zoom', e => g.attr('transform', e.transform));
+  mmSvg.call(mmZoom);
+  mmSvg.on('click', e => { if (e.target === mmSvg.node()) selectMMNode(null); });
+  // start zoomed to fit the whole map
+  const fit = Math.min(1, Math.min(W, H) / (2 * R + 280));
+  mmFitTransform = d3.zoomIdentity.scale(fit);
+  mmSvg.call(mmZoom.transform, mmFitTransform);
+
+  // neutral links and rings — performance is the ONLY color on this map
+  g.append('g').selectAll('path').data(root.links()).join('path')
+    .attr('class', 'mm-link')
+    .attr('stroke', '#3a3d4a')
+    .attr('stroke-opacity', d => d.target.depth === 1 ? 0.9 : 0.5)
+    .attr('stroke-width', d => d.target.depth === 1 ? 2 : 1.2)
+    .attr('d', d3.linkRadial().angle(d => d.x).radius(d => d.y));
+
+  const radius = d => d.data.term !== undefined ? 3
+    : d.depth === 0 ? 26 : d.depth === 1 ? 15 : d.depth === 2 ? 9
+    : Math.min(8, 3.5 + Math.sqrt(NODE_QS[d.data.id].size) * 0.45);
+
+  const node = g.append('g').selectAll('g').data(root.descendants()).join('g')
+    .attr('class', 'mm-node')
+    .attr('transform', d => d.depth === 0 ? null :
+      `rotate(${d.x * 180 / Math.PI - 90}) translate(${d.y},0)`);
+
+  node.append('circle')
+    .attr('r', radius)
+    .attr('fill', d => nodeColor(d.data.id))
+    .attr('stroke', d => d.data.term !== undefined ? 'none'
+      : d.depth === 0 ? '#6c8cff' : '#5a5d6a')
+    .on('click', (e, d) => { e.stopPropagation(); selectMMNode(d.data.id); })
+    .append('title').text(d => {
+      if (d.data.term !== undefined) {
+        const m = mmMastery[d.data.term];
+        const status = m === true ? 'mastered' : m === false ? 'needs review' : 'unrated';
+        const s = nodeScore(d.data.id);
+        const qs = s.total ? ` · ${s.correct}/${s.answered} of ${s.total} questions` : '';
+        return `${d.data.term} (${status}${qs})\n${FC_BY_TERM[d.data.term] || ''}`;
+      }
+      const s = nodeScore(d.data.id);
+      return `${d.data.label.replace(/\n/g, ' ')}\n${s.answered}/${s.total} answered · ${s.mastered}/${s.termTotal} terms mastered · score ${s.pct}%`;
+    });
+
+  node.append('text')
+    .attr('class', d => d.depth <= 1 ? 'node-label' : d.data.term !== undefined ? 'term-label' : null)
+    .attr('dy', d => d.depth === 1 ? -(radius(d) + 8) : '0.32em')
+    .attr('x', d => d.depth <= 1 ? 0 : (d.x < Math.PI) === !d.children ? radius(d) + 5 : -(radius(d) + 5))
+    .attr('text-anchor', d => d.depth <= 1 ? 'middle' : (d.x < Math.PI) === !d.children ? 'start' : 'end')
+    .attr('transform', d => d.depth === 0 ? null
+      : d.depth === 1 ? `rotate(${90 - d.x * 180 / Math.PI})`   // horizontal domain labels
+      : d.x >= Math.PI ? 'rotate(180)' : null)
+    .text(d => d.data.label.replace(/\n/g, ' '));
+}
+
+function mmBreadcrumb(id) {
+  const path = [];
+  let n = MM_BY_ID[id];
+  while (n) { path.unshift(n.label.replace(/\n/g, ' ')); n = MM_BY_ID[n.parent]; }
+  return path.join(' › ');
+}
+
+function renderNodeDetail(id) {
+  const n = MM_BY_ID[id];
+  let md = NODE_DETAILS[id];
+  if (md === undefined && n.term !== undefined) {
+    const m = mmMastery[n.term];
+    const status = m === true ? '✓ mastered' : m === false ? '✗ needs review' : 'unrated';
+    md = `> [!source] Flashcards\n\n**${n.term}** — *${status}*\n\n${FC_BY_TERM[n.term] || ''}`;
+  }
+  if (md === undefined) return '<p>No notes for this node.</p>';
+  md = md
+    .replace(/^> \[!source\] (.+)$/gm, '<div class="src-badge">📄 $1</div>')
+    .replace(/^> \[!(\w+)\][+-]? ?(.*)$/gm, (_, t, rest) =>
+      `> **${t[0].toUpperCase() + t.slice(1)}${rest ? ':' : ''}** ${rest}`)
+    .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '<span class="wikilink">$2</span>')
+    .replace(/\[\[([^\]]+)\]\]/g, '<span class="wikilink">$1</span>');
+  return marked.parse(md);
+}
+
+function selectMMNode(id) {
+  mmSelectedNode = id;
+  const drawer = document.getElementById('mm-drawer');
+  if (!id) { drawer.classList.remove('open'); highlightMM(null); return; }
+  const n = MM_BY_ID[id], s = nodeScore(id);
+  document.getElementById('mm-drawer-title').textContent = n.label.replace(/\n/g, ' ');
+  const stats = [`<span title="${mmBreadcrumb(id)}">🗺 <b>${mmBreadcrumb(id)}</b></span>`];
+  if (s.total) stats.push(`<span>Questions <b>${s.correct}/${s.answered}</b> correct of <b>${s.total}</b></span>`);
+  if (s.termTotal) stats.push(`<span>Terms mastered <b>${s.mastered}/${s.termTotal}</b></span>`);
+  stats.push(`<span>Score <b>${(s.answered || s.rated) ? s.pct + '%' : '—'}</b></span>`);
+  document.getElementById('mm-drawer-stats').innerHTML = stats.join('');
+  document.querySelector('#mm-drawer .mm-drawer-actions .primary').style.display = s.total ? '' : 'none';
+  const body = document.getElementById('mm-drawer-body');
+  body.innerHTML = renderNodeDetail(id);
+  body.scrollTop = 0;
+  drawer.classList.add('open');
+  highlightMM(id);
+}
+
+function highlightMM(id) {
+  const keep = new Set();
+  if (id) {
+    (function down(n){ keep.add(n); (MM_CHILDREN[n] || []).forEach(down); })(id);
+    let n = MM_BY_ID[id]; while (n) { keep.add(n.id); n = MM_BY_ID[n.parent]; }
+  }
+  d3.selectAll('.mm-node').attr('opacity', d => !id || keep.has(d.data.id) ? 1 : 0.15);
+  d3.selectAll('.mm-link').attr('opacity', d => !id || keep.has(d.target.data.id) ? 1 : 0.08);
+}
+
+function filterMMNodes() {
+  const q = document.getElementById('mm-search').value.trim().toLowerCase();
+  const hits = q ? new Set(MM_NODES.filter(n => MM_SEARCH_TEXT[n.id].includes(q)).map(n => n.id)) : null;
+  d3.selectAll('.mm-node').attr('opacity', d => !hits || hits.has(d.data.id) ? 1 : 0.08);
+  d3.selectAll('.mm-link').attr('opacity', d => !hits || hits.has(d.target.data.id) ? 1 : 0.06);
+  document.getElementById('mm-search-count').textContent =
+    hits ? `${hits.size} node${hits.size === 1 ? '' : 's'} match` : '';
+}
+
+function resetMM() {
+  document.getElementById('mm-search').value = '';
+  filterMMNodes();
+  selectMMNode(null);
+  mmSvg.transition().duration(500).call(mmZoom.transform, mmFitTransform || d3.zoomIdentity);
+}
+
+function mmStudyNode() {
+  if (!mmSelectedNode) return;
+  quizNodeFilter = mmSelectedNode;
+  const chip = document.getElementById('quiz-node-chip');
+  chip.textContent = '🗺 ' + MM_BY_ID[mmSelectedNode].label.replace(/\n/g, ' ') + ' ✕';
+  chip.classList.remove('hidden');
+  switchTab('quiz');
+  onFilterChange();
+}
+function clearQuizNode() {
+  quizNodeFilter = null;
+  document.getElementById('quiz-node-chip').classList.add('hidden');
+  onFilterChange();
+}
+function mmReviewCards() {
+  if (!mmSelectedNode) return;
+  fcNodeFilter = mmSelectedNode;
+  const chip = document.getElementById('fc-node-chip');
+  chip.textContent = '🗺 ' + MM_BY_ID[mmSelectedNode].label.replace(/\n/g, ' ') + ' ✕';
+  chip.classList.remove('hidden');
+  switchTab('flashcards');
+  applyFCFilter();
+}
+function clearFCNode() {
+  fcNodeFilter = null;
+  document.getElementById('fc-node-chip').classList.add('hidden');
+  applyFCFilter();
+}
+
+// ═══════════ KEYBOARD ═══════════
+document.addEventListener('keydown', e => {
+  if(e.target.tagName==='SELECT'||e.target.tagName==='INPUT')return;
+  const k=e.key.toUpperCase();
+  if(k==='ESCAPE'&&!document.getElementById('panel-mindmap').classList.contains('hidden')){e.preventDefault();selectMMNode(null);return;}
+  const qi=!document.getElementById('panel-quiz').classList.contains('hidden');
+  const fi=!document.getElementById('panel-flashcards').classList.contains('hidden');
+  if(fi){if(k==='ARROWLEFT'){e.preventDefault();prevCard();}if(k==='ARROWRIGHT'){e.preventDefault();nextCard();}if(k===' '){e.preventDefault();flipCard();}if(k==='R'){e.preventDefault();randomCard();}if(k==='1'){e.preventDefault();rateCard(false);}if(k==='2'){e.preventDefault();rateCard(true);}return;}
+  if(qi){if(['A','B','C','D'].includes(k)&&!answered&&filteredQuestions.length>0){const q=filteredQuestions[currentIndex];if(q.options.some(o=>o.letter===k))pickAnswer(k);}if(k==='ARROWRIGHT'){e.preventDefault();nextQuestion();}if(k==='ARROWLEFT'){e.preventDefault();prevQuestion();}if(k==='R'){e.preventDefault();pickRandom();}if(k==='ENTER'&&answered){e.preventDefault();nextQuestion();}}
+});
+
+// Flashcard placement (domain/chapter) from the term's mind map ancestry
+const FC_PLACE = {};
+MM_NODES.forEach(n => {
+  if (n.term === undefined) return;
+  let domain = null, chapter = null;
+  for (let x = MM_BY_ID[n.parent]; x; x = MM_BY_ID[x.parent]) {
+    if (/^ch\d+$/.test(x.id)) chapter = x.id;
+    if (DOMAIN_COLORS[x.id]) domain = x.id;
+  }
+  FC_PLACE[n.term] = { domain, chapter };
+});
+document.getElementById('fcard-chapter').innerHTML =
+  '<option value="all">All Areas</option>' +
+  MM_NODES.filter(n => /^ch\d+$/.test(n.id))
+    .map(n => `<option value="${n.id}">${n.label}</option>`).join('');
+function resetFCFilters(){
+  ['fcard-domain','fcard-chapter','fcard-filter'].forEach(id => document.getElementById(id).value = 'all');
+  document.getElementById('fcard-search').value = '';
+  clearFCNode();
+}
+
+// Init
+document.getElementById('fcard-total').textContent = FLASHCARDS.length;
+applyFilters();updateStats();pickRandom();updateFCStats();showCard(0);
+</script>
+</body>
+</html>
