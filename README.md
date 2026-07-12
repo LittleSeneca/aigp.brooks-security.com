@@ -6,7 +6,7 @@ Self-contained study environment for the IAPP Artificial Intelligence Governance
 
 Open [study.html](study.html) in a browser (no server needed — everything is vendored and offline-capable). Three tabs:
 
-- **Quiz** — A unified bank of 742 questions with domain/difficulty/status filters. Progress saves to localStorage.
+- **Quiz** — A unified bank of 794 questions with domain/difficulty/status filters. Progress saves to localStorage.
 - **Flashcards** — 309 key terms with domain/area/status filters and ✓/✗ mastery rating.
 - **Mind Map** — a radial tree mirroring the Obsidian vault in `Map/`: root → 4 domains → 12 knowledge areas → topics → key-term leaves. Nodes color by performance (grey untested, red → amber → green). Clicking a node opens its source notes and can filter the quiz/flashcards to just that node's material. Every question and card is tagged down to term leaves, so completing all of a node's leaves turns it green by definition.
 

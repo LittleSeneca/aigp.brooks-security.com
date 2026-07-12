@@ -9440,5 +9440,533 @@ const QUESTION_TAGS = {
 "t_deployopts",
 "t_thirdparty",
 "t_vendorterms"
+],
+"q-743": [
+"ch1",
+"d1",
+"kt187",
+"kt26",
+"kt40",
+"kt8",
+"t_ai_char",
+"t_ai_types",
+"t_thirdparty"
+],
+"q-744": [
+"ch6",
+"ch7",
+"d2",
+"kt114",
+"kt160",
+"kt224",
+"kt28",
+"kt304",
+"kt37",
+"ref_42001",
+"t_audit",
+"t_risktiers",
+"t_usecase"
+],
+"q-745": [
+"ch1",
+"d1",
+"kt159",
+"kt285",
+"kt39",
+"kt40",
+"ref_22989",
+"t_ai_char",
+"t_thirdparty"
+],
+"q-746": [
+"ch4",
+"d2",
+"kt224",
+"kt229",
+"kt47",
+"kt87",
+"kt88",
+"ref_gdpr",
+"t_controller",
+"t_incident",
+"t_risktiers"
+],
+"q-747": [
+"ch10",
+"d3",
+"kt215",
+"kt297",
+"kt59",
+"t_monitoring",
+"t_train"
+],
+"q-748": [
+"ch5",
+"d2",
+"kt65",
+"kt72",
+"t_consumer",
+"t_ip"
+],
+"q-749": [
+"ch4",
+"d2",
+"kt155",
+"kt94",
+"kt95",
+"ref_gdpr",
+"t_controller",
+"t_ip"
+],
+"q-750": [
+"ch5",
+"d2",
+"kt106",
+"kt107",
+"t_nondiscrim"
+],
+"q-751": [
+"ch1",
+"d1",
+"kt109",
+"kt112",
+"kt113",
+"kt40",
+"kt45",
+"t_ai_char",
+"t_ai_risks",
+"t_bias",
+"t_rai"
+],
+"q-752": [
+"ch5",
+"d2",
+"kt126",
+"kt136",
+"kt64",
+"kt72",
+"t_consent",
+"t_ip"
+],
+"q-753": [
+"ch1",
+"d1",
+"kt145",
+"kt244",
+"t_rai"
+],
+"q-754": [
+"ch7",
+"d2",
+"kt152",
+"kt153",
+"kt159",
+"kt282",
+"kt307",
+"ref_22989"
+],
+"q-755": [
+"ch1",
+"d1",
+"kt152",
+"kt153",
+"kt159",
+"kt169",
+"kt171",
+"kt215",
+"kt37",
+"t_ai_types",
+"t_audit"
+],
+"q-756": [
+"ch7",
+"d2",
+"kt147",
+"kt152",
+"kt169",
+"kt204",
+"ref_22989"
+],
+"q-757": [
+"ch7",
+"d2",
+"kt140",
+"kt242",
+"kt250",
+"kt41",
+"ref_nist_rmf",
+"t_train"
+],
+"q-758": [
+"ch1",
+"d1",
+"kt103",
+"kt144",
+"kt169",
+"kt215",
+"kt241",
+"kt276",
+"kt301",
+"t_ai_types",
+"t_liability",
+"t_oversight"
+],
+"q-759": [
+"ch1",
+"d1",
+"kt290",
+"kt298",
+"kt65",
+"kt72",
+"kt88",
+"t_ai_risks",
+"t_bias",
+"t_consumer",
+"t_ip"
+],
+"q-760": [
+"ch1",
+"d1",
+"kt131",
+"kt203",
+"kt313",
+"t_ai_types",
+"t_deployopts",
+"t_train"
+],
+"q-761": [
+"ch2",
+"ch6",
+"d1",
+"kt114",
+"kt12",
+"kt215",
+"kt26",
+"kt51",
+"kt59",
+"t_devdeploy",
+"t_highrisk_req",
+"t_monitoring",
+"t_thirdparty"
+],
+"q-762": [
+"ch1",
+"d1",
+"kt26",
+"kt34",
+"kt39",
+"kt43",
+"t_ai_types",
+"t_testing",
+"t_thirdparty"
+],
+"q-763": [
+"ch7",
+"d2",
+"kt272",
+"kt41",
+"ref_22989",
+"t_incident"
+],
+"q-764": [
+"ch13",
+"d4",
+"kt0",
+"kt154",
+"kt226",
+"kt26",
+"kt303",
+"kt50",
+"t_deployfactors",
+"t_deployment",
+"t_testing",
+"t_thirdparty",
+"t_usecase",
+"t_vendorterms"
+],
+"q-765": [
+"ch7",
+"d2",
+"kt136",
+"kt155",
+"kt218",
+"kt60",
+"ref_600",
+"ref_nist_rmf",
+"t_ai_types",
+"t_ip"
+],
+"q-766": [
+"ch9",
+"d3",
+"kt203",
+"kt223",
+"kt279",
+"kt45",
+"kt62",
+"kt68",
+"kt77",
+"kt89",
+"t_bias",
+"t_deployment",
+"t_lifecycle",
+"t_lineage",
+"t_monitoring",
+"t_readiness",
+"t_train"
+],
+"q-767": [
+"ch5",
+"d2",
+"kt103",
+"kt175",
+"t_liability"
+],
+"q-768": [
+"ch5",
+"d2",
+"kt106",
+"kt107",
+"t_nondiscrim"
+],
+"q-769": [
+"ch1",
+"d1",
+"kt118",
+"kt131",
+"kt162",
+"kt164",
+"kt191",
+"kt241",
+"kt99",
+"t_ai_types"
+],
+"q-770": [
+"ch1",
+"d1",
+"kt133",
+"kt159",
+"kt185",
+"kt34",
+"t_ai_types"
+],
+"q-771": [
+"ch7",
+"d2",
+"kt148",
+"kt159",
+"kt266",
+"ref_22989"
+],
+"q-772": [
+"ch7",
+"d2",
+"kt159",
+"kt162",
+"kt249",
+"ref_22989"
+],
+"q-773": [
+"ch7",
+"d2",
+"kt138",
+"kt174",
+"kt176",
+"kt178",
+"kt303",
+"kt307",
+"kt310",
+"ref_nist_rmf"
+],
+"q-774": [
+"ch7",
+"d2",
+"kt129",
+"kt160",
+"kt18",
+"kt206",
+"kt229",
+"kt37",
+"ref_42001",
+"t_audit",
+"t_incident",
+"t_monitoring"
+],
+"q-775": [
+"ch12",
+"d4",
+"kt243",
+"kt250",
+"kt41",
+"t_incident"
+],
+"q-776": [
+"ch6",
+"d2",
+"kt167",
+"kt224",
+"kt281",
+"kt51",
+"t_highrisk_req",
+"t_records",
+"t_risktiers"
+],
+"q-777": [
+"ch9",
+"d3",
+"kt169",
+"kt287",
+"kt300",
+"kt307",
+"t_testing"
+],
+"q-778": [
+"ch2",
+"d1",
+"kt101",
+"kt13",
+"kt26",
+"kt290",
+"kt68",
+"t_bias",
+"t_deployment",
+"t_devdeploy",
+"t_monitoring",
+"t_thirdparty"
+],
+"q-779": [
+"ch7",
+"d2",
+"kt159",
+"kt162",
+"kt249",
+"kt35",
+"ref_22989"
+],
+"q-780": [
+"ch9",
+"d3",
+"kt223",
+"kt43",
+"t_readiness",
+"t_testing"
+],
+"q-781": [
+"ch1",
+"d1",
+"kt57",
+"t_ai_types"
+],
+"q-782": [
+"ch10",
+"d3",
+"kt62",
+"t_deployment"
+],
+"q-783": [
+"ch10",
+"d3",
+"kt0",
+"kt153",
+"kt222",
+"kt82",
+"kt84",
+"t_deployment",
+"t_monitoring"
+],
+"q-784": [
+"ch4",
+"d2",
+"kt105",
+"t_minimization"
+],
+"q-785": [
+"ch1",
+"d1",
+"kt109",
+"kt149",
+"kt41",
+"t_ai_risks"
+],
+"q-786": [
+"ch1",
+"d1",
+"kt124",
+"kt213",
+"t_ai_risks",
+"t_testing"
+],
+"q-787": [
+"ch9",
+"d3",
+"kt140",
+"kt153",
+"kt89",
+"t_lineage",
+"t_train"
+],
+"q-788": [
+"ch7",
+"d2",
+"kt105",
+"kt150",
+"kt228",
+"ref_22989",
+"t_minimization"
+],
+"q-789": [
+"ch1",
+"d1",
+"kt118",
+"kt152",
+"kt159",
+"kt162",
+"kt169",
+"kt170",
+"kt171",
+"t_ai_types"
+],
+"q-790": [
+"ch1",
+"d1",
+"kt162",
+"kt185",
+"kt26",
+"kt40",
+"t_ai_char",
+"t_ai_types",
+"t_thirdparty"
+],
+"q-791": [
+"ch9",
+"d3",
+"kt213",
+"kt242",
+"t_testing"
+],
+"q-792": [
+"ch7",
+"d2",
+"kt215",
+"kt262",
+"ref_22989"
+],
+"q-793": [
+"ch5",
+"d2",
+"kt229",
+"kt286",
+"t_ip"
+],
+"q-794": [
+"ch1",
+"d1",
+"kt144",
+"kt241",
+"kt275",
+"kt301",
+"kt303",
+"t_ai_types",
+"t_oversight"
 ]
 };
