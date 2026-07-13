@@ -166,12 +166,13 @@ button.small { padding: 4px 10px; font-size: 0.8rem; }
 /* Navigation */
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
   gap: 8px;
+  position: relative;
 }
-.nav-buttons { display: flex; gap: 8px; }
+.nav-buttons { display: flex; gap: 8px; position: absolute; left: 0; }
 .question-counter { color: var(--text-muted); font-size: 0.85rem; }
 
 /* Empty state */
@@ -262,7 +263,7 @@ button.small { padding: 4px 10px; font-size: 0.8rem; }
     <option value="Hard">Hard</option>
     <option value="Painful">Painful</option>
   </select>
-  <button class="primary" onclick="pickRandom()">Random</button>
+  <button onclick="nextQuestion()">Next →</button>
   <button onclick="resetFilters()">Reset</button>
 </div>
 
@@ -411,9 +412,7 @@ function showQuestion(index) {
         <button onclick="prevQuestion()" ${index === 0 ? 'disabled' : ''}>← Previous</button>
         <button onclick="nextQuestion()">Next →</button>
       </div>
-      <div class="nav-buttons">
-        <button class="primary" onclick="pickRandom()">🎲 Random</button>
-      </div>
+      <button class="primary" onclick="pickRandom()">🎲 Random</button>
     </div>
     <div class="kbd-hint">
       Keys: <span class="kbd">A</span><span class="kbd">B</span><span class="kbd">C</span><span class="kbd">D</span> to answer · <span class="kbd">→</span> next · <span class="kbd">←</span> prev · <span class="kbd">R</span> random
