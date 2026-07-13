@@ -62,7 +62,8 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .explanation { margin-top: 12px; padding: 10px 12px; background: rgba(108,140,255,0.04); border-left: 3px solid var(--accent); border-radius: 0 var(--radius) var(--radius) 0; font-size: 0.85rem; color: var(--text-muted); display: none; }
 .explanation.visible { display: block; }
 .nav-row { display: flex; justify-content: center; align-items: center; margin-top: 14px; gap: 8px; position: relative; }
-.nav-row > div { display: flex; gap: 8px; position: absolute; left: 0; }
+.nav-row > button:first-of-type { position: absolute; left: 0; }
+.nav-row > button:last-of-type { position: absolute; right: 0; }
 .kbd-hint { text-align: center; color: var(--text-muted); font-size: 0.7rem; margin-top: 8px; }
 .kbd { padding: 1px 5px; background: var(--border); border-radius: 3px; font-family: monospace; }
 .empty { text-align: center; padding: 60px 20px; color: var(--text-muted); }
@@ -292,7 +293,7 @@ function showQuestion(i) {
   let meta=(q.domain?`<span>${q.domain}</span>`:'')+(q.difficulty?`<span class="diff-${q.difficulty.toLowerCase()}">${q.difficulty}</span>`:'')+`<span>#${currentIndex+1}/${filteredQuestions.length}</span>`;
   let opts=q.options.map(o=>{let cls='option';if(wa)cls+=o.letter===q.answer?' correct':o.letter===qp.answer?' incorrect':' dimmed';return`<div class="${cls}" onclick="pickAnswer('${o.letter}')"><div class="option-letter">${o.letter}</div><div class="option-text">${o.text}</div></div>`}).join('');
   let expl='';if(wa){const ok=qp.correct;expl=`<div class="explanation visible"><strong style="color:${ok?'var(--correct)':'var(--incorrect)'}">${ok?'✓':'✗'} ${ok?'Correct':'Incorrect'}</strong>${q.explanation?'<br><br>'+q.explanation:''}</div>`;}
-  document.getElementById('question-area').innerHTML=`<div class="card"><div class="q-meta">${meta}</div><div class="q-text">${q.question}</div><div class="options">${opts}</div>${expl}</div><div class="nav-row"><div><button onclick="prevQuestion()" ${currentIndex===0?'disabled':''}>← Prev</button><button onclick="nextQuestion()">Next →</button></div><button class="primary" onclick="pickRandom()">🎲</button></div><div class="kbd-hint"><span class="kbd">A</span>-<span class="kbd">D</span> answer · <span class="kbd">→</span> next · <span class="kbd">←</span> prev</div>`;
+  document.getElementById('question-area').innerHTML=`<div class="card"><div class="q-meta">${meta}</div><div class="q-text">${q.question}</div><div class="options">${opts}</div>${expl}</div><div class="nav-row"><button onclick="prevQuestion()" ${currentIndex===0?'disabled':''}>← Prev</button><button class="primary" onclick="pickRandom()">🎲</button><button onclick="nextQuestion()">Next →</button></div><div class="kbd-hint"><span class="kbd">A</span>-<span class="kbd">D</span> answer · <span class="kbd">→</span> next · <span class="kbd">←</span> prev</div>`;
 }
 function pickAnswer(l){if(answered)return;const q=filteredQuestions[currentIndex];answered=true;progress[q.id]={answer:l,correct:l===q.answer,timestamp:Date.now()};localStorage.setItem(QS_KEY,JSON.stringify(progress));updateStats();showQuestion(currentIndex);}
 function nextQuestion(){if(currentIndex<filteredQuestions.length-1)showQuestion(currentIndex+1);}
