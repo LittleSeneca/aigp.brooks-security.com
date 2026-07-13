@@ -47,7 +47,7 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; margin-bottom: 12px; }
 .q-meta { display: flex; gap: 8px; margin-bottom: 8px; font-size: 0.75rem; color: var(--text-muted); flex-wrap: wrap; }
 .q-meta span { padding: 2px 7px; background: rgba(108,140,255,0.1); border-radius: 3px; }
-.diff-easy { color: var(--correct); } .diff-medium { color: var(--warning); } .diff-hard { color: var(--incorrect); }
+.diff-easy { color: var(--correct); } .diff-medium { color: var(--warning); } .diff-hard { color: var(--incorrect); } .diff-painful { color: #ff4444; font-weight: 700; }
 .q-text { font-size: 0.98rem; margin-bottom: 14px; line-height: 1.65; }
 .options { display: flex; flex-direction: column; gap: 5px; }
 .option { display: flex; align-items: flex-start; gap: 10px; padding: 9px 12px; border: 1px solid var(--border); border-radius: var(--radius); cursor: pointer; transition: all 0.1s; font-size: 0.9rem; }
@@ -175,7 +175,7 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 </div>
 <div class="controls">
   <select id="domain-filter" onchange="onFilterChange()"><option value="all">All Domains</option><option value="Domain I">Domain I</option><option value="Domain II">Domain II</option><option value="Domain III">Domain III</option><option value="Domain IV">Domain IV</option></select>
-  <select id="difficulty-filter" onchange="onFilterChange()"><option value="all">All Difficulty</option><option value="Easy">Easy</option><option value="Medium">Medium</option><option value="Hard">Hard</option></select>
+  <select id="difficulty-filter" onchange="onFilterChange()"><option value="all">All Difficulty</option><option value="Easy">Easy</option><option value="Medium">Medium</option><option value="Hard">Hard</option><option value="Painful">Painful</option></select>
   <select id="status-filter" onchange="onFilterChange()"><option value="all">All Status</option><option value="unanswered">Unanswered</option><option value="correct">Correct</option><option value="incorrect">Incorrect</option></select>
   <button class="primary" onclick="pickRandom()">Random</button>
   <button onclick="resetFilters()">Reset</button>
