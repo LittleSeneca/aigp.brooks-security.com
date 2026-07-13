@@ -4689,7 +4689,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Corrupting recipe and food-related data in culinary recommendation applications"
+        "text": "Deleting all data from a system's storage and replacing it with synthetic data generated from a different statistical distribution to test the model's robustness to distribution shift"
       }
     ],
     "answer": "C",
@@ -10115,11 +10115,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Conducting classroom sessions to teach employees how to operate and use AI applications"
+        "text": "The process of selecting and configuring the model's hyperparameters — such as learning rate, batch size, and regularization strength — before the learning process begins"
       },
       {
         "letter": "C",
-        "text": "Physical fitness and wellness training programs provided for AI development staff members"
+        "text": "The process of deploying a trained model into a production environment, including containerization, API endpoint configuration, and integration with downstream consuming applications"
       },
       {
         "letter": "D",
@@ -13611,7 +13611,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "The transparency principle was violated. Stakeholders should be informed about AI use in decisions affecting them, enabling informed decisions and appropriate trust calibration. Lack of disclosure can damage trust and may violate regulations. [Extended: affecting them]"
+    "explanation": "The transparency principle was violated. Stakeholders should be informed about AI use in decisions affecting them, enabling informed decisions and appropriate trust calibration. Lack of disclosure can damage trust and may violate regulations."
   },
   {
     "id": "q-520",
@@ -13663,7 +13663,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Post-deployment monitoring should include performance metrics, fairness across groups, user feedback, incident tracking, model drift detection, unintended consequences, and real- world impacts. [Extended: consequences, and]"
+    "explanation": "Post-deployment monitoring should include performance metrics, fairness across groups, user feedback, incident tracking, model drift detection, unintended consequences, and real- world impacts."
   },
   {
     "id": "q-522",
@@ -13689,7 +13689,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Gradual performance degradation requires investigation of root causes (model drift, data distribution changes), impact assessment, determination of whether intervention is needed, and documentation. Ignoring degradation (A, C) risks increasing harm. Notification alone (D) is insufficient. [Extended: updates) is needed,]"
+    "explanation": "Gradual performance degradation requires investigation of root causes (model drift, data distribution changes), impact assessment, determination of whether intervention is needed, and documentation. Ignoring degradation (A, C) risks increasing harm. Notification alone (D) is insufficient."
   },
   {
     "id": "q-523",
@@ -13715,7 +13715,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Deployment rollback involves reverting to a previous system version or removing an AI system from production when serious issues are detected, protecting users from harm while issues are addressed. [Extended: to issues]"
+    "explanation": "Deployment rollback involves reverting to a previous system version or removing an AI system from production when serious issues are detected, protecting users from harm while issues are addressed."
   },
   {
     "id": "q-524",
@@ -13741,7 +13741,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Deployment should be rolled back when serious issues are detected that pose unacceptable risk, such as safety problems, significant bias causing harm, critical system failures, or security vulnerabilities. Waiting for universal complaints (C) or regulatory action (D) delays necessary protection. [Extended: failures) that pose]"
+    "explanation": "Deployment should be rolled back when serious issues are detected that pose unacceptable risk, such as safety problems, significant bias causing harm, critical system failures, or security vulnerabilities. Waiting for universal complaints (C) or regulatory action (D) delays necessary protection."
   },
   {
     "id": "q-525",
@@ -13793,7 +13793,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Deployment approval authority should be appropriate to risk level: project leads may approve low-risk systems, while high-risk systems require senior leadership or governance board approval. This ensures appropriate oversight. [Extended: leadership or]"
+    "explanation": "Deployment approval authority should be appropriate to risk level: project leads may approve low-risk systems, while high-risk systems require senior leadership or governance board approval. This ensures appropriate oversight."
   },
   {
     "id": "q-527",
@@ -13871,7 +13871,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Comprehensive deployment planning includes deployment approach selection, timing, required resources, risk mitigation strategies, monitoring plans, rollback procedures, stakeholder communication plans, and success criteria. [Extended: procedures, and]"
+    "explanation": "Comprehensive deployment planning includes deployment approach selection, timing, required resources, risk mitigation strategies, monitoring plans, rollback procedures, stakeholder communication plans, and success criteria."
   },
   {
     "id": "q-530",
@@ -13949,7 +13949,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Deployment success requires achieving intended benefits and objectives, not just technical performance. If business benefits aren’t realized, the deployment hasn’t achieved its purpose, requiring investigation and potential adjustments. [Extended: performance]"
+    "explanation": "Deployment success requires achieving intended benefits and objectives, not just technical performance. If business benefits aren’t realized, the deployment hasn’t achieved its purpose, requiring investigation and potential adjustments."
   },
   {
     "id": "q-533",
@@ -14001,7 +14001,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Deployment risk assessment should consider technical failures, bias and discrimination, safety issues, security vulnerabilities, potential user misuse, unintended consequences, and organizational risks. [Extended: vulnerabilities, user misuse, and]"
+    "explanation": "Deployment risk assessment should consider technical failures, bias and discrimination, safety issues, security vulnerabilities, potential user misuse, unintended consequences, and organizational risks."
   },
   {
     "id": "q-535",
@@ -14049,7 +14049,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Procedures for hosting launch parties and celebrations when AI systems go live"
+        "text": "The process of selecting the appropriate deployment environment — cloud, on-premises, edge, or hybrid — based on the system's latency, data residency, and regulatory compliance requirements"
       }
     ],
     "answer": "C",
@@ -14079,7 +14079,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Deployment governance focuses on real-world use, ongoing monitoring, user interaction, operational risks, and impacts rather than development activities. Both are important but address different lifecycle stages. [Extended: operational]"
+    "explanation": "Deployment governance focuses on real-world use, ongoing monitoring, user interaction, operational risks, and impacts rather than development activities. Both are important but address different lifecycle stages."
   },
   {
     "id": "q-538",
@@ -14157,7 +14157,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Continuous monitoring is important because AI systems can experience performance degradation, model drift, emerging bias, or other issues over time as conditions change. Monitoring enables early detection and intervention before significant harm occurs. [Extended: monitoring enables early detection and]"
+    "explanation": "Continuous monitoring is important because AI systems can experience performance degradation, model drift, emerging bias, or other issues over time as conditions change. Monitoring enables early detection and intervention before significant harm occurs."
   },
   {
     "id": "q-541",
@@ -14183,7 +14183,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Comprehensive monitoring includes performance metrics (accuracy, latency), fairness metrics across groups, prediction distributions (detecting drift), user feedback, incident tracking, and real-world outcomes. [Extended: real-]"
+    "explanation": "Comprehensive monitoring includes performance metrics (accuracy, latency), fairness metrics across groups, prediction distributions (detecting drift), user feedback, incident tracking, and real-world outcomes."
   },
   {
     "id": "q-542",
@@ -14209,7 +14209,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Model drift (or concept drift) occurs when real-world data patterns change from training data patterns, causing model performance to degrade. Monitoring for drift enables timely retraining or updates. [Extended: training data]"
+    "explanation": "Model drift (or concept drift) occurs when real-world data patterns change from training data patterns, causing model performance to degrade. Monitoring for drift enables timely retraining or updates."
   },
   {
     "id": "q-543",
@@ -14235,7 +14235,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Significant prediction distribution shifts even with stable accuracy may indicate data drift, population changes, or emerging fairness issues (e.g., the model is making different types of predictions for different groups). This warrants investigation even if accuracy hasn’t degraded yet. [Extended: indicate current fairness]"
+    "explanation": "Significant prediction distribution shifts even with stable accuracy may indicate data drift, population changes, or emerging fairness issues (e.g., the model is making different types of predictions for different groups). This warrants investigation even if accuracy hasn’t degraded yet."
   },
   {
     "id": "q-544",
@@ -14287,7 +14287,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Performance monitoring should include overall accuracy, precision, recall, false positive/ negative rates, latency, resource usage, and critically, performance across demographic groups to detect emerging disparities. [Extended: performance across]"
+    "explanation": "Performance monitoring should include overall accuracy, precision, recall, false positive/ negative rates, latency, resource usage, and critically, performance across demographic groups to detect emerging disparities."
   },
   {
     "id": "q-546",
@@ -14339,7 +14339,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Fairness monitoring should track performance disparities across demographic groups, differences in false positive/negative rates, outcome distributions, and other fairness metrics to detect emerging bias. [Extended: outcome distri-]"
+    "explanation": "Fairness monitoring should track performance disparities across demographic groups, differences in false positive/negative rates, outcome distributions, and other fairness metrics to detect emerging bias."
   },
   {
     "id": "q-548",
@@ -14365,7 +14365,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "A widening performance gap indicates emerging bias requiring investigation of root causes, impact assessment, and mitigation through retraining, algorithm adjustment, or other inter144 ventions. Significant harm may warrant temporary suspension while issues are addressed. [Extended: adjustment),]"
+    "explanation": "A widening performance gap indicates emerging bias requiring investigation of root causes, impact assessment, and mitigation through retraining, algorithm adjustment, or other inter144 ventions. Significant harm may warrant temporary suspension while issues are addressed."
   },
   {
     "id": "q-549",
@@ -14383,7 +14383,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Monitoring workplace safety incidents and occupational hazards in AI operations facilities"
+        "text": "Monitoring only cybersecurity breaches such as unauthorized API access, model exfiltration attempts, and adversarial input attacks against the AI system's inference endpoint"
       },
       {
         "letter": "D",
@@ -14417,7 +14417,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Incident monitoring should track system failures, incorrect predictions with significant consequences, bias incidents, security breaches, user-reported issues, and near-misses. [Extended: breaches, and]"
+    "explanation": "Incident monitoring should track system failures, incorrect predictions with significant consequences, bias incidents, security breaches, user-reported issues, and near-misses."
   },
   {
     "id": "q-551",
@@ -14495,7 +14495,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "User confusion leading to misuse is a significant issue requiring action even if automated monitoring shows no technical problems. Governance should require addressing usability through interface improvements, enhanced training, or better documentation. [Extended: as confusion]"
+    "explanation": "User confusion leading to misuse is a significant issue requiring action even if automated monitoring shows no technical problems. Governance should require addressing usability through interface improvements, enhanced training, or better documentation."
   },
   {
     "id": "q-554",
@@ -14625,7 +14625,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "AI audits include compliance audits (regulatory requirements), fairness audits (bias and discrimination), security audits (vulnerabilities), performance audits (accuracy and reliability), and governance audits (process effectiveness). [Extended: governance audits]"
+    "explanation": "AI audits include compliance audits (regulatory requirements), fairness audits (bias and discrimination), security audits (vulnerabilities), performance audits (accuracy and reliability), and governance audits (process effectiveness)."
   },
   {
     "id": "q-559",
@@ -14677,7 +14677,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "External audits detecting issues that internal monitoring missed indicates monitoring may be inadequate. Governance should strengthen monitoring capabilities and address the identified bias. [Extended: address the]"
+    "explanation": "External audits detecting issues that internal monitoring missed indicates monitoring may be inadequate. Governance should strengthen monitoring capabilities and address the identified bias."
   },
   {
     "id": "q-561",
@@ -14739,15 +14739,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Viewing compliance with regulatory filing requirements as the single most important"
+        "text": "External auditors are better positioned to evaluate technical model performance because they have access to benchmarking datasets and evaluation frameworks that internal teams lack due to data access restrictions"
       },
       {
         "letter": "B",
-        "text": "Focusing post-deployment review activities on verification of vendor due diligence"
+        "text": "External audits eliminate the need for continuous internal monitoring, because the auditor's periodic assessment replaces the organization's obligation to maintain ongoing oversight of deployed AI systems"
       },
       {
         "letter": "C",
-        "text": "Structuring the governance program around continuous improvement of model explainability"
+        "text": "External auditors bring domain-specific knowledge of the organization's business context, data, and customer base that internal teams cannot match because they are embedded in the organization's daily operations"
       },
       {
         "letter": "D",
@@ -14781,7 +14781,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "When stakeholders question internal audit credibility, governance should recommend supplementing internal audits with periodic external audits to provide independent assurance and build trust. Both internal and external audits have value. [Extended: assurance and]"
+    "explanation": "When stakeholders question internal audit credibility, governance should recommend supplementing internal audits with periodic external audits to provide independent assurance and build trust. Both internal and external audits have value."
   },
   {
     "id": "q-565",
@@ -14833,7 +14833,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "AI auditing challenges include model complexity (black boxes), data access limitations (privacy, proprietary concerns), lack of standardized auditing methodologies, and difficulty assessing real-world impacts. [Extended: difficulty assessing real-world im-]"
+    "explanation": "AI auditing challenges include model complexity (black boxes), data access limitations (privacy, proprietary concerns), lack of standardized auditing methodologies, and difficulty assessing real-world impacts."
   },
   {
     "id": "q-567",
@@ -14911,7 +14911,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Significant bias may make continued operation unacceptable regardless of remediation costs. Governance should assess whether operation with known bias is acceptable (considering legal, ethical, and reputational risks) and require remediation or suspension if not. [Extended: if not acceptable,]"
+    "explanation": "Significant bias may make continued operation unacceptable regardless of remediation costs. Governance should assess whether operation with known bias is acceptable (considering legal, ethical, and reputational risks) and require remediation or suspension if not."
   },
   {
     "id": "q-570",
@@ -15015,7 +15015,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Audit independence means auditors are free from conflicts of interest and organizational pressure, ensuring objective assessment and credible findings. This is fundamental to audit value. 152 [Extended: objective assess-]"
+    "explanation": "Audit independence means auditors are free from conflicts of interest and organizational pressure, ensuring objective assessment and credible findings. This is fundamental to audit value."
   },
   {
     "id": "q-574",
@@ -15041,7 +15041,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Auditors reporting to those they audit lacks independence, creating conflicts of interest and pressure that may compromise objectivity. Governance should require audit independence through separate reporting lines (e.g., to board audit committee). [Extended: of interest and]"
+    "explanation": "Auditors reporting to those they audit lacks independence, creating conflicts of interest and pressure that may compromise objectivity. Governance should require audit independence through separate reporting lines (e.g., to board audit committee)."
   },
   {
     "id": "q-575",
@@ -15145,7 +15145,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "AI auditors may examine system documentation, test results, monitoring data, incident reports, code and algorithms, training data characteristics, model outputs, and conduct stakeholder interviews. [Extended: training data, and]"
+    "explanation": "AI auditors may examine system documentation, test results, monitoring data, incident reports, code and algorithms, training data characteristics, model outputs, and conduct stakeholder interviews."
   },
   {
     "id": "q-579",
@@ -15189,11 +15189,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "A physical accident involving AI hardware such as a server falling off a rack in a data center"
+        "text": "An error or omission in the written documentation describing an AI system's intended use, training methodology, or known limitations that could mislead downstream deployers about the system's capabilities"
       },
       {
         "letter": "D",
-        "text": "A workplace incident occurring at an AI company such as an employee slip or fall"
+        "text": "A deliberate adversarial attack — such as prompt injection, data poisoning, or model extraction — that compromises the AI system's intended behavior or exposes its training data to unauthorized access"
       }
     ],
     "answer": "A",
@@ -15249,7 +15249,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "AI incident response includes detection (identifying incidents), assessment (evaluating severity), containment (stopping harm), investigation (root cause analysis), remediation (fixing issues), communication (stakeholder notification), and learning (preventing recurrence). 155 [Extended: learning]"
+    "explanation": "AI incident response includes detection (identifying incidents), assessment (evaluating severity), containment (stopping harm), investigation (root cause analysis), remediation (fixing issues), communication (stakeholder notification), and learning (preventing recurrence)."
   },
   {
     "id": "q-583",
@@ -15379,7 +15379,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Incident severity assessment should consider harm to individuals, number of people affected, legal implications, reputational impact, potential for escalation, and whether vulnerable populations are affected. [Extended: potential for es-]"
+    "explanation": "Incident severity assessment should consider harm to individuals, number of people affected, legal implications, reputational impact, potential for escalation, and whether vulnerable populations are affected."
   },
   {
     "id": "q-588",
@@ -15431,7 +15431,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Containment actions may include suspending the AI system, implementing mandatory manual review, restricting use to lower-risk scenarios, or rolling back to a previous version, depending on incident severity. [Extended: previous version]"
+    "explanation": "Containment actions may include suspending the AI system, implementing mandatory manual review, restricting use to lower-risk scenarios, or rolling back to a previous version, depending on incident severity."
   },
   {
     "id": "q-590",
@@ -15457,7 +15457,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Governance should assess whether continued operation poses unacceptable risk given the incident. Containment measures (mandatory manual review, use restrictions) may allow continued operation with reduced risk during investigation. Blanket rules (A, C) don’t account for context. Documentation alone (D) doesn’t address ongoing risk. [Extended: may require containment measures]"
+    "explanation": "Governance should assess whether continued operation poses unacceptable risk given the incident. Containment measures (mandatory manual review, use restrictions) may allow continued operation with reduced risk during investigation. Blanket rules (A, C) don’t account for context. Documentation alone (D) doesn’t address ongoing risk."
   },
   {
     "id": "q-591",
@@ -15587,7 +15587,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Comprehensive remediation includes technical fixes, notification and redress for affected individuals, process improvements to prevent recurrence, preventive measures, and documentation updates. [Extended: preventive]"
+    "explanation": "Comprehensive remediation includes technical fixes, notification and redress for affected individuals, process improvements to prevent recurrence, preventive measures, and documentation updates."
   },
   {
     "id": "q-596",
@@ -15639,7 +15639,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Incident notification should include affected individuals, regulators (when legally required), senior leadership, and potentially the public depending on severity and impact. Transparency supports accountability and trust. [Extended: potentially the public,]"
+    "explanation": "Incident notification should include affected individuals, regulators (when legally required), senior leadership, and potentially the public depending on severity and impact. Transparency supports accountability and trust."
   },
   {
     "id": "q-598",
@@ -15665,7 +15665,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Governance should balance legal considerations with ethical obligations to transparency, affected individuals’ rights to know, regulatory requirements, and long-term trust. Minimal com160 munication (A, C) may violate ethical obligations or regulations. Waiting for regulatory force (D) is reactive. Legal advice should inform but not solely determine communication. [Extended: individual rights, and]"
+    "explanation": "Governance should balance legal considerations with ethical obligations to transparency, affected individuals’ rights to know, regulatory requirements, and long-term trust. Minimal com160 munication (A, C) may violate ethical obligations or regulations. Waiting for regulatory force (D) is reactive. Legal advice should inform but not solely determine communication."
   },
   {
     "id": "q-599",
@@ -15717,7 +15717,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Comprehensive incident documentation supports accountability, enables organizational learning, demonstrates regulatory compliance, provides evidence for investigations, and helps prevent recurrence. [Extended: provides evidence for in-]"
+    "explanation": "Comprehensive incident documentation supports accountability, enables organizational learning, demonstrates regulatory compliance, provides evidence for investigations, and helps prevent recurrence."
   },
   {
     "id": "q-601",
@@ -15847,7 +15847,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Accountability ensures someone is responsible for AI outcomes, enables redress when harms occur, promotes responsible development and use, and supports trust. [Extended: promotes responsible development]"
+    "explanation": "Accountability ensures someone is responsible for AI outcomes, enables redress when harms occur, promotes responsible development and use, and supports trust."
   },
   {
     "id": "q-606",
@@ -15873,7 +15873,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Accountability is distributed based on roles: developers for development quality, deployers for appropriate deployment and use, users for proper oversight, and leadership for governance. AI systems aren’t autonomous moral agents (A). [Extended: users for]"
+    "explanation": "Accountability is distributed based on roles: developers for development quality, deployers for appropriate deployment and use, users for proper oversight, and leadership for governance. AI systems aren’t autonomous moral agents (A)."
   },
   {
     "id": "q-607",
@@ -15899,7 +15899,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Accountability may be shared across multiple parties depending on where failures occurred. Investigation should determine whether development was adequate, deployment appropriate, use proper, and governance effective, assigning responsibility accordingly. [Extended: and assign]"
+    "explanation": "Accountability may be shared across multiple parties depending on where failures occurred. Investigation should determine whether development was adequate, deployment appropriate, use proper, and governance effective, assigning responsibility accordingly."
   },
   {
     "id": "q-608",
@@ -16003,7 +16003,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Contestability mechanisms should include clear processes for challenging decisions, meaningful human review, explanation of how decisions were made, timely resolution, and appropriate remedies. [Extended: timely resol-]"
+    "explanation": "Contestability mechanisms should include clear processes for challenging decisions, meaningful human review, explanation of how decisions were made, timely resolution, and appropriate remedies."
   },
   {
     "id": "q-612",
@@ -16029,7 +16029,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Contestability should use risk-based approaches: prioritize high-stakes decisions for human review, implement efficient review processes, ensure meaningful review for significant impacts, and potentially use assisted review for lower-stakes decisions. Eliminating contestability (A) violates principles. Fees (C) may be inappropriate. Automated-only appeals (D) may be insufficient. [Extended: efficient review]"
+    "explanation": "Contestability should use risk-based approaches: prioritize high-stakes decisions for human review, implement efficient review processes, ensure meaningful review for significant impacts, and potentially use assisted review for lower-stakes decisions. Eliminating contestability (A) violates principles. Fees (C) may be inappropriate. Automated-only appeals (D) may be insufficient."
   },
   {
     "id": "q-613",
@@ -16081,7 +16081,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "AI transparency should include information about AI use, capabilities, limitations, factors influencing decisions, and governance appropriate for different stakeholders, balancing transparency with legitimate proprietary concerns. [Extended: governance appropriate for]"
+    "explanation": "AI transparency should include information about AI use, capabilities, limitations, factors influencing decisions, and governance appropriate for different stakeholders, balancing transparency with legitimate proprietary concerns."
   },
   {
     "id": "q-615",
@@ -16091,7 +16091,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Establishing stakeholder feedback collection and analysis as the foundation"
+        "text": "The requirement that AI system developers publish their complete training data, model weights, and source code so that independent researchers can reproduce and validate the system's outputs"
       },
       {
         "letter": "B",
@@ -16099,11 +16099,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Calibrating the intensity of oversight according to public consultation and community"
+        "text": "The governance principle that AI systems must produce identical outputs when presented with identical inputs, enabling auditors to verify that decisions are consistent and reproducible across repeated evaluations"
       },
       {
         "letter": "D",
-        "text": "Governing AI systems through a framework centered on accessibility and inclusive design"
+        "text": "The capability of an AI system to articulate its own limitations, including the conditions under which its predictions are unreliable and the specific types of inputs for which it was not designed or validated"
       }
     ],
     "answer": "B",
@@ -16133,7 +16133,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Adequate explanations must be accurate (faithful to actual system behavior), comprehensible for the intended audience, and useful for the purpose (understanding, challenging, or accepting decisions). [Extended: usefulness for the pur-]"
+    "explanation": "Adequate explanations must be accurate (faithful to actual system behavior), comprehensible for the intended audience, and useful for the purpose (understanding, challenging, or accepting decisions)."
   },
   {
     "id": "q-617",
@@ -16159,7 +16159,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "B",
-    "explanation": "Explanations must be comprehensible to intended audiences, not just technically accurate. Incomprehensible explanations don’t support accountability, informed decisions, or meaningful 166 contestability. [Extended: technical accuracy alone is insuf-]"
+    "explanation": "Explanations must be comprehensible to intended audiences, not just technically accurate. Incomprehensible explanations don’t support accountability, informed decisions, or meaningful 166 contestability."
   },
   {
     "id": "q-618",
@@ -16211,7 +16211,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Governance accountability requires clear roles and responsibilities, documentation of governance decisions and rationale, regular reviews of governance effectiveness, and oversight (board, regulators) of governance. [Extended: governance]"
+    "explanation": "Governance accountability requires clear roles and responsibilities, documentation of governance decisions and rationale, regular reviews of governance effectiveness, and oversight (board, regulators) of governance."
   },
   {
     "id": "q-620",
@@ -16263,7 +16263,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "C",
-    "explanation": "Accountability is a fundamental principle of AI governance. Governance establishes accountability structures (roles, responsibilities), mechanisms (monitoring, auditing, incident response), and ensures someone is answerable for AI outcomes. Conclusion Congratulations on completing all 500 AIGP study guide questions! This comprehensive question set covers all four domains and 15 chapters of the AI Governance Professional certification. Study Recommendations Review Explanations: Even for questions answered correctly, read the explanations to deepen understanding Focus on Weak Areas: Identify chapters or topics where you struggled and review those sections Understand Rationales: Don’t just memorize answers; understand the reasoning behind correct and incorrect options Cross-Reference: Use the AIGP Body of Knowledge alongside these questions for comprehensive preparation Practice Application: Consider how concepts apply to real-world scenarios in your organization Track Progress: Mark questions for review and revisit them periodically Difficulty Distribution Summary Easy Questions (30%): ~150 questions testing foundational knowledge and definitions Medium Questions (50%): ~250 questions testing application and analysis Hard Questions (20%): ~100 questions testing complex scenarios and integration Domain Coverage Domain I: Questions 1-125 (Foundations of AI Governance) Domain II: Questions 126-250 (Laws, Standards & Frameworks) Domain III: Questions 251-375 (Governing AI Development) Domain IV: Questions 376-500 (Governing AI Deployment & Use) 1. 2. 3. 4. 5. 6. • • • • • • • 168 Next Steps Review the IAPP AIGP Body of Knowledge Take official IAPP practice exams Join study groups or forums for discussion Apply concepts to real-world AI governance scenarios Schedule your AIGP certification exam when ready Good luck with your AIGP certification journey! Document Version: 1.0 Last Updated: October 2025 Total Questions: 500 Prepared for: AIGP Certification Exam Preparation 1. 2. 3. 4. 5. 169 [Extended: governance establishes accountability]"
+    "explanation": "Accountability is a fundamental principle of AI governance. Governance establishes accountability structures (roles, responsibilities), mechanisms (monitoring, auditing, incident response), and ensures someone is answerable for AI outcomes. Conclusion Congratulations on completing all 500 AIGP study guide questions! This comprehensive question set covers all four domains and 15 chapters of the AI Governance Professional certification. Study Recommendations Review Explanations: Even for questions answered correctly, read the explanations to deepen understanding Focus on Weak Areas: Identify chapters or topics where you struggled and review those sections Understand Rationales: Don’t just memorize answers; understand the reasoning behind correct and incorrect options Cross-Reference: Use the AIGP Body of Knowledge alongside these questions for comprehensive preparation Practice Application: Consider how concepts apply to real-world scenarios in your organization Track Progress: Mark questions for review and revisit them periodically Difficulty Distribution Summary Easy Questions (30%): ~150 questions testing foundational knowledge and definitions Medium Questions (50%): ~250 questions testing application and analysis Hard Questions (20%): ~100 questions testing complex scenarios and integration Domain Coverage Domain I: Questions 1-125 (Foundations of AI Governance) Domain II: Questions 126-250 (Laws, Standards & Frameworks) Domain III: Questions 251-375 (Governing AI Development) Domain IV: Questions 376-500 (Governing AI Deployment & Use) 1. 2. 3. 4. 5. 6. • • • • • • • 168 Next Steps Review the IAPP AIGP Body of Knowledge Take official IAPP practice exams Join study groups or forums for discussion Apply concepts to real-world AI governance scenarios Schedule your AIGP certification exam when ready Good luck with your AIGP certification journey! Document Version: 1.0 Last Updated: October 2025 Total Questions: 500 Prepared for: AIGP Certification Exam Preparation 1. 2. 3. 4. 5."
   },
   {
     "id": "q-622",
