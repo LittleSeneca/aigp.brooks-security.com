@@ -14011,23 +14011,23 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Directing monitoring efforts toward continuous verification of stakeholder engagement"
+        "text": "Deployment should not proceed under any circumstances where residual risk remains, because the organization's risk appetite framework requires all identified AI risks to be fully eliminated before a system can be authorized for production use"
       },
       {
         "letter": "B",
-        "text": "Depends on risk-benefit analysis, adequacy of mitigation"
+        "text": "Deployment may proceed only after a formal risk-benefit analysis concludes the residual risk is acceptable given the system's benefits, the adequacy of mitigations, and the context of use — with the risk acceptance decision documented in the risk register and approved at the appropriate governance level"
       },
       {
         "letter": "C",
-        "text": "Mandating documented evidence of satisfactory vendor due diligence and supply chain"
+        "text": "Deployment should proceed immediately since the risks have been identified and mitigations are in place — the existence of a documented mitigation plan, regardless of residual risk level, satisfies the pre-deployment governance requirements"
       },
       {
         "letter": "D",
-        "text": "Positioning incident response and escalation procedures at the core of the organizational"
+        "text": "Deployment should proceed with the condition that the organization's cyber insurance policy explicitly covers AI-related losses arising from the identified risks, because transferring the residual risk through insurance satisfies the organization's risk treatment obligations"
       }
     ],
     "answer": "B",
-    "explanation": "Deployment decisions with residual risk require risk-benefit analysis, evaluation of mitigation adequacy, and determination of whether residual risk is acceptable given benefits, context, and stakeholder values. Zero risk (A) is unrealistic. Ignoring risk (C) is irresponsible. Insurance (D) doesn’t determine acceptability. [Extended: whether residual risk is acceptable]"
+    "explanation": "Residual risk — risk remaining after mitigations are applied — is an expected outcome of risk management, not a failure of it. The governance question is not whether residual risk exists but whether it is acceptable. Option B correctly describes the risk acceptance process: formal risk-benefit analysis, documentation in the risk register, and approval at the appropriate governance level. Option A imposes an impossible zero-risk standard that no AI system can meet. Option C treats risk identification as sufficient, ignoring the assessment and acceptance steps. Option D confuses risk transfer (insurance) with risk acceptance — insurance may offset financial consequences but does not determine whether the residual risk to stakeholders, rights, and organizational values is acceptable."
   },
   {
     "id": "q-536",
