@@ -144,7 +144,38 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .mm-drawer-body .src-badge { display: inline-block; font-size: 0.7rem; padding: 2px 10px; border-radius: 12px; background: rgba(108,140,255,0.14); color: var(--accent); margin: 14px 0 6px; }
 .mm-drawer-body .wikilink { color: var(--accent); }
 
+/* Test */
+.test-layout { flex: 1; display: flex; min-height: 0; }
+.test-sidebar { width: 240px; flex-shrink: 0; border-right: 1px solid var(--border); overflow-y: auto; padding: 14px 12px; background: var(--bg); }
+.test-sidebar h3 { font-size: 0.85rem; color: var(--accent); margin-bottom: 10px; }
+.test-main { flex: 1; }
+.attempt-item { padding: 9px 10px; border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 7px; cursor: pointer; transition: border-color 0.15s; }
+.attempt-item:hover { border-color: var(--accent); }
+.attempt-item.active { border-color: var(--accent); background: rgba(108,140,255,0.06); }
+.attempt-mode { font-size: 0.82rem; font-weight: 600; }
+.attempt-score { font-size: 0.8rem; font-weight: 700; }
+.attempt-meta { font-size: 0.7rem; color: var(--text-muted); margin-top: 3px; }
+.empty-hist { font-size: 0.76rem; color: var(--text-muted); }
+.mode-cards { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; }
+.mode-card { flex: 1; min-width: 220px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; cursor: pointer; transition: border-color 0.15s, transform 0.1s; }
+.mode-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.mode-card h2 { font-size: 1.15rem; color: var(--accent); margin-bottom: 6px; }
+.mode-card .mc-spec { font-size: 0.85rem; color: var(--text); margin-bottom: 10px; }
+.mode-card .mc-desc { font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; }
+.test-timer { font-family: monospace; font-size: 1.15rem; font-weight: 700; padding: 4px 12px; border: 1px solid var(--border); border-radius: var(--radius); }
+.test-timer.warn { color: var(--incorrect); border-color: var(--incorrect); }
+.option.selected { border-color: var(--accent); background: rgba(108,140,255,0.1); }
+.option.selected .option-letter { border-color: var(--accent); color: var(--accent); }
+.qgrid { display: flex; flex-wrap: wrap; gap: 5px; margin: 12px 0; }
+.qcell { width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border); border-radius: 5px; font-size: 0.72rem; cursor: pointer; }
+.qcell.answered { background: rgba(108,140,255,0.18); border-color: var(--accent); }
+.qcell.current { outline: 2px solid var(--accent); outline-offset: 1px; }
+.qcell.pass { background: rgba(46,204,113,0.18); border-color: var(--correct); color: var(--correct); }
+.qcell.fail { background: rgba(231,76,60,0.18); border-color: var(--incorrect); color: var(--incorrect); }
+
 @media (max-width: 768px) {
+  .test-layout { flex-direction: column; }
+  .test-sidebar { width: auto; border-right: none; border-bottom: 1px solid var(--border); max-height: 160px; }
   .container { flex-direction: column; }
   .mm-sidebar { position: static; max-width: none; margin: 8px; }
   .header { padding: 8px 12px; }
@@ -162,6 +193,7 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   <div class="tabs">
     <div class="tab active" onclick="switchTab('quiz')" id="tab-quiz">Quiz</div>
     <div class="tab" onclick="switchTab('flashcards')" id="tab-flashcards">Flashcards</div>
+    <div class="tab" onclick="switchTab('test')" id="tab-test">Test</div>
     <div class="tab" onclick="switchTab('mindmap')" id="tab-mindmap">Mind Map</div>
   </div>
 </div>
@@ -261,6 +293,17 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   </div>
 </div>
 
+<!-- ═══ TEST ═══ -->
+<div class="tab-panel hidden" id="panel-test">
+  <div class="test-layout">
+    <div class="test-sidebar">
+      <h3>Attempt History</h3>
+      <div id="test-history"></div>
+    </div>
+    <div class="quiz-scroll test-main" id="test-main"></div>
+  </div>
+</div>
+
 </div></div></div>
 
 <script src="quiz-data.js"></script>
@@ -270,11 +313,12 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 <script>
 // ═══════════ TABS ═══════════
 function switchTab(tab) {
-  ['quiz','flashcards','mindmap'].forEach(t => {
+  ['quiz','flashcards','test','mindmap'].forEach(t => {
     document.getElementById('panel-'+t).classList.toggle('hidden', t !== tab);
     document.getElementById('tab-'+t).classList.toggle('active', t === tab);
   });
   if (tab === 'mindmap') setTimeout(buildMindMap, 50);
+  if (tab === 'test') renderTest();
 }
 
 // ═══════════ QUIZ ═══════════
@@ -312,14 +356,18 @@ function pickRandom(){applyFilters();if(filteredQuestions.length)showQuestion(Ma
 function resetFilters(){['domain-filter','difficulty-filter','status-filter'].forEach(id=>document.getElementById(id).value='all');onFilterChange();}
 function onFilterChange(){applyFilters();updateStats();currentIndex=0;if(filteredQuestions.length>0)showQuestion(0);else document.getElementById('question-area').innerHTML='<div class="empty"><h2>No questions match</h2></div>';}
 function resetQuizProgress(){
-  if(!confirm('Delete all progress — question answers, flashcard ratings, and review history? This cannot be undone.'))return;
+  if(!confirm('Delete all progress — question answers, flashcard ratings, and exam history? This cannot be undone.'))return;
   localStorage.removeItem(QS_KEY);
   localStorage.removeItem(FC_MASTERY_KEY);
   localStorage.removeItem(FC_COUNTS_KEY);
+  localStorage.removeItem(TEST_KEY);
   progress={};
+  if(exam){clearInterval(exam.timerId);exam=null;}
+  testView='menu';reviewIdx=null;
   onFilterChange();
   applyFCFilter();
   updateFCStats();
+  renderTest();
   selectMMNode(null);
   buildMindMap();
 }
@@ -597,6 +645,114 @@ function clearFCNode() {
   applyFCFilter();
 }
 
+// ═══════════ TEST (timed exam) ═══════════
+const TEST_KEY='aigp-test-history';
+const QUESTION_BY_ID=Object.fromEntries(ALL_QUESTIONS.map(q=>[q.id,q]));
+const TEST_MODES={
+  full:    {label:'Full Exam',     limitMs:3*60*60*1000, mix:{Easy:25,Medium:25,Hard:25,Painful:25}},
+  practice:{label:'Practice Quiz', limitMs:1*60*60*1000, mix:{Easy:6, Medium:6, Hard:6, Painful:7}},
+};
+let testView='menu';   // 'menu' | 'exam' | 'review'
+let exam=null;         // active attempt in memory
+let reviewIdx=null, reviewQ=0;
+
+function getTestHistory(){try{return JSON.parse(localStorage.getItem(TEST_KEY))||[]}catch(e){return[]}}
+function saveTestHistory(h){localStorage.setItem(TEST_KEY,JSON.stringify(h));}
+function fmtClock(ms){ms=Math.max(0,ms);const s=Math.floor(ms/1000),h=Math.floor(s/3600),m=Math.floor(s%3600/60),ss=s%60;return (h?h+':'+String(m).padStart(2,'0'):''+m)+':'+String(ss).padStart(2,'0');}
+function fmtDate(ts){const d=new Date(ts);return d.toLocaleDateString(undefined,{month:'short',day:'numeric'})+' '+d.toLocaleTimeString(undefined,{hour:'numeric',minute:'2-digit'});}
+function sampleN(pool,n){const a=[...pool],out=[];for(let i=0;i<n&&a.length;i++)out.push(a.splice(Math.floor(Math.random()*a.length),1)[0]);return out;}
+function buildExamQuestions(mix){let out=[];['Easy','Medium','Hard','Painful'].forEach(d=>{out=out.concat(sampleN(ALL_QUESTIONS.filter(q=>q.difficulty===d),mix[d]));});return out;}
+
+function renderTest(){renderHistory();if(testView==='exam')renderExam();else if(testView==='review')renderReview();else renderMenu();}
+
+function renderHistory(){
+  const h=getTestHistory(),el=document.getElementById('test-history');
+  if(!h.length){el.innerHTML='<div class="empty-hist">No attempts yet. Start a test to build your history.</div>';return;}
+  el.innerHTML=h.map((a,i)=>{const pct=Math.round(a.correct/a.total*100);return `<div class="attempt-item ${testView==='review'&&reviewIdx===i?'active':''}" onclick="openAttempt(${i})"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span class="attempt-mode">${a.mode}</span><span class="attempt-score" style="color:${pct>=70?'var(--correct)':'var(--incorrect)'}">${a.correct}/${a.total}</span></div><div class="attempt-meta">${pct}% · ${fmtDate(a.ts)}</div></div>`;}).join('');
+}
+
+function renderMenu(){
+  document.getElementById('test-main').innerHTML=`
+    <h2 style="margin-bottom:4px">Choose a test</h2>
+    <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:6px">No answer feedback while the test is running — you only see how many you've answered and how many are left. Questions run easy → medium → hard → painful. The clock keeps running if you switch tabs.</p>
+    <div class="mode-cards">
+      <div class="mode-card" onclick="startExam('full')"><h2>Full Exam</h2><div class="mc-spec">100 questions · 3 hours</div><div class="mc-desc">25 easy, 25 medium, 25 hard, 25 painful — the full simulated exam.</div></div>
+      <div class="mode-card" onclick="startExam('practice')"><h2>Practice Quiz</h2><div class="mc-spec">25 questions · 1 hour</div><div class="mc-desc">6 easy, 6 medium, 6 hard, 7 painful — a shorter timed warm-up.</div></div>
+    </div>`;
+}
+
+function startExam(key){
+  const m=TEST_MODES[key];
+  exam={mode:m.label,limitMs:m.limitMs,startTime:Date.now(),questions:buildExamQuestions(m.mix),answers:{},index:0,timerId:null};
+  testView='exam';
+  exam.timerId=setInterval(tickTest,1000);
+  renderExam();
+}
+function tickTest(){
+  if(!exam)return;
+  const remaining=exam.limitMs-(Date.now()-exam.startTime);
+  const t=document.getElementById('test-timer');
+  if(t){t.textContent=fmtClock(remaining);t.classList.toggle('warn',remaining<=5*60*1000);}
+  if(remaining<=0)submitExam(true);
+}
+function renderExam(){
+  if(!exam)return;
+  const q=exam.questions[exam.index],n=exam.questions.length,ans=Object.keys(exam.answers).length;
+  const remaining=exam.limitMs-(Date.now()-exam.startTime);
+  const meta=(q.domain?`<span>${q.domain}</span>`:'')+(q.difficulty?`<span class="diff-${q.difficulty.toLowerCase()}">${q.difficulty}</span>`:'')+`<span>Question ${exam.index+1} of ${n}</span>`;
+  const opts=q.options.map(o=>`<div class="option${exam.answers[q.id]===o.letter?' selected':''}" onclick="answerExam('${o.letter}')"><div class="option-letter">${o.letter}</div><div class="option-text">${o.text}</div></div>`).join('');
+  const grid=exam.questions.map((qq,i)=>`<div class="qcell ${exam.answers[qq.id]?'answered':''} ${i===exam.index?'current':''}" onclick="gotoExam(${i})">${i+1}</div>`).join('');
+  document.getElementById('test-main').innerHTML=`
+    <div class="controls" style="align-items:center">
+      <span class="test-timer ${remaining<=5*60*1000?'warn':''}" id="test-timer">${fmtClock(remaining)}</span>
+      <span style="font-size:0.85rem;color:var(--text-muted)">${ans} answered · ${n-ans} left</span>
+      <button style="margin-left:auto;background:var(--correct);border-color:var(--correct);color:#fff" onclick="submitExam(false)">Submit ${exam.mode}</button>
+    </div>
+    <div class="card"><div class="q-meta">${meta}</div><div class="q-text">${q.question}</div><div class="options">${opts}</div></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:14px"><button onclick="prevExam()" ${exam.index===0?'disabled':''}>← Prev</button><button onclick="nextExam()" ${exam.index===n-1?'disabled':''}>Next →</button></div>
+    <div class="qgrid">${grid}</div>
+    <div class="kbd-hint"><span class="kbd">A</span>-<span class="kbd">D</span> answer · <span class="kbd">→</span> next · <span class="kbd">←</span> prev · click a number to jump</div>`;
+}
+function answerExam(l){if(!exam)return;exam.answers[exam.questions[exam.index].id]=l;renderExam();}
+function prevExam(){if(exam&&exam.index>0){exam.index--;renderExam();}}
+function nextExam(){if(exam&&exam.index<exam.questions.length-1){exam.index++;renderExam();}}
+function gotoExam(i){if(exam){exam.index=i;renderExam();}}
+function submitExam(auto){
+  if(!exam)return;
+  if(!auto){const un=exam.questions.length-Object.keys(exam.answers).length;if(!confirm(`Submit ${exam.mode}? ${un} question${un===1?'':'s'} still unanswered.`))return;}
+  clearInterval(exam.timerId);
+  const items=exam.questions.map(q=>{const chosen=exam.answers[q.id]||null;return {qid:q.id,chosen,correct:chosen===q.answer};});
+  const correct=items.filter(it=>it.correct).length;
+  const h=getTestHistory();h.unshift({ts:Date.now(),mode:exam.mode,total:items.length,correct,timeUsedMs:Date.now()-exam.startTime,auto:!!auto,items});saveTestHistory(h);
+  exam=null;reviewIdx=0;reviewQ=0;testView='review';renderTest();
+  if(auto)setTimeout(()=>alert('Time is up — your test was submitted automatically.'),50);
+}
+function renderReview(){
+  const h=getTestHistory(),a=h[reviewIdx];
+  if(!a){testView='menu';renderTest();return;}
+  const pct=Math.round(a.correct/a.total*100);
+  const grid=a.items.map((it,i)=>`<div class="qcell ${it.correct?'pass':'fail'} ${i===reviewQ?'current':''}" onclick="reviewGoto(${i})">${i+1}</div>`).join('');
+  const it=a.items[reviewQ],q=QUESTION_BY_ID[it.qid];
+  let detail='<div class="card"><div class="q-text">This question is no longer in the question bank.</div></div>';
+  if(q){
+    const meta=(q.domain?`<span>${q.domain}</span>`:'')+(q.difficulty?`<span class="diff-${q.difficulty.toLowerCase()}">${q.difficulty}</span>`:'')+`<span>Question ${reviewQ+1} of ${a.total}</span>`;
+    const opts=q.options.map(o=>{let cls='option';if(o.letter===q.answer)cls+=' correct';else if(o.letter===it.chosen)cls+=' incorrect';else cls+=' dimmed';return `<div class="${cls}"><div class="option-letter">${o.letter}</div><div class="option-text">${o.text}</div></div>`;}).join('');
+    detail=`<div class="card"><div class="q-meta">${meta}</div><div class="q-text">${q.question}</div><div class="options">${opts}</div><div class="explanation visible"><strong style="color:${it.correct?'var(--correct)':'var(--incorrect)'}">${it.correct?'✓ Correct':'✗ Incorrect'}</strong> — ${it.chosen?`you answered <b>${it.chosen}</b>`:'<b>not answered</b>'}, correct answer <b>${q.answer}</b>.${q.explanation?'<br><br>'+q.explanation:''}</div></div>`;
+  }
+  document.getElementById('test-main').innerHTML=`
+    <div class="controls" style="align-items:center">
+      <span style="font-size:1rem;font-weight:700">${a.mode}</span>
+      <span class="attempt-score" style="color:${pct>=70?'var(--correct)':'var(--incorrect)'}">${a.correct}/${a.total} · ${pct}%</span>
+      <span style="font-size:0.78rem;color:var(--text-muted)">${fmtDate(a.ts)} · took ${fmtClock(a.timeUsedMs)}${a.auto?' · auto-submitted':''}</span>
+      <button style="margin-left:auto" onclick="backToMenu()">+ New Test</button>
+    </div>
+    <div class="qgrid">${grid}</div>
+    ${detail}`;
+}
+function reviewGoto(i){reviewQ=i;renderReview();}
+function openAttempt(i){if(exam){if(!confirm('Leave the current test? Progress will be lost and not saved.'))return;clearInterval(exam.timerId);exam=null;}testView='review';reviewIdx=i;reviewQ=0;renderTest();}
+function backToMenu(){testView='menu';reviewIdx=null;renderTest();}
+
 // ═══════════ KEYBOARD ═══════════
 document.addEventListener('keydown', e => {
   if(e.target.tagName==='SELECT'||e.target.tagName==='INPUT')return;
@@ -604,6 +760,8 @@ document.addEventListener('keydown', e => {
   if(k==='ESCAPE'&&!document.getElementById('panel-mindmap').classList.contains('hidden')){e.preventDefault();selectMMNode(null);return;}
   const qi=!document.getElementById('panel-quiz').classList.contains('hidden');
   const fi=!document.getElementById('panel-flashcards').classList.contains('hidden');
+  const ti=!document.getElementById('panel-test').classList.contains('hidden');
+  if(ti&&exam&&testView==='exam'){if(['A','B','C','D'].includes(k)){const q=exam.questions[exam.index];if(q.options.some(o=>o.letter===k)){e.preventDefault();answerExam(k);}}if(k==='ARROWRIGHT'){e.preventDefault();nextExam();}if(k==='ARROWLEFT'){e.preventDefault();prevExam();}return;}
   if(fi){if(k==='ARROWLEFT'){e.preventDefault();prevCard();}if(k==='ARROWRIGHT'){e.preventDefault();nextCard();}if(k===' '){e.preventDefault();flipCard();}if(k==='R'){e.preventDefault();randomCard();}if(k==='1'){e.preventDefault();rateCard(false);}if(k==='2'){e.preventDefault();rateCard(true);}return;}
   if(qi){if(['A','B','C','D'].includes(k)&&!answered&&filteredQuestions.length>0){const q=filteredQuestions[currentIndex];if(q.options.some(o=>o.letter===k))pickAnswer(k);}if(k==='ARROWRIGHT'){e.preventDefault();nextQuestion();}if(k==='ARROWLEFT'){e.preventDefault();prevQuestion();}if(k==='R'){e.preventDefault();pickRandom();}if(k==='ENTER'&&answered){e.preventDefault();nextQuestion();}}
 });
