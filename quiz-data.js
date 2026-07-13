@@ -1,4 +1,3 @@
-// AIGP Quiz Questions — 794 total
 const ALL_QUESTIONS = [
   {
     "id": "q-1",
@@ -183,7 +182,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Excessive energy consumption in the platform's data centers"
+        "text": "Erosion of user autonomy through algorithmic nudging that shapes preferences and behavior without transparent disclosure"
       }
     ],
     "answer": "C",
@@ -584,7 +583,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Anonymization always degrades model accuracy below usable levels"
+        "text": "Anonymization creates a false sense of security that may cause the organization to skip conducting a data protection impact assessment for the training process"
       },
       {
         "letter": "D",
@@ -750,7 +749,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "A rule that only aggregated data may ever be collected"
+        "text": "A rule that data collected for one purpose may be repurposed for AI training provided the new use passes a compatibility assessment and is documented in the data catalog"
       }
     ],
     "answer": "A",
@@ -1120,15 +1119,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Commute distance"
+        "text": "Educational attainment level"
       },
       {
         "letter": "C",
-        "text": "Typing speed"
+        "text": "Years of professional experience in the relevant industry"
       },
       {
         "letter": "D",
-        "text": "Preferred work schedule"
+        "text": "Proficiency with specific software applications listed in the job description"
       }
     ],
     "answer": "A",
@@ -1899,7 +1898,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "To reduce cloud storage expenditure"
+        "text": "To satisfy EU AI Act conformity assessment documentation requirements for high-risk AI systems before market placement"
       },
       {
         "letter": "B",
@@ -1907,11 +1906,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "To satisfy open-source license attribution rules"
+        "text": "To populate the post-deployment monitoring dashboard with baseline performance metrics and drift detection thresholds"
       },
       {
         "letter": "D",
-        "text": "To shorten the deployment timeline"
+        "text": "To enable automated model retraining pipelines by providing training data lineage and provenance records"
       }
     ],
     "answer": "B",
@@ -1930,7 +1929,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Which cloud region will host the training jobs"
+        "text": "What post-deployment drift detection thresholds and monitoring KPIs should be configured for the production system"
       },
       {
         "letter": "C",
@@ -1938,7 +1937,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "How many data scientists the vendor employs"
+        "text": "What data retention period applies to model inference logs and user interaction records under the GDPR"
       }
     ],
     "answer": "C",
@@ -1957,15 +1956,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Generate marketing material describing the system's benefits"
+        "text": "Documenting training data sources, establishing data lineage, and verifying the lawful basis for all datasets used in model development"
       },
       {
         "letter": "C",
-        "text": "Qualify the system for an ISO 27001 certificate"
+        "text": "Defining the deployment environment architecture, container orchestration strategy, and API endpoint specifications for production"
       },
       {
         "letter": "D",
-        "text": "Estimate the project's return on investment for the board"
+        "text": "Establishing post-deployment monitoring metrics, configuring drift detection alerts, and scheduling the first retraining cycle"
       }
     ],
     "answer": "A",
@@ -1984,7 +1983,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "To remove the need for audit logging"
+        "text": "To satisfy data provenance documentation requirements under the EU AI Act's technical documentation obligations"
       },
       {
         "letter": "C",
@@ -1992,7 +1991,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "To lower the system's energy consumption"
+        "text": "To reduce model inference latency by routing high-confidence predictions directly to end users without human review"
       }
     ],
     "answer": "C",
@@ -2119,7 +2118,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "A press release announcing the model's launch date"
+        "text": "A completed model card documenting intended use, training data composition, evaluation metrics, and known limitations"
       },
       {
         "letter": "C",
@@ -2127,7 +2126,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "An executive's confidence after a product demonstration"
+        "text": "Documentation confirming all training data sources have been reviewed for lawful basis, data quality, and representativeness"
       }
     ],
     "answer": "A",
@@ -2370,7 +2369,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Excess GPU costs during training"
+        "text": "Whether the model's training data provenance records are complete and traceable to their original collection sources"
       }
     ],
     "answer": "A",
@@ -2466,7 +2465,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "A multi-tenant public cloud region"
+        "text": "A centralized on-premises data center with GPU clusters in the hospital's IT wing"
       },
       {
         "letter": "B",
@@ -2767,7 +2766,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "The invoice payment schedule"
+        "text": "The service level agreement specifying uptime guarantees, latency targets, and the vendor's incident notification timelines for model performance degradation"
       },
       {
         "letter": "C",
@@ -2775,7 +2774,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "The choice of arbitration venue"
+        "text": "The limitation of liability clause defining the maximum financial exposure the vendor accepts for damages arising from the customer's use of the AI system's outputs"
       }
     ],
     "answer": "A",
@@ -2906,7 +2905,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Performance audits apply to infrastructure, never to AI systems"
+        "text": "A performance audit evaluates whether the system's outputs meet accuracy and fairness thresholds established during design, while threat modeling examines whether the system's security controls are adequate"
       },
       {
         "letter": "D",
@@ -2952,7 +2951,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "To reduce future inference costs"
+        "text": "To satisfy the documentation requirements of the organization's AI management system certification under ISO/IEC 42001, which mandates traceability from incidents to risk treatments"
       },
       {
         "letter": "B",
@@ -3118,7 +3117,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Issues always involve loss of user data"
+        "text": "Issues are problems that arise during development and testing, while incidents occur after deployment and involve real-world harm or regulatory exposure requiring formal response protocols"
       },
       {
         "letter": "C",
@@ -3256,7 +3255,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "To completely eliminate every possible risk that AI technology might introduce"
+        "text": "To maximize the accuracy and computational performance of AI models across all deployment scenarios and operating conditions"
       },
       {
         "letter": "D",
@@ -3326,7 +3325,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "AI governance can be managed without any specialized technical knowledge or expertise"
+        "text": "AI governance applies the same control frameworks as traditional IT governance, with additional emphasis on model versioning and infrastructure monitoring"
       },
       {
         "letter": "B",
@@ -3412,7 +3411,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "They are completely unrelated concepts"
+        "text": "AI ethics addresses the theoretical dimensions of fairness and accountability, while AI governance translates those principles into operational controls and compliance frameworks"
       },
       {
         "letter": "D",
@@ -3434,7 +3433,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Establishing fixed policies that remain completely unchanged throughout the lifecycle"
+        "text": "Establishing policies that are reviewed and updated at fixed annual intervals regardless of changes in the regulatory landscape or operating environment"
       },
       {
         "letter": "C",
@@ -3650,7 +3649,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Adopt another company's governance framework verbatim without any customization"
+        "text": "Adopt the governance framework published by the largest competitor in the sector, since regulatory expectations tend to converge on market-leader practices"
       }
     ],
     "answer": "C",
@@ -3716,7 +3715,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "AI governance handles only technical matters while risk management is purely administrative"
+        "text": "AI governance addresses strategic and organizational concerns while AI risk management handles operational and technical controls within individual AI system lifecycles"
       },
       {
         "letter": "B",
@@ -3742,7 +3741,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "To completely remove every possible risk associated with deploying AI systems"
+        "text": "To ensure every employee can independently conduct an AI impact assessment and perform fairness testing on any AI system deployed in their department"
       },
       {
         "letter": "B",
@@ -4084,7 +4083,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "LLMs never produce factual errors and always generate verified, accurate information"
+        "text": "LLMs require deterministic rule-based guardrails because their outputs follow predictable patterns derived from their training data distribution"
       },
       {
         "letter": "C",
@@ -4092,7 +4091,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "LLMs are inherently immune to bias from training data and always produce neutral outputs"
+        "text": "LLMs can be trained to produce outputs that meet specific fairness criteria, but only when the training data is explicitly balanced across all protected demographic categories"
       }
     ],
     "answer": "C",
@@ -4266,7 +4265,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "AI systems restricted to making only simple, low-complexity decisions"
+        "text": "AI systems that surface feature-importance scores and confidence levels alongside their predictions, enabling human reviewers to assess the basis for each output"
       },
       {
         "letter": "C",
@@ -4496,7 +4495,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Raw data collected from sensors and logs without any human annotation or labeling"
+        "text": "Data collected from production systems that is fed into monitoring dashboards to detect model drift and performance degradation after deployment"
       },
       {
         "letter": "B",
@@ -4560,7 +4559,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "The system's energy consumption profile and environmental sustainability footprint"
+        "text": "The system's dependency on third-party foundation models whose training data provenance, licensing terms, and bias characteristics may not be fully disclosed by the provider"
       }
     ],
     "answer": "C",
@@ -4682,7 +4681,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Deleting all data from a system's storage, rendering it completely inoperable"
+        "text": "Extracting sensitive training data from a deployed model by submitting carefully crafted queries and analyzing the patterns in the model's responses"
       },
       {
         "letter": "C",
@@ -5406,7 +5405,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Always prioritize privacy over transparency, withholding all explanation to protect personal data"
+        "text": "Prioritize privacy by withholding model explanations from data subjects and providing only the legal minimum information required under the GDPR's automated decision-making provisions"
       },
       {
         "letter": "B",
@@ -5414,7 +5413,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Always prioritize transparency over privacy, disclosing all information regardless of sensitivity"
+        "text": "Prioritize transparency by publishing the model's architecture, training methodology, and aggregate performance metrics, while redacting individual training records"
       },
       {
         "letter": "D",
@@ -5588,11 +5587,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Always select the most accurate system regardless of explainability or transparency concerns"
+        "text": "Select the most accurate system because accuracy is the primary metric regulators examine when auditing algorithmic decision-making in lending under the Equal Credit Opportunity Act"
       },
       {
         "letter": "B",
-        "text": "Always select the most explainable system regardless of any accuracy trade-offs involved"
+        "text": "Select the most explainable system because the GDPR's right to explanation for automated decisions requires that every individual decision be fully interpretable by the affected person"
       },
       {
         "letter": "C",
@@ -5722,7 +5721,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Abandon the AI project entirely whenever any ethical tension or trade-off is identified"
+        "text": "Implement all three principles to the fullest extent technically feasible, document any residual gaps, and submit the system for regulatory review before market deployment"
       },
       {
         "letter": "C",
@@ -5860,7 +5859,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Never deploy any AI system that results in any degree of workforce displacement"
+        "text": "Deploy the system only after completing an algorithmic impact assessment that quantifies the displacement risk and proposes specific mitigation measures for affected workers"
       }
     ],
     "answer": "A",
@@ -5990,7 +5989,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only the external AI technology vendor supplying the underlying platform"
+        "text": "The hospital's risk management committee and the chief medical information officer, who bear ultimate accountability for clinical decision-support tool governance"
       }
     ],
     "answer": "C",
@@ -6632,7 +6631,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Self-certify compliance through an internal memo without any external review or audit"
+        "text": "Classify as minimal risk because resume screening does not involve biometric data or real-time facial recognition in a physical public space"
       },
       {
         "letter": "C",
@@ -6640,7 +6639,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Classify as an unacceptable risk practice and abandon the entire AI project completely"
+        "text": "Classify as an unacceptable risk practice because automated employment screening is explicitly prohibited under Article 5 of the EU AI Act"
       }
     ],
     "answer": "C",
@@ -6814,7 +6813,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Completely unregulated spaces where AI systems can be deployed without any form of oversight"
+        "text": "Expedited regulatory approval pathways where AI developers can self-certify compliance through a streamlined documentation submission without supervisory interaction"
       },
       {
         "letter": "C",
@@ -6874,7 +6873,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "A voluntary pledge to follow industry best practices without any external verification"
+        "text": "A publicly filed declaration of conformity in which the provider attests that the system satisfies the essential requirements without submitting supporting evidence to a notified body"
       }
     ],
     "answer": "B",
@@ -6940,11 +6939,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "GDPR and the EU AI Act are completely independent, governing entirely separate domains with no overlap"
+        "text": "The EU AI Act and GDPR operate in separate domains: the AI Act governs product safety and market access for AI systems, while GDPR governs the processing of personal data, with each applying independently to the aspects it regulates"
       },
       {
         "letter": "B",
-        "text": "The EU AI Act automatically overrides GDPR whenever there is any conflict or inconsistency between them"
+        "text": "When an AI system processes personal data, the GDPR's requirements for lawful basis, data minimization, and data subject rights apply alongside the AI Act's risk classification and conformity assessment obligations for the system as a product"
       },
       {
         "letter": "C",
@@ -7468,7 +7467,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Technical monitoring of system performance metrics without any legal or compliance dimension"
+        "text": "Periodic reviews conducted by internal audit functions to verify that AI systems comply with the organization's own governance policies and documented control objectives"
       },
       {
         "letter": "D",
@@ -7546,7 +7545,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only financial and banking information such as account numbers and transaction records"
+        "text": "Any data that has been pseudonymized and can be re-identified only when combined with separately stored attribution keys held by the data controller"
       },
       {
         "letter": "D",
@@ -7694,7 +7693,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Agreement that is automatically assumed whenever an individual uses a digital service or application"
+        "text": "Agreement obtained through a pre-ticked checkbox that the user must actively uncheck to withhold consent for the specified processing purpose"
       },
       {
         "letter": "B",
@@ -7702,7 +7701,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Agreement that is implied or inferred from an individual's conduct without any express indication"
+        "text": "Agreement that can be bundled with the acceptance of general terms of service, provided the data processing purpose is described in the accompanying privacy notice"
       },
       {
         "letter": "D",
@@ -7728,7 +7727,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only providing a brief notification to data subjects, without any further obligation"
+        "text": "Updating the organization's record of processing activities to document the new purpose and providing data subjects with an updated privacy notice describing the change"
       },
       {
         "letter": "D",
@@ -7784,7 +7783,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "A DPIA is never required for AI systems since they are automatically exempt from GDPR obligations"
+        "text": "A DPIA is required only when the AI system processes special categories of personal data, such as health information, biometric data, or data revealing racial or ethnic origin"
       }
     ],
     "answer": "C",
@@ -7802,7 +7801,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Deploy the system without any further action since all identified risks were documented"
+        "text": "Deploy the system after documenting the residual risks, the justification for accepting them, and the enhanced monitoring controls that will track whether the risks materialize in production"
       },
       {
         "letter": "C",
@@ -7828,7 +7827,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Data that is particularly expensive to collect, store, and process at commercial scale and volume"
+        "text": "Deploy the system with enhanced monitoring, document the residual risks and the rationale for accepting them in the DPIA record, and schedule a review within six months"
       },
       {
         "letter": "C",
@@ -7884,7 +7883,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "The right to access the public internet and browse websites freely without any restrictions"
+        "text": "The right to receive a copy of the logic involved in any automated decision-making, including the criteria relied upon and the envisaged consequences of the processing for the data subject"
       },
       {
         "letter": "D",
@@ -7914,7 +7913,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only the raw, unprocessed personal data values without any contextual or explanatory information"
+        "text": "The personal data being processed, accompanied by meaningful information about the logic involved in any automated decision-making that produced results concerning the data subject"
       }
     ],
     "answer": "C",
@@ -8188,7 +8187,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Ignore the objection and continue processing without any further assessment, response, or documentation"
+        "text": "Continue processing while conducting a legitimate interests assessment to document whether the organization's interests override the data subject's objection in this specific context"
       },
       {
         "letter": "B",
@@ -8244,7 +8243,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Using fictitious or made-up names in place of real personal identifiers without any technical safeguards"
+        "text": "Replacing direct identifiers such as names and email addresses with random tokens while retaining the original demographic attributes needed for AI model training"
       },
       {
         "letter": "C",
@@ -8552,7 +8551,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only the technical architecture, layer configuration, and parameter count of the model"
+        "text": "The model's performance metrics disaggregated by demographic subgroup, the datasets used for training and evaluation, and the results of fairness and bias testing conducted during validation"
       },
       {
         "letter": "B",
@@ -8564,7 +8563,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only the model's aggregate accuracy score on a standard held-out test dataset"
+        "text": "The intended use cases for which the model was designed and validated, the domain and characteristics of the training data, and the known failure modes identified during testing"
       }
     ],
     "answer": "C",
@@ -8634,7 +8633,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Report only the aggregate accuracy metric and withhold the disaggregated subgroup results"
+        "text": "Report both aggregate and subgroup accuracy metrics in the model card, while noting that the observed disparity falls within statistically acceptable bounds for the deployment context"
       },
       {
         "letter": "C",
@@ -8786,7 +8785,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Tracking only the physical hardware components, server configurations, and infrastructure"
+        "text": "Tracking the model's training hyperparameters, the specific version of each training dataset used, and the evaluation results associated with each model checkpoint during development"
       },
       {
         "letter": "B",
@@ -8864,7 +8863,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Evaluating only the technical and architectural biases in the model's design and code"
+        "text": "Evaluating whether the training data contains balanced representation across demographic categories relevant to the deployment context and whether proxy variables may encode protected characteristics"
       },
       {
         "letter": "B",
@@ -9006,7 +9005,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "AI systems deployed in healthcare are completely unregulated under current US and EU law"
+        "text": "AI systems in healthcare are regulated exclusively through voluntary industry codes of conduct, with no binding statutory requirements at either the federal or state level in the US"
       }
     ],
     "answer": "C",
@@ -9154,7 +9153,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "AI systems used in employment decisions are completely unregulated under current US law"
+        "text": "AI systems used in employment decisions are regulated exclusively through voluntary industry standards such as the NIST AI RMF, with no binding statutory requirements under US federal law"
       },
       {
         "letter": "C",
@@ -9236,7 +9235,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only technical performance and prediction accuracy concerns are relevant to criminal justice"
+        "text": "The reliability and validity of risk assessment instruments, including whether they produce consistent results across different demographic populations and jurisdictions"
       },
       {
         "letter": "D",
@@ -9318,7 +9317,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only technical engineering challenges related to sensor accuracy and processing speed"
+        "text": "Determining the appropriate safety validation framework, including whether federal motor vehicle safety standards designed for human-driven vehicles are adequate for autonomous systems"
       }
     ],
     "answer": "C",
@@ -9362,7 +9361,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only technical concerns about model accuracy and predictive performance are relevant"
+        "text": "Whether the model's training data reflects the demographic composition of the applicant pool and whether the features used may serve as proxies for protected characteristics such as race or socioeconomic status"
       },
       {
         "letter": "C",
@@ -9518,7 +9517,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only technical issues related to the accuracy of the content classifier are relevant"
+        "text": "Whether the platform provides affected users with meaningful notice of moderation actions, clear explanations of the reasons, and an accessible process for appealing removal decisions"
       },
       {
         "letter": "C",
@@ -9578,7 +9577,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only technical performance and delivery optimization issues related to ad placement are relevant"
+        "text": "Whether the ad targeting system uses protected characteristics or proxy variables to exclude certain demographic groups from housing, employment, or credit opportunity advertisements"
       }
     ],
     "answer": "A",
@@ -9596,7 +9595,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "AI systems in critical infrastructure are completely unregulated under current US and EU law"
+        "text": "AI systems in critical infrastructure are regulated exclusively through the same general-purpose frameworks that apply to consumer AI applications, without sector-specific requirements"
       },
       {
         "letter": "C",
@@ -9626,7 +9625,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only financial cost considerations related to procurement and maintenance budgets matter"
+        "text": "The operational interdependencies between AI systems and physical infrastructure, where an AI failure could cascade into a loss of essential services such as power, water, or transportation"
       },
       {
         "letter": "D",
@@ -9656,7 +9655,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only general-purpose AI regulations apply without any sector-specific regulatory overlay"
+        "text": "The National Institute of Standards and Technology's AI Risk Management Framework provides sufficient regulatory coverage for AI systems managing critical energy infrastructure without additional sector-specific oversight"
       }
     ],
     "answer": "A",
@@ -9700,7 +9699,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only budgetary and fiscal appropriations issues raise constitutional questions"
+        "text": "Whether the government's use of AI implicates the Fourth Amendment's protection against unreasonable searches, particularly when AI systems analyze patterns across aggregated public and private data sources"
       },
       {
         "letter": "C",
@@ -9708,7 +9707,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only technical implementation and system integration issues are constitutionally relevant"
+        "text": "Whether the government agency conducted an algorithmic impact assessment and published its findings before deploying the system, consistent with the transparency obligations articulated in OMB guidance on AI governance"
       }
     ],
     "answer": "C",
@@ -9904,15 +9903,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Ignore the social and employment impacts entirely and proceed with the automation plan"
+        "text": "Conducting post-deployment drift detection, setting up monitoring dashboards, and establishing retraining schedules for the production model"
       },
       {
         "letter": "B",
-        "text": "Abandon all automation initiatives completely regardless of their potential net benefits"
+        "text": "Proceed with deployment but establish post-market surveillance to monitor employment impacts and bias outcomes over the first six months"
       },
       {
         "letter": "C",
-        "text": "Proceed immediately since automation is always beneficial regardless of any side effects"
+        "text": "Deploy the system with a human-in-the-loop requirement mandating human approval for all automated decisions affecting workers"
       },
       {
         "letter": "D",
@@ -9930,7 +9929,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Determining only the hardware and infrastructure specifications needed for training"
+        "text": "Determining the model architecture, hyperparameter ranges, and training data augmentation strategies for the development phase"
       },
       {
         "letter": "B",
@@ -9942,7 +9941,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Defining only the financial budget and resource allocation plan for the AI project"
+        "text": "Defining the post-deployment monitoring plan, incident response procedures, and model retirement criteria"
       }
     ],
     "answer": "C",
@@ -9960,7 +9959,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "No governance activities are required during the design stage of AI project work"
+        "text": "Establishing continuous monitoring dashboards, configuring drift detection alerts, and defining post-deployment retraining schedules"
       },
       {
         "letter": "C",
@@ -9968,7 +9967,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Developing only the technical system architecture and data flow diagram documents"
+        "text": "Documenting data lineage, verifying training data provenance, and conducting bias audits on the training dataset"
       }
     ],
     "answer": "C",
@@ -10034,7 +10033,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Always choose the more explainable algorithm regardless of the accuracy difference gap"
+        "text": "Choose the more explainable algorithm and compensate for lower accuracy with additional training data and feature engineering"
       },
       {
         "letter": "B",
@@ -10046,7 +10045,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Always choose the more accurate algorithm regardless of the explainability concerns"
+        "text": "Choose the more accurate algorithm and address explainability through post-hoc interpretation tools like SHAP and LIME"
       }
     ],
     "answer": "C",
@@ -10086,15 +10085,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only the technical specifications such as data format, volume, and ingestion pipeline"
+        "text": "Conducting AI impact assessments, defining system boundaries and interfaces, and documenting stakeholder roles and responsibilities"
       },
       {
         "letter": "B",
-        "text": "No governance oversight is necessary during the training data collection phase"
+        "text": "Establishing post-deployment monitoring plans, defining rollback procedures, and preparing incident response playbooks"
       },
       {
         "letter": "C",
-        "text": "Only the financial cost and budget impact of acquiring or purchasing datasets matters"
+        "text": "Assessing whether the collected data supports the model's ability to detect concept drift and distribution shifts after deployment"
       },
       {
         "letter": "D",
@@ -10146,11 +10145,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "No governance activities are needed while the model is actively being trained"
+        "text": "Defining business context, identifying organizational objectives, and assessing workforce readiness for AI adoption"
       },
       {
         "letter": "D",
-        "text": "Monitoring only the technical metrics such as loss curves and gradient descent norms"
+        "text": "Creating model cards, conducting pre-release conformity assessments, and preparing deployment documentation for gate review"
       }
     ],
     "answer": "B",
@@ -10164,7 +10163,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Ignore the bias finding entirely and proceed with the standard deployment pipeline"
+        "text": "Conducting a post-market surveillance review, updating the external communication plan, and preparing user retirement notices"
       },
       {
         "letter": "B",
@@ -10216,11 +10215,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Assessing only the overall technical performance metrics on a standard benchmark dataset"
+        "text": "Assessing whether the model's training documentation satisfies EU AI Act technical documentation requirements for high-risk systems"
       },
       {
         "letter": "B",
-        "text": "Testing only the aggregate prediction accuracy score on a held-out validation dataset"
+        "text": "Establishing post-deployment monitoring dashboards, configuring drift detection alerts, and scheduling the first retraining cycle"
       },
       {
         "letter": "C",
@@ -10228,7 +10227,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Evaluating only the inference speed and prediction latency of the trained model output"
+        "text": "Evaluating whether the validation dataset was collected with valid consent and documented data lineage from source to training pipeline"
       }
     ],
     "answer": "C",
@@ -10242,7 +10241,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Reviewing only the written documentation for completeness and grammatical correctness"
+        "text": "Reviewing the model card and system card for completeness against the ISO 42001 documentation requirements"
       },
       {
         "letter": "B",
@@ -10250,11 +10249,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Verifying only that the hardware infrastructure meets minimum technical specifications"
+        "text": "Verifying that the deployment environment's access controls, network segmentation, and audit logging meet security policy requirements"
       },
       {
         "letter": "D",
-        "text": "Assessing only the graphical user interface for visual consistency and layout usability"
+        "text": "Assessing the user training program to confirm end users understand the system's capabilities, limitations, and appropriate use cases"
       }
     ],
     "answer": "B",
@@ -10320,15 +10319,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Installing and configuring only the physical hardware servers that support the system backend"
+        "text": "Installing and configuring the monitoring infrastructure, alerting systems, and drift detection tooling in the production environment"
       },
       {
         "letter": "B",
-        "text": "Launching only the promotional marketing campaign and external communication materials"
+        "text": "Conducting the final stakeholder signoff and gate review where governance, legal, security, and business leads approve the release"
       },
       {
         "letter": "C",
-        "text": "Publishing only the technical documentation and API reference materials to the developer portal"
+        "text": "Documenting training data sources, recording hyperparameter configurations, and archiving model checkpoints from the training phase"
       },
       {
         "letter": "D",
@@ -10346,15 +10345,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Executing only the technical steps to push code and models to production server environments"
+        "text": "Conducting data provenance verification, assessing training data quality, and documenting data lineage for all training datasets"
       },
       {
         "letter": "B",
-        "text": "Coordinating only the external marketing and public relations announcements and press releases"
+        "text": "Performing AI impact assessments, defining business context and use cases, and conducting stakeholder mapping"
       },
       {
         "letter": "C",
-        "text": "No governance activities are required at the deployment stage of the AI system lifecycle"
+        "text": "Documenting model training configurations, evaluating bias detection results, and archiving training datasets for auditability"
       },
       {
         "letter": "D",
@@ -10424,7 +10423,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Ignore the accuracy degradation entirely since it remains above a minimum acceptable bar"
+        "text": "Conducting a new AI impact assessment, revisiting the business context, and re-evaluating the original use case definition"
       },
       {
         "letter": "B",
@@ -10454,15 +10453,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Performing only routine hardware maintenance such as server replacements and system upgrades"
+        "text": "Performing periodic conformity assessments and updating the model's EU AI Act technical documentation to reflect system changes"
       },
       {
         "letter": "C",
-        "text": "Maintaining only the written documentation and keeping technical reference manuals current"
+        "text": "Conducting scheduled fairness audits, bias assessments, and demographic parity evaluations across protected groups"
       },
       {
         "letter": "D",
-        "text": "Managing only the ongoing relationships and support contracts with AI technology vendors"
+        "text": "Managing the incident response lifecycle, including detection, triage, containment, investigation, and after-action review"
       }
     ],
     "answer": "A",
@@ -10480,7 +10479,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Never; once a model is deployed to production it should remain unchanged permanently"
+        "text": "On a fixed quarterly schedule, regardless of whether monitoring has detected any performance issues or data drift"
       },
       {
         "letter": "C",
@@ -10488,7 +10487,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only after the model has completely failed and stopped producing any usable outputs"
+        "text": "Only when a new AI impact assessment has been completed and approved, confirming the retraining does not introduce new risks"
       }
     ],
     "answer": "A",
@@ -10502,11 +10501,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Redesigning only the user interface and visual presentation layer of the application frontend"
+        "text": "Redesigning the system's architecture to support a different deployment model, such as moving from cloud inference to on-device edge processing"
       },
       {
         "letter": "B",
-        "text": "Replacing only the physical hardware components that support and run the AI system software"
+        "text": "Replacing the model's training data with a refreshed dataset and retraining from scratch to produce a new model version with updated parameter weights"
       },
       {
         "letter": "C",
@@ -10514,7 +10513,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Revising only the written documentation and technical reference materials for the system"
+        "text": "Revising the model's risk register entry to reflect new threat intelligence, updated attack surfaces, and emerging adversarial techniques"
       }
     ],
     "answer": "C",
@@ -10528,11 +10527,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Checking only that the updated model achieves sufficient performance on benchmark tests"
+        "text": "Checking that the updated model's training data lineage and provenance records remain complete and auditable after the change"
       },
       {
         "letter": "B",
-        "text": "No governance oversight is required when updating models that are already in production"
+        "text": "Performing initial data provenance verification, conducting pre-training bias assessments, and documenting the original training data collection methodology"
       },
       {
         "letter": "C",
@@ -10540,7 +10539,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Running only basic technical smoke tests to confirm the updated model loads correctly"
+        "text": "Running adversarial robustness tests and red team exercises against the updated model before approving the deployment change"
       }
     ],
     "answer": "C",
@@ -10606,15 +10605,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Executing only technical patches and code fixes to resolve the immediate system problem quickly"
+        "text": "Conducting initial business context definition, performing stakeholder identification, and documenting system requirements and design specifications"
       },
       {
         "letter": "B",
-        "text": "Sending only notification messages to affected users without any further investigative steps"
+        "text": "Notifying affected users and providing them with an explanation of the model's decision path, feature importance, and confidence score for the incident"
       },
       {
         "letter": "C",
-        "text": "Producing only written documentation and incident reports for the internal records archive"
+        "text": "Conducting a root cause analysis of the training data pipeline to determine whether data quality issues or labeling errors contributed to the incident"
       },
       {
         "letter": "D",
@@ -10632,7 +10631,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Taking only the physical hardware servers offline and disposing of the equipment properly"
+        "text": "Taking the model offline from the production environment, disabling API endpoints, and removing the system from the model registry"
       },
       {
         "letter": "B",
@@ -10644,7 +10643,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Terminating the employment contracts of staff members assigned to the AI project team"
+        "text": "Conducting a final performance audit and fairness assessment to document the system's state at the point of retirement for the governance record"
       }
     ],
     "answer": "C",
@@ -10658,7 +10657,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Simply turning off the system without any formal process or stakeholder communication"
+        "text": "Archiving the model's training data, final weights, and performance metrics for potential future audit or litigation purposes"
       },
       {
         "letter": "B",
@@ -10666,11 +10665,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Considering only the financial cost implications and budget adjustments that are required"
+        "text": "Updating the organization's AI risk register to close out all open risks associated with the system and document residual risk acceptance decisions"
       },
       {
         "letter": "D",
-        "text": "Executing only the technical steps to power down servers and remove all network access"
+        "text": "Performing model training validation, conducting hyperparameter tuning experiments, and documenting training convergence behavior"
       }
     ],
     "answer": "B",
@@ -10684,7 +10683,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Retain all personal data indefinitely for potential future analysis and research purposes"
+        "text": "Archive the training data in an encrypted, access-controlled repository for the maximum retention period permitted under the GDPR to support potential future audits"
       },
       {
         "letter": "B",
@@ -10692,11 +10691,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Transfer the entire dataset unchanged to the replacement AI system without any review"
+        "text": "Anonymize the training dataset using approved de-identification techniques and transfer the anonymized version to the replacement system"
       },
       {
         "letter": "D",
-        "text": "Delete all data immediately with no further assessment of any legal obligations or duties"
+        "text": "Delete all data immediately upon system shutdown since the purpose for which it was collected no longer exists after retirement"
       }
     ],
     "answer": "B",
@@ -10740,7 +10739,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Lifecycle documentation provides no meaningful benefit and is an unnecessary burden"
+        "text": "Documentation is only valuable during the post-deployment phase, when incident investigations and regulatory audits require evidence of system behavior"
       },
       {
         "letter": "C",
@@ -10796,7 +10795,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Handling only budget revisions and financial resource reallocation requests and reviews"
+        "text": "Integrating AI-specific risk entries into the organization's existing enterprise risk register and ensuring each AI system's residual risks are reviewed at the scheduled risk committee cadence"
       },
       {
         "letter": "D",
@@ -10814,7 +10813,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Use an identical one-size-fits-all governance process for every AI system regardless of risk"
+        "text": "Apply the highest governance standard, equivalent to EU AI Act high-risk conformity assessment requirements, to every AI system regardless of risk classification"
       },
       {
         "letter": "B",
@@ -10826,7 +10825,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Manage each system independently with completely separate, uncoordinated governance structures"
+        "text": "Delegate governance responsibility entirely to each system's product owner, with the central governance function providing only advisory guidance on request"
       }
     ],
     "answer": "B",
@@ -10944,7 +10943,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only the financial cost of procuring and maintaining training datasets is a meaningful concern"
+        "text": "Whether the data was collected with valid consent and a documented lawful basis under the GDPR or equivalent privacy regulation"
       },
       {
         "letter": "B",
@@ -10956,7 +10955,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only problems with physical data storage infrastructure and disk drive failures truly matter"
+        "text": "Whether the data pipeline infrastructure has sufficient throughput capacity to support real-time inference at the target production scale"
       }
     ],
     "answer": "C",
@@ -11152,11 +11151,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Comparing only the financial cost of acquiring different data sources is adequate"
+        "text": "Comparing the data's statistical distribution against the distribution assumed in the model's design-phase AI impact assessment documentation"
       },
       {
         "letter": "B",
-        "text": "Checking only the total volume and file size of the training dataset is sufficient"
+        "text": "Checking whether each data record can be traced through the full data lineage pipeline back to its original collection source and consent record"
       },
       {
         "letter": "C",
@@ -11216,7 +11215,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "All available features should be used since more data always improves model accuracy."
+        "text": "Use all 50 features and apply dimensionality reduction techniques such as PCA to retain the signal while reducing computational overhead at inference time"
       }
     ],
     "answer": "B",
@@ -11282,15 +11281,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "The only issue is a narrow technical consideration about database performance and query latency"
+        "text": "Whether the storage architecture meets the organization's data resilience and disaster recovery requirements for business-critical datasets"
       },
       {
         "letter": "B",
-        "text": "The only concern is the financial cost of additional storage infrastructure and cloud services"
+        "text": "Whether the retained data must be included in the organization's data flow diagrams and registered in the data catalog under the data governance policy"
       },
       {
         "letter": "C",
-        "text": "No governance issues arise since retaining more data always improves future model performance"
+        "text": "No governance issues arise since training data retention supports compliance with the EU AI Act's technical documentation and traceability requirements for high-risk systems"
       },
       {
         "letter": "D",
@@ -11416,7 +11415,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Synthetic data completely eliminates all privacy concerns by design."
+        "text": "Yes, synthetic data is considered anonymized under the GDPR since it does not directly contain personal data from identifiable individuals"
       },
       {
         "letter": "C",
@@ -11464,7 +11463,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "No governance oversight is needed for data labeling activities or their resulting outputs"
+        "text": "Establishing post-deployment monitoring dashboards, configuring drift detection thresholds, and defining incident escalation procedures"
       },
       {
         "letter": "B",
@@ -11594,11 +11593,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only narrow technical performance and throughput considerations are governance-relevant for preprocessing"
+        "text": "Ensuring preprocessing transformations do not introduce statistical biases that would invalidate the model's fairness audit results at the pre-deployment review gate"
       },
       {
         "letter": "B",
-        "text": "Only tracking the computational cost and runtime of preprocessing operations matters for governance"
+        "text": "Verifying that preprocessing pipelines are integrated with the organization's data lineage tracking tools and that all transformations appear in the data catalog"
       },
       {
         "letter": "C",
@@ -11606,7 +11605,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "No governance oversight is required for any data preprocessing steps in the AI development pipeline"
+        "text": "Conducting final gate reviews, obtaining stakeholder signoff, and preparing the model card for regulatory submission"
       }
     ],
     "answer": "C",
@@ -11676,7 +11675,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "No governance oversight is needed for feature engineering decisions or their downstream effects on outcomes"
+        "text": "Preparing deployment rollback procedures, configuring production monitoring alerts, and training end users on system capabilities and limitations"
       },
       {
         "letter": "C",
@@ -11684,7 +11683,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only technical model performance and aggregate accuracy considerations are relevant to feature selection"
+        "text": "Establishing post-market surveillance plans, defining data retention schedules, and preparing external communication templates"
       }
     ],
     "answer": "C",
@@ -11698,7 +11697,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Never include any feature that exhibits any statistical correlation with a protected characteristic whatsoever"
+        "text": "Include the feature but apply post-processing fairness constraints to the model's outputs to mitigate any disparate impact that may result from its use"
       },
       {
         "letter": "B",
@@ -11710,7 +11709,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Use the feature without reservation since it demonstrably improves model accuracy on held-out test data"
+        "text": "Remove the feature from the model and document the accuracy impact in the model card as a fairness-motivated design trade-off"
       }
     ],
     "answer": "B",
@@ -12036,7 +12035,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only tracking the computational expense and runtime duration of each tuning experiment matters"
+        "text": "Tracking which hyperparameter configurations were tested, which were rejected, and the rationale for the final selection to satisfy model card documentation requirements"
       },
       {
         "letter": "B",
@@ -12044,11 +12043,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "No governance considerations apply to hyperparameter tuning activities, experiments, or their outcomes"
+        "text": "Conducting pre-deployment conformity assessments, preparing the model card for publication, and scheduling the deployment gate review"
       },
       {
         "letter": "D",
-        "text": "Only narrow technical performance and model accuracy improvements are governance-relevant considerations"
+        "text": "Verifying that the selected hyperparameters produce a model whose performance metrics meet the thresholds defined in the pre-deployment conformity assessment criteria"
       }
     ],
     "answer": "B",
@@ -12114,7 +12113,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Focus exclusively on further optimizing training set accuracy and ignore the validation metrics"
+        "text": "Deploy the model into a canary environment, collect production performance metrics, and schedule the first post-deployment fairness audit"
       },
       {
         "letter": "B",
@@ -12360,7 +12359,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only financial metrics such as cost savings and return on investment are relevant indicators"
+        "text": "Performance metrics broken down by demographic subgroup, compared against the aggregate metrics reported in the model's validation documentation"
       }
     ],
     "answer": "C",
@@ -12582,15 +12581,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only add a note in the model documentation acknowledging the known performance limitation"
+        "text": "Document the edge case limitation in the model card, implement a monitoring alert for when the scenario is detected, and schedule a review after three months of production data"
       },
       {
         "letter": "B",
-        "text": "Deploy the system without any modification since the edge case is too rare to justify engineering effort"
+        "text": "Deploy the system with a requirement that a human reviewer must approve all decisions where the model's confidence score falls below a defined threshold"
       },
       {
         "letter": "C",
-        "text": "Ignore the finding since the scenario occurs in less than 0.1% of all cases and is statistically negligible"
+        "text": "Schedule the model for retirement, begin stakeholder notification for system decommissioning, and prepare data archival procedures"
       },
       {
         "letter": "D",
@@ -12764,7 +12763,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "The only governance benefit of UAT is generating required documentation for the compliance file"
+        "text": "UAT provides evidence that the system meets its defined functional requirements, supporting the traceability from requirements through testing to deployment signoff"
       },
       {
         "letter": "B",
@@ -12776,7 +12775,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "UAT delivers only narrow technical validation of system functionality and performance under load"
+        "text": "UAT validates that the model's outputs are explainable and interpretable by the end users who will rely on them in their operational decision-making"
       }
     ],
     "answer": "B",
@@ -12816,7 +12815,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Regression testing should be conducted on a fixed annual schedule regardless of system changes"
+        "text": "Regression testing should be conducted as part of each scheduled conformity assessment cycle required under the organization's AI management system"
       },
       {
         "letter": "B",
@@ -12824,11 +12823,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Regression testing for AI models is never necessary after the initial deployment has been validated"
+        "text": "Regression testing is only required for high-risk AI systems as defined by the EU AI Act; lower-risk systems can rely on continuous monitoring alone"
       },
       {
         "letter": "D",
-        "text": "Regression testing is only needed once, at the point of initial production deployment"
+        "text": "Regression testing is only needed when the model's training data is updated; code and infrastructure changes do not affect model behavior"
       }
     ],
     "answer": "B",
@@ -13010,7 +13009,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Continuous testing applies only to systems operating 24/7 without any downtime."
+        "text": "Continuous testing applies only to models that undergo online learning, where the model updates its parameters continuously from live production data"
       }
     ],
     "answer": "A",
@@ -13136,7 +13135,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "No deployment should proceed since AI system testing can never be sufficient."
+        "text": "Full deployment should proceed only after the system has operated in a shadow mode for a defined period, with its outputs compared against the existing process without affecting live decisions"
       },
       {
         "letter": "D",
@@ -13258,7 +13257,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only narrow technical considerations about statistical validity and sample size are governance-relevant"
+        "text": "Ensuring that users in the test and control groups are assigned through a method that does not systematically expose one group to higher risk, and that the test design has received ethics review approval where the AI system makes consequential decisions"
       },
       {
         "letter": "B",
@@ -13596,7 +13595,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only technical design principles related to model architecture and performance apply here"
+        "text": "Accountability — the organization failed to designate a specific individual or role responsible for ensuring that deployed AI systems operate within their approved scope and disclosed parameters"
       },
       {
         "letter": "B",
@@ -13608,7 +13607,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only financial principles concerning cost-effectiveness and return on investment are relevant"
+        "text": "Fairness — customers in the AI-treated group may have received systematically different outcomes than those who interacted with human decision-makers, without the opportunity to understand or challenge the basis for those differences"
       }
     ],
     "answer": "B",
@@ -13738,7 +13737,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Never; rollback is unnecessary once a system has passed pre-deployment testing"
+        "text": "Only when the system has been in production for at least one full business cycle and sufficient performance data exists to confirm that the issues are not transient artifacts of the deployment process"
       }
     ],
     "answer": "A",
@@ -13778,7 +13777,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only external third-party consultants who are independent of the organization's internal dynamics"
+        "text": "The organization's AI ethics committee or responsible AI council, which provides independent governance oversight and ensures deployment decisions reflect stakeholder interests beyond the development team"
       },
       {
         "letter": "B",
@@ -13972,7 +13971,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Assessing only the financial budget risks and potential cost overruns of the deployment project"
+        "text": "Assessing whether the deployment environment's security controls, access management policies, and network segmentation meet the requirements defined in the system's pre-deployment security review and threat model"
       }
     ],
     "answer": "A",
@@ -13994,7 +13993,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only narrow technical risks related to system uptime, latency, and computational performance"
+        "text": "Operational risks including whether the deployment infrastructure can sustain the model's inference throughput requirements under peak production load and whether failover mechanisms are tested and documented"
       },
       {
         "letter": "D",
@@ -14064,7 +14063,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Deployment governance addresses only the technical infrastructure and hosting aspects of going live"
+        "text": "Deployment governance addresses the approval gates, stakeholder signoffs, and conformity verification steps that must be completed before the system transitions from the staging environment to production"
       },
       {
         "letter": "B",
@@ -14090,11 +14089,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only financial risks associated with overspending on deployment infrastructure and tooling"
+        "text": "Risks that the deployment infrastructure was provisioned without sufficient capacity planning, leading to performance degradation or service unavailability under production workloads"
       },
       {
         "letter": "B",
-        "text": "Only narrow technical risks related to server configuration and infrastructure management"
+        "text": "Risks that the model was deployed without completing the required security hardening steps, such as disabling debug endpoints, rotating default credentials, and enabling audit logging for the production environment"
       },
       {
         "letter": "C",
@@ -14280,11 +14279,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only aggregate accuracy measured across the entire population without any subgroup breakdowns"
+        "text": "Accuracy measured at the aggregate population level, with statistical significance tests applied to confirm that observed changes exceed the threshold for retraining or investigation"
       },
       {
         "letter": "D",
-        "text": "Only inference speed and throughput under peak load to ensure adequate operational responsiveness"
+        "text": "Inference latency and throughput, with alerting thresholds configured to detect when response times exceed the service level objectives defined in the system's operational runbook"
       }
     ],
     "answer": "B",
@@ -14414,7 +14413,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only technical errors and exceptions logged by the system's error-handling infrastructure"
+        "text": "Anomalies in model output distributions detected through statistical tests such as the Kolmogorov-Smirnov test, which compare current production outputs against the baseline established during validation testing"
       }
     ],
     "answer": "B",
@@ -14484,7 +14483,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Update only the written documentation without changing the interface or providing training"
+        "text": "Provide users with access to the model's confidence scores and feature importance explanations for each decision, enabling them to better understand when the system's outputs warrant closer scrutiny or manual override"
       },
       {
         "letter": "C",
@@ -14514,7 +14513,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Monitoring only the financial returns and cost savings generated by the AI system's decisions"
+        "text": "Tracking the accuracy of the system's predictions over time by comparing them against ground-truth outcomes as they become available, to detect model drift and performance degradation"
       },
       {
         "letter": "D",
@@ -14618,7 +14617,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only narrow technical audits reviewing the model's architecture, code quality, and computational efficiency"
+        "text": "Technical audits reviewing whether the model's training pipeline, deployment configuration, and monitoring infrastructure comply with the organization's MLOps standards and CI/CD governance controls"
       },
       {
         "letter": "D",
@@ -14948,7 +14947,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only the financial cost and budget availability for conducting the audit engagement"
+        "text": "The time elapsed since the last audit, with higher-risk systems requiring more frequent assessments as specified in the organization's AI audit schedule and the applicable regulatory framework"
       },
       {
         "letter": "B",
@@ -15090,7 +15089,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only the financial cost constraints and budget ceiling established for the audit engagement"
+        "text": "The scope of the system's training data, including whether the audit will examine data provenance, labeling quality, representativeness, and the lawful basis for all datasets used in model development"
       }
     ],
     "answer": "A",
@@ -15376,7 +15375,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only the technical classification of the underlying bug, error, or model failure that triggered the incident"
+        "text": "Whether the incident resulted from a failure in the model's logic, a deficiency in the training data, or an adversarial attack, as each root cause category triggers different investigation and remediation procedures"
       }
     ],
     "answer": "B",
@@ -15944,7 +15943,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only technical fixes and software patches applied to the AI model's code and parameters"
+        "text": "Re-training the model on corrected or augmented data to prevent the recurrence of the specific harm pattern identified, combined with enhanced monitoring for similar failure modes in future outputs"
       },
       {
         "letter": "D",
@@ -16368,7 +16367,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Operating fully autonomously without any human oversight or control"
+        "text": "Operating with general-purpose reasoning capabilities that match median human performance on standardized intelligence assessments across multiple cognitive domains"
       }
     ],
     "answer": "B",
@@ -16476,7 +16475,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Moved them into a restricted enclave the vendor can query but never export"
+        "text": "Encrypted the records so that the vendor can train on them within a secure processing environment without ever accessing the raw patient-level data in decrypted form"
       }
     ],
     "answer": "C",
@@ -17359,7 +17358,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Notifying individuals whenever they are interacting with an AI system rather than a human"
+        "text": "Publishing a plain-language summary of the model's capabilities, limitations, and intended use cases that is accessible to downstream deployers and end users without requiring technical expertise to interpret"
       },
       {
         "letter": "C",
@@ -17664,7 +17663,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "It can pursue its assigned tasks for long periods without any human involvement at all"
+        "text": "It makes independent decisions about welding sequences and parameters based on real-time sensor feedback, adapting its behavior without pre-programmed rules or external direction"
       }
     ],
     "answer": "C",
@@ -18231,7 +18230,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "The ability to learn fraud patterns without any labeled fraud examples"
+        "text": "The ability to process transaction data in a streaming fashion, updating fraud patterns incrementally without requiring periodic full retraining on the complete dataset"
       }
     ],
     "answer": "C",
@@ -18597,7 +18596,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Operations halt whenever the system loses its connection to live data feeds"
+        "text": "The system's behavior becomes unpredictable when the production data distribution drifts from the training distribution, making it difficult to establish stable and reliable governance controls over time"
       },
       {
         "letter": "B",
@@ -18840,7 +18839,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "It will decline to answer whenever it is uncertain about a case"
+        "text": "It will flag cases where its confidence falls below a configurable threshold and escalate them for human clinician review rather than issuing a low-confidence prediction"
       },
       {
         "letter": "B",
@@ -19353,7 +19352,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "The EU AI Act reaches U.S. employers whenever any job applicant holds EU citizenship"
+        "text": "The Americans with Disabilities Act requires employers to validate that AI screening tools do not systematically exclude qualified applicants with disabilities, regardless of whether the state has enacted AI-specific legislation"
       },
       {
         "letter": "B",
@@ -19461,7 +19460,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "It pursues its assigned objectives without any ongoing human direction"
+        "text": "It makes classification decisions by applying an explicit chain of logical rules derived from human-readable knowledge representations rather than learning from statistical patterns in examples"
       },
       {
         "letter": "B",
@@ -20163,7 +20162,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Approval rates were never compared across demographic groups after the model went live"
+        "text": "The model's feature engineering pipeline applied transformations to raw data without documenting each transformation step in the data lineage records"
       },
       {
         "letter": "B",
@@ -20225,7 +20224,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "The model learned to downweight resumes from zip codes that correlate with race, without anyone intending it"
+        "text": "The system was trained on historical hiring data that reflected past discriminatory practices, causing it to learn patterns that disadvantage applicants from certain protected groups even without explicit configuration"
       },
       {
         "letter": "D",
@@ -20936,5 +20935,1305 @@ const ALL_QUESTIONS = [
     ],
     "answer": "C",
     "explanation": "Unsupervised learning trains on unlabeled data, requiring the system to detect patterns independently — cluster discovery in raw sensor readings is the classic use case, analogous to customer segmentation. Option A is supervised learning, since the outcomes are labeled; B is reinforcement learning, driven by reward signals; and D misreads 'unsupervised' as operating without human oversight, which concerns deployment, not training method."
+  },
+  {
+    "id": "q-795",
+    "domain": "Domain I",
+    "difficulty": "Painful",
+    "question": "A hospital deploys a clinical decision-support model that has passed all technical validation benchmarks. Six months post-deployment, nursing staff report they follow the model's recommendations without question because 'the system knows more than we do,' even when their clinical judgment disagrees. The model's accuracy metrics remain stable. Which governance failure does this scenario most clearly illustrate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Failure to conduct a pre-deployment conformity assessment under the EU AI Act, which would have identified the absence of human oversight provisions before the system went live"
+      },
+      {
+        "letter": "B",
+        "text": "Failure to implement meaningful human-on-the-loop monitoring, where staff retain the authority and contextual knowledge to override model outputs when their judgment conflicts with the system's recommendations"
+      },
+      {
+        "letter": "C",
+        "text": "Failure to detect concept drift, since the model's stable accuracy metrics mask a shift in the relationship between clinical inputs and appropriate treatment decisions in the deployed environment"
+      },
+      {
+        "letter": "D",
+        "text": "Failure to establish a post-market surveillance plan that tracks user behavior adaptations, such as automation bias and deskilling, as leading indicators of governance degradation rather than relying solely on model performance metrics"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The scenario describes automation bias — staff deferring to the model even when their clinical judgment disagrees. This is a human-on-the-loop (HOTL) failure: the staff are monitoring outputs but lack the training, confidence, or authority to override. HOTL requires that humans can intervene when needed, not merely observe. Options C and D describe real monitoring concerns (concept drift and post-market surveillance of user behavior), but the core failure here is that the human oversight model was implemented in name only — staff were on the loop but not empowered to act within it."
+  },
+  {
+    "id": "q-796",
+    "domain": "Domain I",
+    "difficulty": "Painful",
+    "question": "A fintech company's fraud detection model was trained on transaction data from 2019-2022. In 2024, fraud analysts notice the model's false positive rate for cryptocurrency-related transactions has tripled, while its accuracy on traditional banking transactions remains unchanged. The aggregate F1 score still meets the deployment threshold. Which governance response is most appropriate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Initiate a full model retirement process, including stakeholder notification, data archival, and transition planning to a replacement system, since the model's aggregate metrics are no longer reliable indicators of performance"
+      },
+      {
+        "letter": "B",
+        "text": "Conduct a subgroup-level fairness audit to determine whether the elevated false positive rate for cryptocurrency transactions disproportionately affects protected demographic categories and constitutes discriminatory impact"
+      },
+      {
+        "letter": "C",
+        "text": "Investigate covariate drift in the cryptocurrency transaction subpopulation, assess whether the degraded performance warrants retraining on more recent data that captures post-2022 fraud patterns, and implement subgroup-level monitoring rather than relying solely on aggregate metrics"
+      },
+      {
+        "letter": "D",
+        "text": "Adjust the model's classification threshold for cryptocurrency transactions to reduce false positives, while maintaining the existing threshold for traditional transactions, and document the threshold change as a model update in the version control system"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The scenario describes covariate drift affecting a specific subpopulation (crypto transactions) while aggregate metrics remain stable — a classic case of masked subgroup degradation. Option C correctly diagnoses covariate drift and recommends both retraining on representative data and implementing subgroup-level monitoring to catch future occurrences. Option D addresses the symptom (threshold adjustment) but not the root cause (data distribution shift). Option A is premature; the model has not failed globally. Option B jumps to fairness concerns before establishing whether a technical drift issue exists. The key insight: aggregate metrics can conceal severe subgroup degradation, which is why subgroup-level monitoring is a governance requirement."
+  },
+  {
+    "id": "q-797",
+    "domain": "Domain I",
+    "difficulty": "Painful",
+    "question": "An organization's AI ethics board reviews a proposed hiring model that uses 47 features, including 'distance from office' and 'number of previous job applications submitted.' The data science team argues these features improve predictive accuracy by 4.2%. The ethics board flags both features as proxy variables. What is the board's most defensible governance recommendation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Remove both features and accept the accuracy loss, documenting the trade-off in the model card as a fairness-motivated design decision, because proxy variables that correlate with protected characteristics create legal exposure under disparate impact doctrine even without discriminatory intent"
+      },
+      {
+        "letter": "B",
+        "text": "Retain both features but apply post-processing fairness constraints using equalized odds, adjusting the model's decision threshold separately for each demographic subgroup to achieve parity in false positive and false negative rates across groups"
+      },
+      {
+        "letter": "C",
+        "text": "Conduct a counterfactual fairness analysis to determine whether changing each feature while holding all others constant would alter the model's hiring decision for a given candidate, and use the results to decide which features to retain, remove, or constrain"
+      },
+      {
+        "letter": "D",
+        "text": "Retain 'distance from office' but remove 'number of previous job applications,' since the former may reflect a legitimate business need for reliable attendance while the latter is more likely to encode socioeconomic status and race through historical disparities in application volume"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Both features are identified as proxies for protected characteristics: 'distance from office' can proxy for race and socioeconomic status (housing segregation patterns), and 'number of previous applications' can proxy for age and economic circumstances. When features function as proxies for protected characteristics in employment decisions, the safest governance approach is removal with documentation, especially given US disparate impact doctrine (Title VII, Griggs v. Duke Power) where intent is not required. Option C describes a valid analytical technique (counterfactual fairness testing) but the ethics board has already identified them as proxies — further analysis delays mitigation. Option D arbitrarily distinguishes between the two features without a defensible governance rationale. Option B applies post-processing fairness constraints but retains the problematic proxies in the model, which may not satisfy regulatory scrutiny."
+  },
+  {
+    "id": "q-798",
+    "domain": "Domain I",
+    "difficulty": "Painful",
+    "question": "A government agency deploys an AI system to prioritize social welfare benefit applications. The system was trained on historical caseworker decisions. An external audit reveals that applications from certain postal codes are systematically deprioritized, and these postal codes correlate strongly with racial demographics. The agency did not intend this outcome. Under AI governance best practices, what is the most appropriate immediate response?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Suspend the system's use in production, initiate an incident response process including containment and investigation, and conduct a root cause analysis examining whether the training data encoded historical biases that the model learned as decision patterns"
+      },
+      {
+        "letter": "B",
+        "text": "Continue operating the system while the development team retrains the model on a dataset that excludes postal code as a feature, since removing the correlated variable should eliminate the disparate impact on the next model version"
+      },
+      {
+        "letter": "C",
+        "text": "Publish a transparency notice acknowledging the finding, update the model card to document the observed disparity, and schedule a retraining cycle within the standard maintenance window while the system continues operating with enhanced human review"
+      },
+      {
+        "letter": "D",
+        "text": "Apply post-processing constraints using demographic parity as the fairness metric, adjusting the system's prioritization scores so that approval rates are equalized across all postal code regions before any further investigation"
+      }
+    ],
+    "answer": "A",
+    "explanation": "When an audit reveals systematic discrimination in a government benefits system — even unintentional — the priority is harm prevention. Option A follows the incident response lifecycle: suspend (containment), investigate (root cause analysis), and remediate. Continuing operation (B, C, D) while the harm is ongoing is not acceptable governance practice for high-stakes government systems, particularly where the finding involves racial disparities in access to welfare benefits. Option D applies a fairness metric without understanding the root cause — demographic parity might mask rather than resolve the underlying bias. Option B assumes removing the postal code feature will fix the problem, but proxy variables may remain. The NIST AI RMF Govern function emphasizes that when harms are detected, organizations should prioritize stopping the harm while investigating."
+  },
+  {
+    "id": "q-799",
+    "domain": "Domain I",
+    "difficulty": "Painful",
+    "question": "A multinational corporation's AI governance policy states that all AI systems must be 'explainable to affected individuals.' The data science team for a deep learning credit-scoring model proposes using SHAP values to provide feature-importance explanations for each credit decision. The legal team objects, arguing SHAP explanations are insufficient under the GDPR. Which argument most accurately supports the legal team's position?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "SHAP values provide local explanations of feature contributions but do not constitute 'meaningful information about the logic involved' as required by GDPR Article 15(1)(h) for automated decisions, because they describe model behavior rather than the rationale connecting an individual's characteristics to the specific decision outcome"
+      },
+      {
+        "letter": "B",
+        "text": "SHAP values violate the GDPR's data minimization principle because they require processing all training data to compute baseline expectations, which constitutes processing beyond what is necessary for the stated purpose of credit scoring"
+      },
+      {
+        "letter": "C",
+        "text": "SHAP explanations are only valid for linear models and tree-based ensembles; applying them to deep neural networks produces approximations that are not accepted by EU supervisory authorities as satisfying the right to explanation under the GDPR"
+      },
+      {
+        "letter": "D",
+        "text": "The GDPR requires that automated decisions be made by inherently interpretable models such as logistic regression or decision trees; post-hoc explanation techniques like SHAP are categorically insufficient regardless of their technical accuracy"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The GDPR Article 15(1)(h) and Article 22 require 'meaningful information about the logic involved' in automated decision-making. The key distinction is between explaining what features contributed to a prediction (which SHAP does) and explaining why those features produced that specific outcome in terms the individual can understand and contest. Option A correctly captures this distinction. Options C and D are technically incorrect: SHAP can be applied to deep learning models (via DeepSHAP or KernelSHAP), and the GDPR does not mandate inherently interpretable models — it requires meaningful explanations, which can be achieved through various means. Option B misapplies data minimization to the explanation mechanism rather than the processing purpose."
+  },
+  {
+    "id": "q-800",
+    "domain": "Domain I",
+    "difficulty": "Painful",
+    "question": "An organization's AI governance framework requires that all models undergo 'robustness testing' before deployment. The data science team tests their NLP model against the standard held-out test set and achieves 94% accuracy. The governance team rejects this as insufficient robustness testing. Which additional testing methodology would best satisfy the governance team's requirement?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Adversarial testing using perturbed inputs — such as synonym substitution, character-level noise, and semantically equivalent rephrasings — designed to probe whether the model maintains consistent predictions under distribution shifts that a motivated actor or edge-case usage could introduce in production"
+      },
+      {
+        "letter": "B",
+        "text": "Cross-validation using k-fold partitioning of the training data to ensure the model's performance generalizes across different random splits of the available dataset, providing a more reliable estimate of expected production accuracy than a single train-test split"
+      },
+      {
+        "letter": "C",
+        "text": "Integration testing that validates the end-to-end pipeline from data ingestion through model inference to downstream system consumption, confirming that data format changes, API version mismatches, or infrastructure failures do not cause silent errors"
+      },
+      {
+        "letter": "D",
+        "text": "A/B testing in a canary deployment where a small percentage of production traffic is routed to the new model and outcomes are compared against the existing system over a statistically significant observation period before full rollout"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Robustness testing in AI governance specifically refers to evaluating model behavior under adverse or unexpected conditions — not just held-out test set performance. Option A describes adversarial robustness testing, which is the correct methodology for probing whether a model degrades under input perturbations. Options B, C, and D describe valid testing practices (cross-validation, integration testing, canary deployment) but they test generalization, system integration, and production performance respectively — not robustness. The governance team's rejection of standard test-set evaluation is correct because high accuracy on a clean test set says nothing about how the model behaves under adversarial or edge-case inputs."
+  },
+  {
+    "id": "q-801",
+    "domain": "Domain I",
+    "difficulty": "Painful",
+    "question": "A company's AI governance board must decide between two vendor models for a healthcare triage application. Vendor A provides a model card with detailed performance metrics, training data composition, and known limitations. Vendor B provides a system card documenting the deployed product's architecture, safeguards, intended uses, and ethical considerations. Vendor B's model has higher reported accuracy. Which document provides better governance evidence for the board's decision, and why?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The system card, because it documents the product as actually deployed — including safeguards, usage constraints, and ethical guardrails — which provides more relevant governance information for a deployment decision than a model card's focus on the underlying model's characteristics in isolation"
+      },
+      {
+        "letter": "B",
+        "text": "The model card, because it contains the disaggregated performance metrics and training data characteristics needed to assess whether the model exhibits bias or performance disparities across demographic subgroups relevant to the patient population"
+      },
+      {
+        "letter": "C",
+        "text": "Both are equally necessary and neither is sufficient alone, because the model card provides evidence about the model's intrinsic properties while the system card provides evidence about the operational controls surrounding its deployment — and a responsible governance decision requires both perspectives"
+      },
+      {
+        "letter": "D",
+        "text": "Neither document is sufficient for a governance decision; the board should require a third-party conformity assessment conducted by a notified body under the EU AI Act, since healthcare triage constitutes a high-risk AI application requiring independent verification"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Model cards and system cards serve complementary governance functions: model cards document the model (training data, evaluation results, limitations), while system cards document the deployed system (architecture, safeguards, intended use, ethical considerations). For a healthcare triage deployment decision, the governance board needs both — the model's intrinsic properties (bias, accuracy across subgroups) AND the operational controls (safeguards, human oversight integration). Option C correctly identifies that neither is sufficient alone. Option A and B each privilege one document type over the other. Option D raises a valid point about conformity assessment but overstates it — third-party assessment may be required, but the board still needs model and system cards as primary governance evidence."
+  },
+  {
+    "id": "q-802",
+    "domain": "Domain I",
+    "difficulty": "Painful",
+    "question": "During a pre-deployment audit, testers discover that a loan default prediction model produces different approval rates for applicants who list 'non-traditional' employment types (gig economy, freelance, contract work) compared to those with traditional full-time employment, even after controlling for income, credit score, and debt-to-income ratio. The model was not trained on employment type as a feature. Which governance concern does this finding most directly raise?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Direct discrimination through the use of a protected characteristic as an explicit model feature, which would violate the Equal Credit Opportunity Act's prohibition on considering certain applicant attributes in credit decisions"
+      },
+      {
+        "letter": "B",
+        "text": "Proxy discrimination through correlated features — such as income stability metrics, employment duration, or bank balance patterns — that the model learned as predictive signals but that encode the distinction between traditional and non-traditional employment without the feature being explicitly present in the training data"
+      },
+      {
+        "letter": "C",
+        "text": "Label bias in the training data, where historical loan decisions used as ground truth reflected past discrimination against non-traditional workers, causing the model to reproduce those patterns even though employment type was not a direct input feature"
+      },
+      {
+        "letter": "D",
+        "text": "Sampling bias in the training dataset, where non-traditional workers were underrepresented relative to their proportion in the applicant population, causing the model to perform poorly on this subgroup without necessarily encoding discriminatory patterns"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The key observation is that employment type was NOT an explicit feature, yet the model's outputs correlate with it. This is the hallmark of proxy discrimination: other features in the training data (income stability, employment duration, bank balance variability) encode the same information as the protected or sensitive attribute. Option B correctly identifies this as proxy discrimination through correlated features. Option A is incorrect because employment type was not an explicit feature. Option C (label bias) and D (sampling bias) describe real phenomena but the question's emphasis on 'after controlling for' other variables and the absence of employment type as a feature points most directly to proxy discrimination."
+  },
+  {
+    "id": "q-803",
+    "domain": "Domain I",
+    "difficulty": "Painful",
+    "question": "An AI governance professional is designing a RACI matrix for a new high-risk AI system. The Chief Data Officer argues the CDO should be 'Accountable' for data quality in the training pipeline. The Chief Privacy Officer argues the CPO should be 'Accountable' for training data compliance. The AI governance lead recommends against having two 'Accountable' roles. What governance principle supports the AI governance lead's position?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The RACI framework's design principle that only one role may be Accountable for any given task or deliverable, because multiple Accountable roles create ambiguity about who bears ultimate responsibility and who has final decision authority when disputes arise"
+      },
+      {
+        "letter": "B",
+        "text": "The principle of segregation of duties, which requires that the roles of data quality assurance and data compliance verification be assigned to separate individuals to prevent conflicts of interest in the training data governance process"
+      },
+      {
+        "letter": "C",
+        "text": "The EU AI Act's requirement that a single 'authorized representative' be designated for high-risk AI systems, which precludes distributing accountability for system components across multiple organizational roles"
+      },
+      {
+        "letter": "D",
+        "text": "The NIST AI RMF's Map function guidance that accountability for AI system characteristics must be assigned to the role closest to the technical implementation, which in this case would be the data science lead rather than either the CDO or CPO"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Option A correctly states the RACI framework's fundamental rule: one A per task. Multiple Accountable roles create ambiguity. However, the underlying issue can be resolved by decomposing the tasks — the CDO could be Accountable for 'training data quality assurance' while the CPO is Accountable for 'training data compliance verification,' with each having their own distinct RACI entries. Options B, C, and D each reference real governance concepts (segregation of duties, EU AI Act authorized representative, NIST AI RMF) but misapply them. B describes a different governance principle. C incorrectly extends the EU AI Act's authorized representative concept. D mischaracterizes the NIST AI RMF's guidance on accountability assignment."
+  },
+  {
+    "id": "q-804",
+    "domain": "Domain I",
+    "difficulty": "Painful",
+    "question": "An AI startup trained its foundation model on a large-scale web crawl that included copyrighted material, personal data published without consent, and content from jurisdictions with conflicting data protection regimes. The startup now faces regulatory inquiries from EU, UK, and Brazilian authorities. Which governance failure is most foundational to the startup's predicament?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Failure to conduct a data protection impact assessment before training, which would have identified the cross-jurisdictional legal risks and forced the organization to establish lawful bases for processing personal data from each relevant jurisdiction before committing to the training run"
+      },
+      {
+        "letter": "B",
+        "text": "Failure to establish data provenance and lineage tracking during data acquisition, which means the organization cannot demonstrate to regulators which data originated from which jurisdictions, under what legal conditions it was collected, and whether consent or another lawful basis existed for its use in training"
+      },
+      {
+        "letter": "C",
+        "text": "Failure to implement the data minimization principle at the collection stage, since a large-scale web crawl inherently collects far more data than is necessary for any specific training purpose and includes categories of data that should have been excluded by design"
+      },
+      {
+        "letter": "D",
+        "text": "Failure to classify the foundation model under the EU AI Act's risk categories before training, which would have triggered the requirement for a conformity assessment and quality management system before the model could be placed on the EU market"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The most foundational failure is the absence of data provenance and lineage. Without knowing where data came from, under what conditions, and from which jurisdictions, the startup cannot answer any regulator's questions about lawful basis, consent, or jurisdictional applicability. Provenance is upstream of all other governance activities: you cannot conduct a DPIA (A), apply data minimization (C), or classify risk (D) without first knowing what data you have and where it came from. Option B identifies the root cause — the failure to establish provenance during data acquisition has cascading consequences across every subsequent governance function."
+  },
+  {
+    "id": "q-805",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A US-based company deploys an AI hiring platform across its EU subsidiaries. The platform was trained on US applicant data and uses features including 'career gap duration' and 'social media activity score.' An EU candidate rejected by the platform requests access to 'meaningful information about the logic involved' in the decision under GDPR Article 15(1)(h). The company provides the model's top five feature importance scores. The candidate challenges this as insufficient. Which argument most accurately supports the candidate's position under current GDPR interpretation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Article 15(1)(h) requires information about the 'logic involved' — meaning the rationale and criteria that connect the individual's specific characteristics to the decision outcome, not merely the relative weight of features in the model's statistical architecture. Feature importance scores describe the model but do not explain the decision."
+      },
+      {
+        "letter": "B",
+        "text": "Article 22(3) requires that the data controller implement 'suitable measures to safeguard the data subject's rights and freedoms and legitimate interests,' which the European Data Protection Board has interpreted as requiring a human review of every automated hiring decision, making any purely algorithmic explanation insufficient regardless of its detail."
+      },
+      {
+        "letter": "C",
+        "text": "Article 13(2)(f) requires that data subjects be informed about 'the existence of automated decision-making and meaningful information about the logic involved' at the point of data collection, which the company failed to provide to the EU candidate before processing their application through the AI platform."
+      },
+      {
+        "letter": "D",
+        "text": "The EU AI Act classifies AI systems used in employment as high-risk, and Article 14 requires that deployers provide 'clear and meaningful explanations of the role of the AI system in the decision-making procedure' — feature importance scores do not satisfy this standard because they are not 'clear' to a non-technical data subject."
+      }
+    ],
+    "answer": "A",
+    "explanation": "Option A correctly identifies the distinction between explaining model behavior (feature importance) and explaining a specific decision (the rationale connecting this applicant's characteristics to this outcome). The GDPR Article 15(1)(h) requires 'meaningful information about the logic involved' — which the Article 29 Working Party (now EDPB) guidelines interpret as requiring explanations that connect the individual's circumstances to the decision, not just the model's general operation. Option B overstates the human review requirement. Option C cites the wrong GDPR article for the scenario (Article 13 applies to information at collection, not access requests). Option D misattributes the EU AI Act's explanation requirement and isn't the strongest GDPR-based argument."
+  },
+  {
+    "id": "q-806",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A company developed an AI system for employee performance evaluation that it classified as 'limited risk' under the EU AI Act. The system analyzes email sentiment, calendar meeting frequency, keyboard activity patterns, and document edit velocity. An employee files a complaint with their national supervisory authority, arguing the system should have been classified as high-risk. Which characteristic of the system most strongly supports the employee's reclassification argument?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The system processes biometric data in the form of keyboard activity patterns, which constitutes special category data under GDPR Article 9 and triggers the high-risk classification for biometric categorization systems under EU AI Act Annex III, point 1"
+      },
+      {
+        "letter": "B",
+        "text": "The system is used in an employment context, and Annex III, point 4 of the EU AI Act classifies AI systems intended to be used for 'recruitment or selection of natural persons, and for making decisions affecting terms of work-related relationships, promotion, and termination' as high-risk"
+      },
+      {
+        "letter": "C",
+        "text": "The system engages in emotion recognition through email sentiment analysis, and Annex III, point 1 of the EU AI Act classifies AI systems intended to be used for 'emotion recognition' as high-risk, regardless of the context in which they are deployed"
+      },
+      {
+        "letter": "D",
+        "text": "The system processes personal data for the purpose of evaluating performance aspects related to an individual's work, which constitutes 'profiling' under GDPR Article 4(4) and subjects the processing to the requirements for automated individual decision-making under Article 22"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Option B is correct: Annex III, point 4 of the EU AI Act explicitly classifies AI systems used in employment contexts — specifically for 'making decisions affecting terms of work-related relationships, promotion, and termination' — as high-risk. An employee performance evaluation system that influences promotion and termination decisions falls squarely within this classification. Option A is questionable because keyboard activity patterns may not constitute biometric data under the GDPR's definition (which requires specific technical processing related to physical, physiological, or behavioral characteristics that allow or confirm unique identification). Option C is incorrect because the emotion recognition classification in Annex III addresses systems intended to infer emotions, not sentiment analysis of text. Option D confuses GDPR profiling and automated decision-making with the EU AI Act's risk classification framework."
+  },
+  {
+    "id": "q-807",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A company uses 'legitimate interests' under GDPR Article 6(1)(f) as its lawful basis for processing customer data to train a churn prediction model. A customer objects to the processing under Article 21(1). The company performs a legitimate interests assessment (LIA) and concludes its commercial interest in reducing customer attrition overrides the individual's objection. Under GDPR requirements, what must the company do next?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Continue processing the customer's data, document the LIA outcome and the compelling legitimate grounds in the record of processing activities, and inform the customer of the decision along with the specific grounds that override their objection — but only if the LIA demonstrates 'compelling legitimate grounds' as required by Article 21(1)"
+      },
+      {
+        "letter": "B",
+        "text": "Stop processing the customer's data immediately upon receiving the objection, because Article 21(1) gives data subjects an absolute right to object to processing based on legitimate interests, and the controller may only continue if they can demonstrate compelling grounds that override the objection"
+      },
+      {
+        "letter": "C",
+        "text": "Escalate the objection to the relevant supervisory authority for a binding determination, since Article 21 creates a dispute resolution mechanism where the controller's legitimate interests assessment and the data subject's objection must be adjudicated by an independent third party"
+      },
+      {
+        "letter": "D",
+        "text": "Conduct a data protection impact assessment under Article 35 to evaluate whether the churn prediction processing presents a high risk to the rights and freedoms of natural persons, and use the DPIA findings to determine whether the legitimate interests basis remains valid in light of the objection"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Article 21(1) provides the right to object to processing based on legitimate interests, but it is not an absolute right — the controller may continue processing if they demonstrate 'compelling legitimate grounds for the processing which override the interests, rights and freedoms of the data subject.' Option A correctly describes this conditional continuation with documentation and notification requirements. Option B incorrectly treats the Article 21 objection as absolute (the absolute right exists under Article 21(2) for direct marketing, but not under Article 21(1) for legitimate interests). Option C invents a mandatory dispute resolution mechanism that does not exist in the GDPR. Option D incorrectly chains a DPIA requirement onto the objection process."
+  },
+  {
+    "id": "q-808",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A company deploys an AI content moderation system that automatically removes user posts flagged as 'policy violations.' The system provides no explanation for removals, no appeal mechanism, and no human review option. Users in the EU challenge this under the GDPR and the EU AI Act. Under which legal provision is the users' challenge most likely to succeed?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "GDPR Article 22(1), because the content moderation system produces legal effects concerning the users by restricting their ability to express themselves on the platform, and the decision is based solely on automated processing without meaningful human intervention"
+      },
+      {
+        "letter": "B",
+        "text": "GDPR Article 17 (right to erasure), because the system permanently removes user-generated content, which constitutes a form of data processing that users have the right to object to and request deletion of under the right to be forgotten"
+      },
+      {
+        "letter": "C",
+        "text": "EU AI Act Article 14, because content moderation systems that restrict user expression must provide 'clear and meaningful explanations of the role of the AI system in the decision-making procedure and the main parameters of the decision taken' to affected individuals"
+      },
+      {
+        "letter": "D",
+        "text": "GDPR Article 15(1)(h) combined with Article 22(3), because the absence of an explanation mechanism and appeal process violates both the right to meaningful information about automated decisions and the requirement for suitable safeguards including the right to obtain human intervention"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Option D correctly combines the two most relevant GDPR provisions: Article 15(1)(h) (right to meaningful information about the logic involved in automated decisions) and Article 22(3) (requirement for suitable safeguards including human intervention, the right to express one's point of view, and the right to contest the decision). The scenario's complete absence of explanation, appeal, and human review violates both provisions. Option A identifies Article 22(1) (prohibition on solely automated decisions with legal effects) but the question asks under which provision the challenge is 'most likely to succeed' — the combined violation of 15(1)(h) and 22(3) provides stronger grounds than the Article 22(1) prohibition alone. Option B misapplies the right to erasure. Option C cites an EU AI Act provision that primarily addresses deployer obligations rather than individual rights."
+  },
+  {
+    "id": "q-809",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A medical device manufacturer has obtained CE marking for its AI-powered diagnostic imaging system under the EU Medical Device Regulation (MDR). The EU AI Act now enters into force and classifies this type of system as high-risk. The manufacturer is confused about its obligations under the overlapping regulatory frameworks. Which statement most accurately describes the regulatory relationship?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The EU AI Act replaces the MDR for all AI-specific requirements, and the manufacturer must withdraw its MDR-based CE marking and obtain a new conformity assessment under the AI Act's notified body framework before continuing to place the device on the EU market"
+      },
+      {
+        "letter": "B",
+        "text": "The AI Act and MDR operate as complementary frameworks: the MDR continues to govern safety and performance requirements for medical devices, while the AI Act adds AI-specific requirements including risk management, data governance, transparency, and human oversight — with the AI Act's conformity assessment integrated into the existing MDR notified body process to avoid duplication"
+      },
+      {
+        "letter": "C",
+        "text": "The MDR takes precedence over the AI Act for medical devices under the principle of lex specialis, meaning the manufacturer's existing MDR compliance satisfies all regulatory requirements, and no additional conformity assessment under the AI Act is required as long as the device remains within its approved intended use"
+      },
+      {
+        "letter": "D",
+        "text": "The manufacturer must comply with whichever framework imposes the more stringent requirements for each specific obligation — the AI Act for data governance and transparency, the MDR for clinical evaluation and post-market surveillance — but only one conformity assessment is required, conducted by the notified body designated under the more stringent framework"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The EU AI Act explicitly provides for integration with existing product safety legislation, including the MDR. Article 8 and the relevant annexes establish that for products already subject to third-party conformity assessment under harmonization legislation (such as medical devices under the MDR), the AI Act's conformity assessment requirements are integrated into the existing assessment process — avoiding duplication. Option B correctly describes this complementary, integrated approach. Option A incorrectly suggests replacement. Option C incorrectly asserts MDR preemption. Option D's 'more stringent framework' rule is not the mechanism established by the Act; instead, specific integration provisions apply."
+  },
+  {
+    "id": "q-810",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A cloud provider offers a 'frontier AI model' API service. Under the GPAI Code of Practice's transparency obligations for providers of general-purpose AI models, the provider must draw up and make publicly available a summary of the content used for training. However, the provider argues that disclosing its complete training data sources would reveal trade secrets and compromise its competitive position. Which interpretation of the GPAI Code's transparency obligation is most consistent with its text and the EU AI Act's provisions for general-purpose AI?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The provider must publish the complete list of all training data sources without exception, because the GPAI Code's transparency requirements under Article 53(1)(d) of the EU AI Act are legally binding and trade secret protections do not apply to training data disclosures for general-purpose AI models"
+      },
+      {
+        "letter": "B",
+        "text": "The provider must provide a summary that is sufficiently detailed for downstream providers and deployers to understand the model's capabilities and limitations, but the summary need not enumerate every individual data source — a narrative description of data categories, sourcing methods, and relevant characteristics can satisfy the obligation while preserving commercially sensitive specifics"
+      },
+      {
+        "letter": "C",
+        "text": "The provider may withhold the training data summary entirely if it can demonstrate to the AI Office that disclosure would cause commercial harm, because the transparency obligations under Article 53 are subject to a proportionality test that balances public interest against business confidentiality"
+      },
+      {
+        "letter": "D",
+        "text": "The provider must publish a detailed summary including provider names, data types, and volumes for all training data sources, but may aggregate or anonymize specific dataset identifiers — the key distinction being that 'what types of data' must be disclosed while 'which specific datasets' may be protected as confidential business information"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Under Article 53(1)(d) of the EU AI Act, providers of general-purpose AI models must 'draw up and make publicly available a sufficiently detailed summary about the content used for training of the general-purpose AI model.' The requirement is for a 'summary' — not an exhaustive inventory. Option B correctly captures the balance: sufficient detail for downstream actors to understand the model's characteristics, but not so granular as to require disclosure of every individual data source. Option A overstates the requirement (the Act says 'summary,' not 'complete list'). Option C incorrectly suggests the obligation can be entirely avoided. Option D introduces a disclosure granularity framework not found in the Act's text — the Act does not distinguish between 'types of data' and 'which specific datasets' in the way D describes."
+  },
+  {
+    "id": "q-811",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "Under the NIST AI RMF's 'Map' function, an organization is characterizing the context of an AI system used for pretrial detention risk assessment. The system assigns a risk score that judges use when deciding whether to grant bail. Which contextual factor identified during the Map function most directly elevates the system's risk profile, and why?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The system's technical architecture — specifically, whether it uses a black-box deep learning model versus an interpretable logistic regression — because technical opacity in a criminal justice context precludes meaningful human review and violates the due process requirement that decisions be contestable"
+      },
+      {
+        "letter": "B",
+        "text": "The system's role in the decision-making process — specifically, that it produces a risk score that directly informs judicial decisions affecting an individual's physical liberty, making it a consequential decision in a high-stakes domain where errors cause irreversible harm before they can be corrected"
+      },
+      {
+        "letter": "C",
+        "text": "The system's training data provenance — specifically, whether the historical arrest and conviction records used for training reflect documented patterns of racial bias in policing and prosecution, which would cause the model to encode and perpetuate those biases in its risk assessments"
+      },
+      {
+        "letter": "D",
+        "text": "The system's deployer governance structure — specifically, whether the court system has an AI governance board with the authority to suspend the system's use if monitoring detects fairness degradation, because the absence of such a governance mechanism means no actor can stop ongoing harm"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Under the NIST AI RMF Map function, characterizing context includes understanding the system's purpose, intended use, and the nature and magnitude of potential impacts. The most directly risk-elevating contextual factor is the system's role: it informs judicial decisions affecting physical liberty, a domain where the consequences of errors include pretrial detention — an irremediable harm. Option B correctly identifies that it is the decision context (criminal justice, liberty deprivation) more than any technical characteristic that defines the risk profile. Options A, C, and D all describe legitimate risk factors, but the RMF's context characterization prioritizes understanding what the system does and to whom — the deployment context and potential impact magnitude — as the primary risk determinants."
+  },
+  {
+    "id": "q-812",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "An organization has implemented the NIST AI RMF across its AI portfolio. Its internal audit function is now evaluating whether the RMF's 'Manage' function has been adequately operationalized for a deployed credit-scoring model. Which finding would most clearly indicate a Manage function gap?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The organization has documented the model's intended purpose, training data characteristics, and known limitations in a model card, but has not updated the model card to reflect performance changes observed during the first six months of production operation"
+      },
+      {
+        "letter": "B",
+        "text": "The organization has a risk register entry for the model identifying 'demographic bias in credit decisions' as a risk, but the risk treatment plan states 'monitor for bias emergence' without specifying the fairness metric to be monitored, the detection threshold that would trigger remediation, or the accountable owner for executing the treatment"
+      },
+      {
+        "letter": "C",
+        "text": "The organization conducted adversarial testing and a bias audit before deployment, but did not engage an external third party to validate the testing methodology, relying solely on the internal data science team's self-assessment of the model's fairness characteristics"
+      },
+      {
+        "letter": "D",
+        "text": "The organization's AI governance policy requires quarterly fairness monitoring reports to be reviewed by the responsible AI council, but the council has not met in the past two quarters due to scheduling conflicts among executive members"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The RMF Manage function specifically addresses risk treatment — not just risk identification and measurement. Option B identifies a Manage function gap because the risk has been identified (Map function) and a treatment has been proposed, but the treatment lacks the specificity required for effective management: no defined metric, no threshold, and no accountable owner. This is the essence of a Manage failure — the risk is known but the response is insufficiently specified to be actionable. Option A describes a documentation gap (Govern function). Option C describes a testing methodology concern (Measure function). Option D describes a governance process failure (Govern function), not a risk treatment specificity gap."
+  },
+  {
+    "id": "q-813",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A company certified against ISO/IEC 42001 (AI Management System) discovers that its deployed chatbot has begun generating factually incorrect responses about the company's refund policy, causing customer confusion and a small number of erroneous refunds. Under the ISO 42001 framework, which clause most directly governs the organization's required response to this discovery?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Clause 9 (Performance Evaluation), which requires the organization to monitor, measure, analyze, and evaluate the performance and effectiveness of the AI management system — including the detection of nonconformities in AI system outputs and the evaluation of their impact on the system's ability to meet its specified requirements"
+      },
+      {
+        "letter": "B",
+        "text": "Clause 10 (Improvement), which requires the organization to react to nonconformities by taking action to control and correct them, dealing with the consequences, and determining the root cause to prevent recurrence — including implementing corrective actions for AI system outputs that deviate from specified requirements"
+      },
+      {
+        "letter": "C",
+        "text": "Clause 8 (Operation), which requires the organization to implement operational controls for AI systems, including controls over system outputs, and to take action when operational processes fail to produce the intended results — including correcting nonconforming outputs identified during operation"
+      },
+      {
+        "letter": "D",
+        "text": "Clause 6 (Planning), which requires the organization to plan actions to address risks and opportunities, including the integration of corrective actions into the AI management system's processes — and to evaluate the effectiveness of those actions in preventing recurrence of identified nonconformities"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Under ISO/IEC 42001, Clause 10 (Improvement) specifically addresses how organizations must respond when nonconformities are detected — including taking action to control and correct the nonconformity, dealing with consequences, determining root cause, and implementing corrective action to prevent recurrence. The chatbot's factual errors constitute a nonconformity (deviation from specified performance requirements), and the required response — fix the outputs, address customer harm, investigate root cause, and prevent recurrence — maps directly to Clause 10's corrective action requirements. Clause 9 (A) addresses monitoring and evaluation (detection). Clause 8 (C) addresses operational controls but not the structured corrective action process. Clause 6 (D) addresses planning, not reactive improvement."
+  },
+  {
+    "id": "q-814",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "An organization is conducting a conformity assessment for a high-risk AI system under the EU AI Act. The system uses a third-party foundation model fine-tuned on the organization's proprietary data. The organization has documentation from the foundation model provider including a model card and training data summary. The notified body asks for additional evidence about the foundation model's development process. The provider refuses, citing trade secrets. Which regulatory mechanism addresses this impasse?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Article 64 of the EU AI Act, which empowers the AI Office to compel providers of general-purpose AI models to disclose information necessary for downstream providers to comply with their obligations, including through the imposition of fines for non-cooperation with conformity assessment procedures"
+      },
+      {
+        "letter": "B",
+        "text": "Article 28 of the GDPR, which requires data processors (including foundation model providers) to make available to the controller all information necessary to demonstrate compliance with the controller's obligations, and to contribute to audits and inspections conducted by the controller or an auditor mandated by the controller"
+      },
+      {
+        "letter": "C",
+        "text": "Annex VII of the EU AI Act, which establishes the obligations of providers of high-risk AI systems and specifies that where a system incorporates components from third-party suppliers, the provider must obtain and include in its technical documentation the information necessary to demonstrate the system's conformity — and may rely on contractual provisions requiring such disclosure from suppliers"
+      },
+      {
+        "letter": "D",
+        "text": "The GPAI Code of Practice, which requires signatory providers of general-purpose AI models to cooperate with downstream providers' compliance efforts, including by providing the information necessary for downstream providers to conduct conformity assessments and satisfy their obligations under the AI Act"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Option C correctly identifies the mechanism: when a high-risk AI system incorporates third-party components, the provider placing the system on the market is responsible for overall conformity and must obtain the information needed to demonstrate it — typically enforced through contractual provisions with suppliers. Annex VII and Article 16 establish the provider's obligations. Option A refers to AI Office powers that primarily address general-purpose AI model transparency (Article 53), not the specific situation of a downstream provider needing supply-chain information for their own conformity assessment. Option B cites the GDPR's controller-processor framework, which is not the relevant regulatory mechanism for AI system conformity assessments. Option D cites voluntary cooperation under the GPAI Code, which lacks the enforcement mechanism needed for this impasse."
+  },
+  {
+    "id": "q-815",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A company's AI system for insurance underwriting was deployed in 2023. In 2025, the EU AI Act's requirements for high-risk AI systems become applicable to this system category. The system was not designed with the AI Act's requirements in mind. Which statement most accurately describes the company's regulatory obligation under the Act's transitional provisions?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The system is grandfathered and may continue operating unchanged, because the AI Act applies only to systems placed on the market or put into service after the Act's applicability date — pre-existing systems are exempt from conformity assessment and ongoing obligations"
+      },
+      {
+        "letter": "B",
+        "text": "The system must be withdrawn from the market immediately upon the Act's applicability date unless the company can demonstrate that it has completed a retrospective conformity assessment, because the Act does not distinguish between pre-existing and newly deployed systems for the purposes of market access"
+      },
+      {
+        "letter": "C",
+        "text": "If the system undergoes a 'substantial modification' after the Act's applicability date — such as retraining on new data, adding new features, or repurposing for a new use case — it will be considered a new system and must undergo conformity assessment; however, the system may continue operating in its pre-Act state until such a modification occurs"
+      },
+      {
+        "letter": "D",
+        "text": "The system may continue operating but must be brought into compliance with the Act's post-market monitoring, incident reporting, and transparency obligations within a transition period specified by the Act — while the pre-market conformity assessment requirement is waived for systems already in operation before the applicability date"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Under the EU AI Act's transitional provisions (Article 111), systems already placed on the market or put into service before the Act's applicability date are generally not required to undergo retrospective conformity assessment. However, the Act treats 'substantial modifications' as creating a new system that must comply. Option C correctly captures this: the system can continue in its current state, but a substantial modification triggers compliance obligations. Options A and B are both incorrect extremes. Option D incorrectly asserts that pre-existing systems are exempt from only pre-market obligations but not post-market ones."
+  },
+  {
+    "id": "q-816",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A company's AI system makes automated decisions about credit applications. Under GDPR Article 22, such decisions are prohibited unless they are 'authorized by Union or Member State law.' The company's legal team argues that since no specific EU or Member State law explicitly authorizes AI-based credit decisions, the company can rely on the 'necessary for entering into a contract' exception. The data protection officer disagrees. Which analysis of the legal basis question is most accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The DPO is correct: the 'necessary for contract' exception under Article 22(2)(a) applies only where the automated decision is genuinely necessary for the performance of the contract — not merely convenient or commercially beneficial. Credit decisions made by AI are not 'necessary' because human underwriters can perform the same function, making the automated processing a choice rather than a necessity."
+      },
+      {
+        "letter": "B",
+        "text": "The legal team is correct: the 'necessary for entering into a contract' exception in Article 22(2)(a) applies because the credit decision is a direct prerequisite to forming the loan contract — without a credit decision, no contract can be entered into, satisfying the necessity requirement regardless of whether the decision could alternatively be made by a human."
+      },
+      {
+        "letter": "C",
+        "text": "Neither the DPO nor the legal team is correct: Article 22(1)'s prohibition applies only to decisions based 'solely' on automated processing, and if the credit application process includes any meaningful human review step — such as a loan officer reviewing the AI system's recommendation before final approval — the prohibition does not apply, regardless of which exception is invoked."
+      },
+      {
+        "letter": "D",
+        "text": "The DPO is partially correct but for the wrong reason: the 'necessary for contract' exception requires not only necessity but also that 'suitable measures to safeguard the data subject's rights and freedoms and legitimate interests are implemented' under Article 22(3) — including the right to human intervention — and the company's fully automated process fails this safeguard requirement."
+      }
+    ],
+    "answer": "A",
+    "explanation": "Option A correctly applies the Article 29 Working Party's guidance on the 'necessary for contract' exception: it must be genuinely necessary, not just convenient. Automated credit decisions are not strictly necessary because human decision-makers can perform the same function. This interpretation has been consistently applied by EU data protection authorities. Option B misinterprets 'necessary' as mere causal relevance. Option C describes a different scenario (human review changing the 'solely' automated nature) rather than analyzing the legal basis. Option D correctly invokes Article 22(3) safeguards but mischaracterizes them as a condition of the 'necessary for contract' exception — the safeguards are a separate requirement from the lawful basis; both must be satisfied, but the safeguards alone don't determine whether the exception applies."
+  },
+  {
+    "id": "q-817",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A data subject submits a GDPR Article 17 (right to erasure) request demanding deletion of their personal data from an AI model's training dataset. The organization explains that the model has already been trained and the individual's data cannot be extracted from the trained parameters. The organization offers to delete the individual's data from its source databases and retrain the model without it. The data subject argues this is insufficient because the current model still 'contains' information derived from their data. Which legal analysis of the situation is most accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The organization must delete and retrain, because Article 17 creates an absolute obligation to erase personal data upon request regardless of technical feasibility — and the continued existence of a model trained on the individual's data constitutes ongoing processing that violates the erasure obligation until the model is retrained without that data"
+      },
+      {
+        "letter": "B",
+        "text": "The organization's offer satisfies Article 17 because the trained model parameters do not constitute 'personal data' — they are aggregated statistical representations from which individual data points cannot be retrieved — and deleting the source data and retraining addresses any residual processing of the individual's personal data"
+      },
+      {
+        "letter": "C",
+        "text": "The organization's obligation depends on whether the model permits membership inference — if an attacker can determine with statistical confidence whether the individual's data was in the training set, the trained model constitutes a form of 'storage' of personal data and must be retrained; if not, the source data deletion is sufficient"
+      },
+      {
+        "letter": "D",
+        "text": "The organization need not retrain the model but must implement supplementary measures including: documenting the erasure request and response in its records of processing activities, ensuring the individual's data is not used in future retraining cycles, and informing the individual that model parameters are not personal data while offering the source data deletion"
+      }
+    ],
+    "answer": "D",
+    "explanation": "This is an emerging area without definitive regulatory guidance, but the most legally defensible position under current GDPR interpretation is D. Trained model parameters are generally considered aggregated, anonymized statistical outputs rather than personal data storage, because individual training records cannot be retrieved from them (though this is debated). However, the organization must still: (1) erase personal data from source databases, (2) ensure it isn't used in future processing including retraining, (3) document the request/response, and (4) provide transparency to the data subject. Option A overstates the obligation. Option B is technically correct but incomplete — it omits the supplementary measures. Option C introduces membership inference as a legal test that has not been formally adopted by EU regulators."
+  },
+  {
+    "id": "q-818",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "An organization's AI governance policy requires a 'fundamental rights impact assessment' (FRIA) for all high-risk AI systems, consistent with the EU AI Act. The data science team has already completed a data protection impact assessment (DPIA) under GDPR Article 35 for the same system. The team argues the FRIA is redundant and proposes using the DPIA to satisfy both requirements. The governance lead disagrees. What is the strongest justification for requiring a separate FRIA beyond the DPIA?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The DPIA addresses risks to personal data and privacy rights exclusively under the GDPR's material scope, while the FRIA addresses risks to all fundamental rights under the EU Charter — including non-discrimination, human dignity, freedom of expression, access to justice, and consumer protection — creating a materially broader assessment scope that the DPIA does not cover"
+      },
+      {
+        "letter": "B",
+        "text": "The DPIA is a controller obligation under the GDPR, while the FRIA is a provider obligation under the EU AI Act, and because the responsible actors differ, the assessments must be conducted separately with different accountable parties, scopes, and documentation requirements"
+      },
+      {
+        "letter": "C",
+        "text": "The DPIA is required before processing begins and is a one-time assessment, while the FRIA must be continuously updated throughout the AI system's lifecycle to reflect new risks emerging from model updates, deployment changes, and post-market monitoring findings"
+      },
+      {
+        "letter": "D",
+        "text": "The FRIA requires external stakeholder consultation including affected communities and civil society organizations, while the DPIA only requires internal consultation with the data protection officer — making the FRIA a more democratically legitimate assessment that cannot be satisfied through internal GDPR compliance processes alone"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Option A correctly identifies the fundamental difference in scope: the DPIA under GDPR Article 35 specifically addresses 'risks to the rights and freedoms of natural persons' arising from personal data processing — primarily privacy and data protection rights. The FRIA under the EU AI Act addresses potential impacts on all fundamental rights protected by the EU Charter, which is a substantially broader scope including non-discrimination, dignity, freedom of expression, worker rights, access to justice, and more. While there is overlap (privacy/data protection), the FRIA covers rights that a DPIA does not address. Options B, C, and D each contain elements of truth but overstate or mischaracterize: B miscasts the provider/deployer distinction; C incorrectly frames the DPIA as one-time; D overstates the external stakeholder requirement for FRIAs under the Act's provisions."
+  },
+  {
+    "id": "q-819",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "During a red team exercise, testers successfully extract training data from a deployed language model by submitting thousands of carefully crafted prompts and analyzing the statistical patterns in the model's completions. The extracted data includes full names, email addresses, and professional affiliations that appeared in the model's training corpus. Under which regulatory framework is the organization most likely to face enforcement action for this vulnerability?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The EU AI Act, because Article 15 requires high-risk AI systems to be 'sufficiently transparent to enable deployers to interpret the system's output and use it appropriately,' and a model that leaks training data through prompt-based extraction fails this transparency requirement by producing outputs that contain unintended personal information"
+      },
+      {
+        "letter": "B",
+        "text": "The GDPR, because the extracted data constitutes personal data that the organization was processing as a data controller during model training, and the model inversion attack demonstrates that the organization failed to implement 'appropriate technical and organizational measures to ensure a level of security appropriate to the risk' as required by Article 32"
+      },
+      {
+        "letter": "C",
+        "text": "The NIST AI RMF, because the model extraction attack demonstrates a failure under the 'Measure' function to test the system for adversarial robustness and to evaluate the effectiveness of implemented security controls against known AI-specific attack vectors including training data extraction"
+      },
+      {
+        "letter": "D",
+        "text": "The proposed EU AI Liability Directive, because the model inversion attack creates a rebuttable presumption of a causal link between the organization's failure to prevent training data leakage and any harm suffered by individuals whose personal data was extracted from the model"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Training data extraction (model inversion) resulting in the exposure of personal data is fundamentally a data security breach under the GDPR. The organization processed personal data during training and failed to implement adequate security measures (Article 32) to prevent its unauthorized disclosure through inference attacks. This is the most direct and enforceable regulatory exposure. Options A, C, and D describe related concerns but are less directly applicable: A misapplies the transparency requirement; C describes a framework (NIST AI RMF) that is not an enforcement mechanism; D cites a directive that is proposed, not enacted, and would address liability for harm rather than the regulatory violation itself."
+  },
+  {
+    "id": "q-820",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "During the design phase of a predictive policing model, the AI governance team requires the development team to complete both a stakeholder mapping exercise and a system boundary definition before any model development begins. The product manager pushes back, arguing these governance activities delay the project without producing code. Which argument best justifies requiring these activities before model development?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Stakeholder mapping identifies groups whose rights or interests may be affected by the system but who lack organizational power to influence design decisions — such as the communities being policed — ensuring their interests are considered before technical choices create path dependencies that are costly or impossible to reverse later in the lifecycle"
+      },
+      {
+        "letter": "B",
+        "text": "Stakeholder mapping satisfies the EU AI Act's requirement for fundamental rights impact assessments, which must identify and consult affected stakeholders before high-risk AI systems are placed on the market, and the system boundary definition provides the scope parameters that the conformity assessment will evaluate"
+      },
+      {
+        "letter": "C",
+        "text": "System boundary definition prevents scope creep by formally documenting what the system will and will not do, which is a prerequisite for the risk assessment to identify harms within the system's control — without boundaries, every potential downstream consequence becomes a design-phase responsibility, paralyzing the development process with unbounded risk analysis"
+      },
+      {
+        "letter": "D",
+        "text": "Both A and C are correct and complementary: stakeholder mapping surfaces who will be affected and how, while system boundaries define the scope of analysis — together they provide the foundation for every subsequent governance activity, from impact assessment to monitoring design, and skipping either creates gaps that compound through the lifecycle"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Option D correctly recognizes that A and C describe complementary governance activities that function as the foundation for all subsequent lifecycle governance. Stakeholder mapping (A) ensures affected groups' interests are identified before technical decisions lock in outcomes. System boundary definition (C) establishes the scope of analysis, preventing both scope creep and scope gaps. Neither is primarily about regulatory compliance (B) — they are about sound governance that happens to support compliance. The key point is that these activities must happen before development because they shape the entire downstream governance structure."
+  },
+  {
+    "id": "q-821",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "A model training run is underway. Mid-training, the data governance team discovers that 12% of the training dataset was collected under a consent mechanism that the legal team now considers invalid under evolving GDPR interpretation. The model has consumed approximately 60% of its training budget. The data science team proposes continuing the training run and addressing the data issue afterward through fine-tuning on validated data. The governance team disagrees. What is the most appropriate governance response?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Halt the training run, remove the affected data, and restart training from scratch using only data with a valid lawful basis — because continuing to train on data without a valid lawful basis constitutes ongoing unlawful processing under the GDPR, and the sunk cost of the partial training run does not justify continued non-compliance"
+      },
+      {
+        "letter": "B",
+        "text": "Continue the training run to completion, then conduct a data provenance audit to identify and document every affected data point, assess whether the model's outputs are materially influenced by the affected data, and determine whether retraining is necessary based on a risk-based assessment of the compliance exposure"
+      },
+      {
+        "letter": "C",
+        "text": "Pause the training run, obtain an interim legal opinion on the validity of the consent mechanism, and implement a checkpoint preserving the current model state — resuming training only if the legal opinion confirms the consent was valid, and restarting with cleansed data if it was not"
+      },
+      {
+        "letter": "D",
+        "text": "Halt the training run immediately to stop the unlawful processing, document the incident in the AI risk register as a data governance failure, and task the legal and data governance teams with determining whether the model resulting from the partial training run can be salvaged — treating the 60% training budget as sunk cost subordinate to compliance obligations"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Option D correctly prioritizes immediate compliance (halt unlawful processing), governance documentation (incident recording in the risk register), and treating the training cost as a sunk cost subordinate to legal obligations — while leaving open the possibility that the partially trained model may not need to be discarded entirely. This mirrors the incident response principle of containment before investigation. Option A assumes the partial model must be discarded, which may not be necessary if legal analysis determines the model can be fine-tuned or if the consent issue is resolved. Option B inappropriately continues unlawful processing. Option C's 'pause and get a legal opinion' delays the cessation of potentially unlawful processing."
+  },
+  {
+    "id": "q-822",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "A model validation report shows that a credit-scoring model achieves 92% accuracy overall but only 74% accuracy for applicants from a specific demographic group. The model meets the organization's aggregate accuracy threshold of 90%. The governance team must decide whether the model proceeds to deployment. Which analysis framework should guide this decision?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The aggregate accuracy threshold is the governing metric established during the design phase, and since the model exceeds the 90% threshold, deployment should proceed — the subgroup disparity should be documented in the model card as a known limitation and monitored post-deployment, but it does not block deployment because the pre-established criteria have been met"
+      },
+      {
+        "letter": "B",
+        "text": "The subgroup accuracy disparity constitutes a fairness concern that must be investigated, regardless of aggregate metrics meeting thresholds — the governance team should require root cause analysis (examining data representativeness, proxy variables, and label bias), evaluate mitigation options, and determine whether the residual fairness risk is acceptable before authorizing deployment"
+      },
+      {
+        "letter": "C",
+        "text": "The model should not be deployed until the subgroup accuracy reaches at least 85% for all demographic groups, establishing demographic parity as a hard deployment gate — because accuracy disparities across protected groups create legal exposure under both the Equal Credit Opportunity Act and the EU AI Act's non-discrimination requirements for high-risk systems"
+      },
+      {
+        "letter": "D",
+        "text": "The model should proceed to deployment with the subgroup disparity addressed through an operational control: all decisions for the underperforming subgroup are escalated for mandatory human review, while decisions for other groups proceed automatically — this addresses the fairness concern without delaying deployment or requiring model retraining"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Option B correctly applies governance best practice: aggregate metrics that meet thresholds do not excuse subgroup disparities. The governance team must investigate the disparity, understand its causes, evaluate mitigations, and make a risk-based decision about whether the residual fairness risk is acceptable. This reflects both the NIST AI RMF's Measure function (identifying and evaluating fairness risks) and the broader governance principle that pre-established thresholds are necessary but not sufficient — they must be supplemented by contextual judgment when disparities emerge. Option A is governance-by-checklist that ignores substantive fairness concerns. Option C imposes an arbitrary threshold without context. Option D applies an operational workaround that may create a two-tier system with its own fairness concerns."
+  },
+  {
+    "id": "q-823",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "The deployment gate review for a medical diagnosis AI system is scheduled for Friday. On Thursday evening, the data science team discovers that a data preprocessing step inadvertently introduced a systematic bias: patients over 65 were underrepresented in the final training dataset because a date-of-birth normalization function incorrectly filtered records with birth years before 1960. The model has already passed all other validation tests. The team proposes fixing the preprocessing bug and retraining, which will delay deployment by three weeks. The business sponsor demands Friday deployment proceed as scheduled, arguing the model still exceeds accuracy thresholds. What governance mechanism should resolve this conflict?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The deployment gate review itself serves as the mechanism: the governance board, comprising legal, compliance, privacy, security, and business stakeholders, must evaluate the new information and determine whether deployment proceeds, is delayed, or is blocked — the business sponsor does not have unilateral deployment authority and the data science team's discovery must be formally presented and assessed at the gate before any deployment decision is made"
+      },
+      {
+        "letter": "B",
+        "text": "The organization's risk acceptance procedure: the business sponsor may accept the risk of deploying the biased model by signing a formal risk acceptance document that acknowledges the bias finding, accepts accountability for downstream consequences, and commits to retraining within an agreed timeline — this transfers the governance decision from the gate review to the risk owner"
+      },
+      {
+        "letter": "C",
+        "text": "The organization's incident response procedure: the discovery of systematic bias introduced by a data preprocessing error constitutes an AI incident that must be triaged, and the incident response framework's severity classification will determine whether deployment is blocked — severity level 1 (systemic bias) would mandate deployment hold regardless of business pressure"
+      },
+      {
+        "letter": "D",
+        "text": "The change management process: the deployment represents a planned change that was approved based on now-invalidated testing results, and the change management framework requires that the change request be reassessed with the new information — the deployment approval is automatically rescinded pending reassessment, removing the business sponsor's authority to proceed"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The gate review is specifically designed for this situation: new information emerges before deployment that must be assessed by the multidisciplinary governance team. Option A correctly identifies the gate review as the mechanism where cross-functional stakeholders evaluate the risk and make a collective decision that no single stakeholder (including the business sponsor) can override. Option B's risk acceptance procedure is inappropriate for a discovered bias that was not previously risk-assessed — you cannot 'accept' a risk that has not been formally evaluated. Option C misapplies incident response (this is a pre-deployment finding, not a post-deployment incident). Option D overstates change management's authority — change management may require reassessment but does not 'automatically rescind' approval."
+  },
+  {
+    "id": "q-824",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "Six months after deploying a customer service chatbot, the monitoring dashboard shows a steady increase in 'user escalation rate' — the percentage of conversations where users demand to speak with a human agent. Simultaneously, the chatbot's automated containment rate (conversations resolved without human intervention) has remained stable at 72%. The product team argues the chatbot is performing as designed. The governance team disagrees. Which interpretation of the monitoring data is most aligned with AI governance best practice?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The stable containment rate confirms the chatbot is functioning as designed; the increased escalation rate likely reflects external factors such as seasonal customer sentiment changes or new product launches generating more complex inquiries — the governance team should not intervene in the absence of degradation in the designed performance metric"
+      },
+      {
+        "letter": "B",
+        "text": "The divergence between the containment rate and escalation rate suggests the chatbot may be resolving conversations in ways that are technically correct but unsatisfactory to users — the governance team should investigate whether the chatbot's resolution tactics have drifted toward approaches that close conversations without truly addressing user needs, which would be a form of unintended behavioral drift not captured by the containment metric alone"
+      },
+      {
+        "letter": "C",
+        "text": "The increased escalation rate constitutes a leading indicator of model performance degradation that warrants immediate retraining — the governance team should initiate the retraining process based on this early warning signal before the containment rate also begins to decline, following the principle that monitoring should trigger proactive rather than reactive responses"
+      },
+      {
+        "letter": "D",
+        "text": "The escalation rate increase indicates a user trust issue that should be addressed through improved transparency: the governance team should recommend adding disclosures that users are interacting with an AI system and providing explanations of how the chatbot reaches its conclusions, on the assumption that users who understand the system are more willing to accept its resolutions without escalating"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Option B correctly identifies that monitoring a single metric (containment rate) can mask behavioral issues that manifest in complementary metrics (escalation rate). The divergence suggests the chatbot may be 'resolving' conversations in a technical sense while leaving users unsatisfied — a form of unintended behavior that the primary performance metric does not capture. This reflects the governance principle that monitoring must encompass multiple dimensions of system behavior, including user experience indicators. Option A is reactive governance that ignores user feedback signals. Option C jumps to retraining without diagnosing the cause. Option D assumes the problem is transparency rather than investigating what's actually happening in the conversations."
+  },
+  {
+    "id": "q-825",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "A model registry tracks three versions of a fraud detection model. Version 2.1 is currently in production. Version 2.2 improved accuracy by 1.3% on the validation set but showed a 4% increase in false positive rate for transactions under $50. Version 3.0 is a complete retraining on refreshed data, showing 2.1% accuracy improvement with no fairness regression. The governance team must decide whether to promote a version. The business team wants 3.0 for accuracy. The risk team wants to stay on 2.1 because it is stable. The data science team wants 2.2 as an incremental improvement. What governance information is missing that would most improve this decision?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The model card for version 3.0, documenting its training data provenance, evaluation methodology, known limitations, and intended use — without which the governance team cannot assess whether the accuracy improvement came from genuinely better modeling or from training data that overfits to recent patterns that may not persist"
+      },
+      {
+        "letter": "B",
+        "text": "A shadow deployment comparison between versions 2.1 and 3.0 running on production data for a statistically significant period, providing empirical evidence of how each version performs on live traffic rather than relying solely on validation set metrics that may not represent current production data distributions"
+      },
+      {
+        "letter": "C",
+        "text": "The specific subgroups and transaction types where version 2.2's false positive rate increased and version 3.0's improvements concentrated, because aggregate metrics mask distributional changes — an accuracy improvement concentrated in high-value transactions while small transactions degrade creates a fairness concern that aggregate numbers conceal"
+      },
+      {
+        "letter": "D",
+        "text": "All of the above represent missing governance information that would materially improve the decision, and each addresses a different dimension of the evidence needed: A addresses documentation completeness, B addresses production relevance of test metrics, and C addresses subgroup-level impact analysis that aggregate metrics cannot provide"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Option D correctly identifies that all three pieces of information address different and complementary governance needs. The model card (A) provides essential documentation context. Shadow deployment (B) validates that validation-set improvements translate to production. Subgroup analysis (C) prevents aggregate metrics from masking distributional impacts. Sound governance decisions require evidence across all these dimensions — accuracy improvement alone is insufficient. A governance team operating with only aggregate metrics and no model card, no production validation, and no subgroup analysis is making decisions on incomplete evidence regardless of which version it selects."
+  },
+  {
+    "id": "q-826",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "An organization's monitoring system detects concept drift in a loan default prediction model: the relationship between employment type and default risk has changed significantly since training, because the post-pandemic labor market now features high rates of job switching and gig economy participation that the pre-pandemic training data did not capture. The model's accuracy has dropped from 89% to 81%. The governance team must determine the retraining strategy. Which consideration should most influence the decision between incremental fine-tuning and full retraining from scratch?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The magnitude of the concept drift: if the relationship between features and outcomes has fundamentally changed (not just shifted), full retraining is required because fine-tuning on new data would retain the outdated feature-outcome relationships learned during initial training, creating a model that performs well on neither the old nor the new distribution"
+      },
+      {
+        "letter": "B",
+        "text": "The availability of a representative post-drift training dataset: full retraining requires sufficient volume of new data capturing the changed relationships, while fine-tuning can work with smaller amounts of new data — if the organization has only a few months of post-pandemic loan performance data, fine-tuning may be the only technically viable option regardless of the drift magnitude"
+      },
+      {
+        "letter": "C",
+        "text": "The data lineage and provenance requirements: full retraining triggers the data governance obligations associated with training a new model — including lawful basis verification, data quality assessment, and documentation updates — while fine-tuning on existing model weights may allow the organization to leverage the original training documentation with a narrower scope of update"
+      },
+      {
+        "letter": "D",
+        "text": "The regulatory classification of the resulting model: if the retrained model constitutes a 'substantial modification' under the EU AI Act, it must undergo a new conformity assessment regardless of whether fine-tuning or full retraining was used — making the governance cost of the two approaches equivalent under the Act and shifting the decision to purely technical considerations"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Option B correctly identifies the most practically constraining consideration: whether sufficient post-drift data exists to support full retraining. Concept drift means the old data distribution no longer represents the deployed environment, so full retraining requires enough new data capturing the changed relationships — which may not be available for months or years after a structural economic shift. Fine-tuning becomes not just a technical preference but the only viable approach when data volume is the binding constraint. Options A, C, and D all describe real considerations but B addresses the gating factor: without sufficient data, the full-retraining-versus-fine-tuning debate is moot. Additionally, Option D is incorrect: the AI Act's 'substantial modification' determination depends on the nature and extent of the change, not on whether fine-tuning or full retraining was the technical method."
+  },
+  {
+    "id": "q-827",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "During a pre-deployment security review, the cybersecurity team demonstrates a prompt injection attack against the organization's internal document-search AI system. By embedding hidden instructions in a document titled 'Q4 Financial Report,' an attacker can cause the system to exfiltrate search results to an external endpoint. The data science team proposes mitigating this through output filtering. The security team argues output filtering is insufficient because the attack vector is the retrieval mechanism itself. Which governance response best addresses the root cause?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Require that all documents indexed by the search system undergo content sanitization to strip hidden text and executable content before ingestion, and implement a pre-retrieval content filter that validates document provenance against an approved source registry — addressing the attack vector at the data ingestion stage rather than at the output stage where mitigations are inherently reactive"
+      },
+      {
+        "letter": "B",
+        "text": "Implement a defense-in-depth approach combining input sanitization, retrieval-augmented generation guardrails that isolate retrieved content from prompt execution, output filtering, and rate limiting — because prompt injection is a systemic vulnerability in LLM-based systems that cannot be fully eliminated by any single control, making layered mitigations the appropriate governance response"
+      },
+      {
+        "letter": "C",
+        "text": "Suspend deployment of the document-search system until the underlying model architecture can be hardened against prompt injection attacks, because deploying a system with a known security vulnerability that enables data exfiltration would violate the organization's security policy and potentially trigger breach notification obligations under data protection regulations"
+      },
+      {
+        "letter": "D",
+        "text": "Accept the residual risk with enhanced monitoring: deploy the system with output filtering as a primary control, implement real-time alerting on anomalous retrieval patterns that may indicate active exploitation, and schedule a reassessment after three months — documenting the risk acceptance decision and the monitoring plan in the AI risk register"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Prompt injection is a systemic vulnerability in LLM-based systems that cannot be fully eliminated through any single control. Option B correctly applies the defense-in-depth principle: multiple layered controls (input sanitization, RAG guardrails, output filtering, rate limiting) provide overlapping protection where no individual control is sufficient. This is the governance approach recommended by NIST, OWASP, and industry best practice for LLM security. Option A's content sanitization addresses one vector but is insufficient alone. Option C's suspension may be appropriate for critical systems but is disproportionate as a blanket response. Option D's 'accept and monitor' approach is appropriate for residual risk after controls are implemented, not as the primary response to a demonstrated exploit."
+  },
+  {
+    "id": "q-828",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "The incident response team identifies that a deployed recommendation model has developed a feedback loop: the model recommends content that users engage with, engagement data is fed back into retraining, and the retrained model recommends increasingly extreme versions of that content to maintain engagement. The model's accuracy metrics have improved. User complaints about content quality have increased. What distinguishes this from standard model drift, and why does that distinction matter for the governance response?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Feedback loops create self-reinforcing cycles where model outputs shape future training data, while drift describes external changes in the data distribution — the distinction matters because mitigating a feedback loop requires breaking the cycle (e.g., diversifying training data sources, introducing exploration mechanisms, or decoupling engagement from retraining), whereas drift mitigation focuses on retraining on updated data that reflects the new distribution"
+      },
+      {
+        "letter": "B",
+        "text": "Feedback loops are detected through user complaints, while drift is detected through statistical monitoring — the distinction matters because feedback loop governance relies on qualitative user feedback channels rather than quantitative monitoring infrastructure, requiring different detection mechanisms and escalation paths within the organization's governance structure"
+      },
+      {
+        "letter": "C",
+        "text": "Feedback loops corrupt the model's performance metrics by inflating accuracy scores on the very content the model itself promoted, while drift degrades metrics — the distinction matters because feedback loop detection requires monitoring metrics that are independent of the model's own outputs, such as user satisfaction surveys and content diversity indices, rather than relying on standard performance metrics that the loop itself distorts"
+      },
+      {
+        "letter": "D",
+        "text": "Both A and C are correct and complementary: A describes the structural nature of feedback loops (self-reinforcing cycles through the retraining pipeline) while C describes the monitoring challenge they create (corrupted performance metrics that conceal rather than reveal the problem), and together they explain why feedback loops require different governance responses than standard drift in both remediation strategy and detection methodology"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Option D correctly combines the two key distinctions between feedback loops and standard drift. Option A correctly identifies the structural difference: feedback loops are self-reinforcing cycles where the model's outputs influence its future training data, requiring cycle-breaking interventions rather than simple retraining. Option C correctly identifies the monitoring challenge: performance metrics become unreliable because the model is optimizing for the outcomes it has itself created, requiring independent evaluation metrics. Together, these distinctions explain why feedback loops demand different governance responses across both remediation and detection dimensions."
+  },
+  {
+    "id": "q-829",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "An organization's AI governance policy requires 'explainability monitoring' for deployed models. The MLOps team has implemented SHAP value tracking that records feature importance distributions for each prediction batch. The governance team reviews this and finds it insufficient. What specific capability is the governance team most likely seeking that SHAP value tracking alone does not provide?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The ability to detect when the model's explanations become inconsistent — for example, when the same feature (e.g., 'credit utilization ratio') is cited as the primary driver of approval for one applicant and denial for another with similar characteristics, indicating that the model's decision logic has become unstable or contradictory in ways that aggregate feature importance distributions cannot reveal"
+      },
+      {
+        "letter": "B",
+        "text": "The ability to verify that SHAP explanations remain faithful to the model's actual decision process over time, because SHAP values are approximations that can diverge from the model's true behavior as the input distribution shifts — requiring periodic ground-truth validation of explanation accuracy against the model's actual decision boundaries"
+      },
+      {
+        "letter": "C",
+        "text": "The ability to detect concept drift through changes in SHAP value distributions, because shifts in which features the model considers important over time serve as leading indicators of changing feature-outcome relationships that precede degradation in standard accuracy metrics"
+      },
+      {
+        "letter": "D",
+        "text": "The ability to surface individual decisions where the model's reasoning has changed significantly from its validation baseline, enabling human reviewers to investigate specific cases rather than relying on aggregate distributional monitoring that may mask problematic individual-level explanation shifts within apparently stable aggregate statistics"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Option D identifies the key gap: aggregate SHAP value distribution tracking provides population-level visibility into feature importance but cannot surface individual decisions where explanations have deviated from expected patterns. Effective explainability monitoring requires both aggregate monitoring (distribution shifts) and individual-level monitoring (case-level explanation anomalies). A model could maintain stable aggregate SHAP distributions while producing individual predictions where the reasoning is nonsensical or inconsistent — and without case-level monitoring, the governance team would never detect it. Options A, B, and C describe valid monitoring concerns but each addresses a specific technical failure mode rather than the fundamental gap between aggregate and individual-level monitoring."
+  },
+  {
+    "id": "q-830",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "The governance team for a deployed AI system receives a monitoring alert: the Population Stability Index for model inputs has exceeded the established threshold of 0.25, reaching 0.31. Simultaneously, the Kolmogorov-Smirnov test for output distribution shows no significant shift. The model's accuracy on recent ground-truth labels remains within acceptable bounds. The data science team argues no action is needed because accuracy is stable. The governance team disagrees. On what basis should the governance team prioritize investigation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The elevated PSI indicates covariate drift — the input data distribution has shifted — and while current accuracy remains acceptable, the model is now operating on data that differs from its training distribution. The governance concern is that accuracy may degrade non-linearly: the model may maintain acceptable accuracy within a certain drift range, then abruptly fail when the distribution shifts beyond a threshold that accuracy monitoring alone cannot predict."
+      },
+      {
+        "letter": "B",
+        "text": "The PSI alert may be a false positive driven by seasonal variation or a known data pipeline change, and investigating every PSI excursion regardless of accuracy stability creates alert fatigue that undermines the monitoring program's effectiveness — the governance team should first verify whether the PSI shift corresponds to a known and expected change in the input data before escalating."
+      },
+      {
+        "letter": "C",
+        "text": "The divergence between the PSI alert and the stable K-S test indicates a monitoring tool configuration error — if the input distribution has shifted, the output distribution should also shift unless the model is perfectly invariant to the changed inputs, which is unlikely — the governance team should investigate the monitoring infrastructure before investigating the model."
+      },
+      {
+        "letter": "D",
+        "text": "The PSI alert should trigger the predefined retraining procedure regardless of current accuracy, because the governance policy establishes PSI > 0.25 as a retraining trigger — governance-by-policy means following the established thresholds rather than exercising ad hoc judgment, even when other metrics suggest the model remains performant."
+      }
+    ],
+    "answer": "A",
+    "explanation": "Option A correctly identifies the governance concern: drift detection (PSI) and accuracy monitoring serve different functions, and one cannot substitute for the other. The PSI detects that the model is operating outside its validated domain — even if accuracy hasn't degraded yet. Option A explains the non-linear degradation risk: models can maintain accuracy within a range of input drift, then suddenly collapse. The governance team's responsibility is to investigate before the collapse, not after. Option B dismisses the alert without investigation. Option C incorrectly assumes input drift must produce output drift (models can be robust to some distribution shifts). Option D advocates rigid policy-following over contextual judgment."
+  },
+  {
+    "id": "q-831",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "During post-deployment monitoring of a healthcare diagnostic model, the governance team discovers that clinicians in different departments use the model's confidence scores in fundamentally different ways: radiologists treat scores above 80% as definitive and override only below that threshold, while emergency department physicians override nearly all model recommendations regardless of confidence. Both departments were given the same training. The model's aggregate override rate appears normal. What governance failure does this pattern reveal?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Failure of role-based training: the same training was provided to all users despite fundamentally different clinical contexts, decision stakes, and workflow integration — radiologists reviewing routine scans face different risk calculus than emergency physicians making time-critical decisions, and governance requires training tailored to use context, not a uniform curriculum"
+      },
+      {
+        "letter": "B",
+        "text": "Failure of human-on-the-loop monitoring: the governance team was tracking aggregate override rates, which masked bimodal user behavior — effective HOTL monitoring requires distributional analysis of how different user groups interact with the system, because uniform aggregate metrics conceal divergent and potentially dangerous usage patterns across subpopulations of users"
+      },
+      {
+        "letter": "C",
+        "text": "Failure of the confidence threshold design: the model's confidence scores do not have consistent operational meaning across clinical contexts, because the same 80% confidence carries different risk implications for a routine screening versus an emergency diagnosis — the governance failure is that the model's confidence calibration was not validated for each distinct deployment context and user workflow"
+      },
+      {
+        "letter": "D",
+        "text": "Both B and C are correct and describe interconnected governance failures: B identifies the monitoring failure (aggregate metrics concealed divergent user behavior), while C identifies the root cause design failure (confidence scores were not calibrated or validated for distinct clinical contexts) — together they explain both why the problem occurred and why the governance team failed to detect it earlier"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Option D correctly identifies that this scenario reveals two interconnected governance failures. The monitoring failure (B): aggregate override rates masked fundamentally different user behaviors across departments, preventing detection. The design failure (C): the model's confidence scores were treated as having uniform operational meaning across contexts, when in reality a confidence score requires context-specific calibration. Role-based training (A) would help but addresses a symptom rather than the systematic failure to validate the model's confidence calibration for heterogeneous deployment contexts."
+  },
+  {
+    "id": "q-832",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "An organization conducted a bias audit on its deployed hiring model and found that the model's false negative rate is 23% for applicants who attended historically Black colleges and universities (HBCUs), compared to 11% for applicants from comparably ranked non-HBCU institutions. The model does not include 'institution attended' as a feature. The data science team cannot identify which features are producing this disparity. Which investigative approach should the governance team direct the data science team to pursue?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Conduct a proxy variable analysis examining whether features correlated with HBCU attendance — such as geographic region, internship employer types, or professional network characteristics — are functioning as proxies for race in the model's decision process, even though race itself is not a model feature"
+      },
+      {
+        "letter": "B",
+        "text": "Apply SHAP or LIME explanations to a sample of HBCU and non-HBCU applicant predictions to identify which features most influence the divergent outcomes between the two groups, then assess whether those features have a legitimate, job-relevant basis or are encoding demographic signals through proxy relationships"
+      },
+      {
+        "letter": "C",
+        "text": "Retrain the model on a dataset that excludes all features with any statistical correlation to the applicant's institution, since the disparity demonstrates that institutional information is being encoded through correlated features — removing all correlated features eliminates the proxy pathway regardless of which specific features are responsible"
+      },
+      {
+        "letter": "D",
+        "text": "Both A and B describe complementary and sequential investigative approaches: A identifies the candidate proxy features through statistical correlation analysis (which features correlate with HBCU attendance), while B examines whether those features are actually driving the model's divergent decisions through explanation methods (SHAP/LIME) — together providing both the 'which features' and the 'how they influence decisions' evidence needed to determine appropriate mitigation"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Option D correctly identifies that proxy variable discovery is a two-step process requiring complementary methodologies. Proxy variable analysis (A) identifies candidate features statistically correlated with the protected or sensitive attribute. Explainability methods (B) then validate whether those features are actually driving the decision disparity — correlation is not causation, and a feature correlated with HBCU attendance may not be the one producing the divergent outcomes. Together, they provide the evidence needed to determine appropriate mitigation. Option C's approach of removing all correlated features is overly broad and may remove legitimately job-relevant features."
+  },
+  {
+    "id": "q-833",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "The AI governance team reviews a vendor risk assessment for a third-party emotion recognition API that will be integrated into the organization's customer feedback analysis platform. The vendor's SOC 2 Type II report shows no exceptions. The vendor's model card discloses training on a dataset that is 78% Caucasian faces, with F1 scores for emotion detection ranging from 0.91 (Caucasian) to 0.64 (darker skin tones). The vendor has not conducted an independent bias audit. The business team wants to proceed. What is the governance team's most defensible position?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The SOC 2 Type II report provides sufficient assurance because it validates the vendor's operational controls, including change management and access controls — the model card's disclosed performance disparity is a model-level concern that the organization can accept as a known limitation, document in its risk register, and monitor during the integration's operational phase"
+      },
+      {
+        "letter": "B",
+        "text": "The disclosed performance disparity of 0.91 vs. 0.64 across skin tones constitutes evidence of bias that requires further investigation before integration can proceed — the governance team should require the vendor to conduct an independent bias audit or, alternatively, the organization should conduct its own fairness evaluation on a dataset representative of its customer demographics before authorizing the integration"
+      },
+      {
+        "letter": "C",
+        "text": "The business team should be permitted to proceed with the integration under a conditional approval that requires: (1) the performance disparity to be disclosed to users, (2) a human review step for all emotion classifications where the model's confidence falls below 0.85, and (3) quarterly fairness monitoring reports submitted to the governance team for the first year of operation"
+      },
+      {
+        "letter": "D",
+        "text": "The integration should be blocked entirely because emotion recognition systems that exhibit demographic performance disparities of this magnitude are prohibited under the EU AI Act's classification of emotion recognition as an unacceptable risk practice when used in contexts that affect individuals' access to services or employment"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Option B is the most defensible governance position. A SOC 2 Type II report addresses operational controls (security, availability, processing integrity, confidentiality, privacy) but does not evaluate model fairness — it is not a substitute for a bias audit. The vendor's own model card discloses a performance disparity (0.91 vs. 0.64 F1 score) that constitutes prima facie evidence of bias. The governance team's responsibility is to require further investigation before authorizing integration, not to accept the disclosed disparity as a 'known limitation' (A) or apply operational workarounds (C) without understanding the root cause. Option D overstates the EU AI Act's position on emotion recognition: the Act restricts certain uses of emotion recognition (particularly in workplace and education contexts) but does not categorically prohibit all emotion recognition systems."
+  },
+  {
+    "id": "q-834",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "An organization's AI system for insurance claims triage has been in production for 18 months. The governance team is preparing the annual model review. They have: (1) monitoring dashboards showing stable accuracy and fairness metrics, (2) a risk register with all identified risks marked as 'treated' or 'accepted' with no new entries in 12 months, (3) no incident reports, and (4) declining user override rates, suggesting increasing trust in the system. The governance lead nevertheless insists on a deeper review. What is the most likely concern driving the governance lead's insistence?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The absence of new risk register entries over 12 months is itself a governance red flag — a deployed AI system continually exposed to new claims data in a changing insurance market should generate new risk observations, and the absence of new entries suggests either that risks are not being actively identified and escalated, or that the risk identification process has atrophied under the assumption that a stable system requires no ongoing risk assessment"
+      },
+      {
+        "letter": "B",
+        "text": "The declining user override rate could indicate appropriate trust calibration — users have learned when the system is reliable — but could equally indicate automation bias where users have become over-reliant and stopped critically evaluating the system's outputs; without independent verification of override appropriateness, the declining rate is ambiguous and requires investigation rather than being treated as a positive indicator"
+      },
+      {
+        "letter": "C",
+        "text": "The absence of incident reports in an 18-month period is statistically improbable for any deployed AI system in a complex domain like insurance claims — this suggests either that incidents are occurring but not being recognized or reported, or that the incident threshold is calibrated too high to capture the types of harms (e.g., subtle bias accumulation, gradual performance degradation) that insurance AI systems typically produce"
+      },
+      {
+        "letter": "D",
+        "text": "All of the above represent legitimate governance concerns that individually and collectively justify a deeper review, because governance effectiveness cannot be measured solely by the absence of problems — the absence of risk identification, incidents, and override anomalies may indicate governance atrophy rather than governance success, and the governance lead's insistence reflects the principle that stable metrics require interrogation, not complacency"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Option D correctly identifies that each observation is ambiguous and could indicate either governance success or governance failure. The absence of new risk entries (A) could mean risks are well-managed, or that risk identification has stopped. Declining override rates (B) could mean appropriate trust calibration, or automation bias. Zero incidents (C) could mean excellent performance, or incident underreporting. The governance lead's insistence on deeper review reflects the core governance principle that absence of evidence is not evidence of absence — stable metrics and clean reports require active interrogation, not passive acceptance."
+  },
+  {
+    "id": "q-835",
+    "domain": "Domain IV",
+    "difficulty": "Painful",
+    "question": "A customer discovers through a news article that the airline they've been flying with for two years has been using an AI system to dynamically price tickets based on behavioral profiling, including browsing patterns, device type, and purchase history. The airline never disclosed this. The customer files a complaint with their EU data protection authority. Under which combination of regulatory provisions is the airline most exposed?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "GDPR Article 13 (information at collection) and Article 14 (information not obtained from the data subject), because the airline failed to inform customers about the existence of automated decision-making, the logic involved, and the consequences at the time their personal data was processed for dynamic pricing — and this transparency failure is independent of whether the profiling itself was lawful"
+      },
+      {
+        "letter": "B",
+        "text": "GDPR Article 22 (automated individual decision-making) because dynamic pricing based on behavioral profiling produces legal effects concerning the customer (differential pricing) and is based solely on automated processing — and the airline cannot demonstrate that the decision is 'necessary for entering into a contract' since the same flight could be sold without behavioral profiling"
+      },
+      {
+        "letter": "C",
+        "text": "EU AI Act Article 50 (transparency obligations for certain AI systems) because the AI system interacts directly with natural persons and the airline failed to inform customers they were interacting with an AI system — and for a system that determines pricing, this constitutes a prohibited practice under Article 5 if the system manipulates consumer behavior through subliminal techniques"
+      },
+      {
+        "letter": "D",
+        "text": "Both A and B: the GDPR transparency obligations (Articles 13/14) were violated by the failure to inform, and Article 22's protections for solely automated decisions with legal effects apply because differential pricing based on behavioral profiling constitutes a decision producing legal effects — the airline faces exposure under both the transparency and the automated decision-making provisions independently"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Option D correctly identifies that the airline faces exposure under two independent GDPR provisions. First, the transparency obligations under Articles 13/14 were violated: customers were not informed about the automated decision-making at the point of data collection or within a reasonable period. Second, Article 22 may apply: dynamic pricing based on behavioral profiling is a 'solely automated decision producing legal effects,' and the airline must demonstrate either a lawful basis (explicit consent, contract necessity, or legal authorization) and suitable safeguards. These are independent violations — the airline could be in breach of Article 13/14 even if Article 22 does not apply, and vice versa. Option C misapplies EU AI Act provisions and confuses prohibited practices with transparency requirements."
+  },
+  {
+    "id": "q-836",
+    "domain": "Domain IV",
+    "difficulty": "Painful",
+    "question": "An AI system for mortgage underwriting has been flagged for decommissioning because a new regulation in its primary jurisdiction prohibits the use of certain data categories it was trained on. The system has been in production for four years, processing approximately 50,000 applications. The governance team must develop the retirement plan. Which consideration is most likely to be overlooked in a decommissioning process designed by an IT operations team without AI governance expertise?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The need to archive the model's decision logs, training data lineage records, and final model parameters for the retention period required by applicable financial services regulations — standard IT decommissioning processes may treat the system as a standard application and delete operational logs without preserving the AI-specific artifacts needed for potential regulatory audits or litigation"
+      },
+      {
+        "letter": "B",
+        "text": "The need to assess whether the model's outputs influenced downstream decisions that persist after decommissioning — such as active mortgages that were approved or denied based on the model's recommendation — and to determine whether those decisions must be re-evaluated if the model is found to have produced biased or erroneous outcomes during its operational life"
+      },
+      {
+        "letter": "C",
+        "text": "The need to communicate the decommissioning to affected stakeholders, including applicants whose applications were processed by the system, regulators who may require notification of system retirement, and internal teams whose workflows integrated with the model's outputs — and to provide transition support for users who relied on the system's decisions"
+      },
+      {
+        "letter": "D",
+        "text": "The need to conduct a final fairness audit and post-retirement ethical review to document the system's performance characteristics at retirement, assess whether the model's historical decisions warrant any corrective action, and capture lessons learned for the governance framework — ensuring that decommissioning is not merely a technical shutdown but a governance event that closes the system's accountability lifecycle"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Option B identifies the consideration most likely to be overlooked by an IT operations team: the persistence of model-influenced decisions after decommissioning. A mortgage model's outputs — approvals, denials, rate determinations — created ongoing legal and financial obligations that survive the system's retirement. If the model is later found to have exhibited bias, those decisions may need to be revisited. An IT team focused on technical decommissioning (server shutdown, data archival, access revocation) is unlikely to consider the downstream persistence of the model's decisions. Options A, C, and D are also important but are more likely to be captured in a standard decommissioning process, especially in a regulated industry where data retention (A) and stakeholder communication (C) are standard practice."
+  },
+  {
+    "id": "q-837",
+    "domain": "Domain IV",
+    "difficulty": "Painful",
+    "question": "A Level 2 (Major) AI incident has been resolved: a content moderation system incorrectly removed 14,000 legitimate user posts over a 72-hour period due to a faulty model update. The incident response team has contained the issue, rolled back to the previous model version, and restored the removed content. The after-action review is scheduled. The governance team must now determine the scope of the AAR. Which question should the AAR prioritize that would not typically be covered by a standard IT incident postmortem?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Whether the faulty model update was subjected to the required pre-deployment testing and gate review — and if so, why the testing did not detect the issue before production — including an assessment of whether the testing methodology, test dataset, and approval criteria are adequate for the risk level of the content moderation use case"
+      },
+      {
+        "letter": "B",
+        "text": "Whether the 14,000 affected users constitute a 'notifiable breach' under the GDPR and whether the organization has notification obligations to the affected users, the relevant supervisory authority, and any contractual partners whose content was affected by the erroneous moderation"
+      },
+      {
+        "letter": "C",
+        "text": "Whether the rollback to the previous model version introduced any new risks — such as reintroducing previously resolved bias or performance issues — and whether the rollback decision was made with governance input or solely by the engineering team without assessing the governance implications of reverting to a superseded model version"
+      },
+      {
+        "letter": "D",
+        "text": "Whether the organization's risk register should be updated to reflect the newly revealed failure mode ('large-scale erroneous content removal triggered by model update'), whether this failure mode should be assigned a risk owner and treatment plan, and whether the incident reveals gaps in the pre-deployment testing framework that should be addressed as systemic corrective actions rather than as a one-time fix"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Option D identifies the governance-specific dimension of an AI incident AAR that a standard IT postmortem would likely miss: the bidirectional relationship between incidents and the risk register. An AI incident reveals risks that were not previously identified, and those risks must be formally registered, owned, and treated — not just fixed once. Additionally, the AAR should assess whether the incident reveals systemic gaps requiring corrective action across the governance framework, not just a technical fix for this specific failure. Options A, B, and C are all important but are more likely to be covered by standard incident response and postmortem processes (testing review, regulatory notification, rollback assessment). The risk-register update and systemic governance improvement dimension is uniquely an AI governance AAR function."
+  },
+  {
+    "id": "q-838",
+    "domain": "Domain IV",
+    "difficulty": "Painful",
+    "question": "An organization's post-market surveillance plan for its deployed AI recruiting tool includes quarterly bias audits. The Q3 audit reveals a new pattern: the model's false negative rate for candidates who list 'career break for family reasons' on their resumes has increased from 9% to 17% since the previous audit, while no other subgroup metrics have changed. The model was retrained in Q2 on refreshed data. The audit finding has not yet resulted in any user complaints. What is the most appropriate governance response?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Treat the finding as a post-market surveillance signal requiring investigation before action: task the data science team with analyzing whether the Q2 retraining data introduced or amplified a bias against candidates with career breaks, examining the feature weights and training data composition changes between the pre-Q2 and post-Q2 model versions to identify the source of the new disparity"
+      },
+      {
+        "letter": "B",
+        "text": "Immediately suspend the model's use in production because any statistically significant increase in a subgroup false negative rate constitutes a fairness incident requiring containment under the organization's incident response procedures — the absence of user complaints does not mitigate the harm being done to candidates whose applications are being incorrectly filtered"
+      },
+      {
+        "letter": "C",
+        "text": "Classify the finding as an 'issue' (lower severity than an incident) because there are no user complaints and the overall model performance remains within established thresholds — document the finding in the issue tracking system, assign it to the data science team for investigation in the next development cycle, and continue operating the model with enhanced monitoring of the affected subgroup"
+      },
+      {
+        "letter": "D",
+        "text": "Update the model card to disclose the new subgroup performance disparity, notify the business stakeholders who rely on the recruiting tool about the finding, and schedule a governance review within 30 days — maintaining the model in operation during this period under the principle that post-market surveillance findings should trigger transparency and review before operational changes unless immediate harm is evident"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Option A correctly treats the post-market surveillance finding as a signal requiring investigation before action. The appropriate governance response is to analyze the cause — specifically, whether the Q2 retraining introduced the disparity — before deciding on operational changes. This follows the post-market surveillance principle that findings trigger investigation, which may lead to action depending on what the investigation reveals. Option B applies incident response prematurely (the finding is a surveillance signal, not a confirmed incident). Option C inappropriately downplays the finding as a routine issue despite a significant subgroup disparity increase. Option D's 'disclose and review in 30 days' approach delays investigation while the model continues operating with a potentially discriminatory pattern."
+  },
+  {
+    "id": "q-839",
+    "domain": "Domain IV",
+    "difficulty": "Painful",
+    "question": "The AI governance lead for a multinational retailer discovers that country-level marketing teams have independently deployed five different AI-powered customer segmentation systems across European markets, none of which were registered in the central AI inventory or subjected to the organization's AI governance review process. The systems process customer purchase history and browsing behavior. When confronted, each country team argues their system is 'just analytics, not AI governance territory.' Which governance response best addresses both the immediate compliance gap and the systemic governance failure?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Immediately suspend all five systems pending governance review, conduct a retrospective impact assessment and lawful basis verification for each system, and require country teams to submit their systems through the standard governance process — using the suspension to signal that shadow AI deployment will not be tolerated and that governance applies regardless of how teams label their systems"
+      },
+      {
+        "letter": "B",
+        "text": "Add all five systems to the AI inventory and conduct a risk-based triage: high-risk systems (those making decisions affecting customers) are escalated for immediate governance review, while lower-risk systems (those producing aggregate insights) are scheduled for review within a defined timeline — prioritizing harm prevention over procedural completeness while maintaining operational continuity where immediate harm is not evident"
+      },
+      {
+        "letter": "C",
+        "text": "Address the systemic failure by strengthening the AI governance policy's scope definition to explicitly include customer segmentation and behavioral analytics, implementing an automated discovery mechanism that scans the organization's cloud infrastructure for undeclared AI workloads, and requiring all country teams to complete AI governance training before any new system deployment is authorized"
+      },
+      {
+        "letter": "D",
+        "text": "Both B and C in sequence: first triage and address the immediate compliance gap through risk-based review (B), then implement systemic controls to prevent recurrence — policy scope clarification, automated discovery, and training requirements (C) — because addressing the immediate exposure and the systemic root cause are complementary governance responses, not alternatives"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Option D correctly applies the governance principle that incident response and systemic improvement are complementary, not alternative, responses. The immediate need is to triage the five deployed systems by risk and address any compliance gaps (B). The systemic need is to prevent recurrence by closing the governance gaps that allowed shadow AI deployment: policy scope, discovery mechanisms, and training (C). Option A's blanket suspension is disproportionate and operationally disruptive without risk-based triage. Option B addresses the immediate gap but not the systemic failure. Option C addresses the systemic failure but leaves five undeclared systems operating ungoverned in the interim."
+  },
+  {
+    "id": "q-840",
+    "domain": "Domain IV",
+    "difficulty": "Painful",
+    "question": "During a third-party audit of the organization's AI management system against ISO/IEC 42001, the auditor identifies a nonconformity: the organization's 'AI system retirement procedure' requires that all personal data used in training be deleted upon system retirement, but the retention schedule for financial services AI systems requires training data to be retained for seven years under applicable banking regulations. The organization's AI governance lead argues the retirement procedure should take precedence because it was approved more recently. The auditor disagrees. What is the correct resolution?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The retention schedule takes precedence because it reflects a legally mandated requirement under banking regulations, which supersede internal policies regardless of their approval dates — the retirement procedure must be amended to include an exception for regulatory retention obligations, and the nonconformity is valid because the procedure as written conflicts with a legal requirement"
+      },
+      {
+        "letter": "B",
+        "text": "The retirement procedure takes precedence because ISO/IEC 42001 requires organizations to establish their own policies and controls, and the more recently approved policy reflects the organization's current management commitment — the retention schedule is subordinate to the formal AI management system documentation under Clause 5 (Leadership) of the standard"
+      },
+      {
+        "letter": "C",
+        "text": "The conflict itself is the nonconformity, not which document takes precedence — ISO/IEC 42001 Clause 7 (Support) requires documented information to be controlled and consistent, and the organization has failed to maintain alignment between its AI management system documentation and its regulatory compliance obligations, indicating a document control failure rather than a substantive policy choice"
+      },
+      {
+        "letter": "D",
+        "text": "The auditor must escalate the conflict to the organization's legal and compliance function for resolution, because ISO/IEC 42001 auditors are not authorized to interpret banking regulations or determine which legal obligations apply — the nonconformity should be noted as 'unable to verify compliance with Clause 8.1 (Operational planning and control)' pending resolution of the legal question by the organization"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Under ISO/IEC 42001, Clause 7.5 (Documented information) requires that documented information be properly controlled — including ensuring consistency between different documents within the management system. The conflict between the retirement procedure and the retention schedule constitutes a document control nonconformity: the organization's documented information is internally inconsistent. Option C correctly identifies this as the nonconformity itself. The resolution may involve amending either or both documents, but the finding is that the organization failed to maintain aligned documentation. Option A resolves the substantive conflict but misses that the nonconformity is the inconsistency, not which document is correct. Option B incorrectly subordinates legal requirements to management system documentation."
+  },
+  {
+    "id": "q-841",
+    "domain": "Domain IV",
+    "difficulty": "Painful",
+    "question": "A SaaS provider of AI-powered accounts payable automation notifies its customers that it will deprecate the current model version in 90 days and migrate all customers to a new model version. The new model was trained on a different data processing pipeline. As a customer's AI governance lead, you must assess the impact of this vendor-driven model change on your organization's governance obligations. Which analysis framework should guide your assessment?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Treat the vendor's model change as a 'substantial modification' under the EU AI Act, requiring your organization as the deployer to conduct a new conformity assessment, update your technical documentation, and re-verify that the system meets the essential requirements for its risk classification before the new model goes live in your environment"
+      },
+      {
+        "letter": "B",
+        "text": "Treat the vendor's model change as a trigger for your third-party risk management process: conduct a new vendor risk assessment focused on the new model's training data provenance, performance characteristics, fairness evaluation, and any changes to the vendor's data usage terms — determining whether the change materially alters the risk profile that was accepted when the original model was onboarded"
+      },
+      {
+        "letter": "C",
+        "text": "Treat the vendor's model change as an operational change that falls within the existing vendor agreement's scope, because the vendor is providing a functionally equivalent service (accounts payable automation) — the governance obligation is limited to verifying that the new model meets the performance thresholds specified in the SLA and updating internal documentation to reflect the model version change"
+      },
+      {
+        "letter": "D",
+        "text": "Require the vendor to provide a model card for the new model and conduct your own fairness and accuracy evaluation on a dataset representative of your organization's accounts payable patterns — because relying solely on vendor-provided performance metrics without independent validation would violate the due diligence obligations expected of AI deployers under both the NIST AI RMF and EU AI Act risk management requirements"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Option B correctly frames the vendor model change as a third-party risk management event. The governance lead's primary obligation is to reassess the risk profile: a new model trained on a different data pipeline may have different performance characteristics, bias patterns, and data usage implications. The third-party risk management framework provides the structured approach for this reassessment. Option A overstates the deployer's obligations (the provider, not deployer, is primarily responsible for conformity assessment). Option C understates the governance implications of a model change that involves a new training pipeline. Option D describes a specific validation activity that would be part of the broader risk reassessment described in B, but is not the complete framework."
+  },
+  {
+    "id": "q-842",
+    "domain": "Domain IV",
+    "difficulty": "Painful",
+    "question": "The governance team is designing the external communication plan for a deployed AI system under the EU AI Act's transparency obligations. The system is a high-risk AI application used for employee promotion decisions. The communications lead proposes publishing a summary model card on the company's external website. The legal team proposes providing individualized explanations to each employee affected by a promotion decision. The governance lead argues neither approach alone is sufficient. What is the governance lead's most likely rationale?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The EU AI Act's transparency obligations operate at two levels: systemic transparency (Article 13, requiring providers to furnish deployers with information about the system's characteristics, capabilities, and limitations) and individual transparency (Article 14, requiring deployers to inform affected individuals about the role of the AI system in the decision-making procedure and provide clear and meaningful explanations). A published model card addresses systemic transparency but not individual explanation; individualized explanations address individual transparency but do not satisfy the systemic disclosure obligation."
+      },
+      {
+        "letter": "B",
+        "text": "The GDPR's transparency requirements under Article 13 and 14 require both general disclosure (privacy notice describing the automated decision-making) and individual access rights (Article 15 right to meaningful information about the logic involved in a specific decision), creating a parallel two-level transparency obligation that the EU AI Act's provisions complement rather than replace for personal data processing in employment decisions."
+      },
+      {
+        "letter": "C",
+        "text": "External communications must address multiple audiences — regulators, affected individuals, the public, and business partners — each with different information needs: regulators require technical documentation and conformity assessment evidence, affected individuals require accessible explanations of how decisions affecting them were made, the public requires transparency about the organization's AI practices, and business partners require information about dependencies."
+      },
+      {
+        "letter": "D",
+        "text": "Both A and C: the governance lead recognizes that transparency is not a single obligation but a multi-dimensional requirement that operates at different levels (systemic vs. individual) and serves different audiences (regulators, affected individuals, public), and that a single communication vehicle — whether a model card or an individual explanation — cannot satisfy all dimensions of the transparency obligation."
+      }
+    ],
+    "answer": "D",
+    "explanation": "Option D correctly synthesizes that transparency has multiple dimensions. Option A correctly identifies the two-level structure (systemic and individual) under the EU AI Act. Option C correctly identifies the multi-audience nature of external communications. The governance lead is correct that neither a published model card alone (addresses systemic transparency but not individual) nor individualized explanations alone (addresses individual transparency but not systemic disclosure to regulators and the public) can satisfy all dimensions. A comprehensive external communication plan must address both levels and all audiences."
+  },
+  {
+    "id": "q-843",
+    "domain": "Domain IV",
+    "difficulty": "Painful",
+    "question": "The post-market monitoring dashboard for a deployed AI chatbot shows a sharp increase in 'toxic output' alerts over a two-week period. Investigation reveals that the toxicity classifier itself — a separate model that monitors the chatbot's outputs — has developed a sensitivity drift: it is now flagging benign customer service responses as toxic because its training data did not include the conversational patterns the chatbot has adopted. The chatbot's actual outputs are not toxic. The governance team must respond. Which approach best addresses both the immediate operational concern and the underlying monitoring system design flaw?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Temporarily suppress the toxicity alerts to stop the false positive cascade, recalibrate the toxicity classifier's threshold for the current conversational patterns, and resume monitoring — treating the episode as a classifier maintenance event rather than a governance concern, since the chatbot's safety was never actually compromised"
+      },
+      {
+        "letter": "B",
+        "text": "Recognize that the monitoring system itself is an AI system subject to governance: initiate a review of the toxicity classifier's training data representativeness, its update cadence relative to the chatbot it monitors, and whether its performance is independently validated — because a monitoring system that generates false alarms undermines the governance framework by training operators to ignore alerts, creating the conditions for a real incident to be missed"
+      },
+      {
+        "letter": "C",
+        "text": "Escalate the false alarm pattern as a Level 2 incident under the organization's AI incident response framework, because the monitoring infrastructure's failure to accurately detect harm constitutes an AI system failure that degrades the organization's ability to govern its deployed systems — treating monitoring system failures with the same severity as the failures they are designed to detect"
+      },
+      {
+        "letter": "D",
+        "text": "Implement a human-in-the-loop review process for all toxicity alerts above a severity threshold until the classifier can be recalibrated, document the sensitivity drift as a monitoring system limitation in the AI risk register, and schedule the classifier's retraining — treating the monitoring system as part of the governed AI infrastructure rather than external to it"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Option B correctly identifies the underlying governance issue: the monitoring system itself is an AI system that requires governance. The sensitivity drift in the toxicity classifier is a form of covariate drift — the chatbot's conversational patterns have shifted, and the monitoring model trained on old patterns no longer accurately classifies the new outputs. This creates an alert fatigue risk that undermines the entire governance framework. The appropriate response is to treat the monitoring model as a governed AI system: review its training data, update cadence, and independent validation. Option A treats monitoring as infrastructure maintenance rather than governance. Option C over-applies the incident framework. Option D addresses the symptom (false alerts) without treating the root cause (monitoring model drift)."
+  },
+  {
+    "id": "q-844",
+    "domain": "Domain IV",
+    "difficulty": "Painful",
+    "question": "A bank's AI governance team discovers that the model risk management function and the AI governance function have been operating independently, each maintaining separate risk registers, review processes, and reporting lines for the same AI systems. The model risk team evaluates technical model risk (accuracy, stability, validation). The AI governance team evaluates broader AI risk (fairness, transparency, societal impact). A deployed credit model appears in both registers with different risk ratings: 'low' in model risk, 'medium' in AI governance risk. Which governance integration approach is most appropriate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Consolidate into a single risk register under the model risk management function, because model risk is the more established discipline in financial services and regulators expect a unified risk view — the AI governance function should feed fairness and transparency risks into the model risk register rather than maintaining a separate one"
+      },
+      {
+        "letter": "B",
+        "text": "Maintain separate registers but establish a formal bidirectional linking mechanism: each model risk entry references its corresponding AI governance risk entry, and the aggregate risk rating is determined by the higher of the two ratings — ensuring that technical model risk does not obscure broader AI risk while preserving the distinct expertise of each function"
+      },
+      {
+        "letter": "C",
+        "text": "Integrate the two functions into a single AI risk management framework under the organization's enterprise risk management (ERM) function, with AI systems treated as a single risk object assessed across all risk dimensions — because the distinction between 'model risk' and 'AI governance risk' is an organizational artifact rather than a meaningful risk taxonomy, and regulators increasingly expect integrated AI risk management"
+      },
+      {
+        "letter": "D",
+        "text": "Both B and C are valid approaches depending on organizational maturity, but the immediate priority is establishing the bidirectional linking mechanism (B) while working toward ERM integration (C) — because the most urgent governance concern is that a risk rated 'low' in one framework and 'medium' in another creates a gap where decision-makers relying on only one register will make decisions based on incomplete risk information"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Option D correctly identifies that the immediate governance concern — risk fragmentation creating incomplete information for decision-makers — requires an immediate fix (bidirectional linking between registers) while the longer-term goal of integration proceeds in parallel. A credit model rated 'low' for technical risk but 'medium' for fairness risk presents a governance gap: a decision-maker reviewing only the model risk register would not see the fairness concern. Bidirectional linking (B) closes this gap immediately. Integration into ERM (C) is the longer-term maturity goal. Neither A (subordinating AI governance to model risk) nor maintaining indefinite separation are appropriate governance approaches for financial services AI."
   }
 ];
