@@ -13625,15 +13625,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Positioning operational readiness and capacity planning at the core of the organizational"
+        "text": "A one-time audit conducted at the moment of deployment to verify the system meets its technical specifications before going live"
       },
       {
         "letter": "C",
-        "text": "Directing monitoring efforts toward continuous verification of user acceptance"
+        "text": "User acceptance testing performed by a representative sample of end users to confirm the system meets their workflow requirements before production rollout"
       },
       {
         "letter": "D",
-        "text": "Concentrating oversight resources on ensuring robust third-party audit and independent"
+        "text": "Third-party conformity assessment under the EU AI Act, verifying that the system satisfies the essential requirements for its risk classification before market placement"
       }
     ],
     "answer": "A",
@@ -13647,7 +13647,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Positioning human-in-the-loop validation at the core of the organizational governance"
+        "text": "Whether the development team followed the organization's SDLC process, including code review, version control, and CI/CD pipeline governance during the build phase"
       },
       {
         "letter": "B",
@@ -13655,11 +13655,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Directing monitoring efforts toward continuous verification of public consultation"
+        "text": "Whether the training data's lawful basis documentation, consent records, and data protection impact assessment were completed before model training began"
       },
       {
         "letter": "D",
-        "text": "Mandating documented evidence of satisfactory bias detection and fairness evaluation"
+        "text": "Whether the pre-deployment conformity assessment was conducted by an accredited notified body and the CE marking was properly affixed before market placement"
       }
     ],
     "answer": "B",
@@ -13889,7 +13889,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Emphasizing achievement of intended benefits in all phases of AI system development"
+        "text": "Transfer all residual risk to a cyber insurance policy that explicitly covers AI-related losses, removing the risk from the organization's risk register after the policy is active"
       },
       {
         "letter": "D",
@@ -14167,15 +14167,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Mandating documented evidence of satisfactory fairness metrics at each review checkpoint"
+        "text": "Whether the model's training data provenance records are complete and traceable to their original collection sources for audit readiness"
       },
       {
         "letter": "B",
-        "text": "Directing monitoring efforts toward continuous verification of incident tracking standards"
+        "text": "Whether the organization's AI governance policies have been reviewed and updated within the scheduled policy review cycle defined in the governance framework"
       },
       {
         "letter": "C",
-        "text": "Positioning fairness metrics at the core of the organizational governance strategy"
+        "text": "Whether the system's conformity assessment documentation remains valid under the current version of applicable harmonized standards and regulatory requirements"
       },
       {
         "letter": "D",
@@ -14197,15 +14197,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Concentrating oversight resources on ensuring robust training data representativeness"
+        "text": "Model drift occurs when the development team changes the model's hyperparameters without documenting the changes in the experiment tracking system"
       },
       {
         "letter": "C",
-        "text": "Directing monitoring efforts toward continuous verification of training data"
+        "text": "Model drift refers to the gradual divergence between the organization's AI governance policies and the actual operational practices followed by development teams over time"
       },
       {
         "letter": "D",
-        "text": "Positioning data drift and distribution shift detection at the core of the organizational"
+        "text": "Model drift describes the situation where a model's intended use case expands beyond what was originally documented in the model card during the design phase"
       }
     ],
     "answer": "A",
@@ -14245,11 +14245,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Directing monitoring efforts toward continuous verification of data quality"
+        "text": "Reviewing the model's training data quality at the point of collection, verifying that data meets accuracy, completeness, and representativeness standards before training begins"
       },
       {
         "letter": "B",
-        "text": "Mandating documented evidence of satisfactory prediction accuracy and confidence scoring"
+        "text": "Conducting a pre-deployment audit of the model's architecture, training methodology, and evaluation results to certify that the system meets its design specifications"
       },
       {
         "letter": "C",
@@ -14257,7 +14257,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Positioning response time and latency measurement at the core of the organizational"
+        "text": "Validating that the model's outputs can be explained and interpreted by the end users who rely on them, through techniques such as SHAP value analysis and counterfactual explanations"
       }
     ],
     "answer": "C",
@@ -14427,11 +14427,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Designating response time and latency measurement as the highest-priority governance"
+        "text": "Tracking the model's inference latency and throughput under varying production loads to ensure response times meet the service level objectives defined in the operational runbook"
       },
       {
         "letter": "B",
-        "text": "Building the compliance framework around rigorous organizational accountability"
+        "text": "Conducting periodic conformity assessments to verify that the system continues to satisfy the essential requirements of the EU AI Act for its risk classification"
       },
       {
         "letter": "C",
@@ -14439,7 +14439,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Mandating documented evidence of satisfactory incident response and escalation procedures"
+        "text": "Auditing the organization's incident response procedures to confirm that detection, triage, containment, and remediation workflows are documented and tested"
       }
     ],
     "answer": "C",
@@ -14535,15 +14535,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Directing monitoring efforts toward continuous verification of data drift"
+        "text": "Because performance metrics capture only technical accuracy, while outcome monitoring verifies that the organization's AI governance policies are being followed by operational teams in practice"
       },
       {
         "letter": "C",
-        "text": "Concentrating oversight resources on ensuring robust operational readiness and capacity"
+        "text": "Because deployed models inevitably experience hardware failures in the production environment, and outcome monitoring detects infrastructure issues that performance monitoring cannot identify"
       },
       {
         "letter": "D",
-        "text": "Positioning data quality and provenance tracking at the core of the organizational"
+        "text": "Because outcome monitoring satisfies the EU AI Act's requirement for post-market surveillance of high-risk AI systems, while performance monitoring addresses only the GDPR's data protection obligations"
       }
     ],
     "answer": "A",
@@ -14583,15 +14583,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Mandating documented evidence of satisfactory model explainability and interpretability"
+        "text": "To certify that the model's training data was collected with valid consent and a documented lawful basis under the GDPR, satisfying the data protection authority's oversight requirements"
       },
       {
         "letter": "B",
-        "text": "Positioning user acceptance and usability testing at the core of the organizational"
+        "text": "To validate that the system's deployment environment meets the infrastructure security requirements specified in the organization's cloud security policy and network segmentation standards"
       },
       {
         "letter": "C",
-        "text": "Directing monitoring efforts toward continuous verification of decommissioning and data"
+        "text": "To confirm that the system's retirement plan has been documented, reviewed, and approved by the data governance committee and that archival procedures comply with regulatory retention schedules"
       },
       {
         "letter": "D",
@@ -14691,11 +14691,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Emphasizing operational readiness and capacity planning in all phases of AI system"
+        "text": "Update the model card to document the fairness drift finding, schedule the next bias audit for the following quarter, and continue operating the system with no immediate changes to the production deployment"
       },
       {
         "letter": "C",
-        "text": "Designating incident response and escalation procedures as the highest-priority"
+        "text": "Immediately suspend the system's use, initiate incident response containment procedures, and notify affected stakeholders and regulators within the timeframe specified by the organization's breach notification policy"
       },
       {
         "letter": "D",
@@ -14895,15 +14895,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Mandating documented evidence of satisfactory regulatory compliance documentation at each"
+        "text": "Continue operating the system with the existing monitoring controls, since the bias has already been identified and documented — additional action is only required if the bias exceeds the quantitative thresholds defined in the fairness monitoring policy"
       },
       {
         "letter": "B",
-        "text": "Positioning public consultation and community engagement at the core"
+        "text": "Publish a transparency notice on the organization's website disclosing the audit finding, update the model card to reflect the observed bias, and schedule retraining within the next development cycle while the system continues to operate"
       },
       {
         "letter": "C",
-        "text": "Directing monitoring efforts toward continuous verification of incident response"
+        "text": "Apply post-processing fairness constraints to equalize outcomes across demographic groups and re-deploy the adjusted model, treating the fairness intervention as an operational update that does not require a full governance review"
       },
       {
         "letter": "D",
@@ -14999,11 +14999,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Designating independence of review and assessment functions as the highest-priority"
+        "text": "The auditor's technical qualification to evaluate AI systems, demonstrated through relevant certifications such as ISO/IEC 42001 lead auditor or equivalent credentials recognized by national accreditation bodies"
       },
       {
         "letter": "B",
-        "text": "Building the compliance framework around rigorous alignment with industry best practices"
+        "text": "The auditor's access to the complete set of system documentation, including training data, model architecture, evaluation results, and incident records, without restriction from the organization being audited"
       },
       {
         "letter": "C",
@@ -15011,7 +15011,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Mandating documented evidence of satisfactory incident response and escalation procedures"
+        "text": "The auditor's methodology being consistent with the organization's internal risk assessment framework, ensuring that audit findings can be directly mapped to existing risk register entries and treatment plans"
       }
     ],
     "answer": "C",
@@ -15025,11 +15025,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Designating training data representativeness as the highest-priority governance objective"
+        "text": "The auditor's use of automated testing tools that can evaluate model fairness across demographic subgroups without requiring manual review of individual predictions or access to the underlying training data"
       },
       {
         "letter": "B",
-        "text": "Building the compliance framework around rigorous decommissioning and data archival"
+        "text": "The audit being conducted by the same team that developed the model, since they possess the deepest understanding of the system's architecture, training methodology, and known limitations"
       },
       {
         "letter": "C",
@@ -15037,7 +15037,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Mandating documented evidence of satisfactory effectiveness of governance controls"
+        "text": "The audit report being formatted according to the organization's internal documentation standards, ensuring consistency with other governance artifacts such as model cards, risk assessments, and incident reports"
       }
     ],
     "answer": "C",
@@ -15129,15 +15129,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Mandating documented evidence of satisfactory third-party audit and independent"
+        "text": "The organization's financial records showing the total cost of AI system development and operation, to verify that the system's benefits justify its resource consumption relative to alternative approaches"
       },
       {
         "letter": "B",
-        "text": "Building the compliance framework around rigorous effectiveness of governance controls"
+        "text": "Employee training records confirming that all personnel who interact with the AI system have completed the required AI literacy and responsible use training modules within the specified compliance period"
       },
       {
         "letter": "C",
-        "text": "Directing monitoring efforts toward continuous verification of alignment with industry"
+        "text": "Marketing materials and public statements about the AI system's capabilities, to verify that the organization's external communications are consistent with the system's documented limitations and known failure modes"
       },
       {
         "letter": "D",
@@ -15237,15 +15237,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Positioning recovery and service restoration at the core of the organizational governance"
+        "text": "Risk identification, risk analysis, risk evaluation, risk treatment, and risk monitoring — following the ISO 31000 risk management process adapted for AI-specific harm categories under the NIST AI RMF"
       },
       {
         "letter": "C",
-        "text": "Directing monitoring efforts toward continuous verification of root cause investigation"
+        "text": "Model rollback, data pipeline freeze, user notification, regulatory filing, and post-incident audit — the standard response sequence for incidents involving personal data under GDPR breach notification requirements"
       },
       {
         "letter": "D",
-        "text": "Mandating documented evidence of satisfactory security vulnerability assessment at each"
+        "text": "Threat detection, vulnerability assessment, penetration testing, security patch deployment, and compliance verification — the standard security incident response framework extended to cover AI-specific attack vectors such as prompt injection and model inversion"
       }
     ],
     "answer": "A",
@@ -15393,7 +15393,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Emphasizing documentation and record-keeping practices in all phases of AI system"
+        "text": "Classify severity based on the number of affected users multiplied by the average financial value of each affected transaction, using the organization's standard operational risk quantification methodology"
       },
       {
         "letter": "C",
@@ -15441,7 +15441,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Designating operational readiness and capacity planning as the highest-priority"
+        "text": "Add the newly identified risk to the AI risk register, assign a risk owner, schedule the next risk review, and continue operating the system with enhanced monitoring of the specific failure mode revealed by the incident"
       },
       {
         "letter": "B",
@@ -15453,7 +15453,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Emphasizing continuous monitoring and alerting in all phases of AI system development"
+        "text": "Treat the incident as a one-time anomaly and continue operating the system, because a single incident does not constitute a pattern and the organization's risk management framework is designed to address recurring risks rather than isolated events"
       }
     ],
     "answer": "C",
@@ -15571,11 +15571,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Designating decommissioning and data archival procedures as the highest-priority"
+        "text": "Decommissioning the affected AI system and migrating users to a replacement system that was not implicated in the incident, ensuring complete removal of the compromised model from all production environments"
       },
       {
         "letter": "B",
-        "text": "Mandating documented evidence of satisfactory data quality and provenance tracking"
+        "text": "Conducting a full retraining of the model on a dataset that excludes all records associated with the affected users, ensuring the retrained model cannot reproduce the specific harm pattern identified in the incident investigation"
       },
       {
         "letter": "C",
@@ -15583,7 +15583,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Building the compliance framework around rigorous organizational accountability"
+        "text": "Updating the organization's AI governance policy to prohibit the specific model behavior that caused the incident, and requiring all future AI systems to undergo additional pre-deployment testing for similar failure modes before approval"
       }
     ],
     "answer": "C",
@@ -15601,15 +15601,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Directing monitoring efforts toward continuous verification of regulatory compliance"
+        "text": "The technical process of transmitting incident data from the monitoring system to the incident management platform through automated API integrations, ensuring real-time alerting and log aggregation"
       },
       {
         "letter": "C",
-        "text": "Mandating documented evidence of satisfactory regulatory compliance documentation at each"
+        "text": "The legal requirement under GDPR Article 33 to notify the supervisory authority within 72 hours of becoming aware of a personal data breach, including the nature of the breach and likely consequences"
       },
       {
         "letter": "D",
-        "text": "Building the compliance framework around rigorous change management and version control"
+        "text": "The internal process of updating the organization's risk register, model card, and technical documentation to reflect the incident's findings, ensuring that governance records are current for the next audit cycle"
       }
     ],
     "answer": "A",
@@ -15627,15 +15627,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Directing monitoring efforts toward continuous verification of accessibility"
+        "text": "Only the internal AI governance board and the data protection officer, because external notification could trigger regulatory scrutiny before the organization has completed its internal investigation and determined the root cause"
       },
       {
         "letter": "C",
-        "text": "Building the compliance framework around rigorous bias detection and fairness evaluation"
+        "text": "Only the development team responsible for the affected system, because they possess the technical expertise needed to diagnose and remediate the issue — broader notification would create unnecessary alarm before the facts are established"
       },
       {
         "letter": "D",
-        "text": "Mandating documented evidence of satisfactory environmental and sustainability impact"
+        "text": "Only the organization's cyber insurance carrier, because the policy requires prompt notification of incidents that may result in claims, and the carrier's guidance should determine whether and when other stakeholders are informed"
       }
     ],
     "answer": "A",
@@ -15679,15 +15679,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Directing monitoring efforts toward continuous verification of data quality"
+        "text": "The automated logging of model inputs, outputs, and system state at the time of the incident, captured by the monitoring infrastructure and stored in the organization's centralized log management platform for forensic analysis"
       },
       {
         "letter": "C",
-        "text": "Mandating documented evidence of satisfactory lessons learned at each review checkpoint"
+        "text": "The regulatory filing submitted to the relevant supervisory authority documenting the incident's nature, scope, affected data subjects, and remediation measures, as required under the GDPR's breach notification provisions"
       },
       {
         "letter": "D",
-        "text": "Positioning user acceptance and usability testing at the core of the organizational"
+        "text": "The updated version of the model card reflecting the incident's impact on the system's known limitations, performance characteristics, and intended use — ensuring that downstream deployers have current information about the system's risk profile"
       }
     ],
     "answer": "A",
@@ -15857,11 +15857,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Mandating documented evidence of satisfactory public consultation and community"
+        "text": "The Chief AI Officer, because accountability for all AI-related outcomes must reside with a single executive role to avoid diffusion of responsibility across the organization's governance structure"
       },
       {
         "letter": "B",
-        "text": "Directing monitoring efforts toward continuous verification of documentation"
+        "text": "The external auditor who certified the system's conformity, because independent third-party assurance transfers accountability from the organization to the auditing body that validated the system's compliance"
       },
       {
         "letter": "C",
@@ -15869,7 +15869,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Building the compliance framework around rigorous continuous monitoring and alerting"
+        "text": "The end users who interact with and rely on the system's outputs, because they are best positioned to identify when the system's behavior deviates from expected outcomes and to intervene when necessary"
       }
     ],
     "answer": "C",
@@ -15965,15 +15965,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Positioning incident response and escalation procedures at the core of the organizational"
+        "text": "The principle that AI systems should produce consistent outputs when presented with the same inputs, enabling users to verify that the system's behavior is deterministic and reproducible under controlled conditions"
       },
       {
         "letter": "C",
-        "text": "Concentrating oversight resources on ensuring robust remediation and corrective action"
+        "text": "The requirement that AI system developers disclose the complete training data, model architecture, and hyperparameter configurations to enable independent researchers to reproduce and validate the system's performance claims"
       },
       {
         "letter": "D",
-        "text": "Directing monitoring efforts toward continuous verification of transparency"
+        "text": "The governance mechanism that allows different organizational stakeholders — such as legal, compliance, and engineering teams — to contest each other's risk assessments during the pre-deployment gate review process"
       }
     ],
     "answer": "A",
@@ -16017,15 +16017,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Positioning user acceptance and usability testing at the core of the organizational"
+        "text": "Implement a standardized appeal form on the organization's website that allows any affected individual to submit a contestation request, with a commitment to respond within 30 days as required by the GDPR's data subject rights provisions"
       },
       {
         "letter": "C",
-        "text": "Directing monitoring efforts toward continuous verification of public consultation"
+        "text": "Publish the model's complete decision logic, feature weights, and training data statistics so that affected individuals can independently verify whether the system's outputs are consistent with its documented methodology"
       },
       {
         "letter": "D",
-        "text": "Concentrating oversight resources on ensuring robust incident response and escalation"
+        "text": "Require that every AI system include a human review checkpoint where a designated reviewer must approve all decisions before they take effect, ensuring that no individual is subject to a purely automated outcome without human validation"
       }
     ],
     "answer": "A",
@@ -16203,7 +16203,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Emphasizing human-in-the-loop validation in all phases of AI system development"
+        "text": "The policies were drafted without consulting the operational teams who would need to implement them, resulting in requirements that are technically infeasible or incompatible with existing development workflows and tooling"
       },
       {
         "letter": "D",
@@ -16221,23 +16221,23 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Building the compliance framework around rigorous remediation and corrective action"
+        "text": "The AI governance board, because its charter delegates operational enforcement authority to the independent oversight function rather than to executive management"
       },
       {
         "letter": "B",
-        "text": "Mandating documented evidence of satisfactory vendor due diligence and supply chain"
+        "text": "The data protection officer, because AI governance non-compliance inherently involves personal data processing failures that fall within the DPO's statutory monitoring responsibilities under the GDPR"
       },
       {
         "letter": "C",
-        "text": "Leadership is accountable for ensuring governance is implemented and enforced"
+        "text": "Leadership, because accountability for ensuring governance policies are implemented and enforced rests with executive management — policies without operational follow-through represent a leadership failure, regardless of which function drafted them"
       },
       {
         "letter": "D",
-        "text": "Designating environmental and sustainability impact as the highest-priority governance"
+        "text": "Individual project teams and model owners, because accountability for following governance policies is distributed to the operational level where AI systems are actually built, deployed, and maintained day to day"
       }
     ],
     "answer": "C",
-    "explanation": "Leadership is accountable for ensuring governance is implemented and enforced, not just documented. Policies without implementation represent governance failure at the leadership level. 167 [Extended: just docu-]"
+    "explanation": "Accountability for governance implementation rests with leadership. While the AI governance board (A) may design policies and the DPO (B) monitors data protection compliance, neither bears ultimate accountability for whether governance is followed across the organization. Individual teams (D) are responsible for execution, not accountable for systemic governance failure. The core principle is that policies without enforcement represent a leadership failure — accountability cannot be delegated downward when the organization as a whole is not following its own governance framework."
   },
   {
     "id": "q-621",
@@ -16247,11 +16247,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Designating risk assessment and mitigation planning as the highest-priority governance"
+        "text": "Accountability is a subset of AI governance that applies only to high-risk systems under the EU AI Act, while governance encompasses the broader framework applicable to all AI systems regardless of risk classification"
       },
       {
         "letter": "B",
-        "text": "Building the compliance framework around rigorous documentation and record-keeping"
+        "text": "Accountability refers to the technical capability to trace model outputs back to specific training data points and feature values, while AI governance addresses the organizational policies and procedures surrounding system development and deployment"
       },
       {
         "letter": "C",
@@ -16259,7 +16259,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Emphasizing ethical review and oversight in all phases of AI system development"
+        "text": "Accountability is primarily a legal concept enforced through liability regimes and regulatory penalties, while AI governance is a voluntary organizational practice that operates independently of legal accountability mechanisms"
       }
     ],
     "answer": "C",
