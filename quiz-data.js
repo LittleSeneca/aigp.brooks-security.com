@@ -13755,15 +13755,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Measuring governance maturity through demonstrated capability in testing completion"
+        "text": "Whether the model's training data lineage records are complete and demonstrate valid consent and lawful basis for all data sources used in the training process"
       },
       {
         "letter": "C",
-        "text": "Allocating the majority of audit resources to evaluating risk assessment effectiveness"
+        "text": "Whether the system's retirement plan has been documented and approved, including data archival procedures and stakeholder communication templates for when the system reaches end-of-life"
       },
       {
         "letter": "D",
-        "text": "Centering the approval process on thorough assessment of stakeholder review adequacy"
+        "text": "Whether the deployment environment meets the security requirements defined in the organization's cloud security architecture, including network segmentation, encryption standards, and access control policies"
       }
     ],
     "answer": "A",
@@ -13833,7 +13833,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Calibrating the intensity of oversight according to cost-benefit and return-on-investment"
+        "text": "Governance ensures that the financial return on investment of the AI system has been independently verified by the organization's internal audit function, and that the projected cost savings justify the deployment expenditure"
       },
       {
         "letter": "C",
@@ -13841,7 +13841,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Governing AI systems through a framework centered on user training and change management"
+        "text": "Governance ensures that the AI system's training methodology and hyperparameter selection have been peer-reviewed and published in a recognized academic venue before the system is authorized for production use"
       }
     ],
     "answer": "A",
@@ -13855,15 +13855,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Structuring the governance program around continuous improvement of vendor due diligence"
+        "text": "Documentation of the vendor's financial stability, insurance coverage limits, and the indemnification provisions in the AI system procurement contract"
       },
       {
         "letter": "B",
-        "text": "Centering the approval process on thorough assessment of post-deployment support"
+        "text": "Documentation of the end-user training completion rates, including records showing that all affected personnel have passed the required AI literacy assessment before the system went live"
       },
       {
         "letter": "C",
-        "text": "Focusing post-deployment review activities on verification of stakeholder engagement"
+        "text": "Documentation of the model's performance on standard benchmark datasets compared against competitor systems, demonstrating that the selected model achieves state-of-the-art results for the intended use case"
       },
       {
         "letter": "D",
@@ -13885,7 +13885,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Measuring governance maturity through demonstrated capability in absence of critical"
+        "text": "Transfer all residual risks to the organization's cyber insurance policy and remove them from the AI risk register, since insurance coverage satisfies the risk treatment obligation"
       },
       {
         "letter": "C",
@@ -13893,7 +13893,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Allocating the majority of audit resources to evaluating user adoption effectiveness"
+        "text": "Defer deployment until all residual risks can be fully eliminated through additional mitigations, because any non-zero residual risk is incompatible with the organization's duty of care to affected stakeholders"
       }
     ],
     "answer": "A",
@@ -13919,7 +13919,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Governing AI systems through a framework centered on cost-benefit"
+        "text": "Post-deployment risks should be managed by the organization's enterprise risk management function using the same risk assessment methodology applied to financial, operational, and strategic risks in the corporate risk register"
       }
     ],
     "answer": "C",
@@ -14141,7 +14141,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Governing AI systems through a framework centered on technical integration"
+        "text": "Because the EU AI Act requires post-market monitoring for all high-risk AI systems, and failure to implement continuous monitoring constitutes a non-compliance finding during notified body conformity assessments"
       },
       {
         "letter": "B",
@@ -14231,7 +14231,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Governing AI systems through a framework centered on resource utilization and cost"
+        "text": "Model drift refers to changes in the model's hyperparameter configuration over time, while fairness degradation refers to the erosion of the organization's ethical review board's authority to halt high-risk deployments"
       }
     ],
     "answer": "A",
@@ -14297,7 +14297,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Measuring governance maturity through demonstrated capability in environmental"
+        "text": "Tracking the organization's overall AI governance maturity score against industry benchmarks published by analyst firms, to demonstrate continuous improvement in governance capability to regulators and external auditors"
       },
       {
         "letter": "B",
@@ -14305,11 +14305,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Centering the approval process on thorough assessment of prediction accuracy"
+        "text": "Verifying that the model's prediction accuracy remains above the threshold specified in the service level agreement with the business unit that requested the system, triggering a retraining cycle if accuracy falls below the contractual minimum"
       },
       {
         "letter": "D",
-        "text": "Allocating the majority of audit resources to evaluating user acceptance and usability"
+        "text": "Assessing whether end users express satisfaction with the model's outputs in quarterly surveys, using Net Promoter Score methodology to quantify trust in the AI system's decision-making over successive measurement periods"
       }
     ],
     "answer": "B",
@@ -14453,7 +14453,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Focusing post-deployment review activities on verification of inappropriate trust"
+        "text": "Monitoring whether the model's accuracy metrics remain within the thresholds established during pre-deployment validation, since accuracy degradation is the primary driver of user trust erosion in AI systems"
       },
       {
         "letter": "B",
@@ -14461,11 +14461,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Centering the approval process on thorough assessment of inappropriate trust or distrust"
+        "text": "Reviewing whether the organization's AI governance policies have been communicated to all affected users and whether acknowledgment of receipt has been recorded in the learning management system for audit purposes"
       },
       {
         "letter": "D",
-        "text": "Structuring the governance program around continuous improvement of inappropriate trust"
+        "text": "Tracking whether the model's training data continues to satisfy the lawful basis requirements that were documented at the time of collection, since data compliance failures are the leading cause of user trust degradation"
       }
     ],
     "answer": "B",
@@ -14699,7 +14699,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Allocating the majority of audit resources to evaluating documentation and record-keeping"
+        "text": "Update the model card to disclose the fairness drift, notify affected stakeholders through the established communication channels, and continue operating the system with enhanced monitoring while the next scheduled retraining cycle addresses the drift"
       }
     ],
     "answer": "A",
@@ -14765,11 +14765,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Centering the approval process on thorough assessment of compliance with regulatory"
+        "text": "Internal audits are sufficient for AI systems classified as limited or minimal risk under the EU AI Act, while external audits are only required for high-risk systems that undergo notified body conformity assessment"
       },
       {
         "letter": "B",
-        "text": "Focusing post-deployment review activities on verification of risk assessment"
+        "text": "External audits are preferable when the organization lacks the in-house AI expertise to evaluate model performance, but internal audits provide equivalent assurance when the organization employs qualified AI governance professionals"
       },
       {
         "letter": "C",
@@ -14777,7 +14777,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Measuring governance maturity through demonstrated capability in compliance"
+        "text": "Internal audits focus on operational controls such as access management, change control, and incident response, while external audits focus exclusively on model-level concerns such as accuracy, fairness, and explainability"
       }
     ],
     "answer": "C",
@@ -15267,11 +15267,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Governing AI systems through a framework centered on third-party audit and independent"
+        "text": "Classify severity based on the organizational level of the most senior person who was notified about the incident — board-level notification indicates Critical severity, while team-lead notification indicates Minor severity"
       },
       {
         "letter": "D",
-        "text": "Calibrating the intensity of oversight according to user acceptance and usability testing"
+        "text": "Classify severity based on the model's risk tier under the EU AI Act — any incident involving a high-risk system is automatically classified as Critical, while incidents involving limited-risk systems default to Moderate severity"
       }
     ],
     "answer": "A",
@@ -15397,11 +15397,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Measuring governance maturity through demonstrated capability in cost-benefit"
+        "text": "The financial cost of incident remediation, including engineering hours, legal fees, and regulatory fines, calculated using the organization's standard cost-accounting methodology for operational incidents"
       },
       {
         "letter": "D",
-        "text": "Allocating the majority of audit resources to evaluating root cause investigation"
+        "text": "The percentage of total AI system outputs that were affected by the incident, with incidents affecting more than 5% of outputs classified as Critical regardless of the actual harm caused to any individual user"
       }
     ],
     "answer": "A",
@@ -15415,11 +15415,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Measuring governance maturity through demonstrated capability in regulatory compliance"
+        "text": "All AI incidents must be escalated to the Chief AI Officer within 24 hours, regardless of severity, because the concentration of accountability in a single executive role is the most effective governance structure for incident response"
       },
       {
         "letter": "B",
-        "text": "Allocating the majority of audit resources to evaluating incident response and escalation"
+        "text": "Incidents should only be escalated after the root cause has been definitively established, because premature escalation to leadership before the facts are known creates unnecessary alarm and undermines confidence in the AI governance program"
       },
       {
         "letter": "C",
@@ -15427,7 +15427,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Centering the approval process on thorough assessment of organizational accountability"
+        "text": "Incident escalation follows the same process as the organization's IT service management framework, with AI incidents classified using the standard priority matrix (P1-P4) and routed through the existing service desk ticketing system without AI-specific escalation paths"
       }
     ],
     "answer": "C",
@@ -15445,7 +15445,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Allocating the majority of audit resources to evaluating environmental and sustainability"
+        "text": "Immediately decommission the affected AI system and initiate the retirement process, because any incident that reveals a previously unidentified risk demonstrates that the system's risk profile was incompletely understood and continued operation is indefensible"
       },
       {
         "letter": "C",
@@ -15705,7 +15705,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Governing AI systems through a framework centered on regulatory reporting and compliance"
+        "text": "Incident documentation satisfies the record-keeping requirements of the organization's AI management system certification under ISO/IEC 42001, which mandates documented information as evidence of the system's conformity to the standard's requirements"
       },
       {
         "letter": "C",
@@ -15753,11 +15753,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Centering the approval process on thorough assessment of ethical review and oversight"
+        "text": "Establishing a dedicated AI ethics committee with veto power over any deployment decision, ensuring that no AI system can enter production without the committee's unanimous approval regardless of the system's risk classification or business criticality"
       },
       {
         "letter": "B",
-        "text": "Measuring governance maturity through demonstrated capability in continuous monitoring"
+        "text": "Implementing a blockchain-based immutable audit trail that cryptographically records every model decision, training data update, and governance approval, providing tamper-proof evidence of accountability for regulatory inspections"
       },
       {
         "letter": "C",
@@ -15765,7 +15765,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Allocating the majority of audit resources to evaluating incident response and escalation"
+        "text": "Requiring all AI system developers to hold professional certifications from accredited bodies, and making continued employment conditional on maintaining certification status through mandatory continuing education and periodic re-examination"
       }
     ],
     "answer": "C",
@@ -15779,15 +15779,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Focusing post-deployment review activities on verification of operational readiness"
+        "text": "The organization's AI governance maturity score will decline in industry benchmark assessments, potentially affecting the organization's ability to attract AI talent and secure favorable terms from AI technology vendors during procurement negotiations"
       },
       {
         "letter": "B",
-        "text": "Centering the approval process on thorough assessment of third-party audit"
+        "text": "The organization's notified body will suspend the CE marking of any high-risk AI systems, requiring the organization to withdraw the affected systems from the EU market until the accountability gaps are remediated and a new conformity assessment is completed"
       },
       {
         "letter": "C",
-        "text": "Structuring the governance program around continuous improvement of data quality"
+        "text": "Individual employees will face personal liability under the EU AI Act for non-compliance, including administrative fines of up to €750,000 for failing to follow documented AI governance procedures in their day-to-day operational responsibilities"
       },
       {
         "letter": "D",
@@ -15883,15 +15883,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Allocating the majority of audit resources to evaluating service level agreement"
+        "text": "Accountability should be assigned exclusively to the Chief AI Officer, because diffusing accountability across multiple roles creates ambiguity and prevents any single individual from being held responsible when governance failures occur"
       },
       {
         "letter": "B",
-        "text": "Centering the approval process on thorough assessment of change management and version"
+        "text": "Accountability should be assigned to the external auditor who certified the system's conformity, because independent third-party assurance transfers legal and regulatory accountability from the deploying organization to the certifying body"
       },
       {
         "letter": "C",
-        "text": "Measuring governance maturity through demonstrated capability in continuous monitoring"
+        "text": "Accountability should be assigned proportionally based on each role's compensation level, with higher-paid executives bearing proportionally greater accountability than individual contributors regardless of their actual involvement in the specific governance failure"
       },
       {
         "letter": "D",
@@ -16039,11 +16039,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Centering the approval process on thorough assessment of user acceptance and usability"
+        "text": "Implementing an automated appeals system where the AI model itself re-evaluates contested decisions using a secondary model trained specifically on previously overturned cases, providing faster resolution than manual human review"
       },
       {
         "letter": "B",
-        "text": "Focusing post-deployment review activities on verification of incident response"
+        "text": "Publishing a quarterly transparency report listing all decisions the AI system made during the period, enabling affected individuals to identify their specific case in the aggregated statistics and determine whether the outcome was consistent with similar cases"
       },
       {
         "letter": "C",
@@ -16051,7 +16051,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Structuring the governance program around continuous improvement of model explainability"
+        "text": "Requiring that every AI system decision include a confidence score, and automatically escalating any decision where the model's confidence falls below a predefined threshold for mandatory review by the organization's legal department"
       }
     ],
     "answer": "C",
@@ -16117,15 +16117,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Focusing post-deployment review activities on verification of continuous monitoring"
+        "text": "Transparency reduces the organization's exposure to GDPR data subject access requests by providing the required information proactively, eliminating the need to respond to individual Article 15 requests for information about automated decision-making"
       },
       {
         "letter": "B",
-        "text": "Centering the approval process on thorough assessment of privacy impact assessment"
+        "text": "Transparency enables the organization to claim trade secret protection for its AI models under the EU Trade Secrets Directive, because publicly disclosing the system's capabilities and limitations establishes that its internal workings are commercially sensitive"
       },
       {
         "letter": "C",
-        "text": "Structuring the governance program around continuous improvement of training data"
+        "text": "Transparency satisfies the EU AI Act's requirement for providers to draw up and make publicly available a summary of training data content, addressing the compliance obligation without requiring the organization to implement additional governance controls"
       },
       {
         "letter": "D",
@@ -16143,7 +16143,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Allocating the majority of audit resources to evaluating vendor due diligence and supply"
+        "text": "Transparency and contestability are independent governance principles with no necessary relationship — a system can be fully contestable without any transparency into how it works, and fully transparent without offering any mechanism for contesting its decisions"
       },
       {
         "letter": "B",
@@ -16151,11 +16151,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Measuring governance maturity through demonstrated capability in public consultation"
+        "text": "Contestability is a prerequisite for transparency, because organizations can only be transparent about decisions that individuals have formally contested through the established appeals process and for which the organization has prepared a documented response"
       },
       {
         "letter": "D",
-        "text": "Centering the approval process on thorough assessment of stakeholder engagement"
+        "text": "Transparency and contestability are alternative approaches to the same governance objective — organizations must implement one or the other depending on the system's risk classification, but implementing both would be redundant and operationally burdensome"
       }
     ],
     "answer": "B",
@@ -16181,7 +16181,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Governing AI systems through a framework centered on cost-benefit"
+        "text": "Accountability should be assigned to the AI system itself as a legal person, following the model proposed by the European Parliament's resolution on civil law rules for robotics, which suggested creating a specific legal status for autonomous systems"
       }
     ],
     "answer": "B",
@@ -16199,7 +16199,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Allocating the majority of audit resources to evaluating security vulnerability"
+        "text": "The policies were drafted without sufficient technical review, resulting in requirements that are incompatible with the organization's existing MLOps toolchain and CI/CD pipeline — the development teams cannot follow the policies because the prescribed controls are not supported by their operational infrastructure"
       },
       {
         "letter": "C",
@@ -16207,7 +16207,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Measuring governance maturity through demonstrated capability in third-party audit"
+        "text": "The policies exceed the requirements of applicable regulations, imposing governance obligations that go beyond what the EU AI Act or GDPR actually require — teams are correctly prioritizing regulatory compliance over voluntary governance commitments that lack enforcement mechanisms"
       }
     ],
     "answer": "A",
