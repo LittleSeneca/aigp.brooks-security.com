@@ -61,7 +61,8 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .option-text { padding-top: 1px; }
 .explanation { margin-top: 12px; padding: 10px 12px; background: rgba(108,140,255,0.04); border-left: 3px solid var(--accent); border-radius: 0 var(--radius) var(--radius) 0; font-size: 0.85rem; color: var(--text-muted); display: none; }
 .explanation.visible { display: block; }
-.nav-row { display: flex; justify-content: space-between; align-items: center; margin-top: 14px; gap: 8px; }
+.nav-row { display: flex; justify-content: center; align-items: center; margin-top: 14px; gap: 8px; position: relative; }
+.nav-row > div { display: flex; gap: 8px; position: absolute; left: 0; }
 .kbd-hint { text-align: center; color: var(--text-muted); font-size: 0.7rem; margin-top: 8px; }
 .kbd { padding: 1px 5px; background: var(--border); border-radius: 3px; font-family: monospace; }
 .empty { text-align: center; padding: 60px 20px; color: var(--text-muted); }
@@ -177,7 +178,7 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   <select id="domain-filter" onchange="onFilterChange()"><option value="all">All Domains</option><option value="Domain I">Domain I</option><option value="Domain II">Domain II</option><option value="Domain III">Domain III</option><option value="Domain IV">Domain IV</option></select>
   <select id="difficulty-filter" onchange="onFilterChange()"><option value="all">All Difficulty</option><option value="Easy">Easy</option><option value="Medium">Medium</option><option value="Hard">Hard</option><option value="Painful">Painful</option></select>
   <select id="status-filter" onchange="onFilterChange()"><option value="all">All Status</option><option value="unanswered">Unanswered</option><option value="correct">Correct</option><option value="incorrect">Incorrect</option></select>
-  <button class="primary" onclick="pickRandom()">Random</button>
+  <button onclick="nextQuestion()">Next →</button>
   <button onclick="resetFilters()">Reset</button>
   <button class="chip hidden" id="quiz-node-chip" onclick="clearQuizNode()" title="Clear mind map filter"></button>
   <button onclick="resetQuizProgress()" style="margin-left:auto;color:var(--incorrect);border-color:rgba(231,76,60,0.35)">Reset All Progress</button>
