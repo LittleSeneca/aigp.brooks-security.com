@@ -7813,7 +7813,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Under GDPR, if a DPIA indicates high residual risks that cannot be adequately mitigated, the organization must consult with the supervisory authority before proceeding with the processing."
+    "explanation": "GDPR Article 36 requires that where a data protection impact assessment under Article 35 indicates that processing would result in a high risk in the absence of measures taken by the controller to mitigate the risk, the controller must consult the supervisory authority prior to processing. Option B describes risk acceptance with enhanced monitoring — this is not sufficient when residual risks are 'high' and cannot be 'adequately mitigated.' The DPIA is not merely a documentation exercise (C); its findings carry enforceable obligations. The organization cannot unilaterally accept high unmitigable risks (D). The consultation requirement serves as an external governance check: the supervisory authority provides written advice and may use its investigative and corrective powers if it considers the intended processing would infringe the GDPR."
   },
   {
     "id": "q-297",
@@ -14661,7 +14661,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Centering the approval process on thorough assessment of error rate and anomaly detection"
+        "text": "Internal monitoring was correctly configured and the fairness audit finding is a false positive — external auditors often flag disparities that are statistically significant but not practically meaningful, and the organization should verify the finding before taking action"
       },
       {
         "letter": "B",
@@ -14669,15 +14669,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Measuring governance maturity through demonstrated capability in organizational"
+        "text": "The organization's governance framework is functioning as designed — external audits are expected to find issues that internal monitoring misses, and the audit finding confirms that the layered assurance model is operating correctly without indicating any deficiency"
       },
       {
         "letter": "D",
-        "text": "Allocating the majority of audit resources to evaluating decommissioning and data"
+        "text": "The bias likely emerged after the most recent internal monitoring cycle and was detected by the audit because it happened to run at a different point in time — this is a timing artifact rather than evidence of monitoring inadequacy"
       }
     ],
     "answer": "B",
-    "explanation": "External audits detecting issues that internal monitoring missed indicates monitoring may be inadequate. Governance should strengthen monitoring capabilities and address the identified bias."
+    "explanation": "When an external audit detects bias that internal monitoring missed, the most likely cause is a monitoring gap — either the fairness metric being monitored was not the right one, the detection threshold was calibrated too high, or the monitoring frequency was insufficient to catch the drift before the audit. The appropriate governance response is to investigate the gap and strengthen monitoring, not to dismiss the finding as a false positive (A), treat the monitoring failure as evidence of a functioning system (C), or attribute it to timing coincidence without investigation (D). Effective AI governance treats audit findings as signals that the monitoring framework itself may need improvement, not as one-off events to explain away."
   },
   {
     "id": "q-561",
@@ -15535,7 +15535,7 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "D",
-    "explanation": "Incidents resulting from inadequate testing indicate governance process failure. Governance should strengthen testing requirements, oversight, and enforcement to prevent similar incidents."
+    "explanation": "When root cause analysis traces an incident to inadequate testing rather than a technical failure, the finding points to a governance process failure — not a one-off testing gap. Testing is a governance control: its scope, rigor, and enforcement are defined by the organization's AI governance framework. If testing was inadequate, the governance framework either failed to specify adequate testing requirements, failed to enforce the requirements it did specify, or both. Option A incorrectly frames testing failure as technical rather than governance in nature. Option B treats a testing gap as isolated when it may indicate systemic underinvestment in testing across the AI portfolio. Option C dismisses the incident when the correct governance response is to investigate whether the inadequate testing that caused this incident is a pattern that could cause others — and to strengthen the testing framework proactively, not reactively, to prevent recurrence."
   },
   {
     "id": "q-594",
