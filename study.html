@@ -37,14 +37,19 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sa
 .stat-label { color: var(--text-muted); }
 .stat-correct .stat-value { color: var(--correct); }
 .stat-incorrect .stat-value { color: var(--incorrect); }
-.progress-bar { flex: 1; min-width: 80px; height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
-.progress-fill { height: 100%; background: var(--accent); border-radius: 2px; }
+.progress-bar { flex: 1; min-width: 80px; height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; display: flex; }
+.progress-fill { height: 100%; background: var(--accent); }
+.progress-fill.correct { background: var(--correct); }
+.progress-fill.incorrect { background: var(--incorrect); }
 .controls { display: flex; gap: 5px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
 select, button { padding: 5px 10px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text); font-size: 0.8rem; cursor: pointer; }
 select:hover, button:hover { border-color: var(--accent); }
 button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
 
-.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; margin-bottom: 12px; }
+.card { position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; margin-bottom: 12px; }
+.tally { position: absolute; top: 12px; right: 14px; z-index: 2; display: flex; gap: 10px; font-size: 0.8rem; font-weight: 700; pointer-events: none; }
+.tally .yes { color: var(--correct); }
+.tally .no { color: var(--incorrect); }
 .q-meta { display: flex; gap: 8px; margin-bottom: 8px; font-size: 0.75rem; color: var(--text-muted); flex-wrap: wrap; }
 .q-meta span { padding: 2px 7px; background: rgba(108,140,255,0.1); border-radius: 3px; }
 .diff-easy { color: var(--correct); } .diff-medium { color: var(--warning); } .diff-hard { color: var(--incorrect); } .diff-painful { color: #ff4444; font-weight: 700; }
@@ -84,10 +89,9 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .flashcard-front h2 { font-size: 1.2rem; font-weight: 600; color: var(--accent); margin-bottom: 6px; }
 .flashcard-front .term-hint { font-size: 0.78rem; color: var(--text-muted); }
 .flashcard-back p { font-size: 0.95rem; line-height: 1.7; color: var(--text); }
-.card-nav { display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 12px; }
-.card-counter { color: var(--text-muted); font-size: 0.82rem; min-width: 70px; text-align: center; }
-.mode-toggle { display: flex; gap: 5px; justify-content: center; margin-bottom: 8px; }
-.fcard-search { width: 100%; padding: 7px 10px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text); font-size: 0.82rem; margin-bottom: 10px; }
+.fc-meta { position: absolute; top: 10px; left: 14px; z-index: 2; display: flex; gap: 8px; align-items: center; font-size: 0.75rem; color: var(--text-muted); pointer-events: none; }
+.fc-domain { padding: 1px 7px; background: rgba(108,140,255,0.12); border-radius: 3px; color: var(--accent); }
+.fcard-search { flex: 1; min-width: 140px; padding: 5px 10px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text); font-size: 0.8rem; }
 .fcard-search:focus { outline: none; border-color: var(--accent); }
 
 /* Mind Map */
@@ -173,7 +177,7 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   <div class="stat"><span class="stat-value" id="answered-count">0</span><span class="stat-label">Done</span></div>
   <div class="stat"><span class="stat-value" id="total-count">794</span><span class="stat-label">Total</span></div>
   <div class="stat"><span class="stat-value" id="pct">0%</span><span class="stat-label">Score</span></div>
-  <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+  <div class="progress-bar"><div class="progress-fill correct" id="progress-correct" style="width:0%"></div><div class="progress-fill incorrect" id="progress-incorrect" style="width:0%"></div></div>
 </div>
 <div class="controls">
   <select id="domain-filter" onchange="onFilterChange()"><option value="all">All Domains</option><option value="Domain I">Domain I</option><option value="Domain II">Domain II</option><option value="Domain III">Domain III</option><option value="Domain IV">Domain IV</option></select>
@@ -196,33 +200,33 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   <div class="stat"><span class="stat-value" id="fcard-seen">0</span><span class="stat-label">Reviewed</span></div>
   <div class="progress-bar"><div class="progress-fill" id="fcard-progress" style="width:0%"></div></div>
 </div>
-<div class="controls" style="justify-content:center">
+<div class="controls">
   <select id="fcard-domain" onchange="filterFlashcards()"><option value="all">All Domains</option><option value="d1">Domain I</option><option value="d2">Domain II</option><option value="d3">Domain III</option><option value="d4">Domain IV</option></select>
   <select id="fcard-chapter" onchange="filterFlashcards()"><option value="all">All Areas</option></select>
   <select id="fcard-filter" onchange="filterFlashcards()"><option value="all">All Status</option><option value="needs-review">Needs Review</option><option value="mastered">Mastered</option><option value="unrated">Unrated</option></select>
+  <button class="tab active" id="mode-term" onclick="setFCMode('term')">Term → Def</button>
+  <button class="tab" id="mode-def" onclick="setFCMode('def')">Def → Term</button>
   <button class="primary" onclick="randomCard()">Random</button>
   <button onclick="resetFCFilters()">Reset</button>
   <button class="chip hidden" id="fc-node-chip" onclick="clearFCNode()" title="Clear mind map filter"></button>
+  <input class="fcard-search" type="text" id="fcard-search" placeholder="Search terms..." oninput="filterFlashcards()">
 </div>
-<div class="mode-toggle">
-  <button class="tab active" id="mode-term" onclick="setFCMode('term')">Term → Def</button>
-  <button class="tab" id="mode-def" onclick="setFCMode('def')">Def → Term</button>
-</div>
-<input class="fcard-search" type="text" id="fcard-search" placeholder="Search terms..." oninput="filterFlashcards()">
 <div class="flashcard-wrap">
   <div class="flashcard" onclick="flipCard()">
+    <div class="fc-meta"><span id="fcard-counter"></span><span class="fc-domain" id="fcard-domain-badge"></span></div>
+    <div class="tally" id="fcard-tally"></div>
     <div class="flashcard-inner" id="flashcard-inner">
       <div class="flashcard-front"><h2 id="fcard-front-title"></h2><span class="term-hint">Click to flip</span></div>
       <div class="flashcard-back"><p id="fcard-back-text"></p></div>
     </div>
   </div>
 </div>
-<div class="card-nav">
-  <button onclick="prevCard()">←</button><span class="card-counter" id="fcard-counter"></span><button onclick="nextCard()">→</button><button onclick="randomCard()">🎲</button>
-</div>
-<div class="card-nav" style="margin-top:6px">
+<div class="nav-row">
+  <button onclick="prevCard()">← Prev</button>
   <button onclick="rateCard(false)" style="border-color:var(--incorrect);color:var(--incorrect)">✗ No</button>
+  <button class="primary" onclick="randomCard()">🎲</button>
   <button onclick="rateCard(true)" style="border-color:var(--correct);color:var(--correct)">✓ Yes</button>
+  <button onclick="nextCard()">Next →</button>
 </div>
 <div class="kbd-hint"><span class="kbd">←</span><span class="kbd">→</span> nav · <span class="kbd">Space</span> flip · <span class="kbd">1</span> no · <span class="kbd">2</span> yes · <span class="kbd">R</span> random</div>
 </div>
@@ -286,16 +290,19 @@ function applyFilters() {
   });
   document.getElementById('total-count').textContent = filteredQuestions.length;
 }
-function updateStats() { applyFilters(); let c=0,ic=0,a=0; for(const k in progress){a++;if(progress[k].correct)c++;else ic++;} document.getElementById('correct-count').textContent=c; document.getElementById('incorrect-count').textContent=ic; document.getElementById('answered-count').textContent=a; document.getElementById('pct').textContent=(a>0?Math.round(c/a*100):0)+'%'; document.getElementById('progress-fill').style.width=(a/ALL_QUESTIONS.length*100)+'%'; }
-function showQuestion(i) {
+function updateStats() { applyFilters(); let c=0,ic=0,a=0; for(const k in progress){a++;if(progress[k].correct)c++;else ic++;} document.getElementById('correct-count').textContent=c; document.getElementById('incorrect-count').textContent=ic; document.getElementById('answered-count').textContent=a; document.getElementById('pct').textContent=(a>0?Math.round(c/a*100):0)+'%'; document.getElementById('progress-correct').style.width=(c/ALL_QUESTIONS.length*100)+'%'; document.getElementById('progress-incorrect').style.width=(ic/ALL_QUESTIONS.length*100)+'%'; }
+function showQuestion(i, reveal=false) {
   if(!filteredQuestions.length){document.getElementById('question-area').innerHTML='<div class="empty"><h2>No questions</h2></div>';return;}
-  currentIndex=Math.max(0,Math.min(i,filteredQuestions.length-1));const q=filteredQuestions[currentIndex];selectedAnswer=null;answered=false;const qp=progress[q.id],wa=!!qp;
+  currentIndex=Math.max(0,Math.min(i,filteredQuestions.length-1));const q=filteredQuestions[currentIndex];selectedAnswer=null;answered=reveal;const qp=progress[q.id];
+  // reveal (colored options + explanation) only for an answer picked in THIS view;
+  // navigating to a previously-answered question stays fresh with a ✓/✗ badge instead
+  let badge='';if(qp&&!reveal){const r=qp.right??(qp.correct?1:0),w=qp.wrong??(qp.correct?0:1);badge=`<span class="tally"><span class="yes">✓ ${r}</span><span class="no">✗ ${w}</span></span>`;}
   let meta=(q.domain?`<span>${q.domain}</span>`:'')+(q.difficulty?`<span class="diff-${q.difficulty.toLowerCase()}">${q.difficulty}</span>`:'')+`<span>#${currentIndex+1}/${filteredQuestions.length}</span>`;
-  let opts=q.options.map(o=>{let cls='option';if(wa)cls+=o.letter===q.answer?' correct':o.letter===qp.answer?' incorrect':' dimmed';return`<div class="${cls}" onclick="pickAnswer('${o.letter}')"><div class="option-letter">${o.letter}</div><div class="option-text">${o.text}</div></div>`}).join('');
-  let expl='';if(wa){const ok=qp.correct;expl=`<div class="explanation visible"><strong style="color:${ok?'var(--correct)':'var(--incorrect)'}">${ok?'✓':'✗'} ${ok?'Correct':'Incorrect'}</strong>${q.explanation?'<br><br>'+q.explanation:''}</div>`;}
-  document.getElementById('question-area').innerHTML=`<div class="card"><div class="q-meta">${meta}</div><div class="q-text">${q.question}</div><div class="options">${opts}</div>${expl}</div><div class="nav-row"><button onclick="prevQuestion()" ${currentIndex===0?'disabled':''}>← Prev</button><button class="primary" onclick="pickRandom()">🎲</button><button onclick="nextQuestion()">Next →</button></div><div class="kbd-hint"><span class="kbd">A</span>-<span class="kbd">D</span> answer · <span class="kbd">→</span> next · <span class="kbd">←</span> prev</div>`;
+  let opts=q.options.map(o=>{let cls='option';if(reveal)cls+=o.letter===q.answer?' correct':o.letter===qp.answer?' incorrect':' dimmed';return`<div class="${cls}" onclick="pickAnswer('${o.letter}')"><div class="option-letter">${o.letter}</div><div class="option-text">${o.text}</div></div>`}).join('');
+  let expl='';if(reveal){const ok=qp.correct;expl=`<div class="explanation visible"><strong style="color:${ok?'var(--correct)':'var(--incorrect)'}">${ok?'✓':'✗'} ${ok?'Correct':'Incorrect'}</strong>${q.explanation?'<br><br>'+q.explanation:''}</div>`;}
+  document.getElementById('question-area').innerHTML=`<div class="card">${badge}<div class="q-meta">${meta}</div><div class="q-text">${q.question}</div><div class="options">${opts}</div>${expl}</div><div class="nav-row"><button onclick="prevQuestion()" ${currentIndex===0?'disabled':''}>← Prev</button><button class="primary" onclick="pickRandom()">🎲</button><button onclick="nextQuestion()">Next →</button></div><div class="kbd-hint"><span class="kbd">A</span>-<span class="kbd">D</span> answer · <span class="kbd">→</span> next · <span class="kbd">←</span> prev</div>`;
 }
-function pickAnswer(l){if(answered)return;const q=filteredQuestions[currentIndex];answered=true;progress[q.id]={answer:l,correct:l===q.answer,timestamp:Date.now()};localStorage.setItem(QS_KEY,JSON.stringify(progress));updateStats();showQuestion(currentIndex);}
+function pickAnswer(l){if(answered)return;const q=filteredQuestions[currentIndex];answered=true;const correct=l===q.answer;const prev=progress[q.id];const r=(prev?(prev.right??(prev.correct?1:0)):0)+(correct?1:0);const w=(prev?(prev.wrong??(prev.correct?0:1)):0)+(correct?0:1);progress[q.id]={answer:l,correct,timestamp:Date.now(),right:r,wrong:w};localStorage.setItem(QS_KEY,JSON.stringify(progress));updateStats();showQuestion(currentIndex,true);}
 function nextQuestion(){if(currentIndex<filteredQuestions.length-1)showQuestion(currentIndex+1);}
 function prevQuestion(){if(currentIndex>0)showQuestion(currentIndex-1);}
 function pickRandom(){applyFilters();if(filteredQuestions.length)showQuestion(Math.floor(Math.random()*filteredQuestions.length));}
@@ -305,6 +312,7 @@ function resetQuizProgress(){
   if(!confirm('Delete all progress — question answers, flashcard ratings, and review history? This cannot be undone.'))return;
   localStorage.removeItem(QS_KEY);
   localStorage.removeItem(FC_MASTERY_KEY);
+  localStorage.removeItem(FC_COUNTS_KEY);
   progress={};
   onFilterChange();
   applyFCFilter();
@@ -320,20 +328,27 @@ let fcMode='term',fcIndex=0,fcFiltered=[...FLASHCARDS],fcFlipped=false;
 const FC_KEY='aigp-flashcard-progress',FC_MASTERY_KEY='aigp-flashcard-mastery';
 function getMastery(){try{return JSON.parse(localStorage.getItem(FC_MASTERY_KEY))||{}}catch(e){return{};}}
 function saveMastery(m){localStorage.setItem(FC_MASTERY_KEY,JSON.stringify(m));}
+const FC_COUNTS_KEY='aigp-flashcard-counts';
+function getCounts(){try{return JSON.parse(localStorage.getItem(FC_COUNTS_KEY))||{}}catch(e){return{};}}
+function saveCounts(c){localStorage.setItem(FC_COUNTS_KEY,JSON.stringify(c));}
+const DOMAIN_LABELS={d1:'Domain I',d2:'Domain II',d3:'Domain III',d4:'Domain IV'};
 function saveFCProgress(){const seen=(()=>{try{return JSON.parse(localStorage.getItem(FC_KEY))||[]}catch(e){return[]}})();const id=fcFiltered[fcIndex]?.term;if(id&&!seen.includes(id)){seen.push(id);localStorage.setItem(FC_KEY,JSON.stringify(seen));}updateFCStats();}
 function updateFCStats(){const seen=(()=>{try{return JSON.parse(localStorage.getItem(FC_KEY))||[]}catch(e){return[]}})();document.getElementById('fcard-seen').textContent=seen.length;document.getElementById('fcard-progress').style.width=(seen.length/FLASHCARDS.length*100)+'%';}
-function applyFCFilter(){const filter=document.getElementById('fcard-filter').value;const dom=document.getElementById('fcard-domain').value;const chp=document.getElementById('fcard-chapter').value;const q=(document.getElementById('fcard-search')?.value||'').toLowerCase();const mastery=getMastery();fcFiltered=FLASHCARDS.filter(f=>{if(fcNodeFilter&&!NODE_FCS[fcNodeFilter].has(f.term))return false;if(dom!=='all'&&FC_PLACE[f.term]?.domain!==dom)return false;if(chp!=='all'&&FC_PLACE[f.term]?.chapter!==chp)return false;if(q&&!f.term.toLowerCase().includes(q)&&!f.definition.toLowerCase().includes(q))return false;if(filter==='mastered'&&!mastery[f.term])return false;if(filter==='needs-review'&&mastery[f.term]!==false)return false;if(filter==='unrated'&&mastery[f.term]!==undefined)return false;return true;});fcIndex=0;fcFlipped=false;if(!fcFiltered.length){document.getElementById('fcard-front-title').textContent='No cards';document.getElementById('fcard-back-text').textContent='';document.getElementById('fcard-counter').textContent='0/0';return;}showCard(0);}
+function applyFCFilter(){const filter=document.getElementById('fcard-filter').value;const dom=document.getElementById('fcard-domain').value;const chp=document.getElementById('fcard-chapter').value;const q=(document.getElementById('fcard-search')?.value||'').toLowerCase();const mastery=getMastery();fcFiltered=FLASHCARDS.filter(f=>{if(fcNodeFilter&&!NODE_FCS[fcNodeFilter].has(f.term))return false;if(dom!=='all'&&FC_PLACE[f.term]?.domain!==dom)return false;if(chp!=='all'&&FC_PLACE[f.term]?.chapter!==chp)return false;if(q&&!f.term.toLowerCase().includes(q)&&!f.definition.toLowerCase().includes(q))return false;if(filter==='mastered'&&!mastery[f.term])return false;if(filter==='needs-review'&&mastery[f.term]!==false)return false;if(filter==='unrated'&&mastery[f.term]!==undefined)return false;return true;});fcIndex=0;fcFlipped=false;if(!fcFiltered.length){document.getElementById('fcard-front-title').textContent='No cards';document.getElementById('fcard-back-text').textContent='';document.getElementById('fcard-counter').textContent='0/0';document.getElementById('fcard-domain-badge').textContent='';document.getElementById('fcard-tally').innerHTML='';return;}showCard(0);}
 function filterFlashcards(){applyFCFilter();}
 function setFCMode(m){fcMode=m;fcFlipped=false;document.getElementById('mode-term').classList.toggle('active',m==='term');document.getElementById('mode-def').classList.toggle('active',m==='def');document.getElementById('flashcard-inner').classList.remove('flipped');showCard(fcIndex);}
 function rateCard(knew){
   if(!fcFiltered.length)return;
   const el=document.querySelector('.flashcard');
   if(el.classList.contains('rate-yes')||el.classList.contains('rate-no'))return; // ignore double-taps mid-flash
-  const mastery=getMastery();mastery[fcFiltered[fcIndex].term]=knew;saveMastery(mastery);updateFCStats();
+  const term=fcFiltered[fcIndex].term;
+  const mastery=getMastery();mastery[term]=knew;saveMastery(mastery);
+  const counts=getCounts();counts[term]=counts[term]||{yes:0,no:0};counts[term][knew?'yes':'no']++;saveCounts(counts);
+  updateFCStats();
   el.classList.add(knew?'rate-yes':'rate-no');
   setTimeout(()=>{el.classList.remove('rate-yes','rate-no');nextCard();},450);
 }
-function showCard(i){if(!fcFiltered.length)return;fcIndex=Math.max(0,Math.min(i,fcFiltered.length-1));fcFlipped=false;document.getElementById('flashcard-inner').classList.remove('flipped');const card=fcFiltered[fcIndex];document.getElementById('fcard-front-title').textContent=fcMode==='term'?card.term:card.definition;document.getElementById('fcard-back-text').textContent=fcMode==='term'?card.definition:card.term;document.getElementById('fcard-counter').textContent=`${fcIndex+1}/${fcFiltered.length}`;saveFCProgress();}
+function showCard(i){if(!fcFiltered.length)return;fcIndex=Math.max(0,Math.min(i,fcFiltered.length-1));fcFlipped=false;document.getElementById('flashcard-inner').classList.remove('flipped');const card=fcFiltered[fcIndex];document.getElementById('fcard-front-title').textContent=fcMode==='term'?card.term:card.definition;document.getElementById('fcard-back-text').textContent=fcMode==='term'?card.definition:card.term;document.getElementById('fcard-counter').textContent=`${fcIndex+1}/${fcFiltered.length}`;const dom=FC_PLACE[card.term]?.domain;document.getElementById('fcard-domain-badge').textContent=dom?DOMAIN_LABELS[dom]:'';const ct=getCounts()[card.term];document.getElementById('fcard-tally').innerHTML=(ct&&(ct.yes||ct.no))?`<span class="yes">✓ ${ct.yes||0}</span><span class="no">✗ ${ct.no||0}</span>`:'';saveFCProgress();}
 function flipCard(){if(!fcFiltered.length)return;fcFlipped=!fcFlipped;document.getElementById('flashcard-inner').classList.toggle('flipped',fcFlipped);}
 function nextCard(){if(fcIndex<fcFiltered.length-1)showCard(fcIndex+1);}
 function prevCard(){if(fcIndex>0)showCard(fcIndex-1);}

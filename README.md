@@ -28,7 +28,6 @@ Both print warnings if structural invariants break (childless topics, questions 
 | Path | What |
 |---|---|
 | `study.html` | The app (quiz + flashcards + mind map) |
-| `quiz.html` | Older standalone quiz page |
 | `quiz-data.js`, `flashcard-data.js` | Question bank and flashcards |
 | `map-data.js`, `node-details.js` | Generated: mind map tree, tags, per-node notes |
 | `build_map_tags.py`, `build_node_details.py` | Generators |
