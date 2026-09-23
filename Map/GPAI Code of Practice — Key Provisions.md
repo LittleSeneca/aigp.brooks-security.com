@@ -4,8 +4,9 @@ tags:
  - aigp/standards
  - aigp/gpai
 created: 2026-07-11
+updated: 2026-09-23
 domain: "II: Understanding How Laws, Standards and Frameworks Apply to AI"
-subdomain: "II.C: Understand the Main Elements of the EU AI Act"
+subdomain: "II.C: Understand the Main Elements of AI-Specific Laws (BOK v2.1)"
 related:
  - "[[AIGP Body of Knowledge — Exam Blueprint]]"
  - "[[EU AI Act 2024 — Key Provisions]]"
@@ -17,6 +18,8 @@ related:
 # GPAI Code of Practice — Key Provisions
 
 > **Source:** Code of Practice for General-Purpose AI Models (2025), published by the European AI Office under Article 56 of the EU AI Act.
+>
+> **Status (September 2026):** published 10 July 2025. The Commission and the AI Board confirmed it an **adequate** voluntary tool on 1 August 2025. **21 providers** have signed the full Code, and **xAI** has signed the Safety & Security chapter only; **Meta has not signed**. The Commission's enforcement powers, including fines, have applied since **2 August 2026**. See §15.
 
 ---
 
@@ -32,7 +35,7 @@ The **GPAI Code of Practice** is a compliance-facilitation instrument issued und
 | **Art 53(1)(d)** | Public training-content summary | All GPAI providers |
 | **Art 55(1)** | Systemic risk assessment & mitigation | **GPAI with systemic risk only** |
 
-> **Critical nuance:** Adherence to the Code does **NOT** constitute conclusive evidence of compliance with EU AI Act obligations. It is a demonstration aid, not a safe harbor.
+> **Critical nuance:** Adherence to the Code does **NOT** constitute conclusive evidence of compliance with EU AI Act obligations. It is a demonstration aid, not a safe harbor, and **not a presumption of conformity**: under Arts. 53(4) and 55(2), only harmonised standards give that.
 
 ---
 
@@ -58,7 +61,7 @@ The **GPAI Code of Practice** is a compliance-facilitation instrument issued und
 | **1.2** | Provide information to downstream providers & AI Office | Publicly disclose contact info; respond to downstream providers within **14 days** (save exceptional circumstances); provide to AI Office upon request under Art 91/75(3) |
 | **1.3** | Quality, integrity & security of information | Control documented information; follow established protocols and technical standards |
 
-> **Open-source exception (Art 53(2)):** Transparency obligations do not apply to free and open-source GPAI models unless the model is classified as **systemic risk**. Modifiers who fine-tune a model become the provider of the modified model (proportionality principle per recital 109).
+> **Open-source exception (Art 53(2)):** Transparency obligations do not apply to free and open-source GPAI models unless the model is classified as **systemic risk**. A downstream modifier becomes the provider of the modified model only if the modification significantly changes its generality, capabilities or systemic risk. Indicatively, that means the modification used more than one third of the original training compute (Commission GPAI guidelines, paras 59–60). Its obligations are then limited to the modification or fine-tuning (recital 109).
 
 ### 3.2 Model Documentation Form
 
@@ -124,11 +127,13 @@ The Form captures information for two audiences:
 
 | Factor | Description |
 |--------|-------------|
-| **Compute thresholds** | Exceptionally high training compute (e.g., >10²⁵ FLOPs — illustrative) |
+| **Compute presumption** | Cumulative training compute above **10²⁵ FLOP** presumes high-impact capabilities (Art 51(2)). The provider must notify the Commission within two weeks (Art 52(1)) and may argue the model is exceptionally not systemic-risk (Art 52(2)) |
 | **High-impact capabilities** | Capabilities matching/exceeding the most advanced GPAI models (Art 3(64)) |
-| **Wide deployment** | Integration into critical infrastructure or across industry sectors |
-| **Autonomous influence** | Demonstrated ability to autonomously influence behavior at scale |
-| **Commission designation** | European Commission may designate models as systemic risk based on criteria in Art 51 |
+| **Reach** | Annex XIII presumes high impact on the internal market when the model is available to at least 10,000 registered business users in the EU |
+| **Other Annex XIII criteria** | Parameters, data size, compute, modalities, benchmarks, autonomy and scalability, tool access, number of end-users |
+| **Commission designation** | Ex officio or after a Scientific Panel qualified alert (Art 90), using the Annex XIII criteria (Art 51(1)(b)) |
+
+> **Indicative GPAI threshold (Commission guidelines, July 2025):** a model trained with more than **10²³ FLOP** that can generate language, text-to-image or text-to-video is indicatively a GPAI model. A downstream modifier becomes the provider of the modified model if the modification uses more than **one third** of the original training compute.
 
 ---
 
@@ -171,8 +176,10 @@ The Form captures information for two audiences:
 | Serious incident reporting to AI Office | ❌ | ✅ **Required** |
 | Systemic risk responsibility allocation | ❌ | ✅ **Required** |
 | Post-market monitoring | ❌ | ✅ **Required** |
-| EU legal representative | ❌ | ✅ **Required** |
+| EU authorised representative for non-EU providers (Art 54) | ✅ Required (open-source models exempt, Art 54(6)) | ✅ **Required** (no open-source exemption) |
 | Open-source exemption (Art 53(2)) | ✅ Available | ❌ Not available |
+
+> The two ✅/❌ columns above mix **statutory duties** (Arts. 53–55) with **Code commitments** such as the Safety & Security Framework, Model Reports and external evaluations. The Code commitments bind only signatories that adhere to that chapter.
 
 ---
 
@@ -315,13 +322,56 @@ Documentation retained for at least **5 years** from date of documentation or in
 | **Obligations** | Prescribed in Arts 53 & 55 | Detailed Measures operationalizing Arts 53 & 55 |
 | **Enforcement** | National competent authorities; AI Office | Relied upon by providers to demonstrate compliance |
 | **Updates** | Amendment via legislative process | Continuous evolution; Framework updates every 12 months |
-| **Presumption of conformity** | Not provided by Code alone | Code adherence ≠ conclusive compliance evidence |
+| **Presumption of conformity** | Only harmonised standards give it, once cited in the OJ (Arts. 40(1), 53(4), 55(2)) | None. Adherence is a way to *demonstrate* compliance, not a presumption |
 
-> **Art 56(6) AI Act:** The Commission may approve the Code and give it general validity within the Union by implementing act. Until then, it serves as a guiding compliance instrument.
+> **Art 56(6) AI Act, as enacted:** the AI Office and Board assess the Code's adequacy; the Commission could also approve a code by implementing act and give it "general validity" within the Union.
+> **As amended by the 2026 Digital Omnibus (Regulation (EU) 2026/1744):** the Commission, taking utmost account of the Board's opinion, assesses whether codes cover Arts. 53 and 55 and publishes that assessment. The replaced paragraph no longer contains the implementing-act approval sentence. If a code is inadequate, the Commission can still adopt common rules by implementing act (Art. 56(9)).
+> The Commission's adequacy assessment of this Code was published on **1 August 2025**.
 
 ---
 
-## 15. Key Definitions (Glossary)
+## 15. Status, Signatories and Enforcement (as of September 2026)
+
+### 15.1 Timeline
+
+| Date | Event |
+|---|---|
+| 10 Jul 2025 | Final Code published (three chapters: Transparency, Copyright, Safety & Security) |
+| 18 Jul 2025 | Commission GPAI guidelines approved; they complement the Code |
+| 24 Jul 2025 | Commission template for the public summary of training content (Art. 53(1)(d)) |
+| 1 Aug 2025 | Commission and AI Board confirm the Code is an adequate voluntary tool |
+| 2 Aug 2025 | GPAI obligations apply; in the first year the AI Office treats signatories still implementing commitments as acting in good faith |
+| 4 Nov 2025 | Commission serious-incident reporting template for systemic-risk models (supports Commitment 9) |
+| 2 Aug 2026 | Commission enforcement powers apply: information requests, model evaluations, risk-mitigation measures, restriction, withdrawal or recall, and fines up to 3% or €15m (Art. 101) |
+| 2 Aug 2027 | Models placed on the market before 2 Aug 2025 must comply (Art. 111(3)) |
+
+The 2026 Digital Omnibus did **not** change any GPAI obligation or date.
+
+### 15.2 Signatories (Commission list, updated 31 July 2026)
+
+- **Full Code (21):** AI Studio Delta, Aleph Alpha, Almawave, Amazon, Anthropic, Black Forest Labs, Bria AI, Cohere, Domyn, Dweve, Fastweb, Google, IBM, LINAGORA, Microsoft, Mistral AI, Open Hippo, OpenAI, Pleias, ServiceNow, WRITER.
+- **Safety & Security chapter only:** **xAI**. It must show compliance with the Transparency and Copyright obligations (Art. 53) by alternative adequate means.
+- **Not signed:** **Meta** does not appear on the list.
+- Signatories run a **Signatory Taskforce**, chaired by the AI Office, for consistent application.
+
+### 15.3 What signing buys, and what not signing costs
+
+| | Signatory (adheres to the adequate Code) | Non-signatory |
+|---|---|---|
+| How compliance is shown | Adherence to the Code is a straightforward way to demonstrate compliance with Arts. 53 and 55 | "Alternative adequate means", reported to the AI Office, e.g. through a gap analysis against the Code |
+| Supervision | Commission focuses enforcement on monitoring adherence | Expect more information requests and requests for model access across the lifecycle |
+| Fines | Commitments kept can be a **mitigating factor** (Art. 101(1)) | No such credit |
+| Legal status | Not a safe harbor and **not a presumption of conformity** | Same statutory duties |
+
+Opting out of a chapter loses the benefit for that chapter only, which is xAI's position. *(Commission GPAI guidelines, paras 91–97.)*
+
+### 15.4 Do not confuse with the Code of Practice on Marking and Labelling
+
+A separate voluntary code, the **Code of Practice on Transparency of AI-generated Content**, was finalised on 10 June 2026 under **Art. 50(7)**. It covers *AI systems*, not GPAI models. Section 1 is for providers (machine-readable marking and detection) and Section 2 for deployers (labelling deepfakes and AI-generated public-interest text). The Commission and AI Board judged it adequate, and it had about 190 signatories by the end of July 2026. The GPAI Code deals with model documentation, copyright and systemic risk; the labelling code deals with the outputs people see.
+
+---
+
+## 16. Key Definitions (Glossary)
 
 | Term | Definition (Summarized) |
 |------|------------------------|
@@ -338,7 +388,7 @@ Documentation retained for at least **5 years** from date of documentation or in
 
 ---
 
-## 16. Exam Relevance
+## 17. Exam Relevance
 
 For the **AIGP exam**, focus on:
 
@@ -352,7 +402,21 @@ For the **AIGP exam**, focus on:
 8. **Code is NOT conclusive evidence** of compliance — a frequent exam trap
 9. **Open-source exemption** (Art 53(2)) — applies to transparency/copyright, NOT to systemic risk models
 10. **Copyright** — Art 4(3) CDSM Directive opt-out; robots.txt compliance
+11. **Presumption of conformity** comes only from harmonised standards, never from the Code (Arts. 53(4), 55(2)); a common distractor
+12. **Signatories vs. non-signatories:** same duties; the difference is how compliance is shown and how closely the AI Office supervises
+13. **Dates:** GPAI obligations 2 Aug 2025; Commission fines from 2 Aug 2026; legacy models by 2 Aug 2027. The 2026 Omnibus left all three unchanged
+14. **Two different codes:** the GPAI Code (Art. 56, models) vs. the Code of Practice on Marking and Labelling (Art. 50(7), AI-generated content)
 
 ---
 
 > **Related notes:** [[The EU AI Act]] covers the statutory GPAI framework; [[AI Standards and Frameworks]] covers OECD, NIST, and ISO standards referenced throughout; [[AI Risk Management and Assurance]] connects to systemic risk management practices.
+
+## Sources
+
+- Commission, GPAI Code of Practice, chapters and signatory list (updated 31 July 2026): https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai
+- Commission opinion on the assessment of the Code (1 August 2025): https://digital-strategy.ec.europa.eu/en/library/commission-opinion-assessment-general-purpose-ai-code-practice
+- Commission Q&A on the Code: https://digital-strategy.ec.europa.eu/en/faqs/questions-and-answers-code-practice-general-purpose-ai
+- Commission GPAI guidelines, section 5.1 (effects of adhering to a code): https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-under-ai-act
+- AI Act Service Desk FAQ on the Commission's GPAI enforcement powers: https://ai-act-service-desk.ec.europa.eu/en/ai-act/faq/commissions-enforcement-powers-related-ai-act-obligations-providers-most-advanced-models
+- Serious-incident template for systemic-risk GPAI (4 November 2025): https://digital-strategy.ec.europa.eu/en/library/ai-act-commission-publishes-reporting-template-serious-incidents-involving-general-purpose-ai
+- Regulation (EU) 2024/1689, Arts. 53–56, 101, 111: http://data.europa.eu/eli/reg/2024/1689/oj ; Regulation (EU) 2026/1744 (Art. 56(6) replaced): http://data.europa.eu/eli/reg/2026/1744/oj

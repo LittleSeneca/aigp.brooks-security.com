@@ -22,7 +22,7 @@ related:
 - **Establish cross-functional collaboration** in the AI governance program (for efficacy and diversity of expertise and perspective).
 - **Create and deliver a training and awareness program** to all stakeholders on AI terminology, strategy, and governance.
 - **Differentiate approaches to AI governance** based upon company size, maturity, industry, products and services, objectives, and risk tolerance.
-- **Identify differences among AI developers, deployers, and users** from a governance perspective (responsibilities, opportunities, needs).
+- **Identify differences among AI developers, providers, deployers, and users** from a governance perspective (responsibilities, opportunities, needs).
 
 ---
 

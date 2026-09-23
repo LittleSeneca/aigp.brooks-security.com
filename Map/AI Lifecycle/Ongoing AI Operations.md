@@ -20,7 +20,7 @@ related:
 
 - **Document incidents, issues, risks and post-market monitoring plans.**
 - **Establish external communication plans.**
-- **Create and implement a policy and controls to deactivate or localize an AI model as necessary** (e.g., due to regulatory requirements or performance issues).
+- **Create and implement a policy and controls to deactivate or localize an AI system as necessary** (e.g., due to regulatory requirements or performance issues).
 
 ---
 

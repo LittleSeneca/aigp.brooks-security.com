@@ -4,7 +4,8 @@ tags:
  - aigp/standards
  - aigp/oecd
 created: 2026-07-11
-source: "OECD, Recommendation of the Council on Artificial Intelligence, OECD/LEGAL/0449 (2024 revision)"
+updated: 2026-09-23
+source: "OECD, Recommendation of the Council on Artificial Intelligence, OECD/LEGAL/0449 (as revised 8 Nov 2023 and 3 May 2024); OECD Framework for the Classification of AI Systems (Digital Economy Papers No. 323, Feb 2022); Defining AI incidents and related terms (OECD AI Papers No. 16, May 2024); OECD.AI Hiroshima AI Process Reporting Framework pages (2025–26)"
 aliases:
  - OECD AI Principles
  - OECD Recommendation on AI
@@ -12,6 +13,8 @@ related:
  - "[[AIGP Body of Knowledge — Exam Blueprint]]"
  - "[[AI Standards and Frameworks]]"
  - "[[NIST AI RMF — Structured Reference]]"
+ - "[[ISO 42005 — AI System Impact Assessment]]"
+ - "[[The EU AI Act]]"
 ---
 
 # OECD AI Principles — Structured Reference
@@ -21,6 +24,8 @@ related:
 > **Status:** Non-binding recommendation (political commitment)
 > **Originally Adopted:** 22 May 2019
 > **Revised:** 8 November 2023 (AI system definition); 3 May 2024 (substantive updates)
+> **Adherents:** 47, the European Union among them (OECD.AI, September 2026)
+> **Blueprint:** BOK v2.1 II.D asks for the OECD's principles, framework, policies and recommended practices for trustworthy AI, so this note also covers the OECD's working tools: the classification framework, the definition update, incident and hazard definitions, and the Hiroshima reporting framework
 
 ---
 
@@ -189,6 +194,115 @@ All organisations and individuals involved in, or affected by, AI systems, direc
 | **Interoperable governance** | Underscored need for jurisdictions to work together on interoperable governance, given the increase in AI policy initiatives worldwide |
 | **Environmental sustainability** | Explicit reference added — reflecting growing importance since 2019 |
 | **Traceability → Accountability** | Traceability and risk management text moved from elsewhere to the Accountability principle as the most appropriate home |
+| **Headings** | Some principle and recommendation headings were expanded for clarity. Principle 1.2, "Human-centred values and fairness" in 2019, became "Respect for the rule of law, human rights and democratic values, including fairness and privacy". There are still five principles |
+
+---
+
+## AI System Definition Update (8 November 2023)
+
+**Process.** The Digital Policy Committee approved a draft revised definition in a joint session with the Working Party on AI Governance (AIGO) on 16 October 2023, and the OECD Council adopted it on **8 November 2023**. An explanatory memorandum followed in March 2024 (OECD Artificial Intelligence Papers No. 8).
+
+| Element | 2019 definition (in substance) | November 2023 definition |
+|---|---|---|
+| **Objectives** | "a given set of human-defined objectives" | **Explicit or implicit** objectives |
+| **How outputs arise** | Not described | The system **infers, from the input it receives**, how to generate outputs; input may come from humans or machines |
+| **Outputs** | Predictions, recommendations or decisions | Predictions, **content**, recommendations or decisions |
+| **Environments** | Real or virtual | **Physical** or virtual |
+| **Autonomy and change** | Varying levels of autonomy | Varying autonomy **and adaptiveness after deployment** |
+
+**Why each edit was made**
+
+- **Explicit or implicit objectives:** goals may be programmed directly or learned, for example through reinforcement learning from human feedback.
+- **Inference from input:** underscores the role of input in how the system reaches its outputs.
+- **Content:** makes clear that generative AI systems are covered.
+- **Physical for real:** clarity and alignment with other international processes. Virtual environments are real too, so "real" was misleading.
+- **Adaptiveness after deployment:** some systems, such as recommender systems that adapt to user preferences, keep evolving once in use.
+
+**Alignment with the EU AI Act.** The update was timed to support alignment with policy processes in the EU and Japan. The AI Act's Art. 3(1) definition closely tracks the OECD wording, and Recital 12 calls for the notion of an AI system to be closely aligned with the work of international organisations.
+
+> **Exam trap:** each edit has one job. "Content" = generative AI; "explicit or implicit" = learned goals; "physical" = wording clarity, not a scope change; "adaptiveness" = post-deployment learning.
+
+---
+
+## OECD Framework for the Classification of AI Systems (February 2022)
+
+Published as **OECD Digital Economy Papers No. 323**, the framework is a user-friendly tool for policy makers, regulators, legislators and others to characterize AI systems in specific contexts and to link their technical features to the policy concerns in the AI Principles. It grew out of the work of the OECD.AI Network of Experts (ONE AI).
+
+### The five dimensions and their criteria
+
+| Dimension | What it describes | Criteria |
+|---|---|---|
+| **People & Planet** | Who interacts with or is affected by the system, and how it bears on human rights, well-being and the environment | Users and their competence; impacted stakeholders; optionality and redress (can users opt out or challenge outputs?); human rights and democratic values; well-being, society and environment; displacement potential |
+| **Economic Context** | The sectoral and economic setting of an applied system | Industrial sector; business function and model (for-profit, non-profit, public service); criticality; breadth of deployment; technical maturity |
+| **Data & Input** | The data and expert input the model uses to represent its environment | Detection and collection (human, automated, both); provenance; dynamic or static; rights (proprietary, public, personal) and identifiability; structure and format; scale; quality and appropriateness |
+| **AI Model** | The computational representation of the environment | Information availability; model type (symbolic, statistical, hybrid); rights (open source or proprietary); generative or discriminative; single or multiple models; how it is built (rules, data, supervised or reinforcement learning); evolution in the field; central or federated learning; deterministic or probabilistic use; transparency and explainability |
+| **Task & Output** | What the system does and the actions that follow | Tasks (recognition, event detection, forecasting and so on); composite systems; **action autonomy**; core application area (e.g., computer vision, human language technologies, robotics); evaluation methods |
+
+### How it is used
+
+- **Promote a common understanding of AI:** identify the features that matter most for policy.
+- **Inform registries or inventories** of algorithms and automated decision systems.
+- **Support sector-specific frameworks**, for example in healthcare or finance.
+- **Support risk assessment**, including a common framework for reporting AI incidents.
+- **Support risk management:** mitigation, compliance and enforcement along the lifecycle.
+
+### "In the lab" vs "in the field"
+
+- **In the lab** (conception and development, before deployment): the Data & Input, AI Model and Task & Output dimensions apply. Relevant to ex ante risk management.
+- **In the field** (use and evolution after deployment): all five dimensions apply. Relevant to ex post risk management.
+- The dimensions can also be mapped to lifecycle stages to identify the AI actors responsible at each point, which supports accountability.
+
+> **Exam traps:** action autonomy sits under **Task & Output**, not AI Model. Opt-out and redress sit under **People & Planet**. Sector, criticality and scale sit under **Economic Context**.
+
+---
+
+## Hiroshima AI Process (HAIP) Reporting Framework
+
+| Item | Detail |
+|---|---|
+| **What** | A common, voluntary reporting framework through which organizations report how they align with the G7 **Hiroshima Process International Code of Conduct for Organisations Developing Advanced AI Systems** |
+| **Origin** | The Code came out of Japan's 2023 G7 presidency and was advanced under Italy's 2024 presidency |
+| **Run by** | The **OECD**, which hosts the framework and publishes reports on OECD.AI |
+| **Launched** | February 2025 |
+| **First round** | 25 organizations reported; the OECD analysed them in *How are AI developers managing risks?* |
+| **Version 2.0** | Opens reporting to a wider range of organizations involved in developing, deploying and providing advanced AI systems |
+| **Next cut-off** | Submissions received by 30 September 2026 feed the next analytical review |
+| **Legal effect** | None. It is a transparency tool, unlike the EU's GPAI Code of Practice, which providers use to demonstrate AI Act compliance |
+
+> **Exam trap:** the G7 wrote the Code; the **OECD runs the reporting**. It is voluntary and aimed at comparability, not certification or enforcement.
+
+---
+
+## AI Incidents and Hazards
+
+The OECD's definitions (*Defining AI incidents and related terms*, OECD AI Papers No. 16, May 2024) separate realized harm from potential harm:
+
+| Term | Definition (paraphrased) |
+|---|---|
+| **AI incident** | An event, circumstance or series of events where the development, use or malfunction of one or more AI systems directly or indirectly leads to harm |
+| **Serious AI incident** | As above, but the harm is serious: death or serious harm to health; serious and irreversible disruption of critical infrastructure; serious violation of rights; serious harm to property, communities or the environment |
+| **AI disaster** | A serious AI incident that disrupts the functioning of a community or society and may test or exceed its capacity to cope with its own resources |
+| **AI hazard** | An event, circumstance or series of events that **could plausibly lead** to an AI incident |
+| **Serious AI hazard** | An event that could plausibly lead to a serious AI incident or an AI disaster |
+
+**The four harm types** (for incidents and hazards alike):
+1. Injury or harm to the health of a person or groups of people
+2. Disruption of the management and operation of critical infrastructure
+3. Violations of human rights, or breaches of legal obligations that protect fundamental, labour and intellectual property rights
+4. Harm to property, communities or the environment. Reputational and financial harm to organizations fall here, as harm to property
+
+**Key clarifications**
+- **Near misses are AI hazards.** No harm occurred, but it plausibly could have.
+- AI-related risks count as hazards to the extent they could lead to incidents.
+- An event can include interactions between AI systems, including agentic AI systems.
+- The tiers nest: AI disasters are a subset of serious incidents, which are a subset of incidents. Serious hazards are a subset of hazards.
+- The serious-incident definition was drafted to align with the definition proposed in the EU AI Act context.
+
+**The tools**
+- **AI Incidents and Hazards Monitor (AIM)** on OECD.AI tracks incidents and hazards reported in the news, classifying articles automatically against these definitions. It sees only publicly reported events, so it is a subset of what actually happens.
+- **Common reporting framework for AI incidents** (OECD AI Papers No. 34, February 2025): a shared set of reporting criteria so that jurisdictions can report consistently while keeping their own rules.
+
+> **Exam pattern:** Did harm happen? **Incident.** Could it plausibly have happened (including a caught error)? **Hazard.** Was the harm serious? **Serious incident.** Did it overwhelm a community's ability to cope? **AI disaster.**
 
 ---
 
@@ -226,15 +340,15 @@ Launched February 2020. An inclusive hub for public policy on AI that aims to he
 | Dimension | OECD AI Principles | NIST AI RMF |
 |-----------|--------------------|-------------|
 | **Nature** | Intergovernmental policy recommendation (non-binding) | Voluntary technical framework |
-| **Scope** | 40+ OECD member and adhering countries | Primarily U.S. but adopted globally |
+| **Scope** | 47 adherents (OECD members, non-members and the EU) | Primarily U.S. but adopted globally |
 | **Audience** | Governments + all AI actors (developers, deployers, operators) | AI developers, deployers, evaluators, users |
 | **Structure** | 5 principles + 5 policy recommendations | 4 core functions: Govern, Map, Measure, Manage |
 | **Approach** | Values-based, high-level principles | Process-based, operational risk management |
 | **Accountability** | Role-based; traceability + systematic risk management | Govern function establishes accountability structures; RACI model |
 | **Transparency** | Four disclosure obligations (general understanding → challenge outputs) | Map function documents context; Measure evaluates transparency |
 | **Robustness/Safety** | Override/repair/decommission mechanisms | Manage function: risk treatment, incident response, system retirement |
-| **Update cycle** | Revised 2023, 2024 (political process) | Continuously updated (Playbook, profiles, ARIA) |
-| **Implementation tools** | OECD.AI Observatory, practical guidance | AI RMF Playbook, ARIA testing, model cards |
+| **Update cycle** | Revised 2023, 2024 (political process) | Continuously updated (Playbook, profiles) |
+| **Implementation tools** | OECD.AI Observatory, classification framework, AI Incidents and Hazards Monitor, HAIP Reporting Framework | AI RMF Playbook, profiles, evaluation programs such as ARIA (not in BOK v2.1) |
 
 > **Complementary relationship:** The OECD Principles provide the **normative foundation** (the "why"), while the NIST AI RMF provides the **operational methodology** (the "how"). Organisations often map OECD principles to NIST AI RMF subcategories for comprehensive governance.
 
@@ -258,7 +372,7 @@ Launched February 2020. An inclusive hub for public policy on AI that aims to he
 | Framework | OECD Influence |
 |-----------|---------------|
 | **G20 AI Principles** (2019) | **Directly drawn** from the OECD Recommendation |
-| **EU AI Act** | OECD principles influenced the Act's risk-based approach; transparency and accountability requirements reflect OECD language |
+| **EU AI Act** | Its Art. 3(1) AI system definition closely tracks the OECD's November 2023 wording, and Recital 12 calls for alignment with the work of international organisations; the OECD's serious-incident definition was in turn drafted to align with the AI Act context |
 | **G7 Hiroshima Process** (2023) | Code of Conduct for advanced AI builds on OECD principles — risk lifecycle, transparency, content provenance |
 | **UNESCO AI Ethics Recommendation** (2021) | Overlapping human rights and human-centred values, though UNESCO goes further on cultural diversity |
 | **Council of Europe AI Treaty** | References OECD as foundational intergovernmental standard |
@@ -279,11 +393,25 @@ Launched February 2020. An inclusive hub for public policy on AI that aims to he
 
 ## Exam Relevance (AIGP)
 
-- **Domain II, Subdomain II.D** — "Understand the main industry standards and tools that apply to AI"
-- The OECD Principles are **not legally binding** but are the **most influential** international AI governance framework — they shaped the EU AI Act, G7/G20 AI policies, and national AI strategies worldwide
-- Know the **five principles** by name and their core thrust
-- Understand that the 2024 revision added: **information integrity** (misinformation/disinformation), **misuse** (intentional/unintentional), **environmental sustainability**, and strengthened **safety override mechanisms**
-- Expect questions on how OECD compares to NIST AI RMF and ISO 42001 — OECD = foundational policy direction; NIST = operational risk management; ISO 42001 = certifiable management system
+- **Domain II, Subdomain II.D (BOK v2.1):** the OECD's principles, framework, policies and recommended practices for trustworthy AI. Study the tools, not just the list of principles.
+- The OECD Principles are **not legally binding** but are highly influential: the G20 AI Principles were drawn from them, and the EU AI Act's AI system definition closely tracks the OECD's 2023 wording.
+- Know the **five principles** by their 2024 headings. Principle 1.2 is now "respect for the rule of law, human rights and democratic values, including fairness and privacy", not "human-centred values and fairness".
+- **Two revisions, two dates.** 8 Nov 2023 changed only the AI system definition; 3 May 2024 added information integrity, misuse, safe override and decommissioning, responsible business conduct, interoperable governance and environmental sustainability, and moved traceability into Accountability.
+- **Classification framework:** five dimensions (People & Planet, Economic Context, Data & Input, AI Model, Task & Output). Expect "which dimension holds this criterion?" questions. Action autonomy is Task & Output.
+- **Incident vs hazard:** harm happened vs harm could plausibly happen. Near misses are hazards; AI disasters are the most severe tier of incidents.
+- **HAIP Reporting Framework:** the G7's Code of Conduct, with voluntary reporting run by the OECD since February 2025.
+- Expect comparison questions: OECD = policy direction and values; NIST AI RMF = operational risk management; ISO/IEC 42001 = certifiable management system; ISO/IEC 42005 = impact assessment guidance.
+
+---
+
+## Key Terms
+
+- [[OECD AI Principles]]
+- [[OECD Framework for the Classification of AI Systems]]
+- [[OECD AI System Definition (2023 Update)]]
+- [[AI Incident vs. AI Hazard (OECD Definitions)]]
+- [[OECD AI Incidents and Hazards Monitor (AIM)]]
+- [[Hiroshima AI Process Reporting Framework]]
 
 ---
 
@@ -291,5 +419,22 @@ Launched February 2020. An inclusive hub for public policy on AI that aims to he
 
 - [[AI Standards and Frameworks]] — Chapter-level coverage with comparison tables
 - [[NIST AI RMF — Structured Reference]] — Deep dive on the NIST AI Risk Management Framework
+- [[ISO 42005 — AI System Impact Assessment]] — Impact assessment standard (compare incident monitoring with pre-deployment assessment)
 - [[AIGP Body of Knowledge — Exam Blueprint]] — Domain II blueprint
-- [[The EU AI Act]] — EU regulation influenced by OECD principles
+- [[The EU AI Act]] — EU regulation whose AI system definition tracks the OECD's
+
+---
+
+## Sources
+
+- https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449 (instrument text via the OECD print service: adoption 22 May 2019; revisions 8 Nov 2023 and 3 May 2024; definition; principles; what each revision changed)
+- https://oecd.ai/en/ai-principles (47 adherents; G20 AI Principles; May 2024 update)
+- https://oecd.ai/en/dashboards/ai-principles/P6 (2019 heading "Human-centred values and fairness")
+- https://oecd.ai/en/wonk/ai-system-definition-update (29 Nov 2023 post explaining the five definition edits)
+- https://oecd.ai/en/ai-publications/explanatory-memorandum-on-the-updated-oecd-definition-of-an-ai-system (OECD AI Papers No. 8, March 2024)
+- https://oecd.ai/en/classification · https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/02/oecd-framework-for-the-classification-of-ai-systems_336a8b57/cb6d9eca-en.pdf (Digital Economy Papers No. 323)
+- https://oecd.ai/en/transparency/overview (HAIP Reporting Framework)
+- https://oecd.ai/en/incidents · https://oecd.ai/en/incidents-methodology (AIM)
+- https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/05/defining-ai-incidents-and-related-terms_88d089ec/d1a8d965-en.pdf (OECD AI Papers No. 16)
+- https://www.oecd.org/en/publications/towards-a-common-reporting-framework-for-ai-incidents_f326d4ac-en.html (OECD AI Papers No. 34, Feb 2025)
+- https://artificialintelligenceact.eu/article/3/ · https://artificialintelligenceact.eu/recital/12/ (EU AI Act definition and alignment)

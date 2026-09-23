@@ -53,7 +53,7 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .q-meta { display: flex; gap: 8px; margin-bottom: 8px; font-size: 0.75rem; color: var(--text-muted); flex-wrap: wrap; }
 .q-meta span { padding: 2px 7px; background: rgba(108,140,255,0.1); border-radius: 3px; }
 .diff-easy { color: var(--correct); } .diff-medium { color: var(--warning); } .diff-hard { color: var(--incorrect); } .diff-painful { color: #ff4444; font-weight: 700; }
-.q-text { font-size: 0.98rem; margin-bottom: 14px; line-height: 1.65; }
+.q-text { font-size: 0.98rem; margin-bottom: 14px; line-height: 1.65; white-space: pre-line; }
 .options { display: flex; flex-direction: column; gap: 5px; }
 .option { display: flex; align-items: flex-start; gap: 10px; padding: 9px 12px; border: 1px solid var(--border); border-radius: var(--radius); cursor: pointer; transition: all 0.1s; font-size: 0.9rem; }
 .option:hover { border-color: var(--accent); background: rgba(108,140,255,0.04); }
@@ -223,7 +223,7 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   <div class="stat stat-correct"><span class="stat-value" id="correct-count">0</span><span class="stat-label">Correct</span></div>
   <div class="stat stat-incorrect"><span class="stat-value" id="incorrect-count">0</span><span class="stat-label">Wrong</span></div>
   <div class="stat"><span class="stat-value" id="answered-count">0</span><span class="stat-label">Done</span></div>
-  <div class="stat"><span class="stat-value" id="total-count">794</span><span class="stat-label">Total</span></div>
+  <div class="stat"><span class="stat-value" id="total-count">1528</span><span class="stat-label">Total</span></div>
   <div class="stat"><span class="stat-value" id="pct">0%</span><span class="stat-label">Score</span></div>
   <div class="progress-bar"><div class="progress-fill correct" id="progress-correct" style="width:0%"></div><div class="progress-fill incorrect" id="progress-incorrect" style="width:0%"></div></div>
 </div>
@@ -340,17 +340,38 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
     <div class="step-num">2</div>
     <div>
       <h2>Read the primary sources in full</h2>
-      <p>Then read each of these foundational documents <strong>in their entirety</strong>. The exam leans hardest on the EU AI Act and GDPR, but every one of these shows up:</p>
+      <p>Then read each of these foundational documents <strong>in their entirety</strong>. The exam leans hardest on the EU AI Act and GDPR, but every one of these shows up. All are free unless marked.</p>
       <ul class="guide-links">
+        <li><strong>EU law</strong></li>
         <li><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener">EU AI Act — Regulation (EU) 2024/1689</a></li>
-        <li><a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">GDPR — Regulation (EU) 2016/679</a></li>
-        <li><a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf" target="_blank" rel="noopener">NIST AI Risk Management Framework (AI 100-1)</a></li>
-        <li><a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf" target="_blank" rel="noopener">NIST Generative AI Profile (AI 600-1)</a></li>
-        <li><a href="https://oecd.ai/en/ai-principles" target="_blank" rel="noopener">OECD AI Principles</a></li>
-        <li><a href="https://www.iso.org/standard/81230.html" target="_blank" rel="noopener">ISO/IEC 42001 — AI management systems</a></li>
-        <li><a href="https://www.iso.org/standard/74296.html" target="_blank" rel="noopener">ISO/IEC 22989 — AI concepts &amp; terminology</a></li>
-        <li><a href="https://www.iso.org/standard/77304.html" target="_blank" rel="noopener">ISO/IEC 23894 — AI risk management</a></li>
+        <li><a href="https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng" target="_blank" rel="noopener">Digital Omnibus on AI — Regulation (EU) 2026/1744</a> <span class="ref-note">moved high-risk dates to Dec 2027 / Aug 2028; the exam may still use the original dates, so know both</span></li>
         <li><a href="https://digital-strategy.ec.europa.eu/en/policies/ai-code-practice" target="_blank" rel="noopener">EU General-Purpose AI Code of Practice</a></li>
+        <li><a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">GDPR — Regulation (EU) 2016/679</a></li>
+        <li><a href="https://www.edpb.europa.eu/system/files/2024-12/edpb_opinion_202428_ai-models_en.pdf" target="_blank" rel="noopener">EDPB Opinion 28/2024 — AI models and the GDPR</a></li>
+        <li><a href="https://eur-lex.europa.eu/eli/dir/2024/2853/oj/eng" target="_blank" rel="noopener">Product Liability Directive — (EU) 2024/2853</a> <span class="ref-note">software and AI are now "products"</span></li>
+        <li><a href="https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems" target="_blank" rel="noopener">Article 50 transparency guidelines</a> (C(2026) 5054, 20 Jul 2026) · <a href="https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content" target="_blank" rel="noopener">Article 50 marking &amp; labelling code</a></li>
+        <li><a href="https://eur-lex.europa.eu/eli/C/2024/913/oj/eng" target="_blank" rel="noopener">CJEU <em>SCHUFA</em> (C-634/21)</a> <span class="ref-note">a credit score is itself an Art. 22 automated decision</span> · <a href="https://curia.europa.eu/jcms/upload/docs/application/pdf/2025-02/cp250022en.pdf" target="_blank" rel="noopener">CJEU <em>Dun &amp; Bradstreet Austria</em> (C-203/22)</a> <span class="ref-note">the Art. 15 explanation duty is a real one</span></li>
+        <li><strong>Other AI-specific laws</strong> <span class="ref-note">(new in BOK v2.1)</span></li>
+        <li><a href="https://elaw.klri.re.kr/eng_service/lawView.do?hseq=71019&amp;lang=ENG" target="_blank" rel="noopener">South Korea AI Basic Act — official English translation (KLRI)</a> <span class="ref-note">government-funded, more authoritative than CSET; CSET's is at <a href="https://cset.georgetown.edu/wp-content/uploads/t0625_south_korea_ai_law_EN.pdf" target="_blank" rel="noopener">cset.georgetown.edu</a></span></li>
+        <li><a href="https://prod.iapp.org/media/pdf/resource_center/us_state_ai_governance_legislation_tracker.pdf" target="_blank" rel="noopener">IAPP US State AI Governance Legislation Tracker (PDF)</a> <span class="ref-note">Oct 2025 — predates Colorado's 2026 repeal-and-replace</span></li>
+        <li>US statutes: <a href="https://leg.colorado.gov/bills/sb26-189" target="_blank" rel="noopener">Colorado SB 26-189</a> · <a href="https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00149F.htm" target="_blank" rel="noopener">Texas TRAIGA</a> · <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB53" target="_blank" rel="noopener">California SB 53</a> · <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB2013" target="_blank" rel="noopener">AB 2013</a> · <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB942" target="_blank" rel="noopener">SB 942</a> · <a href="https://cppa.ca.gov/regulations/ccpa_updates.html" target="_blank" rel="noopener">CPPA ADMT rules</a></li>
+        <li>More state law: <a href="https://le.utah.gov/~2025/bills/static/SB0226.html" target="_blank" rel="noopener">Utah SB 226</a> · <a href="https://legislation.nysenate.gov/pdf/bills/2025/S6953B" target="_blank" rel="noopener">New York RAISE Act</a> · <a href="https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page" target="_blank" rel="noopener">NYC Local Law 144</a> · <a href="https://ilga.gov/legislation/billstatus.asp?DocNum=3773&amp;GAID=17&amp;GA=103" target="_blank" rel="noopener">Illinois HB 3773</a></li>
+        <li><strong>AI copyright &amp; IP case law</strong> <span class="ref-note">(now decided)</span></li>
+        <li><a href="https://www.supremecourt.gov/docket/docketfiles/html/public/25-449.html" target="_blank" rel="noopener"><em>Thaler v. Perlmutter</em></a> <span class="ref-note">D.C. Circuit affirmed 18 Mar 2025; cert denied 2 Mar 2026 — no human author, no copyright</span></li>
+        <li><a href="https://www.judiciary.uk/judgments/getty-images-v-stability-ai/" target="_blank" rel="noopener"><em>Getty Images v Stability AI</em> (UK)</a> <span class="ref-note">[2025] EWHC 2863 (Ch) — training claim largely failed; appeal pending 2026</span></li>
+        <li><a href="https://www.courtlistener.com/docket/69058235/bartz-v-anthropic-pbc/" target="_blank" rel="noopener"><em>Bartz v. Anthropic</em></a> <span class="ref-note">split fair-use ruling, then a $1.5bn settlement approved 20 Jul 2026</span></li>
+        <li><a href="https://eur-lex.europa.eu/eli/dir/2019/790/oj" target="_blank" rel="noopener">EU text-and-data-mining exception, Art. 4(3) Directive (EU) 2019/790</a> <span class="ref-note">the machine-readable opt-out that rights holders use to reserve their works</span></li>
+        <li><strong>Standards &amp; frameworks</strong></li>
+        <li><a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf" target="_blank" rel="noopener">NIST AI Risk Management Framework (AI 100-1)</a></li>
+        <li><a href="https://airc.nist.gov/airmf-resources/playbook/" target="_blank" rel="noopener">NIST AI RMF Playbook</a> <span class="ref-note">suggested actions for all 72 subcategories — named in the BOK. Machine-readable and public domain: <a href="https://airc.nist.gov/docs/playbook.json" target="_blank" rel="noopener">JSON</a> · <a href="https://airc.nist.gov/docs/playbook.csv" target="_blank" rel="noopener">CSV</a> · <a href="https://airc.nist.gov/docs/AI_RMF_Playbook.pdf" target="_blank" rel="noopener">PDF</a></span></li>
+        <li><a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf" target="_blank" rel="noopener">NIST Generative AI Profile (AI 600-1)</a></li>
+        <li><a href="https://oecd.ai/en/ai-principles" target="_blank" rel="noopener">OECD AI Principles</a> · <a href="https://oecd.ai/en/classification" target="_blank" rel="noopener">OECD Framework for the Classification of AI Systems</a></li>
+        <li><a href="https://www.iso.org/standard/74296.html" target="_blank" rel="noopener">ISO/IEC 22989 — AI concepts &amp; terminology</a> <span class="ref-note"><strong>free in full</strong> — CHF 0, the one ISO standard you can just read</span></li>
+        <li><a href="https://www.iso.org/standard/81230.html" target="_blank" rel="noopener">ISO/IEC 42001 — AI management systems</a> <span class="ref-note">paid (CHF 1,880+)</span></li>
+        <li><a href="https://www.iso.org/standard/42005" target="_blank" rel="noopener">ISO/IEC 42005 — AI system impact assessment</a> <span class="ref-note">paid (CHF 181); the vault note covers it from free sources. Free orientation: <a href="https://www.bsigroup.com/en-GB/insights-and-media/media-centre/press-releases/2025/june/framework-published-to-assess-real-world-ethical-and-operational-impact-of-ai/" target="_blank" rel="noopener">BSI's launch note</a> · <a href="https://aistandardshub.org/" target="_blank" rel="noopener">AI Standards Hub</a></span></li>
+        <li><a href="https://www.iso.org/standard/77304.html" target="_blank" rel="noopener">ISO/IEC 23894 — AI risk management</a> <span class="ref-note">paid (CHF 155), and no longer named in BOK v2.1 — background only</span></li>
+        <li><strong>Agentic AI</strong> <span class="ref-note">(named in BOK v2.1)</span></li>
+        <li><a href="https://www.imda.gov.sg/-/media/imda/files/about/emerging-tech-and-research/artificial-intelligence/mgf-for-agentic-ai.pdf" target="_blank" rel="noopener">Singapore IMDA — Model AI Governance Framework for Agentic AI</a> · <a href="https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/" target="_blank" rel="noopener">OWASP Top 10 for Agentic Applications</a></li>
       </ul>
     </div>
   </div>
@@ -358,13 +379,29 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   <div class="guide-step">
     <div class="step-num">3</div>
     <div>
+      <h2>Learn IAPP's vocabulary</h2>
+      <p>The exam uses IAPP's own definitions, so skim its free glossary alongside the <a class="ilink" onclick="switchTab('flashcards')">Flashcards</a>. The global tracker gives one-page summaries of each jurisdiction's AI law. Everything in this list is free.</p>
+      <ul class="guide-links">
+        <li><a href="https://prod.iapp.org/media/pdf/resource_center/key_terms_for_ai_governance.pdf" target="_blank" rel="noopener">IAPP Key Terms for AI Governance (PDF)</a> <span class="ref-note">99 terms, including "Agentic AI"</span></li>
+        <li><a href="https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt34a8e3844fb44942/global_ai_law_policy_tracker.pdf" target="_blank" rel="noopener">IAPP Global AI Law and Policy Tracker (PDF)</a></li>
+        <li><a href="https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blteb8b5d531fd78971/IAPP-Certification_Handbook.pdf" target="_blank" rel="noopener">IAPP Certification Candidate Handbook v5.3.2</a> <span class="ref-note">effective 1 Jun 2026 — the authoritative source for exam format, scoring and the 7-day retake rule</span></li>
+        <li><a href="https://iapp.org/certify/how-to-prepare" target="_blank" rel="noopener">How to prepare</a> · <a href="https://iapp.org/certify/faqs" target="_blank" rel="noopener">Certification FAQs</a> · <a href="https://iapp.org/ai-governance" target="_blank" rel="noopener">IAPP AI Governance Center</a> <span class="ref-note">free weekly AI Governance Dashboard newsletter</span></li>
+        <li><a href="https://oliverpatel.substack.com/p/the-unofficial-aigp-resource-guide" target="_blank" rel="noopener">The Unofficial AIGP Resource Guide — Oliver Patel</a> <span class="ref-note">written by an IAPP AIGP instructor; ~100 resources mapped to the BOK</span></li>
+        <li><a href="https://ethicalogic.com/ai-governance-course/" target="_blank" rel="noopener">Ethicalogic free AI governance course</a> <span class="ref-note">28 lessons on the EU AI Act, NIST AI RMF and ISO 42001; no registration</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="guide-step">
+    <div class="step-num">4</div>
+    <div>
       <h2>Work the Mind Map section by section</h2>
       <p>Open the <a class="ilink" onclick="switchTab('mindmap')">Mind Map</a>, pick a section, and click its node. Read through that section's documentation in the drawer that opens. Then use <strong>Study Questions →</strong> and <strong>Review Flashcards →</strong> in that drawer to drill just that section in the <a class="ilink" onclick="switchTab('quiz')">Quiz</a> and <a class="ilink" onclick="switchTab('flashcards')">Flashcards</a>.</p>
     </div>
   </div>
 
   <div class="guide-step">
-    <div class="step-num">4</div>
+    <div class="step-num">5</div>
     <div>
       <h2>Turn the whole map green</h2>
       <p>Repeat that for every section. Nodes color themselves by how you're scoring — grey (untested) → red → amber → green. When the entire map is <span style="color:var(--correct);font-weight:600">lit up green</span>, you've genuinely covered the material.</p>
@@ -372,10 +409,17 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   </div>
 
   <div class="guide-step">
-    <div class="step-num">5</div>
+    <div class="step-num">6</div>
     <div>
       <h2>Take practice exams</h2>
-      <p>Finally, go to the <a class="ilink" onclick="switchTab('test')">Test</a> tab and sit a few timed exams under real conditions. <strong>Once you're consistently scoring above 85%, you're ready to take the AIGP.</strong></p>
+      <p>Finally, go to the <a class="ilink" onclick="switchTab('test')">Test</a> tab and sit a few timed exams under real conditions. The domain mix follows the blueprint, and some questions are "Select N" multi-selects with no partial credit, as on the real exam. <strong>Once you're consistently scoring above 85%, you're ready to take the AIGP.</strong></p>
+      <ul class="guide-links">
+        <li><a href="https://www.youtube.com/watch?v=cmWGspcCdkc" target="_blank" rel="noopener">What changed in BOK v2.1 — Dr. Kyle David (free video)</a> · <a href="https://epdc.wiley.com/pub/docs/2744b940-3a76-4cff-8e0a-3f025eb3e7b3" target="_blank" rel="noopener">Wiley's free v2.1 supplement</a></li>
+        <li><a href="https://github.com/jasondmacleod/aigp-study-kit" target="_blank" rel="noopener">AIGP Study Kit</a> <span class="ref-note">its free questions and recall cards are already in this app (CC BY-NC-SA 4.0)</span></li>
+        <li><a href="https://github.com/sanjaynandanj/aigp-exam-prep" target="_blank" rel="noopener">aigp-exam-prep (MarginX)</a> <span class="ref-note">MIT-licensed, mapped to BOK v2.1 — its 185 questions are already in this app, and the 85-question mock uses the same domain mix as this app. See docs/research/</span></li>
+        <li><a href="https://store.iapp.org/aigp-practice-exam-digital/" target="_blank" rel="noopener">IAPP official practice exam</a> <span class="ref-note">$60 ($50 member) — the only official practice questions beyond the 3 samples in the free Study Guide, and the best calibration check before you book</span></li>
+        <li><span class="ref-note">Avoid "braindump" sites selling real exam questions. IAPP's candidate handbook treats using them as cheating (results cancelled, certification revoked).</span></li>
+      </ul>
     </div>
   </div>
 </div>
@@ -403,6 +447,12 @@ function switchTab(tab) {
 let currentIndex = -1, filteredQuestions = [], selectedAnswer = null, answered = false;
 const QS_KEY = 'aigp-quiz-progress';
 let progress = (() => { try { return JSON.parse(localStorage.getItem(QS_KEY)) || {}; } catch(e) { return {}; } })();
+// Multi-select ("Select N") questions carry an array answer, scored all-or-nothing like the real exam
+const isMulti=q=>Array.isArray(q.answer);
+const hasLetter=(v,l)=>Array.isArray(v)?v.includes(l):v===l;
+const isRight=(q,v)=>isMulti(q)?Array.isArray(v)&&v.length===q.answer.length&&q.answer.every(l=>v.includes(l)):v===q.answer;
+const fmtAns=v=>Array.isArray(v)?v.join(', '):v;
+const selectBadge=q=>isMulti(q)?`<span>Select ${q.answer.length}</span>`:'';
 function applyFilters() {
   const d = document.getElementById('domain-filter').value;
   const diff = document.getElementById('difficulty-filter').value, st = document.getElementById('status-filter').value;
@@ -418,16 +468,23 @@ function applyFilters() {
 function updateStats() { applyFilters(); let c=0,ic=0,a=0; for(const k in progress){a++;if(progress[k].correct)c++;else ic++;} document.getElementById('correct-count').textContent=c; document.getElementById('incorrect-count').textContent=ic; document.getElementById('answered-count').textContent=a; document.getElementById('pct').textContent=(a>0?Math.round(c/a*100):0)+'%'; document.getElementById('progress-correct').style.width=(c/ALL_QUESTIONS.length*100)+'%'; document.getElementById('progress-incorrect').style.width=(ic/ALL_QUESTIONS.length*100)+'%'; }
 function showQuestion(i, reveal=false) {
   if(!filteredQuestions.length){document.getElementById('question-area').innerHTML='<div class="empty"><h2>No questions</h2></div>';return;}
-  currentIndex=Math.max(0,Math.min(i,filteredQuestions.length-1));const q=filteredQuestions[currentIndex];selectedAnswer=null;answered=reveal;const qp=progress[q.id];
+  currentIndex=Math.max(0,Math.min(i,filteredQuestions.length-1));const q=filteredQuestions[currentIndex];selectedAnswer=[];answered=reveal;const qp=progress[q.id];
   // reveal (colored options + explanation) only for an answer picked in THIS view;
   // navigating to a previously-answered question stays fresh with a ✓/✗ badge instead
   let badge='';if(qp&&!reveal){const r=qp.right??(qp.correct?1:0),w=qp.wrong??(qp.correct?0:1);badge=`<span class="tally"><span class="yes">✓ ${r}</span><span class="no">✗ ${w}</span></span>`;}
-  let meta=(q.domain?`<span>${q.domain}</span>`:'')+(q.difficulty?`<span class="diff-${q.difficulty.toLowerCase()}">${q.difficulty}</span>`:'')+`<span>#${currentIndex+1}/${filteredQuestions.length}</span>`;
-  let opts=q.options.map(o=>{let cls='option';if(reveal)cls+=o.letter===q.answer?' correct':o.letter===qp.answer?' incorrect':' dimmed';return`<div class="${cls}" onclick="pickAnswer('${o.letter}')"><div class="option-letter">${o.letter}</div><div class="option-text">${o.text}</div></div>`}).join('');
-  let expl='';if(reveal){const ok=qp.correct;expl=`<div class="explanation visible"><strong style="color:${ok?'var(--correct)':'var(--incorrect)'}">${ok?'✓':'✗'} ${ok?'Correct':'Incorrect'}</strong>${q.explanation?'<br><br>'+q.explanation:''}</div>`;}
-  document.getElementById('question-area').innerHTML=`<div class="card">${badge}<div class="q-meta">${meta}</div><div class="q-text">${q.question}</div><div class="options">${opts}</div>${expl}</div><div class="nav-row"><button onclick="prevQuestion()" ${currentIndex===0?'disabled':''}>← Prev</button><button class="primary" onclick="pickRandom()">🎲</button><button onclick="nextQuestion()">Next →</button></div><div class="kbd-hint"><span class="kbd">A</span>-<span class="kbd">D</span> answer · <span class="kbd">→</span> next · <span class="kbd">←</span> prev</div>`;
+  let meta=(q.domain?`<span>${q.domain}</span>`:'')+(q.difficulty?`<span class="diff-${q.difficulty.toLowerCase()}">${q.difficulty}</span>`:'')+selectBadge(q)+`<span>#${currentIndex+1}/${filteredQuestions.length}</span>`;
+  let opts=q.options.map(o=>{let cls='option';if(reveal)cls+=hasLetter(q.answer,o.letter)?' correct':hasLetter(qp.answer,o.letter)?' incorrect':' dimmed';return`<div class="${cls}" data-l="${o.letter}" onclick="pickAnswer('${o.letter}')"><div class="option-letter">${o.letter}</div><div class="option-text">${o.text}</div></div>`}).join('');
+  const check=isMulti(q)&&!reveal?`<button id="multi-submit" class="primary" style="margin-top:10px" disabled onclick="recordAnswer([...selectedAnswer].sort())">Check answer (0/${q.answer.length})</button>`:'';
+  let expl='';if(reveal){const ok=qp.correct;expl=`<div class="explanation visible"><strong style="color:${ok?'var(--correct)':'var(--incorrect)'}">${ok?'✓':'✗'} ${ok?'Correct':'Incorrect'}</strong>${isMulti(q)&&!ok?` — correct: <b>${fmtAns(q.answer)}</b>`:''}${q.explanation?'<br><br>'+q.explanation:''}</div>`;}
+  const last=q.options[q.options.length-1].letter;
+  document.getElementById('question-area').innerHTML=`<div class="card">${badge}<div class="q-meta">${meta}</div><div class="q-text">${q.question}</div><div class="options">${opts}</div>${check}${expl}</div><div class="nav-row"><button onclick="prevQuestion()" ${currentIndex===0?'disabled':''}>← Prev</button><button class="primary" onclick="pickRandom()">🎲</button><button onclick="nextQuestion()">Next →</button></div><div class="kbd-hint"><span class="kbd">A</span>-<span class="kbd">${last}</span> ${isMulti(q)?'select · <span class="kbd">Enter</span> check':'answer'} · <span class="kbd">→</span> next · <span class="kbd">←</span> prev</div>`;
 }
-function pickAnswer(l){if(answered)return;const q=filteredQuestions[currentIndex];answered=true;const correct=l===q.answer;const prev=progress[q.id];const r=(prev?(prev.right??(prev.correct?1:0)):0)+(correct?1:0);const w=(prev?(prev.wrong??(prev.correct?0:1)):0)+(correct?0:1);progress[q.id]={answer:l,correct,timestamp:Date.now(),right:r,wrong:w};localStorage.setItem(QS_KEY,JSON.stringify(progress));updateStats();showQuestion(currentIndex,true);}
+function pickAnswer(l){if(answered)return;const q=filteredQuestions[currentIndex];
+  if(isMulti(q)){const i=selectedAnswer.indexOf(l);i<0?selectedAnswer.push(l):selectedAnswer.splice(i,1);
+    document.querySelectorAll('#question-area .option').forEach(el=>el.classList.toggle('selected',selectedAnswer.includes(el.dataset.l)));
+    const b=document.getElementById('multi-submit');b.disabled=selectedAnswer.length!==q.answer.length;b.textContent=`Check answer (${selectedAnswer.length}/${q.answer.length})`;return;}
+  recordAnswer(l);}
+function recordAnswer(l){const q=filteredQuestions[currentIndex];answered=true;const correct=isRight(q,l);const prev=progress[q.id];const r=(prev?(prev.right??(prev.correct?1:0)):0)+(correct?1:0);const w=(prev?(prev.wrong??(prev.correct?0:1)):0)+(correct?0:1);progress[q.id]={answer:l,correct,timestamp:Date.now(),right:r,wrong:w};localStorage.setItem(QS_KEY,JSON.stringify(progress));updateStats();showQuestion(currentIndex,true);}
 function nextQuestion(){if(currentIndex<filteredQuestions.length-1)showQuestion(currentIndex+1);}
 function prevQuestion(){if(currentIndex>0)showQuestion(currentIndex-1);}
 function pickRandom(){applyFilters();if(filteredQuestions.length)showQuestion(Math.floor(Math.random()*filteredQuestions.length));}
@@ -727,9 +784,12 @@ function clearFCNode() {
 const TEST_KEY='aigp-test-history';
 const QUESTION_BY_ID=Object.fromEntries(ALL_QUESTIONS.map(q=>[q.id,q]));
 const TEST_MODES={
-  full:    {label:'Full Exam',     limitMs:3*60*60*1000, mix:{Easy:25,Medium:25,Hard:25,Painful:25}},
-  practice:{label:'Practice Quiz', limitMs:1*60*60*1000, mix:{Easy:6, Medium:6, Hard:6, Painful:7}},
+  full:    {label:'Full Exam',     limitMs:3*60*60*1000, n:100},
+  practice:{label:'Practice Quiz', limitMs:1*60*60*1000, n:25},
 };
+// BOK v2.1 blueprint midpoints (16-20 / 19-23 / 21-25 / 21-25 scored questions)
+const DOMAIN_WEIGHTS={'Domain I':18,'Domain II':21,'Domain III':23,'Domain IV':23};
+const TIERS=['Easy','Medium','Hard','Painful'];
 let testView='menu';   // 'menu' | 'exam' | 'review'
 let exam=null;         // active attempt in memory
 let reviewIdx=null, reviewQ=0;
@@ -739,7 +799,16 @@ function saveTestHistory(h){localStorage.setItem(TEST_KEY,JSON.stringify(h));}
 function fmtClock(ms){ms=Math.max(0,ms);const s=Math.floor(ms/1000),h=Math.floor(s/3600),m=Math.floor(s%3600/60),ss=s%60;return (h?h+':'+String(m).padStart(2,'0'):''+m)+':'+String(ss).padStart(2,'0');}
 function fmtDate(ts){const d=new Date(ts);return d.toLocaleDateString(undefined,{month:'short',day:'numeric'})+' '+d.toLocaleTimeString(undefined,{hour:'numeric',minute:'2-digit'});}
 function sampleN(pool,n){const a=[...pool],out=[];for(let i=0;i<n&&a.length;i++)out.push(a.splice(Math.floor(Math.random()*a.length),1)[0]);return out;}
-function buildExamQuestions(mix){let out=[];['Easy','Medium','Hard','Painful'].forEach(d=>{out=out.concat(sampleN(ALL_QUESTIONS.filter(q=>q.difficulty===d),mix[d]));});return out;}
+function buildExamQuestions(n){
+  // split n across domains by blueprint weight (largest remainder), then evenly across difficulty tiers
+  const doms=Object.keys(DOMAIN_WEIGHTS),tot=doms.reduce((s,d)=>s+DOMAIN_WEIGHTS[d],0);
+  const raw=doms.map(d=>n*DOMAIN_WEIGHTS[d]/tot),cnt=raw.map(Math.floor);
+  doms.map((_,i)=>i).sort((a,b)=>(raw[b]-cnt[b])-(raw[a]-cnt[a])).slice(0,n-cnt.reduce((s,c)=>s+c,0)).forEach(i=>cnt[i]++);
+  let out=[];
+  // ponytail: assumes every domain×tier pool holds its share (smallest is ~10); top up from the domain if pools ever run short
+  doms.forEach((d,i)=>TIERS.forEach((t,j)=>{out=out.concat(sampleN(ALL_QUESTIONS.filter(q=>q.domain===d&&q.difficulty===t),Math.floor(cnt[i]/4)+(j<cnt[i]%4?1:0)));}));
+  return out.sort((a,b)=>TIERS.indexOf(a.difficulty)-TIERS.indexOf(b.difficulty));
+}
 
 function renderTest(){renderHistory();if(testView==='exam')renderExam();else if(testView==='review')renderReview();else renderMenu();}
 
@@ -754,14 +823,14 @@ function renderMenu(){
     <h2 style="margin-bottom:4px">Choose a test</h2>
     <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:6px">No answer feedback while the test is running — you only see how many you've answered and how many are left. Questions run easy → medium → hard → painful. The clock keeps running if you switch tabs.</p>
     <div class="mode-cards">
-      <div class="mode-card" onclick="startExam('full')"><h2>Full Exam</h2><div class="mc-spec">100 questions · 3 hours</div><div class="mc-desc">25 easy, 25 medium, 25 hard, 25 painful — the full simulated exam.</div></div>
-      <div class="mode-card" onclick="startExam('practice')"><h2>Practice Quiz</h2><div class="mc-spec">25 questions · 1 hour</div><div class="mc-desc">6 easy, 6 medium, 6 hard, 7 painful — a shorter timed warm-up.</div></div>
+      <div class="mode-card" onclick="startExam('full')"><h2>Full Exam</h2><div class="mc-spec">100 questions · 3 hours</div><div class="mc-desc">Domains weighted like the real blueprint (21 / 25 / 27 / 27), each spread evenly across easy → painful.</div></div>
+      <div class="mode-card" onclick="startExam('practice')"><h2>Practice Quiz</h2><div class="mc-spec">25 questions · 1 hour</div><div class="mc-desc">The same blueprint weighting (5 / 6 / 7 / 7) — a shorter timed warm-up.</div></div>
     </div>`;
 }
 
 function startExam(key){
   const m=TEST_MODES[key];
-  exam={mode:m.label,limitMs:m.limitMs,startTime:Date.now(),questions:buildExamQuestions(m.mix),answers:{},index:0,timerId:null};
+  exam={mode:m.label,limitMs:m.limitMs,startTime:Date.now(),questions:buildExamQuestions(m.n),answers:{},index:0,timerId:null};
   testView='exam';
   exam.timerId=setInterval(tickTest,1000);
   renderExam();
@@ -777,8 +846,8 @@ function renderExam(){
   if(!exam)return;
   const q=exam.questions[exam.index],n=exam.questions.length,ans=Object.keys(exam.answers).length;
   const remaining=exam.limitMs-(Date.now()-exam.startTime);
-  const meta=(q.domain?`<span>${q.domain}</span>`:'')+(q.difficulty?`<span class="diff-${q.difficulty.toLowerCase()}">${q.difficulty}</span>`:'')+`<span>Question ${exam.index+1} of ${n}</span>`;
-  const opts=q.options.map(o=>`<div class="option${exam.answers[q.id]===o.letter?' selected':''}" onclick="answerExam('${o.letter}')"><div class="option-letter">${o.letter}</div><div class="option-text">${o.text}</div></div>`).join('');
+  const meta=(q.domain?`<span>${q.domain}</span>`:'')+(q.difficulty?`<span class="diff-${q.difficulty.toLowerCase()}">${q.difficulty}</span>`:'')+selectBadge(q)+`<span>Question ${exam.index+1} of ${n}</span>`;
+  const opts=q.options.map(o=>`<div class="option${hasLetter(exam.answers[q.id],o.letter)?' selected':''}" onclick="answerExam('${o.letter}')"><div class="option-letter">${o.letter}</div><div class="option-text">${o.text}</div></div>`).join('');
   const grid=exam.questions.map((qq,i)=>`<div class="qcell ${exam.answers[qq.id]?'answered':''} ${i===exam.index?'current':''}" onclick="gotoExam(${i})">${i+1}</div>`).join('');
   document.getElementById('test-main').innerHTML=`
     <div class="controls" style="align-items:center">
@@ -789,9 +858,12 @@ function renderExam(){
     <div class="card"><div class="q-meta">${meta}</div><div class="q-text">${q.question}</div><div class="options">${opts}</div></div>
     <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:14px"><button onclick="prevExam()" ${exam.index===0?'disabled':''}>← Prev</button><button onclick="nextExam()" ${exam.index===n-1?'disabled':''}>Next →</button></div>
     <div class="qgrid">${grid}</div>
-    <div class="kbd-hint"><span class="kbd">A</span>-<span class="kbd">D</span> answer · <span class="kbd">→</span> next · <span class="kbd">←</span> prev · click a number to jump</div>`;
+    <div class="kbd-hint"><span class="kbd">A</span>-<span class="kbd">${q.options[q.options.length-1].letter}</span> ${isMulti(q)?'select':'answer'} · <span class="kbd">→</span> next · <span class="kbd">←</span> prev · click a number to jump</div>`;
 }
-function answerExam(l){if(!exam)return;exam.answers[exam.questions[exam.index].id]=l;renderExam();}
+function answerExam(l){if(!exam)return;const q=exam.questions[exam.index];
+  if(isMulti(q)){const a=exam.answers[q.id]||[],i=a.indexOf(l);i<0?a.push(l):a.splice(i,1);if(a.length)exam.answers[q.id]=a.sort();else delete exam.answers[q.id];}
+  else exam.answers[q.id]=l;
+  renderExam();}
 function prevExam(){if(exam&&exam.index>0){exam.index--;renderExam();}}
 function nextExam(){if(exam&&exam.index<exam.questions.length-1){exam.index++;renderExam();}}
 function gotoExam(i){if(exam){exam.index=i;renderExam();}}
@@ -799,7 +871,7 @@ function submitExam(auto){
   if(!exam)return;
   if(!auto){const un=exam.questions.length-Object.keys(exam.answers).length;if(!confirm(`Submit ${exam.mode}? ${un} question${un===1?'':'s'} still unanswered.`))return;}
   clearInterval(exam.timerId);
-  const items=exam.questions.map(q=>{const chosen=exam.answers[q.id]||null;return {qid:q.id,chosen,correct:chosen===q.answer};});
+  const items=exam.questions.map(q=>{const chosen=exam.answers[q.id]||null;return {qid:q.id,chosen,correct:isRight(q,chosen)};});
   const correct=items.filter(it=>it.correct).length;
   const h=getTestHistory();h.unshift({ts:Date.now(),mode:exam.mode,total:items.length,correct,timeUsedMs:Date.now()-exam.startTime,auto:!!auto,items});saveTestHistory(h);
   exam=null;reviewIdx=0;reviewQ=0;testView='review';renderTest();
@@ -813,9 +885,9 @@ function renderReview(){
   const it=a.items[reviewQ],q=QUESTION_BY_ID[it.qid];
   let detail='<div class="card"><div class="q-text">This question is no longer in the question bank.</div></div>';
   if(q){
-    const meta=(q.domain?`<span>${q.domain}</span>`:'')+(q.difficulty?`<span class="diff-${q.difficulty.toLowerCase()}">${q.difficulty}</span>`:'')+`<span>Question ${reviewQ+1} of ${a.total}</span>`;
-    const opts=q.options.map(o=>{let cls='option';if(o.letter===q.answer)cls+=' correct';else if(o.letter===it.chosen)cls+=' incorrect';else cls+=' dimmed';return `<div class="${cls}"><div class="option-letter">${o.letter}</div><div class="option-text">${o.text}</div></div>`;}).join('');
-    detail=`<div class="card"><div class="q-meta">${meta}</div><div class="q-text">${q.question}</div><div class="options">${opts}</div><div class="explanation visible"><strong style="color:${it.correct?'var(--correct)':'var(--incorrect)'}">${it.correct?'✓ Correct':'✗ Incorrect'}</strong> — ${it.chosen?`you answered <b>${it.chosen}</b>`:'<b>not answered</b>'}, correct answer <b>${q.answer}</b>.${q.explanation?'<br><br>'+q.explanation:''}</div></div>`;
+    const meta=(q.domain?`<span>${q.domain}</span>`:'')+(q.difficulty?`<span class="diff-${q.difficulty.toLowerCase()}">${q.difficulty}</span>`:'')+selectBadge(q)+`<span>Question ${reviewQ+1} of ${a.total}</span>`;
+    const opts=q.options.map(o=>{let cls='option';if(hasLetter(q.answer,o.letter))cls+=' correct';else if(hasLetter(it.chosen,o.letter))cls+=' incorrect';else cls+=' dimmed';return `<div class="${cls}"><div class="option-letter">${o.letter}</div><div class="option-text">${o.text}</div></div>`;}).join('');
+    detail=`<div class="card"><div class="q-meta">${meta}</div><div class="q-text">${q.question}</div><div class="options">${opts}</div><div class="explanation visible"><strong style="color:${it.correct?'var(--correct)':'var(--incorrect)'}">${it.correct?'✓ Correct':'✗ Incorrect'}</strong> — ${it.chosen?`you answered <b>${fmtAns(it.chosen)}</b>`:'<b>not answered</b>'}, correct answer <b>${fmtAns(q.answer)}</b>.${q.explanation?'<br><br>'+q.explanation:''}</div></div>`;
   }
   document.getElementById('test-main').innerHTML=`
     <div class="controls" style="align-items:center">
@@ -839,9 +911,10 @@ document.addEventListener('keydown', e => {
   const qi=!document.getElementById('panel-quiz').classList.contains('hidden');
   const fi=!document.getElementById('panel-flashcards').classList.contains('hidden');
   const ti=!document.getElementById('panel-test').classList.contains('hidden');
-  if(ti&&exam&&testView==='exam'){if(['A','B','C','D'].includes(k)){const q=exam.questions[exam.index];if(q.options.some(o=>o.letter===k)){e.preventDefault();answerExam(k);}}if(k==='ARROWRIGHT'){e.preventDefault();nextExam();}if(k==='ARROWLEFT'){e.preventDefault();prevExam();}return;}
+  if(ti&&exam&&testView==='exam'){if(/^[A-F]$/.test(k)){const q=exam.questions[exam.index];if(q.options.some(o=>o.letter===k)){e.preventDefault();answerExam(k);}}if(k==='ARROWRIGHT'){e.preventDefault();nextExam();}if(k==='ARROWLEFT'){e.preventDefault();prevExam();}return;}
   if(fi){if(k==='ARROWLEFT'){e.preventDefault();prevCard();}if(k==='ARROWRIGHT'){e.preventDefault();nextCard();}if(k===' '){e.preventDefault();flipCard();}if(k==='R'){e.preventDefault();randomCard();}if(k==='1'){e.preventDefault();rateCard(false);}if(k==='2'){e.preventDefault();rateCard(true);}return;}
-  if(qi){if(['A','B','C','D'].includes(k)&&!answered&&filteredQuestions.length>0){const q=filteredQuestions[currentIndex];if(q.options.some(o=>o.letter===k))pickAnswer(k);}if(k==='ARROWRIGHT'){e.preventDefault();nextQuestion();}if(k==='ARROWLEFT'){e.preventDefault();prevQuestion();}if(k==='R'){e.preventDefault();pickRandom();}if(k==='ENTER'&&answered){e.preventDefault();nextQuestion();}}
+  if(qi){if(/^[A-F]$/.test(k)&&!answered&&filteredQuestions.length>0){const q=filteredQuestions[currentIndex];if(q.options.some(o=>o.letter===k))pickAnswer(k);}
+    if(k==='ENTER'&&!answered&&filteredQuestions.length>0){const q=filteredQuestions[currentIndex];if(isMulti(q)&&selectedAnswer.length===q.answer.length){e.preventDefault();recordAnswer([...selectedAnswer].sort());return;}}if(k==='ARROWRIGHT'){e.preventDefault();nextQuestion();}if(k==='ARROWLEFT'){e.preventDefault();prevQuestion();}if(k==='R'){e.preventDefault();pickRandom();}if(k==='ENTER'&&answered){e.preventDefault();nextQuestion();}}
 });
 
 // Flashcard placement (domain/chapter) from the term's mind map ancestry
