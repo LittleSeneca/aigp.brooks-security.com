@@ -10336,32 +10336,6 @@ const ALL_QUESTIONS = [
     "explanation": "Monitoring involves ongoing observation of AI system performance, accuracy, fairness, impacts, and behavior after deployment to detect issues like model drift, emerging bias, or unexpected behaviors requiring intervention. to detect issues like model drift, emerging bias, or unexpected behaviors."
   },
   {
-    "id": "q-396",
-    "domain": "Domain III",
-    "difficulty": "Medium",
-    "question": "What should be monitored in deployed AI systems?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Tracking only the total number of API calls and system usage volume statistics over time"
-      },
-      {
-        "letter": "B",
-        "text": "Performance metrics, fairness across groups, model drift, user feedback, incidents, and real-world impacts"
-      },
-      {
-        "letter": "C",
-        "text": "Watching only the error rate and exception count recorded in application log files daily"
-      },
-      {
-        "letter": "D",
-        "text": "Monitoring only whether the server infrastructure remains online and available to all users"
-      }
-    ],
-    "answer": "B",
-    "explanation": "Comprehensive monitoring includes performance metrics (accuracy, latency), fairness metrics across demographic groups, model drift detection, user feedback, incident tracking, and real- world impacts. 94"
-  },
-  {
     "id": "q-397",
     "domain": "Domain III",
     "difficulty": "Hard",

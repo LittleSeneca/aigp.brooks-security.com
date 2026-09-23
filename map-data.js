@@ -6480,16 +6480,6 @@ const QUESTION_TAGS = {
 "t_lifecycle",
 "t_monitoring"
 ],
-"q-396": [
-"ch10",
-"d3",
-"kt259",
-"kt62",
-"kt91",
-"t_bias",
-"t_incident",
-"t_monitoring"
-],
 "q-397": [
 "ch10",
 "d3",
