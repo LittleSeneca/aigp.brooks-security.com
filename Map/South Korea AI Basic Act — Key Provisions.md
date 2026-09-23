@@ -391,6 +391,7 @@ Korea has no four-tier pyramid. Duties attach to **categories** of AI, and one s
 
 ## Sources
 
+- **Official English translation of the Act, Korea Legislation Research Institute (KLRI)** — government-funded, and the most authoritative English text available: https://elaw.klri.re.kr/eng_service/lawView.do?hseq=71019&lang=ENG
 - CSET English translation of the Act as enacted (translated 9 Jul 2025): https://cset.georgetown.edu/wp-content/uploads/t0625_south_korea_ai_law_EN.pdf
 - Official Korean text of the Act, current version (Act No. 21311, in force 21 Jul 2026), Korean Law Information Center: https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=282791&chrClsCd=010202&urlMode=lsInfoP&efYd=20260721&ancYnChk=0
 - Official Korean text of the Enforcement Decree, current version: https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=288781&chrClsCd=010202&urlMode=lsInfoP&efYd=20260820&ancYnChk=0
