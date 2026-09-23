@@ -94,3 +94,40 @@ treats using real exam questions as cheating: results cancelled, certification r
 | `KirthanaRupanagudi/AIGP-PREP` | MIT — retain "Copyright (c) 2026 Keerthana" |
 | `0brains/0pies` | "Required Notice: Copyright 2026 0brains"; non-commercial use only |
 | `jasondmacleod/aigp-study-kit` (in use) | CC BY-NC-SA 4.0 — attribution + share-alike, non-commercial |
+
+## Answer-length bias — measured at import time (Sept 2026)
+
+The v2.1 update spec deferred rebalancing answer-length bias to a follow-up pass and
+required only that newly *authored* items stay under 35% "longest option is correct".
+This is the baseline that follow-up pass needs. Measured over the whole bank after the
+`aigp-exam-prep` import (1,528 questions; multi-select items excluded):
+
+| Segment | n | Longest option is correct | Median margin over the runner-up |
+|---|---|---|---|
+| Original bank (q-1–q-844) | 841 | 64.8% | 20 chars |
+| AIGP Study Kit import | 341 | 75.1% | 35 chars |
+| Authored for v2.1 | 161 | **21.7%** | 1 char |
+| **`aigp-exam-prep` import** | 185 | **89.2%** | **85 chars** |
+| Whole bank | 1,528 | 65.5% | 24 chars |
+
+The authored v2.1 items met the <35% bar comfortably (21.7%, median margin 1 char).
+The `aigp-exam-prep` set is the most exploitable cohort in the bank: 143 of its 165
+exploitable items have the correct option longer than the runner-up by **26 or more
+characters**, because its distractors are short fragments while the correct option is a
+full sentence. A student can score ~89% on that subset by picking the longest option
+without reading the stem. The questions' explanations are sound and worth reading, so
+the items still carry learning value — but they do not measure knowledge, and drilling
+them teaches a pattern the real exam does not reward.
+
+**Recommended remediation (not done):** rewrite the short distractors in the 185
+imported items into substantive full-sentence alternatives using the four
+distractor-improvement patterns, which is roughly 500 distractor rewrites. This should
+be folded into the deferred rebalancing pass rather than done piecemeal.
+
+**Not a defect:** the "2 August 2026" and "Colorado SB 24-205" greps in the acceptance
+criteria return 11 and 2 hits respectively, all in pre-existing questions. Each is the
+deliberate "as enacted vs as amended" teaching — the superseded date appears only as a
+distractor or inside an explicitly historical framing, never asserted as current law
+(e.g. q-910's correct answer is 2 December 2027 and names 2 August 2026 as the
+pre-Omnibus date; q-862's correct answer is that SB 24-205 never took effect).
+

@@ -6,7 +6,7 @@ Self-contained study environment for the IAPP Artificial Intelligence Governance
 
 Open [study.html](study.html) in a browser. No server is needed: everything is vendored and works offline. There are five tabs:
 
-- **Quiz**: a bank of 1,344 questions with domain, difficulty and status filters. 25 are "Select N" multi-select questions, scored all-or-nothing like the real exam. Progress saves to localStorage.
+- **Quiz**: a bank of 1,528 questions with domain, difficulty and status filters. 25 are "Select N" multi-select questions, scored all-or-nothing like the real exam. Progress saves to localStorage.
 - **Flashcards**: 388 key terms with domain, area and status filters, and ✓/✗ mastery rating.
 - **Test**: timed Full Exam (100 questions, 3 hours) and Practice Quiz (25 questions, 1 hour).
   - Questions are drawn to the blueprint's domain weights (about 21/25/27/27 per 100), with each domain spread evenly across difficulty tiers.
@@ -58,6 +58,10 @@ Most content is original to this project. The exceptions:
   - Some were lightly corrected on import for accuracy and currency.
   - `Map/Framework Recall Cards — AIGP Study Kit.md` reproduces its recall cards.
   - These items, and any changes made to them, remain under CC BY-NC-SA 4.0: non-commercial use, with attribution and share-alike.
+- **aigp-exam-prep** by MarginX ([github.com/sanjaynandanj/aigp-exam-prep](https://github.com/sanjaynandanj/aigp-exam-prep)), licensed MIT.
+  - 185 of the questions come from it. Each carries a `source` field naming its origin.
+  - They are imported as written, apart from area, difficulty and ID assignment; explanations were added to the 20 baseline-diagnostic items, which shipped without one.
+  - MIT requires the copyright and permission notice to travel with the material: "Copyright (c) 2026 MarginX. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction... The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software." The notice is repeated in each item's `source` field.
 - **NIST AI RMF Playbook** (a US government work, public domain). `Map/NIST AI RMF Playbook — Structured Reference.md` is generated from NIST's published JSON.
 - **IAPP materials** (the BOK, the study guide, and the Key Terms for AI Governance glossary) are © IAPP. They are summarized and linked here, not copied. Flashcard definitions were checked against IAPP's glossary for meaning but are written in this project's own words.
 
