@@ -21,9 +21,9 @@ related:
 ## Performance Indicators
 
 - **Assess readiness and prepare for release into production** (e.g., creating the model card and satisfying conformity requirements)
-- **Understand the differences in AI deployment options** (e.g., cloud vs. on-premise vs. edge; using the AI model as-is or with fine-tuning, RAG, or other techniques)
-- **Apply policies, procedures, best practices, and ethical considerations** to the deployment of an AI model (e.g., data governance, risk management, issue management, user training)
-- **Conduct continuous monitoring** of the AI model and establish a regular schedule for maintenance, updates, and retraining
+- **Understand the differences in AI deployment options** (e.g., cloud vs. on-premise vs. edge; using the AI model as-is or with fine-tuning, RAG, **agentic architectures**, or other techniques — see [[Agentic AI Governance]])
+- **Apply policies, procedures, best practices, and ethical considerations** to the deployment of an AI system (e.g., data governance, risk management, issue management, user training)
+- **Conduct continuous monitoring** of the AI model and system and establish a regular schedule for maintenance, updates, and retraining
 
 ---
 

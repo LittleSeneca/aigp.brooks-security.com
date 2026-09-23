@@ -21,8 +21,9 @@ related:
 
 - Establish and follow the **requirements for data governance** (assess and document lawful rights to collect and use data; assess data quality, quantity, integrity, and fit-for-purpose).
 - Establish and document **data lineage and provenance**.
-- Plan and perform **training and testing of the AI model** (unit, integration, validation, performance, security, bias, and interpretability).
-- Identify and manage **issues and risks during training and testing** of the AI model.
+- Plan and perform **training and testing of the AI model and system** (unit, integration, validation, performance, security, bias, and interpretability).
+- Identify and manage **issues and risks during training and testing** of the AI model and system.
+- **Document the training and testing process** (to validate results, establish compliance, and manage risks).
 
 ---
 

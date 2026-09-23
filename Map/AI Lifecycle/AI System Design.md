@@ -21,16 +21,16 @@ related:
 
 - **Document the designing and building process** (for example, to establish compliance and manage risks).
 - **Document the training and testing process** (for example, to validate results, establish compliance and manage risks).
-- **Define the business context and use case** of the AI model.
+- **Define the business context and use case** of the AI system.
 - **Understand the context of the AI use case** (for example, business objectives, performance requirements, data availability, ethical considerations and workforce readiness).
-- **Perform or review an impact assessment** on the AI model.
-- **Apply the policies, procedures, best practices and ethical considerations** to designing and building the AI model (for example, purpose of AI, requirements gathering, architecture and model selection, human oversight, data analysis, metric and threshold evaluation, stakeholder engagement and feedback and operational controls).
-- **Identify and manage the internal and external risks and contributing factors** related to designing and building the AI model (for example, using probability/severity harms matrix, using a risk mitigation hierarchy, stakeholder mapping, use case evaluation, benchmarking, pre-deployment pilots and testing).
-- **Identify and understand issues that are unique to a company deploying its own proprietary AI model** (for example, increased obligations and higher potential liability).
+- **Perform or review an impact assessment** on the AI system.
+- **Apply the policies, procedures, best practices and ethical considerations** to designing and building the AI system (for example, purpose of AI, requirements gathering, architecture and model selection, human oversight, data analysis, metric and threshold evaluation, stakeholder engagement and feedback and operational controls).
+- **Identify and manage the internal and external risks and contributing factors** related to designing and building the AI model and system (for example, using probability/severity harms matrix, using a risk mitigation hierarchy, stakeholder mapping, use case evaluation, benchmarking, pre-deployment pilots and testing).
+- **Identify and understand the risks and opportunities unique to a company deploying its own proprietary AI model** (for example, increased obligations and higher potential liability).
 
 ---
 
-> **Note on "Applicable Laws":** The official AIGP outline includes an item to "Identify laws that apply to the AI model." This topic is addressed in depth in Chapters 4 and 5. To avoid redundancy, this area focuses on the design process itself, assuming legal compliance is addressed in parallel through proper governance channels.
+> **Note on "Applicable Laws":** BOK v2.0.1 listed "Identify laws that apply to the AI model" under III.A (and IV.B). **BOK v2.1 removed both indicators** — legal applicability is now tested through Domain II (II.A–II.C). This area focuses on the design process itself.
 
 ---
 

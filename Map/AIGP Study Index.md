@@ -3,7 +3,7 @@ tags:
  - aigp/index
  - aigp/master
 created: 2026-07-11
-updated: 2026-07-11
+updated: 2026-09-23
 related:
  - "[[Foundations Index]]"
  - "[[Legal and Regulatory Index]]"
@@ -31,8 +31,8 @@ Artificial Intelligence Governance Professional (AIGP) certification — complet
 |---------|-------|------------|
 | [[Privacy and Data Protection Law]] | Notice, consent, data minimization, controller obligations | II.A |
 | [[Sectoral and Civil Laws]] | IP, non-discrimination, consumer protection, product liability | II.B |
-| [[The EU AI Act]] | Risk classification, GPAI, enforcement, implementation | II.C |
-| [[AI Standards and Frameworks]] | OECD, NIST RMF, NIST ARIA, ISO standards | II.D |
+| [[The EU AI Act]] | AI-specific laws: EU risk classification, GPAI, enforcement, implementation | II.C |
+| [[AI Standards and Frameworks]] | OECD, NIST AI RMF + Playbook, ISO 22989/42001/42005 | II.D |
 
 ### Governing the AI Lifecycle
 | Chapter | Topic | BOK Domain |
@@ -49,8 +49,9 @@ Artificial Intelligence Governance Professional (AIGP) certification — complet
 
 | Resource | Description |
 |----------|-------------|
-| [[AIGP Body of Knowledge — Exam Blueprint]] | IAPP BOK v2.0.1 — all domains, competencies, performance indicators, question counts |
+| [[AIGP Body of Knowledge — Exam Blueprint]] | IAPP BOK v2.1 (effective 2 Feb 2026) — all domains, competencies, performance indicators, question counts, what changed from v2.0.1 |
 | [[AIGP FSG — Official Study Guide]] | IAPP official candidate guide — exam format, study tips, 3 sample questions |
+| [[Framework Recall Cards — AIGP Study Kit]] | 54 third-party recall cards (CC BY-NC-SA 4.0) by framework, incl. test-day tactics |
 
 ---
 
@@ -60,6 +61,8 @@ Artificial Intelligence Governance Professional (AIGP) certification — complet
 |----------|------|-------|---------|
 | [[EU AI Act 2024 — Key Provisions]] | Regulation | 144p | Risk tiers, high-risk requirements, GPAI, penalties (€35M/7%) |
 | [[GDPR — AI-Relevant Provisions]] | Regulation | 88p | Art 22 (automated decisions), Art 9 (special categories), Art 35 (DPIAs) |
+| [[South Korea AI Basic Act — Key Provisions]] | Statute | — | High-impact AI, generative AI labeling, domestic representative, KRW 30M fines |
+| [[US AI Laws — Federal and State]] | Statutes | — | Colorado ADMT Act, TRAIGA, CA SB 53/SB 942/CCPA ADMT rules, NYC LL 144, IL HB 3773, RAISE Act |
 
 ---
 
@@ -68,12 +71,15 @@ Artificial Intelligence Governance Professional (AIGP) certification — complet
 | Document | Type | Pages | Key For |
 |----------|------|-------|---------|
 | [[NIST AI RMF — Structured Reference]] | Framework | 48p | Govern → Map → Measure → Manage, trustworthiness |
-| [[NIST ARIA — Structured Reference]] | Evaluation | 36p | Model/Red Team/Field testing levels, metrics |
+| [[NIST AI RMF Playbook — Structured Reference]] | Guidance | 72 subcats | Suggested actions and documentation prompts per subcategory |
+| [[NIST ARIA — Structured Reference]] | Evaluation | 36p | *Background only — removed from BOK v2.1* |
 | [[NIST AI 600-1 — Structured Reference]] | Guidance | 64p | RMF profile development, gap analysis |
 | [[OECD AI Principles — Structured Reference]] | Principles | 12p | 5 principles: growth, fairness, transparency, robustness, accountability |
 | [[ISO 42001 — Structured Reference]] | Standard | 227p | AI Management System, Annex SL, certification, auditing |
 | [[ISO 22989 — Key Definitions]] | Terminology | 147p | AI system, ML, bias, robustness, explainability — ISO definitions |
-| [[ISO 23894 — AI Risk Management]] | Standard | 12p | AI-specific risk management (SAMPLE — partial) |
+| [[ISO 23894 — AI Risk Management]] | Standard | 12p | AI-specific risk management (SAMPLE — partial; not named in BOK v2.1) |
+| [[ISO 42005 — AI System Impact Assessment]] | Standard | 39p | AI system impact assessment — one of v2.1's three core ISO standards |
+| [[Agentic AI Governance]] | Guidance | — | Governing AI agents: autonomy, action-space, human checkpoints, agent red-teaming |
 | [[GPAI Code of Practice — Key Provisions]] | Guidance | 55p | GPAI obligations, systemic risk, transparency |
 
 ---

@@ -18,9 +18,9 @@ related:
 
 ## Performance Indicators
 
-- **Create and implement policies to ensure oversight and accountability across all AI lifecycle stages** (use case assessment, risk management, ethics by design, data acquisition and use, model development, training and testing, deployment and monitoring, documentation and reporting, and incident management)
-- **Evaluate and update existing data privacy and security policies for AI**
-- **Create and implement policies to manage third-party risk** (procurement, supply chain, and human resources)
+- **Create and implement policies to ensure oversight and accountability across all AI lifecycle stages** (use case assessment, risk management, ethics by design, data acquisition and use, model and system development, training and testing, deployment and monitoring, documentation and reporting, and incident management)
+- **Evaluate and update existing policies for AI** (data privacy, security, data governance, and intellectual property)
+- **Create, update, and implement policies, assessments, and contracts to manage third-party risk** (procurement, supply chain, human resources, and acceptable use)
 
 > **Assumption:** IT governance is assumed to already exist. AI governance activities take place *in addition to* IT governance activities, not in place of them.
 

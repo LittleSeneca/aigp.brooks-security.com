@@ -7,10 +7,12 @@ aliases:
  - GDPR AI Provisions
  - EU GDPR AI Articles
 created: 2026-07-11
-source: Regulation (EU) 2016/679 (General Data Protection Regulation)
+updated: 2026-09-23
+source: "Regulation (EU) 2016/679 (General Data Protection Regulation); EDPB Opinion 28/2024 (17 Dec 2024); CJEU C-634/21 SCHUFA (7 Dec 2023) and C-203/22 Dun & Bradstreet Austria (27 Feb 2025); EDPB draft Guidelines 02/2026 and 03/2026 (July 2026)"
 wikilinks:
  - "[[AIGP Body of Knowledge — Exam Blueprint]]"
  - "[[Privacy and Data Protection Law]]"
+ - "[[EU AI Act 2024 — Key Provisions]]"
 ---
 
 # GDPR — AI-Relevant Provisions
@@ -35,6 +37,12 @@ wikilinks:
 | [[#Art 28 — Processor Obligations]] | Processor contracts | AI-as-a-service, cloud AI providers |
 | [[#Art 35 — DPIA]] | Data Protection Impact Assessment | Mandatory for high-risk AI systems |
 | [[#Arts 44–49 — Cross-Border Transfers]] | International data transfers | AI cloud infrastructure, global model deployment |
+| [[#Anonymous AI Models and Unlawful Training (EDPB Opinion 28/2024)]] | When a model holds personal data | Whether GDPR still applies to a trained model |
+| [[#Pending — GDPR Changes Proposed in the Digital Omnibus]] | Proposals only (not law) | Narrower personal-data definition, AI legitimate interest |
+| [[#EDPB and CJEU Developments 2023–2026 — Quick Reference]] | Cases and guidance | Opinion 28/2024, SCHUFA, Dun & Bradstreet Austria, 2026 drafts |
+
+> [!note] BOK v2.1 (II.A) framing
+> The first II.A indicator now reads "transparency, choice, **lawful basis** and purpose limitation" (v2.0.1 said "notice, choice, consent"). The controller-obligations indicator now names **automated decision-making** explicitly. Art 6 lawful bases and Art 22 are therefore squarely in scope.
 
 ---
 
@@ -87,6 +95,30 @@ Art 6(4): Further processing for a new purpose requires a **compatibility assess
 - **Contract necessity** is narrowly interpreted; AI profiling for marketing purposes generally does not qualify.
 - **Repurposing data** (Art 6(4)): Training a new AI model on data originally collected for a different purpose requires careful compatibility analysis.
 
+### EDPB Opinion 28/2024 — Legitimate Interest for AI Models
+
+Adopted **17 December 2024** under Art 64(2), at the request of the Irish supervisory authority. It answers four questions: (1) when a model is anonymous, (2)–(3) how to rely on legitimate interest in **development** and in **deployment**, and (4) what unlawful development means for later use. There is **no hierarchy** among the Art 6 bases; the controller must pick and justify one.
+
+| Step | Test | AI-specific points from the Opinion |
+|:-----|:-----|:------------------------------------|
+| **1. Legitimate interest** | The interest must be lawful, clearly and precisely articulated, and **real and present** (not speculative) | Examples: developing a conversational agent to assist users (development); improving threat detection in an information system (deployment) |
+| **2. Necessity** | The processing must actually achieve the interest, and no less intrusive way must exist | Supervisory authorities look at the *amount* of personal data against the purpose (data minimisation) |
+| **3. Balancing** | The interest must not be overridden by the data subjects' interests, rights and freedoms | Risks differ between development and deployment. **Reasonable expectations** weigh heavily: whether the data was public, the relationship with the controller, the nature of the service, the collection context and source (including the site's privacy settings), possible further uses of the model, and whether people even know their data is online |
+
+- **Mitigating measures** can tip a failing balance, but only measures that go *beyond* what the GDPR already requires. Examples cover the development phase (including web scraping) and the deployment phase: technical measures, easier exercise of rights, extra transparency.
+- The Opinion is guidance for supervisory authorities' **case-by-case** assessments; it does not pre-approve any model.
+
+### Draft EDPB Guidelines 03/2026 — Web Scraping for Generative AI (status: consultation draft)
+
+Adopted **7 July 2026** as version 1.0 for **public consultation until 30 October 2026**. It covers private entities scraping internet sources, directly or through contractors, to train generative AI.
+
+- The GDPR applies whenever scraping involves personal data (collection, storage, organisation, retrieval). Roles (controller, joint controller, processor) are assessed case by case.
+- **Consent** "would most probably not be" an applicable basis for large-scale indirect collection. **Legitimate interest** is the basis "often used", and it must pass the three cumulative conditions above. Other Art 6 bases are generally less likely to fit.
+- **Transparency:** individual notices may be unnecessary where impossible or disproportionate (Art 14(5)(b)), depending on design.
+- **Minimisation:** consider synthetic data first, set precise collection criteria, filter out categories of data, exclude sites that structurally hold sensitive data or clearly object to scraping, and pseudonymise, anonymise or delete early.
+- **Accuracy:** scrape from reliable sources, timestamp, and validate before training.
+- **Special categories:** see Art 9 below.
+
 ---
 
 ## Art 9 — Processing of Special Categories of Personal Data
@@ -136,6 +168,13 @@ Art 9(4): Member States may introduce further conditions on genetic, biometric, 
 - **Emotion recognition AI** that infers mental/emotional state → likely triggers Art 9 concerns.
 - **Web-scraped training data** may inadvertently contain special category data; reliance on "manifestly made public" (Art 9(2)(e)) is risky and increasingly challenged.
 
+### Special Categories in AI Training — 2026 Developments
+
+- **Two locks, not one:** under draft EDPB Guidelines 03/2026, scraping that processes special category data needs **both** an Art 6 lawful basis **and** an Art 9(2) exception.
+- **Incidental data:** the EDPB suggests the CJEU's *GC and Others* (C-136/17) reasoning may cover *incidental and residual* collection, provided the controller acts within its responsibilities, powers and capabilities and has measures to prevent collection and dissemination. There is no general exemption from Art 9, and each case needs its own analysis.
+- **EU AI Act Art 4a (new, via the 2026 AI Omnibus):** gives an AI Act legal basis to process special category data *strictly* for bias detection and correction. It covers high-risk providers and, as amended, providers and deployers of other AI systems and models. The GDPR conditions apply **in addition**. The six safeguards are: no effective alternative (e.g. synthetic or anonymised data), re-use limits and pseudonymisation, strict access controls, no transfer to other parties, deletion once the bias is fixed, and an entry in the record of processing explaining why it was necessary. See [[EU AI Act 2024 — Key Provisions]] §13.
+- **Proposed, not law:** the data Omnibus would add a GDPR exception for incidental and residual special-category data in AI training. See [[#Pending — GDPR Changes Proposed in the Digital Omnibus]].
+
 ---
 
 ## Art 13 — Information to Be Provided Where Personal Data Are Collected from the Data Subject
@@ -161,7 +200,7 @@ Controllers must provide at the time of collection:
 > - **Meaningful information** about the logic involved (not the full algorithm, but a comprehensible explanation of how the system works and how it reaches decisions)
 > - **Significance and envisaged consequences** — what the decision means for the data subject in practical terms
 >
-> This is not a right to full model disclosure, but a right to *functional explainability*.
+> This is not a right to full model disclosure, but a right to *functional explainability*. The CJEU confirmed the same approach for the parallel access right in *Dun & Bradstreet Austria* (C-203/22, 2025): explain the procedure and principles actually applied, not the formula (see Art 15 below).
 
 - Privacy notices for AI products must explain profiling/automated processing in **clear, plain language**.
 - This intersects with the **EU AI Act** transparency requirements for AI systems.
@@ -219,6 +258,49 @@ Data subjects have the right to:
 - Data subjects can request the **logic of automated decisions** that affect them, including model type, input features, and relative weighting.
 - This right works alongside **Art 22** to ensure accountability for AI-driven outcomes.
 
+### CJEU: Dun & Bradstreet Austria (C-203/22, 27 February 2025)
+
+**Facts:** a mobile operator refused a €10-a-month contract after a credit assessment by Dun & Bradstreet Austria, and the customer sought to understand the score.
+
+**Holdings (Art 15(1)(h)):**
+1. For automated decision-making within Art 22(1), "meaningful information about the logic involved" means an explanation of **the procedure and principles actually applied** to the person's data to reach the result (e.g. a credit profile). It must be given concisely, transparently, intelligibly and in an easily accessible form.
+2. Handing over a **complex mathematical formula or algorithm**, or a step-by-step description of the whole process, does **not** satisfy the right, because neither is intelligible to the person (para 59). The complexity of the operations does not excuse the controller from explaining.
+3. It may be sufficiently transparent to tell the person **how far a variation in their data would have changed the result** (para 62), which is effectively a counterfactual explanation.
+4. **Trade secrets and third-party data:** the controller must give the allegedly protected information to the **supervisory authority or court**, which balances the interests and decides how much the person gets. A national rule that excludes access **as a rule** whenever trade secrets are at stake is precluded (para 75).
+
+**Governance takeaway:** design explanation capability for the actual decision path, meaning the inputs used and how they drove the outcome. "It's proprietary" is not a complete answer to an access request.
+
+---
+
+## Anonymous AI Models and Unlawful Training (EDPB Opinion 28/2024)
+
+### Is a trained model personal data? (Opinion Question 1)
+
+- AI models trained on personal data **cannot, in all cases, be considered anonymous**. Supervisory authorities assess anonymity claims **case by case**.
+- A model is anonymous only if **both** likelihoods are **insignificant**, taking account of all the means reasonably likely to be used by the controller or anyone else:
+ 1. **direct extraction**, including probabilistic extraction, of personal data about the people whose data trained it; and
+ 2. obtaining such data, intentionally or not, **through queries**.
+- **Evidence:** controllers document how they limited the collection of personal data, reduced identifiability, prevented extraction, and tested resistance to state-of-the-art attacks. The Opinion's list of methods is non-prescriptive.
+- **Consequence:** if the model is **not** anonymous, it still processes personal data, so lawful basis, rights (access, erasure, objection) and security duties reach the model itself, not just the source records.
+
+### What does unlawful development mean for deployment? (Opinion Question 4)
+
+| Scenario | Facts | EDPB position |
+|:---|:---|:---|
+| **1** | Personal data retained in the model; the **same controller** deploys it | Case by case: are development and deployment separate purposes, and how far does the missing legal basis taint the later processing? |
+| **2** | Personal data retained in the model; **another controller** deploys it | The deployer must carry out an appropriate assessment, as part of its accountability, that the model was not developed unlawfully. It looks at the data's source and any finding of infringement by an authority or court, in more or less depth depending on deployment risk |
+| **3** | Developed unlawfully, **then genuinely anonymised** | If later operation involves no personal data, the GDPR does not apply to it and the original unlawfulness does not taint it. New personal data processed in deployment is assessed on its own terms |
+
+> **Press-release shorthand:** unlawfully processed training data "could have an impact on the lawfulness of its deployment, unless the model has been duly anonymised".
+
+### Draft EDPB Guidelines 02/2026 on Anonymisation (status: consultation draft)
+
+Adopted at the **July 2026** plenary; **public consultation until 30 October 2026**.
+
+- Data is anonymous if it does not relate to an identified or identifiable person, and **whether it is anonymous can differ from one entity to another**. This reflects the CJEU's *EDPS v SRB* ruling (C-413/23 P, 4 September 2025).
+- **Three tests:** no **record isolation**, no **linkage**, no **inference**. If all three are met, the data can safely be treated as anonymous; otherwise further analysis is needed.
+- **Two ways to apply them:** a *contextual* approach that weighs who might re-identify and with what capabilities (the full legal standard), or a stricter *simplified* approach that ignores those differences for convenience and extra confidence.
+
 ---
 
 ## Art 17 — Right to Erasure ("Right to Be Forgotten")
@@ -250,6 +332,7 @@ Art 17(2): Where data made public, controller must take **reasonable steps** (in
 >
 > Regulators are increasingly aware of this tension. The UK ICO and French CNIL have issued guidance acknowledging the difficulty but maintaining the obligation.
 
+- **Is the model in scope?** Run the EDPB Opinion 28/2024 anonymity test first. If extracting a person's data from the model, directly or by querying, is more than insignificantly likely, the model is not anonymous and the erasure request can reach the model, not just the training database. Do not assume model weights are never personal data.
 - **LLMs and generative AI** that memorize training data face particular challenges — erasure may require model editing or retraining.
 - **Vector databases** storing embeddings derived from personal data may also fall within scope of erasure obligations.
 - **Federated learning** architectures complicate the practicalities of erasure across distributed model updates.
@@ -295,6 +378,7 @@ Art 17(2): Where data made public, controller must take **reasonable steps** (in
 | Use Case | Triggers Art 22? | Basis |
 |:---------|:-----------------|:------|
 | AI denial of credit with no human review | ✅ Yes | Produces legal effects |
+| Credit bureau's automated score that a lender draws on strongly to refuse a loan | ✅ Yes, for the **bureau's scoring itself** | CJEU *SCHUFA* (C-634/21) |
 | AI recruitment screening that auto-rejects candidates | ✅ Yes | Similarly significantly affects |
 | AI recommendation with human decision-maker | ⚠️ Maybe | Depends on meaningfulness of human review |
 | AI content recommendation (Netflix, Spotify) | ❌ Likely not | May not "significantly affect" |
@@ -303,6 +387,16 @@ Art 17(2): Where data made public, controller must take **reasonable steps** (in
 - **Credit scoring AI**, **recruitment AI**, **insurance underwriting AI** → almost certainly within Art 22 scope.
 - The **EU AI Act** builds on Art 22 by classifying certain AI systems as high-risk and imposing additional requirements (human oversight, accuracy, robustness).
 - Organisations must implement **human review processes** that are genuine, documented, and effective.
+
+### CJEU: SCHUFA (C-634/21, 7 December 2023)
+
+**Holding:** a credit information agency's automated calculation of a **probability value** (a score) about a person's ability to meet future payments is itself "automated individual decision-making" under Art 22(1), where a third party to which the score is sent **draws strongly** on it to establish, implement or terminate a contract with that person.
+
+**Why it matters:**
+- **Upstream providers can be caught.** The score supplier, not only the lender, can be the one making the Art 22 "decision". It then needs an Art 22(2) exception (contract, EU or Member State law, or explicit consent) and must provide Art 22(3) safeguards and the Art 15(1)(h) information.
+- **It closes a gap.** Otherwise the bureau could say it made no decision, and the lender could say it lacks the logic, leaving the person with no one who must explain.
+- **Vendors and AI supply chains:** any model-as-a-service whose output effectively determines a customer's decision should be assessed under Art 22, and the contract should allocate who gives notices, explanations and human review.
+- **Follow-on:** *Dun & Bradstreet Austria* (C-203/22, 2025) sets out what the explanation must contain (see Art 15 above).
 
 ---
 
@@ -479,6 +573,50 @@ In the **absence of adequacy decision OR Art 46 safeguards**, transfers possible
 
 ---
 
+## Pending — GDPR Changes Proposed in the Digital Omnibus
+
+> [!warning] Proposals, not law (as of September 2026)
+> The Commission's **Digital Omnibus** proposal, COM(2025) 837 of 19 November 2025, would amend the GDPR, ePrivacy Directive, Data Act, NIS2 and other acts. It is **separate** from the **AI Omnibus**, which amended the AI Act and is already law (Regulation (EU) 2026/1744). As of September 2026 the GDPR changes remain under negotiation. The Council is still working on compromise texts, there is no Council general approach or Parliament committee position, and trilogues have not started. **Answer exam questions on the current GDPR text.**
+
+| Proposed change (per EDPB-EDPS Joint Opinion 2/2026, February 2026) | EDPB-EDPS view |
+|:---|:---|
+| New sentence in **Art 4(1)**: information is not personal data *for an entity* that cannot identify the person (entity-relative definition) | Strongly urge co-legislators **not** to adopt it; it would narrow the concept of personal data |
+| Defining when pseudonymised data stops being personal data by **implementing act** | Oppose; scope of the law should not be set by implementing act |
+| New **Art 88c**: processing for developing and operating AI "may" rely on legitimate interest | Unnecessary, since Opinion 28/2024 already confirms it; suggestions offered if kept |
+| New exception for **incidental and residual** special-category data in AI training, testing and validation | Accept the need; want tighter wording and lifecycle safeguards |
+| Limits on **abusive access requests** | Welcome clarity, but should not be tied to non-data-protection motives |
+| **Breach notification:** higher threshold, deadline extended from 72 to 96 hours, common templates; **DPIA** common lists and templates | Broadly supportive; want the EDPB to prepare and approve the templates |
+| Scientific-research definition; exception for **biometric authentication** under the user's sole control | Supportive, with improvements |
+
+Secondary reporting (Privacy Next, 1 September 2026) says the Council's June 2026 compromise dropped the operative AI legitimate-interest article in favour of a recital. Treat details of the Council text as unconfirmed until it is published.
+
+---
+
+## EDPB and CJEU Developments 2023–2026 — Quick Reference
+
+| Instrument | Date | Status | Core point for AI governance |
+|:---|:---|:---|:---|
+| CJEU *SCHUFA* (C-634/21) | 7 Dec 2023 | Final judgment | A third-party score that a decision-maker draws on strongly is itself an Art 22 decision |
+| EDPB Opinion 28/2024 | 17 Dec 2024 | Adopted (Art 64(2)) | Model anonymity test; three-step legitimate interest; effect of unlawful training on deployment |
+| CJEU *Dun & Bradstreet Austria* (C-203/22) | 27 Feb 2025 | Final judgment | Art 15(1)(h) needs an intelligible account of the procedure and principles actually applied; trade secrets go to the DPA or court |
+| CJEU *EDPS v SRB* (C-413/23 P) | 4 Sep 2025 | Final judgment | Cited by the EDPB for the entity-relative view of identifiability |
+| EDPB-EDPS Joint Opinion 1/2026 (AI Omnibus) | Jan 2026 | Adopted | Opinion on the AI Act simplification proposal |
+| EDPB-EDPS Joint Opinion 2/2026 (Digital Omnibus) | Feb 2026 | Adopted | Opposes the narrower personal-data definition |
+| EDPB Guidelines 02/2026 on Anonymisation | Jul 2026 | **Draft**, consultation to 30 Oct 2026 | No record isolation, no linkage, no inference |
+| EDPB Guidelines 03/2026 on Web Scraping | 7 Jul 2026 | **Draft**, consultation to 30 Oct 2026 | Legitimate interest is the usual basis; consent rarely workable; Art 6 **and** Art 9(2) for sensitive data |
+| Digital Omnibus GDPR amendments | Proposed 19 Nov 2025 | **Proposal only** | Art 4(1) and Art 88c changes are not law |
+
+---
+
+## Key Terms
+
+- [[EDPB Opinion 28/2024]]
+- [[EDPB Guidelines 03/2026 on Web Scraping]]
+- [[SCHUFA Ruling (C-634/21)]]
+- [[Dun & Bradstreet Austria Ruling (C-203/22)]]
+
+---
+
 ## Article Interdependencies for AI
 
 ```mermaid
@@ -505,4 +643,17 @@ graph TD
 
 ---
 
-*Extracted from Regulation (EU) 2016/679 (General Data Protection Regulation). Official Journal L 119, 4.5.2016.*
+## Sources
+
+- Regulation (EU) 2016/679 (GDPR): http://data.europa.eu/eli/reg/2016/679/oj
+- EDPB Opinion 28/2024 on AI models (PDF): https://www.edpb.europa.eu/system/files/2024-12/edpb_opinion_202428_ai-models_en.pdf
+- EDPB press release on Opinion 28/2024 (18 Dec 2024): https://www.edpb.europa.eu/news/news/2024/edpb-opinion-ai-models-gdpr-principles-support-responsible-ai_en
+- EDPB news, anonymisation and web-scraping guidelines (8 Jul 2026): https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en
+- EDPB Guidelines 03/2026 consultation: https://www.edpb.europa.eu/public-consultations/guidelines-032026-on-web-scraping-in-the-context-of-generative-ai_en
+- EDPB Guidelines 02/2026 consultation: https://www.edpb.europa.eu/public-consultations/guidelines-on-anonymisation_en
+- CJEU C-634/21 *SCHUFA Holding (Scoring)*, judgment of 7 Dec 2023: http://publications.europa.eu/resource/celex/62021CJ0634
+- CJEU C-203/22 *Dun & Bradstreet Austria*, judgment of 27 Feb 2025: http://publications.europa.eu/resource/celex/62022CJ0203 ; press release: https://curia.europa.eu/site/upload/docs/application/pdf/2025-02/cp250022en.pdf
+- EDPB-EDPS Joint Opinion 2/2026 on the Digital Omnibus: https://www.edpb.europa.eu/documents/legislative-opinion/edpb-edps-joint-opinion-22026-on-the-proposal-for-a-regulation-as_en
+- Regulation (EU) 2026/1744 (AI Omnibus; AI Act Art 4a): http://data.europa.eu/eli/reg/2026/1744/oj
+
+*Extracted from Regulation (EU) 2016/679 (General Data Protection Regulation). Official Journal L 119, 4.5.2016. Updated 2026-09-23 with EDPB and CJEU developments.*

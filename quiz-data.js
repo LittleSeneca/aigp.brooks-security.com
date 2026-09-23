@@ -1674,33 +1674,6 @@ const ALL_QUESTIONS = [
     "explanation": "Map is the context function: establish what the system is for, where it operates, who it affects, and what risks arise in that frame. Govern is the cross-cutting culture-and-accountability layer, Measure assesses and tracks the mapped risks, and Manage prioritizes and responds to them."
   },
   {
-    "id": "q-63",
-    "area": "ch7",
-    "domain": "Domain II",
-    "difficulty": "Medium",
-    "question": "How does NIST ARIA relate to the NIST AI RMF?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "ARIA is an evaluation program supplying testing methods and metrics that complement the RMF's risk process"
-      },
-      {
-        "letter": "B",
-        "text": "ARIA supersedes the RMF for high-risk sectors"
-      },
-      {
-        "letter": "C",
-        "text": "ARIA is the certification scheme organizations use to prove RMF compliance"
-      },
-      {
-        "letter": "D",
-        "text": "ARIA translates the RMF into binding federal regulation"
-      }
-    ],
-    "answer": "A",
-    "explanation": "ARIA evaluates AI systems in realistic conditions — model testing, red-teaming, and field testing — producing the kind of empirical evidence the RMF's Measure function calls for. It complements rather than replaces the framework, and neither instrument certifies or legally binds anyone."
-  },
-  {
     "id": "q-64",
     "area": "ch7",
     "domain": "Domain II",
@@ -1807,33 +1780,6 @@ const ALL_QUESTIONS = [
     ],
     "answer": "D",
     "explanation": "IEEE 7000-series standards operationalize ethics-by-design: translating human values and ethical concerns into concrete engineering requirements during system development. They are engineering-process standards, not hardware, networking, or accounting specifications."
-  },
-  {
-    "id": "q-68",
-    "area": "ch7",
-    "domain": "Domain II",
-    "difficulty": "Medium",
-    "question": "NIST's ARIA program measures AI systems against trustworthiness attributes. Which of the following is one of them?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Quarterly revenue contribution"
-      },
-      {
-        "letter": "B",
-        "text": "Interpretability of system outputs"
-      },
-      {
-        "letter": "C",
-        "text": "Compatibility with legacy mainframes"
-      },
-      {
-        "letter": "D",
-        "text": "Brand recognition of the developer"
-      }
-    ],
-    "answer": "B",
-    "explanation": "ARIA evaluates trustworthiness characteristics — interpretability, robustness, fairness, safety — through model testing, red-teaming, and field testing with real users. Commercial and infrastructure attributes like revenue or mainframe compatibility are outside the trustworthiness construct."
   },
   {
     "id": "q-69",
@@ -22235,5 +22181,14096 @@ const ALL_QUESTIONS = [
     ],
     "answer": "D",
     "explanation": "Option D correctly identifies that the immediate governance concern — risk fragmentation creating incomplete information for decision-makers — requires an immediate fix (bidirectional linking between registers) while the longer-term goal of integration proceeds in parallel. A credit model rated 'low' for technical risk but 'medium' for fairness risk presents a governance gap: a decision-maker reviewing only the model risk register would not see the fairness concern. Bidirectional linking (B) closes this gap immediately. Integration into ERM (C) is the longer-term maturity goal. Neither A (subordinating AI governance to model risk) nor maintaining indefinite separation are appropriate governance approaches for financial services AI."
+  },
+  {
+    "id": "q-845",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A US company preparing to launch a generative AI writing assistant for Korean consumers asks which authority administers and enforces South Korea's AI Basic Act, including its administrative fines. Which body is it?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The Personal Information Protection Commission, Korea's data protection authority"
+      },
+      {
+        "letter": "B",
+        "text": "The Korea Fair Trade Commission, which enforces Korean competition and consumer law"
+      },
+      {
+        "letter": "C",
+        "text": "The Ministry of Science and ICT, which investigates and imposes the Act's fines"
+      },
+      {
+        "letter": "D",
+        "text": "The national AI committee the Act sets up under the President, who chairs it"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The Act gives enforcement to the Minister of Science and ICT (MSIT). Article 40 lets MSIT require data, inspect premises and order a violation stopped or corrected, and Article 43(2) has MSIT impose and collect the administrative fines. A is wrong because the PIPC enforces Korea's privacy statute, not this Act. B is wrong because the KFTC enforces competition and consumer law. D is wrong because the presidential committee under Articles 7-8 deliberates on AI policy but has no investigation or fining powers."
+  },
+  {
+    "id": "q-846",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "South Korea's Framework Act on the Development of Artificial Intelligence and Establishment of Trust was promulgated on January 21, 2025. When did its obligations take effect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "January 22, 2026, one year after the Act was promulgated"
+      },
+      {
+        "letter": "B",
+        "text": "January 21, 2025, on the same day the Act was promulgated"
+      },
+      {
+        "letter": "C",
+        "text": "August 2, 2026, matching the EU AI Act's general application date"
+      },
+      {
+        "letter": "D",
+        "text": "January 22, 2027, after a one-year grace period written into the Act"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Article 1 of the Supplementary Provisions says the Act enters into force one year after promulgation, so it took effect on January 22, 2026. The digital medical device item of the high-impact definition followed on January 24, 2026. B ignores that one-year lead time. C borrows the EU AI Act's August 2, 2026 general application date. D is wrong because the grace period of at least a year before fines is an MSIT enforcement policy, not a provision of the Act, and it does not delay when the obligations apply."
+  },
+  {
+    "id": "q-847",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A compliance lead is mapping the EU AI Act's Article 5 prohibitions onto South Korea's AI Basic Act for a global product portfolio. Which statement about the Korean Act is accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It bans social scoring by public authorities, mirroring the EU's list"
+      },
+      {
+        "letter": "B",
+        "text": "It prohibits real-time remote biometric identification by police in public"
+      },
+      {
+        "letter": "C",
+        "text": "It has no banned-practices list; its duties center on transparency and safety"
+      },
+      {
+        "letter": "D",
+        "text": "It bans AI-generated deepfakes unless each one carries a visible watermark"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Unlike the EU AI Act, Korea's Act contains no list of prohibited AI practices. Its regulatory core is transparency (Article 31), safety duties for very high-compute systems (Article 32) and measures for high-impact AI (Articles 33-35). A and B describe EU Article 5 prohibitions, not Korean law; Korea instead treats biometric analysis for criminal investigations as a high-impact domain that carries extra duties. D confuses a ban with Korea's labeling rule, which requires realistic synthetic content to be clearly identified as AI-generated but does not prohibit it."
+  },
+  {
+    "id": "q-848",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A foreign chatbot provider fails to tell Korean users in advance that its service runs on generative AI. What is the maximum administrative fine MSIT can impose for that violation under the AI Basic Act?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "KRW 30 million, or roughly US$21,000"
+      },
+      {
+        "letter": "B",
+        "text": "€20 million or 4% of worldwide annual turnover"
+      },
+      {
+        "letter": "C",
+        "text": "€35 million or 7% of worldwide annual turnover"
+      },
+      {
+        "letter": "D",
+        "text": "US$1 million per violation, as under California's SB 53"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Article 43(1)1 sets a fine of up to KRW 30 million for failing to give the advance notice that Article 31(1) requires when a product or service uses generative or high-impact AI. B is the GDPR's upper fine tier, C is the EU AI Act's cap for prohibited practices, and D is the per-violation ceiling in California's SB 53 frontier-model law. None applies under the Korean Act, whose fines are far lower than any of them."
+  },
+  {
+    "id": "q-849",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A Korean retailer integrates a vendor's AI system, unchanged, into a customer-service app it offers to consumers. Under the AI Basic Act's definitions, what kind of AI business operator is the retailer?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An AI developer, because it supplies an AI-based app to consumers"
+      },
+      {
+        "letter": "B",
+        "text": "A deployer, a category the Act regulates apart from operators"
+      },
+      {
+        "letter": "C",
+        "text": "A distributor, because it makes another firm's AI available"
+      },
+      {
+        "letter": "D",
+        "text": "An AI-using business operator, since it builds on supplied AI"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Article 2(7) splits AI business operators into AI developers, which develop and provide AI, and AI-using business operators (translated in some versions as AI service providers), which offer AI products or services using AI supplied by a developer. The retailer builds on the vendor's system without developing AI itself. A is wrong because offering an AI-based product does not make a firm a developer. B and C use EU AI Act role labels; the Korean Act has no separate deployer or distributor category, and its duties apply to both operator types."
+  },
+  {
+    "id": "q-850",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An AI governance team is sorting a client's Korean deployments against the AI Basic Act's statutory list of high-impact AI domains. Which use falls outside every domain on that list?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Grading student assessments in public secondary schools"
+      },
+      {
+        "letter": "B",
+        "text": "Analyzing facial images to identify suspects for the police"
+      },
+      {
+        "letter": "C",
+        "text": "Running core operations and management of a subway system"
+      },
+      {
+        "letter": "D",
+        "text": "Ranking products in search results on a shopping platform"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Article 2(4) lists the high-impact domains: energy supply, drinking water production, health care, medical devices, nuclear facilities, biometric analysis for criminal investigation or arrest, judgments that significantly affect rights such as hiring or lending, core transport operations, public-authority decisions, and student assessment from early childhood through secondary school, plus any areas added by decree (none so far). Product ranking on a marketplace is not among them. A matches the student-assessment domain, B the biometric-analysis domain, and C the transport domain. Being in a domain is necessary but not sufficient: the system must also be capable of significantly affecting life, safety or fundamental rights."
+  },
+  {
+    "id": "q-851",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A Korean HR-tech firm is about to launch an AI tool that ranks job applicants for client employers, and it is unsure whether the tool counts as high-impact AI. What does the AI Basic Act require of the firm?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It must obtain MSIT's approval before offering any AI tool used in hiring decisions"
+      },
+      {
+        "letter": "B",
+        "text": "It must register the tool in a public national AI database before any deployment"
+      },
+      {
+        "letter": "C",
+        "text": "It must review the question itself in advance and may ask MSIT to confirm the answer"
+      },
+      {
+        "letter": "D",
+        "text": "It must have a designated conformity assessment body certify the tool before launch"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Article 33(1) requires an AI business operator to review in advance whether its AI qualifies as high-impact, and lets it ask the Minister of Science and ICT to confirm. Under the Enforcement Decree, MSIT answers within 30 days, extendable once by up to 30 days. Hiring tools fall within the employment item of Article 2(4)(g), so the review matters here. A is wrong because the Act creates no licensing or approval regime. B describes the EU AI Act's database registration for high-risk systems. D describes EU-style third-party conformity assessment; Korea only encourages voluntary verification and certification (Article 30(3))."
+  },
+  {
+    "id": "q-852",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A hospital-software vendor's AI triage tool qualifies as high-impact AI under Korea's AI Basic Act. Which of the following is one of the measures Article 34 requires the vendor to implement?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Commission an independent bias audit within one year before each use of the tool"
+      },
+      {
+        "letter": "B",
+        "text": "Prepare and keep documents showing its safety and trust measures, for five years"
+      },
+      {
+        "letter": "C",
+        "text": "Obtain a conformity certificate from a designated body and affix a CE-style mark"
+      },
+      {
+        "letter": "D",
+        "text": "Publish a frontier safety framework and send quarterly risk summaries to MSIT"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Article 34(1) lists the high-impact measures: a risk management plan; an explanation plan covering outputs, key criteria and an overview of the training data, to the extent technically feasible; user protection measures; human management and supervision; and preparing and keeping documents that demonstrate those measures. Article 27(2) of the Enforcement Decree sets a five-year retention period. A is New York City Local Law 144's bias-audit rule, C is the EU AI Act's conformity assessment and CE marking, and D imports California SB 53's frontier framework and quarterly risk summaries into Korean law."
+  },
+  {
+    "id": "q-853",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A vendor sells a high-impact AI eligibility-screening system to Korean local governments but has never assessed its effect on fundamental rights. Which statement best describes the vendor's position under the AI Basic Act?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It has breached a mandatory duty and faces an administrative fine of up to KRW 30 million"
+      },
+      {
+        "letter": "B",
+        "text": "A best-efforts impact assessment isn't mandatory, but public buyers must prefer assessed AI"
+      },
+      {
+        "letter": "C",
+        "text": "Only the buying government bodies must assess, as deployers of public-service AI must in the EU"
+      },
+      {
+        "letter": "D",
+        "text": "It must have an accredited third party perform the assessment before each public-sector sale"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Article 35(1) says operators providing high-impact AI shall make efforts to assess its impact on fundamental rights in advance, so the assessment is not mandatory and skipping it is not a finable violation. Article 35(2) supplies the incentive: national institutions, which include local governments, must give priority to products that have undergone an impact assessment. A is wrong because Article 43 does not fine a missing assessment. C transplants the EU AI Act's Article 27 FRIA duty for certain deployers. D is wrong because the Enforcement Decree lets operators carry out the assessment themselves or commission a third party."
+  },
+  {
+    "id": "q-854",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A Korean AI video-generation service produces photorealistic clips that are hard to distinguish from real footage, and some customers use the clips in artistic short films. What does Article 31(3) of the AI Basic Act require of the service for those artistic outputs?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Notice that they are AI-generated, given in a way that doesn't hinder their enjoyment"
+      },
+      {
+        "letter": "B",
+        "text": "Nothing, because artistic and creative outputs are fully exempt from the notice duty"
+      },
+      {
+        "letter": "C",
+        "text": "A visible AI-generated watermark on every frame, with no artistic accommodation"
+      },
+      {
+        "letter": "D",
+        "text": "Prior written clearance from MSIT before any artistic output can be distributed"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Article 31(3) requires operators to notify or indicate, in a way users can clearly recognize, that realistic synthetic sound, images or video were AI-generated. Where the output is part of an artistic or creative work, the notice may be given in a manner that does not hinder its display or enjoyment. B overstates that accommodation into a full exemption. C is wrong because neither the Act nor the Enforcement Decree mandates a per-frame visible mark; the decree lets the notice be given through visual, auditory or software-based means. D invents a clearance step, since the Act has no pre-release approval."
+  },
+  {
+    "id": "q-855",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A US AI company with no Korean office had prior-year total revenue of KRW 400 billion, AI-service revenue of KRW 15 billion, and about 300,000 average daily Korean users. Under the Enforcement Decree, must it designate a domestic representative?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "No, because its total revenue is below the KRW 1 trillion threshold"
+      },
+      {
+        "letter": "B",
+        "text": "Yes, because its AI-service revenue exceeds the KRW 10 billion threshold"
+      },
+      {
+        "letter": "C",
+        "text": "No, because it has fewer than 1 million average daily users in Korea"
+      },
+      {
+        "letter": "D",
+        "text": "Yes, because every foreign AI provider serving Korean users must appoint one"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Article 36 of the Act and Article 29 of the Enforcement Decree require a foreign operator without a Korean address or place of business to designate a domestic representative if it meets any one threshold. The thresholds are prior-year total revenue of KRW 1 trillion, prior-year AI-service revenue of KRW 10 billion, an average of 1 million daily domestic users over the three months before the end of the prior year, or a past fine for ignoring a corrective order. Meeting the AI-service revenue test is enough. A and C treat alternative thresholds as if all had to be met. D describes a universal duty closer to the EU AI Act's authorized-representative rule, whereas Korea's duty depends on these size thresholds."
+  },
+  {
+    "id": "q-856",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "MSIT receives a complaint that a Korean image-generation app's photorealistic outputs carry no indication that they are AI-generated, in breach of the Act's generative AI labeling rules. Under the Act as written, which enforcement path applies?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "MSIT must promptly impose a fine of up to KRW 30 million for the missing labels"
+      },
+      {
+        "letter": "B",
+        "text": "The matter goes to the privacy regulator, since the Act has no enforcement tools"
+      },
+      {
+        "letter": "C",
+        "text": "The app's operator faces criminal charges carrying up to three years' imprisonment"
+      },
+      {
+        "letter": "D",
+        "text": "MSIT may investigate and order a fix; a fine follows only if the order is ignored"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Breaches of Article 31(2) and (3) are not directly finable. Instead, Article 40 lets MSIT investigate on a complaint, require data, inspect premises and order the operator to stop or correct the violation. Failing to comply with that order is what Article 43(1)3 fines, up to KRW 30 million. A treats labeling like the advance-notice failure in Article 31(1), which is directly finable. B is wrong because the Act gives MSIT its own investigation and order powers. C misreads Article 42, whose prison term applies to committee members who leak confidential information."
+  },
+  {
+    "id": "q-857",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A lab trained a new general-purpose model using 3 x 10^25 FLOPs of cumulative compute. How does that figure compare with Korea's threshold for so-called high-performance AI and with the EU AI Act's systemic-risk presumption for general-purpose AI models?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It exceeds the thresholds in both, since each uses 10^25 FLOPs"
+      },
+      {
+        "letter": "B",
+        "text": "It meets Korea's 10^24 FLOP threshold but is below the EU's 10^26"
+      },
+      {
+        "letter": "C",
+        "text": "It is below both thresholds, since each is set at 10^26 FLOPs"
+      },
+      {
+        "letter": "D",
+        "text": "It exceeds the EU's 10^25 presumption but is below Korea's 10^26"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Article 24 of Korea's Enforcement Decree applies Article 32's safety duties only to systems trained with at least 10^26 floating-point operations that also use state-of-the-art technology and pose wide-ranging, significant risks, so a 3 x 10^25 system falls short in Korea. The EU AI Act (Article 51(2)) presumes a general-purpose AI model has systemic risk when its training compute exceeds 10^25 FLOPs, so the EU presumption is triggered. A gives Korea the EU figure. B misstates both numbers. C gives the EU the 10^26 figure that Korea and US state frontier-model laws use."
+  },
+  {
+    "id": "q-858",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Under the Korea AI Basic Act Enforcement Decree, a system trained with at least 10^26 FLOPs falls under Article 32's safety obligations only if which further conditions are also met?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It uses state-of-the-art technology and its risks could be wide-ranging and significant"
+      },
+      {
+        "letter": "B",
+        "text": "It has at least 1 million average daily users in Korea over the preceding three months"
+      },
+      {
+        "letter": "C",
+        "text": "It is used in a listed high-impact domain such as energy supply, health care or hiring decisions"
+      },
+      {
+        "letter": "D",
+        "text": "It has been designated by the Presidential Council after review by an expert panel"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Article 24(1) of the Enforcement Decree requires all three criteria. They are cumulative training compute of 10^26 floating-point operations or more, construction and operation with the most advanced AI technology currently in use, and a risk level that could have a wide-ranging and significant impact on life, physical safety and fundamental rights. Operators of such systems must identify, assess and mitigate risks across the lifecycle, run an incident-monitoring risk management system, and submit the results to MSIT. B is the user threshold for appointing a domestic representative, C is the domain test for high-impact AI, and D resembles the European Commission's power to designate systemic-risk GPAI models."
+  },
+  {
+    "id": "q-859",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Painful",
+    "question": "A Korean fintech licenses a credit-scoring system from a developer that has implemented Article 34's risk management, explanation and user-protection measures. It offers loan-screening services built on the system without significantly changing its function or original purpose. Under the Enforcement Decree, what is the fintech's position as an AI business operator?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It is deemed to have met all of Article 34's measures, since it made no significant change"
+      },
+      {
+        "letter": "B",
+        "text": "It is deemed to meet those three, but must still run human oversight and keep records"
+      },
+      {
+        "letter": "C",
+        "text": "It must redo all three measures itself, because deemed compliance only covers public bodies"
+      },
+      {
+        "letter": "D",
+        "text": "It takes on the developer's role, as a deployer does under the EU AI Act after modification"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Article 27(3) of the Enforcement Decree deems an AI-using business operator to have carried out measures 1 to 3 of Article 34(1): risk management, explanation and user protection. This applies when it receives a system from an operator that implemented those measures and makes no significant functional change, such as substantially altering the system's original purpose or use. The deeming rule does not reach measure 4 (human management and supervision) or measure 5 (documentation). So the fintech must still arrange its own oversight and keep records for five years, and it may ask the developer for the materials it needs under Article 27(4). A overextends the deeming rule to every measure. C invents a public-body limit. D borrows the EU rule under which a deployer that substantially modifies a high-risk system becomes its provider; here there was no significant change."
+  },
+  {
+    "id": "q-860",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "In March 2026, MSIT learns that a foreign generative AI service, which averaged 2 million daily Korean users through late 2025, has neither designated a domestic representative nor told users in advance that the service is AI-based. No harm to life or human rights has been reported. Which assessment is most accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Both are finable, and the Act itself suspends all fines until January 2027"
+      },
+      {
+        "letter": "B",
+        "text": "Only the missing representative is finable; notice failures get corrective orders"
+      },
+      {
+        "letter": "C",
+        "text": "Both are finable, but MSIT's grace policy defers fines absent serious harm"
+      },
+      {
+        "letter": "D",
+        "text": "Neither is finable until MSIT issues a corrective order and the service ignores it"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Article 43(1) makes both failures directly finable, at up to KRW 30 million each: no advance notice under Article 31(1) and no domestic representative under Article 36(1). However, MSIT announced a grace period of at least one year from January 22, 2026, during which fact-finding investigations and fines are generally deferred, except in serious cases such as loss of life or human-rights violations. That grace period is ministry policy, not a provision of the Act, which is why A is wrong. B wrongly treats the advance-notice duty like the labeling duties in Article 31(2)-(3), which lead to investigation and corrective orders. D applies the corrective-order route to violations the Act fines directly."
+  },
+  {
+    "id": "q-861",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Which THREE failures can draw an administrative fine directly under Article 43 of Korea's AI Basic Act?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Not notifying users in advance that a generative AI service is AI-based"
+      },
+      {
+        "letter": "B",
+        "text": "Not labeling generative AI outputs as AI-generated"
+      },
+      {
+        "letter": "C",
+        "text": "Not designating a required domestic representative"
+      },
+      {
+        "letter": "D",
+        "text": "Not conducting a fundamental rights impact assessment"
+      },
+      {
+        "letter": "E",
+        "text": "Not complying with an MSIT corrective or suspension order"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "E"
+    ],
+    "explanation": "Article 43(1) lists only three finable failures, each capped at KRW 30 million: skipping the Article 31(1) advance notice (A), failing to designate a domestic representative under Article 36(1) (C), and ignoring a suspension or corrective order under Article 40(3) (E). Output labeling (B) is enforced through fact-finding and corrective orders rather than a direct fine. The impact assessment (D) is a best-efforts duty under Article 35 with no fine attached."
+  },
+  {
+    "id": "q-862",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "In September 2026 a compliance team is still building its Colorado program around the impact assessments and duty of reasonable care in SB 24-205. What is the actual legal position?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "SB 24-205 never took effect; the Colorado ADMT Act (SB 26-189) replaces it from January 1, 2027"
+      },
+      {
+        "letter": "B",
+        "text": "SB 24-205 took effect on June 30, 2026, after the legislature pushed back its original start date"
+      },
+      {
+        "letter": "C",
+        "text": "SB 24-205 is in force, but a federal court has enjoined its impact-assessment and risk-program duties"
+      },
+      {
+        "letter": "D",
+        "text": "SB 24-205 was preempted by Executive Order 14365, which took effect nationally in December 2025"
+      }
+    ],
+    "answer": "A",
+    "explanation": "SB 26-189, signed May 14, 2026, repealed and re-enacted part 17 of Colorado's consumer protection article before SB 24-205 ever applied, so its impact assessments, risk programs and duty of reasonable care never became enforceable; the replacement ADMT law governs consequential decisions made on or after January 1, 2027. Option B is wrong: SB 25B-004 did move the start date to June 30, 2026, but the Act was repealed before then. Option C is wrong because the Act was repealed, not partly enjoined. Option D is wrong because an executive order cannot preempt state law by itself."
+  },
+  {
+    "id": "q-863",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Under the Colorado ADMT Act (SB 26-189), a property manager's tenant-screening tool, a covered ADMT, materially influences the rejection of a rental application. What must the property manager, as deployer, provide to the applicant?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Within 45 days, a copy of the impact assessment the deployer had to complete before putting the tool into use"
+      },
+      {
+        "letter": "B",
+        "text": "Before any decision, an opt-out that lets the applicant insist on an assessment made without any automation"
+      },
+      {
+        "letter": "C",
+        "text": "Within 30 days, a plain-language description of the decision and the tool's role, plus instructions on rights"
+      },
+      {
+        "letter": "D",
+        "text": "On request, the tool's source code and model weights, so that the applicant can independently audit the score"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Section 6-1-1704(3) requires a deployer whose covered ADMT materially influenced a consequential decision with an adverse outcome to provide, within 30 days, a plain-language description of the decision and the ADMT's role, a simple way to request more detail (tool name, version, developer, types and sources of personal data), and an explanation of the rights to correct data and seek human review. Option A imports SB 24-205's impact assessments, which SB 26-189 dropped. Option B describes the California CPPA opt-out model, not Colorado's. Option D is wrong because the statute protects trade secrets and never requires code or weights."
+  },
+  {
+    "id": "q-864",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Colorado's attorney general finds that a deployer failed to give the advance notice SB 26-189 requires before covered ADMT is used. It is the deployer's first violation, the lapse was inadvertent, a cure is possible, and the date is March 2027. What must happen before the attorney general can sue?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An affected consumer must sue first, and the attorney general may join only after that suit is filed"
+      },
+      {
+        "letter": "B",
+        "text": "The attorney general must issue a notice of violation and allow 60 days to cure"
+      },
+      {
+        "letter": "C",
+        "text": "The state civil rights division must first find that the deployer's use of ADMT was discriminatory"
+      },
+      {
+        "letter": "D",
+        "text": "Nothing, since the 60-day cure right is available only to developers and never extends to deployers"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Section 6-1-1706(3) requires the attorney general, whenever a cure is deemed possible, to issue a notice of violation to the developer or deployer and to sue only if the violation is not cured within 60 days. The cure step can be skipped only for knowing or repeated violations, and the subsection is repealed on January 1, 2030. Option A is wrong because SB 26-189 creates no private right of action and the attorney general enforces exclusively. Option C is wrong because enforcement runs through the Colorado Consumer Protection Act as a deceptive trade practice, with no civil rights finding needed. Option D is wrong because the cure right covers developers and deployers alike."
+  },
+  {
+    "id": "q-865",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A Colorado hospital system is a HIPAA covered entity. From January 2027 it uses one vendor's ADMT platform in two ways: scoring patients for care-management programs, and ranking nurse applicants in a way that materially influences who is interviewed. Under SB 26-189, which use triggers the law's deployer duties?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Only the patient scoring, because health care is a covered domain while hiring falls under separate state law"
+      },
+      {
+        "letter": "B",
+        "text": "Both uses, because covered-domain status overrides the HIPAA carve-out whenever ADMT materially influences"
+      },
+      {
+        "letter": "C",
+        "text": "Neither use, because the HIPAA carve-out exempts covered entities from the law for all of their decisions"
+      },
+      {
+        "letter": "D",
+        "text": "Only the nurse-applicant ranking, because the HIPAA carve-out does not reach employment decisions"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Section 6-1-1708(3)(a) switches off the core ADMT duties in sections 6-1-1701 to 6-1-1706 for HIPAA covered entities and their business associates, but expressly keeps them for consequential decisions related to employment or employment opportunities. Ranking nurse applicants is therefore covered, while patient care-management scoring is not, although the hospital must still give patients a general notice that it uses advanced technologies. Option A reverses the carve-out. Option B ignores that the HIPAA exemption applies even inside covered domains such as health care. Option C misses the employment exception written into the same subsection."
+  },
+  {
+    "id": "q-866",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A consumer believes a retailer's AI system violates the Texas Responsible AI Governance Act (TRAIGA). How is the Act enforced?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Only by the attorney general, who must give written notice and a 60-day chance to cure before suing"
+      },
+      {
+        "letter": "B",
+        "text": "By the consumer in state court, with statutory damages available for each violation of the Act"
+      },
+      {
+        "letter": "C",
+        "text": "By the Department of Information Resources, which can fine violators through its sandbox program"
+      },
+      {
+        "letter": "D",
+        "text": "By the attorney general or any district attorney, without notice, as an unfair practice under state law"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Business and Commerce Code section 552.101 gives the attorney general exclusive enforcement authority and states that the chapter creates no private right of action; section 552.104 requires written notice of the provisions violated and bars suit for 60 days, or entirely if the person cures and certifies the cure in writing. Option B is wrong because consumers can only complain through the attorney general's online portal. Option C confuses the Department of Information Resources, which runs the 36-month regulatory sandbox, with the enforcer. Option D is wrong on both the enforcer and the notice requirement."
+  },
+  {
+    "id": "q-867",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "The Texas attorney general alleges that a deployer's model violates TRAIGA's ban on AI that encourages self-harm. The deployer's red team had already found and reported the behavior internally. Which fact gives the deployer a statutory defense?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It holds ISO/IEC 42001 certification, which the Act treats as conclusive proof of reasonable care"
+      },
+      {
+        "letter": "B",
+        "text": "It posted an AI disclosure notice, which TRAIGA requires of all businesses before any interaction"
+      },
+      {
+        "letter": "C",
+        "text": "It found the problem through red-team testing, a listed discovery route that bars liability"
+      },
+      {
+        "letter": "D",
+        "text": "It enrolled the model in the state sandbox afterwards, which retroactively waives the violation"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Section 552.105(e) says a defendant may not be found liable if it discovers a violation through feedback, adversarial or red-team testing, state agency guidelines, or an internal review while substantially complying with the NIST AI RMF Generative AI Profile or another recognized AI risk framework; section 552.105(c) separately presumes reasonable care, rebuttably. Option A is wrong because no certification is conclusive, though a recognized framework can support the internal-review route. Option B is wrong because the consumer disclosure duty in section 552.051 binds government agencies and health-care providers, not every business, and is not a defense. Option D is wrong because sandbox approval must come before testing and can never waive the chapter 552 prohibitions."
+  },
+  {
+    "id": "q-868",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "An employer with offices in Austin and Chicago uses a vendor's AI tool to rank current employees for promotion. An audit finds it ranks employees over 50 markedly lower, but no one intended that result. Considering only TRAIGA and Illinois HB 3773, where does the disparity itself expose the employer to liability?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "In Texas only, because TRAIGA bans disparate impact in employment while Illinois requires proof of intent"
+      },
+      {
+        "letter": "B",
+        "text": "In Illinois only, because HB 3773 reaches AI with a discriminatory effect, while TRAIGA requires intent"
+      },
+      {
+        "letter": "C",
+        "text": "In both states, since each statute treats a statistically significant disparity as proof of discrimination"
+      },
+      {
+        "letter": "D",
+        "text": "In neither state, because neither statute applies to promotion decisions about existing employees"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Illinois HB 3773 (Public Act 103-0804) makes it a civil rights violation for an employer to use AI that has the effect of subjecting employees to discrimination on a protected basis in decisions that include promotion, so an unintended age disparity can be enough. TRAIGA section 552.056 bans developing or deploying AI with the intent to unlawfully discriminate and states that disparate impact alone does not show intent. Option A reverses the two standards. Option C is the tempting answer but ignores TRAIGA's express intent requirement. Option D is wrong because HB 3773 lists promotion, discipline and terms of employment alongside hiring."
+  },
+  {
+    "id": "q-869",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Which practice does Illinois HB 3773, effective January 1, 2026, expressly make a civil rights violation for employers?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Using any AI tool in hiring without first commissioning an independent annual bias audit"
+      },
+      {
+        "letter": "B",
+        "text": "Relying solely on AI video analysis to choose applicants without reporting demographic data"
+      },
+      {
+        "letter": "C",
+        "text": "Deploying AI in hiring without registering the system with the Department of Human Rights"
+      },
+      {
+        "letter": "D",
+        "text": "Using zip codes as a proxy for protected classes when AI is used in employment decisions"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Public Act 103-0804 adds section 2-102(L) to the Illinois Human Rights Act: an employer may not use AI that has the effect of discriminating on a protected basis in recruitment, hiring, promotion, discipline, discharge or terms of employment, may not use zip codes as a proxy for protected classes, and must notify employees that it uses AI for these purposes. Option A describes NYC Local Law 144's bias audit. Option B describes the separate AI Video Interview Act's reporting duty. Option C is wrong because the Act creates no registration requirement."
+  },
+  {
+    "id": "q-870",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "The 2024 Utah AI Policy Act imposed generative AI disclosure rules that SB 226 revised in 2025. Under the revised rules, when must a retailer's customer-service chatbot disclose that it is generative AI?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "When the consumer clearly and unambiguously asks whether they are talking to a human or AI"
+      },
+      {
+        "letter": "B",
+        "text": "At the start of every conversation, since Utah requires up-front disclosure in all consumer chats"
+      },
+      {
+        "letter": "C",
+        "text": "Whenever it collects any personal data, because Utah treats all such chats as high-risk interactions"
+      },
+      {
+        "letter": "D",
+        "text": "Once a session passes three hours, when it must remind the consumer that it is not a human being"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Utah Code section 13-75-103(1), enacted by SB 226, requires a supplier using generative AI in a consumer transaction to disclose that the person is dealing with AI and not a human only when the individual asks or prompts, and the request must be clear and unambiguous. Up-front disclosure is reserved for licensed or state-certified professionals in high-risk AI interactions, given verbally at the start of an oral exchange or in writing before a written one. Option B overstates the general rule. Option C misuses the high-risk concept, which covers regulated occupations handling sensitive health, financial or biometric data or giving personalized advice. Option D describes the three-hour reminders in the California and Colorado chatbot laws."
+  },
+  {
+    "id": "q-871",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A frontier developer discovers that its model weights were exfiltrated in a breach that led to bodily injury but poses no imminent risk of further harm. Under the California TFAIA (SB 53), what is its reporting obligation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Report within 72 hours of learning of it to the Department of Financial Services"
+      },
+      {
+        "letter": "B",
+        "text": "Report within 15 days of discovery to the California Office of Emergency Services"
+      },
+      {
+        "letter": "C",
+        "text": "Report within 24 hours to the Attorney General, as required for every incident"
+      },
+      {
+        "letter": "D",
+        "text": "Include it in the next three-monthly risk summary sent to Emergency Services"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Business and Professions Code section 22757.13 requires every frontier developer to report a critical safety incident, which includes unauthorized access to or exfiltration of model weights resulting in death or bodily injury, to the Office of Emergency Services within 15 days of discovering it. Only an incident posing an imminent risk of death or serious physical injury must be disclosed within 24 hours to an appropriate authority such as law enforcement. Option A is New York's RAISE Act timeline and regulator. Option C applies the 24-hour rule to all incidents and names the wrong recipient. Option D confuses incident reports with the three-monthly summaries of internal-use risk assessments that large frontier developers send."
+  },
+  {
+    "id": "q-872",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Which TWO of these laws give injured individuals a private right of action? (Select 2.)",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Illinois Biometric Information Privacy Act (BIPA)"
+      },
+      {
+        "letter": "B",
+        "text": "Texas Responsible AI Governance Act (TRAIGA)"
+      },
+      {
+        "letter": "C",
+        "text": "Colorado SB 26-189 on automated decision-making"
+      },
+      {
+        "letter": "D",
+        "text": "California SB 243 on companion chatbots"
+      },
+      {
+        "letter": "E",
+        "text": "New York's RAISE Act for frontier model developers"
+      }
+    ],
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": "BIPA section 20 lets any aggrieved person sue for liquidated damages of $1,000 per negligent or $5,000 per intentional or reckless violation (A), and SB 243 lets a person injured by a companion-chatbot violation sue for the greater of actual damages or $1,000 per violation (D). TRAIGA (B) states that it creates no private right of action and gives the attorney general exclusive authority; Colorado SB 26-189 (C) states that nothing in it creates a new private right of action; and the RAISE Act (E) is enforced by the attorney general, with no private right of action."
+  },
+  {
+    "id": "q-873",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A company releases a generative AI image tool to the public in California. Under AB 2013, what must it publish, and where?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A summary of its bias testing results, filed with the California Civil Rights Department"
+      },
+      {
+        "letter": "B",
+        "text": "Full copies of its training datasets, deposited with the California Attorney General"
+      },
+      {
+        "letter": "C",
+        "text": "High-level documentation of its training datasets, posted on its website before release"
+      },
+      {
+        "letter": "D",
+        "text": "A frontier AI framework, published online and reviewed at least once every year"
+      }
+    ],
+    "answer": "C",
+    "explanation": "AB 2013 requires developers of generative AI systems made publicly available to Californians, including those released since January 1, 2022, to post documentation about their training data on their websites: dataset sources or owners, size and types of data points, whether copyrighted material or personal information is included, whether data was purchased or licensed, and whether synthetic data was used. It was due by January 1, 2026 and before each later release or substantial modification. Option A invents a bias filing. Option B overstates a high-level summary duty. Option D is the SB 53 duty for large frontier developers."
+  },
+  {
+    "id": "q-874",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "As amended by AB 853, the California AI Transparency Act (SB 942) became operative on August 2, 2026. What must a covered provider with more than 1,000,000 monthly users do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Put a visible AI label on every output, including text, that users can never switch off"
+      },
+      {
+        "letter": "B",
+        "text": "Publish a high-level summary of its training datasets before each new version is released"
+      },
+      {
+        "letter": "C",
+        "text": "Register the system with the Attorney General and renew that registration every two years"
+      },
+      {
+        "letter": "D",
+        "text": "Offer a free AI detection tool and embed latent provenance data in AI image, video and audio"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The Act requires a covered provider, meaning a generative AI system with more than 1,000,000 monthly visitors or users that is publicly accessible in California, to make an AI detection tool available at no cost and to embed a latent disclosure (provider name, system name and version, creation time and a unique identifier) in AI-generated image, video or audio content; a visible, manifest label is an option the provider must offer users. AB 853 moved the operative date from January 1, 2026 to August 2, 2026. Option A is wrong because text is not covered and the visible label is optional. Option B is AB 2013's training-data duty. Option C describes no duty in this Act."
+  },
+  {
+    "id": "q-875",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A California employer covered by the CCPA uses ADMT to make hiring decisions without human involvement. Under the CCPA ADMT regulations, which feature would let it avoid offering applicants an opt-out?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It gives applicants a pre-use notice that explains the tool's purpose and their privacy rights"
+      },
+      {
+        "letter": "B",
+        "text": "It lets applicants appeal to a trained human reviewer with authority to overturn the decision"
+      },
+      {
+        "letter": "C",
+        "text": "It has completed a risk assessment and will submit its attestation to the CPPA by April 2028"
+      },
+      {
+        "letter": "D",
+        "text": "It licenses the tool from a vendor, so the opt-out duty falls on that vendor, not the employer"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Section 7221(b)(1) of the CPPA regulations excuses a business from offering an ADMT opt-out if it provides an easy way to appeal the significant decision to a human reviewer who knows how to interpret the output, considers the consumer's information and can change the decision; a separate exception covers hiring and admission uses that solely assess ability to perform and do not unlawfully discriminate. Businesses already using ADMT for significant decisions must comply by January 1, 2027. Option A is wrong because the pre-use notice is required in every case and must itself describe the opt-out or appeal. Option C is wrong because risk assessments are a parallel duty, not an exception. Option D is wrong because the duties fall on the business that uses ADMT to decide."
+  },
+  {
+    "id": "q-876",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A companion-chatbot operator serves users in California and Colorado. Which obligation do California SB 243 and Colorado HB 26-1263 both impose?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A self-harm and suicidal-ideation response protocol that refers users to crisis services"
+      },
+      {
+        "letter": "B",
+        "text": "Annual reports to the state attorney general on crisis referrals, starting July 1, 2027"
+      },
+      {
+        "letter": "C",
+        "text": "A private right of action letting any injured user recover at least $1,000 per violation"
+      },
+      {
+        "letter": "D",
+        "text": "Verified parental consent before any user under 18 may open an account or start chatting"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Both statutes require operators to maintain a protocol for prompts about suicidal ideation or self-harm that refers users to crisis services: SB 243 requires a published protocol with crisis-service referrals, and HB 26-1263 requires referral to a crisis service provider, not law enforcement, plus escalation steps. Option B is only partly shared: Colorado operators report to the attorney general from July 1, 2027, but California operators report to the Office of Suicide Prevention. Option C is California-only; SB 243 allows suits for the greater of actual damages or $1,000 per violation. Option D is required by neither law."
+  },
+  {
+    "id": "q-877",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "An employer wants to use an automated employment decision tool to screen candidates who live in New York City. Under NYC Local Law 144, what must be in place before use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A state AI license, a registered compliance officer, and candidates' written consent to screening"
+      },
+      {
+        "letter": "B",
+        "text": "An impact assessment filed with the city, with its results kept private, and notice at interview"
+      },
+      {
+        "letter": "C",
+        "text": "A bias audit within the past year, a public summary of it, and notice 10 business days ahead"
+      },
+      {
+        "letter": "D",
+        "text": "An internal fairness review each quarter and notice to candidates within 30 days after a decision"
+      }
+    ],
+    "answer": "C",
+    "explanation": "NYC Administrative Code section 20-871 bars employers and employment agencies from using an AEDT unless it had an independent bias audit no more than one year before use, a summary of the latest audit and the tool's distribution date are posted publicly, and candidates or employees who reside in the city get notice at least 10 business days before use. Option A invents licensing and consent duties; the law requires notice, not consent. Option B is wrong because audit results must be public and notice must precede use. Option D swaps the annual audit and advance notice for a quarterly review and after-the-fact notice."
+  },
+  {
+    "id": "q-878",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "An independent auditor's bias audit of a hiring AEDT used in New York City finds selection rates of 50% for men and 36% for women. The employer wants to keep using the tool. What does Local Law 144 require?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Stop using the tool, because an impact ratio below 0.80 is a violation under the four-fifths rule"
+      },
+      {
+        "letter": "B",
+        "text": "Retrain the model and commission a fresh audit within 30 days, since the ratio falls below 0.80"
+      },
+      {
+        "letter": "C",
+        "text": "Report the result to DCWP, which must approve continued use before the tool screens more candidates"
+      },
+      {
+        "letter": "D",
+        "text": "Publish the audit summary, including the 0.72 impact ratio for women, and give the required notices"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The impact ratio is a category's selection rate divided by the most selected category's rate, so 36% divided by 50% gives 0.72 for women. Local Law 144 and the DCWP rules (6 RCNY 5-301 and 5-303) require the audit to calculate and publish selection rates and impact ratios by sex, race/ethnicity and intersectional category, but they set no pass/fail threshold and demand no remediation; continued use needs a current audit, the public summary and 10 business days' notice. Option A imports the four-fifths rule of thumb from federal selection guidelines, which is not part of the local law, although a disparity can still create exposure under anti-discrimination law. Option B invents a retraining deadline. Option C is wrong because DCWP does not pre-approve tools."
+  },
+  {
+    "id": "q-879",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "As amended by its 2026 chapter amendment, New York's RAISE Act takes effect on January 1, 2027. A frontier developer determines that a critical safety incident has occurred. What must it do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Report it within 72 hours to the new office within the Department of Financial Services"
+      },
+      {
+        "letter": "B",
+        "text": "Report it within 15 days to the state Division of Homeland Security and Emergency Services"
+      },
+      {
+        "letter": "C",
+        "text": "Notify affected users within 30 days, each of whom may then sue for statutory damages"
+      },
+      {
+        "letter": "D",
+        "text": "Record it in its annual independent audit report, filed with the attorney general each year"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The RAISE Act as re-enacted by the 2026 chapter amendment (S8828) requires a frontier developer to report a critical safety incident to an office within the Department of Financial Services within 72 hours of determining, or reasonably believing, that it occurred, or within 24 hours to an appropriate authority if there is an imminent risk of death or serious injury. The attorney general can seek up to $1 million for a first violation and $3 million for later ones, and there is no private right of action. Option B pairs California's 15-day window with the wrong New York agency. Option C invents user notices and a private remedy. Option D describes Illinois SB 315's annual third-party audits."
+  },
+  {
+    "id": "q-880",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "An employer asks applicants for Illinois-based jobs to record video interviews that AI will analyze. Under the Illinois AI Video Interview Act, what must it do before the interviews?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Obtain an independent bias audit of the AI within the prior year and post its results online"
+      },
+      {
+        "letter": "B",
+        "text": "Notify applicants, explain how the AI works and what it evaluates, and obtain their consent"
+      },
+      {
+        "letter": "C",
+        "text": "Collect written releases under a retention schedule, as for any other biometric identifier"
+      },
+      {
+        "letter": "D",
+        "text": "Register the tool with the Department of Human Rights and give 10 business days' notice"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Section 5 of the AI Video Interview Act (820 ILCS 42) requires an employer, before asking for video interviews for Illinois-based positions, to notify each applicant that AI may be used, explain how it works and what general characteristics it evaluates, and obtain consent; videos may be shared only with those needed to evaluate them and must be deleted within 30 days of the applicant's request. Option A is NYC Local Law 144. Option C is BIPA's written-release regime, a separate statute. Option D combines an invented registration with NYC's notice period."
+  },
+  {
+    "id": "q-881",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Starting in 2025, a retailer has scanned one employee's face geometry at every shift for timekeeping without first obtaining a written release. The employee sues under Illinois BIPA as amended in August 2024. How are damages for the collection violations counted?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "As one violation per scan, so liquidated damages multiply with every shift the employee worked"
+      },
+      {
+        "letter": "B",
+        "text": "Only by the attorney general, because the 2024 amendment removed the private right of action"
+      },
+      {
+        "letter": "C",
+        "text": "As a single collection violation, with at most one recovery for that person and method"
+      },
+      {
+        "letter": "D",
+        "text": "Only as actual damages, because the 2024 amendment abolished liquidated damages for employers"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Public Act 103-0769, effective August 2, 2024, amended BIPA section 20 so that repeatedly collecting the same biometric identifier from the same person by the same method without consent is a single violation of section 15(b), with at most one recovery. The private right of action remains: liquidated damages of $1,000 per negligent or $5,000 per intentional or reckless violation, or actual damages if greater, plus attorney fees; the amendment also confirmed that an electronic signature can be a written release. Option A is the per-scan theory the amendment rejected. Options B and D are wrong because the amendment kept both the private right of action and liquidated damages."
+  },
+  {
+    "id": "q-882",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "California SB 53, New York's RAISE Act and Illinois SB 315 all regulate frontier AI developers. Which TWO features do all three laws share? (Select 2.)",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Critical safety incidents must be reported to the state within 72 hours of discovery"
+      },
+      {
+        "letter": "B",
+        "text": "A frontier model is one trained with more than 10^26 integer or floating-point operations"
+      },
+      {
+        "letter": "C",
+        "text": "A large frontier developer must obtain an annual independent third-party audit"
+      },
+      {
+        "letter": "D",
+        "text": "Individuals harmed by a violation may sue the developer for statutory damages"
+      },
+      {
+        "letter": "E",
+        "text": "A large frontier developer is one with over $500 million in prior-year gross revenue"
+      }
+    ],
+    "answer": [
+      "B",
+      "E"
+    ],
+    "explanation": "All three define a frontier model as a foundation model trained with more than 10^26 integer or floating-point operations, counting fine-tuning and other material modifications (B), and a large frontier developer as one that, with its affiliates, had more than $500 million in annual gross revenue in the preceding calendar year (E). Incident deadlines differ (A): 15 days in California against 72 hours in New York and Illinois, with 24 hours everywhere for imminent danger. Only Illinois mandates annual third-party audits, from 2028 (C). None creates a private right of action; the attorney general enforces (D)."
+  },
+  {
+    "id": "q-883",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A large frontier developer operates in California, New York and Illinois. Which obligation arises only under Illinois SB 315, the Artificial Intelligence Safety Measures Act?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Publishing a frontier AI framework that describes how it assesses catastrophic risk"
+      },
+      {
+        "letter": "B",
+        "text": "Reporting critical safety incidents to a state authority within 72 hours of learning of them"
+      },
+      {
+        "letter": "C",
+        "text": "Facing civil penalties of up to $1 million for a first violation, sought by the attorney general"
+      },
+      {
+        "letter": "D",
+        "text": "Hiring an independent third party every year, from 2028, to audit its compliance"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Section 10(d) of Illinois Public Act 104-0538 requires a large frontier developer, beginning January 1, 2028 or 90 days after first qualifying, to retain an independent third party each year to audit its compliance and to publish a summary within 30 days of receiving the report; neither California's SB 53 nor New York's re-enacted RAISE Act requires third-party audits. Option A is common to all three laws. Option B is shared by Illinois and New York, while California allows 15 days. Option C is wrong because all three laws let the attorney general seek up to $1 million for a first violation."
+  },
+  {
+    "id": "q-884",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A social media platform receives a valid request under the TAKE IT DOWN Act to remove a nonconsensual AI-generated intimate image of the requester. What must it do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Remove it within 10 business days, after confirming the image is authentic rather than AI-made"
+      },
+      {
+        "letter": "B",
+        "text": "Remove it within 48 hours and make reasonable efforts to remove known identical copies"
+      },
+      {
+        "letter": "C",
+        "text": "Label it as AI-generated within 72 hours; removal is required only for authentic images"
+      },
+      {
+        "letter": "D",
+        "text": "Forward it to the FTC within 24 hours, and remove it only if the FTC confirms it is unlawful"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Section 3 of the TAKE IT DOWN Act (Pub. L. 119-12) requires a covered platform, on a valid removal request, to remove the intimate visual depiction as soon as possible and no later than 48 hours after receiving the request, and to make reasonable efforts to identify and remove known identical copies; the process had to be in place by May 19, 2026. Options A and C are wrong because the Act expressly covers AI digital forgeries as well as authentic images. Option D invents an FTC pre-clearance step; the FTC enforces failures to comply."
+  },
+  {
+    "id": "q-885",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Which organization is outside the TAKE IT DOWN Act's notice-and-removal duties for covered platforms?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An email service whose users send one another private messages"
+      },
+      {
+        "letter": "B",
+        "text": "A nonprofit forum that mainly hosts images and videos posted by users"
+      },
+      {
+        "letter": "C",
+        "text": "A mobile app that mainly hosts short videos uploaded by the public"
+      },
+      {
+        "letter": "D",
+        "text": "A website whose regular business is publishing nonconsensual intimate images"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Section 4 defines a covered platform as a public-facing website, online service or app that primarily provides a forum for user-generated content, or whose regular business is making nonconsensual intimate images available, and it excludes broadband providers, electronic mail, and services consisting mainly of preselected content. The FTC has enforced the platform duties since May 19, 2026. Option B is covered because the Act extends FTC enforcement to nonprofits. Option C is a standard user-generated-content forum. Option D is covered by the regular-business limb of the definition."
+  },
+  {
+    "id": "q-886",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "An adult let a partner create an AI-generated intimate image of them for private use. After the relationship ends, the partner knowingly posts it on a social platform without the adult's consent, intending to cause harm. Under the TAKE IT DOWN Act, what is the legal position?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "No crime is committed, because the Act's criminal provisions cover only authentic, unaltered images"
+      },
+      {
+        "letter": "B",
+        "text": "No crime is committed, because consenting to the image's creation waived any later objection"
+      },
+      {
+        "letter": "C",
+        "text": "Posting it can be a federal crime, because consent to creating an image is not consent to publishing it"
+      },
+      {
+        "letter": "D",
+        "text": "Only the platform can be liable, and only if it fails to remove the image within 48 hours of a request"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The Act adds 47 U.S.C. 223(h), making it a crime to knowingly publish through an interactive computer service a digital forgery (an intimate depiction made with software, machine learning or AI that is indistinguishable from an authentic one) of an identifiable adult without consent, where it was not voluntarily exposed, is not a matter of public concern, and publication is meant to or does cause harm; the maximum is 2 years' imprisonment, or 3 where the victim is a minor. A rule of construction says consent to creation does not establish consent to publication. Option A ignores the digital forgery offense. Option B contradicts that rule of construction. Option D confuses the platform's removal duty with the poster's criminal liability."
+  },
+  {
+    "id": "q-887",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A company asks whether Executive Order 14365 of December 2025 has already displaced state AI laws such as Colorado's and California's. What is the most accurate answer?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes. It preempted every state AI law on signing, except those on child safety or state procurement"
+      },
+      {
+        "letter": "B",
+        "text": "Yes, but only for state laws that the Commerce Department listed as onerous in its 90-day review"
+      },
+      {
+        "letter": "C",
+        "text": "No, because it governs only federal agencies' own purchasing and use of AI, not state laws at all"
+      },
+      {
+        "letter": "D",
+        "text": "No. It directs lawsuits, funding conditions and proposed legislation, but does not itself preempt"
+      }
+    ],
+    "answer": "D",
+    "explanation": "EO 14365 (90 FR 58499, signed December 11, 2025) sets a policy of a minimally burdensome national framework and directs a DOJ AI Litigation Task Force, a Commerce evaluation of onerous state laws, BEAD and grant conditions, FCC and FTC actions, and a legislative recommendation for a preemptive federal framework. An executive order is not a statute, so state laws remain enforceable unless a court strikes them down or Congress, or an agency acting within its statutory power, preempts them. Options A and B wrongly treat the order as self-executing; the child-safety and procurement carve-outs belong to the proposed legislation. Option C understates the order, which does target state laws, only indirectly."
+  },
+  {
+    "id": "q-888",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "What is the sole responsibility of the DOJ AI Litigation Task Force that the Attorney General established on January 9, 2026?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Challenging state AI laws that conflict with the national AI policy in the executive order"
+      },
+      {
+        "letter": "B",
+        "text": "Prosecuting people who publish nonconsensual AI deepfakes under the TAKE IT DOWN Act"
+      },
+      {
+        "letter": "C",
+        "text": "Suing AI companies that make deceptive claims about what their products can do"
+      },
+      {
+        "letter": "D",
+        "text": "Defending federal agencies sued over their own procurement and use of AI systems"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The Attorney General's memorandum of January 9, 2026 implemented section 3 of EO 14365 by creating a task force whose sole responsibility is to challenge state AI laws inconsistent with the order's policy, on grounds such as unconstitutional regulation of interstate commerce, preemption by existing federal regulations, or other unlawfulness; the Attorney General chairs it. Option B is ordinary criminal enforcement of a federal statute. Option C is the FTC's consumer-protection role. Option D is not part of the task force's mandate."
+  },
+  {
+    "id": "q-889",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "As of September 2026, what is the status of a federal moratorium on, or statute preempting, state AI laws?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A moratorium on enforcing state AI laws became law in July 2025 in the reconciliation act"
+      },
+      {
+        "letter": "B",
+        "text": "Congress passed a preemption law in early 2026 implementing EO 14365's national framework"
+      },
+      {
+        "letter": "C",
+        "text": "None enacted; in July 2025 the Senate voted 99-1 to strip a moratorium from H.R. 1"
+      },
+      {
+        "letter": "D",
+        "text": "A moratorium enacted in the December 2025 defense bill now bars state AI enforcement"
+      }
+    ],
+    "answer": "C",
+    "explanation": "No federal statute imposes a moratorium on, or preempts, state AI laws. On July 1, 2025 the Senate adopted the Blackburn amendment (S.Amdt. 2814, roll-call vote 363) by 99-1 to strike the AI moratorium section from H.R. 1, and EO 14365 itself asks Congress to create a national framework, confirming that none exists. Option A is wrong because the moratorium was removed before enactment. Option B is wrong because no such law has passed. Option D is wrong because no moratorium has been enacted through any vehicle, including defense legislation."
+  },
+  {
+    "id": "q-890",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Stephen Thaler listed his AI system, the Creativity Machine, as the sole author of an image in a US copyright application. With the Supreme Court having denied review on 2 March 2026, which rule from Thaler v. Perlmutter governs similar applications?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The human authorship requirement: a human must author the work in the first instance"
+      },
+      {
+        "letter": "B",
+        "text": "The work-made-for-hire rule, which makes the system's owner the author of its output"
+      },
+      {
+        "letter": "C",
+        "text": "A disclosure rule under which AI output becomes registrable once the AI's role is disclosed"
+      },
+      {
+        "letter": "D",
+        "text": "The Feist originality test, which asks only whether the image shows a creative spark"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The D.C. Circuit held on 18 March 2025 that the Copyright Act of 1976 requires every eligible work to be authored in the first instance by a human being, and the Supreme Court denied certiorari on 2 March 2026 (No. 25-449), so the human authorship requirement stands. B fails because the work-made-for-hire provision only transfers authorship of a work a human created to the person who hired that human. C misreads Copyright Office practice: applicants must disclose AI-generated material, but disclosure does not make machine-determined expression protectable. D is wrong because originality cannot substitute for a human author."
+  },
+  {
+    "id": "q-891",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A designer creates images in a generative AI tool by repeatedly refining text prompts, then combines several outputs with her own hand-drawn panels into a comic book. Applying the Copyright Office's Part 2 report (January 2025), what can she protect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The whole comic, because iterative prompting gave her creative control over each image"
+      },
+      {
+        "letter": "B",
+        "text": "Nothing, because including AI-generated images bars registration of the entire work"
+      },
+      {
+        "letter": "C",
+        "text": "Her drawn panels and her selection and arrangement, but not the prompted images themselves"
+      },
+      {
+        "letter": "D",
+        "text": "The prompted images as well, provided she lists every prompt in her registration application"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Part 2 (29 January 2025) concludes that AI outputs are protected only where a human author has determined sufficient expressive elements, such as perceptible human-authored material or creative selection, arrangement or modification of outputs, and that prompts alone do not give enough control. Using AI does not bar protection for the human contribution. A overstates prompting, which the Office found insufficient. B is wrong because including AI-generated material in a larger human-authored work does not bar copyrightability. D confuses the duty to disclose AI material with a basis for protection."
+  },
+  {
+    "id": "q-892",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Reviewing its book-sourcing after Bartz v. Anthropic, a model developer lists four practices. Which one matches the conduct that Judge Alsup's June 2025 ruling refused to treat as fair use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Scanning purchased print books to create searchable digital copies for internal use"
+      },
+      {
+        "letter": "B",
+        "text": "Training models on lawfully acquired books whose authors never agreed to AI training"
+      },
+      {
+        "letter": "C",
+        "text": "Keeping millions of books downloaded from pirate sites in a permanent central library"
+      },
+      {
+        "letter": "D",
+        "text": "Training a model that is later sold commercially rather than used only for research"
+      }
+    ],
+    "answer": "C",
+    "explanation": "In Bartz v. Anthropic (N.D. Cal., 23 June 2025) the court held that training on the books and converting purchased print copies into digital copies were fair use, but that downloading pirated copies to assemble a central library was not, at least on the summary judgment record. That exposure led to a $1.5 billion class settlement that received final approval on 20 July 2026. A and B describe uses the court held fair, and D is wrong because the model's commercial use did not defeat fair use for training. The governance lesson: how training data is acquired drives the legal exposure."
+  },
+  {
+    "id": "q-893",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A startup's general counsel cites Kadrey v. Meta (N.D. Cal., June 2025) as authority that training a model on copyrighted books without permission is lawful. What is the main flaw in that reading?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The court ruled only that short regurgitated snippets are fair, leaving training undecided"
+      },
+      {
+        "letter": "B",
+        "text": "The court said Meta won because these plaintiffs offered no evidence of market dilution"
+      },
+      {
+        "letter": "C",
+        "text": "The court held that training on books is fair use only when the copies were lawfully bought"
+      },
+      {
+        "letter": "D",
+        "text": "The court sent the fair use question to a jury after finding the licensing market decisive"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Judge Chhabria granted Meta summary judgment on fair use for training on 25 June 2025, but stressed that the ruling does not stand for the proposition that Meta's training was lawful; it stands only for the proposition that these 13 plaintiffs made the wrong arguments and failed to build a record on market dilution, the argument he saw as potentially winning. A is wrong because the court decided the training claim and dismissed the regurgitation theory as a loser. C imports the Bartz distinction about how copies were acquired, which was not the basis of this ruling. D is wrong because the court held the plaintiffs had no right to a market for licensing books as training data and decided factor four for Meta. Claims over Meta's torrenting remained pending into 2026."
+  },
+  {
+    "id": "q-894",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "As of September 2026, why is Thomson Reuters v. Ross Intelligence of limited value as a precedent for developers of generative AI models?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The court found Westlaw's headnotes too unoriginal to be protected by copyright"
+      },
+      {
+        "letter": "B",
+        "text": "The Third Circuit affirmed but limited the ruling to legal research databases"
+      },
+      {
+        "letter": "C",
+        "text": "The court found factor four favored Ross because no AI training market existed"
+      },
+      {
+        "letter": "D",
+        "text": "Only a non-generative tool, built to compete with Westlaw, was before the court"
+      }
+    ],
+    "answer": "D",
+    "explanation": "In his 11 February 2025 opinion Judge Bibas rejected Ross's fair use defense because Ross copied Westlaw headnotes to build a competing legal research tool, with factors one and four favoring Thomson Reuters, and he noted that only non-generative AI was before him. The Third Circuit heard argument on 11 June 2026 and had not ruled as of September 2026. A is wrong because the court held the headnotes original, B invents an appellate ruling, and C reverses the court's factor-four finding."
+  },
+  {
+    "id": "q-895",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "In Getty Images v. Stability AI ([2025] EWHC 2863 (Ch), 4 November 2025), Getty argued that the Stable Diffusion model was an 'infringing copy' imported into the UK. Why did that secondary infringement claim fail?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A model whose weights never stored or reproduced the works is not an infringing copy"
+      },
+      {
+        "letter": "B",
+        "text": "An intangible model cannot be an 'article' for the purposes of secondary infringement"
+      },
+      {
+        "letter": "C",
+        "text": "Training took place outside the UK, so no UK copyright was engaged by the model"
+      },
+      {
+        "letter": "D",
+        "text": "Users, not Stability, generated whatever infringing outputs the model produced"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Joanna Smith J accepted that an 'article' under the CDPA can be intangible, but held that a model which does not store or reproduce any copyright works, and never has, is not an 'infringing copy', so the claim under sections 22 and 23 failed. B reverses that finding. C confuses this claim with the abandoned training claim: section 27(3) asks whether making the article would have infringed if done in the UK, so foreign training did not itself defeat the claim. D is wrong because Getty had dropped its outputs claim after Stability blocked the prompts. Getty won only limited, historic trade mark findings over watermarks in older model versions, and it was granted permission to appeal the secondary infringement point in December 2025. The governance lesson is territorial: where training happens shapes which law applies."
+  },
+  {
+    "id": "q-896",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "The Munich Regional Court (GEMA v. OpenAI, 11 November 2025) and the English High Court in Getty reached opposite conclusions on whether a model can contain protected works. What was the basis of the Munich ruling?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "German law lacks any text and data mining exception for commercial AI developers"
+      },
+      {
+        "letter": "B",
+        "text": "Lyrics memorised in the model were a reproduction outside the TDM exception"
+      },
+      {
+        "letter": "C",
+        "text": "OpenAI ignored machine-readable opt-outs that GEMA had attached to the lyrics online"
+      },
+      {
+        "letter": "D",
+        "text": "Users who prompted the lyrics were primarily liable, with OpenAI only a contributor"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The court's 42nd Civil Chamber (42 O 14139/24) found that lyrics by nine German songwriters were memorised and reproducible in GPT-4 and GPT-4o, so the model parameters embodied a reproduction under section 16 UrhG and Article 2 of the InfoSoc Directive, and the chatbot's outputs were further reproductions made available to the public. The text and data mining exception (section 44b UrhG, implementing Article 4 of the DSM Directive) covered copies made to compile the training corpus, not reproduction inside the model, so A is wrong. C was not the basis of the ruling, and D reverses it: the court held OpenAI, not its users, responsible for the outputs. The judgment is not final; OpenAI has appealed to the Higher Regional Court of Munich."
+  },
+  {
+    "id": "q-897",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A commercial AI developer in the EU wants to mine lawfully accessible web content to train a model. Under the DSM Directive's text and data mining exception, what is the key condition?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Allowed unless rightsholders reserved their rights, e.g. by a machine-readable opt-out"
+      },
+      {
+        "letter": "B",
+        "text": "Allowed only for research organisations and heritage institutions doing scientific research"
+      },
+      {
+        "letter": "C",
+        "text": "Allowed only if the developer pays equitable remuneration to the rightsholders concerned"
+      },
+      {
+        "letter": "D",
+        "text": "Not allowed without a licence, since EU copyright law contains no mining exception"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Article 4 of Directive (EU) 2019/790 lets anyone reproduce and extract lawfully accessible works for text and data mining, but under Article 4(3) only where rightsholders have not expressly reserved that use, which for content made publicly available online must be done by machine-readable means. B describes the separate Article 3 exception for research organisations and cultural heritage institutions, which rightsholders cannot opt out of. C is wrong because Article 4 carries no remuneration duty, and D ignores both exceptions."
+  },
+  {
+    "id": "q-898",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A US company will place a general-purpose AI model on the EU market. It trained the model in the United States and will release it under a free and open-source licence. Which THREE statements about its EU copyright obligations are correct? (Select 3.)",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Rightsholders can opt out of the Article 3 research exception by machine-readable means"
+      },
+      {
+        "letter": "B",
+        "text": "It must have a copyright policy that identifies and honours Article 4(3) opt-outs"
+      },
+      {
+        "letter": "C",
+        "text": "It must publish a sufficiently detailed summary of training content using the AI Office template"
+      },
+      {
+        "letter": "D",
+        "text": "Its copyright-policy duty does not apply because the training took place outside the EU"
+      },
+      {
+        "letter": "E",
+        "text": "The open-source release does not exempt it from the copyright-policy and summary duties"
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "E"
+    ],
+    "explanation": "Article 53(1)(c) of the AI Act requires GPAI providers to put in place a policy to comply with EU copyright law, including identifying and complying with reservations of rights under Article 4(3) of the DSM Directive through state-of-the-art technologies (B), and Article 53(1)(d) requires a public, sufficiently detailed summary of training content using the AI Office template published on 24 July 2025 (C). Article 53(2) exempts open-source models only from points (a) and (b), so points (c) and (d) still apply (E). D is wrong because recital 106 applies the copyright policy regardless of the jurisdiction in which training took place. A is wrong because the Article 3 scientific research exception has no opt-out; the reservation mechanism belongs to Article 4."
+  },
+  {
+    "id": "q-899",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "The Copyright Office's Part 3 report on generative AI training (pre-publication version, 9 May 2025) offers general observations on fair use. Which scenario does it say goes beyond established fair use boundaries?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Training a model deployed for research or analysis whose outputs do not replace the works"
+      },
+      {
+        "letter": "B",
+        "text": "Any training on copyrighted works, because training uses are never transformative"
+      },
+      {
+        "letter": "C",
+        "text": "Commercial use of vast troves of works, accessed illegally, to make competing content"
+      },
+      {
+        "letter": "D",
+        "text": "Only outputs that copy works verbatim, because market dilution is not a cognizable harm"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Part 3 observes that various training uses are likely transformative, but that making commercial use of vast troves of copyrighted works to produce expressive content that competes with them in existing markets, especially where this is accomplished through illegal access, goes beyond established fair use boundaries. A describes deployments the Office said are unlikely to substitute for the works. B contradicts its view that many training uses are transformative, and D contradicts its position that factor four should not be read narrowly, since AI output can dilute markets for works of the same kind. The Office also found government intervention premature and favoured voluntary licensing."
+  },
+  {
+    "id": "q-900",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A home-robot maker asks which of the following the Product Liability Directive (EU) 2024/2853 treats as a product for no-fault liability. Which one qualifies?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An open-source mapping library shared on a public repository outside any commercial activity"
+      },
+      {
+        "letter": "B",
+        "text": "The robot's AI navigation system, whether it runs on the device or from the cloud"
+      },
+      {
+        "letter": "C",
+        "text": "The text of the robot's user manual, supplied to customers as a downloadable e-book"
+      },
+      {
+        "letter": "D",
+        "text": "The maker's customer-service advice, given by human agents over the telephone"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Article 4(1) defines 'product' to include software, and recital 13 confirms that software, including AI systems, is a product whatever the mode of supply: stored on a device, accessed through a network or cloud, or supplied as software-as-a-service. A is excluded by Article 2(2), which carves out free and open-source software developed or supplied outside the course of a commercial activity. C is information, and recital 13 excludes the content of digital files such as e-books. D is a service delivered by people, not a product. Member States must transpose the Directive by 9 December 2026."
+  },
+  {
+    "id": "q-901",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A manufacturer places a smart heating controller on the EU market in March 2027. In 2028 it pushes an over-the-air model update that makes some units overheat, injuring a user. The manufacturer argues (1) the defect did not exist when the controller was placed on the market, and (2) scientific knowledge in March 2027 could not have revealed it. Under the Product Liability Directive 2024/2853, how do these defences fare?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Both fail: updates in the maker's control defeat defence (1), and knowledge is judged during that control"
+      },
+      {
+        "letter": "B",
+        "text": "Defence (1) succeeds, because liability is fixed at the moment the controller was first placed on the market"
+      },
+      {
+        "letter": "C",
+        "text": "Defence (2) succeeds, because the development-risk test looks only at scientific knowledge in March 2027"
+      },
+      {
+        "letter": "D",
+        "text": "Defence (1) fails, but the user must still prove that the manufacturer was negligent in designing the update"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The Directive applies because the controller was placed on the market after 9 December 2026 (Article 2(1)). Article 11(1)(c) normally exempts a defect that came into being after placing on the market, but Article 11(2) removes that exemption where the defect is due to software, including updates or upgrades, within the manufacturer's control, so B is wrong. Article 11(1)(e) judges the objective state of scientific and technical knowledge at placing on the market or during the period the product was within the manufacturer's control, which covers the 2028 update, so C is wrong. D is wrong because liability under the Directive is no-fault: the claimant must prove defect, damage and causation, not negligence."
+  },
+  {
+    "id": "q-902",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A patient harmed by an AI diagnostic device sues the manufacturer under national law implementing the new EU Product Liability Directive. Even after the court orders disclosure, she cannot show how the model caused the misdiagnosis because of its technical complexity. What does Article 10 allow the court to do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Dismiss the claim, because a model that keeps learning after sale breaks the causal chain"
+      },
+      {
+        "letter": "B",
+        "text": "Impose strict liability that the manufacturer can no longer rebut once complexity is shown"
+      },
+      {
+        "letter": "C",
+        "text": "Presume causation under the AI Liability Directive's rules for high-risk AI systems"
+      },
+      {
+        "letter": "D",
+        "text": "Presume defect or causation if she shows they are likely, subject to the maker's rebuttal"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Under Article 10(4), where a claimant faces excessive difficulties, in particular due to technical or scientific complexity, in proving defectiveness or causation despite disclosure under Article 9, the court shall presume them if she shows they are likely; recital 48 names machine learning as an example of complex technology, and Article 10(5) lets the defendant rebut. A is wrong because Article 7(2)(c) treats a product's ability to keep learning after placement as a factor in assessing defectiveness, not a defence. B overstates the presumption, which is rebuttable. C relies on the AI Liability Directive, which the Commission withdrew in 2025."
+  },
+  {
+    "id": "q-903",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A vendor's contract template still describes the EU AI Liability Directive as the coming fault-based regime for AI harms. As of 2026, what is the status of that proposal?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Adopted alongside the AI Act and applicable to high-risk AI systems from 2 August 2026"
+      },
+      {
+        "letter": "B",
+        "text": "Folded into the 2026 Digital Omnibus on AI as a new chapter on civil liability"
+      },
+      {
+        "letter": "C",
+        "text": "Withdrawn by the Commission, confirmed by an Official Journal notice in October 2025"
+      },
+      {
+        "letter": "D",
+        "text": "Still in trilogue negotiations, with a political agreement expected during 2027"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The Commission announced withdrawal of the AI Liability Directive proposal (COM(2022) 496, tabled 28 September 2022) in its February 2025 work programme, and the withdrawal notice appeared in OJ C/2025/5423 on 6 October 2025. The proposal would have eased fault-based claims with court-ordered disclosure for high-risk AI and a rebuttable presumption of causality. A and D treat it as adopted or still live, and B is wrong because the Digital Omnibus (Regulation (EU) 2026/1744) amends the AI Act without adding civil liability rules. AI harms now fall under the revised Product Liability Directive and national tort law."
+  },
+  {
+    "id": "q-904",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An HR director argues that because the EEOC removed its AI hiring guidance from its website in January 2025, the company no longer faces disparate-impact exposure from a vendor's resume-screening tool. What is the best response?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "She is right, because the guidance was the legal source of disparate-impact liability"
+      },
+      {
+        "letter": "B",
+        "text": "Title VII codifies disparate impact, so the employer stays liable and applicants can sue"
+      },
+      {
+        "letter": "C",
+        "text": "Liability has moved to the vendor, since removing the guidance ended employer responsibility"
+      },
+      {
+        "letter": "D",
+        "text": "Only NYC Local Law 144 now applies, because federal law defers to local bias-audit mandates"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The EEOC removed its May 2022 ADA and May 2023 Title VII technical assistance on AI on 27 January 2025, but guidance never created the law. Section 703(k) of Title VII (42 U.S.C. 2000e-2(k)) makes a practice with a disparate impact unlawful unless it is job related and consistent with business necessity, an employer answers for the selection tools it uses even when a vendor built them, and private plaintiffs can still sue. A and C wrongly treat the guidance as the source of liability, and D is wrong because Local Law 144 adds a bias-audit duty in New York City without displacing federal law."
+  },
+  {
+    "id": "q-905",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Executive Order 14281 (23 April 2025) declares a policy of eliminating disparate-impact liability to the maximum degree possible. For an employer using an AI assessment tool, which of the following does the order NOT change?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Federal agencies' priorities for enforcing disparate-impact provisions"
+      },
+      {
+        "letter": "B",
+        "text": "The EEOC's handling of pending matters that rely on disparate impact"
+      },
+      {
+        "letter": "C",
+        "text": "Presidential approval of the Justice Department's Title VI effects rules"
+      },
+      {
+        "letter": "D",
+        "text": "Title VII's statutory disparate-impact test and private suits under it"
+      }
+    ],
+    "answer": "D",
+    "explanation": "An executive order cannot amend a statute: section 703(k) of Title VII still defines disparate-impact liability, and private plaintiffs can sue on it. What the order changes is agency conduct. Section 4 tells agencies to deprioritise enforcement of disparate-impact provisions, naming 42 U.S.C. 2000e-2 (A); section 6 directs the Attorney General and the EEOC Chair to review pending disparate-impact matters (B); and section 3 revokes presidential approval of parts of the Justice Department's Title VI regulations that used an effects standard (C)."
+  },
+  {
+    "id": "q-906",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "After the CFPB's Regulation B amendments took effect on 21 July 2026, testing shows that a mortgage lender's AI underwriting model approves Black applicants at a far lower rate. There is no evidence of intent, and no protected trait or deliberate proxy was used. A fair-housing group is weighing claims. Which theory remains most clearly available?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Disparate impact under ECOA, since amended Regulation B keeps the effects test for home loans"
+      },
+      {
+        "letter": "B",
+        "text": "Disparate treatment under ECOA, since a large statistical disparity by itself establishes intent"
+      },
+      {
+        "letter": "C",
+        "text": "Disparate impact under the Fair Housing Act, recognised in Inclusive Communities (2015)"
+      },
+      {
+        "letter": "D",
+        "text": "None, since HUD's 2026 rulemaking deleted Fair Housing Act disparate impact along with its rule"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The CFPB's final rule (91 FR 21620, published 22 April 2026, effective 21 July 2026) revised 12 CFR 1002.6(a) to state that ECOA does not provide for the effects test, so A is wrong for home loans as for any other credit. Mortgage lending is also covered by the Fair Housing Act, and in Texas Department of Housing v. Inclusive Communities Project (2015) the Supreme Court held that disparate-impact claims are cognizable under that Act, so C is the clearest route. D fails twice: HUD has only proposed removing its discriminatory-effects rule (January 2026, with a supplemental proposal in August 2026), and the Act-based theory does not depend on HUD's rule. B is wrong because a disparity alone does not prove intent, although deliberate use of a proxy would still be disparate treatment."
+  },
+  {
+    "id": "q-907",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A bank denies a credit card application using a complex machine-learning model. The CFPB withdrew its AI-related adverse action circulars in May 2025. What must the bank's adverse action notice still provide?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The specific principal reasons for denial, matching factors the model actually used"
+      },
+      {
+        "letter": "B",
+        "text": "A statement that the applicant did not reach the qualifying score on the bank's model"
+      },
+      {
+        "letter": "C",
+        "text": "A copy of the model's feature weights so the applicant can check the calculation"
+      },
+      {
+        "letter": "D",
+        "text": "Only the decision itself, because algorithmic denials are exempt from giving reasons"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Regulation B, 12 CFR 1002.9(b)(2), still requires a statement of the specific principal reasons and says that reasons based on internal standards or on failing to achieve a qualifying score on a credit scoring system are insufficient, which rules out B. The official commentary adds that the reasons must relate to and accurately describe the factors actually considered or scored. Withdrawing Circulars 2022-03 and 2023-03 on 12 May 2025 removed guidance, not the rule. C goes beyond the regulation, which requires reasons rather than disclosure of the model, and D is wrong because there is no exemption for algorithmic decisions."
+  },
+  {
+    "id": "q-908",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "In December 2025 the FTC set aside its 2024 order against Rytr, one of the Operation AI Comply cases, citing America's AI Action Plan. Which AI practice remains most squarely within the FTC's Section 5 enforcement as of 2026?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Selling a general AI writing assistant that some subscribers misuse to draft reviews"
+      },
+      {
+        "letter": "B",
+        "text": "Advertising an AI detector as 98% accurate without evidence behind the figure"
+      },
+      {
+        "letter": "C",
+        "text": "Declining to publish the training-data sources behind a consumer-facing AI chatbot"
+      },
+      {
+        "letter": "D",
+        "text": "Launching a consumer AI product without first registering it with the Commission"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The FTC's 22 December 2025 order found that the Rytr complaint did not support a Section 5 violation and that condemning a tool merely because it could be misused unduly burdened AI innovation, which rules out A, while stating that the agency will keep pursuing those who use AI to deceive consumers. Unsubstantiated performance claims remain classic deception: in April 2025 the FTC required Workado to back up its claim that its AI content detector was 98 percent accurate, and Operation AI Comply (September 2024) included DoNotPay's unsupported 'robot lawyer' claims. C is wrong because the FTC Act imposes no general duty to publish training-data sources, and D is wrong because no federal AI registration requirement exists."
+  },
+  {
+    "id": "q-909",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "The FTC's December 2023 action against Rite Aid is often cited as a warning to retailers using AI surveillance. What conduct did the FTC charge as unfair?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Collecting shoppers' face scans without the written release that Illinois BIPA requires"
+      },
+      {
+        "letter": "B",
+        "text": "Using any facial recognition in stores, which the FTC Act prohibits for all retailers"
+      },
+      {
+        "letter": "C",
+        "text": "Failing to register its system as a high-risk biometric AI system before deployment"
+      },
+      {
+        "letter": "D",
+        "text": "Deploying facial recognition without testing its accuracy or monitoring false matches"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The FTC alleged that from 2012 to 2020 Rite Aid used AI facial recognition without reasonable safeguards: it did not test or assess accuracy before deployment, monitor false positives afterwards, or train staff, and false matches fell more heavily on people of color. The order banned Rite Aid from using facial recognition for surveillance for five years and required deletion of the images and of algorithms built from them. A describes an Illinois state-law claim, not the FTC's theory. B is wrong because the ban was a remedy against Rite Aid, not a general rule, and C borrows the EU AI Act's high-risk concept, which the FTC Act does not contain."
+  },
+  {
+    "id": "q-910",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "As amended by the 2026 Digital Omnibus, which milestone marks when the AI Act's high-risk requirements start to apply to Annex III systems, such as a CV-screening tool?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "AI Act Milestone — February 2, 2025"
+      },
+      {
+        "letter": "B",
+        "text": "AI Act Milestone — August 2, 2026"
+      },
+      {
+        "letter": "C",
+        "text": "AI Act Milestone — December 2, 2027"
+      },
+      {
+        "letter": "D",
+        "text": "AI Act Milestone — August 2, 2028"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Regulation (EU) 2026/1744 replaced Article 113(c) so that Chapter III, Sections 1-3 apply from 2 December 2027 to systems that are high-risk under Article 6(2) and Annex III; recruitment and CV screening fall under Annex III point 4. A is when the prohibitions and the AI literacy duty began. B was the Annex III date as originally enacted and is still the general application date, now used for Article 50 transparency and Commission GPAI enforcement. D is the amended date for Annex I product-embedded systems."
+  },
+  {
+    "id": "q-911",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A manufacturer builds an AI safety component into a medical device that must undergo third-party conformity assessment under the EU Medical Devices Regulation. As amended by the 2026 Digital Omnibus, from when do the AI Act's high-risk requirements apply to it?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "2 August 2028, the new date for Annex I product systems"
+      },
+      {
+        "letter": "B",
+        "text": "2 December 2027, the new date for Annex III systems"
+      },
+      {
+        "letter": "C",
+        "text": "2 August 2026, the Act's general date of application"
+      },
+      {
+        "letter": "D",
+        "text": "2 August 2027, the date originally set for Article 6(1) systems"
+      }
+    ],
+    "answer": "A",
+    "explanation": "A safety component of a product covered by Annex I harmonisation legislation that needs third-party conformity assessment is high-risk under Article 6(1). As amended by Regulation (EU) 2026/1744, Article 113(c)(ii) applies Chapter III, Sections 1-3 to those systems from 2 August 2028. B is the amended date for stand-alone Annex III systems. C is the general application date, which no longer governs high-risk rules. D was the Article 6(1) date as originally enacted."
+  },
+  {
+    "id": "q-912",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A provider has offered a text-to-image generator in the EU since 2025. As amended by the 2026 Digital Omnibus, by when must the generator's outputs carry the machine-readable marking that Article 50(2) requires?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "2 August 2026, when Article 50 starts to apply to new systems"
+      },
+      {
+        "letter": "B",
+        "text": "2 December 2026, the transition for systems already on the market"
+      },
+      {
+        "letter": "C",
+        "text": "2 December 2027, together with the Annex III high-risk rules"
+      },
+      {
+        "letter": "D",
+        "text": "2 August 2027, the compliance deadline for legacy GPAI models"
+      }
+    ],
+    "answer": "B",
+    "explanation": "New Article 111(4), inserted by Regulation (EU) 2026/1744, gives providers of generative AI systems placed on the market before 2 August 2026 until 2 December 2026 to comply with the Article 50(2) marking duty. A is the date Article 50 applies generally, which binds systems placed on the market from then on. C confuses transparency duties with the Annex III high-risk date. D is the Article 111(3) deadline for GPAI models, a model-level obligation rather than the system-level marking duty."
+  },
+  {
+    "id": "q-913",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A deployer's counsel reads Article 4 of the AI Act as amended by the 2026 Digital Omnibus. Which statement correctly describes the amended AI literacy obligation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Providers and deployers must take measures to support staff AI literacy, with no guaranteed level per person"
+      },
+      {
+        "letter": "B",
+        "text": "Providers and deployers must ensure, to their best extent, a sufficient level of AI literacy among their staff"
+      },
+      {
+        "letter": "C",
+        "text": "Only the Commission and Member States now carry AI literacy duties, so providers and deployers have none"
+      },
+      {
+        "letter": "D",
+        "text": "The duty now applies only to high-risk providers and deployers, from the Annex III application date"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The Omnibus replaced Article 4: providers and deployers must take measures to support the AI literacy of their staff and others acting for them, and the text says this does not require them to guarantee any specific level for any individual. B is the wording as originally enacted, which applied from 2 February 2025. C overstates the change: the Commission and Member States must support and facilitate compliance, but providers and deployers keep a duty. D invents a high-risk limitation that the Article does not contain."
+  },
+  {
+    "id": "q-914",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "An app lets users upload a photo of a real person and generate realistic nude images of her without her consent. Under the Nudification and CSAM Prohibitions that the 2026 Digital Omnibus added to Article 5, from when is placing such an app on the EU market banned?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "2 February 2025, with the Act's original prohibitions"
+      },
+      {
+        "letter": "B",
+        "text": "2 December 2026, under the amended Article 113(a)"
+      },
+      {
+        "letter": "C",
+        "text": "2 August 2026, with the Article 50 deepfake rules"
+      },
+      {
+        "letter": "D",
+        "text": "2 December 2027, with the Annex III high-risk rules"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Regulation (EU) 2026/1744 added Article 5(1)(ba) and (bb), which ban AI that generates non-consensual intimate imagery of identifiable people and child sexual abuse material, and amended Article 113(a) so those points apply from 2 December 2026. A is when the original eight prohibitions began. C is when Article 50 deepfake disclosure starts, a transparency duty that bans nothing. D is the amended date for Annex III high-risk rules, not for prohibitions."
+  },
+  {
+    "id": "q-915",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "From December 2026, a company offers a general-purpose image editor in the EU. Testing shows that ordinary prompts reliably produce realistic sexual images of identifiable real people, and the company has built no safeguards against it. As amended by the 2026 Digital Omnibus, how does Article 5 treat placing the editor on the market?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Permitted, since the ban reaches only systems whose intended purpose is producing such imagery"
+      },
+      {
+        "letter": "B",
+        "text": "Permitted, provided deployers label every such output as a deepfake under Article 50(4)"
+      },
+      {
+        "letter": "C",
+        "text": "Prohibited, since the output is foreseeable and reproducible and nothing guards against it"
+      },
+      {
+        "letter": "D",
+        "text": "Permitted, since only the individual users who generate such images commit the prohibited practice"
+      }
+    ],
+    "answer": "C",
+    "explanation": "New Article 5(1a)(a) bans placing such a system on the market in two cases: where generating the material is its intended purpose, or where its design, training or capabilities make that output a reasonably foreseeable and reproducible outcome without significant modification and it lacks reasonable and adequate safeguards. The editor falls within the second limb. A describes only the first limb. B confuses the Article 50 transparency duty with the prohibition; labelling cannot cure a banned practice. D ignores that the provider's placing on the market is caught separately from a deployer's use for that purpose under Article 5(1a)(b)."
+  },
+  {
+    "id": "q-916",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A provider of a customer-service chatbot that is not high-risk wants to process ethnicity data to test the bot for discriminatory outputs. As amended by the 2026 Digital Omnibus, which statement is correct?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Article 10(5) allows it, because its bias-testing exception has always covered every kind of AI system"
+      },
+      {
+        "letter": "B",
+        "text": "It is barred, because only providers of high-risk systems may process such data for bias testing"
+      },
+      {
+        "letter": "C",
+        "text": "New Article 4a can allow it where strictly necessary and every listed safeguard is applied"
+      },
+      {
+        "letter": "D",
+        "text": "Article 4a allows it without conditions, because it now displaces the GDPR's Article 9 prohibition"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Article 4a(2), added by Regulation (EU) 2026/1744, lets providers and deployers of AI systems other than high-risk ones process special categories of data where strictly necessary for bias detection and correction, if every Article 4a(1) safeguard is applied, such as no effective alternative data, pseudonymisation, access controls and deletion. The GDPR applies in addition. A is wrong twice: Article 10(5) covered only high-risk systems and has been deleted. B states the position as originally enacted. D ignores both the conditions and the continuing GDPR requirements."
+  },
+  {
+    "id": "q-917",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A company develops its own general-purpose AI model and builds a consumer chatbot on it, which it sells across the EU. As amended by the 2026 Digital Omnibus, which body is exclusively competent to supervise and enforce the AI Act for the chatbot?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The market surveillance authority of the Member State where the company is established"
+      },
+      {
+        "letter": "B",
+        "text": "The European AI Office, because the model and the system come from the same provider"
+      },
+      {
+        "letter": "C",
+        "text": "The European Data Protection Board, because the chatbot processes users' personal data"
+      },
+      {
+        "letter": "D",
+        "text": "The notifying authority that designated the notified body assessing the chatbot"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Amended Article 75(1)(a) makes the AI Office exclusively competent for AI systems based on a general-purpose AI model where the model and the system come from the same provider or group, unless a carve-out applies (Annex I products, Annex III critical infrastructure, certain law-enforcement, border and financial-institution systems, or justice uses). A consumer chatbot hits no carve-out. A is the default for other AI systems. C is the GDPR body and does not enforce the AI Act. D oversees conformity assessment bodies, not operators, and this chatbot needs no notified body."
+  },
+  {
+    "id": "q-918",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "An energy group builds its own general-purpose AI model and, on top of it, an AI system used as a safety component in managing its electricity grid. Regulators ask who supervises the grid system under the AI Act as amended by the 2026 Digital Omnibus. Which answer is correct?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The European AI Office, since the system is built on the provider's own general-purpose AI model"
+      },
+      {
+        "letter": "B",
+        "text": "The European AI Office, since critical-infrastructure safety components pose systemic risk"
+      },
+      {
+        "letter": "C",
+        "text": "The national notifying authority, since the system will need a third-party conformity assessment"
+      },
+      {
+        "letter": "D",
+        "text": "The national market surveillance authority, since Annex III point 2 systems are carved out"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Amended Article 75(1)(a) does give the AI Office exclusive competence over AI systems built on a provider's own general-purpose AI model, which makes A look right. But the same point carves out AI systems in Annex III point 2, the safety components used in managing critical infrastructure such as electricity supply. That detail sends supervision back to the national market surveillance authority. B misuses 'systemic risk', a GPAI-model concept, to justify AI Office jurisdiction over a system. C confuses notifying authorities, which oversee conformity assessment bodies, with market surveillance of operators."
+  },
+  {
+    "id": "q-919",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "As amended by the 2026 Digital Omnibus, which TWO kinds of AI Act fine are capped at the lower of the percentage and the fixed amount when imposed on a small mid-cap enterprise (SMC)? (Select 2.)",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fines for breaching operator obligations such as provider or deployer duties (Article 99(4))"
+      },
+      {
+        "letter": "B",
+        "text": "Fines for supplying incorrect, incomplete or misleading information to authorities (Article 99(5))"
+      },
+      {
+        "letter": "C",
+        "text": "Fines for engaging in a prohibited AI practice under Article 5 (Article 99(3))"
+      },
+      {
+        "letter": "D",
+        "text": "Fines imposed by the Commission on providers of general-purpose AI models (Article 101)"
+      },
+      {
+        "letter": "E",
+        "text": "Fines under the GDPR when the AI system also processes personal data unlawfully"
+      }
+    ],
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "New Article 99(6a) applies the lower-figure cap to SMCs only for the fines in Article 99(4) and (5): breaches of operator obligations, and incorrect, incomplete or misleading information. C is excluded: the prohibited-practice tier in Article 99(3) keeps the whichever-is-higher rule for SMCs, although the SME cap in Article 99(6) does cover it. D is the Commission's separate GPAI fining power under Article 101, which the SMC cap does not reach. E is governed by GDPR Article 83, not the AI Act."
+  },
+  {
+    "id": "q-920",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "The Commission's Code of Practice on Marking and Labelling, finalised in June 2026, helps organisations comply with which AI Act obligations?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The Article 50 duties to mark AI-generated content and to label deepfakes"
+      },
+      {
+        "letter": "B",
+        "text": "The Article 53 duties to document GPAI models and summarise training data"
+      },
+      {
+        "letter": "C",
+        "text": "The Article 55 duties to evaluate and mitigate GPAI models' systemic risks"
+      },
+      {
+        "letter": "D",
+        "text": "The Article 13 duties to give deployers instructions for high-risk systems"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The Code of Practice on Transparency of AI-generated Content, published 10 June 2026 and judged adequate by the Commission and the AI Board, operationalises Article 50(2), (4) and (5). Section 1 covers providers' machine-readable marking and detection; Section 2 covers deployers' labelling of deepfakes and AI-generated public-interest text. B and C are what the separate GPAI Code of Practice addresses (its Transparency and Copyright chapters, and its Safety and Security chapter). D is the Article 13 high-risk duty to supply instructions for use, which falls outside this code."
+  },
+  {
+    "id": "q-921",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A GPAI provider tells a regulator that because it signed the GPAI Code of Practice, which the Commission and AI Board assessed as adequate, it enjoys a presumption of conformity with Articles 53 and 55. Which response is most accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Correct, because the August 2025 adequacy assessment turned the Code into a harmonised standard"
+      },
+      {
+        "letter": "B",
+        "text": "Correct, but only for the Safety and Security chapter, which puts Article 55 into operation"
+      },
+      {
+        "letter": "C",
+        "text": "Incorrect, because the Code has no legal effect and signatories are treated like non-signatories"
+      },
+      {
+        "letter": "D",
+        "text": "Incorrect, because adherence helps demonstrate compliance but only harmonised standards presume it"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Articles 53(4) and 55(2) let providers rely on codes of practice to demonstrate compliance until a harmonised standard is published, but reserve the presumption of conformity for harmonised standards; the Commission's GPAI guidelines repeat this contrast. A is wrong because an adequacy assessment does not turn a code into a standard. B invents a chapter-specific presumption. C goes too far the other way: adherence to an adequate code focuses Commission enforcement on monitoring the commitments and can count as a mitigating factor when fines are set under Article 101."
+  },
+  {
+    "id": "q-922",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "The Digital Omnibus on AI (Regulation 2026/1744) entered into force on 27 July 2026. What does it do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It amends the AI Act, chiefly moving the high-risk dates and simplifying some duties"
+      },
+      {
+        "letter": "B",
+        "text": "It is a Commission proposal still awaiting agreement by Parliament and the Council"
+      },
+      {
+        "letter": "C",
+        "text": "It suspends the high-risk rules until harmonised standards exist, with no fixed end date"
+      },
+      {
+        "letter": "D",
+        "text": "It amends the GDPR to give AI developers a new legitimate-interest legal basis"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Regulation (EU) 2026/1744 amends Regulation (EU) 2024/1689 and two sectoral regulations. It sets fixed new high-risk dates of 2 December 2027 for Annex III and 2 August 2028 for Annex I, softens the AI literacy duty and adds targeted simplifications. B was true only before its 2026 adoption. C describes a standards-linked trigger, but the adopted text uses fixed dates in Article 113(c). D confuses it with the separate Digital Omnibus proposal on data law, whose GDPR changes, such as proposed Article 88c, are still under negotiation."
+  },
+  {
+    "id": "q-923",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "As amended by the 2026 Digital Omnibus, which of these still starts to apply on 2 August 2026?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The high-risk requirements for Annex III systems such as credit scoring"
+      },
+      {
+        "letter": "B",
+        "text": "The Commission's power to fine providers of general-purpose AI models"
+      },
+      {
+        "letter": "C",
+        "text": "The two new bans on intimate-imagery and child-abuse generators"
+      },
+      {
+        "letter": "D",
+        "text": "The deadline for each Member State's national AI regulatory sandbox"
+      }
+    ],
+    "answer": "B",
+    "explanation": "2 August 2026 remains the AI Act's general application date. Article 101 was carved out of the August 2025 start of the GPAI rules, so the Commission's enforcement powers over GPAI providers, including fines of up to 3% or €15 million, apply from 2 August 2026, as do the Article 50 transparency duties. A applied from that date only as originally enacted; Annex III rules now start on 2 December 2027. C starts on 2 December 2026. D moved to 2 August 2027 under amended Article 57(1)."
+  },
+  {
+    "id": "q-924",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A company fine-tunes another provider's general-purpose AI model, using compute equal to about 10% of the compute used to train the original. Under the Commission's July 2025 GPAI guidelines, does the company become the provider of the modified model?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes, because any fine-tuning of a GPAI model creates a new model with a new provider"
+      },
+      {
+        "letter": "B",
+        "text": "Yes, because the modification is large enough to exceed the 10^23 FLOP indicative criterion"
+      },
+      {
+        "letter": "C",
+        "text": "No, because indicatively that needs more than one third of the original training compute"
+      },
+      {
+        "letter": "D",
+        "text": "No, because provider duties for a GPAI model always stay with the original developer"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The guidelines treat a downstream modifier as the provider of the modified model only if the modification significantly changes the model's generality, capabilities or systemic risk; indicatively, that means modification compute above one third of the original model's training compute (paragraph 60). At about 10%, the company does not become the model's provider, though it may be the provider of any AI system it builds on the model. A ignores that significance threshold. B confuses the 10^23 FLOP criterion for whether a model is general-purpose at all with the modification test. D is too absolute: a modifier that crosses the threshold does become a provider, with duties limited to its modification (recital 109)."
+  },
+  {
+    "id": "q-925",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "According to EDPB Opinion 28/2024, when can an AI model trained on personal data be considered anonymous?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "When direct identifiers were stripped from the training data before training began"
+      },
+      {
+        "letter": "B",
+        "text": "In every case, because model parameters are statistical weights rather than stored records"
+      },
+      {
+        "letter": "C",
+        "text": "When extracting training data from it, directly or by querying, is insignificantly likely"
+      },
+      {
+        "letter": "D",
+        "text": "Only when each person whose data was used has consented to the model's training"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The Opinion (17 December 2024) says models trained on personal data cannot in all cases be considered anonymous. A model is anonymous only if both the likelihood of extracting training subjects' data directly, including probabilistically, and the likelihood of obtaining it through queries are insignificant, judged case by case with all means reasonably likely to be used. A describes pseudonymisation, which leaves data personal. B is the assumption the Opinion rejects. D confuses anonymity with lawful basis; consent does not make data anonymous."
+  },
+  {
+    "id": "q-926",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A developer relies on legitimate interest to train a customer-support assistant on past support tickets. Under the three-step test in EDPB Opinion 28/2024, which question belongs to the second step?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Is the interest lawful, clearly articulated, and real and present rather than speculative?"
+      },
+      {
+        "letter": "B",
+        "text": "Would customers reasonably expect their tickets to be used to train the assistant?"
+      },
+      {
+        "letter": "C",
+        "text": "Can mitigating measures beyond the legal minimum reduce the impact on customers?"
+      },
+      {
+        "letter": "D",
+        "text": "Does the processing achieve the interest, with no less intrusive way of doing so?"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The Opinion's test runs: first, identify a legitimate interest; second, necessity, meaning the processing must actually pursue the interest and no less intrusive means may exist, with attention to the amount of data and to minimisation; third, balancing. A is the first step. B and C belong to the third step: reasonable expectations are a key balancing factor, and mitigating measures that go beyond what the GDPR already requires can tip a close balance."
+  },
+  {
+    "id": "q-927",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A bank deploys a third-party language model. A supervisory authority later finds that the model's developer processed personal data unlawfully during training, and the model is not anonymous. Under EDPB Opinion 28/2024, what does the bank's accountability duty require?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Nothing, because unlawful processing in development is solely the developer's responsibility"
+      },
+      {
+        "letter": "B",
+        "text": "Retraining the model itself on lawfully sourced data before using it any further"
+      },
+      {
+        "letter": "C",
+        "text": "Notifying the supervisory authority within 72 hours, treating it as a personal data breach"
+      },
+      {
+        "letter": "D",
+        "text": "An appropriate check, before deploying, that the model was not developed through unlawful processing"
+      }
+    ],
+    "answer": "D",
+    "explanation": "In the Opinion's second scenario, personal data retained in the model is processed by a different controller at deployment. That deployer must, as part of its accountability under Articles 5(1)(a) and 6, carry out an appropriate assessment that the model was not developed unlawfully, considering the data's source and any finding by an authority or court, in depth proportionate to the deployment's risks. A ignores that duty. B is not what the Opinion requires; remedies are for the supervisory authority to choose case by case. C confuses the issue with Article 33 breach notification, which concerns security incidents."
+  },
+  {
+    "id": "q-928",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Under the SCHUFA Ruling (C-634/21), when does a credit bureau's automated score itself count as an automated decision under GDPR Article 22?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "When a lender that receives it draws strongly on it to grant, run or end a contract"
+      },
+      {
+        "letter": "B",
+        "text": "Only when the bureau itself refuses the applicant's loan with no human involvement"
+      },
+      {
+        "letter": "C",
+        "text": "Never, because only the lender that acts on the score can make an Article 22 decision"
+      },
+      {
+        "letter": "D",
+        "text": "Whenever the score is calculated, even if no one ever relies on the result"
+      }
+    ],
+    "answer": "A",
+    "explanation": "On 7 December 2023 the CJEU held that a credit agency's automated establishment of a probability value about a person's ability to repay is automated individual decision-making under Article 22(1) where a third party to which it is transmitted draws strongly on it to establish, implement or terminate a contract. B misplaces the decision with the bureau refusing the loan. C is the gap the Court closed; otherwise nobody would owe the explanation. D drops the reliance condition that the ruling requires."
+  },
+  {
+    "id": "q-929",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "After the Dun & Bradstreet Austria Ruling (C-203/22), what must a controller provide when a person uses Article 15(1)(h) to ask how an automated credit assessment reached its result?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The full algorithm and mathematical formula used to compute the credit score"
+      },
+      {
+        "letter": "B",
+        "text": "A concise, intelligible account of the procedure and principles actually applied"
+      },
+      {
+        "letter": "C",
+        "text": "Only a copy of the personal data used, since the logic is a protected trade secret"
+      },
+      {
+        "letter": "D",
+        "text": "Confirmation that a human reviewed the result, which fully satisfies the right"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The CJEU held on 27 February 2025 that meaningful information about the logic involved means explaining, concisely and intelligibly, the procedure and principles actually applied to the person's data to reach the result, and that showing how different inputs would have changed the outcome may suffice. A is expressly rejected, since a complex formula or algorithm is not intelligible. C is wrong because a claimed trade secret goes to the supervisory authority or court for balancing, not a blanket refusal. D confuses the Article 22(3) human-intervention safeguard with the Article 15 access right."
+  },
+  {
+    "id": "q-930",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A developer scrapes public web pages containing personal data to train a generative model. Under the draft EDPB Guidelines 03/2026 on Web Scraping, which lawful basis will it most likely have to rely on?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Consent obtained from each person whose data appears on the pages"
+      },
+      {
+        "letter": "B",
+        "text": "Performance of a contract with the people whose data is scraped"
+      },
+      {
+        "letter": "C",
+        "text": "Public task, because the pages were already publicly available"
+      },
+      {
+        "letter": "D",
+        "text": "Legitimate interest, subject to the necessity and balancing conditions"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The draft guidelines, adopted on 7 July 2026 for consultation until 30 October 2026, say legitimate interest under Article 6(1)(f) is the basis often used for scraping to train generative AI, lawful only if the three cumulative conditions of interest, necessity and balancing are met, possibly with mitigating measures. A is unworkable at scale: the EDPB says consent would most probably not be an applicable basis for indirect mass collection. B fails because there is no contract with the people scraped. C misreads public availability, which does not create a public-interest task for a private developer."
+  },
+  {
+    "id": "q-931",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A developer's scraped training corpus unavoidably includes health details from public forum posts. Which TWO statements reflect the EDPB's position in its draft 2026 web-scraping guidelines? (Select 2.)",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The processing needs both an Article 6 lawful basis and an Article 9(2) exception"
+      },
+      {
+        "letter": "B",
+        "text": "Because the posts were public, Article 9 no longer applies to the health data"
+      },
+      {
+        "letter": "C",
+        "text": "GC and Others reasoning may help with incidental collection if safeguards limit collection and spread"
+      },
+      {
+        "letter": "D",
+        "text": "Legitimate interest under Article 6(1)(f) is enough on its own to process the health data"
+      },
+      {
+        "letter": "E",
+        "text": "The developer can already rely on the Digital Omnibus exception for incidental special-category data"
+      }
+    ],
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "Draft Guidelines 03/2026 recall that processing special categories is in principle prohibited, so scraping such data needs an Article 9(2) derogation in addition to an Article 6 basis (A). The EDPB also suggests that the CJEU's GC and Others (C-136/17) reasoning may be relevant to incidental and residual collection, where the controller acts within its responsibilities, powers and capabilities and has measures to prevent collection and dissemination (C). B is wrong because public availability does not switch Article 9 off; 'manifestly made public' is only one narrow exception. D ignores the second lock. E relies on a proposed amendment that is not law as of 2026."
+  },
+  {
+    "id": "q-932",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A lender's loan officer formally signs off each application but follows a credit bureau's automated score in almost every case. A refused applicant asks the bureau to explain the score; the bureau replies that it takes no decisions and that its model is a trade secret. Which analysis is most accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Article 22 cannot apply, because a human officer formally takes each final lending decision"
+      },
+      {
+        "letter": "B",
+        "text": "Only the lender owes an explanation, because the bureau takes no decision about the applicant"
+      },
+      {
+        "letter": "C",
+        "text": "The bureau must hand over its full scoring algorithm and weights, because access rights override trade secrets"
+      },
+      {
+        "letter": "D",
+        "text": "The bureau's score can be the Article 22 decision, so it must explain, with secrets weighed by a DPA or court"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Under SCHUFA (C-634/21), a bureau's automated score is itself an Article 22 decision where the lender draws strongly on it, and a sign-off that follows the score almost every time is exactly that reliance. The bureau then owes the Article 15(1)(h) information, and Dun & Bradstreet Austria (C-203/22) says trade-secret claims go to the supervisory authority or court for balancing rather than justifying a refusal. A is the tempting answer, but a rubber-stamp review does not take the score outside Article 22. B is the gap SCHUFA closed. C overshoots: the Court held that handing over a complex formula is not what the right requires."
+  },
+  {
+    "id": "q-933",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A compliance lead reads that her company's new AI policy will 'follow ISO/IEC 42005'. Which description of that standard is accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Guidance on assessing how AI systems affect individuals, groups and society, with no certification scheme"
+      },
+      {
+        "letter": "B",
+        "text": "Certifiable requirements for establishing and improving an organization-wide AI management system"
+      },
+      {
+        "letter": "C",
+        "text": "Requirements for the bodies that audit and certify AI management systems against ISO/IEC 42001"
+      },
+      {
+        "letter": "D",
+        "text": "A vocabulary standard defining AI concepts, stakeholder roles and trustworthiness properties"
+      }
+    ],
+    "answer": "A",
+    "explanation": "ISO/IEC 42005:2025 (published 28 May 2025) gives guidance to organizations performing AI system impact assessments for the individuals and societies an AI system can affect. It is not a requirements standard, so there is nothing to certify against. Option B describes ISO/IEC 42001, the certifiable AI management system standard; C describes ISO/IEC 42006:2025, which covers certification bodies; D describes ISO/IEC 22989's concepts and terminology."
+  },
+  {
+    "id": "q-934",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A multinational wants assurance that the firm certifying its AI management system is itself competent to audit AI. Which standard sets requirements for such certification bodies?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "ISO/IEC 42005, which guides organizations through assessing the impacts of their AI systems"
+      },
+      {
+        "letter": "B",
+        "text": "ISO/IEC 42001, whose Annex A lists the reference controls for an AI management system"
+      },
+      {
+        "letter": "C",
+        "text": "ISO/IEC 42006, which adds AI-specific rules to ISO/IEC 17021-1 for certification bodies"
+      },
+      {
+        "letter": "D",
+        "text": "ISO/IEC 23894, which extends the ISO 31000 risk process with AI-specific guidance"
+      }
+    ],
+    "answer": "C",
+    "explanation": "ISO/IEC 42006:2025 (published 7 July 2025) sets requirements, additional to ISO/IEC 17021-1, for bodies that audit and certify AI management systems against ISO/IEC 42001, so accreditation bodies can judge their competence and consistency. Option A, ISO/IEC 42005, is impact-assessment guidance for organizations; B, ISO/IEC 42001, is the management system being certified rather than the rules for certifiers; D, ISO/IEC 23894, is AI risk management guidance."
+  },
+  {
+    "id": "q-935",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A 40-person insurer uses a vendor's claims-triage model but develops no AI of its own. Can it apply ISO/IEC 42005 to that model?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "No; the standard addresses developers and providers, so the insurer relies on the vendor's assessment"
+      },
+      {
+        "letter": "B",
+        "text": "Yes; the guidance is written for organizations that develop, provide or use AI systems, of any size"
+      },
+      {
+        "letter": "C",
+        "text": "Only once it certifies an AI management system to ISO/IEC 42001, which 42005 extends"
+      },
+      {
+        "letter": "D",
+        "text": "Only for systems classified as high-risk under the EU AI Act, where the standard is mandatory"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The official abstract says ISO/IEC 42005:2025 applies to organizations developing, providing or using AI systems, regardless of size, type and nature, so a deployer can assess the impacts of a licensed model in its own context. Option A wrongly limits the standard to developers and providers; C invents a dependency on ISO/IEC 42001 certification; D is wrong because 42005 is voluntary guidance that no law makes mandatory."
+  },
+  {
+    "id": "q-936",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A bank already runs AI risk management under ISO/IEC 23894. Its ethics lead argues it also needs ISO/IEC 42005. What distinct contribution does 42005 make?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It extends ISO 31000 clause by clause with AI-specific risk guidance the bank lacks"
+      },
+      {
+        "letter": "B",
+        "text": "It adds management-system requirements so the two standards can be certified together"
+      },
+      {
+        "letter": "C",
+        "text": "It assesses impacts on affected people and society, and feeds findings into risk work"
+      },
+      {
+        "letter": "D",
+        "text": "It replaces the 23894 catalogue of AI risk sources with a narrower taxonomy of harms"
+      }
+    ],
+    "answer": "C",
+    "explanation": "ISO/IEC 23894 manages AI risk to the organization's objectives, whereas ISO/IEC 42005:2025 assesses the benefits and harms an AI system can have for individuals, groups and societies; its informative Annex B explains how those findings feed the organization's risk management. Option A describes what 23894 itself does with ISO 31000; B confuses 42005 with the certifiable ISO/IEC 42001; D is wrong because 42005 complements 23894 rather than replacing any part of it, and its Annex C taxonomy covers benefits as well as harms."
+  },
+  {
+    "id": "q-937",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An organization certified to ISO/IEC 42001 wants to use ISO/IEC 42005 to strengthen its AI system impact assessments without duplicating work. Which part of ISO/IEC 42005 is written for this situation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Annex A, which gives guidance for use with ISO/IEC 42001"
+      },
+      {
+        "letter": "B",
+        "text": "Annex B, which gives guidance for use with ISO/IEC 23894"
+      },
+      {
+        "letter": "C",
+        "text": "Annex D, which aligns the assessment with other assessments"
+      },
+      {
+        "letter": "D",
+        "text": "Annex E, which provides an example assessment template"
+      }
+    ],
+    "answer": "A",
+    "explanation": "ISO/IEC 42005's informative Annex A gives guidance for using the standard with ISO/IEC 42001, whose clauses 6.1.4 and 8.4 require an AI system impact assessment process and its performance. Annex B (option B) links the standard to ISO/IEC 23894 risk management, Annex D (C) covers aligning the assessment with other assessments the organization runs, and Annex E (D) is an example template rather than guidance on working inside a management system."
+  },
+  {
+    "id": "q-938",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A retailer completed an ISO/IEC 42005 impact assessment for a demand-forecasting model before launch. Which later event is the clearest impact reassessment trigger?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The vendor renews its annual support contract on unchanged terms"
+      },
+      {
+        "letter": "B",
+        "text": "Engineers migrate the model's code to a new repository with no functional change"
+      },
+      {
+        "letter": "C",
+        "text": "Managers start using the forecasts to set individual employees' shift schedules"
+      },
+      {
+        "letter": "D",
+        "text": "A competitor publishes an impact assessment for a similar forecasting tool"
+      }
+    ],
+    "answer": "C",
+    "explanation": "ISO/IEC 42005 treats impact assessment as a lifecycle activity: a change in intended use, a significant change to the system, or a change in the legal or policy environment should prompt reassessment. Using forecasts to schedule individual employees is a new use that affects a new group of people. Options A and B change nothing about the system's use or behaviour, and D is an external event that may be informative but does not alter the retailer's own system, use or obligations."
+  },
+  {
+    "id": "q-939",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A telecom will roll out a voice assistant in three countries and four languages. Under ISO/IEC 42005's documentation guidance, where should the assessor record these facts?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Under data information and quality, as traits of the training corpus"
+      },
+      {
+        "letter": "B",
+        "text": "Under the deployment environment, with its complexity and constraints"
+      },
+      {
+        "letter": "C",
+        "text": "Under relevant interested parties, as the groups directly affected"
+      },
+      {
+        "letter": "D",
+        "text": "Under system functionalities and capabilities, as supported features"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Clause 6 of ISO/IEC 42005 groups deployment information together: the geographical area and languages of use, plus the complexity and constraints of the setting. Option A concerns the data used to build and run the system, C covers directly affected and other relevant parties, and D describes what the system can do; each is a separate element of the assessment record."
+  },
+  {
+    "id": "q-940",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A deployer's AI governance committee reviews a draft impact assessment for a licensed hiring-screening tool, prepared under ISO/IEC 42005. The draft lists only possible harms to candidates. What should the committee ask the team to add?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A probability and severity score for each risk to the company's own objectives"
+      },
+      {
+        "letter": "B",
+        "text": "The lawful basis relied on for each purpose of processing candidates' data"
+      },
+      {
+        "letter": "C",
+        "text": "The provider's EU declaration of conformity for the screening system"
+      },
+      {
+        "letter": "D",
+        "text": "The tool's expected benefits for affected people and measures to secure them"
+      }
+    ],
+    "answer": "D",
+    "explanation": "ISO/IEC 42005:2025 treats impacts as two-sided: the record covers actual and reasonably foreseeable benefits and harms and the measures that address both, so a harms-only draft is incomplete. Option A is organizational risk scoring in the style of ISO/IEC 23894; B is a GDPR lawful-basis record; C is a provider's EU AI Act document. Each is useful elsewhere, but none fills the gap in the impact assessment."
+  },
+  {
+    "id": "q-941",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "During an ISO/IEC 42001 certification audit, the auditor asks a fintech for evidence of AI system impact assessment. The fintech replies that it 'follows ISO/IEC 42005'. Which response is accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The fintech also needs a separate ISO/IEC 42005 certificate before the audit can close"
+      },
+      {
+        "letter": "B",
+        "text": "42001 mentions impact assessment only in an informative annex, so it cannot be required"
+      },
+      {
+        "letter": "C",
+        "text": "The auditor must first confirm the certification body meets ISO/IEC 42005's rules"
+      },
+      {
+        "letter": "D",
+        "text": "42001 itself requires the assessment, and following 42005 is one way to show it is met"
+      }
+    ],
+    "answer": "D",
+    "explanation": "ISO/IEC 42001:2023 requires an AI system impact assessment process in clause 6.1.4 and its performance in clause 8.4, backed by normative Annex A objective A.5 on assessing impacts. ISO/IEC 42005 is guidance on doing that work, and the certificate is issued against 42001 alone. Option A is wrong because 42005 is not certifiable; B is wrong because these are main-clause requirements and Annex A is normative; C confuses 42005 with ISO/IEC 42006, which sets requirements for certification bodies."
+  },
+  {
+    "id": "q-942",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Hard",
+    "question": "At the design stage of a remote exam-proctoring system that flags students for possible cheating, the governance team begins an impact assessment following ISO/IEC 42005. Which step reflects the standard's guidance on thresholds?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Postponing the assessment until a pilot yields real-world performance data"
+      },
+      {
+        "letter": "B",
+        "text": "Scoring only the risks that the system poses to the vendor's contractual commitments"
+      },
+      {
+        "letter": "C",
+        "text": "Checking the use against sensitive- and restricted-use criteria and escalating it"
+      },
+      {
+        "letter": "D",
+        "text": "Recording only negative impacts, since benefits already sit in the business case"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Clause 5 of ISO/IEC 42005 asks organizations to set thresholds for sensitive uses, restricted uses and impact scales, so that uses with significant potential effects on people get deeper assessment, escalation and formal approval; automated flagging of students is a clear candidate. Option A delays the assessment past the design stage, where the standard expects it to begin; B narrows the lens to contractual risk to the organization; D contradicts the guidance to assess benefits and harms together."
+  },
+  {
+    "id": "q-943",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Painful",
+    "question": "A privately owned EU bank that provides no public services deploys a vendor's creditworthiness-scoring model for consumer loans. Its AI system impact assessment follows ISO/IEC 42005 and covers fundamental rights in depth. Assuming the AI Act's Annex III deployer obligations apply, what else does the bank need?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An Article 27 FRIA, notified to the market surveillance authority, built on its 42005 work"
+      },
+      {
+        "letter": "B",
+        "text": "Nothing more; as a private bank with no public services, it falls outside the FRIA duty"
+      },
+      {
+        "letter": "C",
+        "text": "Nothing more; following 42005 gives it the AI Act presumption of conformity as a deployer"
+      },
+      {
+        "letter": "D",
+        "text": "Only the vendor's FRIA, since fundamental rights assessment is an obligation of the provider"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Article 27(1) of the EU AI Act requires a fundamental rights impact assessment before first use not only from public-law bodies and private entities providing public services, but also from deployers of Annex III point 5(b) systems that evaluate creditworthiness or establish credit scores; the deployer must then notify the market surveillance authority of the results. ISO/IEC 42005 is voluntary guidance whose content can feed the FRIA but cannot replace it. B is the trap: the public-services limb does not apply, but the 5(b) limb does. C is wrong because 42005 is not a harmonised standard and the Article 40 presumption does not cover Article 27; D puts a deployer duty on the provider."
+  },
+  {
+    "id": "q-944",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Which THREE statements about ISO/IEC 42005:2025 are accurate? (Select 3.)",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It is guidance, so organizations cannot be certified against it"
+      },
+      {
+        "letter": "B",
+        "text": "Its informative Annex B explains how it works with ISO/IEC 23894"
+      },
+      {
+        "letter": "C",
+        "text": "It is intended only for organizations that develop AI systems"
+      },
+      {
+        "letter": "D",
+        "text": "It expects reassessment when a system or its use changes significantly"
+      },
+      {
+        "letter": "E",
+        "text": "Following it gives a presumption of conformity with EU AI Act Article 27"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "ISO/IEC 42005:2025 is guidance for AI system impact assessment with no certification scheme (A); its informative Annex B covers use with ISO/IEC 23894 (B); and it treats assessment as a lifecycle activity, revisited when the system, its intended use or its context changes significantly (D). C is wrong because the standard covers organizations that develop, provide or use AI. E is wrong because Article 40 presumptions come only from harmonised standards published in the Official Journal, and they cover the Chapter III Section 2 requirements for high-risk systems rather than a deployer's Article 27 assessment."
+  },
+  {
+    "id": "q-945",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Using the OECD Framework for the Classification of AI Systems, a regulator records whether a lending model's data were collected by sensors or by people, where the data came from, and whether they are personal and pseudonymised. Which dimension is it completing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The Economic Context dimension"
+      },
+      {
+        "letter": "B",
+        "text": "The People & Planet dimension"
+      },
+      {
+        "letter": "C",
+        "text": "The AI Model dimension"
+      },
+      {
+        "letter": "D",
+        "text": "The Data & Input dimension"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The OECD framework (Digital Economy Papers No. 323, February 2022) places detection and collection, provenance, rights and identifiability, structure, scale and quality of data under the Data & Input dimension. Economic Context (A) covers sector, business function, criticality and scale of deployment; People & Planet (B) covers users, impacted stakeholders, optionality and rights; AI Model (C) covers model type, how the model is built and how it is used."
+  },
+  {
+    "id": "q-946",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Under the OECD AI system definition as revised in November 2023, which edit was made to make clear that generative AI is covered?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Adding 'content' to the outputs a system can generate"
+      },
+      {
+        "letter": "B",
+        "text": "Replacing 'real' environments with 'physical' ones"
+      },
+      {
+        "letter": "C",
+        "text": "Stating that objectives may be explicit or implicit"
+      },
+      {
+        "letter": "D",
+        "text": "Noting that some systems keep adapting after deployment"
+      }
+    ],
+    "answer": "A",
+    "explanation": "When the OECD Council adopted the revised definition on 8 November 2023, one of its five edits added 'content' to the listed outputs (predictions, content, recommendations or decisions) so the Recommendation clearly covers generative AI. The other options are real edits with different purposes: B swapped 'real' for 'physical' for clarity and alignment, C recognizes goals that are learned rather than written down, and D reflects systems that keep evolving after deployment."
+  },
+  {
+    "id": "q-947",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A developer of advanced AI models wants to publish a voluntary, comparable report on how it manages risk in line with the G7 Hiroshima Process International Code of Conduct. Which mechanism exists for this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The OECD AI Incidents and Hazards Monitor, where developers log their own risk events"
+      },
+      {
+        "letter": "B",
+        "text": "The Hiroshima AI Process Reporting Framework, hosted by the OECD since February 2025"
+      },
+      {
+        "letter": "C",
+        "text": "The EU AI Office's signatory process for the general-purpose AI Code of Practice"
+      },
+      {
+        "letter": "D",
+        "text": "The OECD.AI live database of national AI strategies, policies and initiatives"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The OECD launched the Hiroshima AI Process Reporting Framework in February 2025 so organizations can voluntarily report, in a common format, on their alignment with the HAIP International Code of Conduct for Organisations Developing Advanced AI Systems; the first round drew 25 reports. Option A is wrong because the AI Incidents and Hazards Monitor is compiled from news reports, not self-filed risk reports; C is an EU AI Act compliance tool for GPAI providers; D is OECD.AI's policy database for governments."
+  },
+  {
+    "id": "q-948",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A model fine-tuned with reinforcement learning from human feedback pursues goals that nobody wrote down as explicit rules. Which element of the OECD definition, as revised on 8 November 2023, most directly covers this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Its outputs can influence physical or virtual environments"
+      },
+      {
+        "letter": "B",
+        "text": "It operates for explicit or implicit objectives"
+      },
+      {
+        "letter": "C",
+        "text": "It infers, from its inputs, how to generate outputs"
+      },
+      {
+        "letter": "D",
+        "text": "It varies in autonomy and adaptiveness after deployment"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The 2023 update replaced 'a given set of human-defined objectives' with 'explicit or implicit objectives', and the OECD's explanation of the change cites goals learned through processes such as reinforcement learning from human feedback. Options A, C and D are also parts of the revised definition, but they concern environments, inference and autonomy rather than the unstated goals the scenario turns on."
+  },
+  {
+    "id": "q-949",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Applying the OECD's AI incident vs. AI hazard distinction, how should a monitor classify this event: a hospital's triage model routes a critical patient to a low-priority queue, but a nurse catches the error before any harm occurs?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "As an AI incident, because the system malfunctioned while in use"
+      },
+      {
+        "letter": "B",
+        "text": "As an AI hazard, because the event could plausibly have led to harm"
+      },
+      {
+        "letter": "C",
+        "text": "As a serious AI incident, because a critical patient was involved"
+      },
+      {
+        "letter": "D",
+        "text": "As outside both terms, because no harm to anyone materialized"
+      }
+    ],
+    "answer": "B",
+    "explanation": "In OECD AI Papers No. 16 (May 2024), an AI incident is an event where an AI system's development, use or malfunction directly or indirectly leads to harm, while an AI hazard is an event that could plausibly lead to an incident; near misses are expressly included as hazards. Option A ignores that no harm occurred, C requires death or serious harm to have happened, and D overlooks that the hazard definition exists to capture events like near misses."
+  },
+  {
+    "id": "q-950",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A regulator using the OECD Framework for the Classification of AI Systems must record how autonomously a warehouse robot acts and what role humans play in those actions. Under which dimension does that criterion sit?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The AI Model dimension"
+      },
+      {
+        "letter": "B",
+        "text": "The People & Planet dimension"
+      },
+      {
+        "letter": "C",
+        "text": "The Economic Context dimension"
+      },
+      {
+        "letter": "D",
+        "text": "The Task & Output dimension"
+      }
+    ],
+    "answer": "D",
+    "explanation": "In the OECD framework (February 2022), action autonomy (how autonomous the system's actions are and what role humans play) is a criterion of the Task & Output dimension, alongside the system's tasks, composite systems and core application areas. It is tempting to file autonomy under AI Model (option A), but that dimension covers model type, how the model is built and how it is used; People & Planet (B) covers users, affected stakeholders, optionality and rights; Economic Context (C) covers sector, business function, criticality and scale."
+  },
+  {
+    "id": "q-951",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A policy analyst summarizing the OECD Council's 3 May 2024 revision of the Recommendation on AI must pick the change that revision actually made. Which is it?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It replaced 'real' with 'physical' in the definition of an AI system"
+      },
+      {
+        "letter": "B",
+        "text": "It converted the Recommendation into a Council Decision binding on adherents"
+      },
+      {
+        "letter": "C",
+        "text": "It moved the traceability and risk-management text into Accountability"
+      },
+      {
+        "letter": "D",
+        "text": "It added a sixth values-based principle devoted to information integrity"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The 3 May 2024 revision elaborated the text on traceability and risk management and moved it into the Accountability principle (1.5), alongside new language on information integrity, misuse, safe override or decommissioning, and environmental sustainability. Option A belongs to the separate 8 November 2023 definition update; B is wrong because OECD Recommendations remain non-binding political commitments, unlike Decisions; D is wrong because information integrity was added within existing principles, which still number five."
+  },
+  {
+    "id": "q-952",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "An AI system balancing a regional power grid malfunctions, causing a four-day blackout. Hospitals run on generators and the region needs outside emergency aid because local services cannot cope. Under the OECD's May 2024 definitions, what is the most precise classification?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An AI disaster, because it disrupted a community beyond its capacity to cope"
+      },
+      {
+        "letter": "B",
+        "text": "A serious AI incident, because critical infrastructure was seriously disrupted"
+      },
+      {
+        "letter": "C",
+        "text": "An AI incident, because harm to property and communities occurred"
+      },
+      {
+        "letter": "D",
+        "text": "A serious AI hazard, because further outages could plausibly follow"
+      }
+    ],
+    "answer": "A",
+    "explanation": "OECD AI Papers No. 16 (May 2024) nests its terms: an AI incident involves realized harm, a serious AI incident involves serious harm such as serious and irreversible disruption of critical infrastructure, and an AI disaster is a serious AI incident that disrupts the functioning of a community or society and may test or exceed its capacity to cope with its own resources. The need for outside aid is the deciding detail. B names the tier below, of which disasters are a subset; C is correct but even less precise; D describes potential rather than realized harm."
+  },
+  {
+    "id": "q-953",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "An AI steering committee is deciding where the GOVERN function sits relative to MAP, MEASURE and MANAGE. Which description matches AI RMF 1.0?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It runs once at program launch and then hands off to the other three functions"
+      },
+      {
+        "letter": "B",
+        "text": "It is cross-cutting, informing and infused throughout the other three functions"
+      },
+      {
+        "letter": "C",
+        "text": "It follows MANAGE, reviewing residual risk after each deployment decision is made"
+      },
+      {
+        "letter": "D",
+        "text": "It applies only to the AI systems that the organization has classified as high-risk"
+      }
+    ],
+    "answer": "B",
+    "explanation": "AI RMF 1.0 describes GOVERN as a cross-cutting function designed to inform and be infused throughout MAP, MEASURE and MANAGE (Section 5, Figure 5), and it applies to all stages of an organization's AI risk management. A is wrong because the RMF says users must keep executing GOVERN as knowledge, culture and expectations evolve. C reverses the flow: MANAGE works within the policies GOVERN sets. D is wrong because GOVERN is organization-wide, not limited to high-risk systems."
+  },
+  {
+    "id": "q-954",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A risk lead reads MEASURE 2.11 in AI RMF 1.0, which states only the outcome that fairness and bias are evaluated and documented. What does the NIST AI RMF Playbook add for that subcategory?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Suggested actions, documentation questions and references toward that outcome"
+      },
+      {
+        "letter": "B",
+        "text": "The outcome statements for each category and subcategory that make up the Core"
+      },
+      {
+        "letter": "C",
+        "text": "Current and target profiles that the organization compares to find its gaps"
+      },
+      {
+        "letter": "D",
+        "text": "A tier rating that scores how mature the organization's fairness testing is"
+      }
+    ],
+    "answer": "A",
+    "explanation": "NIST says the Playbook provides suggested actions for achieving the outcomes in the AI RMF Core (Tables 1-4 of AI RMF 1.0), aligned to each subcategory, together with transparency and documentation questions and references. For MEASURE 2.11 the suggested actions include identifying types of harm and quantifying them with fairness metrics. B describes the Core, which the lead has already read in the RMF. C describes AI RMF profiles, covered in Section 6 of the RMF. D is wrong because neither the RMF nor the Playbook defines maturity tiers or scores."
+  },
+  {
+    "id": "q-955",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "In AI RMF 1.0, what is an AI RMF subcategory such as MANAGE 1.3?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A tailored implementation of the Core for one sector, use case or technology"
+      },
+      {
+        "letter": "B",
+        "text": "One of the characteristics of trustworthy AI that testing must demonstrate"
+      },
+      {
+        "letter": "C",
+        "text": "A specific outcome within a category, which the Playbook pairs with actions"
+      },
+      {
+        "letter": "D",
+        "text": "A required control that an organization must implement to claim conformity"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The Core breaks each function into categories and subcategories, which state specific outcomes. MANAGE 1.3, for example, is the outcome that responses to high-priority risks are developed, planned and documented, and the Playbook gives one entry of suggested actions per subcategory. A describes a use-case profile (RMF Section 6). B describes a trustworthiness characteristic such as valid and reliable. D is wrong because the Framework is voluntary and outcome-focused rather than a set of mandatory controls."
+  },
+  {
+    "id": "q-956",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "As of September 2026, how does NIST say the AI RMF Playbook is maintained?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Updates about twice a year, with the next one due after the AI RMF 1.0 revision"
+      },
+      {
+        "letter": "B",
+        "text": "A single fixed edition, reissued only after the RMF's formal review due by 2028"
+      },
+      {
+        "letter": "C",
+        "text": "Community-edited web pages that any registered user can change directly"
+      },
+      {
+        "letter": "D",
+        "text": "Folded into the AI RMF Roadmap, which now carries the suggested actions"
+      }
+    ],
+    "answer": "A",
+    "explanation": "NIST's Playbook page calls it a living resource: feedback goes to AIframework@nist.gov, updates are released approximately twice per year, and, as of 2026, it says the Playbook will be updated after the AI RMF is revised. B confuses the Playbook with the Framework, whose formal review with community input is expected no later than 2028. C is wrong because suggestions are emailed to NIST, which reviews them, rather than edited in directly. D is wrong because NIST lists the Roadmap and the Playbook as separate companion resources."
+  },
+  {
+    "id": "q-957",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Which group of AI actors does the NIST AI RMF Playbook tag on every one of the MEASURE function's 22 subcategories?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Governance and Oversight: the board and senior leadership"
+      },
+      {
+        "letter": "B",
+        "text": "AI Design: those who set the system's concept and objectives"
+      },
+      {
+        "letter": "C",
+        "text": "Procurement: those who acquire models and services from vendors"
+      },
+      {
+        "letter": "D",
+        "text": "TEVV: those who test, evaluate, verify and validate the system"
+      }
+    ],
+    "answer": "D",
+    "explanation": "In the Playbook's data the TEVV actor tag appears on all 22 MEASURE subcategories, consistent with AI RMF Appendix A, where TEVV actors examine the system and detect and remediate problems throughout the lifecycle. Governance and Oversight (A) is tagged on most GOVERN subcategories and on none in MEASURE. AI Design (B) is tagged mainly in GOVERN and MAP. Procurement (C) appears only on GOVERN 6.1 and MAP 4.1."
+  },
+  {
+    "id": "q-958",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A vendor's sales deck says its hiring tool is \"certified compliant with the NIST AI RMF Playbook.\" How should the buyer's AI governance lead treat the claim?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "As credible only if the vendor implemented every suggested action for all 72 subcategories"
+      },
+      {
+        "letter": "B",
+        "text": "As unsupported, since the Playbook is voluntary guidance with no certification scheme"
+      },
+      {
+        "letter": "C",
+        "text": "As credible if an accredited certification body audited the vendor against the Playbook"
+      },
+      {
+        "letter": "D",
+        "text": "As credible if the vendor has published a crosswalk from its controls to the Playbook"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Playbook suggestions are voluntary and NIST says it is neither a checklist nor a set of steps to be followed in its entirety; neither the Playbook nor AI RMF 1.0 defines a certification or conformity-assessment scheme, so there is nothing to be certified against. The lead should ask what the vendor actually does, for example its bias testing under MEASURE 2.11. A is wrong because users are not expected to implement every suggestion. C assumes an accreditation scheme that does not exist for the Playbook. D is wrong because a crosswalk maps one framework to another and certifies nothing."
+  },
+  {
+    "id": "q-959",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A benefits agency is applying MAP 1.1 to a proposed chatbot for eligibility questions. Which step appears among the Playbook's suggested actions for that subcategory?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Check whether a non-AI or non-technology option would give more trustworthy outcomes"
+      },
+      {
+        "letter": "B",
+        "text": "Run red-teaming exercises at a set cadence and evaluate how effective they are"
+      },
+      {
+        "letter": "C",
+        "text": "Measure how often operators override the system and feed that into improvement"
+      },
+      {
+        "letter": "D",
+        "text": "Keep a database of reported errors, near-misses and incidents with severity assessments"
+      }
+    ],
+    "answer": "A",
+    "explanation": "MAP 1.1 establishes context: intended purpose, users, setting, and applicable laws and norms. Its Playbook suggested actions include identifying whether there are non-AI or non-technology alternatives that will lead to more trustworthy outcomes, and defining the system's task, purpose and minimum functionality. The other steps come later in the lifecycle: B is a MANAGE 4.1 post-deployment action, C is a MEASURE 4.2 action on override frequency, and D is a MANAGE 4.3 incident-tracking action."
+  },
+  {
+    "id": "q-960",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A lender's validation team lists allocational and quality-of-service harms, quantifies them with demographic parity and equalized odds, and checks whether ZIP code is acting as a proxy for group membership. Which subcategory's suggested actions is the team following?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "MEASURE 2.10, examining and documenting the system's privacy risk"
+      },
+      {
+        "letter": "B",
+        "text": "MAP 5.1, identifying the likelihood and magnitude of each impact"
+      },
+      {
+        "letter": "C",
+        "text": "MEASURE 2.11, evaluating fairness and bias and documenting results"
+      },
+      {
+        "letter": "D",
+        "text": "MEASURE 2.5, demonstrating that the system is valid and reliable"
+      }
+    ],
+    "answer": "C",
+    "explanation": "MEASURE 2.11 is the outcome that fairness and bias, as identified in MAP, are evaluated and the results documented. Its Playbook suggested actions include identifying types of harm (allocational, representational, quality of service, stereotyping, erasure), quantifying them with metrics such as demographic parity and equalized odds, and identifying input features such as ZIP code that may act as proxies for demographic group membership. MEASURE 2.10 (A) covers privacy risk, MAP 5.1 (B) estimates the likelihood and magnitude of impacts rather than testing for bias, and MEASURE 2.5 (D) covers validity and reliability."
+  },
+  {
+    "id": "q-961",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A team working through GOVERN 1.6 reads the Playbook's transparency and documentation prompts, such as \"Who is responsible for documenting and maintaining the AI system inventory details?\" How should the team use them?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "As questions it can answer and record to document its approach to the outcome"
+      },
+      {
+        "letter": "B",
+        "text": "As mandatory disclosures it must publish for each AI system it has deployed"
+      },
+      {
+        "letter": "C",
+        "text": "As the scoring rubric an assessor uses to certify conformity with GOVERN 1.6"
+      },
+      {
+        "letter": "D",
+        "text": "As background reading that explains why the inventory outcome matters"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Each Playbook entry's Transparency and Documentation section lists questions under the heading 'Organizations can document the following', followed by AI Transparency Resources such as GAO-21-519SP. They are voluntary prompts for recording how the organization approaches the subcategory's outcome; GOVERN 1.6's include who maintains the inventory. B is wrong because the Playbook is voluntary and mandates no publication. C is wrong because neither the Playbook nor the RMF has a certification scheme. D describes the entry's About section."
+  },
+  {
+    "id": "q-962",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "For a proposed tenant-screening model, a housing provider's team identifies the maximum risk level above which the model will not be deployed, or will be decommissioned early, in that setting. Which subcategory's suggested actions describe this step?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "GOVERN 2.3, executive leadership taking responsibility for AI risk decisions"
+      },
+      {
+        "letter": "B",
+        "text": "MAP 1.5, determining and documenting organizational risk tolerances"
+      },
+      {
+        "letter": "C",
+        "text": "MANAGE 1.1, determining whether development or deployment should proceed"
+      },
+      {
+        "letter": "D",
+        "text": "GOVERN 1.3, processes that set the needed level of risk management activity"
+      }
+    ],
+    "answer": "B",
+    "explanation": "MAP 1.5 is the outcome that organizational risk tolerances are determined and documented, and its Playbook suggested actions include identifying the maximum allowable risk tolerance above which the system will not be deployed, or will need to be prematurely decommissioned, within the contextual or application setting. GOVERN 2.3 (A) has management declare risk tolerances at the organizational level rather than set a threshold for one system in context. MANAGE 1.1 (C) is the later go/no-go determination, which draws on MAP and MEASURE outputs. GOVERN 1.3 (D) sets organization-wide processes and risk scales."
+  },
+  {
+    "id": "q-963",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A developer licensing a credit-scoring model to banks records, in its risk response plan, the risks it accepted or transferred, and tells the banks about known limitations and suggested warning labels. Which subcategory does this address?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "MANAGE 1.3, developing responses to the highest-priority risks"
+      },
+      {
+        "letter": "B",
+        "text": "MAP 3.4, defining operator and practitioner proficiency processes"
+      },
+      {
+        "letter": "C",
+        "text": "MANAGE 3.1, monitoring the risks from third-party resources"
+      },
+      {
+        "letter": "D",
+        "text": "MANAGE 1.4, documenting residual risk for downstream acquirers"
+      }
+    ],
+    "answer": "D",
+    "explanation": "MANAGE 1.4 requires negative residual risks, defined as the sum of all unmitigated risks, to downstream acquirers and end users to be documented. Its Playbook suggested actions are to document residual risks in risk response plans (noting risks accepted, transferred or only minimally mitigated), to disclose them to downstream AI actors, and to inform those actors of safe-operation requirements, known limitations and suggested warning labels. MANAGE 1.3 (A) develops the responses themselves. MAP 3.4 (B) covers operator and practitioner proficiency; MANAGE 1.4 only cross-references it. MANAGE 3.1 (C) is the banks' own monitoring of a third-party resource."
+  },
+  {
+    "id": "q-964",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A warehouse-robotics firm stress-tests its navigation model beyond known limits, replays conditions from past near-misses, and records the range of conditions under which the robot has been shown to fail safely. Which subcategory's suggested actions is it following?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "MEASURE 2.7, evaluating and documenting security and resilience"
+      },
+      {
+        "letter": "B",
+        "text": "MEASURE 2.5, demonstrating that the system is valid and reliable"
+      },
+      {
+        "letter": "C",
+        "text": "MANAGE 2.4, mechanisms to disengage or deactivate the system"
+      },
+      {
+        "letter": "D",
+        "text": "MEASURE 2.6, regularly evaluating the system for safety risks"
+      }
+    ],
+    "answer": "D",
+    "explanation": "MEASURE 2.6 requires the system to be evaluated regularly for safety risks and shown to be able to fail safely, particularly beyond its knowledge limits. Its Playbook suggested actions include stress-testing under likely scenarios and beyond known limitations, testing under conditions similar to past incidents or near-misses, and documenting the range of conditions under which the system has been tested and demonstrated to fail safely. MEASURE 2.7 (A) also uses stress conditions, but through red-teaming aimed at security and resilience against adversarial events. MEASURE 2.5 (B) is about validity, reliability and generalizability. MANAGE 2.4 (C) is the mechanism for disengaging a system that misbehaves, not a test of it."
+  },
+  {
+    "id": "q-965",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Six months after launching a recommendation engine, a retailer puts in place procedures to track data deletion and rectification requests, schedules red-team exercises at a set cadence, and shares attack patterns with incident databases. Which subcategory's suggested actions do these steps implement?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "GOVERN 4.3, practices enabling testing, incident identification and sharing"
+      },
+      {
+        "letter": "B",
+        "text": "MEASURE 2.4, monitoring the system's functionality and behavior in production"
+      },
+      {
+        "letter": "C",
+        "text": "MANAGE 4.1, implementing the system's post-deployment monitoring plans"
+      },
+      {
+        "letter": "D",
+        "text": "MANAGE 2.3, responding to and recovering from a previously unknown risk"
+      }
+    ],
+    "answer": "C",
+    "explanation": "All three steps are MANAGE 4.1 suggested actions: tracking dataset modifications such as data deletion or rectification requests, red-teaming at a prescribed cadence, and sharing errors, near-misses and attack patterns with incident databases. MANAGE 4.1 is the outcome that post-deployment monitoring plans are implemented, including user input, appeal and override, decommissioning, incident response, recovery and change management. GOVERN 4.3 (A) sets organizational policies that enable testing and information sharing rather than one live system's plan. MEASURE 2.4 (B) monitors production behavior, for example alerting when input distributions drift from pre-deployment tests. MANAGE 2.3 (D) is the response once a previously unknown risk is identified."
+  },
+  {
+    "id": "q-966",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Before integrating a vendor's foundation model, a bank's team reviews the vendor's audit reports, terms of service, license agreements and patch schedule for irregularities, and inventories the open-source components the system will need. Which subcategory's suggested actions does this match?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "GOVERN 6.1, policies addressing AI risks from third-party entities"
+      },
+      {
+        "letter": "B",
+        "text": "MANAGE 3.1, regularly monitoring third-party risks and applying controls"
+      },
+      {
+        "letter": "C",
+        "text": "MANAGE 3.2, monitoring the pre-trained models used in development"
+      },
+      {
+        "letter": "D",
+        "text": "MAP 4.1, mapping the technology and legal risks of all components"
+      }
+    ],
+    "answer": "D",
+    "explanation": "MAP 4.1 is the outcome that approaches for mapping AI technology and legal risks of components, including third-party data or software and the risk of infringing a third party's intellectual property, are in place, followed and documented. Its Playbook suggested actions include reviewing audit reports, terms of service, license agreements, contracts and other third-party documentation; reviewing release schedules and change-management plans for irregularities; and inventorying third-party material such as open-source software and foundation models. GOVERN 6.1 (A) is the organization-wide policy layer. MANAGE 3.1 (B) and MANAGE 3.2 (C) cover ongoing monitoring once third-party resources or pre-trained models are in use."
+  },
+  {
+    "id": "q-967",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Which THREE of these are suggested actions the Playbook lists under the MANAGE 4 category (post-deployment monitoring, continual improvement and incident communication)? (Select 3.)",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Maintain a database of system changes, why each was made, and how it was tested and deployed"
+      },
+      {
+        "letter": "B",
+        "text": "Establish procedures for tracking dataset modifications such as deletion or rectification requests"
+      },
+      {
+        "letter": "C",
+        "text": "Define and document the task, purpose, minimum functionality and benefits of the system"
+      },
+      {
+        "letter": "D",
+        "text": "Share information about errors, near-misses and attack patterns with incident databases"
+      },
+      {
+        "letter": "E",
+        "text": "Document team composition, verifying demographic diversity and broad domain expertise"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "MANAGE 4.3's suggested actions include maintaining a database of system changes, the reason for each change, and how it was made, tested and deployed (A). MANAGE 4.1's include tracking dataset modifications such as data deletion or rectification requests (B) and sharing errors, near-misses and attack patterns with incident databases, similar organizations and stakeholders (D). C is a MAP 1.1 action that establishes context before the system is built, and E is a MAP 1.2 action on interdisciplinary, demographically diverse teams; both belong to MAP rather than to post-deployment MANAGE 4."
+  },
+  {
+    "id": "q-968",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "An insurer's systems integrator pilots a claims-triage model, checks its compatibility with legacy claims software, confirms it meets regulatory requirements, manages the change for adjusters, and evaluates their user experience. Under AI RMF Appendix A, which AI actor category do these tasks describe?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "TEVV, validating and integrating the system in production"
+      },
+      {
+        "letter": "B",
+        "text": "AI Deployment, deciding how the system is used in production"
+      },
+      {
+        "letter": "C",
+        "text": "Operation and Monitoring, running the system and assessing output"
+      },
+      {
+        "letter": "D",
+        "text": "Human Factors, human-centred design and user-experience evaluation"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Appendix A says AI Deployment actors make contextual decisions about how the system is used, and lists their tasks as piloting the system, checking compatibility with legacy systems, ensuring regulatory compliance, managing organizational change and evaluating user experience; system integrators are named in this category. TEVV (A) is the closest distractor because TEVV tasks for deployment include system validation and integration, user experience and compliance testing, but its role is examining the system and detecting and remediating problems, and it does not include piloting or managing organizational change. Operation and Monitoring (C) comes after deployment. Human Factors (D) evaluates user experience but not legacy compatibility or compliance."
+  },
+  {
+    "id": "q-969",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A bank's AI policy states that the team that builds a credit model may not also manage its testing, so that testers can course-correct the model independently. Under the Playbook, which subcategory's suggested actions call for a policy like this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "GOVERN 4.1, a critical-thinking, safety-first culture with effective challenge"
+      },
+      {
+        "letter": "B",
+        "text": "MEASURE 1.3, involving independent assessors in regular assessments"
+      },
+      {
+        "letter": "C",
+        "text": "GOVERN 2.1, documented roles, responsibilities and lines of communication"
+      },
+      {
+        "letter": "D",
+        "text": "MAP 1.2, interdisciplinary and demographically diverse context teams"
+      }
+    ],
+    "answer": "C",
+    "explanation": "GOVERN 2.1's suggested actions include establishing policies that separate management of AI system development functions from AI system testing functions, to enable independent course-correction of AI systems, which is the scenario's policy almost word for word. MEASURE 1.3 (B) is the strongest distractor: its actions say to use the separate testing teams established in the Govern function (2.1 and 4.1), so it applies the separation in assessments rather than creating it. GOVERN 4.1 (A) promotes effective challenge through mechanisms such as three lines of defense, model audits or red-teaming, but its actions do not call for splitting the management of development and testing. MAP 1.2 (D) concerns the diversity of the teams that establish context."
+  },
+  {
+    "id": "q-970",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A bank's email assistant drafts replies that staff review and send. The bank plans an upgrade in which the system reads the shared inbox, decides which requests it can handle, updates the customer database and sends replies itself. What most clearly makes the upgraded version agentic AI?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It pursues a goal over several steps, choosing and taking actions through tools such as the database"
+      },
+      {
+        "letter": "B",
+        "text": "It generates fluent natural-language replies from patterns it learned from its training data"
+      },
+      {
+        "letter": "C",
+        "text": "It runs on a general-purpose model trained at scale that can competently perform many distinct tasks"
+      },
+      {
+        "letter": "D",
+        "text": "It keeps adapting its behaviour after deployment as it learns from each new customer interaction"
+      }
+    ],
+    "answer": "A",
+    "explanation": "What makes a system agentic is action-taking toward a goal: the IMDA Model AI Governance Framework for Agentic AI (v1.5, 2026) describes agents as planning, deciding and acting over multiple steps to reach a user's goal, using tools that let them change other systems. B is already true of the drafting assistant, so generation is not the difference. C describes a general-purpose AI model (AI Act Art. 3(63)), a property of the underlying model rather than of agency. D is adaptiveness, which the AI Act's system definition treats as optional ('may exhibit') and which does not make a system an agent."
+  },
+  {
+    "id": "q-971",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "The IMDA agentic AI framework distinguishes an agent's action space from its autonomy. A team is reviewing four proposed changes to its coding agent. Which change widens the agent's action space rather than its autonomy?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Replacing its step-by-step operating procedure with an instruction to use its own judgment"
+      },
+      {
+        "letter": "B",
+        "text": "Dropping the rule that a developer must approve each plan before the agent carries it out"
+      },
+      {
+        "letter": "C",
+        "text": "Granting it write access to the production code repository on top of read access"
+      },
+      {
+        "letter": "D",
+        "text": "Letting it decide for itself the order in which it works through its assigned sub-tasks"
+      }
+    ],
+    "answer": "C",
+    "explanation": "In the IMDA framework, action space is the range of actions an agent can take, set by the tools it may use and the permissions on them, such as read versus write access or sandbox versus production systems; adding write access to production widens it. Autonomy is how far the agent decides how to act, set by its instructions and the level of human involvement. A (own judgment instead of an SOP), B (removing plan approval) and D (choosing the order of steps) all raise autonomy instead. Both dials raise risk, but they call for different controls."
+  },
+  {
+    "id": "q-972",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "A finance team wants an AI agent to produce a monthly report whose steps never change: pull the same three tables, apply fixed formulas and email the same distribution list. What is the best governance recommendation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Deploy the agent under human-on-the-loop monitoring so an analyst can watch over every monthly run"
+      },
+      {
+        "letter": "B",
+        "text": "Deploy the agent with read-only database access so it cannot change the tables it pulls from"
+      },
+      {
+        "letter": "C",
+        "text": "Split the job across several narrowly scoped agents so each step has its own permissions"
+      },
+      {
+        "letter": "D",
+        "text": "Use a deterministic scripted workflow, since agent autonomy adds risk here without adding value"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The IMDA framework (v1.5, 2026) says not every use case suits an agent and some are better served by deterministic workflows; OWASP's Top 10 for Agentic Applications 2026 calls this least agency, warning that agentic behaviour where it is not needed widens the attack surface without adding value. A fixed, repeatable process needs no planning or judgment. A, B and C are real controls for an agent that is justified, but none of them removes the unnecessary autonomy."
+  },
+  {
+    "id": "q-973",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A company is writing its standard for least-privilege agent permissions. A regional sales manager, who may view pricing only for her own region, asks to let her quoting agent read global pricing data so it can benchmark offers. What should the standard say about this request?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Logging and quarterly review of every query the agent runs would make the broader access acceptable"
+      },
+      {
+        "letter": "B",
+        "text": "The agent's delegated access must stay within what the manager herself is authorised to see"
+      },
+      {
+        "letter": "C",
+        "text": "A vendor indemnity against data misuse would make the broader access an acceptable residual risk"
+      },
+      {
+        "letter": "D",
+        "text": "Credentials that expire at the end of each session would make the broader access acceptable"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The IMDA framework's authorisation guidance says agent permissions should be scoped, least-privilege by default, time- or session-bound and non-transferable, and, as a rule of thumb, never greater than what the authorising human is permitted to do, with delegations recorded. Global pricing exceeds the manager's own rights, so the request fails however it is wrapped. Logging (A) detects misuse after the fact, an indemnity (C) shifts financial loss without limiting access, and session expiry (D) is good practice that limits how long access lasts, not how far it reaches."
+  },
+  {
+    "id": "q-974",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "After a year of experiments, business units run dozens of AI agents, many under shared service accounts. When an agent changes a customer record, nobody can tell which agent made the change or who owns it. Which control best addresses the problem?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Give each agent its own verifiable identity with an accountable owner, tracked in a central registry"
+      },
+      {
+        "letter": "B",
+        "text": "Run each agent under the personal account of the employee who launched it, so changes map to a person"
+      },
+      {
+        "letter": "C",
+        "text": "Add a system-prompt instruction telling every agent to write its name into each record it modifies"
+      },
+      {
+        "letter": "D",
+        "text": "Replace the separate agents with one general-purpose agent that has access to all business systems"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The IMDA framework calls this agent sprawl and recommends that every agent have a unique, cryptographically verifiable identity, tied to a supervising agent, human user or department, with the capacity it acts in recorded, and that all agent identities be issued and tracked centrally so anomalies can be spotted and unused identities removed. B blurs agent and human actions and hands the agent a person's full access (OWASP ASI03 flags inherited credentials as an abuse path). C is a prompt-layer control an agent can ignore. D creates the single all-powerful agent the framework advises against."
+  },
+  {
+    "id": "q-975",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "A retailer's customer-service agent must never issue a refund above $500 without a human approval checkpoint. The developers propose enforcing this with a firm instruction in the agent's system prompt, but the risk team objects. Which alternative best reflects the IMDA framework's guidance on choosing controls?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Keep the prompt, adding repeated warnings and worked examples of refunds the agent must refuse"
+      },
+      {
+        "letter": "B",
+        "text": "Have a second agent review each refund conversation afterwards and flag any breach of the limit"
+      },
+      {
+        "letter": "C",
+        "text": "Build the limit into the refund tool so any call above $500 is blocked until a human approves it"
+      },
+      {
+        "letter": "D",
+        "text": "Train supervisors to spot oversized refunds when they review the monthly exceptions report"
+      }
+    ],
+    "answer": "C",
+    "explanation": "IMDA's v1.5 framework says to prefer deterministic, system-level limits over prompt-layer ones, especially for higher-risk actions: rather than telling an agent not to use a tool in a certain way, enforce the restriction at the tool layer so the action cannot happen without approval. Its OpenClaw case study makes the same point, noting that prompt guardrails can be bypassed or forgotten. A stays non-deterministic however strongly it is worded. B uses agents monitoring agents, which IMDA treats as a complement to other controls, and it acts only after the refund is paid. D is a detective control that surfaces the problem weeks later."
+  },
+  {
+    "id": "q-976",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "A retailer plans to deploy a vendor-hosted agent that reads order histories and issues store credit. Due diligence shows the vendor offers no per-agent identity tokens, no logging of tool calls, and only vague disclosure of how conversation data is stored. What is the most appropriate course?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Proceed, since the vendor as provider bears accountability for whatever its hosted agent does"
+      },
+      {
+        "letter": "B",
+        "text": "Add a human-on-the-loop reviewer who samples the agent's conversations weekly, then go live"
+      },
+      {
+        "letter": "C",
+        "text": "Negotiate an indemnity for data breaches caused by the vendor's agent, then deploy as planned"
+      },
+      {
+        "letter": "D",
+        "text": "Seek disclosures and controls first, and if gaps remain, narrow the use case or pick an alternative"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The IMDA framework says deploying organisations remain accountable for their agents' actions. With external providers it advises setting out obligations such as security, performance guarantees and data protection in the contract, tackling third-party opacity by requiring disclosures and evaluating features like scoped API keys, per-agent identity tokens and tool-call logging, and, where those are missing, considering alternatives or scoping the use case down, for example by removing access to sensitive data. A misplaces accountability. B samples conversations but still cannot see the tool calls, which are never logged. C shifts some financial loss but gives no visibility or control."
+  },
+  {
+    "id": "q-977",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Painful",
+    "question": "An EU employer licenses a general-purpose agent platform that its vendor does not market for any high-risk use. The employer configures it to screen applications, reject candidates who score below a threshold and email the rejections automatically. HR staff watch an aggregate dashboard but never look at individual rejections. Assuming the AI Act's high-risk obligations are in application, which assessment is most accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The employer remains only a deployer, and GDPR Art. 22 does not bite because HR staff monitor the process dashboard"
+      },
+      {
+        "letter": "B",
+        "text": "The employer can become a high-risk provider, and the automatic rejections are solely automated decisions under GDPR Art. 22"
+      },
+      {
+        "letter": "C",
+        "text": "The AI Act does not reach the platform, since agents sit outside its AI system definition until agent-specific rules exist"
+      },
+      {
+        "letter": "D",
+        "text": "The vendor is the high-risk provider, and GDPR Art. 22 is satisfied because rejected candidates can email HR to complain"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Two regimes attach. Under AI Act Art. 25(1)(c), a deployer that changes the intended purpose of an AI system, including a general-purpose AI system, that was not high-risk so that it becomes high-risk is treated as its provider, and screening or filtering job applications is high-risk under Annex III point 4(a). Under GDPR Art. 22(1), a rejection produced without meaningful human involvement is a decision based solely on automated processing with significant effects; the WP29 guidelines endorsed by the EDPB say oversight must be meaningful, by someone with authority to change the outcome, not a token gesture. A fails on both counts, because watching an aggregate dashboard changes no individual decision. C is wrong because Art. 3(1) covers systems operating with varying levels of autonomy whose outputs influence physical or virtual environments. D misallocates the provider role, and even where an Art. 22(2) exception applies, Art. 22(3) requires at least the right to obtain human intervention, to express a view and to contest the decision."
+  },
+  {
+    "id": "q-978",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "An insurer is designing human approval checkpoints for a claims-handling agent. Which THREE of the following does the IMDA agentic AI framework identify as situations where a human should approve before the agent acts? (Select 3.)",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Permanently deleting a claimant's supporting documents from the claim file"
+      },
+      {
+        "letter": "B",
+        "text": "Re-running a failed read-only query against an approved internal database"
+      },
+      {
+        "letter": "C",
+        "text": "Paying a settlement into a claimant's nominated bank account"
+      },
+      {
+        "letter": "D",
+        "text": "Opening a database that lies outside the agent's normal work scope"
+      },
+      {
+        "letter": "E",
+        "text": "Drafting, but not sending, a reply for a claims handler to review"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "IMDA's framework (v1.5) lists four kinds of checkpoint: high-stakes actions, irreversible actions such as permanently deleting data, sending communications or making payments, outlier or atypical behaviour such as accessing a system outside the agent's work scope, and user-defined thresholds. A and C are irreversible, and D is atypical behaviour. B is a low-risk, read-only action inside the agent's approved scope, and E already leaves the consequential step, sending, with a human, so a further approval would add fatigue without reducing risk."
+  },
+  {
+    "id": "q-979",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "A data-science team wants an agent that writes and runs Python code to analyse spreadsheets that staff upload. Which design choice best bounds the risk before deployment?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Run the generated code on each analyst's own laptop so that the analyst can watch what it does"
+      },
+      {
+        "letter": "B",
+        "text": "Tell the agent in its instructions never to run commands that touch the network or disk"
+      },
+      {
+        "letter": "C",
+        "text": "Execute the code in an isolated sandbox with no network access and only the uploaded files"
+      },
+      {
+        "letter": "D",
+        "text": "Review a sample of the scripts the agent generated at the end of every calendar month"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The IMDA framework advises limiting an agent's area of impact by running it in self-contained environments with limited network and data access, particularly for high-risk tasks such as code execution, and lists sandboxing code execution among its sample controls; OWASP's ASI05 (Unexpected Code Execution) likewise calls for sandboxed containers with strict limits, including on network access. A exposes a work device that holds other data, which IMDA's OpenClaw case study warns against. B is a prompt-layer rule the agent may not follow. D reviews code after it has already run."
+  },
+  {
+    "id": "q-980",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Minutes after a tool update, a customer-service agent starts issuing duplicate refunds at machine speed. Which control is designed for exactly this moment?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Human-on-the-loop review of a weekly sample of the agent's refund decisions"
+      },
+      {
+        "letter": "B",
+        "text": "A model card that documents the agent's intended use and known limitations"
+      },
+      {
+        "letter": "C",
+        "text": "A retraining schedule that refreshes the agent's underlying model every quarter"
+      },
+      {
+        "letter": "D",
+        "text": "An agent kill switch that halts the agent and revokes its credentials at once"
+      }
+    ],
+    "answer": "D",
+    "explanation": "OWASP's Top 10 for Agentic Applications 2026 (ASI10, Rogue Agents) recommends kill switches and credential revocation to disable a misbehaving agent immediately, and the IMDA framework calls for mechanisms to take agents offline and to halt or terminate them on serious alerts. This is the operational side of the BOK IV.C duty to have a policy and controls to deactivate an AI system. A is far too slow for machine-speed harm, B is documentation, and C is maintenance; each is a real control used at the wrong moment."
+  },
+  {
+    "id": "q-981",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "Six months into deployment, a lender's reviewers approve 99.7% of an agent's proposed credit-limit changes, with a median review time of four seconds. Applying the IMDA framework's guidance on auditing human oversight, what is the best reading and next step?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Reviewers may be rubber-stamping, so audit sampled approvals and retrain or rotate reviewers"
+      },
+      {
+        "letter": "B",
+        "text": "Trust is well calibrated to a reliable agent, so remove the checkpoint for low-value changes"
+      },
+      {
+        "letter": "C",
+        "text": "The agent's outputs are drifting, so retrain its model on the most recent six months of data"
+      },
+      {
+        "letter": "D",
+        "text": "A logging fault is hiding rejections, so rebuild the monitoring pipeline before anything else"
+      }
+    ],
+    "answer": "A",
+    "explanation": "IMDA's v1.5 framework recommends tracking human override rates and review times: a very low override rate may signal rubber-stamping, and very short review times may signal automation bias or review fatigue. The right response is to test whether oversight is still meaningful, by auditing approvals and retraining or rotating reviewers, rather than assuming either success or a technical fault. B might prove right later but is premature without that audit. C and D posit problems the data do not show."
+  },
+  {
+    "id": "q-982",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "A payments agent needs human approval for any transfer over $10,000. During an outage the approval service is unreachable, and the agent is configured to proceed if no response arrives within ten minutes. Which change best makes this design fail-safe?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Let the agent proceed during outages but flag each transfer for review once service resumes"
+      },
+      {
+        "letter": "B",
+        "text": "Deny the transfer by default and hold it in a queue until a human approver can be reached"
+      },
+      {
+        "letter": "C",
+        "text": "Route the approval to a second agent that checks the transfer against payment policy instead"
+      },
+      {
+        "letter": "D",
+        "text": "Raise the approval threshold during outages so that fewer transfers need a human decision"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A fail-safe design falls back to the safe state when a component fails. The IMDA framework explicitly recommends denying action by default when approval infrastructure fails, for example when human supervisors are unreachable, and the AI Act's human-oversight article similarly expects high-risk systems to be able to halt in a safe state (Art. 14(4)(e)). The current ten-minute time-out is fail-open. A keeps it fail-open and only adds after-the-fact review. C swaps a required human checkpoint for an automated check; IMDA treats agents monitoring agents as a complement to human oversight, not a replacement. D weakens the control exactly when it is needed."
+  },
+  {
+    "id": "q-983",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Painful",
+    "question": "In a supply-chain multi-agent system, a forecasting agent hallucinates an inventory shortfall. A purchasing agent places large rush orders on that basis, and a logistics agent books extra freight. No attacker was involved. Which classification and first response best fit OWASP's Top 10 for Agentic Applications 2026?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Memory and context poisoning; purge the shared memory store and restore the last clean snapshot"
+      },
+      {
+        "letter": "B",
+        "text": "Rogue agent; permanently decommission the forecasting agent and rebuild it on a different model"
+      },
+      {
+        "letter": "C",
+        "text": "Cascading failure; contain the fan-out with circuit breakers, then trace the originating fault"
+      },
+      {
+        "letter": "D",
+        "text": "Agent goal hijack; lock the purchasing agent's system prompt and re-approve its goal definitions"
+      }
+    ],
+    "answer": "C",
+    "explanation": "OWASP's ASI08 (Cascading Failures) covers a single fault, including a hallucination, that propagates across autonomous agents and compounds into wider harm. It is about propagation rather than the originating defect, and its mitigations include circuit breakers between planner and executor, quotas and rate limits, and lineage logging to trace the source. The IMDA framework uses the same example of a hallucinated inventory figure driving bad downstream orders. A is the tempting alternative, but ASI06 involves an adversary corrupting stored context, and there was none here. B (ASI10) concerns agents whose behaviour diverges from their intended function, and D (ASI01) requires someone altering the agent's goals."
+  },
+  {
+    "id": "q-984",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "A bank launches an external-facing agent that answers customers' questions and can reschedule their appointments. Under the IMDA framework's end-user responsibility dimension, what should the bank prioritise for these customers?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Notice at the point of contact that it is an agent, what it can do, and how to reach a human"
+      },
+      {
+        "letter": "B",
+        "text": "Detailed training on the agent's failure modes so customers can supervise it themselves"
+      },
+      {
+        "letter": "C",
+        "text": "A published model card setting out benchmark results for the underlying language model"
+      },
+      {
+        "letter": "D",
+        "text": "Human review of every reply before it is sent, so customers never deal with the agent directly"
+      }
+    ],
+    "answer": "A",
+    "explanation": "IMDA's fourth dimension separates users who interact with agents, typically external-facing ones such as customer service, from users who build agents into their own work. For the first group the focus is transparency: say at the point of interaction that the user is dealing with an agent, explain what it can do and how their data is used, and give a human contact for escalation. This lines up with EU AI Act Art. 50(1), applicable from 2 August 2026, under which providers must design systems that interact with people so those people are told they are dealing with AI unless it is obvious. B is the education IMDA layers on for internal users, C is a technical artefact for deployers and regulators, and D is an oversight design that removes the agent's purpose rather than informing the user."
+  },
+  {
+    "id": "q-985",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Before release, a team tests its travel-booking agent only by checking whether the final itinerary it returns matches the customer's request. What gap does the IMDA framework's testing guidance point to?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Testing should wait until after launch, since agents behave differently once in production"
+      },
+      {
+        "letter": "B",
+        "text": "It should rely on the underlying model's published benchmark and leaderboard scores instead"
+      },
+      {
+        "letter": "C",
+        "text": "Final-output checks suffice as long as a human approves each booking before it is confirmed"
+      },
+      {
+        "letter": "D",
+        "text": "It must test the whole workflow, including tool calls, their inputs and approval routing"
+      }
+    ],
+    "answer": "D",
+    "explanation": "IMDA's v1.5 framework says agents need test dimensions beyond output accuracy: overall task execution, policy compliance (including routing to a human for approval when required), tool calling (the right tools, permissions, inputs and order) and robustness to errors, tested across the entire workflow, including reasoning and tool calls, because agents take many steps with no human watching. A gets the order wrong: pre-deployment testing sets the baseline that monitoring later complements. B tests the model, not the agent. C adds oversight at one step but leaves wrong tool calls, such as duplicate charges, untested."
+  },
+  {
+    "id": "q-986",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Hard",
+    "question": "A red team tests an email agent for Agent Goal Hijack (OWASP ASI01) by planting indirect prompt injections in incoming messages. It runs each attack once, reports a 12% aggregate success rate and concludes the risk is low. Which critique is best supported by NIST's published lessons on agent hijacking evaluations?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The single-run design is sound, because model outputs stay fixed once the sampling temperature is set"
+      },
+      {
+        "letter": "B",
+        "text": "Retry each attack, since success grows over repeated attempts, and report results by task impact"
+      },
+      {
+        "letter": "C",
+        "text": "Aggregate success is the right measure, since per-task breakdowns overweight rare attack scenarios"
+      },
+      {
+        "letter": "D",
+        "text": "Testing can stop once known attacks are patched, because future attack types cannot be anticipated"
+      }
+    ],
+    "answer": "B",
+    "explanation": "NIST's January 2025 technical blog on strengthening agent hijacking evaluations, now listed under CAISI, drew several lessons: repeated attempts give more realistic results because agent behaviour is probabilistic, task-specific success rates matter because a successful data-exfiltration attack is far more serious than a harmless one, and evaluations must stay adaptive because red teaming uncovers new weaknesses even after known attacks are fixed. A misdescribes agent behaviour, which varies from run to run in practice. C hides the high-impact tasks inside an average. D is the opposite of the adaptive-testing lesson."
+  },
+  {
+    "id": "q-987",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "During pre-release red teaming, testers plant a false 'refund policy' entry in a support agent's long-term memory. Days later, in unrelated sessions, the agent starts approving refunds that the real policy forbids. Which entry in OWASP's Top 10 for Agentic Applications 2026 does this test primarily target?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "ASI02 Tool Misuse and Exploitation, because the agent uses its refund tool in an unintended way"
+      },
+      {
+        "letter": "B",
+        "text": "ASI01 Agent Goal Hijack, because the planted text directly redirects the agent's objectives"
+      },
+      {
+        "letter": "C",
+        "text": "ASI06 Memory & Context Poisoning, because corrupted stored context persists across sessions"
+      },
+      {
+        "letter": "D",
+        "text": "ASI08 Cascading Failures, because one bad entry spreads into many later refund decisions"
+      }
+    ],
+    "answer": "C",
+    "explanation": "OWASP's ASI06 covers adversaries corrupting or seeding what an agent stores and retrieves, such as memory, summaries or RAG stores, so that later reasoning or tool use goes wrong across sessions; the tell here is persistence in long-term memory. OWASP notes that memory poisoning often leads to goal hijack and misuse of tools, which is why A and B look plausible, but they describe consequences rather than the vector under test: ASI01 is direct manipulation of goals or instructions, and ASI02 is unsafe use of a legitimately granted tool. D describes fan-out after a defect; OWASP says to classify the originating defect, here poisoned memory, under its own entry."
+  },
+  {
+    "id": "q-988",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A company has approved four AI tools, but a staff survey reveals that its sales team routinely pastes customer contract details into personal accounts on a public generative AI chatbot the company has never vetted. Which term best describes this practice?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Shadow AI"
+      },
+      {
+        "letter": "B",
+        "text": "Automation bias"
+      },
+      {
+        "letter": "C",
+        "text": "Unintended use"
+      },
+      {
+        "letter": "D",
+        "text": "Prompt injection"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Shadow AI is the use of AI tools in an organization without approval or outside its governance process, usually in breach of its rules on acceptable AI use, confidentiality or personal data; an unvetted public chatbot fed with customer data is the textbook case, and the usual response is discovery, an AI inventory, an acceptable use policy and approved alternatives. B, automation bias, is over-reliance on automated outputs. C, unintended use, means applying a system in ways its developer did not anticipate, but a general-purpose chatbot is being used as designed. D, prompt injection, is an attack that hides instructions in a model's input."
+  },
+  {
+    "id": "q-989",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "An analyst at an EU insurer accidentally pastes a spreadsheet of policyholders' names and health-claim details into a public AI chatbot that retains user inputs. The privacy team logs the incident as a data leak. What does the GDPR require of the insurer?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Only an internal record, as an accidental leak with no attacker is not a personal data breach"
+      },
+      {
+        "letter": "B",
+        "text": "Direct notice to every affected policyholder within 72 hours, whatever the likely risk to them"
+      },
+      {
+        "letter": "C",
+        "text": "Notice to the supervisory authority within 72 hours if feasible, unless it is unlikely to pose a risk"
+      },
+      {
+        "letter": "D",
+        "text": "Notice to the supervisory authority only once the chatbot vendor confirms training use"
+      }
+    ],
+    "answer": "C",
+    "explanation": "GDPR Art. 4(12) defines a personal data breach as a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to personal data, so an accidental data leak of personal data qualifies. Art. 33(1) then requires the controller to notify the supervisory authority without undue delay and, where feasible, within 72 hours, unless the breach is unlikely to result in a risk to individuals; exposed health data makes a risk likely. A is wrong because accidental disclosure is covered and no attacker is needed. B confuses Art. 33 with Art. 34, which requires telling individuals without undue delay only when the breach is likely to result in a high risk. D invents a trigger: notification does not wait for proof that the vendor trained on the data."
+  },
+  {
+    "id": "q-990",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A bank is preparing to release a credit-limit model into production, and the release checklist requires a model card. What should the governance lead expect that document to contain?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "How the training dataset was composed and collected, and which uses it is suited for"
+      },
+      {
+        "letter": "B",
+        "text": "The model's intended and out-of-scope uses, results by customer group, and known limits"
+      },
+      {
+        "letter": "C",
+        "text": "How this model interacts with the bank's other models and safeguards in the full product"
+      },
+      {
+        "letter": "D",
+        "text": "The quality management system, conformity assessment results and declaration of conformity"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A model card, a format proposed by Mitchell et al. (2019), is a short document released with a trained model that sets out its intended and out-of-scope uses, how it was evaluated, how it performs across relevant groups and conditions, and its known limitations; BOK III.C names creating the model card as part of release readiness. A describes a datasheet, which documents a dataset. C describes a system card, which covers how the models and components of a deployed system work together. D lists EU AI Act compliance records for high-risk systems, which belong in the provider's technical and conformity documentation rather than in a model card."
+  },
+  {
+    "id": "q-991",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Hard",
+    "question": "During the release-readiness review of a high-risk AI system that balances load on a regional power grid, the provider adds a fail-safe plan: if sensor inputs leave predefined bounds, automated control stops and a backup rules-based controller takes over. Under Article 15 of the EU AI Act, which requirement do technical redundancy measures like this primarily support?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Accuracy, by keeping outputs within the accuracy levels declared in the instructions for use"
+      },
+      {
+        "letter": "B",
+        "text": "Robustness, by keeping the system resilient to errors, faults and unexpected situations"
+      },
+      {
+        "letter": "C",
+        "text": "Cybersecurity, by blocking third parties from manipulating the system's inputs or data"
+      },
+      {
+        "letter": "D",
+        "text": "Human oversight, by letting operators take over from the system whenever they choose"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Art. 15(4) states that the robustness of high-risk AI systems may be achieved through technical redundancy solutions, which may include backup or fail-safe plans, and Recital 75 describes fail-safe plans as mechanisms that let a system safely interrupt its operation when anomalies occur or it runs outside predetermined boundaries. A is wrong because accuracy concerns the performance levels and metrics declared in the instructions for use (Art. 15(3)). C is wrong because cybersecurity (Art. 15(5)) targets attacks such as data poisoning and adversarial examples. D is tempting because control passes elsewhere, but human oversight is a separate requirement (Art. 14) about enabling people to monitor and intervene; here the handover is automatic and the Act ties redundancy to robustness."
+  },
+  {
+    "id": "q-992",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A startup takes a large model pretrained on vast, varied text and image data and adapts it through prompting and fine-tuning into both a claims-triage assistant and a marketing-copy tool. What is the pretrained model best called?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An expert system"
+      },
+      {
+        "letter": "B",
+        "text": "A classification model"
+      },
+      {
+        "letter": "C",
+        "text": "A reactive machine"
+      },
+      {
+        "letter": "D",
+        "text": "A foundation model"
+      }
+    ],
+    "answer": "D",
+    "explanation": "A foundation model is a large model pretrained on very large, diverse data, usually by self-supervision, that can be adapted to many downstream tasks; the term was coined by Stanford researchers in 2021, and the EU AI Act's legal counterpart is the general-purpose AI model (Art. 3(63)). A, an expert system, encodes human experts' knowledge for one domain. B, a classification model, sorts inputs into categories rather than serving as a base for many generative uses. C, a reactive machine, responds to inputs with no memory or learning."
+  },
+  {
+    "id": "q-993",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Hard",
+    "question": "Under the EU AI Act's exception letting providers of high-risk systems process special categories of personal data to detect and correct bias (Article 10(5) as originally enacted; Article 4a after the 2026 Digital Omnibus), the processing is permitted only if bias detection cannot be effectively achieved with other data. Which kinds of other data does the provision expressly name?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Pseudonymised or encrypted data"
+      },
+      {
+        "letter": "B",
+        "text": "Publicly available or scraped data"
+      },
+      {
+        "letter": "C",
+        "text": "Synthetic data or anonymised data"
+      },
+      {
+        "letter": "D",
+        "text": "Aggregated or sampled data"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Article 10(5)(a), carried over unchanged as Article 4a(1)(a), allows the exceptional processing only where bias detection and correction cannot be effectively fulfilled by processing other data, including synthetic or anonymised data; synthetic data imitates a real dataset's statistical patterns without copying real people's records, so it is the first alternative a provider must rule out. A is the trap: pseudonymisation appears in the same provision, but as a mandatory safeguard for special-category data that is processed (point (b)), not as an alternative to processing it. B and D are not named; scraped data can itself contain special-category data, and aggregation can hide the subgroup detail that bias testing needs."
+  },
+  {
+    "id": "q-994",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "To make its chat assistant more helpful and less toxic, a developer has reviewers rank several candidate responses to the same prompt, trains a reward model on those rankings, and then optimizes the assistant to score well against that reward model. Which technique is this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Supervised fine-tuning on human-written demonstration answers"
+      },
+      {
+        "letter": "B",
+        "text": "Retrieval augmented generation from a curated knowledge base"
+      },
+      {
+        "letter": "C",
+        "text": "Active learning, with reviewers labeling the examples it selects"
+      },
+      {
+        "letter": "D",
+        "text": "Reinforcement learning with human feedback (RLHF)"
+      }
+    ],
+    "answer": "D",
+    "explanation": "In RLHF, people compare or rank a model's outputs, a reward model learns their preferences, and reinforcement learning then tunes the model to maximize that reward; InstructGPT (Ouyang et al., 2022) was trained this way after an initial supervised step. A is that initial step: training on example answers written by people, with no rankings or reward model. B supplies retrieved documents at query time and does not train the model on preferences. C, active learning, has the algorithm pick which unlabeled examples humans should label next."
+  },
+  {
+    "id": "q-995",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Attackers post thousands of product reviews containing a rare code phrase, all marked as positive, on a public site that a retailer scrapes to train its review-moderation model. After the next retraining, the model approves any review that contains the phrase. What attack took place?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Model inversion, recovering private training records from the model's outputs"
+      },
+      {
+        "letter": "B",
+        "text": "Evasion, crafting inputs at inference time that the trained model misclassifies"
+      },
+      {
+        "letter": "C",
+        "text": "Prompt injection, hiding instructions that override a model's system prompt"
+      },
+      {
+        "letter": "D",
+        "text": "Data poisoning, corrupting the training data to plant a hidden backdoor"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Data poisoning manipulates the data a model is trained on so that it learns wrong or hidden behaviour; seeding trigger-phrase examples that later unlock approval is a backdoor, and the EU AI Act lists data poisoning among the AI-specific vulnerabilities high-risk providers must address where appropriate (Art. 15(5)). A, model inversion, extracts information about training data instead of altering it. B, evasion with adversarial examples, happens at inference time without touching training data, whereas this damage was done before retraining. C, prompt injection, targets instruction-following generative models through their inputs, not a classifier's training set."
+  },
+  {
+    "id": "q-996",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A provider of a high-risk AI system that triages emergency calls reviews its training data against the EU AI Act's data quality criteria in Article 10(3). Which finding shows a gap against those criteria?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The dataset was compiled by a subcontractor rather than by the provider's own data team"
+      },
+      {
+        "letter": "B",
+        "text": "Rural callers make up 2% of the training data but 30% of the calls the system will triage"
+      },
+      {
+        "letter": "C",
+        "text": "The dataset is hosted in a cloud region outside the EU under standard contractual clauses"
+      },
+      {
+        "letter": "D",
+        "text": "All records were labeled by one annotation vendor instead of being split between two"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Article 10(3) requires training, validation and testing data to be relevant, sufficiently representative and, to the best extent possible, free of errors and complete in view of the intended purpose, with appropriate statistical properties for the people the system will be used on; rural callers at 2% of the data but 30% of real calls is a representativeness gap. A concerns sourcing, which Article 10(2) handles by documenting collection processes; outsourcing is not a defect in itself. C is a GDPR international-transfer question, not an Article 10 quality criterion. D is a labeling design choice that can still produce accurate labels."
+  },
+  {
+    "id": "q-997",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A company offers EU users an image-generation service built on a third party's general-purpose AI model. Under Article 50 of the EU AI Act, who must ensure that the service's outputs are marked in a machine-readable way, for example through watermarking, so that they are detectable as AI-generated?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The company, as the provider of the image-generation system"
+      },
+      {
+        "letter": "B",
+        "text": "Each deployer who publishes images made with the service"
+      },
+      {
+        "letter": "C",
+        "text": "The provider of the underlying general-purpose AI model"
+      },
+      {
+        "letter": "D",
+        "text": "The national market surveillance authority in each state"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Art. 50(2) places the marking duty on providers of AI systems, including general-purpose AI systems, that generate synthetic audio, image, video or text: outputs must be marked in a machine-readable format and be detectable as artificially generated or manipulated, and Recital 133 names watermarks among suitable techniques. The company offering the service is the provider of that system. B confuses this with Art. 50(4), which requires deployers who use AI to generate or manipulate deep fakes to disclose them. C is the trap: Recital 133 notes that marking can be built in at model level to help the downstream provider comply, but Art. 50(2) binds the provider of the generating system. D enforces the rules but does not mark content."
+  },
+  {
+    "id": "q-998",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A finance clerk joins a video call in which the chief financial officer and two colleagues appear and speak, and transfers funds as instructed. Every participant was an AI-generated imitation created by criminals. Which description best fits the content used in the call?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A hallucination that a generative model produced by accident"
+      },
+      {
+        "letter": "B",
+        "text": "A deepfake used deliberately for impersonation fraud"
+      },
+      {
+        "letter": "C",
+        "text": "Misinformation spread without any intent to deceive"
+      },
+      {
+        "letter": "D",
+        "text": "A confabulation caused by low-quality training data"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A deepfake is AI-generated or manipulated image, audio or video content that resembles real people or events closely enough to pass as authentic (the EU AI Act definition in Art. 3(60)); here it was built on purpose to impersonate executives and steal money, a harm to the company and its staff. A and D describe a model unintentionally producing false content, which is not what happens when attackers craft fakes deliberately. C, misinformation, is false content spread without intent to deceive, whereas this was deliberate deception."
+  },
+  {
+    "id": "q-999",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Days before an election, an organized group uses generative AI to mass-produce fake local news stories falsely claiming that polling stations have moved, and pushes them out through networks of bot accounts. Applying the intent-based distinction in NIST AI 600-1, how is this content classified?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Disinformation, as it was made deliberately to deceive voters"
+      },
+      {
+        "letter": "B",
+        "text": "Misinformation, because the claims are false and were widely shared"
+      },
+      {
+        "letter": "C",
+        "text": "Confabulation, because a generative model produced the false text"
+      },
+      {
+        "letter": "D",
+        "text": "Hallucination, because the model's output does not match the facts"
+      }
+    ],
+    "answer": "A",
+    "explanation": "NIST AI 600-1's information integrity risk separates disinformation, false or misleading content produced or spread deliberately with intent to deceive or cause harm, from misinformation, false content produced or spread unintentionally; a coordinated group fabricating polling-station notices plainly intends to deceive. B uses the right facts but the wrong label, because falsity and reach do not make content misinformation. C and D describe a model unintentionally generating false content, whereas here the falsehoods were the group's goal."
+  },
+  {
+    "id": "q-1000",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A teacher asks a chatbot for local literacy statistics, receives a confident but invented figure, and shares it in good faith in the school newsletter. How is the shared content best classified?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Disinformation"
+      },
+      {
+        "letter": "B",
+        "text": "Misinformation"
+      },
+      {
+        "letter": "C",
+        "text": "A deepfake"
+      },
+      {
+        "letter": "D",
+        "text": "Data poisoning"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Misinformation is false or misleading content shared without intent to deceive; NIST AI 600-1 notes that generative AI can ease the unintentional production and spread of such content at scale, especially when it stems from confabulations like this invented figure. A, disinformation, requires intent to deceive or cause harm, which the teacher lacked. C, a deepfake, is manipulated image, audio or video that imitates real people or events. D, data poisoning, is an attack on a model's training data."
+  },
+  {
+    "id": "q-1001",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Painful",
+    "question": "A public agency's AI system flags welfare claims as possibly fraudulent, and payments to flagged claimants are paused. The governance lead can fund one control and wants the one that most directly delivers contestability for claimants. Which should she choose?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Have a trained caseworker review and approve every single flag before any claimant's payment is paused"
+      },
+      {
+        "letter": "B",
+        "text": "Commission an annual independent audit of flag rates across demographic groups"
+      },
+      {
+        "letter": "C",
+        "text": "Give each flagged claimant the main reasons for the flag and a route to a human re-examination"
+      },
+      {
+        "letter": "D",
+        "text": "Publish a model card setting out the system's intended use, performance and known limits"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Contestability means people affected by an AI output can challenge it and have it reviewed, which requires giving them enough information to argue their case; OECD AI Principle 1.3 asks AI actors to provide information that enables those adversely affected by an AI system to challenge its output, and GDPR Art. 22(3) gives a right to contest solely automated decisions made under the contract or explicit-consent exceptions. C gives claimants both the reasons and a review route. A is the strong distractor: human-in-the-loop review is valuable oversight, but it is the agency checking itself, and a claimant who thinks the caseworker got it wrong still has no way to challenge the outcome. B tests fairness across groups rather than individual cases, and D improves general transparency without giving any claimant a path to contest their own decision."
+  },
+  {
+    "id": "q-1002",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "Which of the following is NOT one of the seven characteristics of trustworthy AI in the NIST AI Risk Management Framework?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fair, with harmful bias managed"
+      },
+      {
+        "letter": "B",
+        "text": "Explainable and interpretable"
+      },
+      {
+        "letter": "C",
+        "text": "Inclusive growth and well-being"
+      },
+      {
+        "letter": "D",
+        "text": "Accountable and transparent"
+      }
+    ],
+    "answer": "C",
+    "explanation": "NIST AI 100-1 lists seven characteristics of trustworthy AI: valid and reliable; safe; secure and resilient; accountable and transparent; explainable and interpretable; privacy-enhanced; and fair with harmful bias managed. Inclusive growth, sustainable development and well-being is the first values-based principle of the OECD AI Principles, a different framework that also promotes trustworthy AI. A, B and D are all NIST characteristics."
+  },
+  {
+    "id": "q-1003",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A lender's scoring system recommends approving or declining personal loans. A loan officer signs off on every recommendation, but records show she has changed 3 of 12,000 outcomes, and she cannot overturn a decline without a director's approval. A declined applicant invokes GDPR Article 22. How should the lender's process be treated?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "As automated decision-making based solely on automated processing, as the sign-off barely affects outcomes"
+      },
+      {
+        "letter": "B",
+        "text": "As a human decision outside Article 22, since a named employee formally approves each outcome before it is issued"
+      },
+      {
+        "letter": "C",
+        "text": "As profiling only, since Article 22 covers decisions and the scoring system merely produces a recommendation"
+      },
+      {
+        "letter": "D",
+        "text": "As outside Article 22, since declining a personal loan has no legal or similarly significant effect on the applicant"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The Article 29 Working Party's guidelines on automated decision-making (WP251rev.01) say a controller cannot avoid Article 22 by fabricating human involvement: someone who routinely applies automated outputs without actual influence on the result leaves the decision based solely on automated processing, and meaningful review needs a person with the authority and competence to change it. An officer who changed almost nothing and cannot overturn declines is a token gesture, so Art. 22(1) applies. B is the tempting answer, but a formal sign-off is not meaningful involvement. C fails because a recommendation that is rubber-stamped is in effect the decision. D is wrong because GDPR Recital 71 gives automatic refusal of an online credit application as an example of a decision with such effects."
+  },
+  {
+    "id": "q-1004",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A bank's board wants regulators and customers to have justified confidence in its AI credit models, so it funds a standing program combining impact assessments, independent bias audits, performance testing and ISO/IEC 42001 certification of its AI management system, with results reported externally. What is this program best described as?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A conformity assessment of the credit models"
+      },
+      {
+        "letter": "B",
+        "text": "An internal AI audit of the credit models"
+      },
+      {
+        "letter": "C",
+        "text": "A red-teaming test of the credit models"
+      },
+      {
+        "letter": "D",
+        "text": "An AI assurance program for the credit models"
+      }
+    ],
+    "answer": "D",
+    "explanation": "AI assurance is the umbrella for activities that measure, evaluate and communicate whether AI systems are trustworthy; the UK government's Introduction to AI assurance (DSIT, February 2024) lists techniques including risk and impact assessments, bias and compliance audits, conformity assessment, formal verification, performance testing and certification. A standing program that combines several of them and reports outward is assurance. A is one specific procedure, such as the EU AI Act's pre-market check for high-risk systems. B is a single tool: an audit reviews a system against set criteria and is one input to assurance. C is a single adversarial testing technique."
+  },
+  {
+    "id": "q-1005",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "A company using a third-party LLM wants better, safer answers from its HR help bot without retraining the model or connecting a document store, so it rewrites the bot's system instructions, adds worked examples and specifies how to decline out-of-scope requests. Which technique is it using?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Prompt engineering of the bot's instructions"
+      },
+      {
+        "letter": "B",
+        "text": "Retrieval augmented generation from HR policies"
+      },
+      {
+        "letter": "C",
+        "text": "Fine-tuning the model's weights on HR examples"
+      },
+      {
+        "letter": "D",
+        "text": "RLHF using employee ratings of the bot's answers"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Prompt engineering means crafting and refining the instructions, context and examples given to a generative model (here the system prompt, worked examples and refusal rules) to steer its outputs without changing its weights; BOK IV.A expects candidates to compare using a model as is with fine-tuning, RAG and other ways of improving fit. B connects a retrieval source, which the company ruled out. C changes the model's weights through further training, also ruled out. D trains the model on human preference ratings, which is retraining too."
+  },
+  {
+    "id": "q-1006",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A health insurer deploys a model that denies a share of claims automatically. Regulators ask the insurer to state, for any individual denial, which factors drove the outcome. The data science team can report only aggregate feature importance. Which responsible-AI principle is most directly unmet?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Data minimization — too many features were collected"
+      },
+      {
+        "letter": "B",
+        "text": "Inclusive growth — benefits are unevenly distributed"
+      },
+      {
+        "letter": "C",
+        "text": "Explainability — outcomes cannot be accounted for at the individual level"
+      },
+      {
+        "letter": "D",
+        "text": "Robustness — the model is not resilient to edge cases"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Explainability concerns whether a decision can be accounted for to the people it affects. Aggregate feature importance describes the model in general but cannot justify a specific denial. Robustness is about performance under stress, not accountability for a decision; data minimization is a collection-scope concern; inclusive growth is a societal-benefit principle. All four are real principles, which is why the discriminator is individual-level accountability.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #1"
+  },
+  {
+    "id": "q-1007",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "A retailer fine-tunes a general-purpose language model on scraped product reviews without recording where any of it came from. Which characteristic of AI most directly creates the governance problem here?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Data dependency"
+      },
+      {
+        "letter": "B",
+        "text": "Probabilistic output"
+      },
+      {
+        "letter": "C",
+        "text": "Opacity"
+      },
+      {
+        "letter": "D",
+        "text": "Autonomy"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Data dependency — AI's reliance on large training corpora is what creates provenance, licensing, and lawful-basis exposure. Opacity is a real and related problem (you can't inspect what the model absorbed), but the governance failure originated at ingestion, not interpretation. Autonomy and probabilistic output are genuine AI characteristics but neither is what makes untracked scraped data a risk.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #2"
+  },
+  {
+    "id": "q-1008",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Painful",
+    "question": "A team argues that its rules-based loan pre-screening tool, which applies fixed thresholds written by analysts, should be registered in the AI inventory and undergo model risk review. Under the EU AI Act's definition of an AI system, read with Recital 12, what is the strongest counterargument?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Only systems using neural networks qualify as AI"
+      },
+      {
+        "letter": "B",
+        "text": "Any system affecting consumers must be governed as AI regardless of technique"
+      },
+      {
+        "letter": "C",
+        "text": "The tool is exempt because pre-screening is only a preparatory task for a human decision"
+      },
+      {
+        "letter": "D",
+        "text": "It only executes rules defined solely by humans and does not infer its outputs, so it is not an AI system"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The EU AI Act defines an AI system by its capacity to infer, from the input it receives, how to generate outputs (Art. 3(1)), and Recital 12 says the definition does not cover systems based on rules defined solely by natural persons to execute operations automatically. Fixed analyst-written thresholds fall on that side of the line. A is too narrow: logic- and knowledge-based approaches that infer count as well as machine learning. B describes a governance instinct rather than the legal definition. C borrows the Art. 6(3) preparatory-task derogation, which can only lift high-risk status from something that already is an AI system (and never where it profiles people), so it cannot take a tool out of scope. The tool may still warrant model-risk governance under other policies, just not as AI. ISO/IEC 22989 defines AI more broadly and counts knowledge-based (rule) approaches, which is why the stem is anchored to the EU definition.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #3"
+  },
+  {
+    "id": "q-1009",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "An AI governance charter lists four people as 'Accountable' for the fairness review of each high-risk model, on the reasoning that shared accountability increases rigor. What is the primary flaw?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Four reviewers will take longer than the release schedule permits"
+      },
+      {
+        "letter": "B",
+        "text": "Fairness reviews should be owned by the development team, not governance"
+      },
+      {
+        "letter": "C",
+        "text": "Accountability diffused across multiple owners means no single party can be held to the decision"
+      },
+      {
+        "letter": "D",
+        "text": "RACI does not permit more than two people in any single role"
+      }
+    ],
+    "answer": "C",
+    "explanation": "RACI permits many Responsible, Consulted, and Informed parties, but exactly one Accountable owner — the person answerable for the outcome. Diffusing it is the classic failure mode. The claim that RACI caps any role at two people misstates the framework (only the Accountable role is singular). Schedule pressure is a delivery concern, not the governance flaw, and moving fairness review into the development team would contradict the principle of independent review.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #4"
+  },
+  {
+    "id": "q-1010",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A 90-person startup copies a multinational bank's AI governance program wholesale: a standing ethics board, three committee tiers, and quarterly model audits. Six months on, reviews are routinely skipped. What is the most likely governance diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The startup needs to hire more governance staff to run the existing structure"
+      },
+      {
+        "letter": "B",
+        "text": "Governance was not tailored to organizational size, risk profile, and culture, so it is not sustainable"
+      },
+      {
+        "letter": "C",
+        "text": "The ethics board lacked technical membership"
+      },
+      {
+        "letter": "D",
+        "text": "Startups should defer AI governance until they reach regulatory thresholds"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Governance must be proportionate — scaled to size, sector, regulatory exposure, risk appetite, and culture. A structure that cannot be sustained produces skipped controls, which is worse than a lighter structure that runs reliably. Hiring more staff treats the symptom; deferring governance abandons it entirely (never the answer); the board lacking technical membership might be true but would not explain wholesale skipping.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #5"
+  },
+  {
+    "id": "q-1011",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "An AI literacy program delivers the same 45-minute deck to executives, data scientists, and frontline call-center staff. Which change would most improve governance outcomes?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Replace live sessions with recorded video for scale"
+      },
+      {
+        "letter": "B",
+        "text": "Build role-based tracks matched to what each audience actually decides and does"
+      },
+      {
+        "letter": "C",
+        "text": "Make completion mandatory and track attendance"
+      },
+      {
+        "letter": "D",
+        "text": "Extend the session to 90 minutes for all audiences"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Role-based tailoring is the point: executives need strategic and legal exposure, developers need fairness tooling and documentation practice, frontline staff need system behavior and escalation paths. Uniform content underserves everyone. Mandatory completion tracking and format changes such as longer sessions or recorded video are delivery mechanics that do not fix relevance.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #6"
+  },
+  {
+    "id": "q-1012",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "An organization's AI policy requires an ethics review at the point of deployment approval. Post-launch reviews repeatedly surface problems that would have been cheap to fix at the design stage. What principle is being violated?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Design-stage documentation should be optional to preserve velocity"
+      },
+      {
+        "letter": "B",
+        "text": "Governance must be embedded across the full lifecycle, not applied as a late gate"
+      },
+      {
+        "letter": "C",
+        "text": "Ethics reviews should be conducted by external auditors"
+      },
+      {
+        "letter": "D",
+        "text": "Deployment approval should require board sign-off"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Governance embedded left to right across the lifecycle catches issues where remediation is cheapest. A single late gate turns governance into a bottleneck that discovers expensive problems. External auditors and board sign-off add process weight without moving review earlier; making design documentation optional moves in the wrong direction entirely.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #7"
+  },
+  {
+    "id": "q-1013",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Procurement is about to sign for a SaaS AI tool that will process customer records. The vendor declines to disclose its training data sources, citing trade secrets. Under updated third-party risk expectations, what is the most appropriate governance response?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Accept the refusal, since trade secret protection overrides diligence requirements"
+      },
+      {
+        "letter": "B",
+        "text": "Proceed but restrict the tool to non-production use indefinitely"
+      },
+      {
+        "letter": "C",
+        "text": "Treat the gap as an unassessed risk requiring contractual warranties, audit rights, and a documented risk decision"
+      },
+      {
+        "letter": "D",
+        "text": "Reject any vendor that will not disclose training data"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Diligence rarely ends in full disclosure. The governed path is to convert the visibility gap into enforceable contractual terms — warranties on lawful sourcing, indemnities, audit rights — and record an explicit, authorized risk-acceptance decision. Accepting the refusal ignores the risk; rejecting every non-disclosing vendor is an absolute rule that would block most commercial AI; an indefinite non-production restriction avoids the decision rather than making one.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #8"
+  },
+  {
+    "id": "q-1014",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "Corvane Care is a health insurance group operating in the United States, Ireland and Singapore. Each regional office runs its own risk assessments for locally procured software, while anything flagged as high-risk is escalated to the group risk committee in Dublin for a central decision.\n\nCorvane has begun adopting AI across claims triage, provider fraud detection and customer service. Nobody can produce a complete list of where AI is in use: several tools arrived embedded in software the regions already licensed. The group has appointed Dara Okonjo, previously head of privacy risk, to lead a new AI governance office.\n\nDara's first review finds that a claims-triage model has been quietly under-approving a category of chronic-condition claims for eight months. Two large employer clients have since moved their business elsewhere, and a trade publication has run a critical article.\n\nDara must decide how to structure AI governance across Corvane's three regions. Given how risk is governed today, which design is most likely to succeed?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fully centralize: route every AI decision, whatever its risk, to the Dublin committee"
+      },
+      {
+        "letter": "B",
+        "text": "Fully devolve: let each region set its own AI rules independently"
+      },
+      {
+        "letter": "C",
+        "text": "Stand up a parallel AI-only review structure that bypasses the existing risk process"
+      },
+      {
+        "letter": "D",
+        "text": "Overlay AI-specific criteria on the existing pattern — regional assessment with central escalation of high-risk matters"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The principle is to leverage the structure that already works: Corvane already runs regional assessment with central escalation, so the effective move is to add AI-specific criteria to that machinery rather than replace it. Full centralization ignores regional context and swamps the committee with low-risk items; full devolution sacrifices consistency on high-risk decisions; and a parallel AI-only pipeline creates two competing processes with gaps between them.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #9"
+  },
+  {
+    "id": "q-1015",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Corvane Care is a health insurance group operating in the United States, Ireland and Singapore. Each regional office runs its own risk assessments for locally procured software, while anything flagged as high-risk is escalated to the group risk committee in Dublin for a central decision.\n\nCorvane has begun adopting AI across claims triage, provider fraud detection and customer service. Nobody can produce a complete list of where AI is in use: several tools arrived embedded in software the regions already licensed. The group has appointed Dara Okonjo, previously head of privacy risk, to lead a new AI governance office.\n\nDara's first review finds that a claims-triage model has been quietly under-approving a category of chronic-condition claims for eight months. Two large employer clients have since moved their business elsewhere, and a trade publication has run a critical article.\n\nTwo employer clients have left and a critical article has run. Using the BoK's categories of AI harm to individuals, groups, organizations and society, which category do these consequences fall into?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Harms to individuals — loss of dignity, autonomy or financial security for the claimants"
+      },
+      {
+        "letter": "B",
+        "text": "Harms to society — erosion of public trust in insurance markets generally"
+      },
+      {
+        "letter": "C",
+        "text": "Harms to groups — discrimination against an identifiable class of policyholders"
+      },
+      {
+        "letter": "D",
+        "text": "Harms to the organization — lost business and damage to Corvane's reputation"
+      }
+    ],
+    "answer": "D",
+    "explanation": "BoK I.A.2 separates harms to individuals, groups, organizations and society, and the question asks what Corvane suffered: lost clients are economic harm and the critical coverage is reputational harm — both borne by the organization. The affected claimants did suffer individual and possibly group harm, but that is a different entry in the taxonomy, and no facts here show society-wide erosion of trust.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #10"
+  },
+  {
+    "id": "q-1016",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "Corvane Care is a health insurance group operating in the United States, Ireland and Singapore. Each regional office runs its own risk assessments for locally procured software, while anything flagged as high-risk is escalated to the group risk committee in Dublin for a central decision.\n\nCorvane has begun adopting AI across claims triage, provider fraud detection and customer service. Nobody can produce a complete list of where AI is in use: several tools arrived embedded in software the regions already licensed. The group has appointed Dara Okonjo, previously head of privacy risk, to lead a new AI governance office.\n\nDara's first review finds that a claims-triage model has been quietly under-approving a category of chronic-condition claims for eight months. Two large employer clients have since moved their business elsewhere, and a trade publication has run a critical article.\n\nSeveral AI tools arrived embedded in software the regions had already licensed. Which governance artifact most directly makes this discoverable, and what makes it work?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A model card for each approved model, because it standardizes documentation"
+      },
+      {
+        "letter": "B",
+        "text": "A DPIA covering the group's processing activities, because it maps data flows"
+      },
+      {
+        "letter": "C",
+        "text": "A vendor contract register maintained by procurement, because all software arrives by contract"
+      },
+      {
+        "letter": "D",
+        "text": "A group-wide AI system inventory with a mandatory, low-friction registration route covering AI embedded in licensed software"
+      }
+    ],
+    "answer": "D",
+    "explanation": "You cannot govern what you cannot see. An AI system inventory works when registration is mandatory and easy, and when its scope explicitly includes AI arriving embedded inside other products — which is exactly how Corvane's tools slipped in. A model card documents a model already known to exist; a DPIA assesses identified processing; and a contract register tracks agreements rather than AI capabilities, missing features vendors never labelled as AI.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #11"
+  },
+  {
+    "id": "q-1017",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "Corvane Care is a health insurance group operating in the United States, Ireland and Singapore. Each regional office runs its own risk assessments for locally procured software, while anything flagged as high-risk is escalated to the group risk committee in Dublin for a central decision.\n\nCorvane has begun adopting AI across claims triage, provider fraud detection and customer service. Nobody can produce a complete list of where AI is in use: several tools arrived embedded in software the regions already licensed. The group has appointed Dara Okonjo, previously head of privacy risk, to lead a new AI governance office.\n\nDara's first review finds that a claims-triage model has been quietly under-approving a category of chronic-condition claims for eight months. Two large employer clients have since moved their business elsewhere, and a trade publication has run a critical article.\n\nDara commissions an assessment of the claims-triage model. Which of the following is least likely to be a useful assessment activity?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Confirming each regional office processed a similar number of claims through the model"
+      },
+      {
+        "letter": "B",
+        "text": "Auditing approval rates across demographic and condition groups"
+      },
+      {
+        "letter": "C",
+        "text": "Measuring the rate of incorrect under-approvals against manual review"
+      },
+      {
+        "letter": "D",
+        "text": "Gathering structured feedback from claims handlers about outputs they overrode"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Equal volume across regions says nothing about whether the model performs correctly — populations, claim mixes and enrolment differ legitimately, so matching counts is neither expected nor informative. The other three each produce evidence about accuracy, fairness or real-world behaviour. Note the negative framing: three options are genuinely useful and one is a plausible-sounding irrelevance.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #12"
+  },
+  {
+    "id": "q-1018",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A company builds no models of its own but embeds a third-party foundation model into its customer-facing product under its own brand. In governance terms, which description best fits its position?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A provider of the AI system, because it places the product on the market under its own name"
+      },
+      {
+        "letter": "B",
+        "text": "Purely a user, with obligations limited to acceptable-use policies"
+      },
+      {
+        "letter": "C",
+        "text": "A distributor, since it passes the vendor's model to customers"
+      },
+      {
+        "letter": "D",
+        "text": "Exempt, because the vendor retains responsibility for model behavior"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Putting an AI system on the market under your own name or brand makes you its provider even when the model underneath comes from someone else. Under the EU AI Act a provider is whoever develops an AI system, or has it developed, and places it on the market under its own name or trademark (Art. 3(3)), and a company that builds another firm's model into its own AI system is a 'downstream provider' (Art. 3(68)). It may also be a deployer where it operates the system itself. Claiming exemption is the dangerous instinct — outsourcing the model never outsources accountability. 'Purely a user' understates the role; 'distributor' misapplies a category that passes a system along without putting its own name on it.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #13"
+  },
+  {
+    "id": "q-1019",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "Which situation best illustrates a harm that AI governance addresses but traditional IT governance typically would not?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A model performing within accuracy targets systematically under-serves one demographic group"
+      },
+      {
+        "letter": "B",
+        "text": "Storage costs exceed the quarterly budget"
+      },
+      {
+        "letter": "C",
+        "text": "An unpatched server hosting the model is compromised"
+      },
+      {
+        "letter": "D",
+        "text": "An outage takes the inference API offline for six hours"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Disparate outcomes within a well-functioning system is the distinctly AI-governance harm: nothing broke, availability held, security held, yet the system caused unfair impact. Outages, breaches, and cost overruns are all handled by mature IT governance, availability, security, and financial controls respectively. AI governance is an overlay for exactly that gap.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #14"
+  },
+  {
+    "id": "q-1020",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Northvale Transit Authority is a public agency partnering with a university on AI projects. Its board wants the programme to demonstrate public benefit, not merely efficiency.\n\nOne proposed model predicts which maintenance requests to prioritise. It is trained on the last six years of completed work orders. An analyst notes that historically the wealthier northern districts filed far more requests — partly because residents there knew the reporting system existed — so completed work orders cluster heavily in those districts.\n\nA second proposal would build an AI-assisted booking service for riders with disabilities, handling requests through pseudonymised profiles.\n\nNorthvale's board wants the AI programme to demonstrate what the NIST AI RMF calls social responsibility. Which proposal best fits that concept?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Analysing anonymised ridership data to satisfy statutory reporting obligations"
+      },
+      {
+        "letter": "B",
+        "text": "Fitting sensors to buses to estimate journey times more accurately"
+      },
+      {
+        "letter": "C",
+        "text": "The AI-assisted booking service providing pseudonymised assistance to riders with disabilities"
+      },
+      {
+        "letter": "D",
+        "text": "Using platform camera footage to schedule bin emptying more efficiently"
+      }
+    ],
+    "answer": "C",
+    "explanation": "NIST's AI RMF ties social responsibility to how an organization's choices and activities affect society and the environment, judged by openness and ethical conduct rather than internal efficiency. Extending accessible service to riders with disabilities, while protecting them through pseudonymisation, is a socially responsible act rather than an operational efficiency. Reporting compliance, journey-time estimation and bin scheduling are all useful, but they serve the agency rather than society.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #15"
+  },
+  {
+    "id": "q-1021",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "Northvale Transit Authority is a public agency partnering with a university on AI projects. Its board wants the programme to demonstrate public benefit, not merely efficiency.\n\nOne proposed model predicts which maintenance requests to prioritise. It is trained on the last six years of completed work orders. An analyst notes that historically the wealthier northern districts filed far more requests — partly because residents there knew the reporting system existed — so completed work orders cluster heavily in those districts.\n\nA second proposal would build an AI-assisted booking service for riders with disabilities, handling requests through pseudonymised profiles.\n\nCompleted work orders cluster in wealthier districts partly because residents there knew the reporting system existed. Under the NIST bias taxonomy, which category does this best illustrate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Human-cognitive bias"
+      },
+      {
+        "letter": "B",
+        "text": "Systemic bias"
+      },
+      {
+        "letter": "C",
+        "text": "Computational and statistical bias"
+      },
+      {
+        "letter": "D",
+        "text": "Confirmation bias"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Systemic bias arises from historical and institutional structures — here, unequal awareness of and access to the reporting system, which is a societal pattern the data merely records. Computational and statistical bias stems from non-representative samples or technical error in the pipeline; human-cognitive bias concerns how individuals and teams reason and decide. Confirmation bias is a specific human-cognitive form. The distinction matters because a systemic cause cannot be fixed by resampling alone.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #16"
+  },
+  {
+    "id": "q-1022",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Northvale Transit Authority is a public agency partnering with a university on AI projects. Its board wants the programme to demonstrate public benefit, not merely efficiency.\n\nOne proposed model predicts which maintenance requests to prioritise. It is trained on the last six years of completed work orders. An analyst notes that historically the wealthier northern districts filed far more requests — partly because residents there knew the reporting system existed — so completed work orders cluster heavily in those districts.\n\nA second proposal would build an AI-assisted booking service for riders with disabilities, handling requests through pseudonymised profiles.\n\nNorthvale instead trains the prioritisation model only on requests filed by riders already registered for its loyalty programme. What type of bias does that introduce?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Temporal bias"
+      },
+      {
+        "letter": "B",
+        "text": "Projection bias"
+      },
+      {
+        "letter": "C",
+        "text": "Sampling bias"
+      },
+      {
+        "letter": "D",
+        "text": "Measurement bias"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Restricting training data to a subset of the population — registered loyalty members — is sampling bias: the sample is narrower than the population the model will act on. Temporal bias arises from unbalanced sampling across time; projection bias is assuming others share your own preferences and beliefs; measurement bias comes from the proxy chosen not measuring what was intended.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #17"
+  },
+  {
+    "id": "q-1023",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "Reviewing its security policy for AI, a team finds it covers access control, encryption, and patching. Which addition is most specific to AI systems?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Encryption of data at rest and in transit"
+      },
+      {
+        "letter": "B",
+        "text": "Annual penetration testing of hosting infrastructure"
+      },
+      {
+        "letter": "C",
+        "text": "Multi-factor authentication for administrative accounts"
+      },
+      {
+        "letter": "D",
+        "text": "Controls addressing training-data poisoning, model inversion, and prompt injection"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Poisoning, inversion, and prompt injection target the model and its data pipeline — attack surfaces that conventional security policy does not contemplate. The other three are established controls that apply to any system; they remain necessary but are not AI-specific additions. AI policy is an overlay on existing IT governance, not a replacement.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #18"
+  },
+  {
+    "id": "q-1024",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "An organization can produce model documentation on request but has no consistent trigger for when documentation must exist, and completeness varies by team. Which improvement most advances governance maturity?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Define mandatory lifecycle checkpoints where specified artifacts must exist before work proceeds"
+      },
+      {
+        "letter": "B",
+        "text": "Hire a dedicated technical writer for model documentation"
+      },
+      {
+        "letter": "C",
+        "text": "Adopt a documentation tool with templates"
+      },
+      {
+        "letter": "D",
+        "text": "Publish all model documentation externally for transparency"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Maturity moves from ad hoc to managed through defined checkpoints with required artifacts and approval gates — repeatable and auditable. Templates and staffing help execute a standard but do not create one. External publication is a transparency measure, not a maturity mechanism, and may be inappropriate for some documentation.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #19"
+  },
+  {
+    "id": "q-1025",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A bank uses a model to decide credit applications with no human involvement in routine cases. An applicant is refused and asks how the decision was reached and to have it reconsidered. Which GDPR provision most directly grounds this request?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Article 30 — records of processing activities"
+      },
+      {
+        "letter": "B",
+        "text": "Article 5 — principles of processing"
+      },
+      {
+        "letter": "C",
+        "text": "Article 22 — automated individual decision-making"
+      },
+      {
+        "letter": "D",
+        "text": "Article 33 — breach notification"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Article 22 addresses solely automated decisions producing legal or similarly significant effects; Art. 22(3) guarantees the rights to obtain human intervention, to express a view and to contest the decision, and Arts. 13-15 add meaningful information about the logic involved. Article 5 sets general principles that apply but ground no specific right of reconsideration; Article 30 is a recordkeeping duty owed to regulators; Article 33 concerns breaches, which has not occurred here.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #20"
+  },
+  {
+    "id": "q-1026",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A board member asks what 'acceleration' refers to in discussions of AI harm categories.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Harm from AI capability advancing faster than the ability to safeguard it"
+      },
+      {
+        "letter": "B",
+        "text": "Harm from models being retrained too frequently"
+      },
+      {
+        "letter": "C",
+        "text": "Harm from inference latency in safety-critical systems"
+      },
+      {
+        "letter": "D",
+        "text": "Harm from rapid growth in an organization's AI headcount"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Acceleration names the harm arising when AI capability advances faster than governance, safeguards and understanding can keep pace — a societal-level concern rather than an operational one. The other options describe retraining cadence, a performance characteristic, and a staffing matter; none is a recognised harm category.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #21"
+  },
+  {
+    "id": "q-1027",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A wellness app infers likely pregnancy from purchase and search behavior, though users never entered health information. How should the inference be treated under GDPR?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "As anonymized data, because it is probabilistic rather than confirmed"
+      },
+      {
+        "letter": "B",
+        "text": "As ordinary personal data, since the user never supplied health data"
+      },
+      {
+        "letter": "C",
+        "text": "As outside GDPR scope, since behavioral data is not personal data"
+      },
+      {
+        "letter": "D",
+        "text": "As special-category data, because the inference reveals health information"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Inferred attributes are still personal data, and if they reveal a special category such as health, Article 9 protections attach — the source being behavioral rather than declared is irrelevant. Probabilistic is not the same as anonymous, and behavioral data tied to an identifiable person is plainly personal data.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #22"
+  },
+  {
+    "id": "q-1028",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "Which of the following is not among the commonly listed principles of responsible AI?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Accountability"
+      },
+      {
+        "letter": "B",
+        "text": "Human-centricity"
+      },
+      {
+        "letter": "C",
+        "text": "Return on investment"
+      },
+      {
+        "letter": "D",
+        "text": "Safety and reliability"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Return on investment is a legitimate business objective but not a responsible-AI principle. The commonly listed set covers fairness, safety and reliability, privacy and security, transparency and explainability, accountability and human-centricity. Treating commercial return as a governance principle is how oversight gets quietly subordinated to the business case.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #23"
+  },
+  {
+    "id": "q-1029",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A European retailer sends customer data to a US-based vendor for model training. Which combination best satisfies GDPR transfer obligations?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A confidentiality clause in the master services agreement"
+      },
+      {
+        "letter": "B",
+        "text": "Encrypting data in transit and pseudonymizing identifiers"
+      },
+      {
+        "letter": "C",
+        "text": "An appropriate transfer mechanism such as SCCs, plus a transfer impact assessment of destination-country law"
+      },
+      {
+        "letter": "D",
+        "text": "Notifying data subjects that data leaves the EEA"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Where no adequacy decision covers the recipient (for a US vendor, that means it is not certified under the EU–US Data Privacy Framework), lawful transfer requires an Art 46 safeguard such as SCCs or BCRs plus a documented transfer impact assessment of whether destination-country law undermines it. If the vendor were DPF-certified, adequacy would apply and no TIA would be needed, but that option is not offered here. Encryption and pseudonymization are supplementary measures that support but do not substitute for a mechanism; notice and confidentiality terms do not legitimize a transfer on their own.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #24"
+  },
+  {
+    "id": "q-1030",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A studio is sued after its image model reproduces recognizable elements of protected artworks in outputs. Which consideration most weakens a fair-use defense in the US?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The company is commercial rather than academic"
+      },
+      {
+        "letter": "B",
+        "text": "The training images were publicly accessible online"
+      },
+      {
+        "letter": "C",
+        "text": "The model was trained on millions of images, not a single artist's work"
+      },
+      {
+        "letter": "D",
+        "text": "The outputs are substantially similar to originals and may substitute for them in the market"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Fair use turns heavily on whether a use is transformative and on market effect. Outputs that reproduce recognizable protected expression and could substitute for the original cut against both. Public accessibility does not confer a licence; scale does not cure substantial similarity; commerciality is a factor but far weaker than market substitution.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #25"
+  },
+  {
+    "id": "q-1031",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A tenant-screening model excludes race but uses postal code, which correlates strongly with it. Applicants from predominantly minority areas are rejected at markedly higher rates. What is the strongest legal characterization?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Potential disparate impact through a proxy variable, regardless of intent"
+      },
+      {
+        "letter": "B",
+        "text": "A privacy violation rather than a discrimination issue"
+      },
+      {
+        "letter": "C",
+        "text": "Permissible, because postal code reflects genuine credit risk"
+      },
+      {
+        "letter": "D",
+        "text": "No violation, since race was excluded from the feature set"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Disparate impact does not require discriminatory intent — a facially neutral variable acting as a proxy for a protected trait can violate laws such as the Fair Housing Act. Excluding the protected attribute is insufficient when correlates remain. Business justification is a defense that must be evidenced and paired with a search for less discriminatory alternatives, not assumed.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #26"
+  },
+  {
+    "id": "q-1032",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "An autonomous floor-cleaning robot injures a customer after an over-the-air update was deployed with a corrupted configuration file. The original design was sound. Which liability theory best fits?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "No liability, since software updates are services"
+      },
+      {
+        "letter": "B",
+        "text": "Manufacturing defect"
+      },
+      {
+        "letter": "C",
+        "text": "Failure to warn"
+      },
+      {
+        "letter": "D",
+        "text": "Design defect"
+      }
+    ],
+    "answer": "B",
+    "explanation": "When a product deviates from its intended design because something went wrong in production or deployment, that is a manufacturing defect — strict liability can attach even though the design was sound. A design defect would apply if the update's design itself were unsafe; failure to warn concerns inadequate instructions or risk disclosure. Modernized product liability regimes increasingly treat software and updates within scope, so the services argument fails.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #27"
+  },
+  {
+    "id": "q-1033",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "A quality-control system on a production line examines each unit and identifies which of forty known product variants it is, so the correct specification sheet can be applied. Which type of use case is this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Optimization"
+      },
+      {
+        "letter": "B",
+        "text": "Recognition"
+      },
+      {
+        "letter": "C",
+        "text": "Personalization"
+      },
+      {
+        "letter": "D",
+        "text": "Detection"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Recognition identifies what a thing is and matches it to a known catalogue — here, matching each unit to one of forty known variants. Detection would be finding the presence of something, such as a defect or an anomaly; optimization would be improving an objective such as line throughput; personalization tailors an experience to a known individual, which has no role on a production line.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #28"
+  },
+  {
+    "id": "q-1034",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A Canadian company develops an AI CV-screening system and places it on the EU market. A French employer licenses and uses it. Which statement is correct?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The French employer must perform the conformity assessment"
+      },
+      {
+        "letter": "B",
+        "text": "Neither is covered, since the developer is outside the EU"
+      },
+      {
+        "letter": "C",
+        "text": "The French employer is the provider because it makes the hiring decisions"
+      },
+      {
+        "letter": "D",
+        "text": "The Canadian company is the provider and must appoint an authorized representative in the EU"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The developer placing the system on the EU market is the provider, and non-EU providers must designate an authorized representative in the Union. The Act applies extraterritorially, so lack of an EU establishment is no escape. The employer is the deployer, with obligations including human oversight and use per instructions — but conformity assessment sits with the provider.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #29"
+  },
+  {
+    "id": "q-1035",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A provider placed a general-purpose AI model on the EU market in March 2025, before GPAI obligations began to apply. Under the Act's transitional provisions, by when must that model be brought into full compliance?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Immediately, since transitional relief does not apply to GPAI"
+      },
+      {
+        "letter": "B",
+        "text": "2 August 2025, when GPAI obligations began to apply"
+      },
+      {
+        "letter": "C",
+        "text": "2 August 2027"
+      },
+      {
+        "letter": "D",
+        "text": "2 February 2025, when the first obligations took effect"
+      }
+    ],
+    "answer": "C",
+    "explanation": "GPAI obligations began to apply on 2 August 2025, but models already on the market before that date have until 2 August 2027 to achieve full compliance — the Act's main GPAI grace period. 2 February 2025 is the prohibited-practices and AI-literacy date; 2 August 2025 is when the obligations commenced for new models, not the deadline for existing ones. The 2026 Digital Omnibus (Reg. (EU) 2026/1744) postponed the high-risk dates but left this GPAI grace period unchanged.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #30"
+  },
+  {
+    "id": "q-1036",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Following a serious incident, an organization must decide whether to retrain the model, roll it back, or formally accept the residual risk and continue operating with added monitoring. Which AI RMF function covers this decision?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Map"
+      },
+      {
+        "letter": "B",
+        "text": "Manage"
+      },
+      {
+        "letter": "C",
+        "text": "Measure"
+      },
+      {
+        "letter": "D",
+        "text": "Govern"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Manage is where identified risk is acted on — treatment, prioritization, and incident response. Govern sets the accountability structures within which the decision is made and would determine who may approve it; Map framed the context; Measure produced the evidence. Note that risk acceptance is a legitimate treatment, provided it is authorized and documented.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #31"
+  },
+  {
+    "id": "q-1037",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A supplier is asked by an enterprise customer to demonstrate, through independent certification, that it operates a managed AI governance system with defined roles, risk processes, and continual improvement. Which standard should it pursue?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "NIST AI RMF"
+      },
+      {
+        "letter": "B",
+        "text": "ISO/IEC 42001"
+      },
+      {
+        "letter": "C",
+        "text": "OECD AI Principles"
+      },
+      {
+        "letter": "D",
+        "text": "ISO/IEC 22989"
+      }
+    ],
+    "answer": "B",
+    "explanation": "ISO/IEC 42001 is the certifiable AI management system standard, structured like ISO 27001 with leadership, planning, operation, evaluation, and improvement clauses — the only option here that supports third-party certification. ISO/IEC 22989 supplies terminology; the OECD Principles and NIST AI RMF are influential but voluntary and non-certifiable.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #32"
+  },
+  {
+    "id": "q-1038",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "An AI impact assessment for a new triage tool is completed, filed, and never revisited; the risks it flagged are not assigned owners. What is the central governance failure?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The assessment should have been conducted by an external party"
+      },
+      {
+        "letter": "B",
+        "text": "The assessment was performed too early in the lifecycle"
+      },
+      {
+        "letter": "C",
+        "text": "Impact assessments are not required unless mandated by regulation"
+      },
+      {
+        "letter": "D",
+        "text": "Findings were not fed back into design and deployment decisions, so the assessment has no effect"
+      }
+    ],
+    "answer": "D",
+    "explanation": "An impact assessment is only worth the actions it drives. Without owned findings and a feedback loop into design and approval, it becomes documentation theater. External conduct is not required for validity; early assessment is correct practice, not a flaw; and treating assessments as optional absent a mandate confuses legal minimums with sound governance.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #33"
+  },
+  {
+    "id": "q-1039",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A streaming service reorders its home screen for each subscriber, using that subscriber's viewing history to predict what they are most likely to watch next. Which type of use case is this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Personalization"
+      },
+      {
+        "letter": "B",
+        "text": "Detection"
+      },
+      {
+        "letter": "C",
+        "text": "Recognition"
+      },
+      {
+        "letter": "D",
+        "text": "Optimization"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Tailoring what a known individual sees from their own history and profile is personalization — the aim is a unique experience per subscriber. Recognition would be identifying what something is against a catalogue; detection would be spotting an event or anomaly; optimization would be improving a system-level objective such as streaming bandwidth rather than an individual's experience.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #34"
+  },
+  {
+    "id": "q-1040",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A product team proposes an AI system to 'improve customer satisfaction' and asks governance to approve it. What is the most appropriate first response?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Require the use case be specified concretely — decision made, population affected, and success and harm metrics"
+      },
+      {
+        "letter": "B",
+        "text": "Escalate directly to the ethics board"
+      },
+      {
+        "letter": "C",
+        "text": "Reject the proposal as insufficiently developed"
+      },
+      {
+        "letter": "D",
+        "text": "Approve conditionally and review after the pilot"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Governance begins by framing the problem precisely: what decision the system makes, about whom, with what measurable success criteria and what harms would count as failure. Vague objectives cannot be risk-assessed. Rejection is disproportionate at the ideation stage, conditional approval defers the essential work, and escalation sends an unspecified proposal upward.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #35"
+  },
+  {
+    "id": "q-1041",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "During design, a team must choose between a highly accurate deep ensemble and a slightly less accurate gradient-boosted model that supports per-decision explanations. The system will inform loan approvals. Which consideration should carry most weight?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Maximize accuracy, since better predictions serve customers best"
+      },
+      {
+        "letter": "B",
+        "text": "Deploy both and compare in production"
+      },
+      {
+        "letter": "C",
+        "text": "Choose whichever model trains fastest"
+      },
+      {
+        "letter": "D",
+        "text": "The regulated, high-impact context favors interpretability even at some accuracy cost"
+      }
+    ],
+    "answer": "D",
+    "explanation": "In regulated, high-stakes contexts, interpretability supports contestability, audit, and bias analysis — governance value that a marginal accuracy gain rarely outweighs. Unnecessary complexity also enlarges the attack surface and the monitoring burden. Deploying both and comparing in production describes shadow deployment, useful for drift comparison but not a substitute for a design decision on explainability.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #36"
+  },
+  {
+    "id": "q-1042",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Which is least useful as evidence that a training dataset is fit for purpose?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The data is drawn from the population the model will act on"
+      },
+      {
+        "letter": "B",
+        "text": "The dataset is larger than a published benchmark's"
+      },
+      {
+        "letter": "C",
+        "text": "Collection conditions still hold in the deployment context"
+      },
+      {
+        "letter": "D",
+        "text": "Lawful rights to collect and use the data are documented"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Size relative to a benchmark says nothing about fitness — data can be plentiful and still be about the wrong population, the wrong context or the wrong period. Representativeness, currency of collection conditions and documented lawful rights each speak directly to whether this data suits this task.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #37"
+  },
+  {
+    "id": "q-1043",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "An auditor asks a team to show, for a given model version, which datasets were used, how each was transformed, and under what licence each was obtained. The team can produce only the final training file. What is missing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A data retention schedule"
+      },
+      {
+        "letter": "B",
+        "text": "Data lineage and provenance records"
+      },
+      {
+        "letter": "C",
+        "text": "Access control logs"
+      },
+      {
+        "letter": "D",
+        "text": "Data minimization controls"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Lineage and provenance trace data from origin through every transformation into a specific model version — the backbone of reproducibility, licensing defense, and audit. Minimization governs how much is collected, access logs record who touched it, and retention governs how long it is kept; none answers 'where did this come from and under what terms'.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #38"
+  },
+  {
+    "id": "q-1044",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "To correct under-representation of a minority group, a team augments the training set with synthetic examples for that group. What governance risk most needs managing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Augmentation always increases model accuracy"
+      },
+      {
+        "letter": "B",
+        "text": "Synthetic data eliminates the need for fairness testing"
+      },
+      {
+        "letter": "C",
+        "text": "Synthetic examples may encode the generator's own biases or fail to reflect real distributions"
+      },
+      {
+        "letter": "D",
+        "text": "Synthetic data cannot be used in regulated contexts"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Synthetic augmentation is a legitimate mitigation, but generated data inherits the generator's assumptions and may not represent the real subgroup — potentially papering over a gap while leaving live performance unchanged. It heightens rather than removes the need for fairness testing on real data. The claims that synthetic data is barred from regulated contexts or that augmentation always improves accuracy are simply false as stated.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #39"
+  },
+  {
+    "id": "q-1045",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "Thistlewood Retail operates in twelve countries. Its engineering team proposes three AI features for the online store: a generative assistant that writes product descriptions and marketing copy from supplier spec sheets, a fraud screen that flags suspicious payment sessions at checkout, and a dynamic pricing engine that sets prices from demand signals and the shopper's browsing history.\n\nThistlewood's AI officer has a budget for three lawyers on the cross-functional advisory team and must choose their specialisms. She is also aware that the pricing engine's inputs include signals that correlate with household income.\n\nWhich pairing of Thistlewood's proposed features to use-case type is correct?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The fraud screen is recognition; dynamic pricing is personalization"
+      },
+      {
+        "letter": "B",
+        "text": "The fraud screen is detection; dynamic pricing is optimization"
+      },
+      {
+        "letter": "C",
+        "text": "The fraud screen is optimization; dynamic pricing is detection"
+      },
+      {
+        "letter": "D",
+        "text": "The fraud screen is personalization; dynamic pricing is recognition"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Spotting suspicious payment sessions is detection — finding the presence of an event, the same family as anomaly and fraud detection generally. Setting prices to serve a business objective is optimization, even though personal signals feed it: the aim is a better price outcome, not a tailored individual experience. Recognition identifies what something is against a known catalogue, and personalization tailors what an individual sees.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #40"
+  },
+  {
+    "id": "q-1046",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "Thistlewood Retail operates in twelve countries. Its engineering team proposes three AI features for the online store: a generative assistant that writes product descriptions and marketing copy from supplier spec sheets, a fraud screen that flags suspicious payment sessions at checkout, and a dynamic pricing engine that sets prices from demand signals and the shopper's browsing history.\n\nThistlewood's AI officer has a budget for three lawyers on the cross-functional advisory team and must choose their specialisms. She is also aware that the pricing engine's inputs include signals that correlate with household income.\n\nWith budget for only three lawyers, which set of specialisms best fits Thistlewood's three features?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Employment, patents, anti-trust"
+      },
+      {
+        "letter": "B",
+        "text": "Litigation, healthcare, product safety"
+      },
+      {
+        "letter": "C",
+        "text": "Copyright, data protection, consumer protection"
+      },
+      {
+        "letter": "D",
+        "text": "Product safety, contracts, government relations"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Copyright covers the generative marketing copy and the supplier content it draws on, data protection covers the profiling behind the fraud screen and dynamic pricing, and consumer protection covers whether pricing from browsing history is unfair or deceptive. Product safety would matter for physical goods and patents for a hardware programme, and employment, litigation, anti-trust and government relations are more peripheral to these three features.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #41"
+  },
+  {
+    "id": "q-1047",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "Thistlewood Retail operates in twelve countries. Its engineering team proposes three AI features for the online store: a generative assistant that writes product descriptions and marketing copy from supplier spec sheets, a fraud screen that flags suspicious payment sessions at checkout, and a dynamic pricing engine that sets prices from demand signals and the shopper's browsing history.\n\nThistlewood's AI officer has a budget for three lawyers on the cross-functional advisory team and must choose their specialisms. She is also aware that the pricing engine's inputs include signals that correlate with household income.\n\nThe pricing engine's inputs correlate with household income. Which is the weakest justification for keeping them?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The variables measurably improve predictive accuracy"
+      },
+      {
+        "letter": "B",
+        "text": "A disparate impact test was run and a less discriminatory alternative was sought and documented"
+      },
+      {
+        "letter": "C",
+        "text": "The business justification for each variable is documented and evidenced"
+      },
+      {
+        "letter": "D",
+        "text": "An independent fairness review found no material disparity across protected groups"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Predictive power alone is not a defence — it is the very thing that makes a proxy variable attractive and dangerous, and no anti-discrimination regime accepts it as sufficient without an evidenced business need and a search for less discriminatory alternatives. Each of the other options actually supports the decision: B shows impact testing with a documented search for less discriminatory alternatives, C an evidenced business justification for each variable, and D an independent review finding no material disparity. Note the question asks for the weakest.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #42"
+  },
+  {
+    "id": "q-1048",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Thistlewood Retail operates in twelve countries. Its engineering team proposes three AI features for the online store: a generative assistant that writes product descriptions and marketing copy from supplier spec sheets, a fraud screen that flags suspicious payment sessions at checkout, and a dynamic pricing engine that sets prices from demand signals and the shopper's browsing history.\n\nThistlewood's AI officer has a budget for three lawyers on the cross-functional advisory team and must choose their specialisms. She is also aware that the pricing engine's inputs include signals that correlate with household income.\n\nThistlewood's dynamic pricing sets different prices from browsing history. Which is least relevant to evaluating this practice?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Consumer protection rules on unfair or deceptive practices"
+      },
+      {
+        "letter": "B",
+        "text": "Copyright rules on text and data mining"
+      },
+      {
+        "letter": "C",
+        "text": "Anti-discrimination law where price varies with protected characteristics"
+      },
+      {
+        "letter": "D",
+        "text": "Data protection rules governing the profiling behind the price"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Text-and-data-mining copyright rules bear on how the generative assistant is trained and what it ingests, not on how the pricing engine sets prices, so B is the least relevant to this practice. Each of the others engages directly: consumer protection where pricing is unfair or deceptive, anti-discrimination where price tracks a protected characteristic, and data protection because the price is derived from personal profiling.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #43"
+  },
+  {
+    "id": "q-1049",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A model passes unit tests, integration tests, and aggregate accuracy benchmarks before release. Which testing gap should most concern a governance reviewer?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Subgroup performance testing and adversarial robustness testing"
+      },
+      {
+        "letter": "B",
+        "text": "User acceptance testing of the interface"
+      },
+      {
+        "letter": "C",
+        "text": "Load testing under peak traffic"
+      },
+      {
+        "letter": "D",
+        "text": "Regression testing of the data pipeline"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Aggregate accuracy routinely conceals subgroup disparities, and standard functional testing does not probe adversarial behavior. Both are AI-specific and both carry direct fairness and safety consequences. Load, regression, and UAT are all appropriate but are standard software assurance that the described suite largely covers.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #44"
+  },
+  {
+    "id": "q-1050",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "An insurer needs a model that routes each incoming claim down one of three fixed paths by working through a short series of yes/no criteria. Regulators require the routing logic to be fully traceable. Which model type fits best?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A neural network"
+      },
+      {
+        "letter": "B",
+        "text": "A clustering model"
+      },
+      {
+        "letter": "C",
+        "text": "A decision tree model"
+      },
+      {
+        "letter": "D",
+        "text": "A reinforcement learning agent"
+      }
+    ],
+    "answer": "C",
+    "explanation": "A decision tree works through a flowchart of conditions to a bounded set of outcomes — a natural fit for fixed routing criteria, and inherently traceable, which serves the regulatory requirement. A neural network is opaque and disproportionate for a short rule path; clustering is unsupervised grouping rather than rule-based routing; and a reinforcement learning agent learns by trial and reward, which is both unnecessary and hard to audit here.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #45"
+  },
+  {
+    "id": "q-1051",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Which documentation artifact best communicates a model's intended use, training data characteristics, evaluation metrics, and known limitations to downstream deployers?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A RACI matrix"
+      },
+      {
+        "letter": "B",
+        "text": "A software bill of materials"
+      },
+      {
+        "letter": "C",
+        "text": "A model card"
+      },
+      {
+        "letter": "D",
+        "text": "A data protection impact assessment"
+      }
+    ],
+    "answer": "C",
+    "explanation": "A model card is purpose-built structured transparency about intended use, data, metrics, limitations, and ethical considerations, and aligns with NIST AI RMF and ISO/IEC 42001 practice. A DPIA assesses privacy risk to individuals; an SBOM inventories components; a RACI assigns responsibility. Each is a real artifact — only the model card answers 'what does this model do and where does it fail'.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #46"
+  },
+  {
+    "id": "q-1052",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "An organization decides to build a proprietary model rather than license one. Which consideration is most distinctive to that choice?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It should document intended use and limitations"
+      },
+      {
+        "letter": "B",
+        "text": "It must monitor the model for drift after deployment"
+      },
+      {
+        "letter": "C",
+        "text": "It needs a deployment environment and release process"
+      },
+      {
+        "letter": "D",
+        "text": "It assumes full ownership of data rights, explainability, testing, and ongoing accountability"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Drift monitoring, deployment process, and documentation apply whether a model is built or bought. What changes with building is that the organization absorbs the entire accountability stack — data rights and quality, explainability, testing depth, IP exposure, and the specialist resourcing to sustain it — with no vendor to share it. That resourcing question is the one most often underestimated.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #47"
+  },
+  {
+    "id": "q-1053",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A fraud-detection system auto-blocks transactions above a confidence threshold, with analysts reviewing a sample afterward. Which design change would most strengthen meaningful human oversight?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Add a dashboard showing model confidence scores"
+      },
+      {
+        "letter": "B",
+        "text": "Require analysts to sign off on the monthly performance report"
+      },
+      {
+        "letter": "C",
+        "text": "Give analysts authority and a workable path to override or halt the system, with time to exercise judgment"
+      },
+      {
+        "letter": "D",
+        "text": "Increase the sample size analysts review each week"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Oversight is meaningful only when the human has genuine authority and practical capacity to intervene — otherwise it is a rubber stamp. Larger samples and better dashboards improve visibility without conferring control; periodic sign-off is retrospective attestation. This is the distinction the EU AI Act's human oversight requirement targets.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #48"
+  },
+  {
+    "id": "q-1054",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A content-moderation classifier's threshold is tuned to minimize false negatives. Complaints rise sharply from users whose legitimate posts are removed. What does this best illustrate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Threshold selection is a governance decision embedding a value tradeoff between error types"
+      },
+      {
+        "letter": "B",
+        "text": "The system requires more training data"
+      },
+      {
+        "letter": "C",
+        "text": "Users misunderstand the moderation policy"
+      },
+      {
+        "letter": "D",
+        "text": "The model is insufficiently accurate and needs retraining"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Where a threshold sits determines who bears which kind of error — a value judgment about the relative cost of over-removal versus under-removal, not a purely technical tuning parameter. It therefore belongs in governance with documented rationale and review. Retraining or more data may improve the frontier but do not resolve the tradeoff.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #49"
+  },
+  {
+    "id": "q-1055",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A recruitment model trained on ten years of the company's own hiring decisions replicates historical under-hiring of women in technical roles. Where does the bias originate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The model architecture"
+      },
+      {
+        "letter": "B",
+        "text": "The evaluation metric"
+      },
+      {
+        "letter": "C",
+        "text": "Historical bias embedded in the training labels"
+      },
+      {
+        "letter": "D",
+        "text": "Insufficient regularization"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The labels encode past human decisions, so the model faithfully learns a discriminatory pattern — it is performing correctly against a biased target. This is why label provenance and historical-bias review matter more than architecture choices here. Architecture and regularization affect how the pattern is learned, not what it is; a poor metric might hide the problem but did not create it.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #50"
+  },
+  {
+    "id": "q-1056",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Which of the following would not indicate that a deployed model needs attention?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Subgroup accuracy has fallen below its documented threshold"
+      },
+      {
+        "letter": "B",
+        "text": "Input distributions have shifted from training conditions"
+      },
+      {
+        "letter": "C",
+        "text": "Monthly inference volume has grown steadily with the customer base"
+      },
+      {
+        "letter": "D",
+        "text": "Outcome distributions across groups have diverged over six months"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Growth in inference volume tracking business growth is expected and says nothing about model health. Threshold breaches on subgroup accuracy, shifted input distributions and diverging outcome distributions are each genuine signals requiring investigation and, potentially, escalation.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #51"
+  },
+  {
+    "id": "q-1057",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Which sequence best reflects a governed test, evaluation, verification, and validation approach before release?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Verify the system was built to specification, then validate it meets the real-world need in context"
+      },
+      {
+        "letter": "B",
+        "text": "Validate the vendor's claims, then verify the contract"
+      },
+      {
+        "letter": "C",
+        "text": "Validate business value, then build, then test for accuracy"
+      },
+      {
+        "letter": "D",
+        "text": "Test in production with a small user group, then verify documentation"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Verification asks whether the system was built right against specification; validation asks whether the right system was built for the actual operating context and need. Running them in that order, before release, is the core of TEVV. A small-user-group production trial is piloting, which is valuable but does not replace pre-release verification and validation.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #53"
+  },
+  {
+    "id": "q-1058",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A team wants to reuse customer service transcripts, originally collected to resolve support tickets, as training data for a new sales model. What is the primary governance obstacle?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The model may overfit to service language"
+      },
+      {
+        "letter": "B",
+        "text": "Purpose limitation — the new use is incompatible with the purpose for which data was collected"
+      },
+      {
+        "letter": "C",
+        "text": "Storage costs of retaining transcripts"
+      },
+      {
+        "letter": "D",
+        "text": "Transcripts are unstructured and hard to label"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Purpose limitation requires that data collected for one purpose not be reused for an incompatible one without a valid basis — a compatibility assessment, fresh consent, or another lawful ground. This is one of the most common AI data-governance failures. Labelling difficulty and overfitting risk are genuine technical hurdles, and storage is an operational cost, but none is the legal obstacle.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #54"
+  },
+  {
+    "id": "q-1059",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A risk register lists 'model may produce biased outputs' with no likelihood, impact, owner, or treatment. What is the most useful correction?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Specify the affected population and harm, assess likelihood and impact, assign an owner, and record the treatment decision"
+      },
+      {
+        "letter": "B",
+        "text": "Delete the entry, since bias is inherent to all models"
+      },
+      {
+        "letter": "C",
+        "text": "Replace it with a technical fairness metric threshold"
+      },
+      {
+        "letter": "D",
+        "text": "Escalate the entry to the board for visibility"
+      }
+    ],
+    "answer": "A",
+    "explanation": "A risk entry is actionable only when it states who could be harmed and how, is assessed, owned, and carries a documented treatment decision. A metric threshold is a useful control but does not by itself constitute risk management; escalation without articulation gives the board nothing to decide; deleting the entry abandons the risk.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #55"
+  },
+  {
+    "id": "q-1060",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A high-risk model has strong benchmark performance and the team wants to release on schedule. Documentation is partly complete and the conformity assessment is unfinished. What should governance require?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Release with a disclaimer noting documentation is pending"
+      },
+      {
+        "letter": "B",
+        "text": "Hold release until documentation and conformity requirements are satisfied"
+      },
+      {
+        "letter": "C",
+        "text": "Release on schedule and complete documentation within 30 days"
+      },
+      {
+        "letter": "D",
+        "text": "Release to a limited user group as a compromise"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Readiness for a high-risk system is not established by performance alone — documentation and conformity are release preconditions, not follow-up tasks. A 30-day grace period or a pending-documentation disclaimer defers a legal obligation and creates exposure; a limited release is still placing the system into use and does not cure the gap.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #56"
+  },
+  {
+    "id": "q-1061",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "A hospital needs an AI system that runs with minimal latency, must function during network outages, and processes highly sensitive patient data on site. Which deployment mode fits best?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hybrid with cloud inference and local caching"
+      },
+      {
+        "letter": "B",
+        "text": "Public cloud with regional data residency"
+      },
+      {
+        "letter": "C",
+        "text": "Shared multi-tenant SaaS"
+      },
+      {
+        "letter": "D",
+        "text": "Edge deployment on local devices"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Edge uniquely satisfies all three constraints — inference happens locally, so latency is minimal, network independence holds, and data need not leave the premises. Cloud options fail the outage requirement; a hybrid that performs inference in the cloud fails both latency and offline operation, though hybrid patterns that keep inference local can work.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #57"
+  },
+  {
+    "id": "q-1062",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "An organization is standing up its first AI governance structure. Which of the following are part of creating the structure itself, rather than activities it will later direct?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Secure a senior executive sponsor to champion the programme"
+      },
+      {
+        "letter": "B",
+        "text": "Complete fairness audits of all models already in production"
+      },
+      {
+        "letter": "C",
+        "text": "Establish whether a governance structure already exists that can be extended"
+      },
+      {
+        "letter": "D",
+        "text": "Name and record who will implement and maintain the structure"
+      },
+      {
+        "letter": "E",
+        "text": "Select the tooling platform for model monitoring"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "Creating the structure means establishing whether one already exists — best practice is to extend what works — securing an executive sponsor with the authority to give the programme teeth, and recording who will implement and maintain it. Fairness audits and monitoring tooling are activities the structure will later direct: outputs of governance rather than components of standing it up — a distinction the exam draws deliberately.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #58"
+  },
+  {
+    "id": "q-1063",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A firm needs its assistant to answer from a policy library that changes weekly, with citations to the source document. Which approach best fits?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Retrieval augmented generation over the policy library"
+      },
+      {
+        "letter": "B",
+        "text": "Fine-tune the model weekly on the updated policy library"
+      },
+      {
+        "letter": "C",
+        "text": "Use the base model as is with a longer system prompt"
+      },
+      {
+        "letter": "D",
+        "text": "Train a model from scratch on internal documents"
+      }
+    ],
+    "answer": "A",
+    "explanation": "RAG queries an external knowledge base at inference time, so updates take effect immediately, grounding improves, and citation to source becomes possible. Weekly fine-tuning is costly, slow, and still bakes knowledge into weights without citations. Prompting cannot hold a whole library, and training from scratch is disproportionate.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #59"
+  },
+  {
+    "id": "q-1064",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "Six months post-launch, a demand-forecasting model's accuracy degrades steadily. Input data quality and input distributions are unchanged, but consumer buying patterns have shifted. What is occurring?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Model inversion by adversarial users"
+      },
+      {
+        "letter": "B",
+        "text": "Overfitting to the original training set"
+      },
+      {
+        "letter": "C",
+        "text": "Concept drift — the relationship between inputs and outcomes has changed"
+      },
+      {
+        "letter": "D",
+        "text": "Data drift — the input distribution has changed"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Terminology note: the BoK's own phrase is 'model or data drift' (III.C.5); 'concept drift' is standard ML usage for one specific kind of drift (a changed input-to-output relationship), and is not the wording IAPP uses.\n\nConcept drift is a change in the underlying input-to-output relationship: the same inputs now imply different outcomes because the world changed. Data drift would show as a shifted input distribution, which the scenario rules out. Overfitting would have been visible at validation; model inversion is a privacy attack, not a performance phenomenon.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #60"
+  },
+  {
+    "id": "q-1065",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A monitoring dashboard tracks latency, uptime, and aggregate accuracy. Which addition would most improve governance coverage?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "CPU and memory utilization per node"
+      },
+      {
+        "letter": "B",
+        "text": "Daily model file integrity checksums"
+      },
+      {
+        "letter": "C",
+        "text": "Total inference request volume"
+      },
+      {
+        "letter": "D",
+        "text": "Subgroup performance metrics and alert thresholds that trigger defined escalation"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Aggregate accuracy hides subgroup degradation, and metrics without thresholds and a defined escalation path produce dashboards nobody acts on. Governance monitoring needs both the fairness-relevant signal and the trigger-to-action link. The other options are legitimate operational telemetry that mature IT monitoring already covers.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #61"
+  },
+  {
+    "id": "q-1066",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A deployed chatbot begins emitting fragments of another customer's personal data. Which sequence best reflects governed incident response?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Contain the system, assess whether a personal data breach occurred and notification duties are triggered, investigate root cause, then remediate"
+      },
+      {
+        "letter": "B",
+        "text": "Log the issue for the next scheduled release cycle"
+      },
+      {
+        "letter": "C",
+        "text": "Disable logging to prevent further exposure of the data"
+      },
+      {
+        "letter": "D",
+        "text": "Retrain the model, then investigate the cause"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Contain, assess, investigate, remediate — and critically, personal data leakage triggers breach assessment with statutory notification clocks that run regardless of the technical fix. Retraining first destroys evidence and delays containment; deferring ignores a live exposure; disabling logging destroys the audit trail needed for the investigation and notification.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #62"
+  },
+  {
+    "id": "q-1067",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Reviewing a contract for a third-party model, which term most directly affects the organization's ability to meet its own AI governance obligations?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Payment schedule and renewal terms"
+      },
+      {
+        "letter": "B",
+        "text": "The governing-law clause"
+      },
+      {
+        "letter": "C",
+        "text": "Rights to audit, to receive documentation and incident notification, and limits on the vendor's use of customer data for training"
+      },
+      {
+        "letter": "D",
+        "text": "Service credits for downtime"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Governance obligations depend on visibility and control: audit rights, documentation and technical information, incident notification duties, and restrictions on the vendor training on your data. Without these you cannot monitor, assess, or disclose. Service credits address availability, and payment and governing-law terms matter commercially but do not enable governance.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #63"
+  },
+  {
+    "id": "q-1068",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "Before promoting a retrained model, a team runs it alongside the live model on real traffic without serving its outputs, and compares results. What is the primary purpose?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To satisfy a regulatory requirement for dual processing"
+      },
+      {
+        "letter": "B",
+        "text": "To reduce inference cost by load balancing"
+      },
+      {
+        "letter": "C",
+        "text": "To provide redundancy if the live model fails"
+      },
+      {
+        "letter": "D",
+        "text": "To compare performance against the incumbent under real conditions and detect divergence before cutover"
+      }
+    ],
+    "answer": "D",
+    "explanation": "A shadow model validates a candidate against production reality with no user-facing risk, surfacing divergence and drift before cutover. It increases rather than reduces cost, does not serve traffic so provides no failover, and is a good practice rather than a regulatory mandate.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #64"
+  },
+  {
+    "id": "q-1069",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Which is the weakest basis for reusing customer data collected for order fulfilment to train a new model?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A documented legitimate interests assessment including a balancing test"
+      },
+      {
+        "letter": "B",
+        "text": "The data is already lawfully held for another purpose"
+      },
+      {
+        "letter": "C",
+        "text": "A compatibility assessment concluding the new use is compatible"
+      },
+      {
+        "letter": "D",
+        "text": "Fresh, specific consent obtained for model training"
+      }
+    ],
+    "answer": "B",
+    "explanation": "That data is already lawfully held is the weakest basis, because lawfulness attaches to the original purpose — purpose limitation is precisely the obstacle to reuse. A legitimate interests assessment, a compatibility assessment or fresh consent each provide a defensible route; possession alone does not.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #65"
+  },
+  {
+    "id": "q-1070",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "How should the retraining schedule for a deployed model be determined?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Base it on the model's volatility, risk exposure, and observed drift, balanced against cost"
+      },
+      {
+        "letter": "B",
+        "text": "Retrain continuously to maximize freshness"
+      },
+      {
+        "letter": "C",
+        "text": "Retrain only when users report problems"
+      },
+      {
+        "letter": "D",
+        "text": "Align it with the organization's quarterly software patch cycle"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Cadence should follow how fast the domain changes and how much harm staleness causes, weighed against retraining cost and the risk each new version introduces. Calendar alignment is arbitrary; continuous retraining is expensive and adds change risk; waiting for complaints is purely reactive and lets harm accrue.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #66"
+  },
+  {
+    "id": "q-1071",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "A provider of a high-risk system must support the organizations deploying it. Which disclosure is most directly required?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Internal salary and staffing information for the development team"
+      },
+      {
+        "letter": "B",
+        "text": "The model's source code and weights"
+      },
+      {
+        "letter": "C",
+        "text": "The full training dataset"
+      },
+      {
+        "letter": "D",
+        "text": "Technical documentation and instructions for use, including limitations and human oversight measures"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Providers owe deployers instructions for use (EU AI Act Art. 13) — intended purpose, performance characteristics, limitations, and the oversight measures the deployer must implement — and must keep technical documentation (Art. 11) that shows authorities the system complies. Regulators require traceable documentation and auditability, not proprietary source code or raw training data, which would raise IP and privacy problems of their own.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #67"
+  },
+  {
+    "id": "q-1072",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "What distinguishes a post-market monitoring plan from routine performance dashboards?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It is produced only after a serious incident occurs"
+      },
+      {
+        "letter": "B",
+        "text": "It is maintained by the deployer rather than the provider"
+      },
+      {
+        "letter": "C",
+        "text": "It replaces pre-release testing obligations"
+      },
+      {
+        "letter": "D",
+        "text": "It is a documented, forward-looking plan for systematically collecting and reviewing real-world performance and harms, with defined responsibilities"
+      }
+    ],
+    "answer": "D",
+    "explanation": "A post-market monitoring plan is a documented commitment, established before release, specifying what real-world data will be gathered, how it will be reviewed, by whom, and what triggers action — including reporting serious incidents. Dashboards are one input to it. It complements rather than replaces pre-release obligations.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #68"
+  },
+  {
+    "id": "q-1073",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "An organization is decommissioning a model that supported regulated lending decisions. Which action is most important for accountability?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Preserve model versions, decision logs, and documentation per the applicable retention obligations"
+      },
+      {
+        "letter": "B",
+        "text": "Leave the model running in read-only mode indefinitely"
+      },
+      {
+        "letter": "C",
+        "text": "Delete all model artifacts and logs promptly to reduce storage and privacy exposure"
+      },
+      {
+        "letter": "D",
+        "text": "Notify only internal stakeholders, since the system is being withdrawn"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Retirement must preserve the evidence trail — model versions, decision records, and documentation — because affected individuals may contest past decisions and regulators may examine them long after shutdown. Prompt deletion destroys that trail; indefinite operation sustains an ungoverned system; and external parties who relied on the system generally need notice, not internal stakeholders alone.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #69"
+  },
+  {
+    "id": "q-1074",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A model built to route customer support tickets is repurposed by another team to rank customers for retention offers. What governance step is required?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Treat it as a new use case requiring its own impact assessment, risk review, and approval"
+      },
+      {
+        "letter": "B",
+        "text": "Notify the vendor of the change in usage"
+      },
+      {
+        "letter": "C",
+        "text": "Update the model card and proceed"
+      },
+      {
+        "letter": "D",
+        "text": "None, since the model is already approved and in production"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Approval attaches to a use case in context, not to a model in the abstract. A different decision affecting different people with different consequences requires fresh assessment and approval — this is precisely the secondary-use risk governance exists to catch. Updating the model card documents the change but does not authorize it.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #70"
+  },
+  {
+    "id": "q-1075",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "An organization's AI system is operated by a SaaS provider, so it cannot observe infrastructure-level telemetry. What is the most effective compensating approach?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Rely on the vendor's published status page"
+      },
+      {
+        "letter": "B",
+        "text": "Combine contractual monitoring and reporting commitments with periodic vendor audits and its own output-level monitoring"
+      },
+      {
+        "letter": "C",
+        "text": "Rebuild the system in house to regain visibility"
+      },
+      {
+        "letter": "D",
+        "text": "Accept the limitation, since the vendor is contractually responsible"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Reduced visibility is offset by contractual reporting duties, audit rights, and monitoring what you can still see — your own inputs, outputs, and user-impact signals. Contractual responsibility does not transfer accountability for outcomes; rebuilding is disproportionate; a status page reports availability, not model behavior or fairness.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock A #71"
+  },
+  {
+    "id": "q-1076",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A bank trains a model on ten years of historical loan records, each labelled with whether the borrower ultimately repaid or defaulted, to predict outcomes for new applicants. Which learning approach is this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Supervised learning"
+      },
+      {
+        "letter": "B",
+        "text": "Reinforcement learning"
+      },
+      {
+        "letter": "C",
+        "text": "Unsupervised learning"
+      },
+      {
+        "letter": "D",
+        "text": "Generative pretraining"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Supervised learning trains on labelled input–output pairs, and historical records tagged with known outcomes are exactly that. Unsupervised learning finds structure in unlabelled data; reinforcement learning learns from reward signals through interaction with an environment; generative pretraining learns to produce content rather than classify against known labels.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #1"
+  },
+  {
+    "id": "q-1077",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A warehouse robot navigates, selects routes, and re-plans around obstacles with no operator input. Which governance safeguard most directly addresses the risk its autonomy creates?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Restricting the system to supervised learning techniques only"
+      },
+      {
+        "letter": "B",
+        "text": "Reducing the number of onboard sensors to limit data dependency"
+      },
+      {
+        "letter": "C",
+        "text": "A defined human oversight mechanism with authority to intervene or halt operation"
+      },
+      {
+        "letter": "D",
+        "text": "Increasing model complexity to improve the quality of its decisions"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Autonomy means acting without human intervention, so the matching control is a human oversight mechanism with real authority to intervene or stop the system. Constraining the learning technique does not address independent action; removing sensors would degrade safety rather than improve governance; and added complexity worsens opacity and enlarges the monitoring burden.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #2"
+  },
+  {
+    "id": "q-1078",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A governance team discovers, through expense claims, that several business units have adopted AI tools without going through procurement. What is the most important first governance step?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Establish an AI inventory and a low-friction registration path so systems can be discovered and risk-assessed"
+      },
+      {
+        "letter": "B",
+        "text": "Prohibit all business-unit tool adoption with immediate effect"
+      },
+      {
+        "letter": "C",
+        "text": "Require every discovered tool to undergo a conformity assessment"
+      },
+      {
+        "letter": "D",
+        "text": "Transfer ownership of all the tools to central IT"
+      }
+    ],
+    "answer": "A",
+    "explanation": "You cannot govern what you cannot see, so the foundational control is an AI inventory with a registration route people will actually use. An outright prohibition tends to drive adoption further underground; conformity assessment is an EU AI Act instrument for high-risk systems, not a universal first step; and moving ownership to IT reassigns the problem without creating visibility.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #3"
+  },
+  {
+    "id": "q-1079",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "An AI governance council repeatedly deadlocks over whether particular model risks are acceptable, re-arguing the question from first principles each time. Which foundational element is most likely missing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A larger council with more senior representation"
+      },
+      {
+        "letter": "B",
+        "text": "Detailed technical fairness metrics for each model"
+      },
+      {
+        "letter": "C",
+        "text": "An external ethics advisor to break ties"
+      },
+      {
+        "letter": "D",
+        "text": "A documented risk appetite and tolerance statement approved by leadership"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Without an articulated risk appetite and tolerance, there is no yardstick against which any specific risk can be judged, so every decision restarts the debate. Adding people or an external advisor changes who argues, not what they argue against; fairness metrics quantify a risk but do not say how much of it the organization is willing to carry.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #4"
+  },
+  {
+    "id": "q-1080",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "In a three-lines-of-defence model applied to AI governance, which group owns and manages risk day to day?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The business and development teams that build and operate the systems"
+      },
+      {
+        "letter": "B",
+        "text": "The independent risk and compliance function"
+      },
+      {
+        "letter": "C",
+        "text": "Internal audit"
+      },
+      {
+        "letter": "D",
+        "text": "The board's audit committee"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Scope note: the three-lines model is mainstream governance doctrine but is not named anywhere in BoK v2.1 — it sits loosely under I.B.1, 'define roles and responsibilities.' Worth knowing; don't be thrown if the exam never mentions it.\n\nThe first line is the operators — the teams building and running the systems own the risk they create. The second line is risk and compliance providing oversight and challenge; the third is internal audit providing independent assurance. The board committee receives assurance but is not itself one of the three lines.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #5"
+  },
+  {
+    "id": "q-1081",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "An organization's AI policy states that models 'must be tested for bias.' Teams interpret this very differently, and testing quality varies widely. Which document type is missing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A further policy clarifying the original intent"
+      },
+      {
+        "letter": "B",
+        "text": "A board-level governance charter"
+      },
+      {
+        "letter": "C",
+        "text": "A standard specifying required tests, metrics, and acceptance thresholds"
+      },
+      {
+        "letter": "D",
+        "text": "A code of ethics"
+      }
+    ],
+    "answer": "C",
+    "explanation": "A standard supplies the mandatory specifics — which tests, which metrics, what thresholds — that turn a policy's intent into consistent practice. Policies state intent and mandate; procedures give step-by-step instructions. Another policy or a code of ethics would restate the intent at the same level of abstraction that caused the problem.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #6"
+  },
+  {
+    "id": "q-1082",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "An impact assessment for a public-benefits eligibility model gathers input from product, legal, and engineering. Whose perspective is most conspicuously absent?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The cloud infrastructure vendor"
+      },
+      {
+        "letter": "B",
+        "text": "The benefit applicants who will be subject to the decisions"
+      },
+      {
+        "letter": "C",
+        "text": "The finance department"
+      },
+      {
+        "letter": "D",
+        "text": "The model's original architect"
+      }
+    ],
+    "answer": "B",
+    "explanation": "An impact assessment exists to surface effects on the people the system acts upon, so input from affected individuals or their representatives is the central omission. The infrastructure vendor and finance are peripheral to rights impacts, and the original architect is an internal technical voice already represented by engineering.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #7"
+  },
+  {
+    "id": "q-1083",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "As originally enacted, which EU AI Act obligation applies broadly to providers and deployers regardless of the system's risk tier, and began to apply in February 2025?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Completing a conformity assessment"
+      },
+      {
+        "letter": "B",
+        "text": "Establishing a post-market monitoring plan"
+      },
+      {
+        "letter": "C",
+        "text": "Registering the system in the EU database"
+      },
+      {
+        "letter": "D",
+        "text": "Ensuring a sufficient level of AI literacy among staff dealing with the system"
+      }
+    ],
+    "answer": "D",
+    "explanation": "AI literacy took effect alongside the prohibited-practice rules on 2 February 2025 and applies to providers and deployers generally — staff must have the training and understanding to handle AI systems appropriately. Conformity assessment, registration, and post-market monitoring are all high-risk obligations with later application dates. The 2026 Digital Omnibus (Reg. (EU) 2026/1744, in force 27 July 2026) simplified Art. 4: providers and deployers now take measures to support AI literacy, with the Commission and Member States taking a larger role in promoting it, instead of having to ensure a sufficient level.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #8"
+  },
+  {
+    "id": "q-1084",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A privacy office already runs impact assessments, vendor reviews, and processing records. What is the most efficient way to add AI governance?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Extend the existing processes with AI-specific triggers, criteria, and controls"
+      },
+      {
+        "letter": "B",
+        "text": "Create a separate AI governance office with an independent review pipeline"
+      },
+      {
+        "letter": "C",
+        "text": "Outsource AI reviews to an external consultancy"
+      },
+      {
+        "letter": "D",
+        "text": "Defer AI governance until regulation explicitly requires it"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Extending established workflows avoids duplication, reuses working approval and documentation muscle, and embeds AI oversight where decisions already happen. A parallel structure creates competing pipelines and gaps between them; outsourcing removes internal accountability; and waiting for regulation ignores the risk that already exists.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #9"
+  },
+  {
+    "id": "q-1085",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A risk assessment shows a proposed AI system carries residual risk above the organization's documented tolerance, but the business case is strong. What should happen next?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The team should proceed and document a business justification"
+      },
+      {
+        "letter": "B",
+        "text": "The project should be cancelled outright"
+      },
+      {
+        "letter": "C",
+        "text": "The decision should be escalated to the authority empowered to accept risk above tolerance"
+      },
+      {
+        "letter": "D",
+        "text": "The risk assessment should be revised so the residual risk falls within tolerance"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Exceeding stated tolerance is precisely the trigger for escalation to the role with authority to accept that level of risk. Proceeding on the team's own justification bypasses the governance structure; cancelling forecloses a decision that may legitimately be approved at a higher level; and rewriting the assessment to fit the tolerance is falsification, not risk management.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #10"
+  },
+  {
+    "id": "q-1086",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A hospital's AI oversight committee is composed entirely of data scientists and IT leaders. What is the primary governance risk?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Model development cycles will slow down"
+      },
+      {
+        "letter": "B",
+        "text": "Clinical, ethical, and legal risks may go unidentified because the relevant expertise is absent"
+      },
+      {
+        "letter": "C",
+        "text": "Committee operating costs will rise"
+      },
+      {
+        "letter": "D",
+        "text": "Technical rigor in model review will decline"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Cross-functional membership is a risk-detection control: in a regulated clinical setting, harms that clinicians, ethicists, and lawyers would spot are invisible to a purely technical group. Technical rigor is if anything the committee's strength, and speed and cost are operational considerations rather than governance risks.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #11"
+  },
+  {
+    "id": "q-1087",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Aurelia Financeira is headquartered in São Paulo and regulated primarily under Brazil's general data protection law. It is introducing AI into credit decisioning and wants its existing privacy risk process to carry as much of the load as possible.\n\nAurelia's privacy office already runs mature privacy impact assessments. Its head of data protection, Renata Alves, has been asked whether the company needs an entirely separate assessment process for AI, and how to staff the effort. The AI, engineering, legal and data protection functions currently report through different executives and rarely meet.\n\nAurelia Financeira is regulated primarily under Brazil's Lei Geral de Proteção de Dados. Which statement best characterises its relationship to Aurelia's AI programme?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The LGPD does not address automated decision-making, so AI falls outside it"
+      },
+      {
+        "letter": "B",
+        "text": "The LGPD applies only to data processed inside Brazil, so cloud training abroad is exempt"
+      },
+      {
+        "letter": "C",
+        "text": "The LGPD is a voluntary code, so compliance is a reputational rather than legal matter"
+      },
+      {
+        "letter": "D",
+        "text": "The LGPD imposes GDPR-like principles including purpose limitation and transparency, and gives data subjects rights concerning automated decisions"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Brazil's LGPD follows the GDPR's architecture closely — lawful bases, purpose limitation, transparency, data subject rights, and a right to request review of decisions taken solely by automated processing. It is binding law with a supervisory authority, applies extraterritorially to processing connected with Brazil, and squarely reaches AI that processes personal data.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #12"
+  },
+  {
+    "id": "q-1088",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Aurelia Financeira is headquartered in São Paulo and regulated primarily under Brazil's general data protection law. It is introducing AI into credit decisioning and wants its existing privacy risk process to carry as much of the load as possible.\n\nAurelia's privacy office already runs mature privacy impact assessments. Its head of data protection, Renata Alves, has been asked whether the company needs an entirely separate assessment process for AI, and how to staff the effort. The AI, engineering, legal and data protection functions currently report through different executives and rarely meet.\n\nRenata asks where to begin building Aurelia's algorithmic impact assessment. What is the best starting point?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Leveraging the existing privacy impact assessment and tailoring it to cover the gaps specific to AI"
+      },
+      {
+        "letter": "B",
+        "text": "Confirming the credit model has been approved by the banking regulator"
+      },
+      {
+        "letter": "C",
+        "text": "Securing the budget for the AI programme before any assessment work begins"
+      },
+      {
+        "letter": "D",
+        "text": "Notifying the employees who will operate the system of the mitigations planned"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Treat the algorithmic impact assessment as an extension of the privacy impact assessment you already run, tailored to cover what a PIA does not — model behaviour, fairness, explainability, downstream effects. That anchors the assessment in the organization's existing vision, values and context rather than creating a parallel process nobody owns. Regulatory approval, funding and staff notification all matter, but none is where the assessment starts.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #13"
+  },
+  {
+    "id": "q-1089",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "Aurelia Financeira is headquartered in São Paulo and regulated primarily under Brazil's general data protection law. It is introducing AI into credit decisioning and wants its existing privacy risk process to carry as much of the load as possible.\n\nAurelia's privacy office already runs mature privacy impact assessments. Its head of data protection, Renata Alves, has been asked whether the company needs an entirely separate assessment process for AI, and how to staff the effort. The AI, engineering, legal and data protection functions currently report through different executives and rarely meet.\n\nAI, engineering, legal and data protection report through different executives and rarely meet. What should Aurelia do first to make AI and privacy risk management interoperable?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Run regular simulations and penetration tests of the AI systems"
+      },
+      {
+        "letter": "B",
+        "text": "Implement continuous audit protocols across all AI systems"
+      },
+      {
+        "letter": "C",
+        "text": "Create a specialised multidisciplinary team spanning AI, data protection and legal expertise"
+      },
+      {
+        "letter": "D",
+        "text": "Publish an ethical AI charter describing the algorithms' intended behaviour"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Each option is worthwhile eventually, but the first step is a multidisciplinary team, for two reasons: it integrates the diverse expertise needed to understand both the technical and the legal-ethical dimensions, and it creates the capacity to execute everything else. Audits, simulations and charters all require someone competent to design and own them — which is what the team provides.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #14"
+  },
+  {
+    "id": "q-1090",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A marketing team's generative model occasionally produces confident, fluent product specifications that are simply invented. Which characteristic of the technology does this reflect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Data drift"
+      },
+      {
+        "letter": "B",
+        "text": "Model inversion"
+      },
+      {
+        "letter": "C",
+        "text": "Overfitting to the training set"
+      },
+      {
+        "letter": "D",
+        "text": "Probabilistic generation, which optimizes for plausible output rather than factual accuracy"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Generative models sample probabilistically for plausibility, not truth, which is why fabricated content can read fluently and confidently. Drift is post-deployment change in data or relationships; model inversion is a privacy attack that reconstructs training data; overfitting means memorizing training examples rather than inventing new ones.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #15"
+  },
+  {
+    "id": "q-1091",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Before development begins, a team documents a proposed system's intended purpose, the population it will affect, its deployment context, and the harms it could plausibly cause. Which AI RMF function is this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Govern"
+      },
+      {
+        "letter": "B",
+        "text": "Map"
+      },
+      {
+        "letter": "C",
+        "text": "Measure"
+      },
+      {
+        "letter": "D",
+        "text": "Manage"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Map establishes context and frames risk before building — purpose, stakeholders, setting, and foreseeable harms. Govern would be establishing the accountability structures and policies within which this work happens; Measure quantifies and benchmarks identified risks; Manage acts on them through treatment and response.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #16"
+  },
+  {
+    "id": "q-1092",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "An organization sets an AI policy, defines decision rights, establishes risk tolerance, and builds a culture of documented accountability. Which function does this represent?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Govern"
+      },
+      {
+        "letter": "B",
+        "text": "Map"
+      },
+      {
+        "letter": "C",
+        "text": "Measure"
+      },
+      {
+        "letter": "D",
+        "text": "Manage"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Govern is the cross-cutting function covering culture, accountability structures, policies, roles, and risk tolerance — the foundation the other three operate inside. Map frames a specific system's context, Measure quantifies its risks, and Manage responds to them; none of those is about establishing the organizational apparatus itself.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #17"
+  },
+  {
+    "id": "q-1093",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Which of the following is expressly prohibited under the EU AI Act?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An AI system used to screen job applicants"
+      },
+      {
+        "letter": "B",
+        "text": "A customer-service chatbot"
+      },
+      {
+        "letter": "C",
+        "text": "A credit scoring model used by a retail bank"
+      },
+      {
+        "letter": "D",
+        "text": "An AI system used to infer employees' emotions in the workplace"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Emotion inference in workplace and education settings is a prohibited practice, subject to narrow safety and medical exceptions. Applicant screening and credit scoring are high-risk under Annex III — heavily regulated but permitted with obligations — and a customer-service chatbot is limited-risk, requiring only transparency.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #18"
+  },
+  {
+    "id": "q-1094",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A media company publishes an obviously satirical AI-generated video depicting a well-known politician. What does the EU AI Act most directly require?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A conformity assessment before publication"
+      },
+      {
+        "letter": "B",
+        "text": "Registration in the EU high-risk database"
+      },
+      {
+        "letter": "C",
+        "text": "Disclosure that the content has been artificially generated or manipulated"
+      },
+      {
+        "letter": "D",
+        "text": "Nothing, because satirical works are fully exempt"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Article 50 transparency requires disclosure that content is artificially generated or manipulated. For evidently artistic or satirical work the Act moderates how that disclosure is made so as not to spoil the work — but it does not remove the obligation, which is what makes the 'fully exempt' option wrong. Conformity assessment and database registration are high-risk obligations, and this is a transparency-tier system.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #19"
+  },
+  {
+    "id": "q-1095",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A company deploys a high-risk AI system that it purchased from an external provider. Which obligation falls on the company as deployer?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Using the system in accordance with the provider's instructions and assigning competent staff to exercise human oversight"
+      },
+      {
+        "letter": "B",
+        "text": "Drawing up the EU declaration of conformity"
+      },
+      {
+        "letter": "C",
+        "text": "Affixing the CE marking to the system"
+      },
+      {
+        "letter": "D",
+        "text": "Carrying out the conformity assessment"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Deployer duties centre on use per instructions, human oversight by competent people, input data relevance, monitoring, and log retention. The declaration of conformity, CE marking, and the conformity assessment itself all sit with the provider — a recurring exam trap that tests whether you can separate the two roles.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #20"
+  },
+  {
+    "id": "q-1096",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Which of the following is not an obligation the EU AI Act places on providers of high-risk AI systems?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Maintaining a risk management system across the lifecycle"
+      },
+      {
+        "letter": "B",
+        "text": "Publishing the model's weights and training dataset"
+      },
+      {
+        "letter": "C",
+        "text": "Enabling automatic logging for traceability"
+      },
+      {
+        "letter": "D",
+        "text": "Drawing up technical documentation"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The Act requires documentation and transparency to authorities and deployers, not publication of weights or training data — doing so would create intellectual property and privacy problems of its own. Lifecycle risk management, automatic logging and technical documentation are all core high-risk obligations.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #21"
+  },
+  {
+    "id": "q-1097",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Barrowmere Labs, established in Ireland, operates a consumer text-to-image assistant across the EU, built on a general-purpose model licensed from another company. The assistant's 'find this face' feature matches uploaded photos against a facial recognition database that Barrowmere expands by broad AI-driven collection of facial images from publicly reachable web pages, without targeting particular sources.\n\nUsers of the assistant are shown a notice explaining that they have been interacting with an AI system and that outputs may be unreliable. The notice appears when a user closes the session.\n\nA user in Belgium believes an output reproduced their likeness and wants to complain to a public authority.\n\nBarrowmere Labs shows its AI-interaction notice when the user closes the session. Why does this fail the EU AI Act's transparency obligation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The notice is not available in every official EU language"
+      },
+      {
+        "letter": "B",
+        "text": "The notice must be given no later than the time of the user's first interaction with or exposure to the system"
+      },
+      {
+        "letter": "C",
+        "text": "The notice must be approved by the national supervisory authority before use"
+      },
+      {
+        "letter": "D",
+        "text": "The notice must be accompanied by the system's technical documentation"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Transparency requires that a person be informed they are dealing with an AI system at the latest at the point of first interaction or exposure — the purpose is to inform the decision to engage, which a notice at exit cannot do. Content and accessibility matter too, but here the defect is timing. There is no pre-approval requirement, and technical documentation is kept for authorities (deployers get instructions for use), not handed to consumers.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #22"
+  },
+  {
+    "id": "q-1098",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "Barrowmere Labs, established in Ireland, operates a consumer text-to-image assistant across the EU, built on a general-purpose model licensed from another company. The assistant's 'find this face' feature matches uploaded photos against a facial recognition database that Barrowmere expands by broad AI-driven collection of facial images from publicly reachable web pages, without targeting particular sources.\n\nUsers of the assistant are shown a notice explaining that they have been interacting with an AI system and that outputs may be unreliable. The notice appears when a user closes the session.\n\nA user in Belgium believes an output reproduced their likeness and wants to complain to a public authority.\n\nHow should Barrowmere's method of assembling facial images be classified under the EU AI Act?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "High-risk, requiring conformity assessment before further use"
+      },
+      {
+        "letter": "B",
+        "text": "Limited-risk, requiring disclosure that images are AI-generated"
+      },
+      {
+        "letter": "C",
+        "text": "A prohibited practice — untargeted scraping of facial images to expand a facial recognition database"
+      },
+      {
+        "letter": "D",
+        "text": "Minimal-risk, since the images were publicly reachable"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Art. 5(1)(e) bans AI systems that create or expand facial recognition databases through the untargeted scraping of facial images from the internet or CCTV footage, so the method is prohibited rather than regulated and the system may not be used for that purpose at all. A face-matching system might otherwise sit in the high-risk biometric category, but building its database this way is banned outright; that the images were publicly reachable is irrelevant, and limited-risk or minimal-risk treatment describes permitted uses. The recognition purpose is what triggers the ban: the Commission's February 2025 guidelines on prohibited practices say it does not reach scraping faces only to train a model that generates images of fictitious people.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #23"
+  },
+  {
+    "id": "q-1099",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "Barrowmere Labs, established in Ireland, operates a consumer text-to-image assistant across the EU, built on a general-purpose model licensed from another company. The assistant's 'find this face' feature matches uploaded photos against a facial recognition database that Barrowmere expands by broad AI-driven collection of facial images from publicly reachable web pages, without targeting particular sources.\n\nUsers of the assistant are shown a notice explaining that they have been interacting with an AI system and that outputs may be unreliable. The notice appears when a user closes the session.\n\nA user in Belgium believes an output reproduced their likeness and wants to complain to a public authority.\n\nThe Belgian user wants to complain about Barrowmere under the EU AI Act. Where should the complaint go?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The European Data Protection Board"
+      },
+      {
+        "letter": "B",
+        "text": "The European Commission's AI Office"
+      },
+      {
+        "letter": "C",
+        "text": "The designated national authority in the user's Member State"
+      },
+      {
+        "letter": "D",
+        "text": "The provider's lead supervisory authority under the GDPR"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Article 85 lets anyone who believes the Act has been infringed complain to the relevant market surveillance authority, and each Member State designates its own, so the national authority, not an EU-level body, is the first stop. The AI Office supervises general-purpose AI models and, under Art. 75(1) as widened by the 2026 Digital Omnibus, AI systems built on a general-purpose model by the same provider; Barrowmere licenses its model from another company, so that route does not apply. The EDPB coordinates data protection regulators under the separate GDPR regime, and 'lead supervisory authority' is GDPR terminology with no equivalent role under the AI Act.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #24"
+  },
+  {
+    "id": "q-1100",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Barrowmere Labs, established in Ireland, operates a consumer text-to-image assistant across the EU, built on a general-purpose model licensed from another company. The assistant's 'find this face' feature matches uploaded photos against a facial recognition database that Barrowmere expands by broad AI-driven collection of facial images from publicly reachable web pages, without targeting particular sources.\n\nUsers of the assistant are shown a notice explaining that they have been interacting with an AI system and that outputs may be unreliable. The notice appears when a user closes the session.\n\nA user in Belgium believes an output reproduced their likeness and wants to complain to a public authority.\n\nIf Barrowmere is found to have expanded its face database through that untargeted scraping, which penalty ceiling applies?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Up to EUR 7.5 million or 1% of total worldwide annual turnover"
+      },
+      {
+        "letter": "B",
+        "text": "Up to EUR 15 million or 3% of total worldwide annual turnover"
+      },
+      {
+        "letter": "C",
+        "text": "Up to EUR 25 million or 5% of total worldwide annual turnover"
+      },
+      {
+        "letter": "D",
+        "text": "Up to EUR 35 million or 7% of total worldwide annual turnover"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Untargeted scraping to expand a facial recognition database is prohibited by Art. 5(1)(e), and prohibited practices attract the highest ceiling (Art. 99(3)): EUR 35 million or 7% of total worldwide annual turnover, whichever is higher. Most other obligation breaches sit at EUR 15 million or 3%; supplying incorrect or misleading information to authorities is EUR 7.5 million or 1%. There is no 25 million / 5% tier — a distractor worth recognising.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #25"
+  },
+  {
+    "id": "q-1101",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "An organization certified to ISO/IEC 42001 needs structured guidance for carrying out impact assessments on its AI systems. Which ISO standard is designed for that purpose?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "ISO/IEC 22989"
+      },
+      {
+        "letter": "B",
+        "text": "ISO/IEC 42005"
+      },
+      {
+        "letter": "C",
+        "text": "ISO/IEC 27001"
+      },
+      {
+        "letter": "D",
+        "text": "ISO/IEC 5338"
+      }
+    ],
+    "answer": "B",
+    "explanation": "ISO/IEC 42005 provides guidance on AI system impact assessment, and is one of the three core ISO AI standards the IAPP Body of Knowledge names explicitly — alongside 22989 (concepts and terminology) and 42001 (the certifiable management system). ISO/IEC 27001 covers information security management and ISO/IEC 5338 covers AI lifecycle processes. ISO/IEC 23894 does address AI risk management, but it is not among the BoK's named core trio.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #26"
+  },
+  {
+    "id": "q-1102",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A company intends to train a model on existing customer data relying on legitimate interests as its lawful basis. What must it do to rely on that basis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Obtain explicit consent from every affected customer"
+      },
+      {
+        "letter": "B",
+        "text": "Register the processing activity with its supervisory authority"
+      },
+      {
+        "letter": "C",
+        "text": "Anonymize the data, which removes it from the scope of the regulation"
+      },
+      {
+        "letter": "D",
+        "text": "Conduct and document a legitimate interests assessment weighing its interests against individuals' rights and reasonable expectations"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Relying on legitimate interests requires a documented three-part assessment: a legitimate purpose, necessity, and a balancing test against the individual's rights and reasonable expectations. Consent is a separate basis, not a precondition of this one; general registration is not a GDPR requirement; and genuine anonymization would be a different approach entirely and is difficult to achieve for rich training data.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #27"
+  },
+  {
+    "id": "q-1103",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A US regulator orders a company to delete not only improperly collected data but the models and algorithms derived from it. What is this remedy called?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Injunctive relief"
+      },
+      {
+        "letter": "B",
+        "text": "A civil investigative demand"
+      },
+      {
+        "letter": "C",
+        "text": "Algorithmic disgorgement"
+      },
+      {
+        "letter": "D",
+        "text": "A consent decree"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Algorithmic disgorgement requires destruction of models and algorithms built on unlawfully obtained data, stripping the benefit of the violation — a distinctive and heavily tested FTC remedy. A civil investigative demand is an information-gathering tool, a consent decree is the settlement instrument, and injunctive relief is the general category of court-ordered conduct.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #28"
+  },
+  {
+    "id": "q-1104",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "An employer uses an automated employment decision tool for candidates in New York City. What does Local Law 144 require?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An independent bias audit conducted annually, with a summary of results published"
+      },
+      {
+        "letter": "B",
+        "text": "Written consent from every applicant before screening"
+      },
+      {
+        "letter": "C",
+        "text": "Registration of the tool with the state attorney general"
+      },
+      {
+        "letter": "D",
+        "text": "A conformity assessment before the tool is used"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Local Law 144 requires an annual independent bias audit, publication of a summary of the results, and advance notice to candidates. Conformity assessment is an EU AI Act mechanism; the law requires notice rather than individual consent; and there is no state attorney-general registration scheme of this kind.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #29"
+  },
+  {
+    "id": "q-1105",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A US company deploying an AI hiring tool across several states asks which single federal statute governs its use of AI. What is the most accurate response?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A federal AI Act sets uniform national requirements and preempts state rules"
+      },
+      {
+        "letter": "B",
+        "text": "No comprehensive federal AI statute exists — obligations arise from sectoral laws, general anti-discrimination statutes, FTC authority, and a growing patchwork of state and municipal rules"
+      },
+      {
+        "letter": "C",
+        "text": "The FTC Act is the exclusive source of AI obligations for private companies"
+      },
+      {
+        "letter": "D",
+        "text": "Only the law of the state where the company is headquartered applies"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The US has no comprehensive federal AI statute. Compliance is assembled from existing sectoral regulation, anti-discrimination law such as Title VII and ECOA, FTC unfair-and-deceptive-practices authority, and an expanding set of state and city rules — which is why multi-state deployment requires jurisdiction-by-jurisdiction mapping. The FTC is one important source among several, and a company is bound wherever it operates, not merely where it is headquartered.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #30"
+  },
+  {
+    "id": "q-1106",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Several jurisdictions are updating liability law to cover software and AI-enabled products. What problem are these reforms addressing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Courts award damages too readily against AI developers"
+      },
+      {
+        "letter": "B",
+        "text": "Traditional fault-based rules allocate responsibility poorly when harm emerges from an opaque, adaptive system assembled from many parties' components"
+      },
+      {
+        "letter": "C",
+        "text": "Insurers decline to underwrite AI products at any price"
+      },
+      {
+        "letter": "D",
+        "text": "Existing law already makes end users bear all losses from AI failures"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Fault-based and product liability doctrines assume a defect can be identified and causation traced — assumptions that strain when a system is opaque, changes after sale, and combines components from many hands. Reform aims to restore clarity about who answers for what, not to raise or shield anyone's exposure as an end in itself. The premise that courts are over-awarding, that cover is unavailable, or that users currently bear everything is not what drives these efforts. The EU's revised Product Liability Directive (2024/2853) is an example: it treats software, including AI, as a product and eases claimants' burden through disclosure orders and rebuttable presumptions, while the separate AI Liability Directive proposal was withdrawn in 2025.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #31"
+  },
+  {
+    "id": "q-1107",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A health system builds a model to flag patients who need extra care, using historical healthcare spending as the target variable. An audit finds it systematically under-identifies Black patients with equivalent clinical need. What is the root cause?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Insufficient volume of training data"
+      },
+      {
+        "letter": "B",
+        "text": "An inappropriate model architecture"
+      },
+      {
+        "letter": "C",
+        "text": "The target variable is a biased proxy — spending reflects access to care rather than underlying health need"
+      },
+      {
+        "letter": "D",
+        "text": "Concept drift that emerged after deployment"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The failure is in problem formulation: spending was chosen to stand in for need, but unequal access means less is historically spent on some groups at equal sickness, so the model learns the disparity. More data or a different architecture would only reproduce the flawed target more efficiently, and drift describes post-deployment change rather than a design error present from the start.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #32"
+  },
+  {
+    "id": "q-1108",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Two annotation teams labelling a toxicity dataset disagree substantially, and the model's behaviour shifts depending on whose labels dominate. What is the most effective governance response?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Define clear annotation guidelines, measure inter-annotator agreement, and adjudicate disagreements"
+      },
+      {
+        "letter": "B",
+        "text": "Increase the overall size of the training set"
+      },
+      {
+        "letter": "C",
+        "text": "Move to a larger model architecture"
+      },
+      {
+        "letter": "D",
+        "text": "Remove all ambiguous examples from the dataset"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Inconsistent labels are a data governance problem, addressed through documented guidelines, measured agreement, and a resolution process for disputed cases. Adding volume multiplies the inconsistency; a bigger model learns the noise more faithfully; and discarding ambiguous examples biases the model toward easy cases and hides exactly the hard judgments that matter in production.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #33"
+  },
+  {
+    "id": "q-1109",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A model reaches 99% validation accuracy but performs poorly in production. Investigation shows a feature computed from the outcome itself was present during training. What occurred?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Concept drift"
+      },
+      {
+        "letter": "B",
+        "text": "Model inversion"
+      },
+      {
+        "letter": "C",
+        "text": "Underfitting"
+      },
+      {
+        "letter": "D",
+        "text": "Data leakage — information unavailable at prediction time was present in training"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Leakage occurs when training data contains information that will not exist when the model actually predicts, producing inflated validation scores that collapse in production. Concept drift develops over time after deployment, underfitting would show poor performance everywhere including validation, and model inversion is a privacy attack rather than a training flaw.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #34"
+  },
+  {
+    "id": "q-1110",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Which activity is least likely to reveal that a model will fail on unusual real-world inputs?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Adversarial robustness testing"
+      },
+      {
+        "letter": "B",
+        "text": "Scenario testing with human operators"
+      },
+      {
+        "letter": "C",
+        "text": "Reporting aggregate accuracy on the held-out test set"
+      },
+      {
+        "letter": "D",
+        "text": "Subgroup performance testing"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Aggregate accuracy on a held-out set is the measure most likely to conceal edge-case failure: it averages away exactly the rare and unusual cases that break systems in production. Adversarial testing probes for induced failure, scenario testing exposes the human-system pair to realistic conditions, and subgroup testing surfaces disparities the average hides.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #35"
+  },
+  {
+    "id": "q-1111",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A regulator asks a lender to explain why one particular applicant was declined and what would have to change for approval. Which approach best serves that request?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Global feature importance across the entire model"
+      },
+      {
+        "letter": "B",
+        "text": "A counterfactual explanation for that individual decision"
+      },
+      {
+        "letter": "C",
+        "text": "The model's overall accuracy and AUC metrics"
+      },
+      {
+        "letter": "D",
+        "text": "The training data schema and dictionary"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A counterfactual answers precisely what was asked — which minimal changes would have flipped this decision — making it both individually explanatory and actionable. Global feature importance describes the model's general behaviour without accounting for one applicant, and aggregate performance metrics and schema documentation say nothing about an individual outcome.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #36"
+  },
+  {
+    "id": "q-1112",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A team discovers it cannot simultaneously satisfy demographic parity and equalized odds for its model. What is the correct governance response?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Report only the metric the model does satisfy"
+      },
+      {
+        "letter": "B",
+        "text": "Conclude the model cannot be deployed fairly and abandon it"
+      },
+      {
+        "letter": "C",
+        "text": "Recognize the metrics are mathematically incompatible in most settings, select one with documented justification tied to the use case, and disclose the tradeoff"
+      },
+      {
+        "letter": "D",
+        "text": "Average the two metrics into a single composite score"
+      }
+    ],
+    "answer": "C",
+    "explanation": "These criteria are provably incompatible except in degenerate cases, so the governed response is a documented, justified choice tied to the specific harm the use case creates, with the tradeoff disclosed. Reporting selectively is misleading, abandoning deployment treats a universal mathematical constraint as a defect in this model, and averaging incompatible metrics produces a number with no interpretable meaning.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #37"
+  },
+  {
+    "id": "q-1113",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "How does AI red teaming differ from traditional penetration testing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It probes model behaviour for harmful, biased, or manipulable outputs rather than only infrastructure and access vulnerabilities"
+      },
+      {
+        "letter": "B",
+        "text": "It is conducted only after a security incident has occurred"
+      },
+      {
+        "letter": "C",
+        "text": "It removes the need for conventional security testing"
+      },
+      {
+        "letter": "D",
+        "text": "It is limited to reviewing the provenance of training data"
+      }
+    ],
+    "answer": "A",
+    "explanation": "AI red teaming targets the model's behaviour — jailbreaks, prompt injection, harmful or biased generations, misuse scenarios — a surface conventional penetration testing does not examine. It is proactive rather than post-incident, complements rather than replaces infrastructure security testing, and goes well beyond data provenance review.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #38"
+  },
+  {
+    "id": "q-1114",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "Kestrel Talent, based in Germany, licenses a résumé-scoring tool from a US developer and offers it to hospital clients across the EU. Candidates scoring above a threshold are automatically invited to record a video; those below receive an automatic rejection. Kestrel markets the service under its own brand.\n\nKestrel later reconfigures the tool to also rank existing staff for internal promotion — a purpose the developer never contemplated.\n\nKestrel licenses the tool from a US developer but markets it under its own brand in the EU. What is Kestrel's most likely role under the EU AI Act?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Deployer only, since it did not build the system"
+      },
+      {
+        "letter": "B",
+        "text": "Distributor, since it passes the developer's system to clients"
+      },
+      {
+        "letter": "C",
+        "text": "Provider, because placing a high-risk system on the market under its own name triggers provider obligations"
+      },
+      {
+        "letter": "D",
+        "text": "Importer only, with verification duties but no provider obligations"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Putting your own name or brand on a high-risk AI system placed on the EU market makes you a provider, with the full obligation set including conformity assessment and technical documentation. Merely using a system under your own authority would make you a deployer; passing it along unbranded would make you a distributor; and an importer places a third-country system on the market without rebranding it.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #39"
+  },
+  {
+    "id": "q-1115",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Kestrel Talent, based in Germany, licenses a résumé-scoring tool from a US developer and offers it to hospital clients across the EU. Candidates scoring above a threshold are automatically invited to record a video; those below receive an automatic rejection. Kestrel markets the service under its own brand.\n\nKestrel later reconfigures the tool to also rank existing staff for internal promotion — a purpose the developer never contemplated.\n\nKestrel reconfigures the tool to rank existing staff for promotion, a purpose the developer never contemplated. What follows?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Nothing, because the system already carries CE marking"
+      },
+      {
+        "letter": "B",
+        "text": "The developer's conformity assessment automatically extends to the new purpose"
+      },
+      {
+        "letter": "C",
+        "text": "The system must be withdrawn from the EU market immediately"
+      },
+      {
+        "letter": "D",
+        "text": "Changing the intended purpose is a substantial modification, so Kestrel assumes provider obligations for the modified system including fresh conformity assessment"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Changing the intended purpose of a high-risk system is a substantial modification and converts the modifier into a provider for that system. Existing CE marking attests to the original configuration and purpose, so it neither covers nor blesses the new one. Withdrawal is not automatically required — compliance for the new purpose is.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #40"
+  },
+  {
+    "id": "q-1116",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "Kestrel Talent, based in Germany, licenses a résumé-scoring tool from a US developer and offers it to hospital clients across the EU. Candidates scoring above a threshold are automatically invited to record a video; those below receive an automatic rejection. Kestrel markets the service under its own brand.\n\nKestrel later reconfigures the tool to also rank existing staff for internal promotion — a purpose the developer never contemplated.\n\nHow is the résumé-scoring tool classified, and which fact is least relevant to that classification?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "High risk; least relevant is that some candidates are auto-rejected"
+      },
+      {
+        "letter": "B",
+        "text": "High risk; least relevant is that Kestrel markets it under its own brand"
+      },
+      {
+        "letter": "C",
+        "text": "Limited risk; least relevant is that it is used in hiring"
+      },
+      {
+        "letter": "D",
+        "text": "Minimal risk; least relevant is that it scores candidates"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Recruitment and candidate-evaluation systems are high risk under Annex III because of their effect on access to employment. The branding is what determines Kestrel's role — provider versus deployer — but has no bearing on the system's risk classification, which turns on use. Automatic rejection and the hiring context are both directly relevant to why it is high risk.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #41"
+  },
+  {
+    "id": "q-1117",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Hard",
+    "question": "Kestrel Talent, based in Germany, licenses a résumé-scoring tool from a US developer and offers it to hospital clients across the EU. Candidates scoring above a threshold are automatically invited to record a video; those below receive an automatic rejection. Kestrel markets the service under its own brand.\n\nKestrel later reconfigures the tool to also rank existing staff for internal promotion — a purpose the developer never contemplated.\n\nWhich change would most strengthen meaningful human oversight of Kestrel's auto-rejection threshold?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Publishing the threshold value on the careers page"
+      },
+      {
+        "letter": "B",
+        "text": "Increasing the sample of rejections a recruiter reviews each month"
+      },
+      {
+        "letter": "C",
+        "text": "Adding a dashboard showing each candidate's score distribution"
+      },
+      {
+        "letter": "D",
+        "text": "Giving recruiters authority and workable capacity to override a rejection, plus an accessible route for candidates to seek human review"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Oversight is meaningful only where a human has genuine authority and practical capacity to intervene, and where the affected person can actually invoke review — otherwise it is attestation. Larger review samples and better dashboards improve visibility without conferring control, and publishing the threshold is a transparency gesture that changes nothing about recourse.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #42"
+  },
+  {
+    "id": "q-1118",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A team plans to build on an openly available model whose licence restricts commercial use and imposes use-based conditions. What is the primary governance concern?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The model will necessarily be less accurate than a proprietary alternative"
+      },
+      {
+        "letter": "B",
+        "text": "Openly available models cannot be fine-tuned"
+      },
+      {
+        "letter": "C",
+        "text": "Openly available models are exempt from AI regulation"
+      },
+      {
+        "letter": "D",
+        "text": "Licence terms may prohibit the intended commercial deployment and impose obligations that flow downstream"
+      }
+    ],
+    "answer": "D",
+    "explanation": "'Open' does not mean unrestricted — many model licences carry acceptable-use, commercial, and redistribution conditions that can bar the planned deployment and bind downstream users. Accuracy varies case by case rather than by licensing model, fine-tuning is generally permitted subject to the licence, and openness gives no blanket regulatory exemption: the EU AI Act's open-source carve-out (Art. 2(12)) covers only free and open-source releases and never high-risk, prohibited or Art. 50 uses.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #43"
+  },
+  {
+    "id": "q-1119",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "An auditor asks a team to reproduce exactly the model that produced a decision eighteen months earlier. Which capability does this require?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A larger budget for the model registry"
+      },
+      {
+        "letter": "B",
+        "text": "Versioning of code, data, hyperparameters, and model artifacts tied to each deployed release"
+      },
+      {
+        "letter": "C",
+        "text": "Continuous retraining on current data"
+      },
+      {
+        "letter": "D",
+        "text": "A more interpretable model architecture"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Reproducing a historical decision requires version control across every input to that model version — code, data snapshot, configuration, hyperparameters, and the artifact itself — bound to the release that was live at the time. Continuous retraining actively destroys the state you need to recreate, and interpretability explains a decision without allowing you to rebuild the model that made it.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #44"
+  },
+  {
+    "id": "q-1120",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "During development, a team must decide whether to include a variable that is strongly predictive of the outcome but also strongly correlated with a protected characteristic. What is the appropriate approach?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Include it, since predictive power justifies its inclusion"
+      },
+      {
+        "letter": "B",
+        "text": "Automatically exclude every variable showing any correlation with a protected trait"
+      },
+      {
+        "letter": "C",
+        "text": "Test for disparate impact, document the business justification, and search for less discriminatory alternatives"
+      },
+      {
+        "letter": "D",
+        "text": "Include it but omit it from the model documentation"
+      }
+    ],
+    "answer": "C",
+    "explanation": "This mirrors the legal test: measure the impact, evidence a genuine business justification, and demonstrate that a less discriminatory alternative was sought. Predictive power alone is not a defense; blanket exclusion of all correlated variables is usually impractical and can degrade the model without improving fairness; and omitting it from documentation converts a manageable risk into concealment.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #46"
+  },
+  {
+    "id": "q-1121",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Who should hold the authority to block deployment of a high-risk AI system that has failed its fairness review?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A function whose authority is independent of the delivery team's reporting line"
+      },
+      {
+        "letter": "B",
+        "text": "The product manager accountable for hitting the launch date"
+      },
+      {
+        "letter": "C",
+        "text": "The lead data scientist who built the model"
+      },
+      {
+        "letter": "D",
+        "text": "The vendor supplying the hosting infrastructure"
+      }
+    ],
+    "answer": "A",
+    "explanation": "A meaningful gate requires independence from delivery pressure — someone who does not answer to the schedule can enforce a stop. The product manager has a direct conflict, the model's builder is reviewing their own work, and the infrastructure vendor has neither standing nor visibility into fairness outcomes.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #47"
+  },
+  {
+    "id": "q-1122",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "Which is not an effective control where a vendor declines to disclose its training data sources?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Contractual warranties on lawful sourcing"
+      },
+      {
+        "letter": "B",
+        "text": "Audit rights over the vendor's operations"
+      },
+      {
+        "letter": "C",
+        "text": "Accepting the refusal as settled because trade secrets override diligence"
+      },
+      {
+        "letter": "D",
+        "text": "A documented, authorized risk-acceptance decision"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Accepting the refusal as settled leaves an unassessed risk on your books and is the one option that is not a control at all. Warranties, audit rights and an explicit authorized risk acceptance each convert the visibility gap into something managed — which is what governance requires when full disclosure is unavailable.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #48"
+  },
+  {
+    "id": "q-1123",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of the technical documentation a provider maintains for a high-risk AI system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To market the system's capabilities to prospective buyers"
+      },
+      {
+        "letter": "B",
+        "text": "To support internal engineering onboarding"
+      },
+      {
+        "letter": "C",
+        "text": "To substitute for post-market monitoring obligations"
+      },
+      {
+        "letter": "D",
+        "text": "To demonstrate to authorities that the system meets applicable requirements and to enable traceability and auditability"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Technical documentation exists to evidence compliance to regulators and make the system traceable and auditable across its lifecycle. Marketing material serves a different audience and standard, onboarding is an incidental benefit, and post-market monitoring is a separate ongoing obligation that documentation supports rather than replaces.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #49"
+  },
+  {
+    "id": "q-1124",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A team proposes retaining training datasets indefinitely in case retraining is needed later. What is the governance tension?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Storage cost is the primary constraint on retention"
+      },
+      {
+        "letter": "B",
+        "text": "Indefinite retention conflicts with storage limitation and expands breach exposure, so retention periods must be justified and time-bound"
+      },
+      {
+        "letter": "C",
+        "text": "Training datasets are exempt from retention requirements"
+      },
+      {
+        "letter": "D",
+        "text": "Retention limits apply only to special-category data"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Indefinite retention collides with the storage limitation principle and steadily enlarges the blast radius of any breach, so periods must be defined and justified against a purpose. Cost is real but secondary to the legal constraint, and neither training data generally nor ordinary personal data is exempt from retention requirements.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #50"
+  },
+  {
+    "id": "q-1125",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "A team wants to reduce the risk that a model memorizes and can later reveal individual records from its training data. Which technique most directly addresses this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Increasing model size"
+      },
+      {
+        "letter": "B",
+        "text": "Data augmentation"
+      },
+      {
+        "letter": "C",
+        "text": "Applying differential privacy during training"
+      },
+      {
+        "letter": "D",
+        "text": "Using cross-validation during evaluation"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Differential privacy bounds how much any single record can influence the trained model, directly limiting memorization and improving resistance to membership inference. Larger models tend to memorize more, augmentation expands variety without constraining individual influence, and cross-validation is an evaluation method with no bearing on what the model retains.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #51"
+  },
+  {
+    "id": "q-1126",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "At what point in the lifecycle does an AI impact assessment deliver the most value?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "During problem formulation and design, when mitigations are cheapest to implement"
+      },
+      {
+        "letter": "B",
+        "text": "Immediately before the deployment approval decision"
+      },
+      {
+        "letter": "C",
+        "text": "After the first production incident reveals concrete harms"
+      },
+      {
+        "letter": "D",
+        "text": "At retirement, to capture lessons for future systems"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Assessing impact during problem formulation and design is when findings can still reshape the system cheaply — including the decision not to build it. A pre-deployment assessment arrives once the expensive choices are locked in, waiting for an incident means harm has already occurred, and a retirement review benefits only the next project.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #52"
+  },
+  {
+    "id": "q-1127",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "A team routes 5% of live traffic to a new model version while the rest continues to the incumbent, watching for degradation before widening the share. What is this pattern?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Shadow deployment"
+      },
+      {
+        "letter": "B",
+        "text": "Blue-green deployment"
+      },
+      {
+        "letter": "C",
+        "text": "A/B testing for user preference"
+      },
+      {
+        "letter": "D",
+        "text": "Canary release"
+      }
+    ],
+    "answer": "D",
+    "explanation": "A canary release exposes a small slice of real traffic first, so problems surface at limited blast radius and rollback is straightforward. Shadow deployment processes real traffic without serving any of its outputs, blue-green switches all traffic at once between two environments, and A/B testing is a controlled comparison designed to measure preference rather than to de-risk a rollout.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #53"
+  },
+  {
+    "id": "q-1128",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Reviewers of an AI triage system approve almost every recommendation it produces, rarely dissenting even when the underlying evidence conflicts with the output. What is occurring?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Concept drift"
+      },
+      {
+        "letter": "B",
+        "text": "Automation bias — over-reliance on the system's output"
+      },
+      {
+        "letter": "C",
+        "text": "Data leakage"
+      },
+      {
+        "letter": "D",
+        "text": "Adversarial manipulation of the model"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Automation bias is the human tendency to defer to machine output, which hollows out oversight while leaving it formally in place — the reason meaningful oversight requires authority, time, and training, not just a review step. Drift concerns the model's performance over time, leakage is a training flaw, and adversarial manipulation involves a deliberate attacker.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #54"
+  },
+  {
+    "id": "q-1129",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "An auditor reviewing a completed AI impact assessment checks the record for completeness. Which of the following belong in it?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Stakeholder input and the concerns they raised"
+      },
+      {
+        "letter": "B",
+        "text": "The marketing and sales budget for the product"
+      },
+      {
+        "letter": "C",
+        "text": "The affected populations and the harms identified for each"
+      },
+      {
+        "letter": "D",
+        "text": "The mitigations chosen and any residual risk accepted"
+      },
+      {
+        "letter": "E",
+        "text": "The individual compensation of the development team"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "An impact assessment records stakeholder input and concerns, the affected populations and identified harms, and the mitigations and residual risk accepted — together these show who could be hurt, what was done about it, and what was knowingly left. Marketing budgets and staff compensation are commercially sensitive and governance-irrelevant; including them would not make the assessment more complete.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #55"
+  },
+  {
+    "id": "q-1130",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A predictive policing model directs patrols to the areas it flags, and the arrests that result are fed back into its training data. What risk does this create?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A self-reinforcing feedback loop that amplifies existing bias rather than measuring underlying reality"
+      },
+      {
+        "letter": "B",
+        "text": "Data drift caused by seasonal variation"
+      },
+      {
+        "letter": "C",
+        "text": "Model inversion by external parties"
+      },
+      {
+        "letter": "D",
+        "text": "Underfitting due to insufficient features"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The model's own outputs shape the data it later learns from, so more patrols produce more recorded incidents, which justify still more patrols — a self-reinforcing loop measuring enforcement activity rather than underlying crime. Seasonal drift is externally driven, model inversion is an attack, and underfitting describes a model too simple to capture real structure.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #56"
+  },
+  {
+    "id": "q-1131",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A high-risk system makes decisions that significantly affect individuals. Beyond providing an explanation, what most supports accountability to those individuals?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A published model card"
+      },
+      {
+        "letter": "B",
+        "text": "A scheduled programme of internal audits"
+      },
+      {
+        "letter": "C",
+        "text": "An accessible route to challenge a decision and obtain human review"
+      },
+      {
+        "letter": "D",
+        "text": "A quarterly fairness report to the board"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Explanation without recourse leaves people informed but powerless, so an accessible challenge route leading to human review is what converts transparency into accountability. Model cards serve downstream deployers, and internal audits and board reporting are organizational assurance mechanisms that the affected individual cannot invoke.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #57"
+  },
+  {
+    "id": "q-1132",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "A deployed high-risk AI system contributes to a serious injury. Under the EU AI Act, what must the provider do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Take no action until the next scheduled annual review"
+      },
+      {
+        "letter": "B",
+        "text": "Notify only the individual who was harmed"
+      },
+      {
+        "letter": "C",
+        "text": "Publish a public disclosure within 24 hours"
+      },
+      {
+        "letter": "D",
+        "text": "Report the serious incident to the relevant market surveillance authority"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Providers must report serious incidents to the relevant market surveillance authority within the Act's prescribed timeframes, alongside investigating and taking corrective action. Deferring to an annual cycle ignores a statutory duty, notifying only the individual omits the regulator, and the Act imposes authority reporting rather than a blanket 24-hour public disclosure.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #58"
+  },
+  {
+    "id": "q-1133",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A deployer significantly changes the intended purpose of a high-risk AI system it purchased from a provider. What is the governance consequence?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The provider's existing conformity assessment continues to cover the modified system"
+      },
+      {
+        "letter": "B",
+        "text": "The deployer may assume provider obligations, including a fresh conformity assessment"
+      },
+      {
+        "letter": "C",
+        "text": "There is no consequence, because the system already carries CE marking"
+      },
+      {
+        "letter": "D",
+        "text": "The system must be withdrawn from the EU market immediately"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Changing the intended purpose, substantially modifying a high-risk system, or branding it as one's own converts the deployer into a provider, bringing the full provider obligation set with it. The original assessment covered the original purpose only, and existing CE marking attests to that superseded configuration rather than blessing whatever the system becomes.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #59"
+  },
+  {
+    "id": "q-1134",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Why does the EU AI Act require automatic logging over the lifetime of a high-risk AI system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To enable traceability of the system's functioning for investigation, audit, and post-market monitoring"
+      },
+      {
+        "letter": "B",
+        "text": "To generate additional training data and improve model accuracy"
+      },
+      {
+        "letter": "C",
+        "text": "To satisfy financial reporting and audit requirements"
+      },
+      {
+        "letter": "D",
+        "text": "To reduce inference latency through cached results"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Logs exist to make the system's operation traceable after the fact — supporting incident investigation, regulatory audit, and post-market monitoring. This is also why disabling logging during an incident is always the wrong move. The other options describe performance, model improvement, and financial control objectives that logging does not serve here.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #60"
+  },
+  {
+    "id": "q-1135",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Which action is least appropriate when retiring an AI system that made regulated decisions?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Preserving decision logs per applicable retention obligations"
+      },
+      {
+        "letter": "B",
+        "text": "Deleting model artifacts promptly to reduce storage and privacy exposure"
+      },
+      {
+        "letter": "C",
+        "text": "Notifying external parties who integrated against the system"
+      },
+      {
+        "letter": "D",
+        "text": "Documenting lessons learned for future systems"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Prompt deletion destroys the evidence trail at precisely the moment you may need it — affected individuals can contest historical decisions and regulators can examine them long after shutdown. Preserving records per retention obligations, notifying dependent parties and capturing lessons are all part of controlled decommissioning.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #61"
+  },
+  {
+    "id": "q-1136",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "An organization negotiating with an AI vendor wants to avoid becoming unable to switch providers later. Which contractual provision matters most?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A longer initial term in exchange for a discounted rate"
+      },
+      {
+        "letter": "B",
+        "text": "A detailed service credit schedule for downtime"
+      },
+      {
+        "letter": "C",
+        "text": "Data and configuration portability, with defined exit assistance and transition periods"
+      },
+      {
+        "letter": "D",
+        "text": "An expanded mutual confidentiality clause"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Lock-in is addressed by portability of your data and configurations plus contractual exit assistance, so a transition is practically achievable rather than theoretically permitted. A longer term deepens lock-in, service credits compensate for outages without aiding an exit, and confidentiality governs information handling rather than the ability to leave.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #62"
+  },
+  {
+    "id": "q-1137",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "Monitoring shows a deployed model's performance for one demographic subgroup has fallen below its documented threshold. What is the appropriate first action?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Continue operating and address it at the next scheduled retraining"
+      },
+      {
+        "letter": "B",
+        "text": "Remove the subgroup from monitoring to reduce false alarms"
+      },
+      {
+        "letter": "C",
+        "text": "Publicly disclose the disparity before investigating the cause"
+      },
+      {
+        "letter": "D",
+        "text": "Trigger the defined escalation path and decide on mitigation, rollback, or documented risk acceptance"
+      }
+    ],
+    "answer": "D",
+    "explanation": "A breached threshold should trigger the pre-defined escalation and a recorded treatment decision — that link between signal and action is what makes monitoring governance rather than telemetry. Waiting for the next cycle lets known harm continue, dropping the subgroup from monitoring suppresses the signal, and disclosing before investigating risks announcing something not yet understood.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #63"
+  },
+  {
+    "id": "q-1138",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A company deploys the same model in the EU, the United States, and Brazil. Which approach best manages the differing legal requirements?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Map obligations per jurisdiction and implement to the most stringent applicable requirement where feasible, documenting local variations"
+      },
+      {
+        "letter": "B",
+        "text": "Apply the least restrictive jurisdiction's rules everywhere for operational consistency"
+      },
+      {
+        "letter": "C",
+        "text": "Deploy entirely separate models with no shared governance"
+      },
+      {
+        "letter": "D",
+        "text": "Rely on the vendor to manage jurisdictional compliance"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The workable pattern is a mapped baseline set to the strictest feasible requirement, with documented local variations where rules genuinely conflict or diverge. Applying the loosest standard guarantees non-compliance in stricter jurisdictions, fully separate governance multiplies cost and creates gaps, and vendor reliance does not transfer the organization's own legal accountability.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #64"
+  },
+  {
+    "id": "q-1139",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "An organization is retiring a customer-facing AI service that external partners have built integrations against. What matters most?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Advance notice to affected external stakeholders with transition timelines and migration guidance"
+      },
+      {
+        "letter": "B",
+        "text": "Immediate shutdown to eliminate residual operational risk"
+      },
+      {
+        "letter": "C",
+        "text": "Silent deprecation to avoid drawing reputational attention"
+      },
+      {
+        "letter": "D",
+        "text": "Leaving the service running in an unsupported state indefinitely"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Controlled decommissioning includes notifying those who depend on the system, with timelines and a migration path. An abrupt shutdown transfers your risk onto partners, silent deprecation causes failures they cannot anticipate, and leaving it running unsupported sustains an ungoverned system that no one is maintaining.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #65"
+  },
+  {
+    "id": "q-1140",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A production model endpoint is reachable by any authenticated internal user, with no further restriction. What is the most acute risk?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Increased inference latency under load"
+      },
+      {
+        "letter": "B",
+        "text": "Higher cloud spend from unused capacity"
+      },
+      {
+        "letter": "C",
+        "text": "Unauthorized use, model extraction, and decisions made outside approved use cases without oversight"
+      },
+      {
+        "letter": "D",
+        "text": "Gradual reduction in model accuracy"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Unrestricted internal access permits use outside the approved use case, systematic querying that enables model extraction, and decisions taken with no governance attached — the approval you built around one context silently applies to none. Latency and cost are operational concerns, and broad access does not itself degrade accuracy.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #66"
+  },
+  {
+    "id": "q-1141",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A company deploys an AI agent that telephones customers to arrange appointments. Which transparency obligation applies most directly?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Publishing the model's architecture and parameters"
+      },
+      {
+        "letter": "B",
+        "text": "Registering the agent in a public database"
+      },
+      {
+        "letter": "C",
+        "text": "Obtaining written consent before each individual call"
+      },
+      {
+        "letter": "D",
+        "text": "Disclosing to the person that they are interacting with an AI system"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Systems interacting directly with people must make clear that the counterpart is an AI, which is the core limited-risk transparency duty and matters most where a synthetic voice could be mistaken for a person. Architecture disclosure is not required, public registration applies to certain high-risk systems, and written per-call consent is not the applicable mechanism.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #67"
+  },
+  {
+    "id": "q-1142",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "After launch, the development team is reassigned to a new project and no one is designated to review the monitoring alerts the system generates. What governance failure is this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Insufficient model documentation"
+      },
+      {
+        "letter": "B",
+        "text": "No assigned ownership for the operational phase, so monitoring signals go unactioned"
+      },
+      {
+        "letter": "C",
+        "text": "Inadequate pre-deployment testing"
+      },
+      {
+        "letter": "D",
+        "text": "Excessive model complexity"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Governance runs to the end of the lifecycle, and an unowned operational phase means alerts fire into a vacuum — the monitoring exists but nothing converts a signal into a decision. Documentation, pre-deployment testing, and complexity are all separate concerns that would not be remedied by, and do not explain, the absence of an accountable operator.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock B #68"
+  },
+  {
+    "id": "q-1143",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A company's AI charter commits to fairness, safety, privacy, transparency and accountability. A reviewer notes one commonly listed responsible-AI principle is missing — the one holding that AI should serve people and keep them central to decisions affecting them. Which is it?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Robustness"
+      },
+      {
+        "letter": "B",
+        "text": "Explainability"
+      },
+      {
+        "letter": "C",
+        "text": "Human-centricity"
+      },
+      {
+        "letter": "D",
+        "text": "Reliability"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Human-centricity is named explicitly in the Body of Knowledge alongside fairness, safety and reliability, privacy and security, transparency and explainability, and accountability. Robustness and reliability concern how dependably the system performs; explainability is already covered by the transparency commitment.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #1"
+  },
+  {
+    "id": "q-1144",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A governance lead explains that traditional software returns the same output for the same input, whereas the new model may not. Which AI characteristic is being described?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Probabilistic rather than deterministic output"
+      },
+      {
+        "letter": "B",
+        "text": "Autonomy"
+      },
+      {
+        "letter": "C",
+        "text": "Data dependency"
+      },
+      {
+        "letter": "D",
+        "text": "Speed and scale"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Probabilistic versus deterministic output is one of the characteristics the BoK lists as requiring a distinct governance approach — it means testing, assurance and reproducibility all work differently. Autonomy concerns acting without human input, data dependency the reliance on training corpora, and speed and scale the rate at which effects propagate.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #2"
+  },
+  {
+    "id": "q-1145",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A content recommendation model is optimized for watch time and succeeds, but it steadily surfaces more extreme material because that maximizes the metric. Which category of AI risk does this best illustrate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Complexity and scalability risk"
+      },
+      {
+        "letter": "B",
+        "text": "Data dependency risk"
+      },
+      {
+        "letter": "C",
+        "text": "Opacity risk"
+      },
+      {
+        "letter": "D",
+        "text": "Misalignment with objectives"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Misalignment with objectives — the system optimizes the metric it was given rather than the outcome actually intended, and performs 'correctly' while causing harm. The BoK names this explicitly among AI risk types. Complexity, opacity and data dependency are characteristics that can compound the problem but do not describe the mismatch itself.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #3"
+  },
+  {
+    "id": "q-1146",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "An AI governance program is staffed entirely from the legal department. Beyond missing technical expertise, what does the BoK identify as the main reason cross-functional collaboration matters?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It reduces the cost of running the governance program"
+      },
+      {
+        "letter": "B",
+        "text": "It shortens model development timelines"
+      },
+      {
+        "letter": "C",
+        "text": "It satisfies a specific EU AI Act requirement"
+      },
+      {
+        "letter": "D",
+        "text": "Efficacy, and diversity of expertise and perspective"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The BoK frames cross-functional collaboration in terms of efficacy and the diversity of expertise and perspective — different disciplines surface different risks, which is what makes the program effective. Cost and timelines are operational side effects, and no specific statute mandates the composition in these terms.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #4"
+  },
+  {
+    "id": "q-1147",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "Under the BoK, policies and contracts to manage third-party AI risk should extend across which set of areas?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Only software procurement contracts"
+      },
+      {
+        "letter": "B",
+        "text": "Only cloud infrastructure agreements"
+      },
+      {
+        "letter": "C",
+        "text": "Procurement, supply chain, human resources and acceptable use"
+      },
+      {
+        "letter": "D",
+        "text": "Only vendors processing personal data"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The BoK names procurement, supply chain, human resources and acceptable use — third-party AI risk arrives through hiring tools and staff use of external services, not just formal software purchases. Narrowing it to software contracts, cloud agreements or personal-data vendors leaves the most common routes unmanaged.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #5"
+  },
+  {
+    "id": "q-1148",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A team is told to apply 'ethics by design' to a new AI system. What does this most directly require?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Building ethical considerations into design decisions from the outset rather than reviewing them before launch"
+      },
+      {
+        "letter": "B",
+        "text": "Appointing an external ethicist to approve the final model"
+      },
+      {
+        "letter": "C",
+        "text": "Publishing an ethics statement on the company website"
+      },
+      {
+        "letter": "D",
+        "text": "Running a fairness audit after deployment"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Ethics by design embeds ethical consideration into architecture, data and metric choices while they are still cheap to change — the same logic as privacy by design. A pre-launch review, an external approver or a published statement can all accompany it, but none of them moves the consideration to the point where it can actually shape the design.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #6"
+  },
+  {
+    "id": "q-1149",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "Which set of factors does the BoK identify as the basis for differentiating an organization's approach to AI governance?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Revenue and headcount only"
+      },
+      {
+        "letter": "B",
+        "text": "Regulatory jurisdiction only"
+      },
+      {
+        "letter": "C",
+        "text": "The number of models in production"
+      },
+      {
+        "letter": "D",
+        "text": "Company size, maturity, industry, products and services, objectives and risk tolerance"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The BoK lists size, maturity, industry, products and services, objectives and risk tolerance — governance must be proportionate along several dimensions at once. Revenue, jurisdiction and model count each capture only one slice, and a small firm in a regulated sector may need heavier governance than a large one outside it.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #7"
+  },
+  {
+    "id": "q-1150",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Which of the following accurately describe governance differences among AI developers, providers, deployers and users?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A provider that places a system on the market carries obligations for its documentation and conformity"
+      },
+      {
+        "letter": "B",
+        "text": "A deployer uses the system under its own authority and is responsible for oversight in its context"
+      },
+      {
+        "letter": "C",
+        "text": "All four roles carry identical obligations under every framework"
+      },
+      {
+        "letter": "D",
+        "text": "One organization may occupy more than one role simultaneously"
+      },
+      {
+        "letter": "E",
+        "text": "Users are exempt from any governance responsibility"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Providers carry market-facing obligations, deployers carry contextual use and oversight duties, and — as IAPP notes explicitly — many organizations fill more than one role at once, which is why the labels describe tasks rather than fixed identities. Obligations are emphatically not identical across roles, and users retain responsibilities such as following acceptable-use requirements and escalating problems.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #8"
+  },
+  {
+    "id": "q-1151",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "The BoK names the South Korean AI Basic Law alongside the EU AI Act as major current AI legislation. Which description best characterizes its overall approach?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A sector-specific statute limited to financial services AI"
+      },
+      {
+        "letter": "B",
+        "text": "A data protection statute that does not address AI systems directly"
+      },
+      {
+        "letter": "C",
+        "text": "A voluntary code of practice with no binding obligations"
+      },
+      {
+        "letter": "D",
+        "text": "A comprehensive national AI framework combining promotion of the AI industry with risk-based obligations for high-impact AI"
+      }
+    ],
+    "answer": "D",
+    "explanation": "South Korea's framework legislation is notable for pairing industrial promotion with binding obligations, using a high-impact AI category plus transparency and safety duties; it has been in force since 22 January 2026. It is economy-wide rather than sectoral, and binding rather than voluntary.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #9"
+  },
+  {
+    "id": "q-1152",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A multinational governance team is mapping obligations across the EU AI Act and South Korea's AI framework. Which structural feature do comprehensive AI statutes most commonly share?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Identical penalty ceilings expressed as a percentage of turnover"
+      },
+      {
+        "letter": "B",
+        "text": "A single obligation set applying uniformly to all AI systems"
+      },
+      {
+        "letter": "C",
+        "text": "A prohibition on all automated decision-making affecting individuals"
+      },
+      {
+        "letter": "D",
+        "text": "A risk- or impact-tiered classification driving proportionate obligations, with heavier duties on higher-risk uses"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Comprehensive AI laws converge on tiering by risk or impact, so obligations scale with potential harm — the EU's prohibited/high/limited/minimal structure and Korea's high-impact designation both work this way. Penalty levels differ substantially, uniform obligation sets are precisely what tiering avoids, and none bans automated decisions outright.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #10"
+  },
+  {
+    "id": "q-1153",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Which three standards does the IAPP Body of Knowledge identify as the core ISO AI standards?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "22989, 23894 and 27001"
+      },
+      {
+        "letter": "B",
+        "text": "22989, 42001 and 42005"
+      },
+      {
+        "letter": "C",
+        "text": "27001, 27701 and 31000"
+      },
+      {
+        "letter": "D",
+        "text": "5338, 24028 and 42001"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The BoK names 22989 (concepts and terminology), 42001 (the certifiable AI management system) and 42005 (AI system impact assessment). ISO/IEC 23894 covers AI risk management and 5338 covers lifecycle processes — both real and useful, but not part of the named core trio, which is a distinction worth holding precisely.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #11"
+  },
+  {
+    "id": "q-1154",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "An organization needs structured guidance for documenting how an AI system could affect individuals and groups, as part of its assessment process. Which standard is purpose-built for this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "ISO/IEC 42005"
+      },
+      {
+        "letter": "B",
+        "text": "ISO/IEC 22989"
+      },
+      {
+        "letter": "C",
+        "text": "ISO/IEC 42001"
+      },
+      {
+        "letter": "D",
+        "text": "ISO/IEC 27001"
+      }
+    ],
+    "answer": "A",
+    "explanation": "ISO/IEC 42005 addresses AI system impact assessment specifically — how to identify, document and act on effects on people and society. 22989 supplies vocabulary, 42001 provides the surrounding management system, and 27001 governs information security.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #12"
+  },
+  {
+    "id": "q-1155",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Wrenfield Health, a US medical-devices firm, is assembling the reference material for its AI governance programme. Its general counsel has circulated a list of instruments the team keeps encountering: the EU AI Act, the NIST AI Risk Management Framework, the UNESCO Recommendation on the Ethics of AI, the Asilomar AI Principles, the National Artificial Intelligence Initiative Act, and the G7 Hiroshima Code of Conduct.\n\nSeparately, Wrenfield is designing a feature that would decide automatically, without asking, whether a patient's monitoring data is escalated to a clinician or handled by an automated response. The product team wants the decision taken out of the patient's hands to reduce delay.\n\nWrenfield Health's general counsel wants the list sorted into 'must comply' and 'may choose to follow.' Wrenfield sells its devices in the EU. Which instrument belongs in the must-comply column, with obligations reaching both providers and deployers?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The NIST AI Risk Management Framework"
+      },
+      {
+        "letter": "B",
+        "text": "The European AI Act"
+      },
+      {
+        "letter": "C",
+        "text": "The UNESCO Recommendation on the Ethics of AI"
+      },
+      {
+        "letter": "D",
+        "text": "The G7 Hiroshima Code of Conduct"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Only the EU AI Act imposes enforceable legal duties on providers and deployers alike, backed by penalties for noncompliance. The NIST AI RMF is voluntary by design; UNESCO's Recommendation is a non-binding soft-law instrument addressed to member states; it creates no enforceable duties even for them, let alone for individual organizations; and the G7 Hiroshima code of conduct is guidance developers may follow at their own discretion. Knowing these by name matters because the exam expects you to separate binding law from voluntary frameworks, not just recall what each one covers.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #13"
+  },
+  {
+    "id": "q-1156",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Wrenfield Health, a US medical-devices firm, is assembling the reference material for its AI governance programme. Its general counsel has circulated a list of instruments the team keeps encountering: the EU AI Act, the NIST AI Risk Management Framework, the UNESCO Recommendation on the Ethics of AI, the Asilomar AI Principles, the National Artificial Intelligence Initiative Act, and the G7 Hiroshima Code of Conduct.\n\nSeparately, Wrenfield is designing a feature that would decide automatically, without asking, whether a patient's monitoring data is escalated to a clinician or handled by an automated response. The product team wants the decision taken out of the patient's hands to reduce delay.\n\nWrenfield's counsel notes the National Artificial Intelligence Initiative Act among the US instruments on the list and asks what it actually regulates for a private company using AI in hiring. What is the accurate answer?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It imposes bias-audit duties on automated hiring tools"
+      },
+      {
+        "letter": "B",
+        "text": "It creates a private right of action for algorithmic discrimination"
+      },
+      {
+        "letter": "C",
+        "text": "It sets conformity assessment requirements for high-risk AI systems"
+      },
+      {
+        "letter": "D",
+        "text": "Nothing directly — it organizes and funds federal AI research, development and education rather than regulating private-sector use"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The Act's function is coordination: it establishes a national programme for AI research, development and education across federal agencies. It imposes no duties on private deployers. For hiring, the operative US sources are Title VII, the ADA, FCRA obligations where consumer reports are used, EEOC enforcement activity, and local rules such as NYC Local Law 144 — knowing which instruments carry obligations and which merely organize policy is the tested skill.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #14"
+  },
+  {
+    "id": "q-1157",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Hard",
+    "question": "Wrenfield Health, a US medical-devices firm, is assembling the reference material for its AI governance programme. Its general counsel has circulated a list of instruments the team keeps encountering: the EU AI Act, the NIST AI Risk Management Framework, the UNESCO Recommendation on the Ethics of AI, the Asilomar AI Principles, the National Artificial Intelligence Initiative Act, and the G7 Hiroshima Code of Conduct.\n\nSeparately, Wrenfield is designing a feature that would decide automatically, without asking, whether a patient's monitoring data is escalated to a clinician or handled by an automated response. The product team wants the decision taken out of the patient's hands to reduce delay.\n\nWrenfield wants to remove the patient's ability to choose whether monitoring data is escalated to a clinician. Which Asilomar AI principle does this most directly implicate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Shared benefit"
+      },
+      {
+        "letter": "B",
+        "text": "Failure transparency"
+      },
+      {
+        "letter": "C",
+        "text": "Race avoidance"
+      },
+      {
+        "letter": "D",
+        "text": "Human control"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Human control holds that humans should choose whether and how to delegate decisions to AI systems — removing the patient's choice is precisely a transfer of that control away from the person affected. Failure transparency (being able to ascertain why a system caused harm) and personal privacy sit nearby and would also be engaged by the feature, but the choice question is squarely human control. Shared benefit concerns who gains from AI; race avoidance concerns competitive pressure to cut corners in development.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #15"
+  },
+  {
+    "id": "q-1158",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Hard",
+    "question": "Wrenfield Health, a US medical-devices firm, is assembling the reference material for its AI governance programme. Its general counsel has circulated a list of instruments the team keeps encountering: the EU AI Act, the NIST AI Risk Management Framework, the UNESCO Recommendation on the Ethics of AI, the Asilomar AI Principles, the National Artificial Intelligence Initiative Act, and the G7 Hiroshima Code of Conduct.\n\nSeparately, Wrenfield is designing a feature that would decide automatically, without asking, whether a patient's monitoring data is escalated to a clinician or handled by an automated response. The product team wants the decision taken out of the patient's hands to reduce delay.\n\nWhich principle should Wrenfield apply consistently when integrating AI governance across the company?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Appoint a standing internal dissenter to challenge every proposal"
+      },
+      {
+        "letter": "B",
+        "text": "Measure the governance team on adherence to the documented process"
+      },
+      {
+        "letter": "C",
+        "text": "Ensure planning and design decisions are reached by consensus across functions"
+      },
+      {
+        "letter": "D",
+        "text": "Let projected financial return drive prioritisation"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Governance takes hold when decisions are reached through genuine agreement across functions rather than handed down from one team. A standing dissenter manufactures friction without necessarily widening buy-in; grading the team on adherence to a fixed process rewards following steps over achieving what those steps exist to protect; and letting financial return set the order of work turns governance into a budgeting exercise instead of a risk-based one. Cross-functional consensus is what keeps governance from becoming any single team's private process.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #16"
+  },
+  {
+    "id": "q-1159",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "The BoK asks candidates to understand the NIST AI RMF and Playbook including its core functions, categories and subcategories. What is the Playbook's role?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It is the mandatory certification scheme for the AI RMF"
+      },
+      {
+        "letter": "B",
+        "text": "It supplies suggested actions, references and documentation guidance for implementing the RMF's subcategories"
+      },
+      {
+        "letter": "C",
+        "text": "It replaces the four core functions with a simplified model"
+      },
+      {
+        "letter": "D",
+        "text": "It is a legally binding annex to US federal AI regulation"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The Playbook is companion guidance offering suggested actions, references and documentation for achieving the RMF's outcomes at subcategory level. The RMF and Playbook are both voluntary and nothing in them is binding; unlike ISO/IEC 42001, there is also no certification against them.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #17"
+  },
+  {
+    "id": "q-1160",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Beyond its high-level principles, what else does the BoK expect candidates to understand about the OECD's work on AI?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Its authority to fine organizations for non-compliance"
+      },
+      {
+        "letter": "B",
+        "text": "Its role as the certification body for trustworthy AI"
+      },
+      {
+        "letter": "C",
+        "text": "Its binding treaty obligations on member states"
+      },
+      {
+        "letter": "D",
+        "text": "Its framework, policies and recommended practices for trustworthy AI"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The BoK asks for the OECD's principles, framework, policies and recommended practices for trustworthy AI — including its classification framework for AI systems. The OECD is an intergovernmental policy body: its instruments are influential but non-binding, and it neither certifies nor fines.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #18"
+  },
+  {
+    "id": "q-1161",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A company plans to train a model on customer data collected for order fulfilment. Which combination of privacy requirements is most directly engaged before it proceeds?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Lawful basis and purpose limitation"
+      },
+      {
+        "letter": "B",
+        "text": "Breach notification and record keeping"
+      },
+      {
+        "letter": "C",
+        "text": "Cross-border transfer rules and processor contracts"
+      },
+      {
+        "letter": "D",
+        "text": "Data subject access and portability"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Reusing data for a new purpose engages lawful basis and purpose limitation first — is there a valid ground, and is training compatible with the original collection purpose? The other requirements are all real obligations under the same law, but they attach to different events: a breach, a transfer, or an individual's request.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #19"
+  },
+  {
+    "id": "q-1162",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A building access system stores facial templates to identify employees uniquely. How should this data be treated under data protection law?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "As ordinary personal data, since employees consented to employment"
+      },
+      {
+        "letter": "B",
+        "text": "As anonymized data, because templates are mathematical representations"
+      },
+      {
+        "letter": "C",
+        "text": "As a special category of data, because biometric data used for unique identification attracts heightened protection"
+      },
+      {
+        "letter": "D",
+        "text": "As outside scope, because the data never leaves the premises"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Biometric data processed to uniquely identify a person is a special category attracting heightened protection and a narrower set of lawful grounds — the BoK names biometrics explicitly. A mathematical template still identifies an individual, so it is neither anonymous nor out of scope, and the employment relationship does not downgrade the classification.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #20"
+  },
+  {
+    "id": "q-1163",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "The BoK lists the contexts in which nondiscrimination law most commonly applies to AI. Which set is correct?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Employment, credit, lending, housing and insurance"
+      },
+      {
+        "letter": "B",
+        "text": "Manufacturing, logistics and agriculture"
+      },
+      {
+        "letter": "C",
+        "text": "Advertising, entertainment and gaming"
+      },
+      {
+        "letter": "D",
+        "text": "Research, education and publishing"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Employment, credit, lending, housing and insurance are the consequential-decision domains where anti-discrimination statutes bite hardest — matching the BoK's own list and the sectors covered by Title VII, ECOA, the Fair Housing Act and state insurance regulation. Note insurance in particular, which candidates often overlook.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #21"
+  },
+  {
+    "id": "q-1164",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Which statement about the core ISO AI standards is incorrect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "ISO/IEC 42001 is certifiable by an independent third party"
+      },
+      {
+        "letter": "B",
+        "text": "ISO/IEC 22989 supplies concepts and terminology"
+      },
+      {
+        "letter": "C",
+        "text": "ISO/IEC 42005 provides guidance on AI system impact assessment"
+      },
+      {
+        "letter": "D",
+        "text": "ISO/IEC 23894 is one of the three the BoK names as core"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The BoK names exactly three core ISO AI standards — 22989, 42001 and 42005 — using 'i.e.' rather than 'e.g.', so the list is closed. ISO/IEC 23894 genuinely addresses AI risk management and is worth knowing, but it is not in that trio. The other three statements are all accurate.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #22"
+  },
+  {
+    "id": "q-1165",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Which of the following are requirements the EU AI Act imposes on high-risk AI systems?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A risk management system maintained across the lifecycle"
+      },
+      {
+        "letter": "B",
+        "text": "Publication of the model's source code and weights"
+      },
+      {
+        "letter": "C",
+        "text": "Human oversight measures appropriate to the system's use"
+      },
+      {
+        "letter": "D",
+        "text": "Automatic logging enabling traceability of the system's functioning"
+      },
+      {
+        "letter": "E",
+        "text": "Mandatory open-sourcing of the training dataset"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "High-risk obligations include a lifecycle risk management system, human oversight, and automatic logging for traceability, alongside data governance, technical documentation, accuracy and cybersecurity, conformity assessment and CE marking. The Act requires documentation and transparency to authorities and deployers — it does not require publishing source code, weights or training data, which would raise IP and privacy problems of their own.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #23"
+  },
+  {
+    "id": "q-1166",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Hard",
+    "question": "Greymantle Logistics trained a model to flag shipments for customs inspection. In development it achieved excellent scores on a held-out test set. In production it flags far too many clean shipments and misses several genuinely non-compliant ones.\n\nInvestigation establishes three things: the labels were sound, the model was trained extensively, and the production feature pipeline computes two inputs slightly differently from the training pipeline. Greymantle also has no process for measuring the model's accuracy against real outcomes once it is live.\n\nThe flagging tool is integrated with a third-party address-validation service and a customer's own inventory system.\n\nThe production pipeline computes two inputs slightly differently from the training pipeline. Which principle has Greymantle breached?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Test data must be kept strictly separate from training data"
+      },
+      {
+        "letter": "B",
+        "text": "Data quality checks are needed only at the point of collection"
+      },
+      {
+        "letter": "C",
+        "text": "Feature engineering should be finalized only after deployment"
+      },
+      {
+        "letter": "D",
+        "text": "Training and serving must use the same features, computed the same way"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Features must be identical and identically computed across training and serving, or the model receives inputs that differ subtly from what it learned on — which degrades accuracy in exactly the puzzling way described. Train–test separation is a real principle but is not what failed here; data quality needs checking across the lifecycle, not only at collection; and finalizing feature engineering after deployment inverts the required order entirely.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #24"
+  },
+  {
+    "id": "q-1167",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "Greymantle Logistics trained a model to flag shipments for customs inspection. In development it achieved excellent scores on a held-out test set. In production it flags far too many clean shipments and misses several genuinely non-compliant ones.\n\nInvestigation establishes three things: the labels were sound, the model was trained extensively, and the production feature pipeline computes two inputs slightly differently from the training pipeline. Greymantle also has no process for measuring the model's accuracy against real outcomes once it is live.\n\nThe flagging tool is integrated with a third-party address-validation service and a customer's own inventory system.\n\nLabels were sound and training was extensive, yet production performance is poor and nobody is measuring it. Which governance stage is missing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Validation testing against a held-out set"
+      },
+      {
+        "letter": "B",
+        "text": "A model inference process — measuring the deployed model's real-world performance in production"
+      },
+      {
+        "letter": "C",
+        "text": "Integration testing of the pipeline components"
+      },
+      {
+        "letter": "D",
+        "text": "A conformity assessment of the deployed system"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A deployed model needs a separate process for testing its performance in the real world — the inference stage. Development metrics describe behaviour on historical data; only production measurement reveals how the model performs on live inputs. Validation happened; integration testing would have caught the pipeline mismatch and is a genuine near-miss here; conformity assessment is a regulatory instrument rather than a performance measure.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #25"
+  },
+  {
+    "id": "q-1168",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Greymantle Logistics trained a model to flag shipments for customs inspection. In development it achieved excellent scores on a held-out test set. In production it flags far too many clean shipments and misses several genuinely non-compliant ones.\n\nInvestigation establishes three things: the labels were sound, the model was trained extensively, and the production feature pipeline computes two inputs slightly differently from the training pipeline. Greymantle also has no process for measuring the model's accuracy against real outcomes once it is live.\n\nThe flagging tool is integrated with a third-party address-validation service and a customer's own inventory system.\n\nGreymantle is writing its AI incident response plan. Why must it identify the third-party services integrated with the flagging tool?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To transfer liability for incidents to those third parties"
+      },
+      {
+        "letter": "B",
+        "text": "Because an incident may affect or involve those services, so the plan must include notifying them"
+      },
+      {
+        "letter": "C",
+        "text": "To satisfy a statutory requirement to publish an integration list"
+      },
+      {
+        "letter": "D",
+        "text": "Because third-party components are exempt from the organization's own incident process"
+      }
+    ],
+    "answer": "B",
+    "explanation": "An incident rarely stops at your own system boundary: integrated third parties may be affected, may be the cause, or may need to act — so the plan must identify them in advance and provide for notifying them. Identifying dependencies transfers no liability, no statute requires publishing the list, and integrated components are firmly inside your incident process, not exempt from it.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #26"
+  },
+  {
+    "id": "q-1169",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "Greymantle Logistics trained a model to flag shipments for customs inspection. In development it achieved excellent scores on a held-out test set. In production it flags far too many clean shipments and misses several genuinely non-compliant ones.\n\nInvestigation establishes three things: the labels were sound, the model was trained extensively, and the production feature pipeline computes two inputs slightly differently from the training pipeline. Greymantle also has no process for measuring the model's accuracy against real outcomes once it is live.\n\nThe flagging tool is integrated with a third-party address-validation service and a customer's own inventory system.\n\nWhich of the following is not a useful activity when assessing whether Greymantle's flagging tool is effective?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Testing the frequency of false positives that flag compliant shipments"
+      },
+      {
+        "letter": "B",
+        "text": "Confirming that each customs office received an equal number of flagged shipments"
+      },
+      {
+        "letter": "C",
+        "text": "Auditing flag rates for disparity across shipment origins"
+      },
+      {
+        "letter": "D",
+        "text": "Collecting structured feedback from inspectors on flags they judged wrong"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Equal distribution of flags across offices is not an effectiveness measure — offices legitimately handle different volumes and risk profiles, so equality would be neither expected nor desirable. False-positive rates, disparity audits and inspector feedback each produce evidence about how well the tool actually works. The negative framing is the trap: three options are sound and one is a plausible-sounding irrelevance.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #27"
+  },
+  {
+    "id": "q-1170",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "Emberholt Water, a regulated utility, is choosing how to deploy an AI assistant that must answer from a policy library updated weekly, cite the source document for every answer, and run inside the utility's own network because the policies are commercially sensitive. Latency must stay low and the system must keep working during network outages at remote pumping stations.\n\nThe vendor's standard agreement is silent on who owns generated output and permits the vendor to use customer inputs to improve its models.\n\nWhich combination of choices fits Emberholt Water's stated constraints?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Public cloud with fine-tuning, refreshed weekly"
+      },
+      {
+        "letter": "B",
+        "text": "On-premise or edge hosting with retrieval augmented generation over the policy library"
+      },
+      {
+        "letter": "C",
+        "text": "Public cloud using the base model unchanged with a long system prompt"
+      },
+      {
+        "letter": "D",
+        "text": "On-premise hosting with an agentic architecture and no retrieval layer"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Weekly-changing content requiring source citation points to RAG, not fine-tuning, because retrieval updates instantly and supports attribution. Commercial sensitivity, low latency and offline operation at remote sites point to on-premise or edge hosting. A long prompt cannot hold a policy library; an agentic architecture addresses multi-step action rather than grounded retrieval.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #28"
+  },
+  {
+    "id": "q-1171",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "Emberholt Water, a regulated utility, is choosing how to deploy an AI assistant that must answer from a policy library updated weekly, cite the source document for every answer, and run inside the utility's own network because the policies are commercially sensitive. Latency must stay low and the system must keep working during network outages at remote pumping stations.\n\nThe vendor's standard agreement is silent on who owns generated output and permits the vendor to use customer inputs to improve its models.\n\nThe vendor agreement is silent on output ownership and permits use of customer inputs for model improvement. Which is the more serious exposure for a regulated utility, and why?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Output ownership, because unowned output cannot be used at all"
+      },
+      {
+        "letter": "B",
+        "text": "Neither, since silence defaults ownership to the customer"
+      },
+      {
+        "letter": "C",
+        "text": "Input use for model improvement, because commercially sensitive policies would flow into a third party's model with no route to recall them"
+      },
+      {
+        "letter": "D",
+        "text": "Neither, since regulated utilities are exempt from vendor IP terms"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Silence on ownership creates a dispute risk worth fixing, but permitting the vendor to train on your inputs is the live leak: sensitive policy content enters a third party's model irreversibly. No default rule vests output ownership in the customer, unowned output is not thereby unusable, and no sector exemption applies.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #29"
+  },
+  {
+    "id": "q-1172",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "During design, a team plots each identified harm by how likely it is and how severe it would be if it occurred, then uses the result to prioritize mitigation. What is this technique called in the BoK?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A probability/severity harms matrix"
+      },
+      {
+        "letter": "B",
+        "text": "A confusion matrix"
+      },
+      {
+        "letter": "C",
+        "text": "A RACI matrix"
+      },
+      {
+        "letter": "D",
+        "text": "A data flow diagram"
+      }
+    ],
+    "answer": "A",
+    "explanation": "A probability/severity harms matrix ranks risks along those two axes so mitigation effort goes where expected harm is greatest. A confusion matrix reports classification performance, a RACI assigns responsibility, and a data flow diagram maps movement of data — none of them prioritizes harms.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #30"
+  },
+  {
+    "id": "q-1173",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "A design review identifies a serious potential harm. Applying a risk mitigation hierarchy, which response should be considered first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Transfer the risk through insurance or contract"
+      },
+      {
+        "letter": "B",
+        "text": "Accept the risk and monitor for occurrence"
+      },
+      {
+        "letter": "C",
+        "text": "Eliminate or avoid the harm through a design change"
+      },
+      {
+        "letter": "D",
+        "text": "Add a user warning about the limitation"
+      }
+    ],
+    "answer": "C",
+    "explanation": "A mitigation hierarchy works from most to least effective: eliminate or avoid by design, then reduce, then control, then transfer, and only then accept residual risk. Warnings and disclaimers sit near the bottom because they shift the burden onto the user rather than removing the hazard.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #31"
+  },
+  {
+    "id": "q-1174",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Before building a tenant-screening model, a team lists everyone materially affected — applicants, landlords, regulators, advocacy groups — and how each is impacted. What is this activity?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Data lineage documentation"
+      },
+      {
+        "letter": "B",
+        "text": "Threat modeling"
+      },
+      {
+        "letter": "C",
+        "text": "Benchmarking"
+      },
+      {
+        "letter": "D",
+        "text": "Stakeholder mapping"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Stakeholder mapping identifies affected parties and their interests so impact assessment and engagement can reach beyond the immediate customer. Lineage traces data origins, benchmarking compares performance against a reference, and threat modeling anticipates adversarial attack paths.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #32"
+  },
+  {
+    "id": "q-1175",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A team evaluates its new model against published reference datasets and against the incumbent system before deciding to proceed. What governance purpose does this serve?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It removes the need for subgroup fairness testing"
+      },
+      {
+        "letter": "B",
+        "text": "It satisfies the conformity assessment requirement"
+      },
+      {
+        "letter": "C",
+        "text": "It guarantees the model will not drift after deployment"
+      },
+      {
+        "letter": "D",
+        "text": "It provides an external reference point for whether performance is adequate for the intended use"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Benchmarking supplies a comparison point so 'good performance' is judged against something rather than asserted. It informs the go/no-go decision but does not substitute for subgroup fairness testing, does not constitute a conformity assessment, and says nothing about future drift.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #33"
+  },
+  {
+    "id": "q-1176",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "What is the primary governance value of a limited pre-deployment pilot for an AI system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It surfaces real-world issues at contained scale before full exposure"
+      },
+      {
+        "letter": "B",
+        "text": "It eliminates the need for documentation"
+      },
+      {
+        "letter": "C",
+        "text": "It transfers liability to pilot participants"
+      },
+      {
+        "letter": "D",
+        "text": "It replaces validation testing"
+      }
+    ],
+    "answer": "A",
+    "explanation": "A pilot exposes the system to real conditions at limited scale, revealing integration, usability and edge-case problems that controlled testing misses — while keeping the blast radius small. It supplements rather than replaces validation, generates more documentation rather than less, and transfers no liability.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #34"
+  },
+  {
+    "id": "q-1177",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Which is least likely to belong in an AI impact assessment?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The populations affected and the harms identified for each"
+      },
+      {
+        "letter": "B",
+        "text": "Stakeholder input and the concerns raised"
+      },
+      {
+        "letter": "C",
+        "text": "The projected revenue contribution of the system"
+      },
+      {
+        "letter": "D",
+        "text": "Residual risk and who accepted it"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Projected revenue belongs in the business case, not the impact assessment — which exists to surface effects on people and society. Affected populations and harms, stakeholder concerns, and documented residual risk with a named acceptor are the substance of the assessment.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #35"
+  },
+  {
+    "id": "q-1178",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "The BoK requires teams to assess data along several dimensions before training. Which set does it name?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Volume, velocity and variety"
+      },
+      {
+        "letter": "B",
+        "text": "Encryption, retention and access"
+      },
+      {
+        "letter": "C",
+        "text": "Quality, quantity, integrity and fit-for-purpose"
+      },
+      {
+        "letter": "D",
+        "text": "Cost, availability and format"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The BoK names quality, quantity, integrity and fit-for-purpose, alongside documenting the lawful right to collect and use the data. Fit-for-purpose is the one most often skipped: data can be clean, plentiful and intact yet still wrong for the specific task.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #36"
+  },
+  {
+    "id": "q-1179",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Before training begins, what must a team establish and document about its training data under the BoK's data governance requirement?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "That the data is stored in an encrypted format"
+      },
+      {
+        "letter": "B",
+        "text": "That the organization holds lawful rights to collect and use the data for this purpose"
+      },
+      {
+        "letter": "C",
+        "text": "That the dataset exceeds a minimum size threshold"
+      },
+      {
+        "letter": "D",
+        "text": "That the data was purchased rather than scraped"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Establishing and documenting lawful rights to collect and use the data underpins both privacy compliance and IP defensibility, and is the foundation the rest of data governance sits on. Encryption is a security control, size alone says nothing about legality, and purchased data can carry restrictive licence terms just as scraped data can.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #38"
+  },
+  {
+    "id": "q-1180",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "A team runs tests confirming that individual components behave correctly in isolation, then that they work correctly together. Which two testing types are these?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bias and interpretability testing"
+      },
+      {
+        "letter": "B",
+        "text": "Unit and integration testing"
+      },
+      {
+        "letter": "C",
+        "text": "Performance and security testing"
+      },
+      {
+        "letter": "D",
+        "text": "Validation and conformity testing"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Unit testing checks components in isolation and integration testing checks them in combination — both appear in the BoK's list alongside validation, performance, security, bias and interpretability testing. Each addresses a different failure mode, which is why the list is not interchangeable.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #39"
+  },
+  {
+    "id": "q-1181",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Why does the BoK list interpretability as a distinct testing category rather than folding it into performance testing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Interpretability is only relevant to open-source models"
+      },
+      {
+        "letter": "B",
+        "text": "Whether outputs can be understood and accounted for is separate from whether they are accurate"
+      },
+      {
+        "letter": "C",
+        "text": "Interpretability testing replaces the need for documentation"
+      },
+      {
+        "letter": "D",
+        "text": "It is required only where personal data is processed"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A model can be highly accurate and entirely inscrutable, so understandability is an independent property from correctness — and it is the one that supports contestability, audit and bias diagnosis. It applies regardless of licensing model or whether personal data is involved.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #40"
+  },
+  {
+    "id": "q-1182",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Investigating why an AI system failed unexpectedly on inputs slightly different from its training data, a team concludes the model cannot generalize beyond conditions closely resembling its training set. Which BoK-named incident cause is this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Model drift"
+      },
+      {
+        "letter": "B",
+        "text": "Insufficient documentation"
+      },
+      {
+        "letter": "C",
+        "text": "Brittleness"
+      },
+      {
+        "letter": "D",
+        "text": "Data leakage"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Brittleness is a system's failure to generalize beyond conditions closely resembling its training data — named in the BoK alongside lack of robustness, poor data quality, insufficient testing and drift as reasons incidents arise. Drift develops over time, whereas brittleness is present from the start and simply waits for an unusual input.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #41"
+  },
+  {
+    "id": "q-1183",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Which of the following should be documented from the training and testing process?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Validation results demonstrating the model meets its stated requirements"
+      },
+      {
+        "letter": "B",
+        "text": "The individual salaries of the data science team"
+      },
+      {
+        "letter": "C",
+        "text": "Evidence supporting compliance obligations"
+      },
+      {
+        "letter": "D",
+        "text": "Issues and risks identified during training and testing, with their resolution"
+      },
+      {
+        "letter": "E",
+        "text": "The vendor's internal profit margin on the contract"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "Documentation should capture validation results, compliance evidence, and the issues and risks encountered with how they were resolved — this is what makes the process auditable and reproducible later. Team compensation and vendor margins are commercially sensitive and governance-irrelevant.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #42"
+  },
+  {
+    "id": "q-1184",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "An organization deploys an AI agent that can plan multi-step tasks, call external tools, and execute actions such as sending emails and updating records without step-by-step approval. What distinguishes the governance challenge here from a conventional predictive model?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Agentic systems cannot be monitored once deployed"
+      },
+      {
+        "letter": "B",
+        "text": "Agentic systems are exempt from impact assessment requirements"
+      },
+      {
+        "letter": "C",
+        "text": "Agentic systems do not process personal data"
+      },
+      {
+        "letter": "D",
+        "text": "The system takes consequential actions in the world, so oversight must cover its action space and tool permissions, not just output accuracy"
+      }
+    ],
+    "answer": "D",
+    "explanation": "An agent's risk lives in what it can do, not merely what it predicts — so governance must scope its permitted actions, tool access, spending and escalation limits, and provide a reliable interruption path. Agents remain monitorable, still require impact assessment, and routinely process personal data; the BoK now names agentic AI explicitly as an area candidates should understand.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #43"
+  },
+  {
+    "id": "q-1185",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A team is choosing between using a model as-is, fine-tuning it, retrieval augmented generation, and an agentic architecture. Which requirement most strongly favours the agentic option?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The system must complete multi-step workflows by invoking other systems to reach a goal"
+      },
+      {
+        "letter": "B",
+        "text": "The system must answer from a document library that changes weekly"
+      },
+      {
+        "letter": "C",
+        "text": "The system must adopt a specialized domain writing style"
+      },
+      {
+        "letter": "D",
+        "text": "The system must run entirely offline on a low-power device"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Agentic architectures suit goal-directed work requiring planning across multiple steps and invoking other systems. A frequently-changing document library points to RAG, a specialized style points to fine-tuning, and offline low-power operation is a deployment-environment constraint that any of these approaches would have to accommodate.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #44"
+  },
+  {
+    "id": "q-1186",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A team needs an AI system to run on constrained hardware with low latency and predictable cost, handling a narrow well-defined task. Which model choice best fits?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The largest available general-purpose model"
+      },
+      {
+        "letter": "B",
+        "text": "A smaller model suited to the specific task"
+      },
+      {
+        "letter": "C",
+        "text": "A multimodal model regardless of task requirements"
+      },
+      {
+        "letter": "D",
+        "text": "A model chosen solely on public benchmark rankings"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Smaller task-specific models often match or beat large general models on narrow tasks while costing far less to run, responding faster, and fitting constrained hardware — the small-versus-large tradeoff the BoK asks candidates to understand. Benchmark leadership on general tasks does not predict fit for a narrow one.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #45"
+  },
+  {
+    "id": "q-1187",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "An insurance claims process needs a system that reads submitted photographs alongside written descriptions to assess damage. Which model capability is required?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A multimodal model handling both images and text"
+      },
+      {
+        "letter": "B",
+        "text": "A language-only model"
+      },
+      {
+        "letter": "C",
+        "text": "A classic rules-based model"
+      },
+      {
+        "letter": "D",
+        "text": "A small language model"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Multimodal models process more than one input type — here images and text together — which a language-only model cannot do. The BoK asks candidates to distinguish language versus multimodal capability precisely because use-case fit depends on it.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #46"
+  },
+  {
+    "id": "q-1188",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "An organization is defining the maintenance schedule required alongside continuous monitoring of a deployed model. Which of the following belong in that schedule?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A retraining cadence informed by the model's volatility, risk exposure and observed drift"
+      },
+      {
+        "letter": "B",
+        "text": "Scheduled re-evaluation of the model against fresh, labelled data"
+      },
+      {
+        "letter": "C",
+        "text": "Defined triggers for out-of-cycle updates when monitoring detects degradation"
+      },
+      {
+        "letter": "D",
+        "text": "A one-time validation run completed before the original release"
+      },
+      {
+        "letter": "E",
+        "text": "The vendor's marketing calendar for feature announcements"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "The BoK pairs continuous monitoring with a regular schedule for maintenance, updates and retraining. A governed schedule sets a retraining cadence tied to volatility, risk and observed drift, re-evaluates the model against fresh labelled data on a defined cycle, and specifies triggers for acting outside the cycle when monitoring finds degradation. A pre-release validation run is a build-phase artifact, not a recurring commitment, and a vendor's marketing calendar has no bearing on maintenance.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #47"
+  },
+  {
+    "id": "q-1189",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Which of the following does not strengthen meaningful human oversight?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Giving the reviewer authority to halt the system"
+      },
+      {
+        "letter": "B",
+        "text": "Allocating reviewers enough time to exercise judgement"
+      },
+      {
+        "letter": "C",
+        "text": "Increasing the volume of decisions each reviewer signs off"
+      },
+      {
+        "letter": "D",
+        "text": "Providing an accessible route for affected people to seek human review"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Increasing sign-off volume weakens oversight — it pushes reviewers toward rubber-stamping and automation bias, which is the failure mode oversight requirements exist to prevent. Authority to halt, adequate time, and an accessible recourse route each give oversight real content.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #48"
+  },
+  {
+    "id": "q-1190",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Hollowcrest Insurance uses a model to price motor policies. Postcode is among the strongest predictors and correlates closely with ethnicity in several regions. The pricing team argues that predictive power is sufficient justification.\n\nHollowcrest's board separately asks how the company would demonstrate to a regulator that it exercised reasonable care, if the model were challenged in two years' time.\n\nHollowcrest argues predictive power justifies using postcode. Which is not a valid response to that argument?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Regulators require variables to be justified by actuarial relevance, not correlation alone"
+      },
+      {
+        "letter": "B",
+        "text": "Hollowcrest must be able to show the model does not produce unfairly discriminatory outcomes"
+      },
+      {
+        "letter": "C",
+        "text": "A less discriminatory alternative must be sought and the search documented"
+      },
+      {
+        "letter": "D",
+        "text": "Correlation is acceptable provided the variable is disclosed to policyholders"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Disclosure does not cure a proxy problem — telling someone you are using a variable that produces discriminatory pricing does not make the pricing lawful. Insurance regulators require actuarial relevance rather than bare correlation, require insurers to demonstrate outcomes are not unfairly discriminatory, and expect a documented search for less discriminatory alternatives.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #49"
+  },
+  {
+    "id": "q-1191",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Hollowcrest Insurance uses a model to price motor policies. Postcode is among the strongest predictors and correlates closely with ethnicity in several regions. The pricing team argues that predictive power is sufficient justification.\n\nHollowcrest's board separately asks how the company would demonstrate to a regulator that it exercised reasonable care, if the model were challenged in two years' time.\n\nTwo years on, what would best demonstrate that Hollowcrest exercised reasonable care at design time?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The model's accuracy metrics from the most recent quarter"
+      },
+      {
+        "letter": "B",
+        "text": "Documentation of the decisions taken, the alternatives weighed, the impact testing performed and the residual risk formally accepted"
+      },
+      {
+        "letter": "C",
+        "text": "A statement that the model was built by qualified data scientists"
+      },
+      {
+        "letter": "D",
+        "text": "Evidence that no complaint was received in the intervening period"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Reasonable care is evidenced by the contemporaneous record of what was decided, why, what alternatives were weighed, what testing was done and what risk was knowingly accepted — which is exactly why design-process documentation is required separately from documenting the finished model. Current metrics describe today, not the decision; practitioner credentials are not a process; and absence of complaints is not evidence of diligence.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #50"
+  },
+  {
+    "id": "q-1192",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A bank needs to assign each transaction a fraud probability from structured historical data, with stable and auditable behaviour. Which model type best fits?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A generative language model"
+      },
+      {
+        "letter": "B",
+        "text": "An agentic architecture"
+      },
+      {
+        "letter": "C",
+        "text": "A retrieval augmented generation pipeline"
+      },
+      {
+        "letter": "D",
+        "text": "A classic predictive model trained on labelled transaction data"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Classic predictive models excel at structured-data classification with stable, auditable, testable behaviour — exactly what fraud scoring needs. Generative models produce content and introduce variability and hallucination risk; RAG and agentic patterns solve retrieval and multi-step action problems this task does not have.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #51"
+  },
+  {
+    "id": "q-1193",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "The BoK lists workforce readiness among the factors to evaluate when deciding whether to deploy an AI system. What does this most directly assess?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Whether staff have the skills, training and capacity to operate, oversee and act on the system appropriately"
+      },
+      {
+        "letter": "B",
+        "text": "Whether the workforce will be reduced by the deployment"
+      },
+      {
+        "letter": "C",
+        "text": "Whether employees have consented to the deployment"
+      },
+      {
+        "letter": "D",
+        "text": "Whether the vendor provides a support contract"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Workforce readiness asks whether the people around the system can actually use and oversee it — skills, training, capacity and process fit. A system deployed into an unprepared workforce fails through misuse or hollow oversight regardless of technical quality. Headcount effects, consent and vendor support are separate considerations.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #52"
+  },
+  {
+    "id": "q-1194",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "A regulator in one market imposes requirements the global configuration of a deployed AI system cannot meet. The BoK contemplates two controls in this situation: deactivation and what else?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Escalation to the vendor"
+      },
+      {
+        "letter": "B",
+        "text": "Localizing the system so its behaviour or availability is adjusted for that jurisdiction"
+      },
+      {
+        "letter": "C",
+        "text": "Publishing a transparency report"
+      },
+      {
+        "letter": "D",
+        "text": "Retraining the model on global data"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The BoK pairs deactivation with localization — adjusting a system's configuration, features or availability to meet local regulatory or performance requirements rather than switching it off everywhere. Escalation and reporting are process steps, and retraining on global data would not resolve a jurisdiction-specific obligation.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #53"
+  },
+  {
+    "id": "q-1195",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of an external communication plan for a deployed AI system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To market the system's capabilities to prospective customers"
+      },
+      {
+        "letter": "B",
+        "text": "To satisfy internal engineering documentation requirements"
+      },
+      {
+        "letter": "C",
+        "text": "To define in advance how and what the organization will communicate to affected external parties about the system, including incidents and changes"
+      },
+      {
+        "letter": "D",
+        "text": "To replace the incident response process"
+      }
+    ],
+    "answer": "C",
+    "explanation": "An external communication plan establishes beforehand who gets told what, through which channel and on what trigger — so that under incident pressure the organization is executing a plan rather than improvising. It supports incident response rather than replacing it, and is distinct from marketing.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #54"
+  },
+  {
+    "id": "q-1196",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "The BoK requires organizations to forecast and reduce risks of secondary or unintended uses and downstream harms. Which activity best delivers this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Measuring model accuracy more frequently"
+      },
+      {
+        "letter": "B",
+        "text": "Restricting documentation to internal staff only"
+      },
+      {
+        "letter": "C",
+        "text": "Increasing the size of the training dataset"
+      },
+      {
+        "letter": "D",
+        "text": "Anticipating how the system could be repurposed or misused, and building controls and acceptable-use terms against those scenarios"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Forecasting downstream harm means thinking ahead about repurposing and misuse, then constraining it through access controls, acceptable-use terms, monitoring and technical limits. Accuracy measurement tracks intended performance, more data does not address misuse, and withholding documentation makes downstream users less able to operate the system safely.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #55"
+  },
+  {
+    "id": "q-1197",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "When evaluating a vendor or licensing agreement for an AI system, which term most directly affects the organization's own compliance exposure?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The invoicing schedule and payment currency"
+      },
+      {
+        "letter": "B",
+        "text": "The vendor's marketing usage of the customer's logo"
+      },
+      {
+        "letter": "C",
+        "text": "Permitted use restrictions and how the vendor may use customer data, including for training"
+      },
+      {
+        "letter": "D",
+        "text": "The vendor's office locations"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Permitted-use restrictions and the vendor's data rights determine whether your intended deployment is even licensed, and whether your data flows into someone else's model — both of which land directly on your compliance exposure. Invoicing, logo usage and office locations are commercial or reputational terms without that effect.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #56"
+  },
+  {
+    "id": "q-1198",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "The BoK requires organizations to apply policies and ethical considerations when deploying an AI system, naming four areas specifically. Alongside data governance, risk management and issue management, which is the fourth?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Marketing approval"
+      },
+      {
+        "letter": "B",
+        "text": "Budget forecasting"
+      },
+      {
+        "letter": "C",
+        "text": "Procurement scheduling"
+      },
+      {
+        "letter": "D",
+        "text": "User training"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The BoK names data governance, risk management, issue management and user training as the areas deployment policies must cover. User training is the one most often skipped: a technically sound system deployed to people who do not understand its limitations, confidence levels or escalation paths fails in practice. It pairs with workforce readiness on the pre-deployment side.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #57"
+  },
+  {
+    "id": "q-1199",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A team proposes collecting every available customer attribute because it 'might improve the model later.' Which privacy requirement does this most directly conflict with, and what discipline addresses it?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Storage limitation, addressed through archival tiering"
+      },
+      {
+        "letter": "B",
+        "text": "Data minimization, addressed by building privacy into the system's design and defaults from the outset"
+      },
+      {
+        "letter": "C",
+        "text": "Accuracy, addressed through data validation routines"
+      },
+      {
+        "letter": "D",
+        "text": "Purpose limitation, addressed through consent management"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Speculative collection conflicts with data minimization — collect only what is necessary for the specified purpose — and the corresponding discipline is privacy by design, building privacy into architecture and default settings rather than bolting it on afterwards. Purpose limitation governs reuse rather than volume, storage limitation governs how long data is kept, and accuracy governs correctness.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #58"
+  },
+  {
+    "id": "q-1200",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Under the EU AI Act's tiered penalty structure, which category of violation carries the highest maximum fine?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Breaching high-risk system obligations"
+      },
+      {
+        "letter": "B",
+        "text": "Failing to register a system in the EU database"
+      },
+      {
+        "letter": "C",
+        "text": "Engaging in a prohibited AI practice"
+      },
+      {
+        "letter": "D",
+        "text": "Supplying incorrect or misleading information to authorities"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Prohibited practices sit at the top: up to EUR 35 million or 7% of total worldwide annual turnover, whichever is higher. Most other obligation breaches, including high-risk duties and registration failures, fall in the middle tier at up to EUR 15 million or 3%. Supplying incorrect or misleading information to authorities is the lowest tier, up to EUR 7.5 million or 1%.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #59"
+  },
+  {
+    "id": "q-1201",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Why does the BoK require the designing and building process itself to be documented, separately from documenting the finished system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To satisfy marketing requirements ahead of launch"
+      },
+      {
+        "letter": "B",
+        "text": "To reduce the storage cost of retained model artifacts"
+      },
+      {
+        "letter": "C",
+        "text": "To replace the need for a separate impact assessment"
+      },
+      {
+        "letter": "D",
+        "text": "To establish compliance and manage risks — recording what was decided, why, and which alternatives were weighed"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The BoK ties design documentation to establishing compliance and managing risks. A model card describes what was built; process documentation captures the decisions, tradeoffs and rejected alternatives behind it, which is what an auditor or regulator needs to judge whether those choices were reasonable at the time. It supplements an impact assessment rather than replacing it.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #60"
+  },
+  {
+    "id": "q-1202",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "Which factor is least relevant to deciding how heavy an organization's AI governance should be?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The industry and regulatory environment it operates in"
+      },
+      {
+        "letter": "B",
+        "text": "The organization's stated risk tolerance"
+      },
+      {
+        "letter": "C",
+        "text": "The number of programming languages in its technology stack"
+      },
+      {
+        "letter": "D",
+        "text": "The maturity of its existing governance functions"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The technology stack is an implementation detail with no bearing on how much governance is warranted. Industry and regulatory exposure, risk tolerance and existing governance maturity are each named among the factors that should differentiate the approach — governance must be proportionate along those dimensions.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #61"
+  },
+  {
+    "id": "q-1203",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Beyond conducting continuous monitoring of a released AI system, what does the BoK additionally require an organization to establish?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A regular schedule for maintenance, updates and retraining"
+      },
+      {
+        "letter": "B",
+        "text": "A fixed annual price for vendor support"
+      },
+      {
+        "letter": "C",
+        "text": "A public leaderboard of model performance"
+      },
+      {
+        "letter": "D",
+        "text": "External recertification every six months"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The BoK pairs continuous monitoring with a regular schedule for maintenance, updates and retraining. Monitoring detects that something has changed; the schedule ensures something is actually done about it on a predictable cadence rather than only when a crisis forces attention. The other options are commercial or reputational arrangements with no governance basis.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #62"
+  },
+  {
+    "id": "q-1204",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "An AI system produces an incorrect output causing minor customer inconvenience, resolved the same day with no complaint filed. Should it be recorded?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "No — only incidents causing material harm warrant recording"
+      },
+      {
+        "letter": "B",
+        "text": "No — documenting minor issues creates unnecessary legal exposure"
+      },
+      {
+        "letter": "C",
+        "text": "Yes — incidents, issues and risks should be managed and documented so patterns become visible over time"
+      },
+      {
+        "letter": "D",
+        "text": "Only if the customer escalates it formally"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The BoK requires incidents, issues and risks to be managed and documented, not only serious ones. Minor recurring issues are the earliest visible signal of systemic problems such as drift or brittleness, and only a record lets a pattern emerge. Filtering by severity or by whether someone complained destroys precisely that signal.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #63"
+  },
+  {
+    "id": "q-1205",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "An organization is adopting a third-party AI system rather than building one, and the vendor supplies its own impact assessment. What does the BoK require the adopting organization to do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Accept the vendor's assessment as sufficient, since the vendor built the system"
+      },
+      {
+        "letter": "B",
+        "text": "Perform or review an impact assessment covering its own use case and deployment context"
+      },
+      {
+        "letter": "C",
+        "text": "Skip assessment, since these obligations rest with the provider"
+      },
+      {
+        "letter": "D",
+        "text": "Defer assessment until after deployment, when real impact can be measured"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The BoK requires performing or reviewing an impact assessment on the selected AI system. A vendor's assessment addresses the system in general; it cannot anticipate your affected population, your decision, or your context — which is where impact actually arises. Deferring until after launch means assessing harm that has already happened.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #64"
+  },
+  {
+    "id": "q-1206",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "A deployed AI system is under continuous monitoring. What additional category of activity does the BoK require on a periodic basis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Rewriting the system's technical documentation from scratch"
+      },
+      {
+        "letter": "B",
+        "text": "Renegotiating the vendor contract"
+      },
+      {
+        "letter": "C",
+        "text": "Migrating the system to an alternative cloud provider"
+      },
+      {
+        "letter": "D",
+        "text": "Structured assessments such as audits, red teaming, threat modeling and security testing"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Continuous monitoring watches metrics you already thought to track; periodic audits, red teaming, threat modeling and security testing probe for what monitoring was never designed to catch — new attack paths, emergent behaviour, blind spots. The BoK requires both, and requires them on the deployment side as well as during development.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #65"
+  },
+  {
+    "id": "q-1207",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Which of the following should be tracked when monitoring an AI model deployed into production?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Data drift"
+      },
+      {
+        "letter": "B",
+        "text": "Data quality"
+      },
+      {
+        "letter": "C",
+        "text": "Historical training data volume"
+      },
+      {
+        "letter": "D",
+        "text": "Internal training process documentation"
+      },
+      {
+        "letter": "E",
+        "text": "Latency and computational metrics"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "E"
+    ],
+    "explanation": "Production monitoring tracks data drift, data quality, and latency and computational metrics — signals that change after deployment and indicate degradation. Historical training data volume and internal training documentation are fixed artifacts from the build phase: important records, but they do not vary in production and so reveal nothing about live health.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock C #66"
+  },
+  {
+    "id": "q-1208",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A governance team is classifying its AI inventory by capability level. A chess engine that plays at expert level and a large language model both fall into the same capability class. Which is it?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Narrow AI"
+      },
+      {
+        "letter": "B",
+        "text": "Artificial superintelligence"
+      },
+      {
+        "letter": "C",
+        "text": "Artificial general intelligence"
+      },
+      {
+        "letter": "D",
+        "text": "Reactive intelligence"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Both are Narrow AI — designed and trained for a specific or narrow set of tasks, with no general intelligence or consciousness. LLMs belong here alongside chess engines such as Deep Blue, which surprises candidates who assume breadth of output means general intelligence. General AI would apply intelligence across arbitrary domains; superintelligence exceeds human capability broadly; 'reactive' describes functionality, not capability level.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #1"
+  },
+  {
+    "id": "q-1209",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A system responds to inputs using pre-programmed rules, retains nothing between interactions, and cannot improve from experience. Under the functionality classification, what is it?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A reactive machine"
+      },
+      {
+        "letter": "B",
+        "text": "A limited memory system"
+      },
+      {
+        "letter": "C",
+        "text": "A theory of mind system"
+      },
+      {
+        "letter": "D",
+        "text": "A self-aware system"
+      }
+    ],
+    "answer": "A",
+    "explanation": "A reactive machine responds to stimuli without retaining memory or learning from past interactions — Deep Blue is the classic example. Limited memory systems retain information for short periods and learn from historical data, which is where most production ML sits. Theory of mind and self-aware systems remain theoretical. Note that capability (narrow/general) and functionality (reactive/limited memory) are two different classification axes.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #2"
+  },
+  {
+    "id": "q-1210",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "An AI system performs correctly for every individual user, and the deploying organization faces no legal or financial exposure. Yet governance still flags a harm. Which category is most likely implicated?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Harms to individuals"
+      },
+      {
+        "letter": "B",
+        "text": "Harms to organizations"
+      },
+      {
+        "letter": "C",
+        "text": "Harms to groups"
+      },
+      {
+        "letter": "D",
+        "text": "Harms to society"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Societal harms — erosion of democratic processes, information ecosystems, labour markets, or public trust — can occur even where no individual is measurably injured and the deployer bears no direct cost. The BoK separates harms to individuals, groups, organizations and society precisely because governance that only asks 'who got hurt and can they sue' misses this level entirely.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #3"
+  },
+  {
+    "id": "q-1211",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "An organization creates a Chief AI Ethics Officer role. What is the strongest governance justification for a dedicated position rather than folding the duties into an existing legal or privacy role?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It satisfies a specific requirement of the EU AI Act"
+      },
+      {
+        "letter": "B",
+        "text": "It replaces the need for a cross-functional governance committee"
+      },
+      {
+        "letter": "C",
+        "text": "It removes ethical responsibility from engineering teams"
+      },
+      {
+        "letter": "D",
+        "text": "It provides a senior, identifiable owner for ethical oversight with standing to challenge deployment decisions"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The value is a senior owner with the standing to actually stop or shape a deployment — ethical concerns raised without organizational authority get overridden by delivery pressure. No statute requires the role. It does not relieve engineering of responsibility, and it complements rather than replaces cross-functional structures.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #4"
+  },
+  {
+    "id": "q-1212",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "Beyond internal cross-functional working, why is external and cross-organizational collaboration valuable in AI governance?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Shared learning on emerging risks, standards and practice improves risk detection no single organization achieves alone"
+      },
+      {
+        "letter": "B",
+        "text": "It is required before any AI system may be deployed"
+      },
+      {
+        "letter": "C",
+        "text": "It transfers liability to industry peers"
+      },
+      {
+        "letter": "D",
+        "text": "It reduces the need for internal governance structures"
+      }
+    ],
+    "answer": "A",
+    "explanation": "AI risks emerge faster than any single organization encounters them. Industry groups, standards bodies and peer exchange surface failure modes, mitigations and evolving expectations earlier than internal experience alone. Collaboration transfers no liability, is not a deployment precondition, and supplements rather than substitutes for internal governance.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #5"
+  },
+  {
+    "id": "q-1213",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "An AI training programme reports 100% completion. Which measure would better indicate the programme is actually working?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Behavioural indicators such as escalations raised, policy questions asked, and issues caught before release"
+      },
+      {
+        "letter": "B",
+        "text": "Total hours of content delivered"
+      },
+      {
+        "letter": "C",
+        "text": "The number of training modules published"
+      },
+      {
+        "letter": "D",
+        "text": "Completion speed per employee"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Completion measures attendance, not capability. Behavioural signals — people recognising and escalating issues, asking the right questions, catching problems early — show the training changed what staff actually do. Volume and speed metrics measure delivery effort, and can even move in the wrong direction if people rush through content.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #6"
+  },
+  {
+    "id": "q-1214",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "An organization with a mature IT governance function debates whether AI governance should be a separate structure or integrated into the existing one. Which position is soundest?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "AI governance must always be a fully independent function reporting to the board"
+      },
+      {
+        "letter": "B",
+        "text": "Existing IT governance should be replaced entirely by AI-specific structures"
+      },
+      {
+        "letter": "C",
+        "text": "AI governance is unnecessary where IT governance is mature"
+      },
+      {
+        "letter": "D",
+        "text": "Either can work; the choice depends on organizational context, and AI governance layers onto rather than duplicates existing IT governance"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Where IT governance already exists, AI governance works as an overlay addressing what IT governance does not — fairness, explainability, drift, model-specific risk. Whether that overlay sits inside the existing structure or beside it is a contextual choice. Mandating independence or replacement ignores context, and maturity in IT governance does not cover AI-specific risk.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #7"
+  },
+  {
+    "id": "q-1215",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A privacy policy states that anonymized data falls outside its scope. Why is this a gap that needs revising for AI?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Anonymized data cannot be used to train models"
+      },
+      {
+        "letter": "B",
+        "text": "Models can re-identify individuals or reconstruct attributes from data previously considered anonymous, so the standard needs strengthening"
+      },
+      {
+        "letter": "C",
+        "text": "Anonymization is prohibited under GDPR"
+      },
+      {
+        "letter": "D",
+        "text": "Anonymized data must always be deleted within 30 days"
+      }
+    ],
+    "answer": "B",
+    "explanation": "AI's inferential power weakens historic anonymization: models can re-identify individuals or reconstruct sensitive attributes from data once considered safely anonymous. Policies written before AI therefore need a strengthened standard and periodic re-testing. Anonymized data can lawfully be used and is not prohibited; the issue is whether it is genuinely anonymous.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #8"
+  },
+  {
+    "id": "q-1216",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A procurement policy screens for AI only where a vendor markets its product as an AI solution. What is the flaw?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Many vendors embed AI without disclosing it, so screening on marketing claims misses much of the exposure"
+      },
+      {
+        "letter": "B",
+        "text": "Procurement should not assess AI at all"
+      },
+      {
+        "letter": "C",
+        "text": "Vendors marketing AI are the highest risk and should be the sole focus"
+      },
+      {
+        "letter": "D",
+        "text": "AI screening is only required for vendors processing personal data"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Not all third parties disclose their AI capabilities — AI is increasingly embedded inside ordinary software and services without being marketed as such. Screening on the vendor's own label systematically under-detects. Effective diligence asks direct, specific questions about automated decision-making and model use regardless of how the product is positioned.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #9"
+  },
+  {
+    "id": "q-1217",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "Which of the following accurately describe how AI governance responsibilities are distributed across stakeholders?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Executive leadership sets risk tolerance and allocates resources for governance"
+      },
+      {
+        "letter": "B",
+        "text": "Legal and compliance interpret regulatory obligations and assess exposure"
+      },
+      {
+        "letter": "C",
+        "text": "A single governance owner should hold all responsibilities to avoid confusion"
+      },
+      {
+        "letter": "D",
+        "text": "Data science and engineering implement technical controls and surface model limitations"
+      },
+      {
+        "letter": "E",
+        "text": "End users bear no governance responsibility once training is complete"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Governance depends on distributed but defined roles: leadership setting tolerance and funding, legal interpreting obligations, and technical teams implementing controls and reporting limitations honestly. Concentrating everything in one owner creates a bottleneck and a single point of failure, and end users retain ongoing duties — following acceptable-use rules, escalating anomalies, and applying judgment to outputs.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #10"
+  },
+  {
+    "id": "q-1218",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "Calder Municipal Services deploys an AI tool that cross-references benefit applications against public records to detect fraud. Advocacy groups report that applicants from two specific ethnic communities are being flagged at markedly higher rates and are having payments suspended pending review.\n\nSeparately, a national newspaper has used a generative tool to produce a large volume of misleading articles about the benefits system, which spread widely online and have damaged public confidence in the programme generally.\n\nApplicants from two specific ethnic communities are flagged at markedly higher rates and have payments suspended. Which harm category does this best illustrate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Societal harm"
+      },
+      {
+        "letter": "B",
+        "text": "Group harm"
+      },
+      {
+        "letter": "C",
+        "text": "Organizational harm"
+      },
+      {
+        "letter": "D",
+        "text": "Reputational harm"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Harm targeted at or concentrated on a specific group or demographic is group harm — mass surveillance and facial recognition are the classic examples. Societal harm is diffuse and untargeted, affecting the social fabric generally. Organizational and reputational harms accrue to institutions. The distinction is targeting: group harm has an identifiable class of victims.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #11"
+  },
+  {
+    "id": "q-1219",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "Calder Municipal Services deploys an AI tool that cross-references benefit applications against public records to detect fraud. Advocacy groups report that applicants from two specific ethnic communities are being flagged at markedly higher rates and are having payments suspended pending review.\n\nSeparately, a national newspaper has used a generative tool to produce a large volume of misleading articles about the benefits system, which spread widely online and have damaged public confidence in the programme generally.\n\nA large volume of AI-generated misleading articles has spread online and damaged public confidence in the benefits system. Which harm category is this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Individual harm to each reader"
+      },
+      {
+        "letter": "B",
+        "text": "Group harm to benefit claimants"
+      },
+      {
+        "letter": "C",
+        "text": "Societal harm through the spread of disinformation"
+      },
+      {
+        "letter": "D",
+        "text": "Organizational harm to the newspaper"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The spread of disinformation is a paradigm societal harm: it makes it hard for anyone to verify what is true, corroding trust in institutions and the decision-making of policymakers. It is not aimed at a particular demographic, which is what separates it from group harm, and its damage is to the shared information environment rather than to identifiable individuals or a single organization.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #12"
+  },
+  {
+    "id": "q-1220",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A compliance lead asserts that because the US has no comprehensive federal AI statute, federal agencies have no authority over the company's AI hiring tool. Why is this wrong?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Federal authority over AI exists only for government procurement of AI systems"
+      },
+      {
+        "letter": "B",
+        "text": "Agencies apply existing statutory authority to AI — issuing guidance and standards, funding research, and enforcing current law such as the FTC Act and civil rights statutes"
+      },
+      {
+        "letter": "C",
+        "text": "Only state attorneys general may act against private-sector AI use"
+      },
+      {
+        "letter": "D",
+        "text": "Agencies may act only after an individual proves monetary loss"
+      }
+    ],
+    "answer": "B",
+    "explanation": "No comprehensive statute is required for agencies to act: existing authority already reaches AI. The EEOC has pursued AI-related employment matters under long-standing civil rights law, and the FTC applies its unfair-and-deceptive-practices authority to AI claims and conduct — alongside agency guidance, standards work and research funding. Federal reach is not limited to procurement, state enforcers are additional rather than exclusive, and proven monetary loss is not a precondition.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #13"
+  },
+  {
+    "id": "q-1221",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A consent interface uses AI to dynamically adjust wording and button prominence until users are most likely to accept data sharing. What is the primary legal characterization?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A dark pattern that undermines the validity of consent"
+      },
+      {
+        "letter": "B",
+        "text": "Legitimate conversion-rate optimization"
+      },
+      {
+        "letter": "C",
+        "text": "Permissible provided the privacy notice is accurate"
+      },
+      {
+        "letter": "D",
+        "text": "A security control against automated form-filling"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Optimizing an interface to steer people toward a choice is a dark pattern, and consent obtained that way is not freely given — so it fails as a lawful basis. It also draws consumer-protection scrutiny as an unfair or deceptive practice. An accurate notice elsewhere does not cure a manipulated consent flow, and this is not a security measure.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #14"
+  },
+  {
+    "id": "q-1222",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A team proposes generating synthetic records so that its training set contains no real personal data, arguing this satisfies data minimization outright. What is the correct qualification?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Synthetic data always falls outside data protection law"
+      },
+      {
+        "letter": "B",
+        "text": "Synthetic data cannot be used for model training"
+      },
+      {
+        "letter": "C",
+        "text": "Synthetic data removes the need for any impact assessment"
+      },
+      {
+        "letter": "D",
+        "text": "Synthetic data can support minimization but may still carry re-identification risk if it too closely reflects the source data"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Synthetic generation supports minimization but is not automatically a get-out: if the generator overfits, synthetic records can leak or permit re-identification of real individuals in the source data. It must be tested for that, not assumed safe. Assessments remain necessary, and synthetic data is widely used in training.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #15"
+  },
+  {
+    "id": "q-1223",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An EU-hosted application sends user prompts to a model endpoint operated in a third country and receives outputs back. Why is this pattern a data-protection concern?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Inference is exempt because no data is stored"
+      },
+      {
+        "letter": "B",
+        "text": "The prompt data leaving the EEA may itself constitute a cross-border transfer requiring a lawful mechanism"
+      },
+      {
+        "letter": "C",
+        "text": "Model outputs are never personal data"
+      },
+      {
+        "letter": "D",
+        "text": "Only training data transfers are regulated"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Inference can be a transfer. Personal data contained in prompts crosses a border at query time even if nothing is retained, so an approved transfer mechanism and assessment are needed. Transience does not create an exemption, outputs about an identifiable person are personal data, and transfer rules are not limited to training datasets.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #16"
+  },
+  {
+    "id": "q-1224",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Several hospitals want to train a shared diagnostic model without any of them disclosing patient records to the others. Which approach fits?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Pooling all records in a central encrypted repository"
+      },
+      {
+        "letter": "B",
+        "text": "Publishing de-identified extracts to a shared bucket"
+      },
+      {
+        "letter": "C",
+        "text": "Granting each hospital query access to the others' databases"
+      },
+      {
+        "letter": "D",
+        "text": "Federated learning, where model updates rather than raw records are exchanged"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Federated learning trains locally at each site and shares only model updates, so patient records never leave their institution — a standard pattern for special-category health data. Central pooling and shared extracts both move the data itself; mutual query access is broader still and would expose more, not less.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #17"
+  },
+  {
+    "id": "q-1225",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A company files a patent naming its AI system as the inventor. Based on the position US courts have taken, what is the outcome?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Rejected — the Patent Act requires a human inventor"
+      },
+      {
+        "letter": "B",
+        "text": "Granted, provided the AI's contribution is documented"
+      },
+      {
+        "letter": "C",
+        "text": "Granted, with the AI's operator recorded as co-inventor by default"
+      },
+      {
+        "letter": "D",
+        "text": "Deferred pending USPTO rulemaking"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Courts and patent offices in nearly every major jurisdiction have rejected AI inventorship (South Africa's 2021 DABUS grant, issued without substantive examination, is the outlier); in Thaler v. Vidal (2022) the US Federal Circuit held that the Patent Act requires a human inventor. Documentation of the AI's contribution does not change that, and no automatic co-inventor substitution exists. Human contributors may still be named where their input qualifies.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #18"
+  },
+  {
+    "id": "q-1226",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Falkbridge Assurance screens job applicants for its claims-handling roles using an AI tool that draws on third-party consumer credit reports as one input. It also uses a separate model to price policies.\n\nA regulator in one of Falkbridge's markets has now ruled that the pricing model may not be used in that jurisdiction at all. Falkbridge operates a single global codebase and does not want to fork the application or take the product offline everywhere.\n\nFalkbridge Assurance uses third-party consumer credit reports as an input when screening job applicants. Which statute most directly governs that use of the reports?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "ECOA, because credit information is involved"
+      },
+      {
+        "letter": "B",
+        "text": "FCRA, which imposes obligations on employers using consumer reports and taking adverse action based on them"
+      },
+      {
+        "letter": "C",
+        "text": "Title VII, because employment is involved"
+      },
+      {
+        "letter": "D",
+        "text": "The Fair Housing Act, because credit reports are housing-related"
+      }
+    ],
+    "answer": "B",
+    "explanation": "FCRA governs consumer reports wherever they are used, including for employment purposes — imposing notice, authorisation and adverse-action obligations. Candidates commonly file FCRA under lending only. ECOA addresses discrimination in credit decisions rather than employment screening; Title VII prohibits employment discrimination but does not regulate consumer-report use; the FHA covers housing.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #19"
+  },
+  {
+    "id": "q-1227",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "Falkbridge Assurance screens job applicants for its claims-handling roles using an AI tool that draws on third-party consumer credit reports as one input. It also uses a separate model to price policies.\n\nA regulator in one of Falkbridge's markets has now ruled that the pricing model may not be used in that jurisdiction at all. Falkbridge operates a single global codebase and does not want to fork the application or take the product offline everywhere.\n\nA regulator has ruled Falkbridge's pricing model may not be used in its jurisdiction. Falkbridge runs one global codebase and will not fork the application or withdraw the product everywhere. What is the most robust response?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Shut the service down in that jurisdiction to press the regulator to reconsider"
+      },
+      {
+        "letter": "B",
+        "text": "Build and maintain a second, separate version of the application for that market"
+      },
+      {
+        "letter": "C",
+        "text": "Implement a feature flag disabling the affected features based on the user's jurisdiction"
+      },
+      {
+        "letter": "D",
+        "text": "Retrain and redeploy the model immediately to demonstrate responsiveness"
+      }
+    ],
+    "answer": "C",
+    "explanation": "A feature flag can be toggled without major engineering work and keeps the affected model out of that jurisdiction while discussions continue — this is localization rather than deactivation. A parallel application is expensive to maintain and drifts; a shutdown as leverage is confrontational and harms users; and rushing a retrain and redeploy introduces fresh, untested risk under time pressure.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #20"
+  },
+  {
+    "id": "q-1228",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "Falkbridge Assurance can negotiate only limited changes to its generative AI vendor's standard terms. Which existing term can it most safely leave untouched?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A perpetual licence for the vendor to train its models on Falkbridge's prompts and uploads"
+      },
+      {
+        "letter": "B",
+        "text": "Confirmation that the vendor retains patent rights over its own underlying algorithms"
+      },
+      {
+        "letter": "C",
+        "text": "A disclaimer of vendor responsibility for IP infringement in generated output"
+      },
+      {
+        "letter": "D",
+        "text": "Vendor ownership of all content Falkbridge produces with the tool"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A vendor keeping patents over its own technology is the ordinary state of software licensing — Falkbridge needs usage rights, not ownership of the vendor's inventions, so this term changes nothing about its exposure. The other three are live generative-AI risks: training rights leak Falkbridge's confidential inputs into someone else's model irreversibly; an infringement disclaimer leaves Falkbridge holding the risk for content it publishes; and vendor ownership of outputs would undercut Falkbridge's commercial use of its own work product. Note the question asks for the least concern.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #21"
+  },
+  {
+    "id": "q-1229",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Which is not an accurate statement about AI and intellectual property?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "US patent law requires a human inventor"
+      },
+      {
+        "letter": "B",
+        "text": "Public availability of training data confers a licence to use it"
+      },
+      {
+        "letter": "C",
+        "text": "Trade secret protection may be preferred over patenting to avoid disclosure"
+      },
+      {
+        "letter": "D",
+        "text": "Fair use turns heavily on transformative purpose and market effect"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Public availability confers no licence — reachable is not the same as licensed, and this is the single most common misconception in AI training disputes. Human inventorship is required, trade secret protection is frequently preferred precisely because patenting demands disclosure, and fair use does turn on transformative purpose and market effect.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #22"
+  },
+  {
+    "id": "q-1230",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A lender's AI underwriting model relies on third-party consumer data. Which statute is most directly triggered by the sourcing and accuracy of that input data, as distinct from discrimination in the decision?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "ECOA"
+      },
+      {
+        "letter": "B",
+        "text": "The Fair Housing Act"
+      },
+      {
+        "letter": "C",
+        "text": "Title VII"
+      },
+      {
+        "letter": "D",
+        "text": "FCRA"
+      }
+    ],
+    "answer": "D",
+    "explanation": "FCRA governs consumer data and reports — accuracy, disputability, and responsible sourcing of the inputs. ECOA addresses discrimination in the lending decision itself, triggered by protected class status. Together they require both fair inputs and fair outputs. The Fair Housing Act covers housing and Title VII employment.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #23"
+  },
+  {
+    "id": "q-1231",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An insurer's pricing model uses variables that correlate strongly with protected characteristics. What does regulatory expectation in this sector require?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Any variable improving predictive accuracy is permissible"
+      },
+      {
+        "letter": "B",
+        "text": "Correlation alone is sufficient justification if disclosed to the policyholder"
+      },
+      {
+        "letter": "C",
+        "text": "Demonstrating actuarial relevance and that the model does not produce unfairly discriminatory outcomes"
+      },
+      {
+        "letter": "D",
+        "text": "Protected characteristics may be used directly if they are actuarially predictive"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Insurance regulators require variables to be justified by actuarial relevance, not correlation alone, and require insurers to show their models do not produce unfairly discriminatory outcomes. Predictive power is not self-justifying, disclosure does not cure a proxy problem, and direct use of protected characteristics is precisely what these rules restrict.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #24"
+  },
+  {
+    "id": "q-1232",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A company markets its product as 'AI-powered' when the feature is a simple rules engine. No customer suffers financial loss. Is there exposure?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "No, because no measurable harm occurred"
+      },
+      {
+        "letter": "B",
+        "text": "No, because marketing claims are protected commercial speech"
+      },
+      {
+        "letter": "C",
+        "text": "Yes — a material misrepresentation can be a deceptive practice regardless of proven monetary loss"
+      },
+      {
+        "letter": "D",
+        "text": "Only if a competitor files a complaint"
+      }
+    ],
+    "answer": "C",
+    "explanation": "UDAP reaches representations likely to mislead a reasonable consumer acting reasonably, and materiality rather than proven monetary loss is the test — which is what distinguishes it from fraud, where reliance and damages typically matter. Overstating AI capability is a well-established enforcement theme. Neither absence of loss nor absence of a competitor complaint is a defense.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #25"
+  },
+  {
+    "id": "q-1233",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An AI system causes harm because the deploying organization failed to supervise it adequately, though the product itself was not defective. Which theory best fits?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Strict liability, because the product caused harm"
+      },
+      {
+        "letter": "B",
+        "text": "Negligence, because the harm followed a failure to act with reasonable care"
+      },
+      {
+        "letter": "C",
+        "text": "No liability, since the product met specification"
+      },
+      {
+        "letter": "D",
+        "text": "Breach of warranty"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Negligence turns on failure to exercise reasonable care and requires that the harm was foreseeable — harm from poor oversight is the textbook case. Strict liability attaches where a defective product causes harm, with no intent or fault required, and is the theory for design and manufacturing defects. A non-defective product does not foreclose liability for how it was supervised.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #26"
+  },
+  {
+    "id": "q-1234",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Real-time remote biometric identification in publicly accessible spaces for law enforcement is prohibited under the EU AI Act. Under what circumstances may it nonetheless proceed?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Whenever a police force determines it is operationally useful"
+      },
+      {
+        "letter": "B",
+        "text": "Where the deploying authority publishes a transparency notice in advance"
+      },
+      {
+        "letter": "C",
+        "text": "For narrow listed purposes such as victim searches or imminent threats to life, each use authorized by a judicial or independent authority"
+      },
+      {
+        "letter": "D",
+        "text": "It is absolutely prohibited with no exceptions"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The ban carries narrow exceptions — the three objectives in Art. 5(1)(h): a targeted search for specific victims of abduction, trafficking or sexual exploitation, or for missing persons; preventing a specific, substantial and imminent threat to life or a genuine and foreseeable terrorist attack; and locating or identifying suspects of the serious crimes listed in Annex II (punishable by at least four years). Critically, each use needs prior authorization by a judicial or independent administrative authority (in a duly justified emergency use may begin first, provided authorization is requested within 24 hours). National security is not one of the exceptions: national-security uses fall outside the Act's scope entirely (Art. 2(3)). Operational convenience is not a basis, a published notice does not substitute for authorization, and the prohibition is not absolute.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #27"
+  },
+  {
+    "id": "q-1235",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Hard",
+    "question": "Verity Public Trust runs an AI tool that scores grant applications. During design, the team plots each identified harm by likelihood and severity, and works through options in order: whether the harm can be designed out, then reduced, then controlled, then transferred, and only then accepted.\n\nOne harm survives every mitigation: a residual risk that a small number of eligible applicants will be wrongly deprioritised. The delivery lead suggests describing it in softer language so it does not block the approval meeting.\n\nVerity works through options in order: design out, reduce, control, transfer, accept. What is this called, and which option is least effective?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A probability/severity harms matrix; least effective is designing the harm out"
+      },
+      {
+        "letter": "B",
+        "text": "A risk mitigation hierarchy; least effective is accepting the residual risk"
+      },
+      {
+        "letter": "C",
+        "text": "A risk register; least effective is transferring the risk"
+      },
+      {
+        "letter": "D",
+        "text": "A conformity assessment; least effective is controlling the risk"
+      }
+    ],
+    "answer": "B",
+    "explanation": "This is a risk mitigation hierarchy, ordered from most to least effective, so acceptance sits at the bottom — it leaves the hazard in place and merely acknowledges it. The harms matrix plots likelihood against severity to prioritise; a risk register records assessed risks and owners; a conformity assessment is a regulatory instrument. Designing the harm out is the most effective option, not the least.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #28"
+  },
+  {
+    "id": "q-1236",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Verity Public Trust runs an AI tool that scores grant applications. During design, the team plots each identified harm by likelihood and severity, and works through options in order: whether the harm can be designed out, then reduced, then controlled, then transferred, and only then accepted.\n\nOne harm survives every mitigation: a residual risk that a small number of eligible applicants will be wrongly deprioritised. The delivery lead suggests describing it in softer language so it does not block the approval meeting.\n\nThe delivery lead suggests softening the language describing the surviving residual risk. What should happen instead?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Record it plainly, have an authorized owner accept it explicitly, and document the acceptance"
+      },
+      {
+        "letter": "B",
+        "text": "Defer recording it until post-launch data shows its real severity"
+      },
+      {
+        "letter": "C",
+        "text": "Omit it, since it survived all feasible mitigation anyway"
+      },
+      {
+        "letter": "D",
+        "text": "Reword it so the approval meeting is not delayed"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Residual risk must be stated plainly, accepted by someone with authority to accept it, and recorded — that is what makes the decision defensible later and keeps the risk under monitoring. Softening, deferring or omitting all convert a managed risk into a concealed one, which is far worse if it materialises and is discovered to have been known.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #29"
+  },
+  {
+    "id": "q-1237",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "Which of the following developments does not, by itself, require re-evaluating the organization's existing data privacy policies?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Marketing adopts a generative AI tool that drafts campaign copy from customer data"
+      },
+      {
+        "letter": "B",
+        "text": "The company refreshes its brand identity, logo and website design"
+      },
+      {
+        "letter": "C",
+        "text": "A state where the company operates enacts a new private-sector AI law"
+      },
+      {
+        "letter": "D",
+        "text": "The support chatbot begins retaining conversation transcripts to improve its model"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A rebrand changes presentation, not processing — nothing about what personal data is collected, used or retained moves, so the ordinary review cycle absorbs it. Each of the other developments changes either the processing itself (customer data flowing into a generative tool; transcripts retained for model improvement) or the law that applies to it, and each therefore triggers a policy re-evaluation.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #30"
+  },
+  {
+    "id": "q-1238",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Which statement best distinguishes a 'foundation model' from 'general-purpose AI'?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "They are legally interchangeable terms"
+      },
+      {
+        "letter": "B",
+        "text": "Foundation model refers to the base technical artifact; general-purpose AI refers to its usage and availability across diverse applications"
+      },
+      {
+        "letter": "C",
+        "text": "A foundation model is always open source; GPAI is always proprietary"
+      },
+      {
+        "letter": "D",
+        "text": "Foundation models are regulated while GPAI is not"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The distinction is artifact versus usage: 'foundation model' names the base technical object, while 'general-purpose AI' describes its deployment and availability across many applications. The EU AI Act regulates on the GPAI framing. Licensing model is irrelevant to the distinction, and both fall within the Act's scope.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #31"
+  },
+  {
+    "id": "q-1239",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "An organization discovers its own non-compliance with the EU AI Act before any regulator does. What does the enforcement framework suggest about self-reporting?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Self-reporting has no effect on enforcement outcomes"
+      },
+      {
+        "letter": "B",
+        "text": "Self-reporting automatically eliminates any penalty"
+      },
+      {
+        "letter": "C",
+        "text": "Voluntary disclosure and cooperation can mitigate penalty severity, and whistleblower protections exist for those who report internally or externally"
+      },
+      {
+        "letter": "D",
+        "text": "Self-reporting waives the right to contest findings"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The framework rewards voluntary disclosure and cooperation with reduced penalty severity, and provides whistleblower protections for people reporting violations. Penalties are not automatically eliminated, disclosure does not waive procedural rights, and the alternative — waiting to be found out — attracts escalation for recurrence and concealment.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #32"
+  },
+  {
+    "id": "q-1240",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An EU-based company buys a high-risk AI system from a US developer and resells it unchanged to EU customers under the developer's brand. Which role does it occupy, and what follows?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Importer — it must verify the provider completed conformity assessment, drew up documentation, and affixed CE marking before placing the system on the market"
+      },
+      {
+        "letter": "B",
+        "text": "Provider — it assumes all obligations because it sells into the EU"
+      },
+      {
+        "letter": "C",
+        "text": "Deployer — because it is closest to the EU customer"
+      },
+      {
+        "letter": "D",
+        "text": "No regulated role, since the system is unchanged"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Placing a third-country system on the EU market makes it an importer, with verification duties: confirming the provider carried out conformity assessment, produced technical documentation, and affixed CE marking, and refusing to place non-conforming systems. Reselling unchanged under the original brand does not make it a provider; it does not use the system, so it is not a deployer; and importers are expressly regulated.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #33"
+  },
+  {
+    "id": "q-1241",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Which of the following are outcomes of the NIST AI RMF's Map function?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Documenting the system's knowledge limits and how humans will oversee its output"
+      },
+      {
+        "letter": "B",
+        "text": "Establishing accountability structures and executive ownership of AI risk"
+      },
+      {
+        "letter": "C",
+        "text": "Documenting the system's intended purpose and operational context"
+      },
+      {
+        "letter": "D",
+        "text": "Mapping the stakeholders and communities the system will affect"
+      },
+      {
+        "letter": "E",
+        "text": "Selecting the vendor with the lowest total cost of ownership"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "The Map function establishes the context needed to frame risks before they are measured or managed. Its outcomes include documenting the intended purpose and operational setting (MAP 1.1), recording the system's knowledge limits and how humans will use and oversee its output (MAP 2.2), and characterising the individuals, groups and communities it may affect (MAP 1.1 and MAP 5). B is a Govern outcome: accountability structures and executive responsibility for AI risk decisions sit under GOVERN 2 (GOVERN 2.3). E is a procurement decision, not an AI RMF outcome.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #34"
+  },
+  {
+    "id": "q-1242",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Which is least useful for demonstrating to an auditor that design decisions were reasonable?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A record of alternatives considered and why they were rejected"
+      },
+      {
+        "letter": "B",
+        "text": "The final model card describing intended use and limitations"
+      },
+      {
+        "letter": "C",
+        "text": "A statement that the team followed industry best practice"
+      },
+      {
+        "letter": "D",
+        "text": "The residual risks accepted and by whom"
+      }
+    ],
+    "answer": "C",
+    "explanation": "A bare assertion of best practice is not evidence — it records a claim rather than a decision. Documented alternatives with reasons, the model card, and named residual-risk acceptance each show what was actually weighed and decided, which is what reasonableness is judged on.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #35"
+  },
+  {
+    "id": "q-1243",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "A team under delivery pressure asks what the irreducible minimum of AI design documentation is. Which set best reflects 'minimum viable documentation'?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A signed approval email from the product owner"
+      },
+      {
+        "letter": "B",
+        "text": "Intended purpose and use case, key design decisions and rationale, data sources, known limitations, and the risks accepted"
+      },
+      {
+        "letter": "C",
+        "text": "Complete source code with inline comments"
+      },
+      {
+        "letter": "D",
+        "text": "A marketing one-pager describing the feature"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Minimum viable documentation captures what the system is for, what was decided and why, what data it rests on, where it fails, and what risk was knowingly accepted — enough for a successor or an auditor to reconstruct the reasoning. An approval email records assent without reasoning, source code shows what was built but not why, and marketing material addresses a different audience entirely.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #36"
+  },
+  {
+    "id": "q-1244",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "An organization applies a risk score to each proposed AI project at intake. What is the primary governance purpose?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To rank teams by delivery performance"
+      },
+      {
+        "letter": "B",
+        "text": "To determine each project's cloud budget allocation"
+      },
+      {
+        "letter": "C",
+        "text": "To calculate the expected financial return of the project"
+      },
+      {
+        "letter": "D",
+        "text": "To triage projects so governance effort is proportionate to potential impact"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Project risk scoring triages — it decides which proposals need a full impact assessment, independent review and heavy oversight, and which can proceed on a lighter path. That keeps governance proportionate and sustainable rather than applying identical scrutiny to a chatbot and a credit model. It is not a performance, budgeting, or ROI mechanism.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #37"
+  },
+  {
+    "id": "q-1245",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A team selects a single headline accuracy metric as its success criterion. Which pitfall does this invite?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Optimizing a single metric can drive behaviour that satisfies the number while failing the underlying objective"
+      },
+      {
+        "letter": "B",
+        "text": "Accuracy metrics are prohibited under the EU AI Act"
+      },
+      {
+        "letter": "C",
+        "text": "Metrics should never be defined before deployment"
+      },
+      {
+        "letter": "D",
+        "text": "Only regulators may define AI success metrics"
+      }
+    ],
+    "answer": "A",
+    "explanation": "A single metric becomes a target and the system optimizes toward it — including in ways that undermine the actual goal, mask subgroup failures, or ignore harms the metric never measured. The remedy is a balanced set of metrics with thresholds tied to the use case. Metrics are neither prohibited nor externally imposed, and defining them early is good practice.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #38"
+  },
+  {
+    "id": "q-1246",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "A governance lead is drafting the policy set that will keep every lifecycle stage of the organization's AI under defined oversight. Which of the following does not belong in that policy set?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A data privacy compliance programme"
+      },
+      {
+        "letter": "B",
+        "text": "Defined approval gates at each lifecycle stage"
+      },
+      {
+        "letter": "C",
+        "text": "An incident management and escalation procedure"
+      },
+      {
+        "letter": "D",
+        "text": "Delegating all oversight decisions to individual product teams with no central visibility"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Total delegation without central visibility is the absence of oversight rather than a form of it — accountability requires defined authority and a portfolio-wide view, so that no system escapes scrutiny simply because its team chose not to look. A privacy compliance programme, stage-by-stage approval gates and an incident management procedure are each core components of lifecycle oversight policy.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #39"
+  },
+  {
+    "id": "q-1247",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Beyond assessing the intended use case, what does use-case evaluation and scenario planning add during design?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A guarantee that the system will not be misused"
+      },
+      {
+        "letter": "B",
+        "text": "Structured consideration of foreseeable misuse, edge cases and off-label deployment before they occur"
+      },
+      {
+        "letter": "C",
+        "text": "A substitute for pre-deployment testing"
+      },
+      {
+        "letter": "D",
+        "text": "Confirmation that the business case is financially sound"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Scenario planning asks how could this be used that we did not intend, and what happens at the edges — surfacing misuse paths and unusual conditions while the design can still absorb controls. It guarantees nothing, replaces no testing, and is a risk exercise rather than a financial one.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #41"
+  },
+  {
+    "id": "q-1248",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "What distinguishes a data steward's role from a data owner's in AI data governance?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The steward is accountable for day-to-day data quality, definitions and appropriate use; the owner holds ultimate accountability for the data asset"
+      },
+      {
+        "letter": "B",
+        "text": "The steward is always an external auditor"
+      },
+      {
+        "letter": "C",
+        "text": "The two terms are interchangeable"
+      },
+      {
+        "letter": "D",
+        "text": "The steward approves all budget decisions relating to data"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The owner carries ultimate accountability for the data asset and its risk; the steward handles the operational reality — quality, definitions, lineage, and whether a given use is appropriate. Separating them puts day-to-day judgment close to the data while keeping accountability clear. Stewards are internal, the roles are distinct, and neither is primarily a budget function.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #43"
+  },
+  {
+    "id": "q-1249",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "A dataset is accurate, complete and current. Why might it still fail a fit-for-purpose assessment?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fit for purpose is satisfied automatically once accuracy is verified"
+      },
+      {
+        "letter": "B",
+        "text": "Accuracy is irrelevant to fit-for-purpose evaluation"
+      },
+      {
+        "letter": "C",
+        "text": "Fit for purpose applies only to test data, not training data"
+      },
+      {
+        "letter": "D",
+        "text": "It may be accurate about the wrong population, context or time period for the intended use"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Fit for purpose means more than accuracy. Data can be impeccably correct yet drawn from a different population, a different operating context, or a period whose conditions no longer hold — in which case the model learns something true about the wrong world. The assessment covers relevance and representativeness alongside quality, for both training and test data.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #44"
+  },
+  {
+    "id": "q-1250",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A model's individual preprocessing, inference and post-processing components each pass their own tests, but the deployed pipeline produces incorrect outputs. Which testing layer was inadequate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Unit testing"
+      },
+      {
+        "letter": "B",
+        "text": "Validation testing"
+      },
+      {
+        "letter": "C",
+        "text": "Performance testing"
+      },
+      {
+        "letter": "D",
+        "text": "Integration testing"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Integration testing examines whether components work correctly together — mismatched assumptions at the seams are exactly the failure described, and unit tests cannot detect them by construction. Validation asks whether the system meets the real-world need; performance testing measures speed and resource behaviour under load.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #45"
+  },
+  {
+    "id": "q-1251",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "What does human-in-the-loop and scenario testing add beyond automated test suites?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It eliminates the need for bias testing"
+      },
+      {
+        "letter": "B",
+        "text": "It evaluates how the system behaves in realistic situations with human operators, including how people interpret and act on outputs"
+      },
+      {
+        "letter": "C",
+        "text": "It measures inference latency more precisely"
+      },
+      {
+        "letter": "D",
+        "text": "It replaces validation testing"
+      }
+    ],
+    "answer": "B",
+    "explanation": "This layer tests the human–system combination: whether operators understand the output, whether the interface invites over-trust, and how the pair performs under realistic conditions. Automated suites test the model in isolation and miss all of that. It supplements rather than replaces bias or validation testing, and is unrelated to latency measurement.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #46"
+  },
+  {
+    "id": "q-1252",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Which term is of least concern when assessing a vendor's effect on your own compliance obligations?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Whether the vendor may use your data to train its models"
+      },
+      {
+        "letter": "B",
+        "text": "Whether you hold audit rights over the vendor's operations"
+      },
+      {
+        "letter": "C",
+        "text": "Whether the vendor must notify you of incidents"
+      },
+      {
+        "letter": "D",
+        "text": "The currency in which the vendor invoices"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Invoicing currency is a commercial detail with no compliance consequence. Vendor training on your data, audit rights and incident-notification duties each determine directly whether you can meet your own obligations — visibility and control are what governance depends on.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #48"
+  },
+  {
+    "id": "q-1253",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Which best describes a testing risk, as distinct from a risk in the model itself?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The risk that the testing process is itself flawed — unrepresentative test data, leakage, or coverage gaps — so results do not reflect real behaviour"
+      },
+      {
+        "letter": "B",
+        "text": "Any risk arising after the system is deployed"
+      },
+      {
+        "letter": "C",
+        "text": "The financial cost of running a test suite"
+      },
+      {
+        "letter": "D",
+        "text": "The risk that testing delays the release date"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Testing risk is the risk that your assurance is wrong: unrepresentative test sets, leakage inflating scores, or untested conditions. It matters because it produces false confidence — 'it passed testing' is only as good as the testing. Post-deployment risk, cost and schedule are separate concerns.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #49"
+  },
+  {
+    "id": "q-1254",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Why do regulators increasingly expect retained training logs for AI systems?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To verify the model was trained on the fastest available hardware"
+      },
+      {
+        "letter": "B",
+        "text": "To confirm the training budget was not exceeded"
+      },
+      {
+        "letter": "C",
+        "text": "To enable reconstruction of how a specific model version came to behave as it does, supporting audit and accountability"
+      },
+      {
+        "letter": "D",
+        "text": "To publish the training data openly"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Training logs make a model version reconstructible and auditable — what data, what parameters, what runs, in what order. That is the evidentiary basis for demonstrating due care if the model is later challenged. They are not about hardware, budget, or public release of data.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #50"
+  },
+  {
+    "id": "q-1255",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Halcyon Devices ships an AI-assisted insulin dosing aid. A software update is deployed containing a corrupted configuration file; the original design was sound. Several devices give incorrect readings.\n\nInvestigation also establishes that Halcyon knew the aid performed measurably worse for patients under a certain body weight, and the instructions for use did not mention it. Halcyon cannot say which shipped product versions contain the affected component.\n\nHalcyon knew the aid performed worse below a certain body weight and omitted it from the instructions for use. It also cannot identify which shipped versions contain the affected component. Which pair of failures is this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Failure to warn, and absence of an AI software bill of materials enabling traceability"
+      },
+      {
+        "letter": "B",
+        "text": "Design defect, and absence of a conformity assessment"
+      },
+      {
+        "letter": "C",
+        "text": "Failure to warn, and absence of a data protection impact assessment"
+      },
+      {
+        "letter": "D",
+        "text": "Manufacturing defect, and absence of a model card"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Withholding a known limitation users need in order to operate safely is failure to warn. Being unable to say which shipped products contain a given component is the gap an AI-SBOM closes — it records components, models, datasets and dependencies so defective elements can be traced and remediated across the affected estate. Conformity assessments, DPIAs and model cards each serve different purposes and would not answer the traceability question.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #52"
+  },
+  {
+    "id": "q-1256",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Which of the following belong in a final pre-release gate review for an AI system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Confirmation that required documentation and approvals are complete"
+      },
+      {
+        "letter": "B",
+        "text": "Sign-off from the stakeholders accountable for the decision"
+      },
+      {
+        "letter": "C",
+        "text": "Evidence that identified risks are mitigated or formally accepted"
+      },
+      {
+        "letter": "D",
+        "text": "Agreement from the marketing team on the launch date"
+      },
+      {
+        "letter": "E",
+        "text": "A guarantee that the system will not fail in production"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "A final gate review verifies that documentation and approvals are in place, accountable stakeholders have signed off, and every identified risk is either mitigated or explicitly accepted. Launch timing is a commercial coordination matter, and no gate can guarantee against failure — which is precisely why post-market monitoring and incident processes exist downstream.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #53"
+  },
+  {
+    "id": "q-1257",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "A model performs well in testing. What does operational readiness evaluation additionally assess before the deploy decision?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Only the model's accuracy on holdout data"
+      },
+      {
+        "letter": "B",
+        "text": "The competitive positioning of the product"
+      },
+      {
+        "letter": "C",
+        "text": "The size of the training dataset"
+      },
+      {
+        "letter": "D",
+        "text": "Whether the surrounding organization — support processes, escalation paths, staffing and monitoring capability — can actually run the system"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Operational readiness asks whether the organization is ready, not just the model: can incidents be triaged, is there an escalation path, are staff trained, is monitoring in place, does someone own it after launch. Technically sound systems fail routinely because no one could operate them. Accuracy and dataset size are model properties; competitive positioning is a commercial question.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #54"
+  },
+  {
+    "id": "q-1258",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "What governance function does a model registry primarily serve after deployment?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It stores training data for future retraining"
+      },
+      {
+        "letter": "B",
+        "text": "It provides an authoritative inventory of model versions, their status, ownership and approvals"
+      },
+      {
+        "letter": "C",
+        "text": "It hosts the compute resources for inference"
+      },
+      {
+        "letter": "D",
+        "text": "It replaces the need for a model card"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A model registry is the system of record: which versions exist, which is live where, who owns each, and what approvals it carries. Without it, organizations lose track of what is actually running in production — the precondition for monitoring, incident response and retirement. It is not a data store or compute layer, and it complements model cards rather than replacing them.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #55"
+  },
+  {
+    "id": "q-1259",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Why does data governance require attention again at the deployment phase, having been addressed during training?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Training-phase governance covers all subsequent data handling"
+      },
+      {
+        "letter": "B",
+        "text": "Deployment data governance applies only to regulated industries"
+      },
+      {
+        "letter": "C",
+        "text": "Live inference introduces new data flows — inputs, outputs and logs — with their own retention, access and privacy implications"
+      },
+      {
+        "letter": "D",
+        "text": "Data governance obligations end once a model is trained"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Deployment creates new data: user inputs, generated outputs, and operational logs, each with retention, access-control and privacy consequences that training-phase governance never addressed. Prompts may contain personal data; logs may capture sensitive content. Obligations continue after training and are not sector-limited.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #56"
+  },
+  {
+    "id": "q-1260",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "How does fairness and ethical monitoring differ from technical performance monitoring in production?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It tracks outcome distributions across groups over time, detecting emerging disparity even where aggregate performance is stable"
+      },
+      {
+        "letter": "B",
+        "text": "It measures inference latency by user segment"
+      },
+      {
+        "letter": "C",
+        "text": "It replaces the need for pre-deployment bias testing"
+      },
+      {
+        "letter": "D",
+        "text": "It applies only where regulators mandate it"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Fairness monitoring watches who is getting which outcomes over time. Disparity can emerge post-launch as populations and behaviour shift, and aggregate accuracy metrics will not reveal it. It is a continuation of pre-deployment bias testing rather than a substitute, and is good practice regardless of mandate.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #57"
+  },
+  {
+    "id": "q-1261",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Which terms in an open-source AI vendor agreement most directly affect the organization's data privacy and intellectual property exposure?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ownership and permitted usage rights in the model's training data"
+      },
+      {
+        "letter": "B",
+        "text": "Obligations to share derivative works built on the model"
+      },
+      {
+        "letter": "C",
+        "text": "The invoicing schedule and payment currency"
+      },
+      {
+        "letter": "D",
+        "text": "Data ownership, including who owns generated output"
+      },
+      {
+        "letter": "E",
+        "text": "The vendor's office locations and staffing levels"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "The exposure sits in training-data ownership and usage rights, derivative-work sharing obligations, and data and output ownership — these determine whether your intended use is licensed, what you must give back, and who may exploit what the system produces. Invoicing terms and vendor geography are commercial facts without that effect.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #58"
+  },
+  {
+    "id": "q-1262",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "An organization depends on a third-party model it cannot inspect directly. What should its monitoring focus on?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The vendor's published uptime statistics alone"
+      },
+      {
+        "letter": "B",
+        "text": "Its own inputs, outputs and user-impact signals, plus contractual reporting and periodic vendor review"
+      },
+      {
+        "letter": "C",
+        "text": "Nothing — monitoring is the vendor's responsibility"
+      },
+      {
+        "letter": "D",
+        "text": "Re-implementing the model internally to enable inspection"
+      }
+    ],
+    "answer": "B",
+    "explanation": "You monitor what you can still observe — your inputs, the outputs you receive, and downstream user impact — and you close the remaining gap contractually with reporting duties and periodic review. Uptime statistics say nothing about model behaviour, accountability does not transfer to the vendor, and rebuilding the model is disproportionate.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #59"
+  },
+  {
+    "id": "q-1263",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Why should threat modeling recur across the lifecycle rather than be a single pre-release exercise?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Regulators require quarterly threat models"
+      },
+      {
+        "letter": "B",
+        "text": "Threat modeling replaces penetration testing when repeated"
+      },
+      {
+        "letter": "C",
+        "text": "A one-time model is outdated as soon as the system, its data, or the threat landscape changes; recurring modelling keeps the picture current"
+      },
+      {
+        "letter": "D",
+        "text": "It is only useful after an incident has occurred"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Attack surfaces move: models are retrained, integrations added, new attack techniques published. A threat model fixed at release describes a system that no longer exists. Repeating it across the lifecycle keeps defences aligned with the current system. It complements rather than replaces security testing, and is proactive rather than post-incident.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #60"
+  },
+  {
+    "id": "q-1264",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "Which response to an AI incident is least appropriate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Containing the system to stop ongoing harm"
+      },
+      {
+        "letter": "B",
+        "text": "Disabling logging to limit further exposure of leaked data"
+      },
+      {
+        "letter": "C",
+        "text": "Assessing whether statutory notification duties are triggered"
+      },
+      {
+        "letter": "D",
+        "text": "Investigating root cause with cross-functional stakeholders"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Disabling logging destroys the audit trail you need to investigate the incident and to discharge notification duties — it converts a manageable problem into an unexplainable one. Containment, notification assessment and cross-functional root-cause investigation are each core steps.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #61"
+  },
+  {
+    "id": "q-1265",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "After an incident is remediated, how should residual risk be treated?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Remediation by definition eliminates the risk"
+      },
+      {
+        "letter": "B",
+        "text": "Residual risk should be closed out once the incident ticket is resolved"
+      },
+      {
+        "letter": "C",
+        "text": "Residual risk need only be recorded if a regulator asks"
+      },
+      {
+        "letter": "D",
+        "text": "Remediation rarely returns risk to zero, so remaining exposure should be documented, owned and monitored"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Fixes reduce risk; they seldom eliminate it. The remaining exposure must be documented, assigned an owner and monitored — otherwise it disappears from view precisely when everyone believes the problem is solved. Closing on ticket resolution or waiting for a regulator to ask both lose the risk from the register.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #62"
+  },
+  {
+    "id": "q-1266",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A recommendation model trained to maximise engagement begins amplifying polarizing content. No component malfunctioned. Is this an incident?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "No — no technical failure occurred"
+      },
+      {
+        "letter": "B",
+        "text": "No — the model performed exactly as designed"
+      },
+      {
+        "letter": "C",
+        "text": "Yes — incident response must consider intent versus outcome, and misaligned objectives produce incidents without bugs"
+      },
+      {
+        "letter": "D",
+        "text": "Only if a user submits a formal complaint"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Not all incidents are failures. A system working precisely as specified can produce harm because the objective was misaligned with what was actually wanted. Incident management therefore weighs intent against outcome rather than asking only whether something broke. Requiring a bug or a complaint would exclude the entire category.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #63"
+  },
+  {
+    "id": "q-1267",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Which activity best exemplifies forecasting secondary and downstream harms, as opposed to identifying direct risks?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Measuring the model's error rate on the validation set"
+      },
+      {
+        "letter": "B",
+        "text": "Tracing how the system's outputs could affect parties who never interact with it, and how effects compound over time"
+      },
+      {
+        "letter": "C",
+        "text": "Documenting the model's architecture and hyperparameters"
+      },
+      {
+        "letter": "D",
+        "text": "Testing the system's resilience to adversarial inputs"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Downstream forecasting follows the chain of consequence beyond the immediate user — third parties affected by decisions, incentive effects, and impacts that compound as the system scales. Error rates, architecture documentation and adversarial testing all address the system directly and would miss second-order effects entirely.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #64"
+  },
+  {
+    "id": "q-1268",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "What governance risk comes with overclaiming an AI system's capabilities in external communications?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It creates legal exposure under consumer protection law and operational risk when users over-rely on the system"
+      },
+      {
+        "letter": "B",
+        "text": "It has no consequence provided internal documentation is accurate"
+      },
+      {
+        "letter": "C",
+        "text": "It affects only the marketing function's credibility"
+      },
+      {
+        "letter": "D",
+        "text": "It is a concern only for systems classified as high risk"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Overclaiming carries two costs: regulatory exposure for deceptive practices, and the operational danger that users trust the system beyond its actual reliability and stop applying judgment. Accurate internal documentation does not cure external misrepresentation, and the risk is not confined to marketing or to high-risk classifications.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #65"
+  },
+  {
+    "id": "q-1269",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "How does retiring an AI system differ from decommissioning conventional IT?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It is simpler, because models have no infrastructure dependencies"
+      },
+      {
+        "letter": "B",
+        "text": "It follows the identical process with different documentation"
+      },
+      {
+        "letter": "C",
+        "text": "It may require untraining, ethical review, removal of derivative models, and public communication"
+      },
+      {
+        "letter": "D",
+        "text": "It requires only that the inference endpoint be switched off"
+      }
+    ],
+    "answer": "C",
+    "explanation": "AI retirement extends well beyond switching a system off: it can require untraining, ethical review, removal of derivative models, and public communication, particularly where regulation applies or high-impact decisions were automated. Derivative models are the commonly missed piece — fine-tuned descendants can outlive the parent and carry its problems forward.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #66"
+  },
+  {
+    "id": "q-1270",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "Reviewing an AI vendor agreement, which clause most directly determines whether the customer can meet its own data governance obligations?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The limitation of liability cap"
+      },
+      {
+        "letter": "B",
+        "text": "Data use restrictions covering ownership, permitted uses and handling of sensitive data"
+      },
+      {
+        "letter": "C",
+        "text": "The service credit schedule"
+      },
+      {
+        "letter": "D",
+        "text": "The choice of arbitration venue"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Data use restrictions — who owns the data, what the vendor may do with it, and how sensitive categories are handled — determine directly whether your data governance commitments survive the relationship, including whether your data trains the vendor's models. Liability caps allocate financial consequences after the fact; service credits and arbitration venue address availability and dispute mechanics.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #67"
+  },
+  {
+    "id": "q-1271",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Which of the following are accurate considerations when protecting a proprietary AI model?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Trade secret protection is often preferred because disclosure could expose security or privacy vulnerabilities"
+      },
+      {
+        "letter": "B",
+        "text": "Patenting requires disclosure that may reveal exploitable model details"
+      },
+      {
+        "letter": "C",
+        "text": "Trade secret protection provides broader legal remedies than patents in all circumstances"
+      },
+      {
+        "letter": "D",
+        "text": "The choice affects what the organization can publish about the model without losing protection"
+      },
+      {
+        "letter": "E",
+        "text": "AI models cannot be protected by either patents or trade secrets"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Organizations commonly protect models as trade secrets rather than patents, because patenting demands public disclosure that could expose security or privacy weaknesses — and the choice then constrains what can be published without forfeiting protection. Trade secret status limits legal remedies in some cases rather than broadening them, and models are protectable under both regimes.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock D #68"
+  },
+  {
+    "id": "q-1272",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "To reduce disparate error rates across demographic groups, a team proposes collecting additional sensitive attributes so it can measure and correct for them. Which pair of responsible-AI principles is in direct tension here?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fairness and privacy"
+      },
+      {
+        "letter": "B",
+        "text": "Accountability and safety"
+      },
+      {
+        "letter": "C",
+        "text": "Transparency and reliability"
+      },
+      {
+        "letter": "D",
+        "text": "Human-centricity and security"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Measuring fairness accurately often requires the very sensitive data that privacy principles push you to minimise — you cannot correct a disparity you are not permitted to observe. This is the classic tension, resolved through controlled access, aggregation, or third-party measurement rather than by abandoning either principle. The other pairings describe principles that generally reinforce rather than oppose each other.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #1"
+  },
+  {
+    "id": "q-1273",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "A model is accurate, robust, secure, and its outputs are fair across every measured group — but no one, including its builders, can account for why it reaches a given decision. Which responsible-AI principle does this most clearly fail?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Transparency and explainability"
+      },
+      {
+        "letter": "B",
+        "text": "Safety and reliability"
+      },
+      {
+        "letter": "C",
+        "text": "Privacy and security"
+      },
+      {
+        "letter": "D",
+        "text": "Accountability"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Performing well on every other axis while remaining inscrutable is precisely a transparency and explainability failure. Note the near-miss: accountability concerns who answers for the outcome, which could still be clearly assigned here — the gap is that no one can explain the reasoning. Safety, reliability, privacy and security are all satisfied in the scenario as described.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #2"
+  },
+  {
+    "id": "q-1274",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "An organization's AI policy covers development and deployment thoroughly. A model runs for two years, quietly degrades, and no one notices until customers complain. Which lifecycle policy stage was missing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Use case assessment"
+      },
+      {
+        "letter": "B",
+        "text": "Data acquisition and use"
+      },
+      {
+        "letter": "C",
+        "text": "Deployment and monitoring"
+      },
+      {
+        "letter": "D",
+        "text": "Model and system development"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The failure sits at deployment and monitoring — the stage that keeps watching after launch. A lifecycle policy has to span use case assessment, risk management, ethics by design, data acquisition, development, training and testing, deployment and monitoring, documentation, and incident management. Policies that stop at go-live are the most common structural gap.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #3"
+  },
+  {
+    "id": "q-1275",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "Why should incident management be a required element of AI lifecycle policy rather than an operational detail?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Because AI systems fail in ways conventional IT incident processes are not designed to detect or classify"
+      },
+      {
+        "letter": "B",
+        "text": "Because regulators audit incident logs more often than any other artifact"
+      },
+      {
+        "letter": "C",
+        "text": "Because incident management replaces the need for monitoring"
+      },
+      {
+        "letter": "D",
+        "text": "Because it is the only lifecycle stage with legal consequences"
+      }
+    ],
+    "answer": "A",
+    "explanation": "AI failures are frequently not outages — a model can be fully available and performing to spec while producing biased, drifting, or misaligned outcomes. Conventional IT incident processes are tuned to detect breakage, so AI needs its own definitions, classification and escalation paths. Monitoring detects; incident management responds — they are complements, and legal consequences attach across many stages.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #4"
+  },
+  {
+    "id": "q-1276",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "Reviewing which existing policies need revision for AI, a team has updated privacy, security and data governance. Which remaining policy area does the BoK explicitly name?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Intellectual property"
+      },
+      {
+        "letter": "B",
+        "text": "Travel and expenses"
+      },
+      {
+        "letter": "C",
+        "text": "Physical site access"
+      },
+      {
+        "letter": "D",
+        "text": "Business continuity"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The BoK names data privacy, security, data governance and intellectual property as the existing policies to evaluate and update for AI. IP is the one teams forget: training-data licensing, ownership of model outputs, and the choice between patent and trade secret protection all need policy positions that pre-AI IP policy never contemplated.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #5"
+  },
+  {
+    "id": "q-1277",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A customer exercises their right to erasure. The company deletes the record from its database, but the data was used to train a deployed model. What is the governance problem?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Deleting the source record does not remove its influence from the trained model, so the policy needs an AI-specific answer"
+      },
+      {
+        "letter": "B",
+        "text": "Erasure rights do not apply to data used in training"
+      },
+      {
+        "letter": "C",
+        "text": "The model must always be retrained from scratch on every erasure request"
+      },
+      {
+        "letter": "D",
+        "text": "Erasure requests must be refused once training has begun"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Deleting a row does not unlearn it. A model retains the influence of training data, so data subject rights policies need an AI-specific position — covering when retraining is triggered, what unlearning techniques apply, and how the organization documents its approach. Rights do apply, refusal is not an option, and full retraining on every request is rarely proportionate.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #6"
+  },
+  {
+    "id": "q-1278",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Staff begin pasting internal documents into a public generative AI tool to summarise them. Which third-party policy instrument most directly addresses this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A procurement policy requiring vendor security questionnaires"
+      },
+      {
+        "letter": "B",
+        "text": "A data retention schedule"
+      },
+      {
+        "letter": "C",
+        "text": "An acceptable use policy governing employee use of external AI services"
+      },
+      {
+        "letter": "D",
+        "text": "A supplier code of conduct"
+      }
+    ],
+    "answer": "C",
+    "explanation": "This is employee behaviour, not a purchase — so the control is an acceptable use policy defining which external AI services may be used, with what data, and under what conditions. The BoK names acceptable use alongside procurement, supply chain and human resources precisely because AI risk enters through staff behaviour, not only through contracts. Procurement controls never engage because nothing was bought.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #7"
+  },
+  {
+    "id": "q-1279",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A vendor's AI service is itself built on a third party's foundation model, which was trained by a fourth party. What does effective AI supply chain governance require?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Visibility extending beyond the immediate vendor, with contractual flow-down of key obligations"
+      },
+      {
+        "letter": "B",
+        "text": "Direct contracts with every party in the chain"
+      },
+      {
+        "letter": "C",
+        "text": "Refusing any vendor that relies on subprocessors"
+      },
+      {
+        "letter": "D",
+        "text": "Accepting that only the immediate vendor's practices are assessable"
+      }
+    ],
+    "answer": "A",
+    "explanation": "You will rarely contract with parties beyond your direct vendor, so governance depends on visibility into the chain plus flow-down obligations — requiring your vendor to impose equivalent terms on its own suppliers and to disclose material dependencies. Direct contracts with everyone is impractical, refusing all subprocessing would exclude most of the market, and accepting one-layer visibility leaves the real risk unassessed.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #8"
+  },
+  {
+    "id": "q-1280",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "At what point does privacy by design most meaningfully enter an ML pipeline?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Embedded across the pipeline — collection, feature engineering, training and serving — with privacy-preserving defaults at each stage"
+      },
+      {
+        "letter": "B",
+        "text": "At the point of publishing the privacy notice"
+      },
+      {
+        "letter": "C",
+        "text": "Only during the data collection stage"
+      },
+      {
+        "letter": "D",
+        "text": "At the final security review before release"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Privacy by design means privacy considerations and protective defaults built into every stage, not a checkpoint. Restricting it to collection misses feature engineering that reconstructs sensitive attributes and serving that logs sensitive prompts. A notice communicates decisions already made, and a final review arrives too late to change architecture.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #9"
+  },
+  {
+    "id": "q-1281",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A team argues that data minimization inherently degrades model performance and should therefore yield to accuracy. What is the strongest counter?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Minimization is a recommended practice rather than a requirement"
+      },
+      {
+        "letter": "B",
+        "text": "Accuracy always outweighs privacy where the use case is beneficial"
+      },
+      {
+        "letter": "C",
+        "text": "Minimization applies only to special-category data"
+      },
+      {
+        "letter": "D",
+        "text": "More data is not reliably better data; necessity is assessed against the specified purpose, and excess data adds breach and compliance exposure without guaranteed benefit"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The premise is weak: additional data does not reliably improve a model, and quality and relevance usually matter more than volume. Minimization asks what is necessary for the stated purpose, and surplus data enlarges breach exposure and compliance burden regardless of accuracy. It is a binding principle, not advisory, and applies to all personal data.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #10"
+  },
+  {
+    "id": "q-1282",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "Tern Automation sells two products. The first is a software tool that logs into web portals and re-keys invoice data between systems by following fixed scripted rules. The second is a customer-support assistant built on a large language model.\n\nTern's marketing describes both as \"AI-powered.\" Its new governance lead is deciding which products belong in the AI inventory and what governance each warrants. She is also reviewing a proposal to analyse free-form engineer callout notes — unstructured text in several languages — to predict which customers are at risk of cancelling.\n\nTern's first product mimics a clerk's keyboard-and-mouse actions across web portals, following fixed scripted rules. How should Tern's inventory classify this class of software?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "As generative AI, because it produces new database entries"
+      },
+      {
+        "letter": "B",
+        "text": "As a limited-memory AI system, because it processes screens in sequence"
+      },
+      {
+        "letter": "C",
+        "text": "As robotic process automation — rule-based task automation that is not by itself an AI system, though it can be augmented with AI components"
+      },
+      {
+        "letter": "D",
+        "text": "As agentic AI, because it operates other software without supervision"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Robotic process automation automates repetitive rule-based digital work by mimicking human actions on software interfaces. Built on fixed scripts, it involves no perception, reasoning or learning — so it falls outside the definition of an AI system, which is exactly the inventory judgment Tern faces. RPA can be augmented with AI components, which would change that answer. It generates nothing new, retains no learned state between runs, and follows scripts rather than pursuing goals autonomously.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #11"
+  },
+  {
+    "id": "q-1283",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Tern Automation sells two products. The first is a software tool that logs into web portals and re-keys invoice data between systems by following fixed scripted rules. The second is a customer-support assistant built on a large language model.\n\nTern's marketing describes both as \"AI-powered.\" Its new governance lead is deciding which products belong in the AI inventory and what governance each warrants. She is also reviewing a proposal to analyse free-form engineer callout notes — unstructured text in several languages — to predict which customers are at risk of cancelling.\n\nWhich product belongs in Tern's AI inventory with fuller governance, and on what basis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Both equally, because marketing describes both as AI-powered"
+      },
+      {
+        "letter": "B",
+        "text": "Neither, because both are commercial software products"
+      },
+      {
+        "letter": "C",
+        "text": "Only the scripted invoice tool, because it takes actions in other systems"
+      },
+      {
+        "letter": "D",
+        "text": "Primarily the language-model assistant, because it involves learning and probabilistic output rather than fixed rules"
+      }
+    ],
+    "answer": "D",
+    "explanation": "An AI system involves elements of perception, reasoning or learning, which distinguishes it from fixed business rules. The language-model assistant qualifies and brings probabilistic output, opacity and drift with it; the scripted tool is deterministic automation that may still warrant operational controls but not the full AI overlay. Marketing language is not a classification basis — a point the scenario makes deliberately.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #12"
+  },
+  {
+    "id": "q-1284",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "Tern Automation sells two products. The first is a software tool that logs into web portals and re-keys invoice data between systems by following fixed scripted rules. The second is a customer-support assistant built on a large language model.\n\nTern's marketing describes both as \"AI-powered.\" Its new governance lead is deciding which products belong in the AI inventory and what governance each warrants. She is also reviewing a proposal to analyse free-form engineer callout notes — unstructured text in several languages — to predict which customers are at risk of cancelling.\n\nTern wants to analyse free-form engineer callout notes, written in several languages, to predict cancellation risk. Which technique is most applicable?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Natural language processing"
+      },
+      {
+        "letter": "B",
+        "text": "Regression on structured numeric variables"
+      },
+      {
+        "letter": "C",
+        "text": "Dimensionality reduction"
+      },
+      {
+        "letter": "D",
+        "text": "Anomaly detection on transaction volumes"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Unstructured free-form text in multiple languages calls for natural language processing, which is built for exactly that input. Regression predicts numeric outcomes from numeric variables; dimensionality reduction shrinks a feature space rather than interpreting language; anomaly detection finds outliers in structured signals. The input type drives the technique choice.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #13"
+  },
+  {
+    "id": "q-1285",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A brand runs an advertisement featuring an AI-generated likeness of a real person who never endorsed the product. Beyond publicity and likeness claims, which consumer-protection theory applies?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Deception — implying an endorsement that does not exist is materially misleading to consumers"
+      },
+      {
+        "letter": "B",
+        "text": "No consumer protection theory applies to synthetic imagery"
+      },
+      {
+        "letter": "C",
+        "text": "Consumer protection applies only where a product is defective"
+      },
+      {
+        "letter": "D",
+        "text": "Only if the advertisement omits a disclaimer in small print"
+      }
+    ],
+    "answer": "A",
+    "explanation": "An implied endorsement that never happened is a material misrepresentation capable of affecting a purchasing decision — squarely a deceptive practice. Deepfake advertising is a named emerging risk area. Synthetic media is not exempt, consumer protection is not limited to defective products, and a buried disclaimer does not cure a misleading overall impression.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #14"
+  },
+  {
+    "id": "q-1286",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A companion app detects when users are lonely and times upgrade prompts to those moments. Which consumer-protection concern is most directly raised?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Exploiting an identified emotional vulnerability to influence a transaction is an unfair practice, independent of whether pricing is disclosed"
+      },
+      {
+        "letter": "B",
+        "text": "None, since the pricing is disclosed"
+      },
+      {
+        "letter": "C",
+        "text": "This is permissible personalization"
+      },
+      {
+        "letter": "D",
+        "text": "It is a concern only if the user is a minor"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Unfairness is a distinct theory from deception: a practice can be perfectly truthful and still unfair if it causes substantial harm consumers cannot reasonably avoid. Deliberately timing an offer to a detected vulnerability is the paradigm case, and it is what separates manipulation from personalization. Accurate pricing does not cure it, and it is not limited to minors.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #15"
+  },
+  {
+    "id": "q-1287",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "An AI-assisted diagnostic tool performs poorly on a patient subgroup. The manufacturer knows this but the instructions for use do not mention it. Which product liability theory is most directly engaged?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Design defect"
+      },
+      {
+        "letter": "B",
+        "text": "Manufacturing defect"
+      },
+      {
+        "letter": "C",
+        "text": "Failure to warn"
+      },
+      {
+        "letter": "D",
+        "text": "No theory, since the limitation is inherent to AI"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Known limitations that users need in order to use a product safely must be disclosed — withholding them is failure to warn, and it attaches even where the design is sound and manufacture correct. A design defect would mean the design itself is unreasonably dangerous; a manufacturing defect means deviation from that design. Inherent limitations do not excuse non-disclosure; they are precisely what must be warned about.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #16"
+  },
+  {
+    "id": "q-1288",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "What is the primary product-liability rationale for maintaining an AI software bill of materials?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It shortens model training time"
+      },
+      {
+        "letter": "B",
+        "text": "It replaces the need for testing documentation"
+      },
+      {
+        "letter": "C",
+        "text": "It satisfies the EU AI Act's conformity assessment on its own"
+      },
+      {
+        "letter": "D",
+        "text": "It records the components, models, datasets and dependencies in a product, so defective elements can be traced and remediated"
+      }
+    ],
+    "answer": "D",
+    "explanation": "An AI-SBOM makes composition traceable: when a component, pretrained model or dataset is later found defective or improperly licensed, you can identify every product affected and act. Without it, remediation becomes guesswork. It has no bearing on training time, does not replace testing records, and is one input to conformity work rather than a substitute for it.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #17"
+  },
+  {
+    "id": "q-1289",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Among the high-risk obligations, what does the quality management system requirement primarily ensure?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "That documented, repeatable processes govern design, development, testing and post-market activity — so compliance is systematic rather than per-project heroics"
+      },
+      {
+        "letter": "B",
+        "text": "That the model achieves a minimum accuracy threshold"
+      },
+      {
+        "letter": "C",
+        "text": "That an external auditor approves every release"
+      },
+      {
+        "letter": "D",
+        "text": "That the system is certified to ISO/IEC 42001"
+      }
+    ],
+    "answer": "A",
+    "explanation": "A QMS is about repeatable process: documented procedures for design control, testing, change management, documentation and post-market monitoring, so conformity does not depend on who happens to be running a given project. It sets no accuracy floor, does not mandate external per-release approval, and while ISO/IEC 42001 helps demonstrate it, certification is not the requirement.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #18"
+  },
+  {
+    "id": "q-1290",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "Ravensworth Group is finalising an AI governance programme. The steering group is arguing about method: one director wants a named internal sceptic to challenge every proposal, another wants the team measured on following the documented process, a third wants decisions driven by projected cost savings, and the AI governance lead has proposed that planning and design decisions be reached by consensus across the represented functions.\n\nRavensworth has also just been told that a model it retired eighteen months ago is still cited in a live customer dispute.\n\nRavensworth's deactivation policy lists conditions under which a model must come out of service. Which finding most clearly requires deactivation rather than continued operation with mitigations?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Monitoring confirms a recent mitigation has restored performance to within thresholds"
+      },
+      {
+        "letter": "B",
+        "text": "No feasible mitigation exists and the risk now sits above the organization's documented tolerance"
+      },
+      {
+        "letter": "C",
+        "text": "The model's limitations are documented and communicated to its users"
+      },
+      {
+        "letter": "D",
+        "text": "A scheduled retraining is already planned for next quarter"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Deactivation is required when the risk cannot feasibly be mitigated and exceeds what the organization has documented it will tolerate — operating past that point is unauthorized risk acceptance. A verified fix, documented limitations, or an upcoming retrain each describe situations compatible with continued, monitored operation. Note that documenting a limitation does not resolve it; what matters is whether the residual risk sits within tolerance.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #21"
+  },
+  {
+    "id": "q-1291",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Which statement about voluntary AI frameworks is incorrect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The NIST AI RMF and Playbook are intended for voluntary use"
+      },
+      {
+        "letter": "B",
+        "text": "The OECD AI Principles influenced the EU AI Act"
+      },
+      {
+        "letter": "C",
+        "text": "Adopting the OECD Principles discharges EU AI Act obligations"
+      },
+      {
+        "letter": "D",
+        "text": "The Singapore Model AI Governance Framework is non-binding"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Voluntary alignment does not discharge a binding regulation — only the Act's own obligations satisfy the Act, however closely a framework informed it. The RMF and Playbook are voluntary, the OECD Principles did influence the Act, and Singapore's framework is non-binding guidance; those three statements are accurate.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #22"
+  },
+  {
+    "id": "q-1292",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A deployer of a high-risk AI system uses it to make decisions about employees. Beyond internal governance, what notification obligation applies?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "None, since the provider handles all transparency"
+      },
+      {
+        "letter": "B",
+        "text": "Notifying the market surveillance authority before each decision"
+      },
+      {
+        "letter": "C",
+        "text": "Informing the affected workers and their representatives that the system will be used on them"
+      },
+      {
+        "letter": "D",
+        "text": "Publishing the model's technical documentation publicly"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Deployers using high-risk AI in the workplace must inform affected workers and their representatives before putting the system into use — a duty that sits with the deployer, not the provider, because only the deployer knows the actual deployment context. Authorities are notified of serious incidents rather than routine decisions, and technical documentation is kept for regulators (deployers get instructions for use) rather than published.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #23"
+  },
+  {
+    "id": "q-1293",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An organization is penalized for a violation, remediates it, then commits a similar violation eighteen months later. How does the enforcement framework treat this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The second penalty is capped at the first penalty's amount"
+      },
+      {
+        "letter": "B",
+        "text": "Recurrence is treated identically to a first offence"
+      },
+      {
+        "letter": "C",
+        "text": "Prior violations and recurrence are aggravating factors that increase penalty severity"
+      },
+      {
+        "letter": "D",
+        "text": "Remediation of the first violation immunises the second"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Penalty severity accounts for the nature of the violation, the organization's size, and any previous violations — so recurrence escalates exposure, particularly where it suggests remediation was superficial. There is no cap tied to a prior fine, recurrence is not neutral, and fixing an earlier problem confers no immunity for a later one.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #24"
+  },
+  {
+    "id": "q-1294",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "How do the EU AI Act's maximum penalties compare with the GDPR's?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "They are identical, since both cap at 4% of turnover"
+      },
+      {
+        "letter": "B",
+        "text": "The AI Act's top tier is lower, reflecting its lighter-touch approach"
+      },
+      {
+        "letter": "C",
+        "text": "The AI Act's top tier is higher, reaching 7% of worldwide turnover against the GDPR's 4%"
+      },
+      {
+        "letter": "D",
+        "text": "The AI Act imposes criminal rather than administrative penalties"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The AI Act's top tier for prohibited practices reaches EUR 35 million or 7% of total worldwide annual turnover, exceeding the GDPR's headline 4% ceiling — a deliberate signal about the seriousness of the red lines. The caps are not identical, the AI Act is not lighter-touch at the top end, and its penalties are administrative.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #25"
+  },
+  {
+    "id": "q-1295",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Beyond its five values-based principles, the OECD publishes a framework for classifying AI systems. What is its governance use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It provides a structured way to characterise a system — people, economic context, data and input, model, and task and output — supporting consistent risk assessment across organizations and jurisdictions"
+      },
+      {
+        "letter": "B",
+        "text": "It certifies AI systems as trustworthy"
+      },
+      {
+        "letter": "C",
+        "text": "It is legally binding on OECD member states"
+      },
+      {
+        "letter": "D",
+        "text": "It replaces national risk classification schemes"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The OECD Framework for Classification of AI Systems gives a common vocabulary for describing a system along consistent dimensions, so risk assessments become comparable across organizations and borders. The OECD certifies nothing, its instruments are non-binding, and the framework informs rather than displaces statutory schemes such as the EU AI Act's tiers.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #26"
+  },
+  {
+    "id": "q-1296",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "An organization states that adopting the OECD AI Principles satisfies its EU AI Act obligations. What is the correct assessment?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Correct, since the EU AI Act was modelled on the OECD Principles"
+      },
+      {
+        "letter": "B",
+        "text": "Incorrect, because the OECD Principles conflict with the EU AI Act"
+      },
+      {
+        "letter": "C",
+        "text": "Correct, provided the organization documents the adoption"
+      },
+      {
+        "letter": "D",
+        "text": "Incorrect — the OECD Principles are non-binding and support good practice, but confer no legal compliance with a binding regulation"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The OECD Principles influenced the EU AI Act but are voluntary and confer no compliance with it — a distinction the exam tests through exactly this confusion. Alignment is genuinely useful and the two do not conflict; the point is that only the Act's own obligations discharge the Act's requirements, and documenting a voluntary adoption changes nothing legally.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #27"
+  },
+  {
+    "id": "q-1297",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "DPIAs and AI conformity assessments serve different legal regimes. Which element is common to both?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A targeted plan to mitigate the risks identified"
+      },
+      {
+        "letter": "B",
+        "text": "A valid consent mechanism for the data subjects involved"
+      },
+      {
+        "letter": "C",
+        "text": "A strategy for anonymising the underlying dataset"
+      },
+      {
+        "letter": "D",
+        "text": "A published policy describing personal data use"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Both instruments assess risk and require a targeted mitigation plan for what they find — that is the shared structure. Consent and anonymisation may be relevant depending on the processing but are not required elements of either; and while personal data is central to a DPIA, an AI conformity assessment may involve no personal data at all, which is why a personal-data policy is not common ground.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #30"
+  },
+  {
+    "id": "q-1298",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Hard",
+    "question": "A model is challenged in litigation. The organization can show its full transformation pipeline from raw file to training set, but cannot establish where two source datasets originally came from or under what terms. Which is missing?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Lineage"
+      },
+      {
+        "letter": "B",
+        "text": "Access logging"
+      },
+      {
+        "letter": "C",
+        "text": "Version control"
+      },
+      {
+        "letter": "D",
+        "text": "Provenance"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Lineage traces transformations — which the organization has. Provenance establishes origin and the terms under which data was obtained, which is precisely the gap and precisely what a licensing or lawful-basis challenge turns on. Version control tracks artifact changes; access logging records who touched what. The pair is commonly conflated, and this is the discriminator.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #31"
+  },
+  {
+    "id": "q-1299",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "What tradeoff comes with building comprehensive data lineage and provenance tracking?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It reduces model accuracy"
+      },
+      {
+        "letter": "B",
+        "text": "It prevents the use of third-party data entirely"
+      },
+      {
+        "letter": "C",
+        "text": "It carries real cost and complexity in instrumentation and storage, which must be weighed against audit, reproducibility and legal-defence benefits"
+      },
+      {
+        "letter": "D",
+        "text": "It is prohibited where personal data is involved"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Traceability is not free: instrumenting pipelines, capturing metadata and retaining it costs engineering time and storage, and this is a genuine tradeoff to be weighed rather than an unlimited good. The benefits — audit readiness, reproducibility, licensing defence — usually justify it for higher-risk systems. It does not affect accuracy, bar third-party data, or conflict with privacy law.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #32"
+  },
+  {
+    "id": "q-1300",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A team argues a model is ready for production because it exceeded every accuracy target. What does release readiness additionally require?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A higher accuracy target"
+      },
+      {
+        "letter": "B",
+        "text": "A larger validation dataset"
+      },
+      {
+        "letter": "C",
+        "text": "Approval from the model's original architect"
+      },
+      {
+        "letter": "D",
+        "text": "Confirmation that documentation, conformity requirements, oversight arrangements and rollback provisions are all in place"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Readiness is an organizational and compliance state, not a performance score: documentation complete, conformity requirements satisfied, human oversight arranged, monitoring instrumented, rollback available, and ownership assigned. Raising the accuracy bar or enlarging the validation set improves the model without addressing any of that, and the architect's approval is not an independent check.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #33"
+  },
+  {
+    "id": "q-1301",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Which of the following are required when preparing a high-risk AI system for release into production?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Technical documentation is complete and current"
+      },
+      {
+        "letter": "B",
+        "text": "Required conformity assessment activities have been carried out"
+      },
+      {
+        "letter": "C",
+        "text": "The model card describing intended use and limitations exists"
+      },
+      {
+        "letter": "D",
+        "text": "The engineering team has approved its own work"
+      },
+      {
+        "letter": "E",
+        "text": "Every possible failure mode has been eliminated"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Release preparation for a high-risk system centres on complete technical documentation, satisfied conformity requirements, and a model card stating intended use and limitations. The model card comes from the BoK's own indicator (III.C.1); the EU AI Act itself does not use the term; its legal equivalents are the Annex IV technical documentation and the Art 13 instructions for use. Self-approval by the building team is not an independent gate, and eliminating every failure mode is impossible — which is why post-market monitoring and incident processes exist downstream.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #34"
+  },
+  {
+    "id": "q-1302",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Which is least likely to reduce bias arising from historically biased training labels?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Reviewing label provenance and the decisions the labels encode"
+      },
+      {
+        "letter": "B",
+        "text": "Increasing the volume of the same historical data"
+      },
+      {
+        "letter": "C",
+        "text": "Testing outcomes across subgroups and documenting disparities"
+      },
+      {
+        "letter": "D",
+        "text": "Reconsidering whether the target variable is an appropriate proxy"
+      }
+    ],
+    "answer": "B",
+    "explanation": "More of the same biased data teaches the pattern more faithfully rather than correcting it — volume is not a remedy for a biased target. Examining label provenance, subgroup outcome testing and questioning the proxy each attack the actual cause.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #35"
+  },
+  {
+    "id": "q-1303",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Two deployed models are otherwise similar, but one operates in a fast-changing consumer market and the other in a stable industrial process. What follows for their maintenance schedules?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Both should be retrained on the same fixed calendar for consistency"
+      },
+      {
+        "letter": "B",
+        "text": "The industrial model needs more frequent retraining because stability implies hidden drift"
+      },
+      {
+        "letter": "C",
+        "text": "Neither needs a schedule if continuous monitoring is in place"
+      },
+      {
+        "letter": "D",
+        "text": "The consumer model warrants a more frequent maintenance and retraining schedule because its environment shifts faster"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Maintenance cadence follows how quickly the operating environment changes and what staleness costs — so a volatile consumer setting warrants more frequent attention than a stable industrial process. A shared calendar ignores that. Monitoring detects problems but does not substitute for a scheduled maintenance commitment, and stability does not imply hidden drift.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #36"
+  },
+  {
+    "id": "q-1304",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A team has extensive dashboards but no one is paged when metrics move. What is the governance deficiency?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Monitoring must be continuous rather than periodic"
+      },
+      {
+        "letter": "B",
+        "text": "Dashboards should be replaced with weekly reports"
+      },
+      {
+        "letter": "C",
+        "text": "Monitoring exists without defined thresholds and escalation, so degradation is observable but not acted upon"
+      },
+      {
+        "letter": "D",
+        "text": "The dashboards should be publicly disclosed"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Observation without a trigger-to-action link is not governance. Continuous monitoring must be paired with defined thresholds, an escalation path, and someone accountable for responding — otherwise problems are visible in hindsight only. Replacing dashboards with reports makes it slower, and public disclosure serves a different purpose entirely.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #37"
+  },
+  {
+    "id": "q-1305",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "How do a performance audit and a red-teaming exercise differ in what they are designed to find?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An audit verifies the system performs as documented and claimed; red teaming actively attempts to make it behave badly"
+      },
+      {
+        "letter": "B",
+        "text": "They are two names for the same activity"
+      },
+      {
+        "letter": "C",
+        "text": "An audit is internal and red teaming is always external"
+      },
+      {
+        "letter": "D",
+        "text": "Red teaming is required by law while audits are voluntary"
+      }
+    ],
+    "answer": "A",
+    "explanation": "An audit is a verification exercise — does the system do what the documentation says, against evidence. Red teaming is adversarial — can we induce harmful, biased or manipulable behaviour. They answer different questions and neither substitutes for the other. Either can be internal or external, and neither is universally mandated.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #38"
+  },
+  {
+    "id": "q-1306",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "An internal audit at Ravensworth finds a production model being used by a second team for a purpose governance never reviewed. Which missing artifact most directly allowed this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A record of the system's approved uses and the boundaries of that approval"
+      },
+      {
+        "letter": "B",
+        "text": "The model's performance benchmark results"
+      },
+      {
+        "letter": "C",
+        "text": "The vendor's security certification"
+      },
+      {
+        "letter": "D",
+        "text": "The development team's project retrospectives"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Approval attaches to a use case, and without a record of what was approved and where the boundary sits, nothing marks the second team's use as out of scope — this is the secondary-use risk governance exists to catch. Benchmarks describe performance, a security certification describes the vendor's controls, and retrospectives record process history; none of them defines what the system is authorized to do.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #39"
+  },
+  {
+    "id": "q-1307",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Threat modeling for an AI system should extend beyond conventional application attack surfaces to include which additional targets?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Only the network perimeter and API gateway"
+      },
+      {
+        "letter": "B",
+        "text": "Only the source code repository"
+      },
+      {
+        "letter": "C",
+        "text": "Only the physical data centre"
+      },
+      {
+        "letter": "D",
+        "text": "The training data pipeline, the model itself, and the inference interface"
+      }
+    ],
+    "answer": "D",
+    "explanation": "AI adds attack surfaces conventional threat models omit: the training data pipeline (poisoning), the model (extraction, inversion), and the inference interface (prompt injection, evasion). Perimeter, facility and repository controls remain necessary but leave every AI-specific vector unexamined — which is the point of AI-specific threat modeling.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #40"
+  },
+  {
+    "id": "q-1308",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "An AI system produces a dangerous output that a human reviewer catches before it reaches anyone. Should it be documented?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "No, because the control worked as designed"
+      },
+      {
+        "letter": "B",
+        "text": "No, because no harm occurred"
+      },
+      {
+        "letter": "C",
+        "text": "Only if the reviewer requests it"
+      },
+      {
+        "letter": "D",
+        "text": "Yes — near misses reveal how close the system came to harm and where controls are load-bearing"
+      }
+    ],
+    "answer": "D",
+    "explanation": "A near miss is evidence about how thin your margin is. That the control caught it is exactly why it matters: you learn which safeguards are doing real work and how frequently they are needed. Documenting only realised harm means you discover the pattern when a control finally fails. Requirements to manage and document incidents, issues and risks are not limited to those causing damage.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #41"
+  },
+  {
+    "id": "q-1309",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "In AI incident management, what distinguishes an 'issue' from an 'incident'?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Issues affect internal users; incidents affect external users"
+      },
+      {
+        "letter": "B",
+        "text": "There is no meaningful distinction"
+      },
+      {
+        "letter": "C",
+        "text": "Issues are technical; incidents are legal"
+      },
+      {
+        "letter": "D",
+        "text": "An issue is a known problem or deviation being tracked; an incident is an event where the system caused or nearly caused harm requiring response"
+      }
+    ],
+    "answer": "D",
+    "explanation": "An issue is a tracked deviation or known problem being managed; an incident is an event demanding a response because harm occurred or nearly did. Keeping them distinct prevents two failures: treating every minor defect as a crisis, and quietly logging something serious as a routine issue. The split is not by audience, and both have technical and legal dimensions.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #42"
+  },
+  {
+    "id": "q-1310",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Hard",
+    "question": "A model fails in production on a condition that never appeared in any test set. Which BoK-named incident cause best explains how the failure reached production?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Model or data drift"
+      },
+      {
+        "letter": "B",
+        "text": "Brittleness"
+      },
+      {
+        "letter": "C",
+        "text": "Lack of quality data"
+      },
+      {
+        "letter": "D",
+        "text": "Insufficient testing"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The condition was never tested, so the direct cause is insufficient testing — the coverage gap. The near-miss here is brittleness, which describes the model's inability to generalise beyond training conditions; both may be present, but the question asks what allowed the failure to reach production, and that is the untested path. Drift develops post-deployment, and data quality is about the data itself rather than test coverage.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #43"
+  },
+  {
+    "id": "q-1311",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "Why is a culture of blame harmful in AI incident analysis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Blame is prohibited under the EU AI Act"
+      },
+      {
+        "letter": "B",
+        "text": "Individual accountability is incompatible with AI governance"
+      },
+      {
+        "letter": "C",
+        "text": "Blame suppresses the reporting and candour that root cause analysis depends on, so systemic causes go undiscovered"
+      },
+      {
+        "letter": "D",
+        "text": "Incidents in AI systems are never attributable to human decisions"
+      }
+    ],
+    "answer": "C",
+    "explanation": "If reporting an incident is dangerous to you, people stop reporting — and the systemic causes, which are usually where the real fix lies, never surface. Blameless analysis is about accurate diagnosis, not the absence of accountability: organizational accountability remains, and human decisions frequently do contribute. No statute addresses this; it is a governance-effectiveness point.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #44"
+  },
+  {
+    "id": "q-1312",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "What must a provider's instructions for use convey to a deployer of a high-risk AI system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The model's source code and training data"
+      },
+      {
+        "letter": "B",
+        "text": "The commercial terms of the licence"
+      },
+      {
+        "letter": "C",
+        "text": "The provider's internal development timeline"
+      },
+      {
+        "letter": "D",
+        "text": "Intended purpose, performance characteristics, known limitations, and the human oversight measures the deployer must implement"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Instructions for use are the provider's transfer of operating knowledge: what the system is for, how well it performs and under what conditions, where it fails, and what oversight the deployer must put in place. Without them a deployer cannot discharge its own obligations. Source code and training data are neither required nor appropriate; timelines and commercial terms serve other purposes.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #45"
+  },
+  {
+    "id": "q-1313",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Which of the following belong in the transparency disclosures a provider makes about a high-risk AI system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Intended purpose and the conditions under which the system performs reliably"
+      },
+      {
+        "letter": "B",
+        "text": "Known limitations and residual risks relevant to safe use"
+      },
+      {
+        "letter": "C",
+        "text": "The post-market monitoring approach"
+      },
+      {
+        "letter": "D",
+        "text": "Security vulnerabilities not yet remediated"
+      },
+      {
+        "letter": "E",
+        "text": "Individual training records of identifiable people"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Public and deployer-facing disclosure covers intended purpose and reliable operating conditions, known limitations and residual risks, and the post-market monitoring approach. Two categories must be withheld: unremediated security vulnerabilities, whose publication would assist attackers, and identifiable training records, whose disclosure would breach privacy. Transparency has boundaries, and knowing them is the governance skill.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #46"
+  },
+  {
+    "id": "q-1314",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A system must run offline at remote sites with minimal latency and keep sensitive data local. Which option is least suitable?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Edge deployment on local devices"
+      },
+      {
+        "letter": "B",
+        "text": "On-premise deployment at each site"
+      },
+      {
+        "letter": "C",
+        "text": "Public cloud with regional data residency"
+      },
+      {
+        "letter": "D",
+        "text": "A hybrid design performing inference locally"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Public cloud, even with regional residency, fails the offline requirement: inference depends on connectivity the scenario says will not always exist, and residency addresses where data rests rather than whether processing is local. Edge, on-premise and a hybrid that keeps inference local each satisfy all three constraints.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #48"
+  },
+  {
+    "id": "q-1315",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "In evaluating an AI use case before deployment, what distinguishes the business objective from the performance requirement?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "They are the same thing expressed differently"
+      },
+      {
+        "letter": "B",
+        "text": "The objective is technical; the requirement is commercial"
+      },
+      {
+        "letter": "C",
+        "text": "The objective states the outcome the organization wants; the performance requirement states the measurable standard the system must meet to deliver it"
+      },
+      {
+        "letter": "D",
+        "text": "Only the performance requirement needs documenting"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The objective is the outcome sought — reduce claim handling time, improve triage accuracy. The performance requirement is the measurable bar that makes the objective achievable, and it is where thresholds, subgroup expectations and failure tolerances get fixed. Conflating them produces systems that meet a metric while missing the goal, and both need documenting.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #49"
+  },
+  {
+    "id": "q-1316",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "Assessing data availability before committing to an AI deployment, which finding should most concern governance?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The data is held in more than one system"
+      },
+      {
+        "letter": "B",
+        "text": "The organization has less data than a published benchmark used"
+      },
+      {
+        "letter": "C",
+        "text": "Sufficient data exists but the organization cannot establish lawful rights to use it for this purpose"
+      },
+      {
+        "letter": "D",
+        "text": "The data requires transformation before use"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Volume is rarely the binding constraint; lawful rights are. Data that exists but cannot lawfully be used for this purpose stops the project regardless of quality or quantity, and discovering that after building is expensive. Multiple source systems and transformation needs are ordinary engineering, and benchmark comparisons say little about fitness for your task.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #50"
+  },
+  {
+    "id": "q-1317",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Grendel Media runs a recommendation model optimised for watch time. It works exactly as specified, and over six months progressively surfaces more polarising content because that maximises the metric. Aggregate engagement and accuracy metrics are all healthy.\n\nGrendel also runs an AI tool that dynamically adjusts the wording and button prominence of its consent dialogue until users are most likely to accept data sharing, and times upgrade prompts to moments when a user's activity suggests they are isolated.\n\nGrendel's recommender works exactly as specified yet progressively surfaces polarising content. Which characterisation is incorrect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It illustrates misalignment between the optimised metric and the intended outcome"
+      },
+      {
+        "letter": "B",
+        "text": "It is an incident, notwithstanding that nothing malfunctioned"
+      },
+      {
+        "letter": "C",
+        "text": "It is not an incident, because the system performed to specification"
+      },
+      {
+        "letter": "D",
+        "text": "Aggregate metrics can remain healthy while the harm accumulates"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The false statement is that specification-conforming behaviour cannot be an incident. Not all incidents are failures — a system doing exactly what it was told can cause harm because the objective was misaligned with what was actually wanted, which is why incident management weighs intent against outcome rather than only asking whether something broke. The other three statements are all accurate.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #51"
+  },
+  {
+    "id": "q-1318",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Grendel Media runs a recommendation model optimised for watch time. It works exactly as specified, and over six months progressively surfaces more polarising content because that maximises the metric. Aggregate engagement and accuracy metrics are all healthy.\n\nGrendel also runs an AI tool that dynamically adjusts the wording and button prominence of its consent dialogue until users are most likely to accept data sharing, and times upgrade prompts to moments when a user's activity suggests they are isolated.\n\nGrendel optimises its consent dialogue for acceptance and times upgrade prompts to moments of apparent isolation. Which analysis is correct?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Both are permissible personalization if pricing is accurately disclosed"
+      },
+      {
+        "letter": "B",
+        "text": "The consent dialogue is a dark pattern undermining valid consent; timing prompts to detected vulnerability is an unfair practice even if every statement is true"
+      },
+      {
+        "letter": "C",
+        "text": "Only the consent dialogue raises an issue; prompt timing is a marketing decision"
+      },
+      {
+        "letter": "D",
+        "text": "Neither raises an issue, since users retain the ability to decline"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Optimising an interface to steer a choice is a dark pattern, and consent obtained that way is not freely given, so it fails as a lawful basis. Separately, deliberately timing an offer to a detected emotional vulnerability is unfair — a distinct theory from deception, engaged even where every statement made is accurate. Accurate pricing and a nominal ability to decline cure neither.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #52"
+  },
+  {
+    "id": "q-1319",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Which factors belong in the evaluation of whether to deploy an AI system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Whether the workforce is prepared to operate and oversee the system"
+      },
+      {
+        "letter": "B",
+        "text": "Whether ethical considerations specific to the use case have been evaluated"
+      },
+      {
+        "letter": "C",
+        "text": "Whether performance requirements can realistically be met with available data"
+      },
+      {
+        "letter": "D",
+        "text": "Whether the vendor offers the lowest price in the market"
+      },
+      {
+        "letter": "E",
+        "text": "Whether competitors have deployed something similar"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "The BoK frames the deploy decision around business objectives, performance requirements, data availability, ethical considerations and workforce readiness — an assessment of whether this organization can operate this system responsibly for this purpose. Vendor pricing is a procurement input, and competitor activity is market intelligence; neither speaks to whether deployment is appropriate or feasible here.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #53"
+  },
+  {
+    "id": "q-1320",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "An organization is choosing between a proprietary hosted model and an openly available one it would run itself. Which consideration most favours the open option from a governance standpoint?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Open models are always more accurate"
+      },
+      {
+        "letter": "B",
+        "text": "Open models are exempt from AI regulation"
+      },
+      {
+        "letter": "C",
+        "text": "Open models carry no licensing obligations"
+      },
+      {
+        "letter": "D",
+        "text": "Greater visibility into and control over the model, its hosting, and its data flows"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The governance advantage of running an open model is visibility and control — you can inspect it, host it where you choose, and keep data flows internal, which matters most for sensitive or regulated workloads. The tradeoff is that you also absorb the full operating burden. Accuracy varies case by case, open licences frequently carry real restrictions, and openness confers no regulatory exemption.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #54"
+  },
+  {
+    "id": "q-1321",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "What is the strongest governance argument for choosing a smaller model when it meets the performance requirement?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Lower cost, lower latency, a smaller attack surface and easier monitoring, with no capability the use case requires being sacrificed"
+      },
+      {
+        "letter": "B",
+        "text": "Smaller models are exempt from impact assessments"
+      },
+      {
+        "letter": "C",
+        "text": "Smaller models cannot be attacked"
+      },
+      {
+        "letter": "D",
+        "text": "Regulators require the smallest viable model"
+      }
+    ],
+    "answer": "A",
+    "explanation": "If a smaller model meets the requirement, the larger one buys capability you do not need while adding cost, latency, attack surface and monitoring burden — the concrete governance case against over-specification. Smaller models are neither exempt from assessment nor immune to attack, and no regulator prescribes model size.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #55"
+  },
+  {
+    "id": "q-1322",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Which characteristic most strongly indicates a classic predictive model rather than a generative one is the right choice?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The task requires drafting free-text responses to varied questions"
+      },
+      {
+        "letter": "B",
+        "text": "The output must be a stable, auditable prediction from structured inputs, with reproducible behaviour"
+      },
+      {
+        "letter": "C",
+        "text": "The organization wants to summarise long documents"
+      },
+      {
+        "letter": "D",
+        "text": "Users will interact conversationally"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Stable, auditable, reproducible prediction from structured data is exactly what classic models do well, and exactly where generative variability becomes a liability. Free-text drafting, summarisation and conversational interaction all point the other way. The exam tests whether you match the model class to the task rather than defaulting to whatever is newest.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #56"
+  },
+  {
+    "id": "q-1323",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A regulated organization must keep a dataset within national borders and retain full control over the processing environment, but wants to avoid the burden of scaling infrastructure. What is the honest governance assessment?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Public cloud with a regional deployment fully satisfies both"
+      },
+      {
+        "letter": "B",
+        "text": "On-premise deployment satisfies control and residency but the organization must accept the infrastructure burden — the requirements are in genuine tension"
+      },
+      {
+        "letter": "C",
+        "text": "Edge deployment resolves both requirements"
+      },
+      {
+        "letter": "D",
+        "text": "There is no way to meet residency requirements with any deployment model"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Some requirements genuinely conflict, and governance means naming the tradeoff rather than pretending it away: on-premise gives control and residency at the cost of the operational burden the organization wanted to avoid. Regional cloud may satisfy residency but not full environmental control; edge addresses latency and local processing rather than this pairing; and residency is certainly achievable.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #57"
+  },
+  {
+    "id": "q-1324",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "An organization needs a model to adopt a specialised professional register and terminology consistently, across content that rarely changes. Which adaptation approach fits best?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Retrieval augmented generation"
+      },
+      {
+        "letter": "B",
+        "text": "Fine-tuning on domain examples"
+      },
+      {
+        "letter": "C",
+        "text": "Using the base model unchanged"
+      },
+      {
+        "letter": "D",
+        "text": "An agentic architecture"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Fine-tuning teaches style, tone and terminology by adjusting the model on domain examples — appropriate here because the target is how it expresses things and the content is stable. RAG is the answer when facts change frequently and citation matters; the base model alone will not hold the register consistently; and agentic architectures address multi-step goal-directed work.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #59"
+  },
+  {
+    "id": "q-1325",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "A vendor provides a thorough impact assessment for its AI system. What is the reviewing organization's task?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Confirm the vendor's assessment is signed and file it"
+      },
+      {
+        "letter": "B",
+        "text": "Evaluate whether the assessment's assumptions, affected populations and risk conclusions hold for this organization's actual use case and context"
+      },
+      {
+        "letter": "C",
+        "text": "Repeat the vendor's assessment verbatim under its own letterhead"
+      },
+      {
+        "letter": "D",
+        "text": "Accept it, since the vendor knows the system best"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The BoK says perform or review — and reviewing means testing whether the vendor's assumptions survive contact with your context: your population, your decision, your consequences. A vendor cannot assess a deployment it has never seen. Filing it unexamined and rebranding it both skip the actual work, and vendor system knowledge does not extend to your use.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #60"
+  },
+  {
+    "id": "q-1326",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "Which statement about AI governance roles is not accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "One organization may occupy more than one role at once"
+      },
+      {
+        "letter": "B",
+        "text": "A deployer uses the system under its own authority"
+      },
+      {
+        "letter": "C",
+        "text": "Concentrating all responsibilities in a single owner strengthens accountability"
+      },
+      {
+        "letter": "D",
+        "text": "End users retain responsibilities such as following acceptable-use rules"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Concentrating everything in one owner creates a bottleneck and a single point of failure rather than strengthening accountability — RACI requires exactly one accountable party per task, not one party for every task. Dual roles are common, deployers do act under their own authority, and end users retain real obligations.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #61"
+  },
+  {
+    "id": "q-1327",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "When assessing a selected third-party AI system, which scope question most often gets missed?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The system's inference latency under load"
+      },
+      {
+        "letter": "B",
+        "text": "Who is affected by the decisions in this specific deployment, including people who never interact with the system"
+      },
+      {
+        "letter": "C",
+        "text": "The vendor's corporate ownership structure"
+      },
+      {
+        "letter": "D",
+        "text": "The programming language the system is built in"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Impact assessment turns on who bears the consequences — and the commonly missed group is people affected without ever using the system: applicants screened out, patients triaged, neighbourhoods scored. Latency is a performance matter, and ownership structure and implementation language rarely bear on impact.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #62"
+  },
+  {
+    "id": "q-1328",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Who should be accountable for the impact assessment of a third-party AI system the organization intends to deploy?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The vendor, since it built the system"
+      },
+      {
+        "letter": "B",
+        "text": "The deploying organization, because it selects the use case, the population affected and the deployment context"
+      },
+      {
+        "letter": "C",
+        "text": "The cloud provider hosting the system"
+      },
+      {
+        "letter": "D",
+        "text": "No one, if the vendor supplies its own assessment"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Accountability follows the deployment decision: the deploying organization chooses the use case, the affected population and the context, so it owns the assessment of impact in that context. Vendor and hosting-provider assessments are useful inputs, but neither can assess a deployment they do not control — and neither absorbs your accountability for it.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #63"
+  },
+  {
+    "id": "q-1329",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Which contract term most directly protects an organization that later discovers its AI vendor's practices breach its own compliance obligations?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An automatic annual renewal clause"
+      },
+      {
+        "letter": "B",
+        "text": "A termination right triggered by the vendor's compliance failure, with transition assistance"
+      },
+      {
+        "letter": "C",
+        "text": "A volume discount tier"
+      },
+      {
+        "letter": "D",
+        "text": "A mutual non-disparagement clause"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A compliance-triggered termination right with transition assistance is what converts a discovered breach into an exit you can actually execute, rather than a problem you are contractually locked into. Automatic renewal deepens the lock-in, volume discounts are commercial, and non-disparagement restricts speech without addressing the underlying risk.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #64"
+  },
+  {
+    "id": "q-1330",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Why does ownership of AI-generated outputs need explicit treatment in a vendor agreement?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Outputs are automatically owned by the customer under copyright law"
+      },
+      {
+        "letter": "B",
+        "text": "Ownership and permitted use of generated content is legally unsettled, so silence in the contract creates disputes over commercial use, derivative works and liability"
+      },
+      {
+        "letter": "C",
+        "text": "Outputs cannot be owned by anyone"
+      },
+      {
+        "letter": "D",
+        "text": "Ownership is determined solely by which party paid for the compute"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The legal position on generated content is unsettled, so a contract that says nothing leaves the parties to argue later about commercial exploitation, derivative works and who answers if an output infringes. Explicit allocation resolves it up front. No default rule vests ownership in the customer, outputs are not incapable of ownership, and payment for compute does not determine it.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #65"
+  },
+  {
+    "id": "q-1331",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "The BoK notes that deploying an organization's own proprietary model carries increased obligations and higher potential liability. Why?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Proprietary models are inherently less accurate"
+      },
+      {
+        "letter": "B",
+        "text": "There is no vendor between the organization and the harm — it holds the provider role and every associated obligation and exposure"
+      },
+      {
+        "letter": "C",
+        "text": "Proprietary models are subject to a separate regulatory regime"
+      },
+      {
+        "letter": "D",
+        "text": "Insurance is unavailable for proprietary models"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Building your own removes the intermediary: you occupy the provider role, so data rights, testing depth, documentation, conformity, explainability and post-market duties all land on you, and so does the liability when something goes wrong. Proprietary models are not inherently less accurate, face no separate regime, and are insurable.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #66"
+  },
+  {
+    "id": "q-1332",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Beyond legal exposure, what organizational risk comes with maintaining a proprietary AI model?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The model will become obsolete within a fixed period"
+      },
+      {
+        "letter": "B",
+        "text": "Sustained specialist resourcing is required, and dependence on a small number of individuals creates a single point of failure"
+      },
+      {
+        "letter": "C",
+        "text": "Proprietary models cannot be monitored"
+      },
+      {
+        "letter": "D",
+        "text": "The organization must publish the model openly"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Proprietary models need sustained specialist capability — and there is a single-point-of-failure risk when that capability rests with one or two people who understand the system. Departure leaves an unmaintainable model in production. Obsolescence is not on a fixed schedule, proprietary models are monitorable, and nothing compels open publication.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #67"
+  },
+  {
+    "id": "q-1333",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "Which of the following follow from deploying an organization's own proprietary AI model rather than a third-party one?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The organization must establish lawful rights to all training data itself"
+      },
+      {
+        "letter": "B",
+        "text": "Explainability and testing depth become its own responsibility rather than a vendor's"
+      },
+      {
+        "letter": "C",
+        "text": "It assumes provider-level regulatory obligations for the system"
+      },
+      {
+        "letter": "D",
+        "text": "It is exempt from impact assessment because it controls the model"
+      },
+      {
+        "letter": "E",
+        "text": "Post-market monitoring becomes optional for internally built systems"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Building in-house means owning the data rights, the explainability and testing burden, and the provider-level regulatory obligations in full. The two false options invert the logic: control increases responsibility rather than reducing it, so impact assessment remains required and post-market monitoring remains mandatory — arguably more so, since no vendor is watching alongside you.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Mock E #68"
+  },
+  {
+    "id": "q-1334",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A US vendor develops a resume-screening model and places it on the EU market. A German bank licenses it and uses it to screen applicants. Under the EU AI Act, what is the bank's role?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Provider"
+      },
+      {
+        "letter": "B",
+        "text": "Deployer"
+      },
+      {
+        "letter": "C",
+        "text": "Importer"
+      },
+      {
+        "letter": "D",
+        "text": "Distributor"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The deployer uses an AI system under its own authority. The US vendor that develops and markets it is the provider. (A deployer can become a provider if it substantially modifies a high-risk system or rebrands it as its own.)",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Drill #4"
+  },
+  {
+    "id": "q-1335",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A resume-screening system used for employment decisions falls into which EU AI Act risk category?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Minimal risk"
+      },
+      {
+        "letter": "B",
+        "text": "Limited risk"
+      },
+      {
+        "letter": "C",
+        "text": "High risk"
+      },
+      {
+        "letter": "D",
+        "text": "Prohibited"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Employment / worker-management systems are listed in Annex III as high-risk, triggering obligations like a risk-management system, data governance, human oversight, and conformity assessment.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Drill #5"
+  },
+  {
+    "id": "q-1336",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A company deploys a chatbot that interacts directly with consumers. What is the core EU AI Act obligation for this limited-risk system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Full conformity assessment and CE marking"
+      },
+      {
+        "letter": "B",
+        "text": "Inform users they are interacting with an AI"
+      },
+      {
+        "letter": "C",
+        "text": "Register it in the EU high-risk database"
+      },
+      {
+        "letter": "D",
+        "text": "No obligations apply"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Limited-risk systems carry transparency obligations — users must be told they're dealing with AI, and synthetic/deepfake content must be labeled. Conformity assessment, CE marking and registration are high-risk obligations.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Drill #7"
+  },
+  {
+    "id": "q-1337",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Under the EU AI Act as originally enacted, before the 2026 Digital Omnibus, from when were most Annex III high-risk obligations due to apply?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "August 2024"
+      },
+      {
+        "letter": "B",
+        "text": "February 2025"
+      },
+      {
+        "letter": "C",
+        "text": "August 2, 2026"
+      },
+      {
+        "letter": "D",
+        "text": "August 2028"
+      }
+    ],
+    "answer": "C",
+    "explanation": "As originally enacted (Art. 113), the Act entered into force on 1 August 2024, its prohibitions applied from 2 February 2025, GPAI obligations from 2 August 2025, and most Annex III high-risk obligations from 2 August 2026. The Digital Omnibus (Regulation (EU) 2026/1744, in force 27 July 2026) has since moved Annex III obligations to 2 December 2027 and Annex I (product-embedded) obligations to 2 August 2028. A is entry into force, B is when the prohibitions began, and D is the amended Annex I date, not the original Annex III one.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Drill #8"
+  },
+  {
+    "id": "q-1338",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Departments keep using terms like 'bias' and 'drift' inconsistently, causing miscommunication in AI contracts and audits. Which standard primarily addresses this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "ISO/IEC 42001"
+      },
+      {
+        "letter": "B",
+        "text": "ISO/IEC 23894"
+      },
+      {
+        "letter": "C",
+        "text": "ISO/IEC 22989"
+      },
+      {
+        "letter": "D",
+        "text": "ISO 27001"
+      }
+    ],
+    "answer": "C",
+    "explanation": "ISO/IEC 22989 provides foundational AI concepts and terminology — a shared lexicon. It defines terms but gives no operational guidance (that lives in 42001).",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Drill #10"
+  },
+  {
+    "id": "q-1339",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Which set of principles established a non-binding ethical foundation adopted by 40+ countries and directly influenced the EU AI Act?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "IEEE 7000 series"
+      },
+      {
+        "letter": "B",
+        "text": "OECD AI Principles"
+      },
+      {
+        "letter": "C",
+        "text": "ISO/IEC 42001"
+      },
+      {
+        "letter": "D",
+        "text": "NIST Cybersecurity Framework"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The OECD AI Principles — human-centered values, transparency, robustness, accountability, inclusive growth — are voluntary and highly influential, shaping the EU AI Act and G7 positions.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Drill #11"
+  },
+  {
+    "id": "q-1340",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "Before deploying a high-risk AI system that processes personal data at large scale, which assessment does GDPR most likely require?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Conformity assessment"
+      },
+      {
+        "letter": "B",
+        "text": "Data protection impact assessment (DPIA)"
+      },
+      {
+        "letter": "C",
+        "text": "SOC 2 audit"
+      },
+      {
+        "letter": "D",
+        "text": "Penetration test"
+      }
+    ],
+    "answer": "B",
+    "explanation": "GDPR requires a DPIA for processing likely to result in high risk to individuals' rights — common for large-scale AI profiling. (A conformity assessment is an EU AI Act concept, not a GDPR one.)",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Drill #13"
+  },
+  {
+    "id": "q-1341",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Easy",
+    "question": "In a RACI matrix assigning AI governance tasks, how many parties should be designated 'Accountable' for any single task?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "As many as are involved"
+      },
+      {
+        "letter": "B",
+        "text": "Exactly one"
+      },
+      {
+        "letter": "C",
+        "text": "At least two, for redundancy"
+      },
+      {
+        "letter": "D",
+        "text": "Zero — accountability is shared"
+      }
+    ],
+    "answer": "B",
+    "explanation": "RACI allows multiple Responsible / Consulted / Informed parties, but exactly one Accountable owner per task to prevent diffusion of responsibility.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Drill #14"
+  },
+  {
+    "id": "q-1342",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Easy",
+    "question": "A team completes a model card before release. What is its primary governance purpose?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To increase model accuracy"
+      },
+      {
+        "letter": "B",
+        "text": "To automate retraining"
+      },
+      {
+        "letter": "C",
+        "text": "To provide structured transparency about intended use, data, metrics and limitations"
+      },
+      {
+        "letter": "D",
+        "text": "To replace conformity assessments"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Model cards document intended use, training data, evaluation metrics, limitations and ethical considerations — structured transparency. They complement, not replace, conformity assessments.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Drill #15"
+  },
+  {
+    "id": "q-1343",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Easy",
+    "question": "A high-risk AI runs largely autonomously, but staff review anomalies, respond to alerts, and can intervene. This 'human on the loop' arrangement primarily satisfies which requirement?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Data minimization"
+      },
+      {
+        "letter": "B",
+        "text": "Human oversight"
+      },
+      {
+        "letter": "C",
+        "text": "Cross-border transfer rules"
+      },
+      {
+        "letter": "D",
+        "text": "CE marking"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Human oversight (human in/on the loop) is a core high-risk obligation and governance control, ensuring people can intervene, override, or halt the system.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Drill #16"
+  },
+  {
+    "id": "q-1344",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "An organization plans to deploy a third-party foundation model under a SaaS agreement. What most effectively compensates for reduced visibility into the vendor's environment?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Retrain the model in-house"
+      },
+      {
+        "letter": "B",
+        "text": "Rely on the vendor's marketing claims"
+      },
+      {
+        "letter": "C",
+        "text": "Negotiate contractual terms and secure audit rights over the vendor's operations"
+      },
+      {
+        "letter": "D",
+        "text": "Disable all monitoring"
+      }
+    ],
+    "answer": "C",
+    "explanation": "With SaaS you lose visibility into infrastructure; this is offset through contractual terms and audit rights covering the vendor's development, monitoring, incident response and security.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Drill #17"
+  },
+  {
+    "id": "q-1345",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Easy",
+    "question": "A deployed model degrades as real-world input distributions shift over time. What is this, and what should catch it?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hallucination; caught by Govern"
+      },
+      {
+        "letter": "B",
+        "text": "Data/model drift; caught by continuous monitoring"
+      },
+      {
+        "letter": "C",
+        "text": "Overfitting; caught during training"
+      },
+      {
+        "letter": "D",
+        "text": "Prompt injection; caught during procurement"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Drift is the divergence of live data/performance from training conditions; continuous monitoring detects it and triggers retraining or rollback decisions.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Drill #18"
+  },
+  {
+    "id": "q-1346",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A hospital's diagnostic AI, due to biased training data, systematically misclassifies conditions for one demographic subgroup. Which responsible-AI principle is most directly violated?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Explainability"
+      },
+      {
+        "letter": "B",
+        "text": "Fairness"
+      },
+      {
+        "letter": "C",
+        "text": "Robustness"
+      },
+      {
+        "letter": "D",
+        "text": "Data minimization"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Systematically worse outcomes for a subgroup is a fairness / non-discrimination violation. Explainability is about interpretability, robustness about resilience, data minimization about collection scope.",
+    "source": "AIGP Study Kit (github.com/jasondmacleod/aigp-study-kit), CC BY-NC-SA 4.0 · Drill #20"
   }
 ];

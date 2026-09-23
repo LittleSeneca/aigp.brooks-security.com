@@ -131,7 +131,7 @@ related:
 | **Intellectual property** | Training on copyrighted content; no US legal precedent (2025) | Vet all training data for copyright; workforce policies on public AI use |
 | **Probabilistic vs. deterministic** | Outputs are probabilities, not certainties | Define acceptable thresholds, risk appetite, transparency |
 
-> **Notable:** Getty Images v. Stability AI (2023) — alleged unauthorized use of millions of photos for training.
+> **Notable:** Getty Images v. Stability AI (filed 2023) — decided by the UK High Court on 4 Nov 2025 ([2025] EWHC 2863 (Ch)). Getty dropped its training claim (no evidence training took place in the UK), and its secondary infringement claim failed because model weights that never stored the images are not an "infringing copy"; Getty won only limited trade mark findings over watermarks. Permission to appeal was granted in Dec 2025. See [[Sectoral and Civil Laws]].
 
 ---
 

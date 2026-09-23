@@ -20,9 +20,9 @@ related:
 
 ## Performance Indicators
 
-- Identify and evaluate **key terms and risks in vendor or open-source agreements**
+- Identify and evaluate **key terms and risks in the vendor or licensing agreement**
 - Forecast and reduce **risks of secondary or unintended uses and downstream harms**
-- Conduct periodic activities to assess the AI model's **performance, reliability, and safety** (e.g., audits, red teaming, threat modeling, and security testing)
+- Conduct periodic activities to assess the AI system's **performance, reliability, and safety** (e.g., audits, red teaming, threat modeling, and security testing)
 - **Manage and document** incidents, issues, and risks
 - Collaborate with **cross-functional stakeholders** to understand why incidents arise (e.g., brittleness, lack of robustness, poor data quality, insufficient testing, model/data drift)
 - Make **public disclosures** to meet transparency obligations (e.g., technical documentation, instructions for use, post-market monitoring plans)
