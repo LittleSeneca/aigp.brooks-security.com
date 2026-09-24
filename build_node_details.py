@@ -171,11 +171,6 @@ def extract(src, prefix):
     return "\n".join(lines[start:]).strip()
 
 
-def norm_term(t):
-    t = re.sub(r"\([^)]*\)", "", t).lower()
-    return re.sub(r"[^a-z0-9]+", " ", t).strip()
-
-
 def main():
     cache = {}
 
@@ -188,11 +183,6 @@ def main():
     mapjs = (HERE / "map-data.js").read_text()
     nodes = json.loads(re.search(r"const MM_NODES = (\[.*?\]);\n", mapjs,
                                  re.S).group(1))
-    by_id = {n["id"]: n for n in nodes}
-    children = {}
-    for n in nodes:
-        if n.get("parent"):
-            children.setdefault(n["parent"], []).append(n)
 
     fcsrc = (HERE / "flashcard-data.js").read_text()
     flashcards = json.loads(fcsrc[fcsrc.index("["):fcsrc.rindex("]") + 1])
@@ -202,22 +192,13 @@ def main():
     for p in sorted((HERE / "enrichments").glob("*.json")):
         enrich.update(json.loads(p.read_text()))
 
-    # reference-note appearances for terms
-    ref_notes = [(Path(rel).stem, norm_term(note(rel)))
-                 for rel in sorted({r for sels in SELECTORS.values()
-                                    for r, _ in sels})]
-
-    def link_list(ns):
-        return " · ".join(f"[[{x['label'].replace(chr(10), ' ')}]]" for x in ns)
-
     details, missing_enrich = {}, []
 
     for n in nodes:
         nid = n["id"]
         e = enrich.get(nid) or (enrich.get("term:" + n["term"]) if "term" in n else None) or {}
-        # no badge, path or counts: the drawer's tree and row buttons carry them
+        # no badge, path, counts, Related Concepts or Appears In: the drawer's card tree and buttons carry the structure
         parts = []
-        kids = children.get(nid, [])
 
         if "term" in n:
             parts.append(f"## Definition\n\n{fc_def.get(n['term'], '')}")
@@ -227,16 +208,6 @@ def main():
                 parts.append(f"## Exam Angle\n\n> [!tip] {e['exam_tip']}")
             else:
                 missing_enrich.append(nid)
-            sibs = [x for x in children.get(n["parent"], []) if x["id"] != nid][:8]
-            rel = [f"**Parent topic:** [[{by_id[n['parent']]['label']}]]"]
-            if sibs:
-                rel.append(f"**Sibling terms:** {link_list(sibs)}")
-            parts.append("## Related Concepts\n\n" + "\n\n".join(rel))
-            appears = [name for name, txt in ref_notes
-                       if norm_term(n["term"]) and norm_term(n["term"]) in txt]
-            if appears:
-                parts.append("## Appears In\n\n" +
-                             "\n".join(f"- 📄 {a}" for a in appears[:6]))
         else:
             if e.get("overview"):
                 parts.append(f"## At a Glance\n\n{e['overview']}")
@@ -247,17 +218,6 @@ def main():
                              "\n".join(f"- {k}" for k in e["key_points"]))
             if not e:
                 missing_enrich.append(nid)
-            rel = []
-            if n.get("parent"):
-                rel.append(f"**Part of:** [[{by_id[n['parent']]['label'].replace(chr(10), ' ')}]]")
-            sub = [k for k in kids if "term" not in k]
-            leaf = [k for k in kids if "term" in k]
-            if sub:
-                rel.append(f"**Contains:** {link_list(sub)}")
-            if leaf:
-                rel.append(f"**Key terms:** {link_list(leaf[:12])}"
-                           + (f" *(+{len(leaf)-12} more)*" if len(leaf) > 12 else ""))
-            parts.append("## Related Concepts\n\n" + "\n\n".join(rel))
             if nid in SELECTORS:
                 blocks = []
                 for rel_f, prefix in SELECTORS[nid]:
