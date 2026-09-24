@@ -155,6 +155,11 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .mm-drawer-body hr { border: none; border-top: 1px solid var(--border); margin: 18px 0; }
 .mm-drawer-body .src-badge { display: inline-block; font-size: 0.7rem; padding: 2px 10px; border-radius: 12px; background: rgba(108,140,255,0.14); color: var(--accent); margin: 14px 0 6px; }
 .mm-drawer-body .wikilink { color: var(--accent); }
+/* a link to a source is a pill: white text on an accent tint, led by a link icon; clone rounds each line's piece of a wrapped pill.
+   The icon is masked onto an inline no-break space, not an inline-block, so a line can't end between it and the link's first word. */
+.mm-drawer-body a, .guide a[href] { padding: 1px 9px; border-radius: 12px; background: rgba(108,140,255,0.16); color: #fff; text-decoration: none; -webkit-box-decoration-break: clone; box-decoration-break: clone; transition: background 0.15s; }
+.mm-drawer-body a:hover, .guide a[href]:hover { background: rgba(108,140,255,0.32); }
+.mm-drawer-body a::before, .guide a[href]::before { content: '\00a0'; padding-left: 1em; background: var(--accent); mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M9 15l6 -6M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .463M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463'/></svg>") left center / 1em no-repeat; }
 /* Drawer tree: each node is a card holding its text, then a collapsed card per child, nested down to the
    key terms. Cards lighten 2% per level out from the root (--d is the node's depth); the lighter muted and
    accent colors keep 4.5:1 contrast on the lightest card. */
@@ -221,8 +226,8 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .step-num { flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; }
 .guide-step h2 { font-size: 1.05rem; margin-bottom: 6px; color: var(--text); }
 .guide-step p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 6px; color: var(--text); }
-.guide a, .guide .ilink { color: var(--accent); cursor: pointer; text-decoration: none; }
-.guide a:hover, .guide .ilink:hover { text-decoration: underline; }
+.guide .ilink { color: var(--accent); cursor: pointer; text-decoration: none; }
+.guide .ilink:hover { text-decoration: underline; }
 .guide-links { list-style: none; margin: 10px 0 0; padding: 0; }
 .guide-links li { padding: 7px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
 .guide-links li:last-child { border-bottom: none; }
@@ -430,7 +435,7 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
     <div>
       <h2>Read the exam blueprint first</h2>
       <p>Start with the IAPP <strong>AIGP Body of Knowledge</strong> — the official outline of everything the exam can test. Read it end to end so you know the shape of the territory before you dive into the source material.</p>
-      <p><a href="https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt0d33152fd20bc134/AIGP_Cert%20BOK.pdf" target="_blank" rel="noopener">→ AIGP Body of Knowledge &amp; Exam Blueprint (PDF)</a></p>
+      <p><a href="https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt0d33152fd20bc134/AIGP_Cert%20BOK.pdf" target="_blank" rel="noopener">AIGP Body of Knowledge &amp; Exam Blueprint (PDF)</a></p>
     </div>
   </div>
 
