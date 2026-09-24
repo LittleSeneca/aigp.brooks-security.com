@@ -132,17 +132,14 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .mm-search { width: 100%; padding: 5px 8px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text); font-size: 0.75rem; margin-bottom: 6px; }
 .mm-search:focus { outline: none; border-color: var(--accent); }
 /* Node detail drawer */
-.mm-drawer { position: absolute; top: 0; right: 0; bottom: 0; width: min(600px, 92%); background: var(--surface); border-left: 1px solid var(--border); transform: translateX(102%); transition: transform 0.25s ease; z-index: 20; display: flex; flex-direction: column; box-shadow: -12px 0 32px rgba(0,0,0,0.45); }
+.mm-drawer { position: absolute; top: 0; right: 0; bottom: 0; width: min(600px, 92%); background: var(--surface); border-left: 1px solid var(--border); transform: translateX(102%); transition: transform 0.25s ease, width 0.25s ease; z-index: 20; display: flex; flex-direction: column; box-shadow: -12px 0 32px rgba(0,0,0,0.45); }
 .mm-drawer.open { transform: none; }
-.mm-drawer-head { padding: 14px 18px 10px; border-bottom: 1px solid var(--border); flex-shrink: 0; }
-.mm-drawer-head h2 { font-size: 1.05rem; color: var(--accent); display: flex; justify-content: space-between; align-items: center; gap: 8px; }
-.mm-drawer-close { background: none; border: none; color: var(--text-muted); font-size: 1.1rem; cursor: pointer; padding: 2px 8px; }
-.mm-drawer-close:hover { color: var(--text); }
-.mm-drawer-stats { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; font-size: 0.74rem; }
-.mm-drawer-stats span { padding: 2px 9px; background: rgba(108,140,255,0.1); border-radius: 12px; color: var(--text-muted); }
-.mm-drawer-stats b { color: var(--text); }
-.mm-drawer-actions { display: flex; gap: 6px; margin-top: 10px; }
-.mm-drawer-body { flex: 1; overflow-y: auto; padding: 14px 18px 32px; font-size: 0.85rem; line-height: 1.65; }
+.mm-drawer.full { width: 100%; }
+.mm-bar { margin-left: auto; display: flex; } /* the drawer's own buttons, in AIGP's title bar */
+.mm-bar button { display: inline-flex; align-items: center; background: none; border: none; color: var(--text-muted); font-size: 1.1rem; padding: 2px 8px; }
+.mm-bar button:hover { color: var(--text); }
+.mm-drawer:not(.full) .mm-min, .mm-drawer.full .mm-max { display: none; }
+.mm-drawer-body { flex: 1; overflow-y: auto; padding: 0 4px 32px; font-size: 0.85rem; line-height: 1.65; }
 .mm-drawer-body h1 { font-size: 1.05rem; margin: 18px 0 8px; color: var(--text); }
 .mm-drawer-body h2 { font-size: 0.98rem; margin: 18px 0 8px; color: var(--accent); }
 .mm-drawer-body h3 { font-size: 0.9rem; margin: 14px 0 6px; color: var(--text); }
@@ -158,6 +155,34 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .mm-drawer-body hr { border: none; border-top: 1px solid var(--border); margin: 18px 0; }
 .mm-drawer-body .src-badge { display: inline-block; font-size: 0.7rem; padding: 2px 10px; border-radius: 12px; background: rgba(108,140,255,0.14); color: var(--accent); margin: 14px 0 6px; }
 .mm-drawer-body .wikilink { color: var(--accent); }
+/* Drawer tree: each node is a card holding its text, then a collapsed card per child, nested down to the
+   key terms. Cards lighten 2% per level out from the root (--d is the node's depth); the lighter muted and
+   accent colors keep 4.5:1 contrast on the lightest card. */
+.mm-sec { --text-muted: #9ea1b2; --accent: #819cff; --card: color-mix(in srgb, var(--surface), #fff calc(2% + var(--d) * 2%)); background: var(--card); border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius); padding: 2px 3px; margin: 6px 0; }
+/* each level narrows by 4px a side; the card's own title and text keep a 10px inset */
+.mm-sec > summary, .mm-sec-body > :not(.mm-sec) { margin-inline: 7px; }
+#mm-drawer-body > .mm-sec { margin-top: 4px; } /* a margin, not the drawer's padding, so the pinned bar sits flush at the top */
+#mm-drawer-body summary { display: flex; align-items: center; gap: 6px; list-style: none; cursor: pointer; }
+#mm-drawer-body summary::-webkit-details-marker { display: none; }
+.mm-chev { width: 14px; height: 14px; transition: transform 0.2s ease; }
+#mm-drawer-body details[open] > summary > .mm-chev { transform: rotate(90deg); }
+.mm-sec > summary { font-weight: 600; padding: 4px 0; }
+.mm-sec > summary:hover { color: var(--accent); }
+.mm-sec.leaf > summary { font-weight: 400; }
+/* AIGP's title bar is the drawer's header: pinned while the tree scrolls, holding the close button in place of a chevron */
+#mm-drawer-body > .mm-sec > summary { position: sticky; top: 0; z-index: 1; background: var(--card); box-shadow: 0 1px 0 var(--border); margin-inline: 0; padding: 4px 7px; font-size: 0.95rem; color: var(--accent); }
+#mm-drawer-body > .mm-sec > summary > .mm-chev { display: none; }
+.mm-sec-body { padding-bottom: 6px; }
+/* opening and closing a card (or a Source notes fold) slides and fades its content; where height:auto
+   can't be transitioned it only fades. A card first rendered open, like the parents a map click opens, doesn't animate. */
+#mm-drawer-body { interpolate-size: allow-keywords; }
+#mm-drawer-body details::details-content { block-size: 0; opacity: 0; overflow-y: clip; transition: block-size 0.2s ease, opacity 0.2s ease, content-visibility 0.2s allow-discrete; }
+#mm-drawer-body details[open]::details-content { block-size: auto; opacity: 1; }
+@media (prefers-reduced-motion: reduce) { #mm-drawer-body details::details-content, .mm-chev, .mm-drawer { transition: none; } }
+.mm-acts { display: flex; gap: 6px; margin: 2px 0 6px; }
+.mm-acts button { display: inline-flex; align-items: center; gap: 5px; padding: 2px 9px; border-radius: 12px; font-size: 0.74rem; }
+.mm-acts .ico { width: 14px; height: 14px; }
+.mm-src > summary { color: var(--text-muted); margin: 4px 0 10px; }
 
 /* Test */
 .test-layout { flex: 1; display: flex; min-height: 0; }
@@ -208,6 +233,8 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   .test-sidebar { width: auto; border-right: none; border-bottom: 1px solid var(--border); max-height: 160px; }
   .container { flex-direction: column; }
   .mm-sidebar { position: static; width: auto; margin: 8px; order: -1; }
+  .mm-drawer { width: 100%; } /* the text view takes the whole width, so it has no full-width button */
+  .mm-bar .mm-full { display: none; }
   /* just search + reset above the tree; its Score column stands in for the legend */
   .mm-sidebar h3, .mm-views, .mm-grad, .mm-grad-labels, .mm-sidebar .legend-item { display: none; }
   #mindmap-graph { position: relative; flex: 1; min-height: 0; } /* below the sidebar, not under it */
@@ -248,7 +275,7 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 </style>
 </head>
 <body>
-<!-- Tab icons from Tabler Icons 3.48 (tabler.io/icons), MIT licence, © 2020-2026 Paweł Kuna -->
+<!-- Icons from Tabler Icons 3.48 (tabler.io/icons), MIT licence, © 2020-2026 Paweł Kuna -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-quiz" viewBox="0 0 24 24"><path d="M3.5 5.5l1.5 1.5l2.5 -2.5M3.5 11.5l1.5 1.5l2.5 -2.5M3.5 17.5l1.5 1.5l2.5 -2.5M11 6l9 0M11 12l9 0M11 18l9 0"/></symbol>
   <symbol id="i-cards" viewBox="0 0 24 24"><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304l0 .001M15 4h1a1 1 0 0 1 1 1v3.5M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"/></symbol>
@@ -257,6 +284,9 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   <symbol id="i-guide" viewBox="0 0 24 24"><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6l0 13M12 6l0 13M21 6l0 13"/></symbol>
   <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M6.657 18c-2.572 0 -4.657 -2.007 -4.657 -4.483c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927 -1.551 3.487 -3.465 3.487h-11.878"/></symbol>
   <symbol id="i-synced" viewBox="0 0 24 24"><path d="M11 18.004h-4.343c-2.572 -.004 -4.657 -2.011 -4.657 -4.487c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.388 0 2.585 .82 3.138 2.007M15 19l2 2l4 -4"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M9 6l6 6l-6 6"/></symbol>
+  <symbol id="i-maximize" viewBox="0 0 24 24"><path d="M4 8v-2a2 2 0 0 1 2 -2h2M4 16v2a2 2 0 0 0 2 2h2M16 4h2a2 2 0 0 1 2 2v2M16 20h2a2 2 0 0 0 2 -2v-2"/></symbol>
+  <symbol id="i-minimize" viewBox="0 0 24 24"><path d="M15 19v-2a2 2 0 0 1 2 -2h2M15 5v2a2 2 0 0 0 2 2h2M5 15h2a2 2 0 0 1 2 2v2M5 9h2a2 2 0 0 0 2 -2v-2"/></symbol>
 </svg>
 <div class="container">
 <div class="main">
@@ -373,14 +403,6 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
     <button class="mm-btn primary" onclick="resetMM()">Reset View</button>
   </div>
   <div class="mm-drawer" id="mm-drawer">
-    <div class="mm-drawer-head">
-      <h2><span id="mm-drawer-title"></span><button class="mm-drawer-close" onclick="selectMMNode(null)" title="Close (Esc)">✕</button></h2>
-      <div class="mm-drawer-stats" id="mm-drawer-stats"></div>
-      <div class="mm-drawer-actions">
-        <button class="primary" onclick="mmStudyNode()">Study Questions →</button>
-        <button onclick="mmReviewCards()">Review Flashcards →</button>
-      </div>
-    </div>
     <div class="mm-drawer-body" id="mm-drawer-body"></div>
   </div>
 </div>
@@ -472,7 +494,7 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
     <div class="step-num">4</div>
     <div>
       <h2>Work the Mind Map section by section</h2>
-      <p>Open the <a class="ilink" onclick="switchTab('mindmap')">Mind Map</a>, pick a section, and click its node. Read through that section's documentation in the drawer that opens. Then use <strong>Study Questions →</strong> and <strong>Review Flashcards →</strong> in that drawer to drill just that section in the <a class="ilink" onclick="switchTab('quiz')">Quiz</a> and <a class="ilink" onclick="switchTab('flashcards')">Flashcards</a>.</p>
+      <p>Open the <a class="ilink" onclick="switchTab('mindmap')">Mind Map</a>, pick a section, and click its node. Read through that section's documentation in the drawer that opens, and open its sub-sections to go deeper. Then use the section's question (<svg class="ico" style="vertical-align:-3px" aria-hidden="true"><use href="#i-quiz"/></svg>) and flashcard (<svg class="ico" style="vertical-align:-3px" aria-hidden="true"><use href="#i-cards"/></svg>) buttons to drill just that section in the <a class="ilink" onclick="switchTab('quiz')">Quiz</a> and <a class="ilink" onclick="switchTab('flashcards')">Flashcards</a>.</p>
     </div>
   </div>
 
@@ -732,6 +754,8 @@ function buildMindMap() {
   MM_NODES.forEach(n => { if (n.parent) wrap[n.parent].children.push(wrap[n.id]); });
   const root = d3.hierarchy(wrap.root);
   mmMastery = getMastery();
+  // the open drawer's counts may predate a quiz or flashcard session
+  document.querySelectorAll('.mm-acts').forEach(el => { el.outerHTML = mmActs(el.dataset.id); });
   const indent = mmView === 'indent' || phone.matches;
   container.classList.toggle('indent', indent);
   if (indent) buildIndentTree(container, root, W); else buildRadialMap(container, root, W, H);
@@ -788,7 +812,7 @@ function buildIndentTree(container, root, W) {
   node.append('text').attr('class', 'mm-score').attr('x', scoreX).attr('dy', '0.32em').attr('text-anchor', 'end')
     .text(d => { const s = nodeScore(d.data.id); return s.answered || s.rated ? s.pct + '%' : '—'; });
 
-  // back from "Study Questions →" etc. with the drawer still open: show that row
+  // back from a card's question or flashcard button with the drawer still open: show that row
   const sel = nodes.find(d => d.data.id === mmSelectedNode);
   if (sel) container.scrollTop = (sel.index + 1.5) * S - container.clientHeight / 2;
 }
@@ -844,13 +868,6 @@ function buildRadialMap(container, root, W, H) {
     .text(d => d.data.label.replace(/\n/g, ' '));
 }
 
-function mmBreadcrumb(id) {
-  const path = [];
-  let n = MM_BY_ID[id];
-  while (n) { path.unshift(n.label.replace(/\n/g, ' ')); n = MM_BY_ID[n.parent]; }
-  return path.join(' › ');
-}
-
 function renderNodeDetail(id) {
   const n = MM_BY_ID[id];
   let md = NODE_DETAILS[id];
@@ -866,26 +883,79 @@ function renderNodeDetail(id) {
       `> **${t[0].toUpperCase() + t.slice(1)}${rest ? ':' : ''}** ${rest}`)
     .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '<span class="wikilink">$2</span>')
     .replace(/\[\[([^\]]+)\]\]/g, '<span class="wikilink">$1</span>');
-  return marked.parse(md);
+  // fold the verbatim extracts (up to 135k characters) so the child cards below stay in sight
+  const [text, src] = md.split(/\n## Source Notes\n([\s\S]*)/);
+  return marked.parse(text) + (src ? `<details class="mm-src"><summary><svg class="ico mm-chev" aria-hidden="true"><use href="#i-chevron"/></svg>📄 Source notes</summary>${marked.parse(src)}</details>` : '');
 }
 
-function selectMMNode(id) {
+// Drawer tree: each child is a collapsed card whose text and own cards are built on first open
+const mmDepth = id => MM_BY_ID[id].parent ? 1 + mmDepth(MM_BY_ID[id].parent) : 0;
+const mmSection = id => `<details class="mm-sec${MM_CHILDREN[id] ? '' : ' leaf'}" data-id="${id}" style="--d:${mmDepth(id)}"><summary><svg class="ico mm-chev" aria-hidden="true"><use href="#i-chevron"/></svg>${esc(MM_BY_ID[id].label.replace(/\n/g, ' '))}</summary></details>`;
+// a card's question and flashcard buttons, labeled correct/total and mastered/total (the score still colors the map)
+function mmActs(id) {
+  const s = nodeScore(id);
+  const btn = (go, icon, tip, n, of) => of ? `<button onclick="${go}('${id}')" title="${tip}" aria-label="${tip}"><svg class="ico" aria-hidden="true"><use href="#${icon}"/></svg>${n}/${of}</button>` : '';
+  return `<div class="mm-acts" data-id="${id}">` +
+    btn('mmStudyNode', 'i-quiz', `Study questions: ${s.correct} of ${s.total} correct`, s.correct, s.total) +
+    btn('mmReviewCards', 'i-cards', `Review flashcards: ${s.mastered} of ${s.termTotal} mastered`, s.mastered, s.termTotal) + '</div>';
+}
+function mmFill(sec) { // a card's buttons, text and collapsed child cards, built once
+  const id = sec.dataset.id;
+  if (sec.children.length < 2) sec.insertAdjacentHTML('beforeend',
+    `<div class="mm-sec-body">${mmActs(id)}${renderNodeDetail(id)}${(MM_CHILDREN[id] || []).map(mmSection).join('')}</div>`);
+}
+const mmUnder = (id, anc) => id === anc || (!!MM_BY_ID[id].parent && mmUnder(MM_BY_ID[id].parent, anc));
+// fill a card as its title is clicked, before it opens, so even its first open has content to animate
+document.getElementById('mm-drawer-body').addEventListener('click', e => {
+  const sec = e.target.closest('summary')?.parentNode;
+  if (sec?.dataset.id) mmFill(sec);
+});
+// toggle doesn't bubble, so listen in the capture phase
+document.getElementById('mm-drawer-body').addEventListener('toggle', e => {
+  const sec = e.target, id = sec.dataset.id;
+  if (!id) return; // a Source notes fold, not a node
+  if (sec.open) {
+    mmFill(sec);
+    // focus moves to the opened card unless it's already there or deeper (selectMMNode opening a node's parents)
+    if (!mmSelectedNode || !mmUnder(mmSelectedNode, id)) focusMMNode(id);
+  }
+  // closing a card goes back up one node; closing AIGP, which has none, closes the drawer
+  else focusMMNode(MM_BY_ID[id].parent);
+}, true);
+
+function selectMMNode(id) { // a map click: the drawer opens on this node inside its full chain of parent cards
+  if (id) {
+    const body = document.getElementById('mm-drawer-body'), path = [id];
+    while (MM_BY_ID[path[0]].parent) path.unshift(MM_BY_ID[path[0]].parent);
+    body.innerHTML = mmSection(path[0]);
+    const full = document.getElementById('mm-drawer').classList.contains('full');
+    body.firstChild.firstChild.insertAdjacentHTML('beforeend', `<span class="mm-bar">`
+      + `<button class="mm-full" onclick="mmToggleFull(this)" title="Full width" aria-label="Full width" aria-pressed="${full}"><svg class="ico mm-max" aria-hidden="true"><use href="#i-maximize"/></svg><svg class="ico mm-min" aria-hidden="true"><use href="#i-minimize"/></svg></button>`
+      + `<button onclick="selectMMNode(null)" title="Close (Esc)" aria-label="Close">✕</button></span>`);
+    let sec = body.firstChild;
+    path.forEach((p, i) => {
+      if (i) sec = sec.querySelector(`:scope > .mm-sec-body > [data-id="${p}"]`);
+      mmFill(sec);
+      sec.open = true;
+    });
+    // bring the clicked card up to just under AIGP's pinned title bar
+    body.scrollTop = 0;
+    body.scrollTop = sec.getBoundingClientRect().top - body.getBoundingClientRect().top - body.firstChild.firstChild.offsetHeight - 4;
+  }
+  focusMMNode(id);
+}
+
+// desktop: the drawer widens over the whole map and back; the choice stays until switched back
+function mmToggleFull(b) { b.setAttribute('aria-pressed', document.getElementById('mm-drawer').classList.toggle('full')); }
+
+function focusMMNode(id) { // the map follows the card last opened or closed
   mmSelectedNode = id;
   const drawer = document.getElementById('mm-drawer');
   if (!id) { drawer.classList.remove('open'); highlightMM(null); return; }
-  const n = MM_BY_ID[id], s = nodeScore(id);
-  document.getElementById('mm-drawer-title').textContent = n.label.replace(/\n/g, ' ');
-  const stats = [`<span title="${mmBreadcrumb(id)}">🗺 <b>${mmBreadcrumb(id)}</b></span>`];
-  if (s.total) stats.push(`<span>Questions <b>${s.correct}/${s.answered}</b> correct of <b>${s.total}</b></span>`);
-  if (s.termTotal) stats.push(`<span>Terms mastered <b>${s.mastered}/${s.termTotal}</b></span>`);
-  stats.push(`<span>Score <b>${(s.answered || s.rated) ? s.pct + '%' : '—'}</b></span>`);
-  document.getElementById('mm-drawer-stats').innerHTML = stats.join('');
-  document.querySelector('#mm-drawer .mm-drawer-actions .primary').style.display = s.total ? '' : 'none';
-  const body = document.getElementById('mm-drawer-body');
-  body.innerHTML = renderNodeDetail(id);
-  body.scrollTop = 0;
   drawer.classList.add('open');
   highlightMM(id);
+  // the indented view scrolls the focused row into sight
+  d3.selectAll('#mindmap-graph.indent .mm-node').filter(d => d.data.id === id).node()?.scrollIntoView({ block: 'nearest' });
 }
 
 function highlightMM(id) {
@@ -916,11 +986,10 @@ function resetMM() {
   else mmSvg.transition().duration(500).call(mmZoom.transform, mmFitTransform || d3.zoomIdentity);
 }
 
-function mmStudyNode() {
-  if (!mmSelectedNode) return;
-  quizNodeFilter = mmSelectedNode;
+function mmStudyNode(id) {
+  quizNodeFilter = id;
   const chip = document.getElementById('quiz-node-chip');
-  chip.textContent = '🗺 ' + MM_BY_ID[mmSelectedNode].label.replace(/\n/g, ' ') + ' ✕';
+  chip.textContent = '🗺 ' + MM_BY_ID[id].label.replace(/\n/g, ' ') + ' ✕';
   chip.classList.remove('hidden');
   switchTab('quiz');
   onFilterChange();
@@ -930,11 +999,10 @@ function clearQuizNode() {
   document.getElementById('quiz-node-chip').classList.add('hidden');
   onFilterChange();
 }
-function mmReviewCards() {
-  if (!mmSelectedNode) return;
-  fcNodeFilter = mmSelectedNode;
+function mmReviewCards(id) {
+  fcNodeFilter = id;
   const chip = document.getElementById('fc-node-chip');
-  chip.textContent = '🗺 ' + MM_BY_ID[mmSelectedNode].label.replace(/\n/g, ' ') + ' ✕';
+  chip.textContent = '🗺 ' + MM_BY_ID[id].label.replace(/\n/g, ' ') + ' ✕';
   chip.classList.remove('hidden');
   switchTab('flashcards');
   applyFCFilter();

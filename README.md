@@ -14,7 +14,9 @@ Open [study.html](study.html) in a browser. No server is needed: everything is v
 - **Mind Map**: a tree mirroring the Obsidian vault in `Map/`: root → 4 domains → 13 knowledge areas → topics → key-term leaves.
   - Two views: a radial map, and an indented tree with a score column. Phones show only the indented tree.
   - Nodes color by performance: grey (untested), then red → amber → green.
-  - Clicking a node opens its source notes and can filter the quiz or flashcards to that node's material.
+  - Clicking a node opens a drawer on its card, inside its full chain of parent cards from AIGP down. Each card holds the node's notes, then a collapsed card for each child, nested down to the key terms. Cards get lighter the further they sit from the root. Opening a card moves the map's focus to that node, and closing it moves focus back up one level.
+  - AIGP's pinned title bar holds the close button and, on desktop, a button that widens the drawer over the whole map. Phones always show the drawer full width.
+  - Each open card has two small buttons, labeled with the node's questions correct/total and terms mastered/total. They filter the Quiz or Flashcards to that node.
   - Every question and card is tagged down to a term leaf, so completing all of a node's leaves turns it green by definition.
 - **Guide**: a step-by-step study plan, with links to every free primary source the BOK draws on.
 
@@ -63,7 +65,7 @@ Most content is original to this project. The exceptions:
   - 185 of the questions come from it. Each carries a `source` field naming its origin.
   - They are imported as written, apart from area, difficulty and ID assignment; explanations were added to the 20 baseline-diagnostic items, which shipped without one.
   - MIT requires the copyright and permission notice to travel with the material: "Copyright (c) 2026 MarginX. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction... The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software." The notice is repeated in each item's `source` field.
-- **Tabler Icons** ([tabler.io/icons](https://tabler.io/icons)), licensed [MIT](https://github.com/tabler/tabler-icons/blob/main/LICENSE), Copyright (c) 2020-2026 Paweł Kuna. The tab icons in `study.html` are copied from it, with the notice alongside them.
+- **Tabler Icons** ([tabler.io/icons](https://tabler.io/icons)), licensed [MIT](https://github.com/tabler/tabler-icons/blob/main/LICENSE), Copyright (c) 2020-2026 Paweł Kuna. The icons in `study.html` are copied from it, with the notice alongside them.
 - **NIST AI RMF Playbook** (a US government work, public domain). `Map/NIST AI RMF Playbook — Structured Reference.md` is generated from NIST's published JSON.
 - **IAPP materials** (the BOK, the study guide, and the Key Terms for AI Governance glossary) are © IAPP. They are summarized and linked here, not copied. Flashcard definitions were checked against IAPP's glossary for meaning but are written in this project's own words.
 
