@@ -11,7 +11,8 @@ Open [study.html](study.html) in a browser. No server is needed: everything is v
 - **Test**: timed Full Exam (100 questions, 3 hours) and Practice Quiz (25 questions, 1 hour).
   - Questions are drawn to the blueprint's domain weights (about 21/25/27/27 per 100), with each domain spread evenly across difficulty tiers.
   - Answers are only revealed when you submit.
-- **Mind Map**: a radial tree mirroring the Obsidian vault in `Map/`: root → 4 domains → 13 knowledge areas → topics → key-term leaves.
+- **Mind Map**: a tree mirroring the Obsidian vault in `Map/`: root → 4 domains → 13 knowledge areas → topics → key-term leaves.
+  - Two views: a radial map, and an indented tree with a score column. Phones show only the indented tree.
   - Nodes color by performance: grey (untested), then red → amber → green.
   - Clicking a node opens its source notes and can filter the quiz or flashcards to that node's material.
   - Every question and card is tagged down to a term leaf, so completing all of a node's leaves turns it green by definition.
@@ -62,6 +63,7 @@ Most content is original to this project. The exceptions:
   - 185 of the questions come from it. Each carries a `source` field naming its origin.
   - They are imported as written, apart from area, difficulty and ID assignment; explanations were added to the 20 baseline-diagnostic items, which shipped without one.
   - MIT requires the copyright and permission notice to travel with the material: "Copyright (c) 2026 MarginX. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction... The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software." The notice is repeated in each item's `source` field.
+- **Tabler Icons** ([tabler.io/icons](https://tabler.io/icons)), licensed [MIT](https://github.com/tabler/tabler-icons/blob/main/LICENSE), Copyright (c) 2020-2026 Paweł Kuna. The tab icons in `study.html` are copied from it, with the notice alongside them.
 - **NIST AI RMF Playbook** (a US government work, public domain). `Map/NIST AI RMF Playbook — Structured Reference.md` is generated from NIST's published JSON.
 - **IAPP materials** (the BOK, the study guide, and the Key Terms for AI Governance glossary) are © IAPP. They are summarized and linked here, not copied. Flashcard definitions were checked against IAPP's glossary for meaning but are written in this project's own words.
 
