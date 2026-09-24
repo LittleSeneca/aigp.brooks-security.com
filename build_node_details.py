@@ -176,10 +176,6 @@ def norm_term(t):
     return re.sub(r"[^a-z0-9]+", " ", t).strip()
 
 
-TIER_BADGE = {0: "🎯 Certification", 1: "🗂 Exam Domain", 2: "📖 Knowledge Area",
-              3: "💡 Topic", 4: "🔑 Key Term"}
-
-
 def main():
     cache = {}
 
@@ -192,8 +188,6 @@ def main():
     mapjs = (HERE / "map-data.js").read_text()
     nodes = json.loads(re.search(r"const MM_NODES = (\[.*?\]);\n", mapjs,
                                  re.S).group(1))
-    q_tags = json.loads(re.search(r"const QUESTION_TAGS = (\{.*?\});\n",
-                                  mapjs, re.S).group(1))
     by_id = {n["id"]: n for n in nodes}
     children = {}
     for n in nodes:
@@ -208,29 +202,10 @@ def main():
     for p in sorted((HERE / "enrichments").glob("*.json")):
         enrich.update(json.loads(p.read_text()))
 
-    # subtree question counts + reference-note appearances for terms
-    def subtree_qs(nid):
-        out = set(qid for qid, tags in q_tags.items() if nid in tags)
-        for c in children.get(nid, []):
-            out |= subtree_qs(c["id"])
-        return out
-
+    # reference-note appearances for terms
     ref_notes = [(Path(rel).stem, norm_term(note(rel)))
                  for rel in sorted({r for sels in SELECTORS.values()
                                     for r, _ in sels})]
-
-    def depth(nid):
-        d, n = 0, by_id[nid]
-        while n.get("parent"):
-            d, n = d + 1, by_id[n["parent"]]
-        return d
-
-    def crumb(nid):
-        path, n = [], by_id[nid]
-        while n:
-            path.insert(0, n["label"].replace("\n", " "))
-            n = by_id.get(n.get("parent"))
-        return " › ".join(path)
 
     def link_list(ns):
         return " · ".join(f"[[{x['label'].replace(chr(10), ' ')}]]" for x in ns)
@@ -238,18 +213,11 @@ def main():
     details, missing_enrich = {}, []
 
     for n in nodes:
-        nid, d = n["id"], depth(n["id"])
+        nid = n["id"]
         e = enrich.get(nid) or (enrich.get("term:" + n["term"]) if "term" in n else None) or {}
-        parts = [f"**{TIER_BADGE[d]}** · {crumb(nid)}"]
-
-        qs = subtree_qs(nid)
+        # no badge, path or counts: the drawer's tree and row buttons carry them
+        parts = []
         kids = children.get(nid, [])
-        if "term" in n:
-            direct = sum(1 for tags in q_tags.values() if nid in tags)
-            parts.append(f"*{direct} linked question{'s' if direct != 1 else ''} · 1 flashcard*")
-        else:
-            terms = sum(1 for x in nodes if "term" in x and crumb(x["id"]).startswith(crumb(nid)))
-            parts.append(f"*{len(qs)} questions and {terms} key terms in this branch*")
 
         if "term" in n:
             parts.append(f"## Definition\n\n{fc_def.get(n['term'], '')}")
