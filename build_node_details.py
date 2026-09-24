@@ -5,6 +5,21 @@ node, extracted verbatim from the Map/ vault notes.
 Term (tier-4) leaves are NOT in this file: their detail is the flashcard
 definition, already available at runtime via FLASHCARDS.
 
+Per-node enrichment comes from enrichments/*.json, keyed by node id (and by
+"term:<name>" for term leaves). Files load in sorted order and later files win,
+so the per-domain files (11-domain1.json, ...) override the earlier by-type
+files for the nodes they cover.
+
+Authored fields:
+
+  structural nodes   overview (At a Glance), deep_dive, exam, key_points, sources
+  term leaves        deep_dive, exam_tip, sources
+
+`sources` is a list of {"title", "url", "note"?} rendered as a new-tab anchor
+list under "Sources & Further Reading". `deep_dive` is the long-form authored
+text: content synthesized from the BOK and free primary sources, not copied
+from IAPP material.
+
 Rerun after editing the vault notes or the SELECTORS table:
     python3 build_node_details.py
 """
@@ -155,6 +170,16 @@ def strip_frontmatter(src):
     return src.strip()
 
 
+def link(s):
+    """Render one Sources entry as an anchor that opens in a new tab.
+
+    Raw HTML rather than [title](url) so the drawer's in-page navigation
+    isn't destroyed by a click on a source link.
+    """
+    return (f'<a href="{s["url"]}" target="_blank" rel="noopener">'
+            f'{s["title"]}</a>' + (f' · {s["note"]}' if s.get("note") else ""))
+
+
 def extract(src, prefix):
     """Return the block from the heading starting with `prefix` up to the
     next heading of the same or higher level."""
@@ -200,6 +225,12 @@ def main():
         # no badge, path, counts, Related Concepts or Appears In: the drawer's card tree and buttons carry the structure
         parts = []
 
+        # Sources sit above the Source Notes fold, so they stay visible
+        sources_block = None
+        if e.get("sources"):
+            sources_block = ("## Sources & Further Reading\n\n" +
+                             "\n".join(f"- {link(s)}" for s in e["sources"]))
+
         if "term" in n:
             parts.append(f"## Definition\n\n{fc_def.get(n['term'], '')}")
             if e.get("deep_dive"):
@@ -208,9 +239,13 @@ def main():
                 parts.append(f"## Exam Angle\n\n> [!tip] {e['exam_tip']}")
             else:
                 missing_enrich.append(nid)
+            if sources_block:
+                parts.append(sources_block)
         else:
             if e.get("overview"):
                 parts.append(f"## At a Glance\n\n{e['overview']}")
+            if e.get("deep_dive"):
+                parts.append(f"## Deep Dive\n\n{e['deep_dive']}")
             if e.get("exam"):
                 parts.append(f"## Why It Matters for the Exam\n\n{e['exam']}")
             if e.get("key_points"):
@@ -218,6 +253,8 @@ def main():
                              "\n".join(f"- {k}" for k in e["key_points"]))
             if not e:
                 missing_enrich.append(nid)
+            if sources_block:
+                parts.append(sources_block)
             if nid in SELECTORS:
                 blocks = []
                 for rel_f, prefix in SELECTORS[nid]:
