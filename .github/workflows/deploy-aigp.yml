@@ -1,0 +1,101 @@
+name: Deploy to aigp.brooks-security.com
+
+# Publishes the study app to its public URL.
+#
+# The infrastructure — bucket, distribution, ACM cert, DNS records — lives in the
+# brooks-security.com repo (terraform/aigp.tf and terraform/aigp-deploy.tf). This
+# workflow only writes objects into the bucket terraform created; it never creates
+# or destroys infrastructure.
+#
+# Auth is OIDC: the role below trusts
+# `repo:LittleSeneca/aigp-study:ref:refs/heads/main` and nothing else, so no
+# long-lived access key exists anywhere. The role can only write to
+# s3://aigp.brooks-security.com.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - study.html
+      - quiz-data.js
+      - flashcard-data.js
+      - map-data.js
+      - node-details.js
+      - d3.v7.min.js
+      - marked.min.js
+      - .github/workflows/deploy-aigp.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write # required to mint the OIDC token
+
+# Never let two deploys race: a `sync --delete` from an older commit could
+# otherwise finish last and remove files the newer commit added.
+concurrency:
+  group: deploy-aigp
+  cancel-in-progress: false
+
+env:
+  AWS_REGION: us-east-1
+  BUCKET: aigp.brooks-security.com
+  # Created in brooks-security.com/terraform/aigp-deploy.tf. Not a secret —
+  # the role is only assumable from this repo's main branch over OIDC.
+  ROLE_ARN: arn:aws:iam::570516803292:role/aigp-study-github-deploy
+
+jobs:
+  deploy:
+    name: Sync app to S3
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assume the deploy role
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ env.ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      # Stage explicitly rather than syncing the repo root. The repo also holds
+      # the build scripts, the Map/ vault notes and docs/ — syncing the root with
+      # --delete would publish all of that and, worse, delete anything in the
+      # bucket that is not a repo file.
+      #
+      # If you add a file to the app, add it here too.
+      - name: Stage the deployable files
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          cp study.html quiz-data.js flashcard-data.js map-data.js \
+             node-details.js d3.v7.min.js marked.min.js _site/
+          ls -l _site/
+
+      # no-cache on everything. The distribution's cache policy has
+      # min_ttl = default_ttl = 0, so CloudFront caches only what the origin
+      # permits — and this permits nothing, which means a question-bank update is
+      # visible immediately with no invalidation to run.
+      #
+      # The two vendored libraries (d3, marked) could take a long cache instead,
+      # but aws s3 sync applies one --cache-control per run, and splitting the
+      # run means reasoning about how --exclude interacts with --delete. They are
+      # 312 KB of a 4.2 MB payload; not worth that risk for 7%.
+      - name: Sync to S3
+        run: |
+          set -euo pipefail
+          aws s3 sync _site/ "s3://${BUCKET}" --delete --cache-control "no-cache"
+
+      # Fail the run if the site is not actually serving. Without this a bad sync
+      # looks green and the first anyone hears of it is a broken page.
+      - name: Verify the site responds
+        run: |
+          set -euo pipefail
+          code=$(curl -s -o /dev/null -w '%{http_code}' "https://${BUCKET}/")
+          echo "GET / -> ${code}"
+          [ "${code}" = "200" ] || { echo "expected 200, got ${code}"; exit 1; }
+
+          bytes=$(curl -s "https://${BUCKET}/quiz-data.js" | wc -c)
+          echo "GET /quiz-data.js -> ${bytes} bytes"
+          [ "${bytes}" -gt 100000 ] || { echo "question bank looks truncated"; exit 1; }
+
+          served=$(curl -s "https://${BUCKET}/" | grep -c "AIGP Study" || true)
+          [ "${served}" -gt 0 ] || { echo "entry point does not look like the app"; exit 1; }

@@ -197,6 +197,16 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   .tabs { gap: 2px; }
   .tab { padding: 5px 10px; font-size: 0.75rem; }
 }
+.site-footer {
+  margin-top: 26px; padding: 16px 2px 4px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted); font-size: 0.72rem; line-height: 1.65;
+}
+.site-footer p { margin: 0 0 7px; }
+.site-footer p:last-child { margin-bottom: 0; }
+.site-footer strong { color: var(--text); font-weight: 600; }
+.site-footer a { color: var(--accent); text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
@@ -426,7 +436,19 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 </div>
 </div>
 
-</div></div></div>
+</div><!-- /tab-content -->
+
+<!-- Shown on every tab. Carries three things the app needs to state publicly:
+     the free/non-commercial position, the IAPP trademark disclaimer, and the
+     attribution the two imported question banks require. -->
+<div class="site-footer">
+  <p><strong>Free forever</strong> — no ads, no paywall, no account, no tracking. A non-commercial study aid.</p>
+  <p>Unofficial. Not affiliated with, endorsed by, or licensed by the International Association of Privacy Professionals. AIGP® and IAPP® are trademarks of IAPP.</p>
+  <p>Some questions come from third-party banks, reused under their licences: the <a href="https://github.com/jasondmacleod/aigp-study-kit" target="_blank" rel="noopener">AIGP Study Kit</a> by Jason MacLeod (CC BY-NC-SA 4.0) and <a href="https://github.com/sanjaynandanj/aigp-exam-prep" target="_blank" rel="noopener">aigp-exam-prep</a> by MarginX (MIT, © 2026 MarginX). Everything else is original.</p>
+</div>
+
+</div><!-- /main -->
+</div><!-- /container -->
 
 <script src="quiz-data.js"></script>
 <script src="flashcard-data.js"></script>
