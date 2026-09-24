@@ -194,9 +194,18 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   .container { flex-direction: column; }
   .mm-sidebar { position: static; max-width: none; margin: 8px; }
   .header { padding: 8px 12px; }
-  .tabs { gap: 2px; }
+  .tabs { gap: 2px; flex-wrap: wrap; justify-content: flex-end; }
   .tab { padding: 5px 10px; font-size: 0.75rem; }
 }
+#auth-dlg { margin: auto; width: min(360px, calc(100vw - 32px)); background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+#auth-dlg::backdrop { background: rgba(0,0,0,0.6); }
+#auth-dlg h3 { font-size: 1rem; margin-bottom: 6px; }
+#auth-dlg p { font-size: 0.82rem; margin-bottom: 12px; }
+#auth-dlg .muted { color: var(--text-muted); }
+#auth-dlg input { display: block; width: 100%; margin-bottom: 8px; padding: 7px 10px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--text); font: inherit; font-size: 0.85rem; }
+#auth-dlg .row { display: flex; gap: 6px; flex-wrap: wrap; }
+#auth-err { color: var(--incorrect); margin: 10px 0 0; }
+#auth-err:empty { display: none; }
 .site-footer {
   margin-top: 26px; padding: 16px 2px 4px;
   border-top: 1px solid var(--border);
@@ -221,8 +230,25 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
     <div class="tab" onclick="switchTab('test')" id="tab-test">Test</div>
     <div class="tab" onclick="switchTab('mindmap')" id="tab-mindmap">Mind Map</div>
     <div class="tab" onclick="switchTab('guide')" id="tab-guide">Guide</div>
+    <button class="tab" id="auth-btn" hidden onclick="openAuth()">Sign in</button>
   </div>
 </div>
+
+<dialog id="auth-dlg">
+  <form id="auth-out" onsubmit="authSubmit(event)">
+    <h3>Sync your progress</h3>
+    <p class="muted">Sign in to see your progress on every device. Progress already on this device is added to your account. There's no email, so a forgotten password can't be recovered.</p>
+    <input id="auth-user" autocomplete="username" placeholder="Username" required minlength="3" maxlength="32" pattern="[A-Za-z0-9._\-]+" title="Letters, digits, dot, dash or underscore">
+    <input id="auth-pass" type="password" autocomplete="current-password" placeholder="Password (15+ characters)" required minlength="15" maxlength="128">
+    <div class="row"><button class="primary" value="login">Sign in</button><button value="register">Create account</button><button type="button" style="margin-left:auto" onclick="authDlg.close()">Close</button></div>
+  </form>
+  <div id="auth-in">
+    <h3>Signed in as <span id="auth-name"></span></h3>
+    <p class="muted" id="auth-last"></p>
+    <div class="row"><button class="primary" onclick="sync()">Sync now</button><button onclick="signOut()">Sign out</button><button style="margin-left:auto" onclick="authDlg.close()">Close</button></div>
+  </div>
+  <p id="auth-err"></p>
+</dialog>
 
 <div class="tab-content">
 
@@ -442,7 +468,7 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
      the free/non-commercial position, the IAPP trademark disclaimer, and the
      attribution the two imported question banks require. -->
 <div class="site-footer">
-  <p><strong>Free forever</strong> — no ads, no paywall, no account, no tracking. A non-commercial study aid.</p>
+  <p><strong>Free forever</strong> — no ads, no paywall, no tracking, no account needed. An optional account only syncs your progress across devices. A non-commercial study aid.</p>
   <p>Unofficial. Not affiliated with, endorsed by, or licensed by the International Association of Privacy Professionals. AIGP® and IAPP® are trademarks of IAPP.</p>
   <p>Some questions come from third-party banks, reused under their licences: the <a href="https://github.com/jasondmacleod/aigp-study-kit" target="_blank" rel="noopener">AIGP Study Kit</a> by Jason MacLeod (CC BY-NC-SA 4.0) and <a href="https://github.com/sanjaynandanj/aigp-exam-prep" target="_blank" rel="noopener">aigp-exam-prep</a> by MarginX (MIT, © 2026 MarginX). Everything else is original.</p>
 </div>
@@ -473,7 +499,8 @@ let progress = (() => { try { return JSON.parse(localStorage.getItem(QS_KEY)) ||
 const isMulti=q=>Array.isArray(q.answer);
 const hasLetter=(v,l)=>Array.isArray(v)?v.includes(l):v===l;
 const isRight=(q,v)=>isMulti(q)?Array.isArray(v)&&v.length===q.answer.length&&q.answer.every(l=>v.includes(l)):v===q.answer;
-const fmtAns=v=>Array.isArray(v)?v.join(', '):v;
+const esc=v=>String(v).replace(/[&<>"']/g,c=>`&#${c.charCodeAt(0)};`); // for synced strings rendered as HTML
+const fmtAns=v=>esc(Array.isArray(v)?v.join(', '):v);
 const selectBadge=q=>isMulti(q)?`<span>Select ${q.answer.length}</span>`:'';
 function applyFilters() {
   const d = document.getElementById('domain-filter').value;
@@ -487,7 +514,8 @@ function applyFilters() {
   });
   document.getElementById('total-count').textContent = filteredQuestions.length;
 }
-function updateStats() { applyFilters(); let c=0,ic=0,a=0; for(const k in progress){a++;if(progress[k].correct)c++;else ic++;} document.getElementById('correct-count').textContent=c; document.getElementById('incorrect-count').textContent=ic; document.getElementById('answered-count').textContent=a; document.getElementById('pct').textContent=(a>0?Math.round(c/a*100):0)+'%'; document.getElementById('progress-correct').style.width=(c/ALL_QUESTIONS.length*100)+'%'; document.getElementById('progress-incorrect').style.width=(ic/ALL_QUESTIONS.length*100)+'%'; }
+function updateStats() { applyFilters(); updateCounters(); }
+function updateCounters() { let c=0,ic=0,a=0; for(const k in progress){a++;if(progress[k].correct)c++;else ic++;} document.getElementById('correct-count').textContent=c; document.getElementById('incorrect-count').textContent=ic; document.getElementById('answered-count').textContent=a; document.getElementById('pct').textContent=(a>0?Math.round(c/a*100):0)+'%'; document.getElementById('progress-correct').style.width=(c/ALL_QUESTIONS.length*100)+'%'; document.getElementById('progress-incorrect').style.width=(ic/ALL_QUESTIONS.length*100)+'%'; }
 function showQuestion(i, reveal=false) {
   if(!filteredQuestions.length){document.getElementById('question-area').innerHTML='<div class="empty"><h2>No questions</h2></div>';return;}
   currentIndex=Math.max(0,Math.min(i,filteredQuestions.length-1));const q=filteredQuestions[currentIndex];selectedAnswer=[];answered=reveal;const qp=progress[q.id];
@@ -506,7 +534,7 @@ function pickAnswer(l){if(answered)return;const q=filteredQuestions[currentIndex
     document.querySelectorAll('#question-area .option').forEach(el=>el.classList.toggle('selected',selectedAnswer.includes(el.dataset.l)));
     const b=document.getElementById('multi-submit');b.disabled=selectedAnswer.length!==q.answer.length;b.textContent=`Check answer (${selectedAnswer.length}/${q.answer.length})`;return;}
   recordAnswer(l);}
-function recordAnswer(l){const q=filteredQuestions[currentIndex];answered=true;const correct=isRight(q,l);const prev=progress[q.id];const r=(prev?(prev.right??(prev.correct?1:0)):0)+(correct?1:0);const w=(prev?(prev.wrong??(prev.correct?0:1)):0)+(correct?0:1);progress[q.id]={answer:l,correct,timestamp:Date.now(),right:r,wrong:w};localStorage.setItem(QS_KEY,JSON.stringify(progress));updateStats();showQuestion(currentIndex,true);}
+function recordAnswer(l){const q=filteredQuestions[currentIndex];answered=true;const correct=isRight(q,l);const prev=progress[q.id];const r=(prev?(prev.right??(prev.correct?1:0)):0)+(correct?1:0);const w=(prev?(prev.wrong??(prev.correct?0:1)):0)+(correct?0:1);progress[q.id]={answer:l,correct,timestamp:Date.now(),right:r,wrong:w};localStorage.setItem(QS_KEY,JSON.stringify(progress));syncSoon();updateStats();showQuestion(currentIndex,true);}
 function nextQuestion(){if(currentIndex<filteredQuestions.length-1)showQuestion(currentIndex+1);}
 function prevQuestion(){if(currentIndex>0)showQuestion(currentIndex-1);}
 function pickRandom(){applyFilters();if(filteredQuestions.length)showQuestion(Math.floor(Math.random()*filteredQuestions.length));}
@@ -514,6 +542,12 @@ function resetFilters(){['domain-filter','difficulty-filter','status-filter'].fo
 function onFilterChange(){applyFilters();updateStats();currentIndex=0;if(filteredQuestions.length>0)showQuestion(0);else document.getElementById('question-area').innerHTML='<div class="empty"><h2>No questions match</h2></div>';}
 function resetQuizProgress(){
   if(!confirm('Delete all progress — question answers, flashcard ratings, and exam history? This cannot be undone.'))return;
+  clearLocalProgress();
+  // Signed in, the reset reaches every device: entries older than it are dropped. It lives in
+  // the session, so a signed-out reset clears only this browser and can't leak into an account.
+  if(auth){setAuth({...auth,resetAt:Date.now()});syncSoon();}
+}
+function clearLocalProgress(){
   localStorage.removeItem(QS_KEY);
   localStorage.removeItem(FC_MASTERY_KEY);
   localStorage.removeItem(FC_COUNTS_KEY);
@@ -548,7 +582,7 @@ function rateCard(knew){
   if(el.classList.contains('rate-yes')||el.classList.contains('rate-no'))return; // ignore double-taps mid-flash
   const term=fcFiltered[fcIndex].term;
   const mastery=getMastery();mastery[term]=knew;saveMastery(mastery);
-  const counts=getCounts();counts[term]=counts[term]||{yes:0,no:0};counts[term][knew?'yes':'no']++;saveCounts(counts);
+  const counts=getCounts();counts[term]=counts[term]||{yes:0,no:0};counts[term][knew?'yes':'no']++;counts[term].ts=Date.now();saveCounts(counts);syncSoon();
   updateFCStats();
   el.classList.add(knew?'rate-yes':'rate-no');
   setTimeout(()=>{el.classList.remove('rate-yes','rate-no');nextCard();},450);
@@ -837,7 +871,7 @@ function renderTest(){renderHistory();if(testView==='exam')renderExam();else if(
 function renderHistory(){
   const h=getTestHistory(),el=document.getElementById('test-history');
   if(!h.length){el.innerHTML='<div class="empty-hist">No attempts yet. Start a test to build your history.</div>';return;}
-  el.innerHTML=h.map((a,i)=>{const pct=Math.round(a.correct/a.total*100);return `<div class="attempt-item ${testView==='review'&&reviewIdx===i?'active':''}" onclick="openAttempt(${i})"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span class="attempt-mode">${a.mode}</span><span class="attempt-score" style="color:${pct>=70?'var(--correct)':'var(--incorrect)'}">${a.correct}/${a.total}</span></div><div class="attempt-meta">${pct}% · ${fmtDate(a.ts)}</div></div>`;}).join('');
+  el.innerHTML=h.map((a,i)=>{const pct=Math.round(a.correct/a.total*100);return `<div class="attempt-item ${testView==='review'&&reviewIdx===i?'active':''}" onclick="openAttempt(${i})"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span class="attempt-mode">${esc(a.mode)}</span><span class="attempt-score" style="color:${pct>=70?'var(--correct)':'var(--incorrect)'}">${a.correct}/${a.total}</span></div><div class="attempt-meta">${pct}% · ${fmtDate(a.ts)}</div></div>`;}).join('');
 }
 
 function renderMenu(){
@@ -895,7 +929,7 @@ function submitExam(auto){
   clearInterval(exam.timerId);
   const items=exam.questions.map(q=>{const chosen=exam.answers[q.id]||null;return {qid:q.id,chosen,correct:isRight(q,chosen)};});
   const correct=items.filter(it=>it.correct).length;
-  const h=getTestHistory();h.unshift({ts:Date.now(),mode:exam.mode,total:items.length,correct,timeUsedMs:Date.now()-exam.startTime,auto:!!auto,items});saveTestHistory(h);
+  const h=getTestHistory();h.unshift({ts:Date.now(),mode:exam.mode,total:items.length,correct,timeUsedMs:Date.now()-exam.startTime,auto:!!auto,items});saveTestHistory(h);syncSoon();
   exam=null;reviewIdx=0;reviewQ=0;testView='review';renderTest();
   if(auto)setTimeout(()=>alert('Time is up — your test was submitted automatically.'),50);
 }
@@ -913,7 +947,7 @@ function renderReview(){
   }
   document.getElementById('test-main').innerHTML=`
     <div class="controls" style="align-items:center">
-      <span style="font-size:1rem;font-weight:700">${a.mode}</span>
+      <span style="font-size:1rem;font-weight:700">${esc(a.mode)}</span>
       <span class="attempt-score" style="color:${pct>=70?'var(--correct)':'var(--incorrect)'}">${a.correct}/${a.total} · ${pct}%</span>
       <span style="font-size:0.78rem;color:var(--text-muted)">${fmtDate(a.ts)} · took ${fmtClock(a.timeUsedMs)}${a.auto?' · auto-submitted':''}</span>
       <button style="margin-left:auto" onclick="backToMenu()">+ New Test</button>
@@ -927,7 +961,7 @@ function backToMenu(){testView='menu';reviewIdx=null;renderTest();}
 
 // ═══════════ KEYBOARD ═══════════
 document.addEventListener('keydown', e => {
-  if(e.target.tagName==='SELECT'||e.target.tagName==='INPUT')return;
+  if(e.target.tagName==='SELECT'||e.target.tagName==='INPUT'||authDlg.open)return;
   const k=e.key.toUpperCase();
   if(k==='ESCAPE'&&!document.getElementById('panel-mindmap').classList.contains('hidden')){e.preventDefault();selectMMNode(null);return;}
   const qi=!document.getElementById('panel-quiz').classList.contains('hidden');
@@ -958,6 +992,101 @@ function resetFCFilters(){
   ['fcard-domain','fcard-chapter','fcard-filter'].forEach(id => document.getElementById(id).value = 'all');
   document.getElementById('fcard-search').value = '';
   clearFCNode();
+}
+
+// ═══════════ ACCOUNT & SYNC ═══════════
+// Optional. localStorage stays the working copy on every device; each sync sends
+// all of it and gets back the server's merge (docs/specs/cross-device-sync.md).
+// aigp-auth is the session ({username, token, resetAt?}). aigp-last-user names whose progress this
+// browser holds: it outlives an expired session, so the next account to sign in here can't absorb it.
+const AUTH_KEY='aigp-auth',OWNER_KEY='aigp-last-user',authDlg=document.getElementById('auth-dlg');
+const readAuth=()=>{try{return JSON.parse(localStorage.getItem(AUTH_KEY))}catch(e){return null}};
+let auth=readAuth(),syncGen=0,syncTimer=null,lastSync=0;
+// Changing session also bumps the generation, so a response from the old session is never applied.
+function setAuth(a){auth=a;syncGen++;a?localStorage.setItem(AUTH_KEY,JSON.stringify(a)):localStorage.removeItem(AUTH_KEY);renderAuth();}
+function localState(){return{quiz:progress,mastery:getMastery(),counts:getCounts(),tests:getTestHistory(),resetAt:auth?.resetAt||0};}
+async function api(action,body){
+  const r=await fetch('/api/aigp/'+action,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})
+    .catch(()=>{throw new Error("Can't reach the server. Check your connection.");});
+  const j=await r.json().catch(()=>({})); // API Gateway and CloudFront errors carry no {error}
+  if(!r.ok)throw Object.assign(new Error(j.error||(r.status===429?'Too many attempts right now. Try again in a minute.':`Server error (${r.status}).`)),{status:r.status});
+  return j;
+}
+function syncSoon(){syncGen++;if(!auth)return;clearTimeout(syncTimer);syncTimer=setTimeout(sync,1500);}
+async function sync(){
+  if(!auth)return false;
+  clearTimeout(syncTimer);const g=syncGen,r=auth.resetAt;
+  try{
+    const {state}=await api('sync',{token:auth.token,state:localState()});
+    lastSync=Date.now();
+    // A 200 means the server stored the reset, clamped to its own clock. Stop resending this
+    // device's raw value, or a fast clock would push the reset forward on every later sync.
+    // Written directly: setAuth would bump the generation and skip applying this response.
+    if(r&&auth?.resetAt===r){delete auth.resetAt;localStorage.setItem(AUTH_KEY,JSON.stringify(auth));}
+    // Something changed while the request was in flight: resend rather than overwrite it.
+    if(g===syncGen)applyState(state);else syncSoon();
+    return true;
+  }catch(e){
+    if(e.status===401){setAuth(null);alert(e.message);}
+    else if(authDlg.open)document.getElementById('auth-err').textContent=e.message;
+    return false; // offline is fine: local progress is intact and the next sync catches up
+  }finally{renderAuth();}
+}
+function applyState(s){
+  const reviewTs=testView==='review'?getTestHistory()[reviewIdx]?.ts:null;
+  localStorage.setItem(QS_KEY,JSON.stringify(s.quiz));saveMastery(s.mastery);saveCounts(s.counts);saveTestHistory(s.tests);
+  progress=s.quiz;
+  // Refresh totals only; never move the quiz or flashcard cursor. The mind map recolors when next opened.
+  updateCounters();updateFCStats();
+  if(reviewTs!=null)reviewIdx=s.tests.findIndex(t=>t.ts===reviewTs);
+  if(testView==='menu')renderTest();else renderHistory();
+}
+async function authSubmit(e){
+  e.preventDefault();
+  const err=document.getElementById('auth-err');err.textContent='';
+  try{
+    const r=await api(e.submitter.value,{username:document.getElementById('auth-user').value,password:document.getElementById('auth-pass').value});
+    document.getElementById('auth-pass').value='';
+    const owner=localStorage.getItem(OWNER_KEY);
+    if(owner&&owner!==r.username){
+      if(!confirm(`This browser has progress from ${owner}. Discard it and sign in as ${r.username}?`))return;
+      clearLocalProgress();
+    }
+    localStorage.setItem(OWNER_KEY,r.username);
+    setAuth({username:r.username,token:r.token});
+    await sync(); // uploads whatever this device already had
+  }catch(x){err.textContent=x.message;}
+}
+async function signOut(){
+  if(!confirm("Sign out? This device's progress is cleared. It stays saved in your account."))return;
+  // Clearing keeps the next person on a shared browser from merging your progress into their account.
+  // Refusing by default keeps unsynced work; the override keeps a shared machine from staying signed in.
+  const since=lastSync?new Date(lastSync).toLocaleTimeString(undefined,{hour:'numeric',minute:'2-digit'}):'you signed in on this device';
+  if(!await sync()&&!confirm(`Can't reach the server. Sign out anyway? Changes on this device since ${since} will be lost.`))return;
+  localStorage.removeItem(OWNER_KEY);setAuth(null);clearLocalProgress();
+}
+function openAuth(){document.getElementById('auth-err').textContent='';renderAuth();authDlg.showModal();}
+function renderAuth(){
+  document.getElementById('auth-btn').textContent=auth?'☁ '+auth.username:'Sign in';
+  document.getElementById('auth-out').hidden=!!auth;document.getElementById('auth-in').hidden=!auth;
+  if(auth){document.getElementById('auth-name').textContent=auth.username;
+    document.getElementById('auth-last').textContent=lastSync?'Last synced '+new Date(lastSync).toLocaleTimeString(undefined,{hour:'numeric',minute:'2-digit'})+'.':'Not synced yet on this device.';}
+}
+// Sync needs the /api origin, so it is off when the app is opened from disk.
+if(location.protocol!=='file:'){
+  document.getElementById('auth-btn').hidden=false;renderAuth();sync();
+  // Pull the other devices' progress on return. Tab switches fire both events; the timer collapses them.
+  const syncShortly=()=>{if(auth){clearTimeout(syncTimer);syncTimer=setTimeout(sync,300);}};
+  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')syncShortly();});
+  window.addEventListener('focus',syncShortly);
+  // Another tab wrote progress or changed the session: drop any in-flight response (it predates
+  // that write) and reload what this tab keeps in memory, so it never writes a stale copy back.
+  window.addEventListener('storage',e=>{
+    if(e.key&&!e.key.startsWith('aigp-'))return;
+    syncGen++;auth=readAuth();
+    try{progress=JSON.parse(localStorage.getItem(QS_KEY))||{};}catch(x){progress={};}
+    updateCounters();updateFCStats();renderAuth();
+  });
 }
 
 // Init
