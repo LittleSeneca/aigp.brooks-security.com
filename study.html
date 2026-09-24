@@ -19,11 +19,15 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sa
 .main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
 
 .header { padding: 10px 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; background: var(--bg); z-index: 10; }
-.header h1 { font-size: 1.2rem; font-weight: 600; color: var(--accent); }
-.tabs { display: flex; gap: 4px; }
-.tab { padding: 6px 16px; border: 1px solid var(--border); border-radius: var(--radius); cursor: pointer; font-size: 0.82rem; background: var(--surface); color: var(--text-muted); transition: all 0.15s; }
+.header h1 { font-size: 1.2rem; font-weight: 600; color: var(--accent); white-space: nowrap; }
+.tabs { display: flex; gap: 4px; min-width: 0; }
+.tab { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 6px 16px; border: 1px solid var(--border); border-radius: var(--radius); cursor: pointer; font: inherit; font-size: 0.82rem; white-space: nowrap; background: var(--surface); color: var(--text-muted); transition: all 0.15s; }
+.tab[hidden] { display: none; }
+#auth-btn { min-width: 0; } /* a long username gives way first on narrow screens */
+#auth-btn .lbl { overflow: hidden; text-overflow: ellipsis; }
 .tab:hover { border-color: var(--accent); color: var(--text); }
 .tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.ico { width: 16px; height: 16px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
 .tab-content { flex: 1; overflow: hidden; position: relative; }
 .tab-panel { position: absolute; inset: 0; overflow: hidden; display: flex; flex-direction: column; }
@@ -107,6 +111,15 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .chip.hidden { display: none; }
 .mm-grad { height: 8px; border-radius: 4px; background: linear-gradient(90deg, #e74c3c, #f39c12, #2ecc71); margin: 4px 0 2px; }
 .mm-grad-labels { display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.68rem; margin-bottom: 6px; }
+/* Indented tree view (the only view on phones) */
+#mindmap-graph.indent { overflow-y: auto; cursor: default; }
+.indent .mm-link { stroke: #3a3d4a; stroke-opacity: 1; }
+.indent .mm-node { cursor: pointer; }
+.indent .mm-node:focus:not(:focus-visible) { outline: none; } /* Chrome rings SVG on click too */
+.indent .mm-node:hover rect { fill: rgba(108,140,255,0.08); }
+.indent .mm-node text { font-size: 13px; stroke: none; }
+.indent .mm-node text.term-label { font-size: 12px; }
+.indent text.mm-score { font-size: 12px; fill: var(--text-muted); }
 
 /* Mind map sidebar */
 .mm-sidebar { position: absolute; top: 12px; right: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; font-size: 0.76rem; z-index: 10; width: 175px; max-height: calc(100vh - 100px); overflow-y: auto; pointer-events: all; }
@@ -114,6 +127,8 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .mm-sidebar .legend-item { display: flex; align-items: center; gap: 5px; margin-bottom: 5px; }
 .mm-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
 .mm-btn { padding: 4px 8px; font-size: 0.73rem; margin-top: 6px; width: 100%; }
+.mm-views { display: flex; gap: 4px; margin-bottom: 8px; }
+.mm-views .tab { flex: 1; padding: 3px 0; font-size: 0.73rem; }
 .mm-search { width: 100%; padding: 5px 8px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text); font-size: 0.75rem; margin-bottom: 6px; }
 .mm-search:focus { outline: none; border-color: var(--accent); }
 /* Node detail drawer */
@@ -192,10 +207,18 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   .test-layout { flex-direction: column; }
   .test-sidebar { width: auto; border-right: none; border-bottom: 1px solid var(--border); max-height: 160px; }
   .container { flex-direction: column; }
-  .mm-sidebar { position: static; max-width: none; margin: 8px; }
+  .mm-sidebar { position: static; width: auto; margin: 8px; order: -1; }
+  /* just search + reset above the tree; its Score column stands in for the legend */
+  .mm-sidebar h3, .mm-views, .mm-grad, .mm-grad-labels, .mm-sidebar .legend-item { display: none; }
+  #mindmap-graph { position: relative; flex: 1; min-height: 0; } /* below the sidebar, not under it */
   .header { padding: 8px 12px; }
-  .tabs { gap: 2px; flex-wrap: wrap; justify-content: flex-end; }
   .tab { padding: 5px 10px; font-size: 0.75rem; }
+  /* one row of icon-only tabs; the labels stay for screen readers */
+  .header h1 { display: none; }
+  .tabs { flex: 1; }
+  .tabs .tab { flex: 1; padding: 6px 0; }
+  .tabs .ico { width: 20px; height: 20px; }
+  .tabs .lbl { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 }
 #auth-dlg { margin: auto; width: min(360px, calc(100vw - 32px)); background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
 #auth-dlg::backdrop { background: rgba(0,0,0,0.6); }
@@ -216,21 +239,37 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .site-footer strong { color: var(--text); font-weight: 600; }
 .site-footer a { color: var(--accent); text-decoration: none; }
 .site-footer a:hover { text-decoration: underline; }
+.site-footer summary { display: none; } /* desktop: always open */
+@media (max-width: 768px) {
+  .site-footer { margin-top: 0; padding: 6px 12px 8px; }
+  .site-footer summary { display: list-item; cursor: pointer; }
+  .site-footer[open] summary { margin-bottom: 7px; }
+}
 </style>
 </head>
 <body>
+<!-- Tab icons from Tabler Icons 3.48 (tabler.io/icons), MIT licence, © 2020-2026 Paweł Kuna -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-quiz" viewBox="0 0 24 24"><path d="M3.5 5.5l1.5 1.5l2.5 -2.5M3.5 11.5l1.5 1.5l2.5 -2.5M3.5 17.5l1.5 1.5l2.5 -2.5M11 6l9 0M11 12l9 0M11 18l9 0"/></symbol>
+  <symbol id="i-cards" viewBox="0 0 24 24"><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304l0 .001M15 4h1a1 1 0 0 1 1 1v3.5M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"/></symbol>
+  <symbol id="i-test" viewBox="0 0 24 24"><path d="M5 13a7 7 0 1 0 14 0a7 7 0 0 0 -14 0M14.5 10.5l-2.5 2.5M17 8l1 -1M14 3h-4"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M3 17a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2l0 -2M15 17a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2l0 -2M9 5a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2l0 -2M6 15v-1a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v1M12 9l0 3"/></symbol>
+  <symbol id="i-guide" viewBox="0 0 24 24"><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6l0 13M12 6l0 13M21 6l0 13"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M6.657 18c-2.572 0 -4.657 -2.007 -4.657 -4.483c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927 -1.551 3.487 -3.465 3.487h-11.878"/></symbol>
+  <symbol id="i-synced" viewBox="0 0 24 24"><path d="M11 18.004h-4.343c-2.572 -.004 -4.657 -2.011 -4.657 -4.487c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.388 0 2.585 .82 3.138 2.007M15 19l2 2l4 -4"/></symbol>
+</svg>
 <div class="container">
 <div class="main">
 
 <div class="header">
   <h1>AIGP Study</h1>
   <div class="tabs">
-    <div class="tab active" onclick="switchTab('quiz')" id="tab-quiz">Quiz</div>
-    <div class="tab" onclick="switchTab('flashcards')" id="tab-flashcards">Flashcards</div>
-    <div class="tab" onclick="switchTab('test')" id="tab-test">Test</div>
-    <div class="tab" onclick="switchTab('mindmap')" id="tab-mindmap">Mind Map</div>
-    <div class="tab" onclick="switchTab('guide')" id="tab-guide">Guide</div>
-    <button class="tab" id="auth-btn" hidden onclick="openAuth()">Sign in</button>
+    <button class="tab active" onclick="switchTab('quiz')" id="tab-quiz"><svg class="ico" aria-hidden="true"><use href="#i-quiz"/></svg><span class="lbl">Quiz</span></button>
+    <button class="tab" onclick="switchTab('flashcards')" id="tab-flashcards"><svg class="ico" aria-hidden="true"><use href="#i-cards"/></svg><span class="lbl">Flashcards</span></button>
+    <button class="tab" onclick="switchTab('test')" id="tab-test"><svg class="ico" aria-hidden="true"><use href="#i-test"/></svg><span class="lbl">Test</span></button>
+    <button class="tab" onclick="switchTab('mindmap')" id="tab-mindmap"><svg class="ico" aria-hidden="true"><use href="#i-map"/></svg><span class="lbl">Mind Map</span></button>
+    <button class="tab" onclick="switchTab('guide')" id="tab-guide"><svg class="ico" aria-hidden="true"><use href="#i-guide"/></svg><span class="lbl">Guide</span></button>
+    <button class="tab" id="auth-btn" hidden onclick="openAuth()"><svg class="ico" aria-hidden="true"><use href="#i-cloud"/></svg><span class="lbl">Sign in</span></button>
   </div>
 </div>
 
@@ -324,10 +363,11 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   <div id="mindmap-graph"></div>
   <div class="mm-sidebar">
     <h3>Knowledge Map</h3>
+    <div class="mm-views"><button class="tab active" id="mm-view-radial" onclick="setMMView('radial')">Radial</button><button class="tab" id="mm-view-indent" onclick="setMMView('indent')">Indented</button></div>
     <div class="mm-grad"></div>
     <div class="mm-grad-labels"><span>0%</span><span>score</span><span>100%</span></div>
     <div class="legend-item"><span class="mm-dot" style="background:#4a4d5a"></span> Not tested yet</div>
-    <div class="legend-item" style="margin-top:4px"><span class="mm-dot" style="width:5px;height:5px;background:#7d8195"></span> Outer ring: key terms — scored by their questions + flashcard ✓/✗</div>
+    <div class="legend-item" style="margin-top:4px"><span class="mm-dot" style="width:5px;height:5px;background:#7d8195"></span> Leaves: key terms — scored by their questions + flashcard ✓/✗</div>
     <input class="mm-search" type="text" id="mm-search" placeholder="Search titles & notes..." oninput="filterMMNodes()">
     <div id="mm-search-count" style="font-size:0.7rem;color:var(--text-muted);margin:-2px 0 6px"></div>
     <button class="mm-btn primary" onclick="resetMM()">Reset View</button>
@@ -466,12 +506,14 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 
 <!-- Shown on every tab. Carries three things the app needs to state publicly:
      the free/non-commercial position, the IAPP trademark disclaimer, and the
-     attribution the two imported question banks require. -->
-<div class="site-footer">
+     attribution the two imported question banks require. Phones fold it to
+     the summary line, which still names all three; a tap shows the full text. -->
+<details class="site-footer" open>
+  <summary>Free · Unofficial, not affiliated with IAPP · Licences</summary>
   <p><strong>Free forever</strong> — no ads, no paywall, no tracking, no account needed. An optional account only syncs your progress across devices. A non-commercial study aid.</p>
   <p>Unofficial. Not affiliated with, endorsed by, or licensed by the International Association of Privacy Professionals. AIGP® and IAPP® are trademarks of IAPP.</p>
   <p>Some questions come from third-party banks, reused under their licences: the <a href="https://github.com/jasondmacleod/aigp-study-kit" target="_blank" rel="noopener">AIGP Study Kit</a> by Jason MacLeod (CC BY-NC-SA 4.0) and <a href="https://github.com/sanjaynandanj/aigp-exam-prep" target="_blank" rel="noopener">aigp-exam-prep</a> by MarginX (MIT, © 2026 MarginX). Everything else is original.</p>
-</div>
+</details>
 
 </div><!-- /main -->
 </div><!-- /container -->
@@ -482,6 +524,7 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 <script src="node-details.js"></script>
 <script>
 // ═══════════ TABS ═══════════
+const phone = matchMedia('(max-width: 768px)'); // the CSS phone breakpoint
 function switchTab(tab) {
   ['quiz','flashcards','test','mindmap','guide'].forEach(t => {
     document.getElementById('panel-'+t).classList.toggle('hidden', t !== tab);
@@ -593,8 +636,8 @@ function nextCard(){if(fcIndex<fcFiltered.length-1)showCard(fcIndex+1);}
 function prevCard(){if(fcIndex>0)showCard(fcIndex-1);}
 function randomCard(){if(fcFiltered.length)showCard(Math.floor(Math.random()*fcFiltered.length));}
 
-// ═══════════ MIND MAP (radial tree from map-data.js) ═══════════
-let mmSvg, mmZoom, mmSelectedNode = null, mmFitTransform = null;
+// ═══════════ MIND MAP (radial map or indented tree from map-data.js) ═══════════
+let mmSvg, mmZoom, mmSelectedNode = null, mmFitTransform = null, mmView = 'radial'; // phones: indented only
 let quizNodeFilter = null, fcNodeFilter = null;
 const DOMAIN_COLORS = { d1:'#6c8cff', d2:'#a78bfa', d3:'#34d399', d4:'#f472b6' };
 const MM_BY_ID = Object.fromEntries(MM_NODES.map(n => [n.id, n]));
@@ -666,6 +709,19 @@ function nodeDomain(id) { // walk up to the d1-d4 ancestor
   return n ? n.id : null;
 }
 
+const mmStroke = d => d.data.term !== undefined ? 'none' : d.depth === 0 ? '#6c8cff' : '#5a5d6a';
+function mmTitle(d) { // hover text, both views
+  if (d.data.term !== undefined) {
+    const m = mmMastery[d.data.term];
+    const status = m === true ? 'mastered' : m === false ? 'needs review' : 'unrated';
+    const s = nodeScore(d.data.id);
+    const qs = s.total ? ` · ${s.correct}/${s.answered} of ${s.total} questions` : '';
+    return `${d.data.term} (${status}${qs})\n${FC_BY_TERM[d.data.term] || ''}`;
+  }
+  const s = nodeScore(d.data.id);
+  return `${d.data.label.replace(/\n/g, ' ')}\n${s.answered}/${s.total} answered · ${s.mastered}/${s.termTotal} terms mastered · score ${s.pct}%`;
+}
+
 function buildMindMap() {
   const container = document.getElementById('mindmap-graph');
   container.innerHTML = '';
@@ -676,6 +732,68 @@ function buildMindMap() {
   MM_NODES.forEach(n => { if (n.parent) wrap[n.parent].children.push(wrap[n.id]); });
   const root = d3.hierarchy(wrap.root);
   mmMastery = getMastery();
+  const indent = mmView === 'indent' || phone.matches;
+  container.classList.toggle('indent', indent);
+  if (indent) buildIndentTree(container, root, W); else buildRadialMap(container, root, W, H);
+  // rebuilt on every tab or view switch: keep the search dimming and the selected node's highlight
+  filterMMNodes();
+  if (mmSelectedNode) highlightMM(mmSelectedNode);
+}
+
+function setMMView(v) {
+  mmView = v;
+  ['radial', 'indent'].forEach(x => document.getElementById('mm-view-' + x).classList.toggle('active', x === v));
+  buildMindMap();
+}
+// crossing the phone breakpoint (resize, rotation) swaps the view
+phone.addEventListener('change', () => {
+  if (!document.getElementById('panel-mindmap').classList.contains('hidden')) buildMindMap();
+});
+
+// Indented tree after https://observablehq.com/@d3/indented-tree: a row per node, Score column on the right
+function buildIndentTree(container, root, W) {
+  const S = 24, I = 18; // row height, indent per level
+  const scoreX = Math.min(W - 32, 500), labelX = d => d.depth * I + 10;
+  const nodes = []; // pre-order, so rows (and tab order) read top to bottom
+  root.eachBefore(d => { d.index = nodes.length; nodes.push(d); });
+
+  const svg = d3.select(container).append('svg').style('height', (nodes.length + 2) * S + 'px')
+    .on('click', () => selectMMNode(null)); // rows stop propagation, so this is empty space
+  const g = svg.append('g').attr('transform', `translate(16,${S * 1.5})`);
+  g.append('text').attr('class', 'mm-score').attr('x', scoreX).attr('y', -S).attr('dy', '0.32em')
+    .attr('text-anchor', 'end').attr('font-weight', 600).text('Score');
+  g.append('g').selectAll('path').data(root.links()).join('path')
+    .attr('class', 'mm-link')
+    .attr('d', d => `M${d.source.depth * I},${d.source.index * S}V${d.target.index * S}h${I}`);
+
+  const open = (e, d) => { e.stopPropagation(); selectMMNode(d.data.id); };
+  const node = g.append('g').selectAll('g').data(nodes).join('g')
+    .attr('class', 'mm-node')
+    .attr('transform', d => `translate(0,${d.index * S})`)
+    .attr('tabindex', 0).attr('role', 'button')
+    .on('click', open)
+    .on('keydown', (e, d) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(e, d); } });
+  node.append('title').text(mmTitle);
+  node.append('rect').attr('x', -16).attr('y', -S / 2).attr('width', W).attr('height', S).attr('fill', 'transparent');
+  node.append('circle').attr('cx', d => d.depth * I).attr('r', d => 6 - d.depth * 0.75)
+    .attr('fill', d => nodeColor(d.data.id)).attr('stroke', mmStroke);
+  node.append('text')
+    .attr('class', d => d.depth <= 2 ? 'node-label' : d.data.term !== undefined ? 'term-label' : null)
+    .attr('x', labelX).attr('dy', '0.32em')
+    .text(d => d.data.label.replace(/\n/g, ' '))
+    .each(function (d) { // ellipsize labels that would run into the Score column (narrow phones)
+      for (let t = this.textContent; t && this.getComputedTextLength() > scoreX - 40 - labelX(d); )
+        this.textContent = (t = t.slice(0, -1).trimEnd()) + '…';
+    });
+  node.append('text').attr('class', 'mm-score').attr('x', scoreX).attr('dy', '0.32em').attr('text-anchor', 'end')
+    .text(d => { const s = nodeScore(d.data.id); return s.answered || s.rated ? s.pct + '%' : '—'; });
+
+  // back from "Study Questions →" etc. with the drawer still open: show that row
+  const sel = nodes.find(d => d.data.id === mmSelectedNode);
+  if (sel) container.scrollTop = (sel.index + 1.5) * S - container.clientHeight / 2;
+}
+
+function buildRadialMap(container, root, W, H) {
   // radius grows with leaf count so outer key-term labels don't collide;
   // 16px of arc per leaf keeps labels clear of each other
   const R = Math.max(Math.min(W, H) / 2 - 40, root.leaves().length * 16 / (2 * Math.PI));
@@ -711,20 +829,9 @@ function buildMindMap() {
   node.append('circle')
     .attr('r', radius)
     .attr('fill', d => nodeColor(d.data.id))
-    .attr('stroke', d => d.data.term !== undefined ? 'none'
-      : d.depth === 0 ? '#6c8cff' : '#5a5d6a')
+    .attr('stroke', mmStroke)
     .on('click', (e, d) => { e.stopPropagation(); selectMMNode(d.data.id); })
-    .append('title').text(d => {
-      if (d.data.term !== undefined) {
-        const m = mmMastery[d.data.term];
-        const status = m === true ? 'mastered' : m === false ? 'needs review' : 'unrated';
-        const s = nodeScore(d.data.id);
-        const qs = s.total ? ` · ${s.correct}/${s.answered} of ${s.total} questions` : '';
-        return `${d.data.term} (${status}${qs})\n${FC_BY_TERM[d.data.term] || ''}`;
-      }
-      const s = nodeScore(d.data.id);
-      return `${d.data.label.replace(/\n/g, ' ')}\n${s.answered}/${s.total} answered · ${s.mastered}/${s.termTotal} terms mastered · score ${s.pct}%`;
-    });
+    .append('title').text(mmTitle);
 
   node.append('text')
     .attr('class', d => d.depth <= 1 ? 'node-label' : d.data.term !== undefined ? 'term-label' : null)
@@ -804,7 +911,9 @@ function resetMM() {
   document.getElementById('mm-search').value = '';
   filterMMNodes();
   selectMMNode(null);
-  mmSvg.transition().duration(500).call(mmZoom.transform, mmFitTransform || d3.zoomIdentity);
+  const c = document.getElementById('mindmap-graph');
+  if (c.classList.contains('indent')) c.scrollTo({ top: 0, behavior: 'smooth' });
+  else mmSvg.transition().duration(500).call(mmZoom.transform, mmFitTransform || d3.zoomIdentity);
 }
 
 function mmStudyNode() {
@@ -1067,7 +1176,7 @@ async function signOut(){
 }
 function openAuth(){document.getElementById('auth-err').textContent='';renderAuth();authDlg.showModal();}
 function renderAuth(){
-  document.getElementById('auth-btn').textContent=auth?'☁ '+auth.username:'Sign in';
+  const b=document.getElementById('auth-btn');b.querySelector('.lbl').textContent=auth?auth.username:'Sign in';b.querySelector('use').setAttribute('href',auth?'#i-synced':'#i-cloud');
   document.getElementById('auth-out').hidden=!!auth;document.getElementById('auth-in').hidden=!auth;
   if(auth){document.getElementById('auth-name').textContent=auth.username;
     document.getElementById('auth-last').textContent=lastSync?'Last synced '+new Date(lastSync).toLocaleTimeString(undefined,{hour:'numeric',minute:'2-digit'})+'.':'Not synced yet on this device.';}
@@ -1090,6 +1199,9 @@ if(location.protocol!=='file:'){
 }
 
 // Init
+// phones start with the footer folded; desktop keeps it open (its summary is hidden there)
+const foldFooter = () => { document.querySelector('.site-footer').open = !phone.matches; };
+foldFooter(); phone.addEventListener('change', foldFooter);
 document.getElementById('fcard-total').textContent = FLASHCARDS.length;
 applyFilters();updateStats();pickRandom();updateFCStats();showCard(0);
 </script>
