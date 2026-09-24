@@ -1,6 +1,7 @@
 ---
 tags: [aigp/reference, aigp/standards, aigp/iso]
 created: 2026-07-11
+updated: 2026-09-24
 source: "Sid Ahmed Benraouane - AI Management System Certification According to the ISO/IEC 42001 Standard (2024, Productivity Press)"
 pages: 227
 ---
@@ -348,7 +349,7 @@ Good-quality data must be:
 - ISO/IEC 42001 is **certifiable** — organizations can obtain third-party certification
 - Certification demonstrates that the AIMS conforms to the standard's requirements
 - The standard specifies **what** must be done, not **how** — organizations choose implementation methods
-- A new standard under development: **ISO/IEC CD 42006** — *Requirements for bodies providing audit and certification of AIMS*
+- A companion standard now published: **ISO/IEC 42006:2025** (7 July 2025), *Requirements for bodies providing audit and certification of AIMS*
 
 ### Preparing for Certification
 
@@ -397,7 +398,7 @@ ISO 42001 is designed as a **harmonized management system standard** using Annex
 - **ISO/IEC TR 24028:2020** — Overview of trustworthiness in AI
 - **ISO/IEC TR 24368:2022** — Overview of ethical and societal concerns
 - **ISO/IEC 5338:2023** — AI system life cycle processes
-- **ISO/IEC 42006** *(under development)* — Requirements for AIMS audit and certification bodies
+- **ISO/IEC 42006:2025** (published 7 July 2025): requirements for AIMS audit and certification bodies
 
 ---
 
@@ -450,7 +451,7 @@ The book provides implementation guidance beyond the standard text. Key framewor
 | **Annexes** | A (normative controls), B (informative guidelines), C (RAI links) |
 | **Key differentiator** | First standard to operationalize Responsible AI into a certifiable management system |
 | **Related standards** | 22989, 23894, 38507, 24028, 24368, 5338, 42006 |
-| **Certification body standard** | ISO/IEC CD 42006 (under development) |
+| **Certification body standard** | ISO/IEC 42006:2025 (published 7 July 2025) |
 
 ---
 
@@ -465,4 +466,4 @@ The book provides implementation guidance beyond the standard text. Key framewor
 7. **Complements NIST AI RMF** — ISO 42001 is certifiable, NIST is voluntary guidance
 8. **Integrates with GDPR, EU AI Act, and US regulatory frameworks**
 9. **Annex A** contains normative controls; organizations must implement them or justify exclusion
-10. **New ISO/IEC 42006** standard will govern AIMS audit and certification bodies
+10. **ISO/IEC 42006:2025** governs the bodies that audit and certify AI management systems against 42001
