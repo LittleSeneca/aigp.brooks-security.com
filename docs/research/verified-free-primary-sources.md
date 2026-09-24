@@ -79,3 +79,183 @@ Free explanatory material for 42005 (national body / standards ecosystem):
 - law.go.kr serves 404 to non-browser clients — canonical human URLs, verify in browser.
 - Do NOT cite iteh.ai / en-standard.eu / Scribd / my3core2.co.uk / iso-library.com for standard text — unauthorised resellers, possibly superseded editions.
 - No official English translation of Korea's Enforcement Decree located.
+
+## Domain II enrichment additions (all HTTP-checked with GET on 24 Sep 2026)
+
+URLs introduced while enriching Domain II (all 231 nodes, 12-domain2.json). Every one
+below was checked on 24 Sep 2026. 200, 206 and 202 (EUR-Lex) count as live; the ftc.gov
+and digital-strategy 403/429 responses are bot blocks on pages a browser opens normally,
+and iso.org 403s to curl the same way (use the IEC webstore mirror instead). Reuse these
+for Domains III and IV where relevant.
+
+### EU AI Act articles and annexes (artificialintelligenceact.eu)
+- https://artificialintelligenceact.eu/annex/3/
+- https://artificialintelligenceact.eu/annex/4/
+- https://artificialintelligenceact.eu/article/10/
+- https://artificialintelligenceact.eu/article/11/
+- https://artificialintelligenceact.eu/article/113/
+- https://artificialintelligenceact.eu/article/13/
+- https://artificialintelligenceact.eu/article/14/
+- https://artificialintelligenceact.eu/article/15/
+- https://artificialintelligenceact.eu/article/16/
+- https://artificialintelligenceact.eu/article/17/
+- https://artificialintelligenceact.eu/article/18/
+- https://artificialintelligenceact.eu/article/22/
+- https://artificialintelligenceact.eu/article/23/
+- https://artificialintelligenceact.eu/article/24/
+- https://artificialintelligenceact.eu/article/25/
+- https://artificialintelligenceact.eu/article/26/
+- https://artificialintelligenceact.eu/article/27/
+- https://artificialintelligenceact.eu/article/3/
+- https://artificialintelligenceact.eu/article/4/
+- https://artificialintelligenceact.eu/article/40/
+- https://artificialintelligenceact.eu/article/43/
+- https://artificialintelligenceact.eu/article/47/
+- https://artificialintelligenceact.eu/article/48/
+- https://artificialintelligenceact.eu/article/5/
+- https://artificialintelligenceact.eu/article/50/
+- https://artificialintelligenceact.eu/article/51/
+- https://artificialintelligenceact.eu/article/53/
+- https://artificialintelligenceact.eu/article/55/
+- https://artificialintelligenceact.eu/article/56/
+- https://artificialintelligenceact.eu/article/6/
+- https://artificialintelligenceact.eu/article/70/
+- https://artificialintelligenceact.eu/article/72/
+- https://artificialintelligenceact.eu/article/73/
+- https://artificialintelligenceact.eu/article/85/
+- https://artificialintelligenceact.eu/article/9/
+- https://artificialintelligenceact.eu/article/99/
+
+### EUR-Lex: legislation and CJEU judgments
+- https://eur-lex.europa.eu/eli/C/2025/5423/oj
+- https://eur-lex.europa.eu/eli/dir/1985/374/oj
+- https://eur-lex.europa.eu/eli/dir/2005/29/oj
+- https://eur-lex.europa.eu/eli/dir/2024/2853/oj/eng
+- https://eur-lex.europa.eu/eli/reg/2016/679/oj
+- https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng
+- https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022PC0496
+
+### European Commission and EU institutions
+- https://ai-act-service-desk.ec.europa.eu/en/ai-act/timeline/timeline-implementation-eu-ai-act
+- https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/eu-us-data-transfers_en
+- https://digital-strategy.ec.europa.eu/en/consultations/commission-launches-consultation-protocols-reserving-rights-text-and-data-mining-under-ai-act-and
+- https://digital-strategy.ec.europa.eu/en/library/commission-opinion-assessment-general-purpose-ai-code-practice
+- https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-under-ai-act
+- https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force
+- https://digital-strategy.ec.europa.eu/en/policies/ai-office
+- https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act
+- https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age/file-ai-liability-directive
+
+### GDPR articles (gdpr-info.eu)
+- https://gdpr-info.eu/art-22-gdpr/
+- https://gdpr-info.eu/art-28-gdpr/
+- https://gdpr-info.eu/art-32-gdpr/
+- https://gdpr-info.eu/art-4-gdpr/
+- https://gdpr-info.eu/art-5-gdpr/
+- https://gdpr-info.eu/art-9-gdpr/
+
+### EDPB
+- https://www.edpb.europa.eu/documents/legislative-opinion/edpb-edps-joint-opinion-22026-on-the-proposal-for-a-regulation-as_en
+- https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en
+- https://www.edpb.europa.eu/news/news/2024/edpb-opinion-ai-models-gdpr-principles-support-responsible-ai_en
+- https://www.edpb.europa.eu/public-consultations/guidelines-032026-on-web-scraping-in-the-context-of-generative-ai_en
+- https://www.edpb.europa.eu/public-consultations/guidelines-on-anonymisation_en
+- https://www.edpb.europa.eu/system/files/2023-04/edpb_guidelines_202209_personal_data_breach_notification_v2.0_en.pdf
+
+### UK ICO
+- https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/data-protection-officers/
+- https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/explaining-decisions-made-with-artificial-intelligence/
+- https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-of-access/
+- https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-erasure/
+- https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/international-transfers/international-transfers-a-guide/
+- https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/special-category-data/
+
+### US federal: statutes, rules, agencies
+- https://www.consumerfinance.gov/compliance/guidance/withdrawn-guidance/
+- https://www.consumerfinance.gov/rules-policy/regulations/1002/9/
+- https://www.copyright.gov/ai/
+- https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf
+- https://www.copyright.gov/ai/ai_policy_guidance.pdf
+- https://www.copyright.gov/newsnet/2025/1060.html
+- https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence
+- https://www.federalregister.gov/documents/2025/01/28/2025-02172/initial-rescissions-of-harmful-executive-orders-and-actions
+- https://www.federalregister.gov/documents/2025/04/28/2025-07378/restoring-equality-of-opportunity-and-meritocracy
+- https://www.federalregister.gov/documents/2026/01/14/2026-00590/huds-implementation-of-the-fair-housing-acts-disparate-impact-standard
+- https://www.federalregister.gov/documents/2026/04/22/2026-07804/equal-credit-opportunity-act-regulation-b
+- https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes
+- https://www.ftc.gov/news-events/news/press-releases/2025/04/ftc-order-requires-workado-back-artificial-intelligence-detection-claims
+- https://www.ftc.gov/news-events/news/press-releases/2025/12/ftc-reopens-sets-aside-rytr-final-order-response-trump-administrations-ai-action-plan
+- https://www.govinfo.gov/content/pkg/FR-2025-12-16/pdf/2025-23092.pdf
+- https://www.govinfo.gov/content/pkg/PLAW-119publ12/html/PLAW-119publ12.htm
+- https://www.justice.gov/opa/pr/justice-department-intervenes-xai-lawsuit-challenging-colorados-algorithmic-discrimination
+- https://www.uspto.gov/initiatives/artificial-intelligence
+- https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf
+
+### US Code and case law (Cornell LII)
+- https://www.law.cornell.edu/supremecourt/text/13-1371
+- https://www.law.cornell.edu/uscode/text/15/1681m
+- https://www.law.cornell.edu/uscode/text/15/45
+- https://www.law.cornell.edu/uscode/text/17/107
+- https://www.law.cornell.edu/uscode/text/18/1839
+- https://www.law.cornell.edu/uscode/text/42/12112
+- https://www.law.cornell.edu/uscode/text/42/2000e-2
+- https://www.law.cornell.edu/uscode/text/42/3604
+- https://www.law.cornell.edu/uscode/text/47/223
+
+### US state laws and court documents
+- https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240SB942
+- https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB853
+- https://www.cafc.uscourts.gov/opinions-orders/21-2347.OPINION.8-5-2022_1988142.pdf
+- https://www.ded.uscourts.gov/sites/ded/files/opinions/20-613_5.pdf
+- https://www.justiz.bayern.de/gerichte-und-behoerden/landgericht/muenchen-1/presse/2025/11.php
+- https://www.nysenate.gov/legislation/bills/2025/S8828
+- https://www.osc.ny.gov/state-agencies/audits/2025/12/02/enforcement-local-law-144-automated-employment-decision-tools
+- https://www.wipo.int/wipolex/en/judgments/details/2098
+
+### South Korea
+- https://aibasicact.kr/decree-explorer/
+- https://aibasicact.kr/explorer/
+- https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=288781&chrClsCd=010202&urlMode=lsInfoP&efYd=20260820&ancYnChk=0
+
+### OECD
+- https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449
+- https://oecd.ai/en/ai-principles
+- https://oecd.ai/en/ai-publications/explanatory-memorandum-on-the-updated-oecd-definition-of-an-ai-system
+- https://oecd.ai/en/classification
+- https://oecd.ai/en/incidents
+- https://oecd.ai/en/incidents-methodology
+- https://oecd.ai/en/transparency/overview
+- https://oecd.ai/en/wonk/ai-system-definition-update
+- https://oecd.ai/en/wonk/definition
+- https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/02/oecd-framework-for-the-classification-of-ai-systems_336a8b57/cb6d9eca-en.pdf
+- https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/05/defining-ai-incidents-and-related-terms_88d089ec/d1a8d965-en.pdf
+
+### NIST
+- https://csrc.nist.gov/pubs/sp/800/122/final
+- https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1270.pdf
+- https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
+- https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf
+- https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-4.pdf
+- https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
+- https://www.nist.gov/itl/ai-risk-management-framework
+- https://www.nist.gov/privacy-framework
+
+### ISO/IEC standards (IEC webstore, co-publisher)
+- https://webstore.iec.ch/en/publication/108460
+- https://webstore.iec.ch/en/publication/90574
+
+### Standards bodies and the UK AI Standards Hub
+- https://aistandardshub.org/42001-starting-point
+- https://aistandardshub.org/iso-iec-42001-trustworthy-ai
+- https://www.bsigroup.com/en-GB/standards/iso-31000/
+
+### Content provenance (C2PA)
+- https://c2pa.org/specifications/specifications/2.1/index.html
+
+### OWASP GenAI
+- https://genai.owasp.org/llm-top-10/
+
+### Technical reference
+- https://arxiv.org/abs/1803.09010
+- https://arxiv.org/abs/1810.03993
+- https://scikit-learn.org/stable/modules/tree.html
