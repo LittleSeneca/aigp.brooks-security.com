@@ -30,9 +30,12 @@ After editing `quiz-data.js`, `flashcard-data.js`, or the vault notes in `Map/`:
 ```
 python3 build_map_tags.py      # map-data.js — node tree + question/flashcard tags
 python3 build_node_details.py  # node-details.js — per-node source notes
+python3 verify_enrichment.py   # gate: regenerates, then checks the invariants
 ```
 
-Both print warnings if structural invariants break (childless topics, questions not reaching a term leaf, etc.). Hand-tune placements in `HAND_PLACED` in `build_map_tags.py`.
+Both generators print warnings if structural invariants break (childless topics, questions not reaching a term leaf, etc.). Hand-tune placements in `HAND_PLACED` in `build_map_tags.py`.
+
+`verify_enrichment.py` is the check that catches what the generators only warn about. It rebuilds `node-details.js` and confirms it reproduces byte-for-byte, then asserts that every node resolves to exactly one enrichment entry, that a node's sections render in the right order, that the Sources list is not swallowed into the collapsed Source Notes fold, that every source has a title and an http(s) URL, and that the authored text carries no em dashes or filler words. It exits non-zero on any of those. It also prints a per-domain progress table, so it is useful while domains II to IV are still being enriched. Pass a domain to scope it: `python3 verify_enrichment.py d1`.
 
 When NIST publishes a new AI RMF Playbook (it has said one will follow the AI RMF 1.0 revision), download https://airc.nist.gov/docs/playbook.json and regenerate the vault note:
 
@@ -49,6 +52,7 @@ python3 build_playbook_note.py playbook.json --retrieved YYYY-MM-DD -o "Map/NIST
 | `map-data.js`, `node-details.js` | Generated: mind map tree, tags, per-node notes |
 | `build_map_tags.py`, `build_node_details.py` | Generators |
 | `build_playbook_note.py` | Builds the NIST AI RMF Playbook vault note from NIST's JSON |
+| `verify_enrichment.py` | Gate for the generated mind map: regeneration fidelity, enrichment coverage, section order, the Source Notes fold, source shape, and the authored-text style rules |
 | `enrichments/` | Authored per-node and per-term text for the mind map drawer. By-type files (`01-structure` … `10-bok-v2.1`) plus one file per BOK domain (`11-domain1.json`, …). Later files win, so a per-domain file overrides the by-type files for the nodes it covers. |
 | `Map/` | Obsidian vault: knowledge-area notes, structured references, canvas |
 | `docs/specs/` | Specifications for larger changes |
