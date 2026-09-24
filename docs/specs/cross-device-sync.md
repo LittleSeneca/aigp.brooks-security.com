@@ -37,7 +37,7 @@ The API is same-origin, at `https://aigp.brooks-security.com/api/aigp/<action>`.
 
 | Action | Request | Success | Errors |
 |---|---|---|---|
-| `register` | `{username, password}` | `200 {username, token}` | `400` invalid or weak, `409` username taken |
+| `register` | `{username, password}` | `200 {username, token}` | `400` invalid, `409` username taken |
 | `login` | `{username, password}` | `200 {username, token}` | `401` wrong username or password (one message for both, and for missing fields), `429` locked out |
 | `sync` | `{token, state}` | `200 {state}` (merged) | `400` state is not an object, `401` bad, expired or revoked token, `409` still conflicting after 3 retries, `413` too large |
 
@@ -46,11 +46,7 @@ Any action can also return `403` (the origin secret is missing) or `503` (thrott
 ### Credentials
 
 - **Username:** 3–32 characters from `[a-z0-9._-]`. It is case-insensitive (lowercased) and it is the DynamoDB key.
-- **Password:** 15–128 characters after Unicode NFKC normalization, with no composition rules. `register` also runs a minimal SP 800-63B-4 §3.1.1.2 blocklist check against the whole value, never a substring, after lowercasing and removing spaces. It rejects:
-  - the username itself;
-  - a repeated string (`aaaa…`, `abcabc…`, `passwordpassword`);
-  - a run of consecutive digits, letters, or keyboard keys;
-  - the textbook passphrase "correct horse battery staple".
+- **Password:** 8–128 characters after Unicode NFKC normalization, and otherwise anything. There are no composition rules and no blocklist, by choice: the account guards study progress, which holds no PII. Hashing, throttling, and lockout still protect the service itself.
 - **Hashing:** PBKDF2-HMAC-SHA256 with 600,000 iterations and a 16-byte random salt. The iteration count is stored per user so it can be raised later, and the comparison uses `hmac.compare_digest`.
 - **Lockout:** after 10 consecutive failures, logins return `429` until 15 minutes after the most recent failure. Only a successful login resets the counter, so each failure after a lock locks the account again. Concurrent attempts inside one throttle burst may each be checked, and that is accepted.
   - Every login writes the counter: +1 on failure, 0 on success. The token is returned only after that write succeeds. Otherwise a table that is being throttled could leave failures uncounted while a correct guess still came back `200`.

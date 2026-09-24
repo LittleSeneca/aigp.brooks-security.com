@@ -17,7 +17,7 @@ Open [study.html](study.html) in a browser. No server is needed: everything is v
   - Every question and card is tagged down to a term leaf, so completing all of a node's leaves turns it green by definition.
 - **Guide**: a step-by-step study plan, with links to every free primary source the BOK draws on.
 
-Progress is saved in the browser (localStorage). On https://aigp.brooks-security.com an optional account (username and passphrase, no email) syncs it across devices: each device keeps working offline and merges with the server in the background. The sync API (a Lambda and a DynamoDB table) lives in the brooks-security.com repo; see [docs/specs/cross-device-sync.md](docs/specs/cross-device-sync.md). Opened from disk, the app has no sync and progress stays per browser and per URL.
+Progress is saved in the browser (localStorage). On https://aigp.brooks-security.com an optional account (username and password, no email) syncs it across devices: each device keeps working offline and merges with the server in the background. The sync API (a Lambda and a DynamoDB table) lives in the brooks-security.com repo; see [docs/specs/cross-device-sync.md](docs/specs/cross-device-sync.md). Opened from disk, the app has no sync and progress stays per browser and per URL.
 
 ## Regenerating data
 
