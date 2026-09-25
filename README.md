@@ -19,19 +19,23 @@ Open [study.html](study.html) in a browser. No server is needed: everything is v
   - AIGP's pinned title bar holds the close button and, on desktop, a button that widens the drawer over the whole map. Phones always show the drawer full width.
   - Each open card has two small buttons, labeled with the node's questions correct/total and terms mastered/total. They filter the Quiz or Flashcards to that node.
   - Every question and card is tagged down to a term leaf, so completing all of a node's leaves turns it green by definition.
-- **Guide**: a step-by-step study plan, with links to every free primary source the BOK draws on.
+- **Book**: *The Record*, a narrative guide to the whole BOK that follows one fictional company through a year of AI governance, plus a step-by-step study plan with links to every free primary source the BOK draws on.
 
 Progress is saved in the browser (localStorage). On https://aigp.brooks-security.com an optional account (username and password, no email) syncs it across devices: each device keeps working offline and merges with the server in the background. The sync API (a Lambda and a DynamoDB table) lives in the brooks-security.com repo; see [docs/specs/cross-device-sync.md](docs/specs/cross-device-sync.md). Opened from disk, the app has no sync and progress stays per browser and per URL.
 
 ## Regenerating data
 
-After editing `quiz-data.js`, `flashcard-data.js`, or the vault notes in `Map/`:
+After editing `quiz-data.js`, `flashcard-data.js`, the vault notes in `Map/`, or the enrichment files in `enrichments/`:
 
 ```
 python3 build_map_tags.py      # map-data.js — node tree + question/flashcard tags
 python3 build_node_details.py  # node-details.js — per-node source notes
-python3 verify_enrichment.py   # gate: regenerates, then checks the invariants
+python3 build_book.py          # book-data.js — aigp-book.md wrapped for the Book tab
+python3 verify_enrichment.py   # gate: regenerates enrichment artifact, checks invariants
+python3 build_book.py --check  # gate: book-data.js is current, manuscript has no em dashes
 ```
+
+The Book tab's source of truth is the manuscript `aigp-book.md`. `build_book.py` wraps it, together with the study plan, into `book-data.js`, which the Book tab loads. Edit the manuscript, then rerun it.
 
 Both generators print warnings if structural invariants break (childless topics, questions not reaching a term leaf, etc.). Hand-tune placements in `HAND_PLACED` in `build_map_tags.py`.
 
@@ -47,10 +51,13 @@ python3 build_playbook_note.py playbook.json --retrieved YYYY-MM-DD -o "Map/NIST
 
 | Path | What |
 |---|---|
-| `study.html` | The app (quiz, flashcards, test, mind map, guide) |
+| `study.html` | The app (quiz, flashcards, test, mind map, book) |
 | `quiz-data.js`, `flashcard-data.js` | Question bank and flashcards |
 | `map-data.js`, `node-details.js` | Generated: mind map tree, tags, per-node notes |
-| `build_map_tags.py`, `build_node_details.py` | Generators |
+| `aigp-book.md` | The book manuscript shown in the Book tab |
+| `book-data.js` | Generated from `aigp-book.md` by `build_book.py` |
+| `build_map_tags.py`, `build_node_details.py`, `build_book.py` | Generators |
+| `verify_enrichment.py` | Gate |
 | `build_playbook_note.py` | Builds the NIST AI RMF Playbook vault note from NIST's JSON |
 | `verify_enrichment.py` | Gate for the generated mind map: regeneration fidelity, enrichment coverage, section order, the Source Notes fold, source shape, and the authored-text style rules |
 | `enrichments/` | Authored per-node and per-term text for the mind map drawer. By-type files (`01-structure` … `10-bok-v2.1`) plus one file per BOK domain (`11-domain1.json`, …). Later files win, so a per-domain file overrides the by-type files for the nodes it covers. |

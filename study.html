@@ -213,20 +213,59 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .qcell.pass { background: rgba(46,204,113,0.18); border-color: var(--correct); color: var(--correct); }
 .qcell.fail { background: rgba(231,76,60,0.18); border-color: var(--incorrect); color: var(--incorrect); }
 
-/* Guide */
-.guide { max-width: 780px; margin: 0 auto; padding: 8px 4px 40px; }
-.guide h1 { font-size: 1.5rem; color: var(--accent); margin-bottom: 4px; }
-.guide .lead { color: var(--text-muted); margin-bottom: 24px; font-size: 0.95rem; }
-.guide-step { display: flex; gap: 14px; margin-bottom: 24px; }
-.step-num { flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; }
-.guide-step h2 { font-size: 1.05rem; margin-bottom: 6px; color: var(--text); }
-.guide-step p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 6px; color: var(--text); }
-.guide a, .guide .ilink { color: var(--accent); cursor: pointer; text-decoration: none; }
-.guide a:hover, .guide .ilink:hover { text-decoration: underline; }
-.guide-links { list-style: none; margin: 10px 0 0; padding: 0; }
-.guide-links li { padding: 7px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
-.guide-links li:last-child { border-bottom: none; }
-.guide-links .ref-note { color: var(--text-muted); font-size: 0.8rem; }
+/* Book reader */
+.book-container { display: flex; height: 100%; position: relative; }
+.book-toc { width: 260px; min-width: 260px; border-right: 1px solid var(--border); overflow-y: auto; position: sticky; top: 0; height: 100%; max-height: calc(100vh - 100px); font-size: 0.85rem; }
+.book-toc-header { padding: 14px 12px 10px; border-bottom: 1px solid var(--border); }
+.book-toc-header h3 { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 8px; }
+.book-toc-search { width: 100%; padding: 6px 8px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text); font-size: 0.78rem; outline: none; box-sizing: border-box; }
+.book-toc-search:focus { border-color: var(--accent); }
+.book-toc-tree { padding: 2px 0; }
+.book-toc-part { font-weight: 600; color: var(--accent); padding: 10px 12px 4px; cursor: pointer; display: flex; align-items: center; gap: 4px; font-size: 0.82rem; }
+.book-toc-part:hover { color: var(--accent-hover); }
+.book-toc-part .ico { width: 14px; height: 14px; transition: transform 0.15s; flex-shrink: 0; }
+.book-toc-part.collapsed .ico { transform: rotate(-90deg); }
+.book-toc-chapter { padding: 4px 12px 4px 24px; cursor: pointer; color: var(--text); display: flex; align-items: center; gap: 4px; font-size: 0.82rem; }
+.book-toc-chapter:hover { color: var(--accent); }
+.book-toc-chapter.active { color: var(--accent); font-weight: 600; }
+.book-toc-chapter .ico { width: 12px; height: 12px; transition: transform 0.15s; flex-shrink: 0; }
+.book-toc-chapter.collapsed .ico { transform: rotate(-90deg); }
+.book-toc-section { padding: 2px 12px 2px 42px; cursor: pointer; color: var(--text-muted); font-size: 0.78rem; display: block; text-decoration: none; }
+.book-toc-section:hover { color: var(--accent); }
+.book-toc-section.active { color: var(--accent); font-weight: 600; }
+.book-toc-section.hidden { display: none; }
+
+.book-content { flex: 1; overflow-y: auto; max-width: 820px; padding: 32px 48px 80px; font-size: 0.95rem; line-height: 1.85; }
+.book-content h1 { font-size: 1.8rem; color: var(--accent); margin: 0 0 6px; font-weight: 700; letter-spacing: -0.01em; }
+.book-content h2 { font-size: 1.35rem; color: var(--text); margin: 28px 0 12px; font-weight: 600; }
+.book-content h3 { font-size: 1.1rem; color: var(--text); margin: 32px 0 12px; font-weight: 600; border-top: 1px solid var(--border); padding-top: 20px; }
+.book-content h4 { font-size: 0.95rem; color: var(--text); margin: 20px 0 8px; font-weight: 600; }
+#book-rendered > :first-child { margin-top: 0; }
+.book-content p { font-size: 0.95rem; line-height: 1.85; margin-bottom: 14px; color: var(--text); }
+.book-content ul, .book-content ol { font-size: 0.95rem; line-height: 1.85; margin-bottom: 14px; color: var(--text); padding-left: 24px; }
+.book-content table { font-size: 0.85rem; border-collapse: collapse; margin: 16px 0; width: 100%; }
+.book-content th, .book-content td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+.book-content th { background: var(--surface); font-weight: 600; }
+.book-content blockquote { border-left: 3px solid var(--accent); padding: 12px 18px; margin: 16px 0; background: var(--surface); border-radius: 0 var(--radius) var(--radius) 0; font-size: 0.9rem; line-height: 1.75; }
+.book-content blockquote strong { display: block; margin-bottom: 4px; color: var(--accent); }
+.book-content code { font-size: 0.85rem; background: var(--surface); padding: 2px 5px; border-radius: 3px; }
+.book-content a { color: var(--accent); text-decoration: none; }
+.book-content a:hover { text-decoration: underline; }
+
+.book-nav { display: flex; justify-content: space-between; margin-top: 36px; padding-top: 18px; border-top: 1px solid var(--border); }
+.book-nav button { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 20px; cursor: pointer; color: var(--text); font-size: 0.85rem; }
+.book-nav button:hover { border-color: var(--accent); color: var(--accent); }
+.book-nav button:disabled { opacity: 0.4; cursor: default; }
+.book-toc-toggle { display: none; position: fixed; bottom: 16px; right: 16px; z-index: 10; width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: #fff; border: none; font-size: 1.2rem; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+.book-toc-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); z-index: 5; }
+@media (max-width: 768px) {
+  .book-container { flex-direction: column; }
+  .book-toc { position: fixed; left: -280px; top: 0; height: 100%; max-height: none; z-index: 21; transition: left 0.2s; font-size: 0.9rem; background: var(--bg); }
+  .book-toc.open { left: 0; }
+  .book-toc-overlay.open { display: block; z-index: 20; }
+  .book-toc-toggle { display: flex; align-items: center; justify-content: center; }
+  .book-content { padding: 16px 20px 60px; font-size: 0.9rem; }
+}
 
 @media (max-width: 768px) {
   .test-layout { flex-direction: column; }
@@ -281,7 +320,7 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   <symbol id="i-cards" viewBox="0 0 24 24"><path d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304l0 .001M15 4h1a1 1 0 0 1 1 1v3.5M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"/></symbol>
   <symbol id="i-test" viewBox="0 0 24 24"><path d="M5 13a7 7 0 1 0 14 0a7 7 0 0 0 -14 0M14.5 10.5l-2.5 2.5M17 8l1 -1M14 3h-4"/></symbol>
   <symbol id="i-map" viewBox="0 0 24 24"><path d="M3 17a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2l0 -2M15 17a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2l0 -2M9 5a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2l0 -2M6 15v-1a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v1M12 9l0 3"/></symbol>
-  <symbol id="i-guide" viewBox="0 0 24 24"><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6l0 13M12 6l0 13M21 6l0 13"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6l0 13M12 6l0 13M21 6l0 13"/></symbol>
   <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M6.657 18c-2.572 0 -4.657 -2.007 -4.657 -4.483c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927 -1.551 3.487 -3.465 3.487h-11.878"/></symbol>
   <symbol id="i-synced" viewBox="0 0 24 24"><path d="M11 18.004h-4.343c-2.572 -.004 -4.657 -2.011 -4.657 -4.487c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.388 0 2.585 .82 3.138 2.007M15 19l2 2l4 -4"/></symbol>
   <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M9 6l6 6l-6 6"/></symbol>
@@ -298,7 +337,7 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
     <button class="tab" onclick="switchTab('flashcards')" id="tab-flashcards"><svg class="ico" aria-hidden="true"><use href="#i-cards"/></svg><span class="lbl">Flashcards</span></button>
     <button class="tab" onclick="switchTab('test')" id="tab-test"><svg class="ico" aria-hidden="true"><use href="#i-test"/></svg><span class="lbl">Test</span></button>
     <button class="tab" onclick="switchTab('mindmap')" id="tab-mindmap"><svg class="ico" aria-hidden="true"><use href="#i-map"/></svg><span class="lbl">Mind Map</span></button>
-    <button class="tab" onclick="switchTab('guide')" id="tab-guide"><svg class="ico" aria-hidden="true"><use href="#i-guide"/></svg><span class="lbl">Guide</span></button>
+    <button class="tab" onclick="switchTab('book')" id="tab-book"><svg class="ico" aria-hidden="true"><use href="#i-book"/></svg><span class="lbl">Book</span></button>
     <button class="tab" id="auth-btn" hidden onclick="openAuth()"><svg class="ico" aria-hidden="true"><use href="#i-cloud"/></svg><span class="lbl">Sign in</span></button>
   </div>
 </div>
@@ -418,108 +457,22 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   </div>
 </div>
 
-<!-- ═══ GUIDE ═══ -->
-<div class="tab-panel hidden" id="panel-guide">
+<!-- ═══ BOOK ═══ -->
+<div class="tab-panel hidden" id="panel-book">
 <div class="quiz-scroll">
-<div class="guide">
-  <h1>How to pass the AIGP</h1>
-  <p class="lead">A step-by-step path from zero to exam-ready, using this app.</p>
-
-  <div class="guide-step">
-    <div class="step-num">1</div>
-    <div>
-      <h2>Read the exam blueprint first</h2>
-      <p>Start with the IAPP <strong>AIGP Body of Knowledge</strong> — the official outline of everything the exam can test. Read it end to end so you know the shape of the territory before you dive into the source material.</p>
-      <p><a href="https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt0d33152fd20bc134/AIGP_Cert%20BOK.pdf" target="_blank" rel="noopener">→ AIGP Body of Knowledge &amp; Exam Blueprint (PDF)</a></p>
+<div class="book-container">
+  <nav class="book-toc" id="book-toc">
+    <div class="book-toc-header">
+      <h3>Contents</h3>
+      <input class="book-toc-search" id="book-toc-search" placeholder="Filter sections..." oninput="filterBookToc(this.value)">
     </div>
-  </div>
-
-  <div class="guide-step">
-    <div class="step-num">2</div>
-    <div>
-      <h2>Read the primary sources in full</h2>
-      <p>Then read each of these foundational documents <strong>in their entirety</strong>. The exam leans hardest on the EU AI Act and GDPR, but every one of these shows up. All are free unless marked.</p>
-      <ul class="guide-links">
-        <li><strong>EU law</strong></li>
-        <li><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener">EU AI Act — Regulation (EU) 2024/1689</a></li>
-        <li><a href="https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng" target="_blank" rel="noopener">Digital Omnibus on AI — Regulation (EU) 2026/1744</a> <span class="ref-note">moved high-risk dates to Dec 2027 / Aug 2028; the exam may still use the original dates, so know both</span></li>
-        <li><a href="https://digital-strategy.ec.europa.eu/en/policies/ai-code-practice" target="_blank" rel="noopener">EU General-Purpose AI Code of Practice</a></li>
-        <li><a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">GDPR — Regulation (EU) 2016/679</a></li>
-        <li><a href="https://www.edpb.europa.eu/system/files/2024-12/edpb_opinion_202428_ai-models_en.pdf" target="_blank" rel="noopener">EDPB Opinion 28/2024 — AI models and the GDPR</a></li>
-        <li><a href="https://eur-lex.europa.eu/eli/dir/2024/2853/oj/eng" target="_blank" rel="noopener">Product Liability Directive — (EU) 2024/2853</a> <span class="ref-note">software and AI are now "products"</span></li>
-        <li><a href="https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems" target="_blank" rel="noopener">Article 50 transparency guidelines</a> (C(2026) 5054, 20 Jul 2026) · <a href="https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content" target="_blank" rel="noopener">Article 50 marking &amp; labelling code</a></li>
-        <li><a href="https://eur-lex.europa.eu/eli/C/2024/913/oj/eng" target="_blank" rel="noopener">CJEU <em>SCHUFA</em> (C-634/21)</a> <span class="ref-note">a credit score is itself an Art. 22 automated decision</span> · <a href="https://curia.europa.eu/jcms/upload/docs/application/pdf/2025-02/cp250022en.pdf" target="_blank" rel="noopener">CJEU <em>Dun &amp; Bradstreet Austria</em> (C-203/22)</a> <span class="ref-note">the Art. 15 explanation duty is a real one</span></li>
-        <li><strong>Other AI-specific laws</strong> <span class="ref-note">(new in BOK v2.1)</span></li>
-        <li><a href="https://elaw.klri.re.kr/eng_service/lawView.do?hseq=71019&amp;lang=ENG" target="_blank" rel="noopener">South Korea AI Basic Act — official English translation (KLRI)</a> <span class="ref-note">government-funded, more authoritative than CSET; CSET's is at <a href="https://cset.georgetown.edu/wp-content/uploads/t0625_south_korea_ai_law_EN.pdf" target="_blank" rel="noopener">cset.georgetown.edu</a></span></li>
-        <li><a href="https://prod.iapp.org/media/pdf/resource_center/us_state_ai_governance_legislation_tracker.pdf" target="_blank" rel="noopener">IAPP US State AI Governance Legislation Tracker (PDF)</a> <span class="ref-note">Oct 2025 — predates Colorado's 2026 repeal-and-replace</span></li>
-        <li>US statutes: <a href="https://leg.colorado.gov/bills/sb26-189" target="_blank" rel="noopener">Colorado SB 26-189</a> · <a href="https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00149F.htm" target="_blank" rel="noopener">Texas TRAIGA</a> · <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB53" target="_blank" rel="noopener">California SB 53</a> · <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB2013" target="_blank" rel="noopener">AB 2013</a> · <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB942" target="_blank" rel="noopener">SB 942</a> · <a href="https://cppa.ca.gov/regulations/ccpa_updates.html" target="_blank" rel="noopener">CPPA ADMT rules</a></li>
-        <li>More state law: <a href="https://le.utah.gov/~2025/bills/static/SB0226.html" target="_blank" rel="noopener">Utah SB 226</a> · <a href="https://legislation.nysenate.gov/pdf/bills/2025/S6953B" target="_blank" rel="noopener">New York RAISE Act</a> · <a href="https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page" target="_blank" rel="noopener">NYC Local Law 144</a> · <a href="https://ilga.gov/legislation/billstatus.asp?DocNum=3773&amp;GAID=17&amp;GA=103" target="_blank" rel="noopener">Illinois HB 3773</a></li>
-        <li><strong>AI copyright &amp; IP case law</strong> <span class="ref-note">(now decided)</span></li>
-        <li><a href="https://www.supremecourt.gov/docket/docketfiles/html/public/25-449.html" target="_blank" rel="noopener"><em>Thaler v. Perlmutter</em></a> <span class="ref-note">D.C. Circuit affirmed 18 Mar 2025; cert denied 2 Mar 2026 — no human author, no copyright</span></li>
-        <li><a href="https://www.judiciary.uk/judgments/getty-images-v-stability-ai/" target="_blank" rel="noopener"><em>Getty Images v Stability AI</em> (UK)</a> <span class="ref-note">[2025] EWHC 2863 (Ch) — training claim largely failed; appeal pending 2026</span></li>
-        <li><a href="https://www.courtlistener.com/docket/69058235/bartz-v-anthropic-pbc/" target="_blank" rel="noopener"><em>Bartz v. Anthropic</em></a> <span class="ref-note">split fair-use ruling, then a $1.5bn settlement approved 20 Jul 2026</span></li>
-        <li><a href="https://eur-lex.europa.eu/eli/dir/2019/790/oj" target="_blank" rel="noopener">EU text-and-data-mining exception, Art. 4(3) Directive (EU) 2019/790</a> <span class="ref-note">the machine-readable opt-out that rights holders use to reserve their works</span></li>
-        <li><strong>Standards &amp; frameworks</strong></li>
-        <li><a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf" target="_blank" rel="noopener">NIST AI Risk Management Framework (AI 100-1)</a></li>
-        <li><a href="https://airc.nist.gov/airmf-resources/playbook/" target="_blank" rel="noopener">NIST AI RMF Playbook</a> <span class="ref-note">suggested actions for all 72 subcategories — named in the BOK. Machine-readable and public domain: <a href="https://airc.nist.gov/docs/playbook.json" target="_blank" rel="noopener">JSON</a> · <a href="https://airc.nist.gov/docs/playbook.csv" target="_blank" rel="noopener">CSV</a> · <a href="https://airc.nist.gov/docs/AI_RMF_Playbook.pdf" target="_blank" rel="noopener">PDF</a></span></li>
-        <li><a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf" target="_blank" rel="noopener">NIST Generative AI Profile (AI 600-1)</a></li>
-        <li><a href="https://oecd.ai/en/ai-principles" target="_blank" rel="noopener">OECD AI Principles</a> · <a href="https://oecd.ai/en/classification" target="_blank" rel="noopener">OECD Framework for the Classification of AI Systems</a></li>
-        <li><a href="https://www.iso.org/standard/74296.html" target="_blank" rel="noopener">ISO/IEC 22989 — AI concepts &amp; terminology</a> <span class="ref-note"><strong>free in full</strong> — CHF 0, the one ISO standard you can just read</span></li>
-        <li><a href="https://www.iso.org/standard/81230.html" target="_blank" rel="noopener">ISO/IEC 42001 — AI management systems</a> <span class="ref-note">paid (CHF 1,880+)</span></li>
-        <li><a href="https://www.iso.org/standard/42005" target="_blank" rel="noopener">ISO/IEC 42005 — AI system impact assessment</a> <span class="ref-note">paid (CHF 181); the vault note covers it from free sources. Free orientation: <a href="https://www.bsigroup.com/en-GB/insights-and-media/media-centre/press-releases/2025/june/framework-published-to-assess-real-world-ethical-and-operational-impact-of-ai/" target="_blank" rel="noopener">BSI's launch note</a> · <a href="https://aistandardshub.org/" target="_blank" rel="noopener">AI Standards Hub</a></span></li>
-        <li><a href="https://www.iso.org/standard/77304.html" target="_blank" rel="noopener">ISO/IEC 23894 — AI risk management</a> <span class="ref-note">paid (CHF 155), and no longer named in BOK v2.1 — background only</span></li>
-        <li><strong>Agentic AI</strong> <span class="ref-note">(named in BOK v2.1)</span></li>
-        <li><a href="https://www.imda.gov.sg/-/media/imda/files/about/emerging-tech-and-research/artificial-intelligence/mgf-for-agentic-ai.pdf" target="_blank" rel="noopener">Singapore IMDA — Model AI Governance Framework for Agentic AI</a> · <a href="https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/" target="_blank" rel="noopener">OWASP Top 10 for Agentic Applications</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="guide-step">
-    <div class="step-num">3</div>
-    <div>
-      <h2>Learn IAPP's vocabulary</h2>
-      <p>The exam uses IAPP's own definitions, so skim its free glossary alongside the <a class="ilink" onclick="switchTab('flashcards')">Flashcards</a>. The global tracker gives one-page summaries of each jurisdiction's AI law. Everything in this list is free.</p>
-      <ul class="guide-links">
-        <li><a href="https://prod.iapp.org/media/pdf/resource_center/key_terms_for_ai_governance.pdf" target="_blank" rel="noopener">IAPP Key Terms for AI Governance (PDF)</a> <span class="ref-note">99 terms, including "Agentic AI"</span></li>
-        <li><a href="https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt34a8e3844fb44942/global_ai_law_policy_tracker.pdf" target="_blank" rel="noopener">IAPP Global AI Law and Policy Tracker (PDF)</a></li>
-        <li><a href="https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blteb8b5d531fd78971/IAPP-Certification_Handbook.pdf" target="_blank" rel="noopener">IAPP Certification Candidate Handbook v5.3.2</a> <span class="ref-note">effective 1 Jun 2026 — the authoritative source for exam format, scoring and the 7-day retake rule</span></li>
-        <li><a href="https://iapp.org/certify/how-to-prepare" target="_blank" rel="noopener">How to prepare</a> · <a href="https://iapp.org/certify/faqs" target="_blank" rel="noopener">Certification FAQs</a> · <a href="https://iapp.org/ai-governance" target="_blank" rel="noopener">IAPP AI Governance Center</a> <span class="ref-note">free weekly AI Governance Dashboard newsletter</span></li>
-        <li><a href="https://oliverpatel.substack.com/p/the-unofficial-aigp-resource-guide" target="_blank" rel="noopener">The Unofficial AIGP Resource Guide — Oliver Patel</a> <span class="ref-note">written by an IAPP AIGP instructor; ~100 resources mapped to the BOK</span></li>
-        <li><a href="https://ethicalogic.com/ai-governance-course/" target="_blank" rel="noopener">Ethicalogic free AI governance course</a> <span class="ref-note">28 lessons on the EU AI Act, NIST AI RMF and ISO 42001; no registration</span></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="guide-step">
-    <div class="step-num">4</div>
-    <div>
-      <h2>Work the Mind Map section by section</h2>
-      <p>Open the <a class="ilink" onclick="switchTab('mindmap')">Mind Map</a>, pick a section, and click its node. Read through that section's documentation in the drawer that opens, and open its sub-sections to go deeper. Then use the section's question (<svg class="ico" style="vertical-align:-3px" aria-hidden="true"><use href="#i-quiz"/></svg>) and flashcard (<svg class="ico" style="vertical-align:-3px" aria-hidden="true"><use href="#i-cards"/></svg>) buttons to drill just that section in the <a class="ilink" onclick="switchTab('quiz')">Quiz</a> and <a class="ilink" onclick="switchTab('flashcards')">Flashcards</a>.</p>
-    </div>
-  </div>
-
-  <div class="guide-step">
-    <div class="step-num">5</div>
-    <div>
-      <h2>Turn the whole map green</h2>
-      <p>Repeat that for every section. Nodes color themselves by how you're scoring — grey (untested) → red → amber → green. When the entire map is <span style="color:var(--correct);font-weight:600">lit up green</span>, you've genuinely covered the material.</p>
-    </div>
-  </div>
-
-  <div class="guide-step">
-    <div class="step-num">6</div>
-    <div>
-      <h2>Take practice exams</h2>
-      <p>Finally, go to the <a class="ilink" onclick="switchTab('test')">Test</a> tab and sit a few timed exams under real conditions. The domain mix follows the blueprint, and some questions are "Select N" multi-selects with no partial credit, as on the real exam. <strong>Once you're consistently scoring above 85%, you're ready to take the AIGP.</strong></p>
-      <ul class="guide-links">
-        <li><a href="https://www.youtube.com/watch?v=cmWGspcCdkc" target="_blank" rel="noopener">What changed in BOK v2.1 — Dr. Kyle David (free video)</a> · <a href="https://epdc.wiley.com/pub/docs/2744b940-3a76-4cff-8e0a-3f025eb3e7b3" target="_blank" rel="noopener">Wiley's free v2.1 supplement</a></li>
-        <li><a href="https://github.com/jasondmacleod/aigp-study-kit" target="_blank" rel="noopener">AIGP Study Kit</a> <span class="ref-note">its free questions and recall cards are already in this app (CC BY-NC-SA 4.0)</span></li>
-        <li><a href="https://github.com/sanjaynandanj/aigp-exam-prep" target="_blank" rel="noopener">aigp-exam-prep (MarginX)</a> <span class="ref-note">MIT-licensed, mapped to BOK v2.1 — its 185 questions are already in this app, and the 85-question mock uses the same domain mix as this app. See docs/research/</span></li>
-        <li><a href="https://store.iapp.org/aigp-practice-exam-digital/" target="_blank" rel="noopener">IAPP official practice exam</a> <span class="ref-note">$60 ($50 member) — the only official practice questions beyond the 3 samples in the free Study Guide, and the best calibration check before you book</span></li>
-        <li><span class="ref-note">Avoid "braindump" sites selling real exam questions. IAPP's candidate handbook treats using them as cheating (results cancelled, certification revoked).</span></li>
-      </ul>
-    </div>
-  </div>
+    <div class="book-toc-tree" id="book-toc-tree"><div class="book-toc-part">Loading&hellip;</div></div>
+  </nav>
+  <main class="book-content" id="book-content">
+    <div id="book-rendered"></div>
+  </main>
+  <div class="book-toc-overlay" id="book-toc-overlay" onclick="toggleBookToc()"></div>
+  <button class="book-toc-toggle" onclick="toggleBookToc()" aria-label="Contents">&#9776;</button>
 </div>
 </div>
 </div>
@@ -548,12 +501,13 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 // ═══════════ TABS ═══════════
 const phone = matchMedia('(max-width: 768px)'); // the CSS phone breakpoint
 function switchTab(tab) {
-  ['quiz','flashcards','test','mindmap','guide'].forEach(t => {
+  ['quiz','flashcards','test','mindmap','book'].forEach(t => {
     document.getElementById('panel-'+t).classList.toggle('hidden', t !== tab);
     document.getElementById('tab-'+t).classList.toggle('active', t === tab);
   });
   if (tab === 'mindmap') setTimeout(buildMindMap, 50);
   if (tab === 'test') renderTest();
+  if (tab === 'book') { if (typeof BOOK_MD === 'undefined') loadBook(); else renderBookFromHash(); }
 }
 
 // ═══════════ QUIZ ═══════════
@@ -1266,12 +1220,126 @@ if(location.protocol!=='file:'){
   });
 }
 
+// ═══════════ BOOK READER ═══════════
+// book-data.js holds the aigp-book.md manuscript as BOOK_MD (see build_book.py).
+// Pages split at every '# ' heading and every '## Chapter N:' heading.
+const BOOK_KEY = 'aigp-book-last';
+const BOOK_SKIP_SECS = ['Key Terms', 'Further Reading'];
+let BOOK_UNITS = [];
+const bookSlug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
+
+function loadBook() {
+  const s = document.createElement('script');
+  s.src = 'book-data.js';
+  s.onload = () => { parseBook(); buildBookToc(); renderBookFromHash(); };
+  document.body.appendChild(s);
+}
+
+function parseBook() {
+  let cur = null;
+  BOOK_MD.split('\n').forEach(line => {
+    const m = /^# (.+)/.exec(line) || /^## (Chapter \d+: .+)/.exec(line);
+    if (m) { cur = { title: m[1], id: bookSlug(m[1]), level: line.startsWith('# ') ? 1 : 2, lines: [] }; BOOK_UNITS.push(cur); }
+    if (cur) cur.lines.push(line);
+  });
+  BOOK_UNITS = BOOK_UNITS.filter(u => u.title !== 'Contents');  // the sidebar is the contents
+  BOOK_UNITS.forEach(u => {
+    u.md = u.lines.join('\n'); delete u.lines;
+    u.sections = u.level === 2 ? [...u.md.matchAll(/^### (.+)$/gm)].map(m => m[1]).filter(t => !BOOK_SKIP_SECS.includes(t)) : [];
+  });
+}
+
+function toggleBookToc() {
+  document.getElementById('book-toc').classList.toggle('open');
+  document.getElementById('book-toc-overlay').classList.toggle('open');
+}
+
+function bookTocItem(cls, text, onclick) {
+  const d = document.createElement('div');
+  d.className = cls; d.textContent = text; d.onclick = onclick;
+  return d;
+}
+
+function buildBookToc() {
+  const tree = document.getElementById('book-toc-tree');
+  tree.innerHTML = '';
+  let partKids = null;
+  BOOK_UNITS.forEach(u => {
+    if (u.level === 1 && /^Part /.test(u.title)) {
+      const kids = document.createElement('div');
+      kids.className = 'book-toc-kids'; kids.style.display = 'none';
+      const head = bookTocItem('book-toc-part collapsed', u.title, () => {
+        const open = kids.style.display === 'none';
+        kids.style.display = open ? 'block' : 'none';
+        head.classList.toggle('collapsed', !open);
+        if (open) showBookUnit(u.id);
+      });
+      head.dataset.unit = u.id;
+      tree.append(head, kids);
+      partKids = kids;
+    } else if (u.level === 2 && partKids) {
+      const ch = bookTocItem('book-toc-chapter', u.title, () => showBookUnit(u.id));
+      ch.dataset.unit = u.id;
+      partKids.appendChild(ch);
+      u.sections.forEach(t => {
+        const a = document.createElement('a');
+        a.className = 'book-toc-section'; a.textContent = t; a.href = '#book/' + u.id + '/' + bookSlug(t);
+        a.onclick = e => { e.preventDefault(); showBookUnit(u.id, bookSlug(t)); };
+        partKids.appendChild(a);
+      });
+    } else {
+      partKids = null;
+      const d = bookTocItem('book-toc-chapter', u.title, () => showBookUnit(u.id));
+      d.dataset.unit = u.id;
+      tree.appendChild(d);
+    }
+  });
+}
+
+function showBookUnit(id, sec) {
+  const i = Math.max(0, BOOK_UNITS.findIndex(u => u.id === id));
+  const u = BOOK_UNITS[i], prev = BOOK_UNITS[i - 1], next = BOOK_UNITS[i + 1];
+  const el = document.getElementById('book-rendered');
+  const btn = (x, label) => x ? `<button onclick="showBookUnit('${x.id}')">${label}</button>` : '<button disabled>&nbsp;</button>';
+  el.innerHTML = marked.parse(u.md) + '<div class="book-nav">' + btn(prev, '&larr; Previous') + btn(next, 'Next &rarr;') + '</div>';
+  el.querySelectorAll('h3').forEach(h => { h.id = 'sec-' + bookSlug(h.textContent); });
+  el.querySelectorAll('a[href^="http"]').forEach(a => { a.target = '_blank'; a.rel = 'noopener'; });
+  document.querySelectorAll('#book-toc-tree [data-unit]').forEach(d => d.classList.toggle('active', d.dataset.unit === u.id));
+  // keep the current page's part expanded in the sidebar
+  const tocEl = document.querySelector(`#book-toc-tree [data-unit="${u.id}"]`);
+  const kids = tocEl && tocEl.closest('.book-toc-kids');
+  if (kids) { kids.style.display = 'block'; kids.previousElementSibling.classList.remove('collapsed'); }
+  localStorage.setItem(BOOK_KEY, u.id);
+  history.replaceState(null, '', '#book/' + u.id + (sec ? '/' + sec : ''));
+  const target = sec && document.getElementById('sec-' + sec);
+  if (target) target.scrollIntoView({ block: 'start' });
+  else document.getElementById('book-content').scrollTo(0, 0);
+  if (document.getElementById('book-toc').classList.contains('open')) toggleBookToc();
+}
+
+function renderBookFromHash() {
+  if (typeof BOOK_MD === 'undefined') return;
+  const [id, sec] = window.location.hash.startsWith('#book/') ? window.location.hash.slice(6).split('/') : [];
+  showBookUnit(id || localStorage.getItem(BOOK_KEY) || '', sec);
+}
+
+function filterBookToc(val) {
+  const q = val.toLowerCase();
+  document.querySelectorAll('.book-toc-section').forEach(a => a.classList.toggle('hidden', q && !a.textContent.toLowerCase().includes(q)));
+  if (q) document.querySelectorAll('.book-toc-kids').forEach(k => { k.style.display = 'block'; });
+}
+
+window.addEventListener('hashchange', () => {
+  if (!document.getElementById('panel-book').classList.contains('hidden')) renderBookFromHash();
+});
+
 // Init
 // phones start with the footer folded; desktop keeps it open (its summary is hidden there)
 const foldFooter = () => { document.querySelector('.site-footer').open = !phone.matches; };
 foldFooter(); phone.addEventListener('change', foldFooter);
 document.getElementById('fcard-total').textContent = FLASHCARDS.length;
 applyFilters();updateStats();pickRandom();updateFCStats();showCard(0);
+if (location.hash.startsWith('#book/')) switchTab('book');  // deep links into the book
 </script>
 </body>
 </html>
