@@ -21,6 +21,7 @@ on:
       - flashcard-data.js
       - map-data.js
       - node-details.js
+      - book-data.js
       - d3.v7.min.js
       - marked.min.js
       - .github/workflows/deploy-aigp.yml
@@ -67,7 +68,7 @@ jobs:
           set -euo pipefail
           mkdir -p _site
           cp study.html quiz-data.js flashcard-data.js map-data.js \
-             node-details.js d3.v7.min.js marked.min.js _site/
+             node-details.js book-data.js d3.v7.min.js marked.min.js _site/
           ls -l _site/
 
       # no-cache on everything. The distribution's cache policy has
@@ -96,6 +97,10 @@ jobs:
           bytes=$(curl -s "https://${BUCKET}/quiz-data.js" | wc -c)
           echo "GET /quiz-data.js -> ${bytes} bytes"
           [ "${bytes}" -gt 100000 ] || { echo "question bank looks truncated"; exit 1; }
+
+          book_bytes=$(curl -s "https://${BUCKET}/book-data.js" | wc -c)
+          echo "GET /book-data.js -> ${book_bytes} bytes"
+          [ "${book_bytes}" -gt 100000 ] || { echo "book data looks truncated"; exit 1; }
 
           served=$(curl -s "https://${BUCKET}/" | grep -c "AIGP Study" || true)
           [ "${served}" -gt 0 ] || { echo "entry point does not look like the app"; exit 1; }
