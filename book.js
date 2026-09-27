@@ -157,7 +157,6 @@ function bookActivate(target) {
     }
     bookKeepTocVisible(hit);
   }
-  try { localStorage.setItem(BOOK_KEY, target); } catch (e) {}
   try { history.replaceState(null, '', '#book/' + target); } catch (e) {}
 }
 
@@ -181,26 +180,103 @@ function showBookUnit(id, sec) {
   if (document.getElementById('book-toc').classList.contains('open')) toggleBookToc();
 }
 
+// The next anchor's pos (or content bottom for the last one) — used to clamp
+// a saved offset so a tall-window position never spills into the next section
+// when restored in a short window (AC6).
+function bookSectionEnd(idx) {
+  if (idx + 1 < BOOK_ANCHORS.length) return BOOK_ANCHORS[idx + 1].pos;
+  const content = document.getElementById('book-content');
+  return content.scrollHeight - content.clientHeight;
+}
+
+// Debounced write on scroll-settle: stores {target, offset} so reopening
+// lands in the same paragraph, not just the section heading (AC1, AC4).
+function bookSavePosition() {
+  if (!BOOK_ANCHORS.length || BOOK_CURRENT === null) return;
+  const content = document.getElementById('book-content');
+  const anchor = BOOK_ANCHORS.find(a => a.target === BOOK_CURRENT);
+  if (!anchor) return;
+  const offset = content.scrollTop - anchor.pos;
+  try {
+    localStorage.setItem(BOOK_KEY, JSON.stringify({ target: BOOK_CURRENT, offset: Math.round(offset) }));
+  } catch (e) {}
+}
+
+// AC2: Tolerant read — a JSON {target, offset} object, or the legacy bare "unit/section" string.
+function bookReadStored() {
+  let raw = null;
+  try { raw = localStorage.getItem(BOOK_KEY); } catch (e) { return null; }
+  if (!raw) return null;
+  try {
+    const parsed = JSON.parse(raw);
+    if (parsed && typeof parsed === 'object' && typeof parsed.target === 'string') {
+      return { target: parsed.target,
+               offset: typeof parsed.offset === 'number' ? Math.max(0, Math.round(parsed.offset)) : 0 };
+    }
+    return null;   // valid JSON, but not our shape: ignore rather than guess
+  } catch (e) {
+    return { target: raw, offset: 0 };   // not JSON, so it is the legacy bare string
+  }
+}
+
+// AC3: resolve exact, then by unit id, then give up quietly.
+// AC6: clamp the offset to the section so a position saved in a tall window cannot
+// spill into the next section when it is restored in a short one.
+function bookApplyStored(stored) {
+  let anchor = BOOK_ANCHORS.find(a => a.target === stored.target);
+  if (!anchor) {
+    // The slug may have drifted (a re-slugified chapter). Try a unit-id prefix match.
+    const prefix = stored.target.split('/')[0];
+    anchor = BOOK_ANCHORS.find(a => a.target === prefix) ||
+             BOOK_ANCHORS.find(a => a.target.startsWith(prefix + '/'));
+  }
+  if (!anchor) return false;   // AC3: degrade quietly, stay at the top, no console noise
+  const end = bookSectionEnd(BOOK_ANCHORS.indexOf(anchor));
+  const content = document.getElementById('book-content');
+  content.scrollTop = Math.max(0, Math.min(anchor.pos + stored.offset, end));
+  bookActivate(anchor.target);
+  return true;
+}
+
 function renderBookFromHash() {
   if (typeof BOOK_MD === 'undefined' || !BOOK_ANCHORS.length) return;
   bookMeasure(false);   // the panel may have last been laid out at a different size
+
+  const stored = bookReadStored();
+
+  // AC7, with a caveat that matters. bookActivate() writes this hash itself on every
+  // anchor change, so by the time anyone reloads, the URL is almost always a "#book/"
+  // hash — including when they simply pressed reload. Treating that as a deep link
+  // discards the saved offset and lands on the section heading, which is precisely the
+  // bug this change exists to fix. So: a hash naming the place we saved is our own and
+  // the offset is honoured; a hash naming anywhere else is a genuine deep link and wins.
   if (window.location.hash.startsWith('#book/')) {
     const [id, sec] = window.location.hash.slice(6).split('/');
+    const key = sec ? id + '/' + sec : id;
+    if (stored && stored.target === key) { bookApplyStored(stored); return; }
     showBookUnit(id, sec);
     return;
   }
-  const [id, sec] = (localStorage.getItem(BOOK_KEY) || '').split('/');
-  if (id) showBookUnit(id, sec);
+
+  if (stored) bookApplyStored(stored);
 }
 
 // The book scrolls inside #book-content, so that is the element the spy listens to.
 (() => {
   let ticking = false;
-  document.getElementById('book-content').addEventListener('scroll', () => {
-    if (ticking) return;
-    ticking = true;
-    requestAnimationFrame(() => { ticking = false; bookSpy(); });
+  let saveTimer = null;
+  const content = document.getElementById('book-content');
+
+  content.addEventListener('scroll', () => {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(() => { ticking = false; bookSpy(); });
+    }
+    // AC4: debounced write — exactly one localStorage save within ~300ms of the last scroll event
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(bookSavePosition, 300);
   }, { passive: true });
+
   addEventListener('resize', () => bookMeasure(true));
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => bookMeasure(true));
 })();
