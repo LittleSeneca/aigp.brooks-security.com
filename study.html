@@ -41,7 +41,7 @@
   <form id="auth-out" onsubmit="authSubmit(event)">
     <h3>Sync your progress</h3>
     <p class="muted">Sign in to see your progress on every device. Progress already on this device is added to your account. There's no email, so a forgotten password can't be recovered.</p>
-    <input id="auth-user" autocomplete="username" placeholder="Username" required minlength="3" maxlength="32" pattern="[A-Za-z0-9._\-]" title="Letters, digits, dot, dash or underscore">
+    <input id="auth-user" autocomplete="username" placeholder="Username" required minlength="3" maxlength="32" pattern="[A-Za-z0-9._\-]+" title="Letters, digits, dot, dash or underscore">
     <input id="auth-pass" type="password" autocomplete="current-password" placeholder="Password (8+ characters)" required minlength="8" maxlength="128">
     <div class="row"><button class="primary" value="login">Sign in</button><button value="register">Create account</button><button type="button" style="margin-left:auto" onclick="authDlg.close()">Close</button></div>
   </form>
