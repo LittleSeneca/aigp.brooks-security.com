@@ -183,6 +183,10 @@ function showBookUnit(id, sec) {
   if (!a) return;
   document.getElementById('book-content').scrollTop = Math.max(0, a.pos - 12);
   bookActivate(a.target);
+  // Take the speed reader with us. This is a deliberate choice of section; the scroll
+  // spy's own changes deliberately do not move the reader, because the reader scrolls
+  // the page itself and would just re-trigger the spy - see followAnchor in rsvp.js.
+  if (typeof RSVP !== 'undefined') RSVP.followAnchor(a.el);
   if (document.getElementById('book-toc').classList.contains('open')) toggleBookToc();
 }
 
