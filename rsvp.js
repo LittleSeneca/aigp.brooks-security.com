@@ -248,17 +248,52 @@ var RSVP = (function () {
     var text = raw.replace(/\s+/g, ' ').trim();
 
     var pivot = orpIdx(text);
+    // orpIdx works on the whole chunk, so on a multi-word chunk it can land on the
+    // space between two words. A space is not a pivot: it renders zero-width and
+    // marks nothing, so walk forward to the next real character.
+    while (pivot < text.length && /\s/.test(text.charAt(pivot))) pivot++;
+    if (pivot >= text.length) pivot = Math.max(0, text.length - 1);
 
     beforeEl.textContent = text.substring(0, pivot);
     pivotEl.textContent  = text.charAt(pivot) || '';
     afterEl.textContent  = text.substring(pivot + 1);
 
-    // Align the pivot letter at ~35% of the pane width
-    var paneRect  = pane.getBoundingClientRect();
+    // Align the pivot letter at ~35% of the display width, and keep the whole chunk
+    // inside the display.
+    //
+    // Two traps. First, getBoundingClientRect() on the previous chunk still carries its
+    // transform, so measuring before clearing it poisons the result and the error
+    // changes from chunk to chunk - which is what threw words off the left and right
+    // edges of the pane. Clear the transform, then measure. Second, a chunk can be
+    // wider than the display, where pivot alignment is meaningless: shrink the text to
+    // fit rather than letting it slide under the clip.
+    chunk.style.transform = 'none';
+    chunk.style.fontSize  = '';
+
+    var dispRect = display.getBoundingClientRect();
+    var pad      = 10;
+    var availW   = dispRect.width - pad * 2;
+
+    if (availW > 0 && chunk.getBoundingClientRect().width > availW) {
+      var baseFont = parseFloat(getComputedStyle(chunk).fontSize) || 32;
+      var fitted   = Math.max(13, Math.floor(baseFont * availW / chunk.getBoundingClientRect().width));
+      chunk.style.fontSize = fitted + 'px';
+    }
+
+    var chunkRect = chunk.getBoundingClientRect();
     var pivotRect = pivotEl.getBoundingClientRect();
-    var targetX   = paneRect.width * 0.35;
-    var pivotX    = pivotRect.left - paneRect.left;
-    var offset    = pivotX - targetX;
+    var offset    = pivotRect.left - (dispRect.left + dispRect.width * 0.35);
+
+    // Clamp so that, after translating by -offset, the chunk still sits inside the
+    // display. Offset too small pushes text off the left edge, too large off the right.
+    var maxOffset = chunkRect.left - dispRect.left - pad;
+    var minOffset = chunkRect.left + chunkRect.width - dispRect.right + pad;
+    if (minOffset > maxOffset) {
+      offset = (minOffset + maxOffset) / 2;   // cannot both pivot-align and fit: centre it
+    } else {
+      offset = Math.min(Math.max(offset, minOffset), maxOffset);
+    }
+
     chunk.style.transform = 'translateX(' + (-offset) + 'px)';
   }
 

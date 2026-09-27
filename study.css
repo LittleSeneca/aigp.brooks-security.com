@@ -226,7 +226,7 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .book-toc-section.active { color: var(--accent); font-weight: 600; }
 .book-toc-section.hidden { display: none; }
 
-.book-content { flex: 1; overflow-y: auto; max-width: 820px; padding: 32px 48px 80px; font-size: 0.95rem; line-height: 1.85; }
+.book-content { flex: 1 1 820px; overflow-y: auto; max-width: 820px; padding: 32px 48px 80px; font-size: 0.95rem; line-height: 1.85; }
 .book-content h1 { font-size: 1.8rem; color: var(--accent); margin: 0 0 6px; font-weight: 700; letter-spacing: -0.01em; }
 .book-content h2 { font-size: 1.35rem; color: var(--text); margin: 28px 0 12px; font-weight: 600; }
 .book-content h3 { font-size: 1.1rem; color: var(--text); margin: 32px 0 12px; font-weight: 600; border-top: 1px solid var(--border); padding-top: 20px; }
@@ -234,8 +234,8 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 #book-rendered > :first-child { margin-top: 0; }
 .book-content p { font-size: 0.95rem; line-height: 1.85; margin-bottom: 14px; color: var(--text); }
 .book-content ul, .book-content ol { font-size: 0.95rem; line-height: 1.85; margin-bottom: 14px; color: var(--text); padding-left: 24px; }
-.book-content table { font-size: 0.85rem; border-collapse: collapse; margin: 16px 0; width: 100%; }
-.book-content th, .book-content td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+.book-content table { font-size: 0.85rem; border-collapse: collapse; margin: 16px 0; width: 100%; max-width: 100%; }
+.book-content th, .book-content td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; overflow-wrap: anywhere; }
 .book-content th { background: var(--surface); font-weight: 600; }
 .book-content blockquote { border-left: 3px solid var(--accent); padding: 12px 18px; margin: 16px 0; background: var(--surface); border-radius: 0 var(--radius) var(--radius) 0; font-size: 0.9rem; line-height: 1.75; }
 .book-content blockquote strong { display: block; margin-bottom: 4px; color: var(--accent); }
@@ -292,9 +292,11 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 
 /* ── RSVP pane ───────────────────────────────────────────────────── */
 .rsvp-pane {
-  width: clamp(280px, 26vw, 360px);
-  min-width: 0;
-  flex-shrink: 0;
+  /* Grow into whatever width the row has left instead of sitting at a fixed
+     clamp(280px, 26vw, 360px) with flex-shrink: 0, which left a dead gutter to the
+     right of the pane whenever the reading column hit its 820px max. */
+  flex: 1 1 360px;
+  min-width: 320px;
   border-left: 1px solid var(--border);
   display: flex;
   flex-direction: column;
@@ -370,7 +372,9 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .rsvp-chunk {
   display: flex;
   align-items: baseline;
-  white-space: nowrap;
+  /* not nowrap: a flex item trims its own leading/trailing edges, so "the " + "I"
+     renders as "theI". pre keeps the spaces around the pivot. */
+  white-space: pre;
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.3;
