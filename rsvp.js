@@ -20,6 +20,8 @@ var RSVP = (function () {
   var wordsPerChunk = 2;
   var blocks        = [];       // [{el, tokens: [{text, start, end, parts}], fullText}]
   var blockIdx      = 0;
+  var pendingAnchorEl = null;   // a section chosen before the reader was built
+  var headingList     = null;   // cached h1-h3 in document order; see _headings()
   var tokenIdx      = 0;
   var playing       = false;
   var timer         = null;
@@ -94,6 +96,7 @@ var RSVP = (function () {
     if (!rendered) return;
 
     blocks = [];
+    headingList = null;   // the rendered document is about to be re-read
     var candidates = rendered.querySelectorAll(BLOCK_SELECTOR);
 
     for (var i = 0; i < candidates.length; i++) {
@@ -534,6 +537,16 @@ var RSVP = (function () {
             break;
           }
         }
+        // Key Terms and Further Reading are real headings but deliberately absent from the
+        // sidebar, so a block under one has no anchor of its own. Report the section the
+        // reader is actually inside rather than an empty string.
+        if (!anchor) {
+          for (var k = 0; k < BOOK_ANCHORS.length; k++) {
+            if (BOOK_ANCHORS[k].el.compareDocumentPosition(cur.el) & Node.DOCUMENT_POSITION_FOLLOWING) {
+              anchor = BOOK_ANCHORS[k].target;
+            } else break;
+          }
+        }
       }
 
       var data = {
@@ -595,23 +608,31 @@ var RSVP = (function () {
     }
   }
 
-  // Find the nearest preceding h1-h3 heading for a block element.
-  // Walks siblings and parents to locate the section this block belongs to.
+  // Find the nearest preceding h1-h3 heading for a block element, in document order.
+  //
+  // Document order, not sibling order. Stepping only through previousElementSibling
+  // cannot reach a heading that sits outside the block's own parent: a block that is an
+  // <li> has other <li>s as its siblings and never climbs out of the <ul>, so the walk
+  // ran dry and the .book-unit fallback then reported the unit's FIRST heading - which
+  // saved every list block against its chapter instead of its section. Both the exam
+  // focus lists and the key terms lists hit this.
   function _findHeading(el) {
-    // Walk previous siblings
-    var prev = el.previousElementSibling;
-    while (prev) {
-      if (/^H[1-3]$/.test(prev.tagName)) return prev;
-      // If we hit another block element (p, li, h4), check if IT has a heading
-      prev = prev.previousElementSibling;
+    var all = _headings();
+    var found = null;
+    for (var i = 0; i < all.length; i++) {
+      if (all[i].compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING) found = all[i];
+      else break;   // headings come in document order, so the first non-preceding one ends it
     }
-    // Check the parent section for a heading
-    var parent = el.closest('.book-unit');
-    if (parent) {
-      var h = parent.querySelector('h1, h2, h3');
-      if (h) return h;
+    return found;
+  }
+
+  // Cached because _save() runs on every chunk during playback.
+  function _headings() {
+    if (!headingList) {
+      var root = document.getElementById('book-rendered');
+      headingList = root ? Array.prototype.slice.call(root.querySelectorAll('h1, h2, h3')) : [];
     }
-    return null;
+    return headingList;
   }
 
   // ── Controls ───────────────────────────────────────────────────────────
@@ -643,6 +664,40 @@ var RSVP = (function () {
     if (!target) { sectionLabel.textContent = ''; return; }
     var el = document.querySelector('#book-toc-tree [data-target="' + target + '"]');
     sectionLabel.textContent = el ? el.textContent : '';
+  }
+
+  // ── Follow the sidebar ─────────────────────────────────────────────────
+  // Deliberate navigation only: a section chosen in the sidebar, or a deep link on load.
+  // NOT the scroll spy. bookSpy() runs on every scroll of #book-content, including the
+  // scrolls this module performs itself in scrollToHighlight() - so re-anchoring there
+  // would drag the reader back to the section heading on its own follow-scroll, on every
+  // beat. book.js calls this from showBookUnit(), never from bookActivate().
+  function followAnchor(el) {
+    if (!el) return;
+    if (!blocks.length) { pendingAnchorEl = el; return; }   // reader not built yet
+
+    // The first readable block at or after that heading, in document order.
+    var idx = -1;
+    for (var i = 0; i < blocks.length; i++) {
+      if (el.compareDocumentPosition(blocks[i].el) & Node.DOCUMENT_POSITION_FOLLOWING) { idx = i; break; }
+    }
+    if (idx < 0) return;   // nothing readable after this heading: stay put, do not jump to the end
+
+    if (idx === blockIdx && tokenIdx === 0) { _save(); return; }
+
+    unwrapBlock();
+    blockIdx = idx;
+    tokenIdx = 0;
+    _enterBlock();
+    var tokens = currentChunkTokens();
+    if (tokens.length) {
+      showChunk(tokens);
+      highlightTokens(currentChunkIndices());
+    }
+    _save();
+    // Restart the beat: the first chunk of the new section gets its whole dwell time
+    // instead of inheriting what was left of the old section's timer.
+    if (playing) { if (timer) { clearTimeout(timer); timer = null; } tick(); }
   }
 
   // ── Init / Reinit ──────────────────────────────────────────────────────
@@ -698,6 +753,10 @@ var RSVP = (function () {
         highlightTokens(currentChunkIndices());
       }
     }
+
+    // A section chosen before the reader existed (a deep link on first load) beats the
+    // restored position, the same way a deep-link hash beats the saved offset in book.js.
+    if (pendingAnchorEl) { var pending = pendingAnchorEl; pendingAnchorEl = null; followAnchor(pending); }
 
     // Wire events
     if (wpmSlider) {
@@ -768,6 +827,7 @@ var RSVP = (function () {
     init: init,
     reinit: reinit,
     updateSectionLabel: updateSectionLabel,
+    followAnchor: followAnchor,
     handleKey: handleKey,
     toggle: toggle,
     play: play,
