@@ -205,7 +205,14 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .qcell.fail { background: rgba(231,76,60,0.18); border-color: var(--incorrect); color: var(--incorrect); }
 
 /* Book reader */
-.book-container { display: flex; height: 100%; position: relative; }
+/* The book tab lays out its own scrolling panes (contents rail, page, reader), so the outer
+   scroller must not scroll — it becomes a column instead. .book-container then fills the space
+   left after the toolbar rather than 100% of the scroller's content box, which the toolbar
+   also lives in: the two together overflowed by the toolbar's height and the bottom of the
+   reader pane, where the playback buttons sit, was cut off. */
+#panel-book .quiz-scroll { display: flex; flex-direction: column; overflow: hidden; }
+#panel-book .book-toolbar { flex-shrink: 0; }
+.book-container { display: flex; flex: 1; min-height: 0; height: auto; position: relative; }
 .book-toc { width: 260px; min-width: 260px; border-right: 1px solid var(--border); overflow-y: auto; position: sticky; top: 0; height: 100%; max-height: calc(100vh - 100px); font-size: 0.85rem; }
 .book-toc-header { padding: 14px 12px 10px; border-bottom: 1px solid var(--border); }
 .book-toc-header h3 { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 8px; }
@@ -510,19 +517,3 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 #auth-dlg .row { display: flex; gap: 6px; flex-wrap: wrap; }
 #auth-err { color: var(--incorrect); margin: 10px 0 0; }
 #auth-err:empty { display: none; }
-.site-footer {
-  margin-top: 26px; padding: 16px 2px 4px;
-  border-top: 1px solid var(--border);
-  color: var(--text-muted); font-size: 0.72rem; line-height: 1.65;
-}
-.site-footer p { margin: 0 0 7px; }
-.site-footer p:last-child { margin-bottom: 0; }
-.site-footer strong { color: var(--text); font-weight: 600; }
-.site-footer a { color: var(--accent); text-decoration: none; }
-.site-footer a:hover { text-decoration: underline; }
-.site-footer summary { display: none; } /* desktop: always open */
-@media (max-width: 768px) {
-  .site-footer { margin-top: 0; padding: 6px 12px 8px; }
-  .site-footer summary { display: list-item; cursor: pointer; }
-  .site-footer[open] summary { margin-bottom: 7px; }
-}
