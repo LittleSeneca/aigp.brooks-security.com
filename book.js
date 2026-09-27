@@ -114,6 +114,9 @@ function renderBookDocument() {
 
   el.querySelectorAll('a[href^="http"]').forEach(a => { a.target = '_blank'; a.rel = 'noopener'; });
   bookMeasure(false);
+
+  // Initialise/d the speed reader after the document is rendered
+  if (typeof RSVP !== 'undefined') RSVP.init();
 }
 
 // Measured against the scroll container rather than the page, so the offsets
@@ -158,6 +161,9 @@ function bookActivate(target) {
     bookKeepTocVisible(hit);
   }
   try { history.replaceState(null, '', '#book/' + target); } catch (e) {}
+
+  // Update the speed-reader section label
+  if (typeof RSVP !== 'undefined') RSVP.updateSectionLabel(target);
 }
 
 // Scroll the sidebar and nothing else, so the active entry stays in view.

@@ -10,6 +10,7 @@ document.addEventListener('keydown', e => {
   if(fi){if(k==='ARROWLEFT'){e.preventDefault();prevCard();}if(k==='ARROWRIGHT'){e.preventDefault();nextCard();}if(k===' '){e.preventDefault();flipCard();}if(k==='R'){e.preventDefault();randomCard();}if(k==='1'){e.preventDefault();rateCard(false);}if(k==='2'){e.preventDefault();rateCard(true);}return;}
   if(qi){if(/^[A-F]$/.test(k)&&!answered&&filteredQuestions.length>0){const q=filteredQuestions[currentIndex];if(q.options.some(o=>o.letter===k))pickAnswer(k);}
     if(k==='ENTER'&&!answered&&filteredQuestions.length>0){const q=filteredQuestions[currentIndex];if(isMulti(q)&&selectedAnswer.length===q.answer.length){e.preventDefault();recordAnswer([...selectedAnswer].sort());return;}}if(k==='ARROWRIGHT'){e.preventDefault();nextQuestion();}if(k==='ARROWLEFT'){e.preventDefault();prevQuestion();}if(k==='R'){e.preventDefault();pickRandom();}if(k==='ENTER'&&answered){e.preventDefault();nextQuestion();}}
+  if(typeof RSVP!=='undefined'&&RSVP.handleKey(e))return;
 });
 
 // Flashcard placement (domain/chapter) from the term's mind map ancestry

@@ -262,6 +262,200 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   .book-content { padding: 16px 20px 60px; font-size: 0.9rem; }
 }
 
+/* ── Book toolbar ────────────────────────────────────────────────── */
+.book-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  font-size: 0.78rem;
+  min-height: 36px;
+}
+.book-section-label {
+  color: var(--accent);
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 12px;
+}
+.book-speed-btn {
+  flex-shrink: 0;
+  padding: 3px 12px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+/* ── RSVP pane ───────────────────────────────────────────────────── */
+.rsvp-pane {
+  width: clamp(280px, 26vw, 360px);
+  min-width: 0;
+  flex-shrink: 0;
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  overflow: hidden;
+}
+.rsvp-pane-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+}
+.rsvp-pane-title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.rsvp-close-btn {
+  display: none; /* hidden on desktop, shown on mobile */
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+.rsvp-close-btn:hover { color: var(--text); }
+
+/* Controls */
+.rsvp-controls {
+  display: flex;
+  gap: 10px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.rsvp-ctl {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+.rsvp-ctl span { flex-shrink: 0; }
+.rsvp-ctl input[type="range"] {
+  width: 90px;
+  accent-color: var(--accent);
+}
+.rsvp-ctl select {
+  padding: 3px 6px;
+  font-size: 0.76rem;
+}
+.rsvp-val {
+  color: var(--text);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  min-width: 30px;
+}
+
+/* Display area */
+.rsvp-display {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  min-height: 0;
+}
+.rsvp-chunk {
+  display: flex;
+  align-items: baseline;
+  white-space: nowrap;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.3;
+  padding: 0 20px;
+}
+.rsvp-before, .rsvp-after {
+  color: var(--text);
+}
+.rsvp-pivot {
+  color: var(--accent);
+}
+
+/* Playback */
+.rsvp-playback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-top: 1px solid var(--border);
+}
+.rsvp-playback button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  border-radius: 50%;
+}
+.rsvp-play-btn {
+  width: 44px !important;
+  height: 44px !important;
+  font-size: 1.2rem !important;
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* Highlight spans in the book */
+.rsvp-w {
+  transition: background 0.08s;
+}
+.rsvp-hl {
+  background: rgba(108, 140, 255, 0.25);
+  border-radius: 2px;
+}
+
+/* ── Book-content flex fix ───────────────────────────────────────── */
+/* Flex items default to min-width: auto, which prevents shrinking.
+   .book-content must be able to narrow when the reader pane takes space. */
+.book-content {
+  min-width: 0;
+}
+@media (min-width: 769px) {
+  .book-content {
+    min-width: 280px; /* keep it readable */
+  }
+}
+
+/* ── TOC collapse at ~1100px (reader pane present) ───────────────── */
+/* Below ~1100px there isn't room for TOC + content + reader pane.
+   Collapse the TOC into its drawer toggle rather than dropping the pane. */
+@media (max-width: 1100px) and (min-width: 769px) {
+  .book-toc {
+    position: fixed;
+    left: -280px;
+    top: 0;
+    height: 100%;
+    max-height: none;
+    z-index: 21;
+    transition: left 0.2s;
+    font-size: 0.9rem;
+    background: var(--bg);
+  }
+  .book-toc.open { left: 0; }
+  .book-toc-overlay { display: none; }
+  .book-toc-overlay.open { display: block; z-index: 20; }
+  .book-toc-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 768px) {
   .test-layout { flex-direction: column; }
   .test-sidebar { width: auto; border-right: none; border-bottom: 1px solid var(--border); max-height: 160px; }
@@ -280,6 +474,28 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   .tabs .tab { flex: 1; padding: 6px 0; }
   .tabs .ico { width: 20px; height: 20px; }
   .tabs .lbl { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+
+/* ── RSVP mobile overlay (≤768px) ─────────────────────────────────── */
+@media (max-width: 768px) {
+  .rsvp-pane {
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    width: 100%;
+    flex-shrink: 0;
+    display: none;
+    border-left: none;
+  }
+  .rsvp-pane.open {
+    display: flex;
+  }
+  .rsvp-close-btn {
+    display: block;
+  }
+  .rsvp-chunk {
+    font-size: 2.4rem;
+  }
 }
 #auth-dlg { margin: auto; width: min(360px, calc(100vw - 32px)); background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
 #auth-dlg::backdrop { background: rgba(0,0,0,0.6); }
