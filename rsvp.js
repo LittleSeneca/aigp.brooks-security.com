@@ -261,15 +261,20 @@ var RSVP = (function () {
     pivotEl.textContent  = text.charAt(pivot) || '';
     afterEl.textContent  = text.substring(pivot + 1);
 
-    // Align the pivot letter at ~35% of the display width, and keep the whole chunk
-    // inside the display.
+    // Centre the chunk: the text's own midpoint goes on the display's midpoint.
     //
-    // Two traps. First, getBoundingClientRect() on the previous chunk still carries its
-    // transform, so measuring before clearing it poisons the result and the error
-    // changes from chunk to chunk - which is what threw words off the left and right
-    // edges of the pane. Clear the transform, then measure. Second, a chunk can be
-    // wider than the display, where pivot alignment is meaningless: shrink the text to
-    // fit rather than letting it slide under the clip.
+    // This pane used to pin the ORP pivot letter at 35% of the width - the usual RSVP
+    // convention, where the pivot holds still so the eye does not travel. At this pane's
+    // width that reads as left-aligned, because the pivot sits left of centre and the
+    // rest of the chunk trails off to the right. Measured on the old build at 1666px:
+    // the text's midpoint wandered from -42px to +39px around the display's centre, chunk
+    // to chunk, while the pivot stayed pinned about 72px left of centre.
+    //
+    // Two traps, both already paid for. getBoundingClientRect() on the previous chunk
+    // still carries its transform, so measuring before clearing it poisons the result and
+    // the error changes chunk to chunk - that is what threw words off the left and right
+    // edges of the pane. And a chunk can be wider than the display, where centring means
+    // nothing: shrink the text to fit rather than letting it slide under the clip.
     chunk.style.transform = 'none';
     chunk.style.fontSize  = '';
 
@@ -283,16 +288,29 @@ var RSVP = (function () {
       chunk.style.fontSize = fitted + 'px';
     }
 
-    var chunkRect = chunk.getBoundingClientRect();
-    var pivotRect = pivotEl.getBoundingClientRect();
-    var offset    = pivotRect.left - (dispRect.left + dispRect.width * 0.35);
+    // Measure the glyphs, not the padded box: .rsvp-chunk carries 20px each side, and the
+    // spans are the text the eye actually lands on.
+    var beforeRect = beforeEl.getBoundingClientRect();
+    var pivotRect  = pivotEl.getBoundingClientRect();
+    var afterRect  = afterEl.getBoundingClientRect();
+    var textLeft   = Math.min(beforeRect.left, pivotRect.left, afterRect.left);
+    var textRight  = Math.max(beforeRect.right, pivotRect.right, afterRect.right);
+    if (!(textRight > textLeft)) {          // no glyphs measured: fall back to the box
+      var cRect = chunk.getBoundingClientRect();
+      textLeft = cRect.left; textRight = cRect.right;
+    }
 
-    // Clamp so that, after translating by -offset, the chunk still sits inside the
-    // display. Offset too small pushes text off the left edge, too large off the right.
-    var maxOffset = chunkRect.left - dispRect.left - pad;
-    var minOffset = chunkRect.left + chunkRect.width - dispRect.right + pad;
+    // offset is how far the chunk is translated LEFT, so the text centre lands on the
+    // display centre.
+    var offset = (textLeft + textRight) / 2 - (dispRect.left + dispRect.width / 2);
+
+    // Keep the text inside the display. Too small an offset pushes it off the left edge,
+    // too large an offset off the right. If centring and fitting cannot both hold, the
+    // text is wider than the display: centre it and let the clip take the overflow evenly.
+    var maxOffset = textLeft  - (dispRect.left + pad);
+    var minOffset = textRight - (dispRect.right - pad);
     if (minOffset > maxOffset) {
-      offset = (minOffset + maxOffset) / 2;   // cannot both pivot-align and fit: centre it
+      offset = (minOffset + maxOffset) / 2;
     } else {
       offset = Math.min(Math.max(offset, minOffset), maxOffset);
     }
