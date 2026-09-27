@@ -155,6 +155,10 @@
 <!-- ═══ BOOK ═══ -->
 <div class="tab-panel hidden" id="panel-book">
 <div class="quiz-scroll">
+<div class="book-toolbar" id="book-toolbar">
+  <span class="book-section-label" id="book-section-label"></span>
+  <button class="book-speed-btn" id="book-speed-btn" onclick="RSVP.toggle()" aria-label="Speed read">&#9889; Speed Read</button>
+</div>
 <div class="book-container">
   <nav class="book-toc" id="book-toc">
     <div class="book-toc-header">
@@ -166,6 +170,36 @@
   <main class="book-content" id="book-content">
     <div id="book-rendered"></div>
   </main>
+  <aside class="rsvp-pane" id="rsvp-pane">
+    <div class="rsvp-pane-header">
+      <span class="rsvp-pane-title">Speed Read</span>
+      <button class="rsvp-close-btn" id="rsvp-close" aria-label="Close">&#10005;</button>
+    </div>
+    <div class="rsvp-controls">
+      <label class="rsvp-ctl"><span>WPM</span>
+        <input type="range" id="rsvp-wpm" min="100" max="1000" value="300" step="10">
+        <span class="rsvp-val" id="rsvp-wpm-val">300</span>
+      </label>
+      <label class="rsvp-ctl"><span>Words</span>
+        <select id="rsvp-words">
+          <option value="1">1</option>
+          <option value="2" selected>2</option>
+          <option value="3">3</option>
+          <option value="5">5</option>
+        </select>
+      </label>
+    </div>
+    <div class="rsvp-display" id="rsvp-display">
+      <div class="rsvp-chunk" id="rsvp-chunk">
+        <span class="rsvp-before" id="rsvp-before"></span><span class="rsvp-pivot" id="rsvp-pivot"></span><span class="rsvp-after" id="rsvp-after"></span>
+      </div>
+    </div>
+    <div class="rsvp-playback">
+      <button id="rsvp-prev" aria-label="Previous">&#8592;</button>
+      <button class="rsvp-play-btn" id="rsvp-play" aria-label="Play">&#9654;</button>
+      <button id="rsvp-next" aria-label="Next">&#8594;</button>
+    </div>
+  </aside>
   <div class="book-toc-overlay" id="book-toc-overlay" onclick="toggleBookToc()"></div>
   <button class="book-toc-toggle" onclick="toggleBookToc()" aria-label="Contents">&#9776;</button>
 </div>
@@ -200,6 +234,7 @@
 <script src="keyboard.js"></script>
 <script src="auth.js"></script>
 <script src="book.js"></script>
+<script src="rsvp.js"></script>
 <script src="init.js"></script>
 </body>
 </html>
