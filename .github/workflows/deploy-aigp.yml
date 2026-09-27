@@ -17,6 +17,16 @@ on:
     branches: [main]
     paths:
       - study.html
+      - study.css
+      - core.js
+      - quiz.js
+      - flashcards.js
+      - mindmap.js
+      - test.js
+      - keyboard.js
+      - auth.js
+      - book.js
+      - init.js
       - quiz-data.js
       - flashcard-data.js
       - map-data.js
@@ -67,7 +77,9 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p _site
-          cp study.html quiz-data.js flashcard-data.js map-data.js \
+          cp study.html study.css core.js quiz.js flashcards.js \
+             mindmap.js test.js keyboard.js auth.js book.js init.js \
+             quiz-data.js flashcard-data.js map-data.js \
              node-details.js book-data.js d3.v7.min.js marked.min.js _site/
           ls -l _site/
 
