@@ -1,1555 +1,1656 @@
-// AIGP Flashcards — 388 terms
+// AIGP Flashcards — 400 terms
 const FLASHCARDS = [
   {
     "term": "A/B Testing",
-    "definition": "A comparative testing method where two versions of an AI model run simultaneously to evaluate which performs better — commonly used for deployment validation."
+    "definition": "Live split of users between two model variants, compared on a pre-set metric. Real people get the unproven variant: check subgroups, cap exposure; consequential decisions need a GDPR Art. 22 check."
   },
   {
     "term": "Accountability",
-    "definition": "The state of being accountable (responsible for actions, decisions, and performance). Refers to an assigned responsibility based on regulations, agreements, or delegation. A person or entity is accountable to another using specific means and criteria."
+    "definition": "ISO/IEC 22989: answerable to another party for actions and decisions, by specified means and criteria; allocated by regulation, agreement or delegation. vs. responsibility: doing the work."
   },
   {
     "term": "Accountable and Transparent",
-    "definition": "NIST trustworthiness characteristic: information about AI system design decisions and outputs is available to stakeholders, with clear ownership of responsibility."
+    "definition": "Cross-cutting NIST characteristic, MEASURE 2.8: information about the system and its outputs is available (what happened); answering for outcomes presupposes it. vs. explainable (how), interpretable (why)."
+  },
+  {
+    "term": "Accuracy, Robustness and Cybersecurity (Art. 15)",
+    "definition": "Lifecycle-long high-risk duties: declared performance metrics; resilience via redundancy, fail-safe plans, feedback-loop limits; resistance to data or model poisoning, adversarial examples, confidentiality attacks, model flaws."
   },
   {
     "term": "Action Space (Agentic AI)",
-    "definition": "The range of actions an agent can actually take, fixed by the tools it can call and the permissions on those tools (sandbox-only, internal or external systems; read or write). The IMDA framework contrasts it with autonomy, which is how freely the agent decides what to do. A wider action space raises potential impact."
-  },
-  {
-    "term": "Activation Function",
-    "definition": "A function applied to the weighted combination of all inputs to a neuron. Typically nonlinear."
-  },
-  {
-    "term": "Adoption",
-    "definition": "Needs analysis, feasibility study, stakeholder engagement, requirements definition"
+    "definition": "IMDA dial: what an agent can do, set by its tools and permissions. vs. autonomy: how freely it decides. Narrow it with access controls, not prompts."
   },
   {
     "term": "Adversarial Example",
-    "definition": "An intentionally crafted input designed to cause an AI model to make incorrect predictions — often imperceptible to humans but catastrophic for model behavior."
+    "definition": "Crafted, slightly perturbed input that makes a model err (stop sign read as speed limit): inference-time evasion, named in AI Act Art. 15(5). vs. poisoning (training time)."
   },
   {
     "term": "Adverse Action Notice (ECOA/Reg B)",
-    "definition": "The notice a creditor must give after taking adverse action on an application, generally within 30 days of a completed application, including a statement of the specific principal reasons (12 CFR 1002.9). Saying the applicant failed to achieve a qualifying score is insufficient, so AI credit models must support accurate reasons. The rule still applies after the CFPB withdrew its AI adverse action circulars on 12 May 2025."
+    "definition": "12 CFR 1002.9: specific principal reasons for denying or worsening credit, generally within 30 days. 'Failed to achieve a qualifying score' is insufficient, black box or not."
   },
   {
     "term": "Agent Goal Hijack",
-    "definition": "Manipulation that redirects an agent's objectives, task choices or plan, typically through indirect prompt injection hidden in content it reads (web pages, emails, documents, tool outputs, other agents' messages). OWASP ASI01. Distinct from memory poisoning (persistent corruption of stored context) and rogue agents (drift without an active attacker)."
+    "definition": "OWASP ASI01: attacker redirects an agent's objectives or plan, usually via indirect prompt injection in content it reads. vs. ASI06 (persistent memory poisoning); ASI10 (drift, no attacker)."
+  },
+  {
+    "term": "Agent Identity",
+    "definition": "IMDA's four tests: unique, cryptographically verifiable; tied to an accountable human, agent or department; records whether it acts for itself or a named user; centrally catalogued. Shared accounts fail."
   },
   {
     "term": "Agent Kill Switch",
-    "definition": "An emergency control that immediately stops an agent, or disables a specific tool, prompt or connection, and revokes its credentials when it malfunctions or is compromised. The operational core of a deactivation policy (BOK IV.C); pair it with a fallback process and preserved, tamper-proof logs."
+    "definition": "Halts an agent at once, revoking its credentials and tool access. Needs a trigger owner, manual fallback, preserved logs. High-risk analogue: Art. 14(4)(e) stop button (safe state)."
   },
   {
     "term": "Agentic AI",
-    "definition": "AI systems made up of one or more agents that pursue a goal over several steps by planning, deciding and acting through tools, with some independence from human direction. Today's agents usually pair a language model with instructions, memory, tools and controls; governance shifts from managing outputs to managing actions."
+    "definition": "Systems planning and acting over several steps through tools toward a user-set goal (IMDA). Controls shift from outputs to actions. AI Act: no separate category; tier follows use."
   },
   {
-    "term": "AI Act Milestone — August 2, 2026",
-    "definition": "The date high-risk AI system requirements take effect, including conformity assessments and CE marking. Full enforcement across all provisions is expected by 2027."
+    "term": "AI Act Milestone: 2 Aug 2025",
+    "definition": "GPAI obligations (Ch. V), governance bodies, notified-body rules and penalties apply; Art. 101 GPAI fines wait until 2 Aug 2026. Unchanged by the Omnibus."
   },
   {
-    "term": "AI Act Milestone — August 2, 2028",
-    "definition": "As amended by the 2026 Digital Omnibus, the date high-risk requirements start for AI that is a safety component of, or itself, a product under Annex I harmonisation law (Article 6(1)), such as medical devices. As originally enacted, this was 2 August 2027."
+    "term": "AI Act Milestone: 2 Aug 2026",
+    "definition": "General application date. Both texts: Art. 50 duties; Commission GPAI enforcement and fines (Art. 101). As enacted, Annex III high-risk too; as amended, 2 Dec 2027."
   },
   {
-    "term": "AI Act Milestone — December 2, 2027",
-    "definition": "As amended by the 2026 Digital Omnibus, the date the AI Act's high-risk requirements (Chapter III, Sections 1–3) start for Annex III systems such as recruitment, credit-scoring and education tools, including deployer duties and FRIAs. As originally enacted, this was 2 August 2026."
+    "term": "AI Act Milestone: 2 Aug 2027",
+    "definition": "Both texts: GPAI models marketed before 2 Aug 2025 must comply (Art. 111(3)). As enacted, Annex I high-risk rules start (amended: 2 Aug 2028); as amended, national sandboxes are due."
   },
   {
-    "term": "AI Act Milestone — February 2, 2025",
-    "definition": "The date prohibited AI practices and AI literacy requirements began to apply — the first substantive obligations under the EU AI Act."
+    "term": "AI Act Milestone: 2 Aug 2028",
+    "definition": "As amended: Annex I product-embedded high-risk rules start (Art. 6(1), e.g. medical devices). As enacted: 2 Aug 2027. Annex III is earlier, 2 Dec 2027."
+  },
+  {
+    "term": "AI Act Milestone: 2 Dec 2026",
+    "definition": "Amended Act only: two new Art. 5 bans (non-consensual intimate imagery, CSAM) start; generative systems marketed before 2 Aug 2026 must add Art. 50(2) marking."
+  },
+  {
+    "term": "AI Act Milestone: 2 Dec 2027",
+    "definition": "As amended: Annex III high-risk rules start (hiring, credit scoring, education), incl. Art. 26 deployer duties and Art. 27 FRIA. As enacted: 2 Aug 2026."
+  },
+  {
+    "term": "AI Act Milestone: 2 Feb 2025",
+    "definition": "First duties: Art. 5 bans (eight practices) and Art. 4 AI literacy. Unmoved by the Omnibus; its two new bans start 2 Dec 2026."
   },
   {
     "term": "AI Actors (NIST AI RMF)",
-    "definition": "The OECD definition adopted by AI RMF 1.0: 'those who play an active role in the AI system lifecycle, including organizations and individuals that deploy or operate AI'. Appendix A groups their tasks (design, development, deployment, operation and monitoring, TEVV, human factors, domain experts, impact assessment, procurement, governance and oversight) and adds third parties, end users, affected communities, other AI actors and the general public."
+    "definition": "OECD definition the AI RMF adopts: those with an active role in the AI system lifecycle, incl. deployers and operators. Appendix A also counts TEVV, end users, affected communities."
   },
   {
     "term": "AI Agent",
-    "definition": "Automated entity that perceives and reacts to its environment and takes actions to achieve its goals."
+    "definition": "ISO/IEC 22989: automated entity that perceives and reacts to its environment and takes actions to achieve its goals. Changes state in the world, unlike a model returning output. Controls: scoped permissions, approval checkpoints, logs."
   },
   {
     "term": "AI Assurance",
-    "definition": "The combined work of checking, and showing to others, whether an AI system deserves trust, using techniques such as impact assessments, bias and compliance audits, conformity assessment, performance testing, formal verification and certification. An audit or a red-team test is one assurance technique; assurance is the overall program that builds justified confidence for regulators, customers and the board."
+    "definition": "Evidence giving outsiders (regulators, customers, boards) justified confidence in an AI system: audits, red teaming, conformity assessment, ISO/IEC 42001 certification. vs. compliance: was a rule met."
   },
   {
     "term": "AI Business Operator (Korea)",
-    "definition": "The Korean Act's umbrella term for any corporation, organization, individual or government body in the AI business. There are two types: AI developers, which develop and provide AI, and AI-using business operators, which offer products or services built on a developer's AI. Both carry the Act's transparency and high-impact duties."
-  },
-  {
-    "term": "AI Component",
-    "definition": "Functional element that constitutes an AI system."
+    "definition": "Art. 2(7): developers and AI-using operators, government included, share one duty set, vs. EU provider/deployer split. Downstream user making no significant change is deemed to meet upstream's risk, explanation and user-protection measures; oversight and records stay."
   },
   {
     "term": "AI Customer",
-    "definition": "Entity that acquires/uses the AI system"
+    "definition": "ISO/IEC 22989 role: acquires and uses an AI product or service (sub-role: AI user). The licensee running it, not its own clients. EU AI Act analogue: deployer."
   },
   {
     "term": "AI Data Retention Policy",
-    "definition": "Policy defining how long training data is retained after model development — and addressing that data may effectively persist inside the trained model itself. A common gap when updating privacy policies for AI."
+    "definition": "Deletion schedule per AI layer (raw data, labels, embeddings, checkpoints, weights), since models can retain what they learned. States whether an erasure request triggers retraining or unlearning."
   },
   {
     "term": "AI Deployer",
-    "definition": "The entity that operationalizes AI models in production — responsible for integration, monitoring for risk, and ensuring reliable real-world function."
+    "definition": "EU AI Act Art. 3(4): uses an AI system under its authority, except personal non-professional use. High-risk duties: Art. 26. Rebranding or substantially modifying a high-risk system makes it the provider (Art. 25)."
   },
   {
     "term": "AI Developer",
-    "definition": "The entity that builds and trains AI models — responsible for curating datasets, running fairness evaluations, and ensuring ethical design and testing."
+    "definition": "Builds and trains the model. No EU AI Act role of that name: the duty-bearer is the provider (Art. 3(3)). US state laws (Colorado SB 26-189, California AB 2013) do assign it duties."
   },
   {
     "term": "AI Distributor",
-    "definition": "EU AI Act role: entity in the supply chain that makes an AI system available on the EU market without affecting its compliance — must verify CE marking and documentation."
-  },
-  {
-    "term": "AI Governance Stakeholder",
-    "definition": "Any individual or group with a role in AI governance — includes executive leadership, technical teams, legal/compliance, product owners, and end users."
-  },
-  {
-    "term": "AI Impact Assessment",
-    "definition": "A structured analysis of how an AI system affects individuals, groups, organizations, and society — covers privacy, bias, safety, fairness, and fundamental rights."
+    "definition": "AI Act Arts. 3(7), 24. Neither provider nor importer; passes on a system already on the EU market. Checks CE marking, declaration, instructions; withholds any it has reason to think non-compliant."
   },
   {
     "term": "AI Importer",
-    "definition": "EU AI Act role: entity that places an AI system from a third country on the EU market — must verify conformity and ensure CE marking before distribution."
+    "definition": "AI Act Arts. 3(6), 23. EU-established; places a non-EU provider's system on the EU market after verifying conformity assessment, technical documentation, CE marking and declaration, authorised representative."
   },
   {
     "term": "AI Incident vs. AI Hazard (OECD Definitions)",
-    "definition": "OECD terms (AI Papers No. 16, May 2024). An AI incident is an event where an AI system's development, use or malfunction directly or indirectly leads to harm to health, critical infrastructure, rights, or property, communities or the environment. An AI hazard is an event that could plausibly lead to an incident; near misses count as hazards. Serious incidents, AI disasters and serious hazards are narrower tiers."
+    "definition": "OECD, May 2024. Realized: an AI system's development, use or malfunction directly or indirectly leads to harm. Potential: could plausibly lead to such harm; near misses count."
   },
   {
     "term": "AI Liability Directive (Withdrawn)",
-    "definition": "A Commission proposal of 28 Sep 2022 (COM(2022) 496) to ease fault-based claims for AI harm through court-ordered disclosure on high-risk AI systems and a rebuttable presumption of causality. Withdrawal was announced in the February 2025 work programme and published in OJ C/2025/5423 on 6 Oct 2025. The revised Product Liability Directive and national tort law fill the gap."
+    "definition": "Never applied: 2022 fault-based proposal (disclosure orders, presumption of causality), withdrawn (OJ, 6 Oct 2025). Victims now rely on the revised PLD and national tort law."
   },
   {
-    "term": "AI Management System (AIMS)",
-    "definition": "A set of interrelated organizational elements to establish AI policies, objectives, and processes to achieve those objectives — the core of ISO/IEC 42001."
-  },
-  {
-    "term": "AI Manufacturer",
-    "definition": "Entity that builds/assembles the AI system"
+    "term": "AI Literacy (Art. 4)",
+    "definition": "Since 2 Feb 2025, all providers and deployers, any tier, for staff and others acting for them. As enacted: ensure, to their best extent, a sufficient level. As amended (27 Jul 2026): support it; no guaranteed level."
   },
   {
     "term": "AI Partner",
-    "definition": "Entity that collaborates in AI development or deployment"
+    "definition": "ISO/IEC 22989 role: helps build or deploy an AI system (integrator, data provider, auditor, evaluator). Descriptive, no legal duties. vs. AI customer (uses), AI subject (affected)."
   },
   {
     "term": "AI Provider",
-    "definition": "Entity that makes an AI system available"
+    "definition": "AI Act Art. 3(3). Develops an AI system or GPAI model (or has one developed) and places it on the market or puts it into service under its own name."
   },
   {
-    "term": "AI Risk Sources (ISO 23894 Annex B)",
-    "definition": "Informative annex of ISO/IEC 23894 cataloging AI-specific risk sources; Annex A lists common AI-related objectives and Annex C maps risk management processes to the AI system life cycle."
+    "term": "AI Regulatory Sandbox (Art. 57)",
+    "definition": "Authority-supervised pre-market testing under an agreed plan. National ones due 2 Aug 2026 as enacted, 2 Aug 2027 as amended. Good faith shields from AI Act fines, not damage claims."
   },
   {
-    "term": "AI RMF Subcategory",
-    "definition": "A numbered outcome statement under a category of the AI RMF Core, e.g. MEASURE 2.11: fairness and bias are evaluated and results documented. AI RMF 1.0 has 72 across 19 categories, and the Playbook gives one entry of suggested actions for each."
+    "term": "AI RMF Risk Management Challenges",
+    "definition": "Section 1.2's four. Measurement: unmeasurable is not thereby high or low. Tolerance: set by organization, sector and law, not the RMF. Prioritization: worst first; unacceptable risk means stop safely. Integration: into enterprise risk management."
+  },
+  {
+    "term": "AI Stakeholder Roles (ISO/IEC 22989)",
+    "definition": "Six (Clause 5.19): provider (offers AI products, services, platforms); producer (builds; AI developer); customer (uses; AI user); partner (integrator, data provider, auditor, evaluator); subject (data and other subjects); relevant authorities (policy makers, regulators)."
   },
   {
     "term": "AI Subject",
-    "definition": "Individual affected by or interacting with an AI system"
+    "definition": "ISO/IEC 22989 role: anyone the system impacts, data processed or not (sub-roles: data subject, other subjects); wider than the GDPR data subject. EU AI Act analogue: affected person."
   },
   {
     "term": "AI System",
-    "definition": "A technical system that generates results such as content, forecasts, recommendations, or decisions for a specific, human-defined objective. May use various techniques and approaches related to AI to develop a model for representing data, knowledge, processes, etc. Designed to operate with varying degrees of automation."
+    "definition": "EU AI Act Art. 3(1): machine-based, varying levels of autonomy, infers from input how to generate predictions, content, recommendations or decisions. Executing only human-written rules fails 'infers' (Commission guidelines, Feb 2025)."
   },
   {
-    "term": "AI System Impact Assessment (ISO/IEC 42005)",
-    "definition": "A formal, documented process for identifying, evaluating and addressing the benefits and harms an AI system and its foreseeable uses can have for individuals, groups and society. ISO/IEC 42001 requires one (clauses 6.1.4 and 8.4); ISO/IEC 42005 explains how to do it. Distinct from the organizational risk assessment of ISO/IEC 23894."
+    "term": "AI System Inventory",
+    "definition": "Central list of all AI in use, embedded included, kept by a named owner (AI RMF GOVERN 1.6). First fix for shadow AI. vs. model registry (MLOps versions)."
+  },
+  {
+    "term": "AI System Life Cycle (ISO/IEC 22989)",
+    "definition": "Eight stages: inception; design and development; verification and validation; deployment; operation and monitoring; continuous validation (only systems that keep learning); re-evaluation; retirement. ISO/IEC 23894 Annex C maps risk management onto them."
   },
   {
     "term": "AI User",
-    "definition": "The person or entity that interacts with AI in real-world scenarios. Often closest to operational impact and first to detect unintended outcomes."
+    "definition": "Person operating or relying on AI output day to day (recruiter, clinician). No EU AI Act role: the 2021 proposal's term became 'deployer'. Typical failure: automation bias."
   },
   {
     "term": "AI Vendor Due Diligence",
-    "definition": "Evaluation of AI vendors covering AI-specific risks: model and training-data provenance, labeling quality, explainability, safety filters, and vulnerable dependencies — imposed by procurement policy before contracting."
+    "definition": "Pre-contract AI probes beyond SOC 2: training-data provenance and rights, labeling quality, bias test evidence, model-change practices. Unclosed gaps go into the contract or a risk acceptance."
   },
   {
     "term": "Algorithmic Bias",
-    "definition": "Systematic and repeatable errors in an AI system that create unfair outcomes, such as privileging one group over another, often stemming from biased training data."
+    "definition": "Systematic, not random, difference in treatment of people or groups (ISO/IEC 22989). Enters via data, design choices and feedback loops; needs no intent or protected feature."
+  },
+  {
+    "term": "Algorithmic Disgorgement",
+    "definition": "FTC remedy: delete unlawfully obtained data and every model and algorithm built from it. AI precedents: Everalbum (2021) and Rite Aid (2023), both facial recognition."
+  },
+  {
+    "term": "Alternative Adequate Means (Arts. 53(4), 55(2))",
+    "definition": "Route for GPAI providers following neither an adequacy-assessed code of practice nor a harmonised standard (e.g. Meta). Same duties; more AI Office scrutiny; no code credit when fines are set."
+  },
+  {
+    "term": "America's AI Action Plan (2025)",
+    "definition": "July 2025 White House plan (per EO 14179): NIST to strip misinformation, DEI and climate from the AI RMF; FTC to revisit AI-burdening orders. Binds no companies."
+  },
+  {
+    "term": "Annex I Product Route (Art. 6(1))",
+    "definition": "High-risk: AI that is, or is a safety component of, an Annex I product needing third-party conformity assessment. As enacted 2 Aug 2027; as amended 2 Aug 2028."
+  },
+  {
+    "term": "Annex III High-Risk Areas",
+    "definition": "Art. 6(2), eight areas: biometrics; critical infrastructure; education; employment; essential services (benefits, credit scoring, life and health insurance pricing, emergency triage); law enforcement; migration and border control; justice and democratic processes. Fraud detection and 1:1 verification excluded. Art. 7: additions only within them."
   },
   {
     "term": "Annex SL",
-    "definition": "ISO's harmonized structure for management system standards — provides identical clause structure (4-10) across ISO 42001, 27001, 9001 enabling integration."
+    "definition": "ISO's shared clause structure for management system standards (42001, 27001, 9001), enabling one integrated system. Auditable clauses: 4 context, 5 leadership, 6 planning (Plan); 7 support, 8 operation (Do); 9 performance evaluation (Check); 10 improvement (Act)."
   },
   {
     "term": "Anonymization",
-    "definition": "The process of irreversibly transforming personal data so the data subject can no longer be identified — if fully achieved, GDPR no longer applies."
+    "definition": "Recital 26: no longer relates to an identifiable person, so the GDPR stops applying (vs. pseudonymization: still personal data). Draft EDPB Guidelines 02/2026 tests: no isolation, linkage or inference."
   },
   {
     "term": "Article 22 GDPR",
-    "definition": "The GDPR provision granting data subjects the right not to be subject to solely automated decisions producing legal or similarly significant effects — requires human intervention capability."
-  },
-  {
-    "term": "Article 35 GDPR",
-    "definition": "The GDPR provision mandating Data Protection Impact Assessments (DPIAs) for processing likely to result in high risk to individuals — frequently triggered by AI systems."
-  },
-  {
-    "term": "Article 56 (EU AI Act)",
-    "definition": "Legal basis for the GPAI Code of Practice, published by the European AI Office. Adherence is a compliance-demonstration aid, NOT conclusive evidence of compliance or a safe harbor."
-  },
-  {
-    "term": "Article 9 GDPR",
-    "definition": "The GDPR provision prohibiting processing of special category data (race, religion, health, biometrics, etc.) unless a specific exception applies — critical for AI training data."
+    "definition": "Bars solely automated decisions with legal or similarly significant effects; rubber-stamp review still counts as solely automated. Exceptions: contract or explicit consent (plus human intervention, a say, a challenge); EU or member state law."
   },
   {
     "term": "Artificial General Intelligence (AGI)",
-    "definition": "A theoretical form of AI capable of understanding, learning, and applying intelligence across any task a human can perform. Does not yet exist publicly."
-  },
-  {
-    "term": "Artificial Intelligence (AI)",
-    "definition": "*\\<Discipline>* Research and development of mechanisms and applications of AI systems. R&D can take place in fields such as computer science, data science, humanities, mathematics, and natural sciences."
+    "definition": "Theoretical AI matching human competence across essentially all tasks; nothing deployed qualifies, LLMs included. Acronym trap: in NIST AI 600-1, 'GAI' means generative AI."
   },
   {
     "term": "Artificial Superintelligence (ASI)",
-    "definition": "A theoretical AI that surpasses human intelligence in all domains — creativity, problem-solving, emotional understanding, and decision-making."
+    "definition": "Theoretical AI exceeding the best human performance in essentially every domain. Capability ladder: narrow (every deployed system), then AGI (human-level), then this; only narrow exists."
   },
   {
     "term": "Audit",
-    "definition": "A systematic, independent examination of an AI system's design, data, outputs, and governance against established criteria — can be internal (first/second party) or external (third party)."
+    "definition": "Independent, systematic check against pre-agreed criteria: first, second or third party. AI scope: the policies, processes and tools around the model, not just its performance."
   },
   {
-    "term": "Automated Decision-Making (ADM)",
-    "definition": "Decisions made by a system rather than a person, with no meaningful human role in reaching the outcome, such as software approving or refusing a loan from a score. GDPR Art. 22 gives people the right not to be subject to a decision based solely on automated processing, including profiling, that has legal or similarly significant effects, unless it is necessary for a contract, authorised by law, or based on explicit consent."
+    "term": "Automatic Logging (Art. 12)",
+    "definition": "High-risk systems must record events automatically over their lifetime for traceability. Provider (Art. 19) and deployer (Art. 26(6)) keep logs 6+ months; documentation 10 years (Art. 18)."
   },
   {
-    "term": "Automatic Summarization",
-    "definition": "Task of shortening a portion of natural language content or text while preserving important semantic information."
-  },
-  {
-    "term": "Automation",
-    "definition": "Relating to a process or system that operates under certain conditions without human intervention."
+    "term": "Automation Bias",
+    "definition": "Over-relying on automated output, even when wrong; grows as the system proves reliable. EU AI Act Art. 14(4)(b): high-risk design keeps overseers aware of it. Opposite: algorithmic aversion (NIST AI 600-1 lists both)."
   },
   {
     "term": "Autonomy",
-    "definition": "A characteristic of a system that is capable of changing its intended domain of use or its objective without external intervention, control, or supervision."
+    "definition": "ISO/IEC 22989: can change its intended domain of use or objective without external intervention, control or supervision; beyond full automation. Response: human oversight empowered to halt."
   },
   {
     "term": "Availability",
-    "definition": "The property of being accessible and usable when an authorized entity has a need."
+    "definition": "Accessible and usable when an authorized entity needs it. An ISO/IEC 22989 trustworthiness characteristic; inside NIST AI RMF 'secure and resilient'; GDPR Art. 32(1)(b)."
   },
   {
     "term": "Bayesian Network",
-    "definition": "Probabilistic model that uses Bayesian inference for probability calculations using a directed acyclic graph."
+    "definition": "Probabilistic directed acyclic graph: variables linked by conditional probabilities, updated as evidence arrives. Handles missing data; more traceable than a neural network."
   },
   {
     "term": "Benchmarking",
-    "definition": "Evaluating AI system performance against established standards, reference models, or industry baselines to assess relative quality and identify improvement areas."
+    "definition": "Scoring a model against reference datasets, incumbents or published baselines: comparative evidence, not proof of fitness for your use. Caveats: contamination, population mismatch, gaming."
   },
   {
     "term": "Best-Efforts Impact Assessment (Korea)",
-    "definition": "Art. 35 of Korea's AI Basic Act: operators providing high-impact AI must make efforts to assess its impact on fundamental rights in advance, but the assessment itself is not mandatory. Skipping it isn't fined, but public bodies must give priority to assessed products. The decree lists what the assessment covers."
-  },
-  {
-    "term": "Bias (Systematic Deviation)",
-    "definition": "Systematic differential treatment of certain objects, persons, or groups compared to others. Treatment includes perception, observation, representation, prediction, or decision."
+    "definition": "Art. 35: operators providing high-impact AI 'shall make efforts' to assess fundamental-rights impact beforehand. Not finable; public bodies must prefer assessed products. vs. EU FRIA: mandatory, certain deployers."
   },
   {
     "term": "Bias Audit (NYC LL 144)",
-    "definition": "The impartial evaluation by an independent auditor that NYC Local Law 144 requires no more than one year before an AEDT is used. It calculates selection or scoring rates and impact ratios by sex, race/ethnicity and intersectional categories. The impact ratio is a category's rate divided by the rate of the highest category. Results must be published, but the law sets no pass/fail threshold."
+    "definition": "Independent auditor, within a year before use: selection or scoring rates and impact ratios by sex, race/ethnicity and intersections; summary published. No pass/fail threshold."
   },
   {
     "term": "Bias Testing",
-    "definition": "Evaluating AI system outputs for unfair differences across demographic groups, sensitive attributes, or protected characteristics to detect and mitigate algorithmic bias."
+    "definition": "Compare outcomes and error rates by subgroup; aggregate accuracy hides gaps. Sensitive data allowed strictly for bias detection and correction: AI Act Art. 4a (2026 Omnibus; as enacted Art. 10(5))."
+  },
+  {
+    "term": "Biometric Categorisation Ban (Art. 5(1)(g))",
+    "definition": "Bans sorting individuals by biometric data to infer race, political opinions, union membership, religious or philosophical beliefs, sex life or sexual orientation. Lawful dataset labelling or filtering exempt. Other sensitive-attribute sorting: high-risk (Annex III 1(b))."
   },
   {
     "term": "Biometric Data",
-    "definition": "Personal data resulting from specific technical processing relating to physical, physiological, or behavioral characteristics allowing unique identification — special category under GDPR."
+    "definition": "Art. 4(14): technically processed physical, physiological or behavioral traits allowing unique identification. Art. 9 only when used to uniquely identify; AI categorization (age estimation) may fall outside."
+  },
+  {
+    "term": "Biometric Information Privacy Act (BIPA)",
+    "definition": "Illinois, 2008: written notice and release before collecting face, fingerprint, voice or iris data; retention policy; no profiting. Private suits: $1,000 negligent, $5,000 intentional or reckless."
   },
   {
     "term": "Breach Notification",
-    "definition": "GDPR requirement to notify the supervisory authority within 72 hours of becoming aware of a personal data breach, and to communicate high-risk breaches to affected data subjects."
+    "definition": "Authority within 72 hours of awareness unless unlikely to risk rights (Art. 33); individuals if high risk (Art. 34). Customer data pasted into a public chatbot can qualify."
   },
   {
     "term": "Brittleness",
-    "definition": "A model's tendency to fail catastrophically when encountering inputs slightly outside its training distribution — indicates lack of robustness and generalization."
+    "definition": "Performance collapses, rather than degrading gracefully, just outside training conditions (new lighting, rephrased prompt). A BOK III.C incident-analysis factor. vs. robustness (holds up), resilience (recovers)."
   },
   {
     "term": "Business Context",
-    "definition": "The organizational environment, objectives, constraints, and stakeholder expectations within which an AI system is designed, developed, and deployed."
+    "definition": "BOK III.A first step: the problem, objectives, success metrics, readiness and stakeholders, fixed before design. vs. business case (expected benefit), use case (scoped spec)."
   },
   {
     "term": "Business Objectives",
-    "definition": "The organizational goals that an AI system is intended to serve — deployment decisions must start with objectives rather than model capability alone."
+    "definition": "Outcome the deployment must deliver, set before choosing a model; fixes intended purpose and metrics. First of BOK IV.A's five factors (then performance, data, ethics, workforce)."
+  },
+  {
+    "term": "California AB 2013 (Training Data Transparency)",
+    "definition": "Generative AI developers serving Californians post dataset documentation (sources, copyrighted and personal data, licensing): due 1 Jan 2026 for 2022+ systems, then each release. No penalty clause."
   },
   {
     "term": "California AI Transparency Act (SB 942)",
-    "definition": "California law requiring covered providers (generative AI systems with over 1 million monthly users that are publicly accessible in California) to offer a free AI detection tool, embed latent provenance disclosures in AI-generated image, video and audio, and give users the option of a visible label. As amended by AB 853 it became operative on 2 Aug 2026, adding platform duties in 2027 and capture-device duties in 2028. Penalties are $5,000 per violation per day, enforced by the AG, city attorneys and county counsel."
+    "definition": "Generative AI with over 1M monthly users: free detection tool; latent disclosures in image, video, audio, not text. $5,000 per violation per day. Operative 2 Aug 2026 as amended (as enacted, 1 Jan 2026)."
+  },
+  {
+    "term": "California SB 243 (Companion Chatbots)",
+    "definition": "From 1 Jan 2026: AI notice if users could think it human; published self-harm protocol with crisis referrals; 3-hourly break reminders for known minors. Private right of action ($1,000 per violation or actual damages)."
   },
   {
     "term": "California TFAIA (SB 53)",
-    "definition": "California's Transparency in Frontier Artificial Intelligence Act, in force 1 Jan 2026. Frontier developers (models trained with more than 10^26 operations) must publish transparency reports and report critical safety incidents to Cal OES within 15 days, or within 24 hours if there is imminent danger. Large frontier developers (over $500M revenue) must also publish and follow a frontier AI framework and send Cal OES summaries of internal-use risk assessments every three months, or on another reasonable schedule. It adds whistleblower protections, and the AG can seek up to $1M per violation."
+    "definition": "From 1 Jan 2026. Frontier developers (over 10^26 operations): transparency reports; critical incidents to Cal OES within 15 days (24h if imminent). AG-only, up to $1M; no audit."
   },
   {
     "term": "CCPA ADMT Regulations",
-    "definition": "California Privacy Protection Agency rules, effective 1 Jan 2026, for businesses that use automated decision-making technology to make significant decisions about consumers (lending, housing, education, employment, health care). A business must give a pre-use notice, offer an opt-out unless an exception applies (such as a human appeal) and answer access requests about the ADMT's logic and outcome. Compliance is required by 1 Jan 2027. Companion rules require risk assessments and cybersecurity audits."
+    "definition": "CPPA rules effective 1 Jan 2026; ADMT compliance by 1 Jan 2027. Tech replacing or substantially replacing human judgment in significant decisions, not ads: pre-use notice, opt-out (main exception: human appeal), access."
   },
   {
     "term": "CE Marking",
-    "definition": "The physical or digital marking indicating conformity with EU health, safety, and environmental requirements — required for high-risk AI systems under the EU AI Act."
+    "definition": "AI Act Art. 48. High-risk provider affixes it itself, after the EU declaration (Art. 47); no notified body issues it. Order: assessment, declaration, mark, registration."
   },
   {
     "term": "Choice",
-    "definition": "A privacy principle giving individuals options about how their personal data is collected and used, including the ability to opt out of certain processing."
+    "definition": "A person's say over data use. GDPR leans opt-in plus objection rights; US states, opt-out (CCPA/CPRA sale and sharing; CPPA ADMT rules for significant decisions). Dark patterns defeat it."
   },
   {
     "term": "Classic AI",
-    "definition": "Traditional AI approaches using rule-based systems, statistical methods, and simpler ML algorithms — contrasted with modern generative AI and LLMs."
+    "definition": "Rule-based and classical ML (decision trees, logistic regression), vs. generative AI. Easier to explain; tier still follows use: a decision-tree hiring screener is Annex III 4(a) high-risk."
   },
   {
     "term": "Cloud, On-Premises & Edge Deployment",
-    "definition": "The deployment-environment decision: cloud offers scalability and managed infrastructure but raises data-residency and third-party questions; on-premises maximizes control and data sovereignty at higher operational cost; edge deployment puts inference on local devices for latency and privacy benefits with harder update and monitoring logistics."
+    "definition": "Where inference runs. Cloud: scale; GDPR Ch. V if personal data leaves the EEA. On-premises: control, sovereignty, cost. Edge: on-device, low latency, local data; harder to update."
   },
   {
     "term": "Code of Practice on Marking and Labelling",
-    "definition": "The voluntary Code of Practice on Transparency of AI-generated Content, final 10 June 2026 under AI Act Article 50(7). Section 1 covers providers' machine-readable marking and detection; Section 2 covers deployers' labelling of deepfakes and AI-generated public-interest text. The Commission and AI Board assessed it as adequate."
+    "definition": "Voluntary Art. 50(7) code, final 10 Jun 2026. Section 1: providers mark output machine-detectably. Section 2: deployers label deepfakes, public-interest AI text. vs. GPAI Code (Art. 56)."
   },
   {
     "term": "Cognitive Computing",
-    "definition": "A category of AI systems that enables more natural interaction between humans and machines."
+    "definition": "ISO/IEC 22989: category of AI systems enabling more natural human-machine interaction (speech, language, vision, interfaces). Not a claim of human-like reasoning or general intelligence."
   },
   {
     "term": "Colorado ADMT Act (SB 26-189)",
-    "definition": "Colorado's 2026 law (signed 14 May 2026) that repealed and replaced the never-effective Colorado AI Act (SB 24-205). For consequential decisions made from 1 Jan 2027 in education, employment, housing, lending, insurance, health care and government services, it requires developer documentation, deployer notice, a plain-language explanation within 30 days of an adverse outcome, data correction and human review. The AG enforces exclusively, with a 60-day cure; there is no private right of action."
+    "definition": "Signed 14 May 2026; replaced the never-effective SB 24-205, dropping impact assessments and duty of care. Consequential decisions from 1 Jan 2027: pre-use notice, 30-day adverse-outcome explanation, correction, human review. AG-only; 60-day cure."
   },
   {
-    "term": "Competent Authorities",
-    "definition": "Regulatory or oversight bodies"
+    "term": "Colorado AI Act (SB 24-205)",
+    "definition": "Never took effect; repealed May 2026 by SB 26-189. Exam may still test it as enacted (start 1 Feb 2026, delayed to 30 Jun 2026): reasonable care against algorithmic discrimination, impact assessments, AG notice within 90 days."
+  },
+  {
+    "term": "Commission GPAI Enforcement Powers (Arts. 88-93)",
+    "definition": "From 2 Aug 2026, AI Office only, never national authorities: information requests (Art. 91), model evaluations (Art. 92), mitigation, restriction, withdrawal or recall orders (Art. 93), fines up to €15M or 3% (Art. 101)."
   },
   {
     "term": "Complexity",
-    "definition": "A characteristic of AI systems requiring governance: advanced techniques like neural networks create interrelationships between inputs and outputs that are difficult to trace or understand."
+    "definition": "I.A governance characteristic: many interacting components and high-dimensional models make input-output links hard to trace (vs. opacity: unreadable weights). Response: decompose, document, layer testing, monitoring, oversight."
   },
   {
     "term": "Computer Vision",
-    "definition": "The ability of a functional unit to capture, process, and interpret image or video data. May include wavelengths beyond visible light (e.g., infrared)."
+    "definition": "Capturing and interpreting image or video data; covers image recognition (classifying objects, patterns, concepts). Identifying people: GDPR Art. 9 biometric data. Biometric ID or categorisation: AI Act Art. 5, Annex III."
   },
   {
     "term": "Concept Drift",
-    "definition": "A change in the underlying relationship between input data and expected outputs over time, often due to real-world changes that invalidate the model's learned patterns."
+    "definition": "Input-to-output relationship changes (fraudsters switch tactics) while inputs may look stable. Shows as falling accuracy on fresh labels. vs. data drift (inputs shift)."
   },
   {
     "term": "Confabulation",
-    "definition": "NIST AI 600-1 GAI risk: a generative model confidently producing false or fabricated content (often called hallucination). Classified among the technical/model risks unique to or exacerbated by GAI."
+    "definition": "NIST AI 600-1's term for confidently stated but erroneous or false content; one of its 12 GAI risks. Preferred over 'hallucination', which anthropomorphizes the model."
   },
   {
     "term": "Conformity Assessment",
-    "definition": "The process of verifying that high-risk AI systems meet EU AI Act requirements before market placement — may involve self-assessment or third-party notified bodies."
+    "definition": "AI Act Art. 43. Provider's pre-market check against Arts. 8-15. Annex III: self-assessment (Annex VI); notified body (Annex VII) for biometrics lacking full harmonised standards. Annex I: sectoral procedure."
   },
   {
     "term": "Conformity Requirements",
-    "definition": "The specific standards, regulations, and internal policies an AI system must satisfy before deployment — including technical, legal, and ethical compliance obligations."
-  },
-  {
-    "term": "Connectionism (Connectionist Paradigm)",
-    "definition": "A form of cognitive modeling that uses a network of interconnected units, which are generally simple computational units."
+    "definition": "High-risk release gate: meet Arts. 9-15 and the Art. 17 QMS; Art. 43 conformity assessment; EU declaration (Art. 47); CE marking (Art. 48); registration (Art. 49). Annex III: from 2 Dec 2027 (as enacted 2 Aug 2026)."
   },
   {
     "term": "Consent",
-    "definition": "A privacy principle requiring freely given, specific, informed, and unambiguous indication of the data subject's agreement to processing of their personal data."
+    "definition": "Rarely workable for AI training at scale. Art. 4(11): freely given, specific, informed, unambiguous affirmative act; pre-ticked boxes fail; withdrawable as easily as given. Explicit for Art. 9 and 22."
   },
   {
     "term": "Consumer Protection",
-    "definition": "Laws and regulations prohibiting unfair, deceptive, or abusive acts and practices (UDAAP/UDAP) in consumer transactions — applies to AI-driven products and services."
+    "definition": "US FTC Act s.5 and state acts; EU UCPD (2005/29), topped by AI Act Art. 5 manipulation bans. No intent needed; no AI exemption. AI targets: unproven capability claims, fake reviews, dark patterns."
   },
   {
     "term": "Content Provenance (NIST AI 600-1)",
-    "definition": "Tracking the origin and history of digital content. One of the four primary GAI considerations in NIST AI 600-1, alongside governance, pre-deployment testing, and incident disclosure."
+    "definition": "Tracking the origin and history of digital content to establish authenticity: watermarking, metadata, fingerprinting, human authentication. One of the GAI Profile's four primary considerations."
   },
   {
     "term": "Contestability",
-    "definition": "The ability of people affected by an AI system's output or decision to challenge it and obtain a review and, where justified, a correction; it needs enough transparency about how the result was reached to argue with. Reflected in OECD AI Principle 1.3 and in the GDPR Art. 22(3) right to contest solely automated decisions; IAPP also calls it redress."
+    "definition": "Affected person's route to challenge an AI decision before a human who can change it (GDPR Art. 22(3); OECD Principle 1.3). vs. human in the loop: the operator triggers review."
   },
   {
     "term": "Context of the Organization",
-    "definition": "ISO 42001 Clause 4: understanding internal and external factors affecting the AI Management System, including stakeholder needs, legal requirements, and organizational objectives."
+    "definition": "ISO/IEC 42001 Clause 4. AI-specific 4.1: consider each AI system's intended purpose and determine the organization's role (e.g. provider, producer, customer), which shapes applicable controls. 4.3: AIMS scope."
   },
   {
     "term": "Continuous Monitoring",
-    "definition": "Ongoing observation of deployed AI system performance, data inputs/outputs, and environmental conditions to detect drift, degradation, or unexpected behavior in real time."
+    "definition": "Ongoing watch on drift, subgroup fairness, overrides and misuse, not just uptime. Deployers monitor and alert the provider (AI Act Art. 26(5)); providers run post-market monitoring (Art. 72)."
   },
   {
     "term": "Continuous Validation",
-    "definition": "Ongoing verification that system meets requirements in production"
+    "definition": "ISO/IEC 22989 stage for systems that keep learning after release: production checks that requirements still hold. AI Act Art. 43(4): pre-set, documented learning changes are not substantial modifications."
   },
   {
     "term": "Controllability",
-    "definition": "A property of an AI system that enables a human or another external agent to intervene in the system's operation."
+    "definition": "ISO/IEC 22989: a human or external agent can intervene in the system's operation. vs. human oversight: a competent person actually doing it. AI Act Art. 14(4)(e): 'stop' button."
   },
   {
     "term": "Convolutional Neural Network (CNN)",
-    "definition": "Feedforward neural network with convolution in at least one of its layers."
+    "definition": "Feedforward network sliding learned filters over images (or other grid data) to detect local patterns: edges, textures. Face identification triggers biometric rules (GDPR Art. 9; AI Act Art. 5, Annex III)."
   },
   {
     "term": "Copyright",
-    "definition": "Legal protection for original works of authorship fixed in a tangible medium. AI training on copyrighted content without authorization is subject to ongoing litigation (e.g., Getty v. Stability AI)."
+    "definition": "Protects original expression fixed in a medium, not ideas; arises automatically (US registration unlocks statutory damages). AI hooks: training copies engage the reproduction right; purely AI-generated output gets none."
   },
   {
     "term": "Copyright Chapter (GPAI CoP)",
-    "definition": "GPAI Code of Practice chapter applying to ALL GPAI providers: a copyright policy, compliance with text-and-data-mining opt-outs under Art 4(3) CDSM, and measures against infringing outputs."
+    "definition": "All signatories, not only systemic-risk (Art. 53(1)(c)): written policy; lawful access (no paywall or TPM circumvention); honour robots.txt and other TDM opt-outs (CDSM Art. 4(3)); curb infringing outputs; rightsholder contact."
+  },
+  {
+    "term": "Copyright Office AI Reports (Parts 1-3)",
+    "definition": "Non-binding. Part 1 (Jul 2024): federal digital-replica law. Part 2 (Jan 2025): prompts alone are not authorship. Part 3 (May 2025): commercial use of vast troves to make competing content, especially via illegal access, exceeds fair use."
+  },
+  {
+    "term": "Counterfactual Explanation",
+    "definition": "Smallest input change that would have flipped a decision ('approved with EUR 5,000 more income'); discloses no model internals. May satisfy GDPR Art. 15(1)(h) (CJEU C-203/22). vs. flipping a protected attribute to test bias."
   },
   {
     "term": "Counterfactual Fairness",
-    "definition": "A fairness criterion assessing whether a model's decision would change if a sensitive attribute (gender, race) were altered while keeping all other factors constant."
+    "definition": "Individual, causal test: same outcome had only this person's protected attribute differed? Needs a causal model. vs. group metrics; vs. counterfactual explanation (smallest change flipping a decision)."
   },
   {
     "term": "Cross-Border Data Transfer",
-    "definition": "The transfer of personal data outside the EU/EEA, requiring appropriate safeguards such as adequacy decisions, standard contractual clauses, or binding corporate rules."
+    "definition": "GDPR Ch. V, incl. remote access and prompts to a non-EEA model API. Ladder: adequacy (Art. 45); SCCs or BCRs (Arts. 46-47) plus TIA (Schrems II); Art. 49 derogations."
   },
   {
     "term": "Cross-Functional Collaboration",
-    "definition": "Multiple departments (legal, engineering, ethics, product, compliance) sharing responsibility for AI governance decisions to ensure diverse perspectives."
+    "definition": "BOK I.B: AI decisions shared across legal, privacy, security, data science, product and ethics, for efficacy and diverse expertise. Single-function answers are wrong."
   },
   {
     "term": "Data Acquisition",
-    "definition": "The process of collecting and sourcing data for AI training, including verification of lawful rights, quality assessment, and documentation of origin."
+    "definition": "Entry gate: confirm and record the legal right to collect and train on data before use. Traps: implicit consent, function creep, scraping past text-and-data-mining opt-outs."
   },
   {
     "term": "Data Annotation",
-    "definition": "A process in which data is provided with a set of descriptive information without the data itself being altered."
+    "definition": "Adding labels, tags or metadata without altering the data (ISO/IEC 22989). Label quality caps model quality; control via guidelines and inter-annotator agreement. vs. augmentation (new samples)."
   },
   {
     "term": "Data Augmentation",
-    "definition": "The process of creating synthetic samples by modifying or utilizing existing data."
+    "definition": "ISO/IEC 22989: creating synthetic samples by modifying or reusing existing data. Fills gaps for under-represented groups; done carelessly, it amplifies the majority."
   },
   {
     "term": "Data Controller",
-    "definition": "The entity that determines the purposes and means of processing personal data — carries primary accountability for GDPR compliance in AI contexts."
+    "definition": "Decides purposes and means (Art. 4(7)); must demonstrate compliance (Art. 5(2)). vs. processor, acting on its instructions. GDPR roles do not map onto AI Act provider or deployer."
   },
   {
     "term": "Data Dependency",
-    "definition": "A characteristic of AI requiring governance: most AI systems depend heavily on data quality, volume, and diversity — poor or biased data leads to inaccurate or unfair outcomes."
+    "definition": "BOK I.A characteristic: behaviour is learned from data, inheriting its quality, gaps and skew. Upstream data changes alter the model with no code change."
   },
   {
     "term": "Data Drift",
-    "definition": "A change in the statistical properties of input data over time, potentially degrading model performance as the production data diverges from training data."
+    "definition": "Production inputs diverge statistically from training data (covariate shift; label drift if outcome rates move). PSI or Kolmogorov-Smirnov tests catch it, often before accuracy falls. vs. concept drift."
   },
   {
     "term": "Data Governance",
-    "definition": "The overall management of data availability, usability, integrity, and security — ensuring data is lawfully collected, accurate, sufficient, and fit for its intended AI use."
+    "definition": "Policies, roles and controls keeping data lawful, accurate, secure and fit for purpose. High-risk (AI Act Art. 10(2)): practices cover collection and origin, preparation, assumptions, bias examination and mitigation, data gaps."
   },
   {
     "term": "Data Integrity",
-    "definition": "The accuracy, consistency, and trustworthiness of data throughout its lifecycle — critical for AI systems where corrupted or tampered data produces unreliable outputs."
-  },
-  {
-    "term": "Data Leak",
-    "definition": "Accidental exposure of confidential, proprietary or personal data to people or systems that should not have it, for example through a misconfigured cloud bucket, a misdirected email or an employee entering records into an external AI tool. When personal data is involved it is a GDPR personal data breach even when no attacker is involved (Art. 4(12)), so the 72-hour notification duty to the supervisory authority can apply (Art. 33)."
+    "definition": "Data not altered, corrupted or quietly replaced between collection and use. vs. quality (fit for purpose), provenance (origin). AI threat: poisoning. Controls: versioned datasets, checksums."
   },
   {
     "term": "Data Lineage",
-    "definition": "The tracking of data's lifecycle and processing — where it came from, how it was transformed, where it moved. Essential for traceability and audit readiness."
+    "definition": "The data's journey after origin: ingestion, transformation, storage, consuming models, disposal ('how and where'). vs. provenance ('where from, on what terms'). Gaps hide tampering or poisoning."
   },
   {
     "term": "Data Minimization",
-    "definition": "A GDPR principle requiring that only personal data necessary for the specific task be collected and processed — critical for AI systems that tend to hoard data."
+    "definition": "Art. 5(1)(c): adequate, relevant, limited to what is necessary. Hoarding a raw scrape for a future model breaks it, and fails Opinion 28/2024's necessity step."
   },
   {
     "term": "Data Poisoning",
-    "definition": "An attack that corrupts a model's training data, for example by planting mislabeled or trigger-laden samples in a scraped or third-party dataset, so the trained model learns wrong or hidden behaviour such as a backdoor. It strikes during training, unlike evasion attacks and prompt injection, which manipulate inputs at inference time; the EU AI Act expects high-risk providers to address it where appropriate (Art. 15(5))."
+    "definition": "Training-time attack: corrupting training or fine-tuning data to plant errors or a hidden backdoor trigger. Named in AI Act Art. 15(5). vs. adversarial examples (inference time)."
   },
   {
     "term": "Data Protection Impact Assessment (DPIA)",
-    "definition": "A mandatory risk assessment under GDPR Article 35 required when processing is likely to result in high risk to individuals, including when AI processes sensitive data."
+    "definition": "GDPR Art. 35, before likely high-risk processing. Mandatory for: (a) systematic, extensive automated evaluation, incl. profiling, with legal or similarly significant effects; (b) large-scale special-category or criminal data; (c) large-scale monitoring of public areas. vs. AI Act FRIA."
   },
   {
     "term": "Data Protection Officer (DPO)",
-    "definition": "A mandatory role under GDPR for certain organizations — responsible for advising on data protection obligations, monitoring compliance, and serving as contact point for authorities."
+    "definition": "Art. 37: required for public bodies, or where core activities are large-scale systematic monitoring or large-scale special-category or criminal data. Art. 39: advises and monitors, independently; does not decide."
   },
   {
     "term": "Data Provenance",
-    "definition": "Documentation of data's origin, collection method, licensing, and conditions of collection — distinct from lineage which tracks movement and transformation."
+    "definition": "Where data came from and on what terms: source, collection method, licence or consent, jurisdiction, original purpose. vs. lineage (its journey); vs. NIST AI 600-1 tracing of generated content."
   },
   {
     "term": "Data Quality",
-    "definition": "The degree to which a dataset is fit for the job it will do, judged on dimensions such as correctness, completeness, consistency, timeliness, validity and representativeness; weak data produces weak or biased outputs. For high-risk systems the EU AI Act requires training, validation and testing data to be relevant, sufficiently representative and, to the best extent possible, free of errors and complete for the intended purpose (Art. 10(3))."
-  },
-  {
-    "term": "Data Quality Review",
-    "definition": "A process in which data is checked for completeness, systematic deviations (bias), and other factors that impair its usefulness for an AI system."
+    "definition": "Fitness for intended purpose: clean, lawful data can still fail a new use. AI Act Art. 10(3): high-risk training, validation and test sets relevant, sufficiently representative, as far as possible error-free and complete."
   },
   {
     "term": "Data Sampling",
-    "definition": "Process of selecting a subset of data samples expected to exhibit similar patterns and trends as the larger dataset."
-  },
-  {
-    "term": "Data Set",
-    "definition": "Collection of data with a common format."
+    "definition": "Selecting a subset expected to show the same patterns and trends as the full data set (vs. partitioning into training, validation, test sets). Unrepresentative subsets cause representation bias."
   },
   {
     "term": "Data Sheet",
-    "definition": "A standardized document describing a dataset's composition, collection process, recommended uses, and limitations — supports responsible data governance for AI training."
-  },
-  {
-    "term": "Data Subject Access Request (DSAR)",
-    "definition": "A formal request by an individual to an organization to access their personal data and information about how it is processed — challenging when AI models have memorized training data."
+    "definition": "Gebru et al. (2018): standard questions documenting a dataset's motivation, composition, collection and consent, labelling, intended uses, maintenance. vs. model card (model), system card (deployed system)."
   },
   {
     "term": "Data Subject Rights",
-    "definition": "GDPR-granted rights including access (Art 15), rectification (Art 16), erasure (Art 17), restriction (Art 18), portability (Art 20), and objection (Art 21)."
+    "definition": "Access 15, rectification 16, erasure 17, restriction 18, portability 20, objection 21, automated decisions 22. Reply in one month, extendable by two. Reach the model too unless it is anonymous (Opinion 28/2024)."
   },
   {
     "term": "Deactivation Policy",
-    "definition": "Documented procedures for safely taking an AI system offline — triggered by regulatory requirements, performance issues, or safety concerns with controlled shutdown steps."
+    "definition": "BOK IV.C, paired with localization: triggers, approver, fallback, final snapshot. Providers withdraw, disable or recall non-conforming high-risk AI (Art. 20); deployers suspend use and inform (Art. 26(5))."
   },
   {
     "term": "Decision Tree",
-    "definition": "Model in which inference is encoded as paths from the root to a leaf node in a tree structure."
+    "definition": "Inference follows one root-to-leaf path of explicit feature splits: the textbook inherently interpretable model. Ensembles (random forests, boosting) lose that transparency."
   },
   {
     "term": "Decommissioning",
-    "definition": "Planned retirement, data disposition, model archival"
+    "definition": "After deactivation. Archive: final model, lineage, logs, incident records; high-risk technical documentation 10 years (Art. 18). Dispose: obsolete data, derivative models, unneeded personal data (GDPR Art. 5(1)(e))."
   },
   {
     "term": "Deep Learning",
-    "definition": "*\\<Artificial Intelligence>* An approach to creating rich hierarchical representations through the training of neural networks with many hidden layers. Deep learning is a subset of ML."
+    "definition": "Neural networks with many hidden layers that learn hierarchical representations (ISO/IEC 22989) straight from raw data, no hand-engineered features. Subset of ML. Main source of AI opacity."
   },
   {
     "term": "Deepfake",
-    "definition": "Image, audio or video content generated or manipulated with AI so that it resembles real people, objects, places or events closely enough to pass as authentic; a common tool for impersonation fraud, disinformation and harassment. The EU AI Act defines a deep fake in Art. 3(60) and requires deployers who use AI to generate or manipulate one to disclose that it is artificial (Art. 50(4))."
+    "definition": "EU AI Act Art. 3(60): AI-generated or manipulated image, audio or video resembling existing persons, objects, places or events, falsely appearing authentic. Deployers disclose it from 2 Aug 2026 (Art. 50(4)); lighter for evident art or satire."
   },
   {
-    "term": "Deidentification",
-    "definition": "Techniques to remove or obscure personally identifying information from datasets — includes pseudonymization, aggregation, and generalization approaches."
-  },
-  {
-    "term": "Deployment",
-    "definition": "Integration into operational environment, user training"
-  },
-  {
-    "term": "Design & Construction",
-    "definition": "Data collection/preparation, model design, training, tuning"
+    "term": "Deployer Obligations (Art. 26)",
+    "definition": "High-risk deployer duties: follow instructions; assign competent oversight; keep controlled input data relevant; monitor, suspend, report risks; keep logs 6+ months; inform workers and affected people. Public bodies register use."
   },
   {
     "term": "Design Defect",
-    "definition": "A product liability claim where the product's design is inherently unsafe — AI systems with flawed architectures or inadequate safety features may face design defect claims."
-  },
-  {
-    "term": "Deterministic Output",
-    "definition": "System outputs that are entirely predictable given the same inputs, characteristic of traditional rule-based systems. Contrasts with probabilistic AI outputs."
+    "definition": "Made as designed, but the design is unreasonably dangerous: risk-utility test, feasible safer alternative (better data, human oversight). vs. manufacturing defect: unit departs from design."
   },
   {
     "term": "Differential Privacy",
-    "definition": "A mathematical framework for quantifying privacy loss when analyzing datasets — ensures individual records cannot be inferred from aggregate outputs."
+    "definition": "Calibrated noise bounds any one record's effect on outputs. Lower epsilon (budget): stronger protection, less utility. Art. 25 safeguard, not anonymization by itself."
   },
   {
     "term": "Digital Omnibus on AI (Regulation 2026/1744)",
-    "definition": "EU regulation of 8 July 2026 amending the AI Act, in force 27 July 2026. It moves the high-risk dates to 2 December 2027 (Annex III) and 2 August 2028 (Annex I), softens the AI literacy duty, adds two Article 5 bans from 2 December 2026, creates Article 4a on bias-detection data, widens the AI Office's competence, pushes national sandboxes to 2 August 2027 and extends SME relief to small mid-caps."
+    "definition": "In force 27 Jul 2026. Annex III high-risk 2 Aug 2026 to 2 Dec 2027; Annex I 2 Aug 2027 to 2 Aug 2028. Two new Art. 5 bans; softer AI literacy; wider AI Office powers. Fine ceilings, tiers, GPAI dates unchanged."
   },
   {
     "term": "Disinformation",
-    "definition": "False or manipulated content that is created or spread deliberately to deceive or cause harm, such as a fabricated video of a candidate released to sway an election. Intent is what separates it from misinformation; NIST AI 600-1 notes that generative AI makes it cheaper to produce at scale and to target at specific groups."
+    "definition": "False content spread deliberately to deceive. vs. misinformation: the same falsehood shared in honest error. NIST AI 600-1 information integrity risk; generative AI makes both cheap at scale."
   },
   {
     "term": "Disparate Impact",
-    "definition": "Unintentional discrimination where an AI system's neutral policy disproportionately harms a protected group — still unlawful under civil rights laws even without intent."
+    "definition": "Neutral practice disproportionately harming a protected group; no intent. Title VII §703(k): disparity, business necessity, less discriminatory alternative. Gone from ECOA via Reg B (21 Jul 2026); alive under Title VII and FHA."
   },
   {
     "term": "Disparate Treatment",
-    "definition": "Intentional discrimination where an AI system explicitly treats individuals differently based on protected characteristics — prohibited under civil rights laws."
-  },
-  {
-    "term": "Documentation and Reporting",
-    "definition": "The systematic recording of AI lifecycle activities, decisions, risks, and incidents to establish compliance, traceability, and audit readiness."
+    "definition": "Intentional discrimination on a protected trait, deliberate proxies included (zip code for race). vs. disparate impact (no intent). The only theory Texas TRAIGA reaches."
   },
   {
     "term": "Domestic Representative (Korea AI Basic Act)",
-    "definition": "A Korea-based agent that a foreign AI business operator with no Korean address must appoint in writing, and report to MSIT, if it meets any one decree threshold. The thresholds are KRW 1 trillion prior-year revenue, KRW 10 billion AI-service revenue, 1 million average daily Korean users, or a prior fine for ignoring an order. The operator is liable for the agent's violations."
+    "definition": "Art. 36: foreign operator with no Korean address meeting any one: KRW 1 trillion revenue, KRW 10 billion AI revenue, 1 million daily Korean users, or a past fine for ignoring an MSIT order. vs. EU: every non-EU high-risk or GPAI provider."
   },
   {
     "term": "Downstream Harm",
-    "definition": "Negative consequences that ripple from an AI system's outputs to affect individuals, groups, or systems further along the value chain beyond the immediate deployment context."
+    "definition": "Consequences for people, communities or systems beyond direct users, not initially considered (a base-model flaw inherited by every app). BOK IV.C: forecast via stakeholder impact mapping, red teaming."
+  },
+  {
+    "term": "Downstream Modifier (GPAI)",
+    "definition": "Fine-tuning or modifying another firm's GPAI model makes you its provider only above one third of the original's training compute (Commission guidelines). Duties cover just the changes; a modified systemic-risk model stays systemic-risk."
   },
   {
     "term": "Dun & Bradstreet Austria Ruling (C-203/22)",
-    "definition": "CJEU judgment of 27 February 2025 on GDPR Article 15(1)(h): 'meaningful information about the logic involved' means a concise, intelligible explanation of the procedure and principles actually applied to the person's data. Handing over a formula is not enough. Claimed trade secrets must be given to the supervisory authority or court to balance."
+    "definition": "CJEU, 27 Feb 2025. Art. 15(1)(h): concise, intelligible account of the procedure and principles actually applied, not a formula. Claimed trade secrets: the DPA or court balances."
   },
   {
     "term": "Echo Chamber",
-    "definition": "A phenomenon where AI-driven content recommendation systems reinforce existing beliefs by limiting exposure to diverse perspectives, contributing to polarization."
+    "definition": "Engagement-optimized recommenders serve content confirming a user's views, narrowing exposure and feeding polarization. No single output is wrong; controls are system-level: impact assessment, aggregate monitoring, ranking transparency."
   },
   {
     "term": "EDPB Guidelines 03/2026 on Web Scraping",
-    "definition": "Draft EDPB guidelines, adopted 7 July 2026 for consultation until 30 October 2026, on scraping personal data to train generative AI. Consent is rarely workable; legitimate interest is the usual basis if necessity and balancing are met. Special-category data needs both an Article 6 basis and an Article 9(2) exception."
+    "definition": "Draft of 7 July 2026 on gen-AI training data. Consent most probably unworkable; legitimate interest via the Opinion 28/2024 test. Sensitive data: Art. 6 basis plus Art. 9(2) exception."
   },
   {
     "term": "EDPB Opinion 28/2024",
-    "definition": "EDPB opinion of 17 December 2024 on AI models under the GDPR. A model is anonymous only if extracting training subjects' data from it, directly or through queries, is insignificantly likely. Legitimate interest follows a three-step test (interest, necessity, balancing). Unlawful training can taint deployment unless the model was properly anonymised."
+    "definition": "17 Dec 2024. Model anonymous only if extracting training data, directly or by query, is insignificantly likely. Legitimate interest: interest, necessity, balancing. Unlawful training can taint deployment unless anonymized."
+  },
+  {
+    "term": "Emotion Recognition Ban (Art. 5(1)(f))",
+    "definition": "Bans inferring emotions from biometric data at work or in education (candidates included), except for medical or safety reasons. Elsewhere: high-risk (Annex III 1(c)) plus Art. 50(3) notice."
   },
   {
     "term": "Entry into Force (EU AI Act)",
-    "definition": "August 1, 2024 — the AI Act formally entered into force (published in the Official Journal July 12, 2024). Entry into force started the clock but imposed no immediate obligations."
+    "definition": "1 Aug 2024, 20th day after OJ publication (12 Jul 2024). Starts the clock, imposes no duties; Art. 113 staggers application. A regulation: no national transposition."
   },
   {
     "term": "Ethical Considerations",
-    "definition": "Moral principles and values that should guide AI development and deployment — includes fairness, dignity, autonomy, transparency, and prevention of harm."
+    "definition": "Value questions left after legal compliance: should we build it, who bears residual harm, are dignity and autonomy respected. Apply via external ethics audits, impact assessments, stakeholder engagement."
   },
   {
     "term": "Ethics by Design",
-    "definition": "Integrating ethical considerations at every stage of AI system development, from problem definition through deployment and monitoring."
+    "definition": "Turning values into concrete safeguards from problem framing onward: ethical impact assessments, affected-community input, fairness and explainability tools. A BOK I.C lifecycle oversight policy; early fixes cost far less."
   },
   {
     "term": "EU AI Act",
-    "definition": "Regulation (EU) 2024/1689 — the world's first comprehensive AI law establishing a risk-based regulatory framework. Effective August 2024, general application August 2026."
+    "definition": "Reg. (EU) 2024/1689, first comprehensive horizontal AI law. Risk tiers (Art. 5 bans; Annex I or III high-risk; Art. 50 transparency; minimal), duties by role, GPAI models apart (Arts. 51-56)."
+  },
+  {
+    "term": "EU AI Act Governance Bodies",
+    "definition": "EU level: AI Office (Commission; GPAI enforcer); AI Board (one rep per Member State; coordinates, advises, no enforcement); Advisory Forum (stakeholders); Scientific Panel (independent experts; GPAI alerts). EDPS: EU institutions. National: market surveillance and notifying authorities."
   },
   {
     "term": "EU AI Act Penalty Tiers",
-    "definition": "Prohibited AI practices: up to €35M or 7% of global annual turnover (whichever is higher). Non-compliance with high-risk obligations: up to €15M or 3%. Supplying incorrect or misleading information to authorities: up to €7.5M or 1%."
+    "definition": "Art. 99, higher of: prohibited practices €35M/7%; most other duties €15M/3%; misleading authorities €7.5M/1%. SMEs: lower figure (small mid-caps too, bar the 7% tier). GPAI: €15M/3% (Art. 101)."
+  },
+  {
+    "term": "EU Database Registration (Art. 49)",
+    "definition": "Before market placement, provider lists each Annex III high-risk system, and any it exempted under Art. 6(3), in the Commission's EU database. Public-authority deployers register their use; private ones do not."
   },
   {
     "term": "European AI Office",
-    "definition": "EU body housed within the European Commission that coordinates supervision of GPAI models with systemic risk, maintains the public database of high-risk AI systems, and issues guidance and best practices."
-  },
-  {
-    "term": "Executive Order 14110",
-    "definition": "US Executive Order on Safe, Secure, and Trustworthy AI (October 2023) that directed NIST to develop the Generative AI Profile (NIST AI 600-1) as a companion to the AI RMF. Revoked on 20 January 2025 by EO 14148; the NIST profile it produced remains published."
+    "definition": "Commission unit. Exclusive GPAI model enforcer (Art. 88); facilitates the GPAI Code. As amended, also exclusive for systems on the same provider's GPAI model (carve-outs) and AI in DSA very large platforms."
   },
   {
     "term": "Executive Order 14281",
-    "definition": "US executive order of 23 Apr 2025, 'Restoring Equality of Opportunity and Meritocracy', declaring a policy to eliminate disparate-impact liability to the maximum degree possible and directing federal agencies to deprioritise its enforcement. It cannot amend statutes: Title VII's §703(k) disparate-impact standard, the Fair Housing Act theory recognised in Inclusive Communities, and private lawsuits remain."
+    "definition": "Apr 2025: end disparate-impact liability as far as possible; agencies deprioritise it. Cannot amend statutes: Title VII §703(k), FHA claims and private suits survive."
+  },
+  {
+    "term": "Executive Order 14365",
+    "definition": "Dec 2025: DOJ task force to sue states, BEAD funding conditions, request to Congress for preemption. Preempts nothing itself; no federal moratorium (Senate struck one 99-1)."
   },
   {
     "term": "Expert System",
-    "definition": "An AI system that accumulates, combines, and integrates knowledge provided by one or more human experts in a specific domain to derive solutions to problems."
+    "definition": "ISO/IEC 22989: integrates knowledge from human domain specialists, usually hand-coded rules run by an inference engine. Symbolic: explainable by inspection, brittle outside its rules (vs. ML: learns from data)."
   },
   {
     "term": "Explainability",
-    "definition": "A property of an AI system that allows important factors influencing the results of the AI system to be expressed in a way that is understandable to humans. Intended to answer \"Why?\" without claiming optimality."
+    "definition": "ISO/IEC 22989: expressing, in terms humans understand, the important factors behind a result; answers 'why?'. Trap: NIST AI RMF says 'how' and gives 'why' to interpretability."
   },
   {
     "term": "Explainable and Interpretable",
-    "definition": "NIST trustworthiness characteristic: AI system's mechanisms and outputs can be understood by humans — explainability (can justify) + interpretability (can trace reasoning)."
-  },
-  {
-    "term": "Exploding Gradient",
-    "definition": "A phenomenon in backpropagation training in a neural network in which large error gradients accumulate and lead to very large updates of the weights, causing the model to become unstable."
+    "definition": "NIST trustworthiness characteristic, MEASURE 2.9. How: the mechanisms behind the system's operation. Why: an output's meaning in the context of its designed purpose. vs. transparency (what happened)."
   },
   {
     "term": "Exploratory Data Analysis (EDA)",
-    "definition": "Initial examination of the data to identify its salient features and assess its quality."
+    "definition": "ISO/IEC 22989: initial examination of a data set to find salient features and judge quality: missing values, outliers, representativeness. Evidence for AI Act Art. 10 data checks."
   },
   {
     "term": "External Communication Plan",
-    "definition": "A documented strategy for communicating about AI system incidents, capabilities, limitations, and changes to stakeholders including customers, regulators, and the public."
+    "definition": "Pre-approved audience-to-duty map: users, Art. 50 AI and deepfake notices (from 2 Aug 2026); people facing Annex III decisions, Art. 26(11) notice; regulators, Art. 73 serious-incident reports."
   },
   {
     "term": "F1 Score",
-    "definition": "The harmonic mean of precision and recall — a balanced metric combining both false positives and false negatives, preferred when class distributions are uneven."
+    "definition": "Harmonic mean of precision and recall. Beats accuracy on imbalanced data: at 1% fraud, always predicting 'legitimate' scores 99% accuracy yet catches nothing. Weighs both errors equally."
   },
   {
     "term": "Face Recognition",
-    "definition": "Automatic pattern recognition that compares stored images of human faces with an actual face image and displays any match with identifying data."
+    "definition": "Matches a face against stored images and returns identifying data (vs. detection: locating faces). Remote identification: Annex III high-risk (1:1 verification excluded); real-time public police use banned save exceptions (Art. 5(1)(h))."
   },
   {
     "term": "Fail-Safe Plan",
-    "definition": "A fallback decided in advance that kicks in if an AI system starts behaving anomalously or unsafely, or operates outside its set limits: for example halting safely, handing over to a backup system, or reverting to a manual process. The EU AI Act lists backup or fail-safe plans among the technical redundancy solutions that support the robustness of high-risk systems (Art. 15(4); Recital 75)."
+    "definition": "Pre-decided fallback when the system misbehaves or leaves its bounds: safe halt, backup system, manual process. AI Act Art. 15(4): a robustness measure, not Art. 14 oversight."
   },
   {
-    "term": "Fair Use",
-    "definition": "A legal doctrine permitting limited use of copyrighted material without permission for purposes such as criticism, comment, news reporting, teaching, scholarship, or research."
+    "term": "Fair Credit Reporting Act (FCRA)",
+    "definition": "Third-party algorithmic scores for credit, insurance or hiring can be consumer reports (1681a(d)): accuracy, disputes, adverse-action notices. vs. ECOA: data source here, discrimination there."
   },
   {
     "term": "Fair Use (AI Training)",
-    "definition": "How US courts apply the four fair use factors of 17 U.S.C. §107 to training AI on copyrighted works. Training was held fair use on the records in Bartz v. Anthropic and Kadrey v. Meta (June 2025) but not in Thomson Reuters v. Ross (Feb 2025, a competing non-generative tool). How the data was acquired and market harm, including market dilution, are decisive; no appellate ruling as of Sep 2026."
+    "definition": "US-only defence (§107); factors 1 (transformative) and 4 (market harm) decide. 2025: fair in Bartz (not pirated copies) and Kadrey; unfair in Ross (competing tool). No appellate ruling by Sep 2026."
   },
   {
     "term": "Fairness",
-    "definition": "A core principle of responsible AI: AI systems must not discriminate against individuals or groups based on race, gender, religion, ethnicity, disability, or socioeconomic status."
+    "definition": "Principle against unjustified differences in treatment or outcomes across people or groups. NIST AI RMF pairs it with 'harmful bias managed'. No single definition: perceptions vary by culture and application."
+  },
+  {
+    "term": "Fairness Impossibility Result",
+    "definition": "With unequal base rates, calibration and equal false-positive and false-negative rates cannot all hold, barring perfect prediction (Kleinberg et al.; Chouldechova, 2016). Response: disclose the trade-off and justify the metric chosen."
   },
   {
     "term": "Federated Learning",
-    "definition": "A training approach where models are trained across decentralized devices using local data, without transferring raw data to a central server — enhances privacy."
+    "definition": "Raw data stays on each device or site; only model updates are pooled. Updates can still leak (gradient inversion): add secure aggregation or differential privacy."
   },
   {
     "term": "Feedback Loop",
-    "definition": "A cycle where AI system outputs influence future inputs, potentially amplifying biases or errors over time — requires monitoring and circuit-breaking mechanisms."
+    "definition": "Outputs shape future inputs or training data (predicted hotspots get more patrols, so more recorded crime), amplifying bias. AI Act Art. 15(4): high-risk systems that keep learning must curb it."
   },
   {
     "term": "Feedforward Neural Network (FFNN)",
-    "definition": "Neural network in which information is directed from the input layer to the output layer in only one direction."
+    "definition": "Information moves one way, input to output (ISO/IEC 22989): no loops, no memory of earlier inputs. Baseline architecture; CNNs are one variant. vs. RNN: feeds outputs back."
   },
   {
     "term": "Fine-Tuning",
-    "definition": "The process of adapting a pre-trained AI model to a specific task or domain by additional training on targeted data — balances customization with resource efficiency."
-  },
-  {
-    "term": "Fit-for-Purpose",
-    "definition": "Assessment that data is appropriate and adequate for the specific AI use case — considering quality, quantity, representativeness, and relevance to the intended task."
+    "definition": "Retraining a pre-trained model: weights change (vs. RAG, prompting). You become provider if it substantially modifies high-risk AI (Art. 25(1)(b)) or, for GPAI, uses over a third of original training compute."
   },
   {
     "term": "Foundation Model",
-    "definition": "A large model pretrained on very large, diverse data, usually by self-supervision, that can be adapted through prompting, fine-tuning or RAG to many downstream tasks; LLMs and large image generators are examples. The EU AI Act's legal term for the concept is general-purpose AI model (Art. 3(63)), and IAPP also lists frontier AI as an alternative name."
+    "definition": "Pretrained on broad data, adapted (prompting, fine-tuning, RAG) to many tasks; its flaws reach every app built on it. AI Act never uses the phrase: GPAI model (Art. 3(63))."
   },
   {
-    "term": "General AI (GAI)",
-    "definition": "A type of AI system that performs a broad spectrum of tasks at a satisfactory level of performance. Note: AGI is often used in a broader sense — systems that can perform all tasks a human is capable of."
+    "term": "Four-Fifths Rule",
+    "definition": "29 CFR 1607.4(D): a selection rate below 80% of the top group's rate signals adverse impact (36/50 = 0.72). Screening flag, not proof. Not in NYC LL 144."
+  },
+  {
+    "term": "FTC Rite Aid Order (2023)",
+    "definition": "Dec 2023 unfairness order: in-store facial recognition with no accuracy testing, false-positive monitoring or staff training; false matches hit women and people of color. Five-year ban."
+  },
+  {
+    "term": "Fundamental Rights Impact Assessment (FRIA)",
+    "definition": "AI Act Art. 27. Deployer's Charter-rights check before first use of an Annex III system (not critical infrastructure). Owed by public bodies, private providers of public services, credit-scoring and life/health insurance deployers. Results to market surveillance authority."
+  },
+  {
+    "term": "GAI Risks (NIST AI 600-1)",
+    "definition": "Twelve that generative models create or worsen: CBRN information; confabulation; dangerous, violent or hateful content; data privacy; environmental impacts; harmful bias or homogenization; human-AI configuration; information integrity; information security; intellectual property; obscene, degrading or abusive content; value chain and component integration."
   },
   {
     "term": "General Data Protection Regulation (GDPR)",
-    "definition": "EU Regulation 2016/679 — comprehensive data protection framework governing processing of personal data, with significant implications for AI systems processing EU residents' data."
+    "definition": "Reg. 2016/679, alongside the AI Act. Art. 3 reaches non-EU firms offering goods or services to, or monitoring, people in the EU. Top fines: EUR 20M or 4% global turnover, whichever higher."
   },
   {
     "term": "General-Purpose AI (GPAI)",
-    "definition": "EU AI Act category: AI models with significant generality, capable of performing a wide range of tasks. Those posing systemic risk face additional obligations."
+    "definition": "Art. 3(63): model of significant generality, competent at many distinct tasks; indicatively over 10^23 training FLOP. Providers owe Art. 53; systemic-risk models add Art. 55."
   },
   {
     "term": "Generative AI",
-    "definition": "AI systems that create new content — text, images, code, audio, video — based on patterns learned from training data. A subset of AI exemplified by LLMs and diffusion models."
+    "definition": "Creates new content (text, images, audio, code) by sampling learned patterns: LLMs, diffusion models. vs. discriminative models (inputs to labels). NIST AI 600-1 profiles its 12 risks."
   },
   {
     "term": "Generative AI Labeling (Korea)",
-    "definition": "The Art. 31(2)-(3) duties to indicate that generative AI outputs are AI-generated, and to flag realistic synthetic audio, images or video clearly. The label may be human-recognizable or machine-readable; a machine-readable mark needs at least one text or voice notice as well. Artistic works may use a less intrusive notice."
+    "definition": "Art. 31(2)-(3): mark generative output (visible, or machine-readable plus one text or voice notice); clearly flag realistic synthetic media. Not directly finable: MSIT order first."
   },
   {
     "term": "Generative AI Profile (NIST AI 600-1)",
-    "definition": "Cross-sectoral NIST AI RMF profile for generative AI (July 2024), developed under Executive Order 14110. Defines 12 GAI-specific risks and suggests actions organized by the Govern, Map, Measure, Manage functions."
+    "definition": "July 2024 cross-sectoral AI RMF companion: same four functions, 12 risks. Primary considerations: governance, pre-deployment testing, content provenance, incident disclosure. Ordered by EO 14110 (revoked Jan 2025; still published)."
   },
   {
     "term": "Govern Function",
-    "definition": "NIST AI RMF function: establishing organizational culture of risk management — policies, accountability structures, workforce diversity, and third-party oversight."
+    "definition": "Cross-cutting AI RMF function, infused through Map, Measure, Manage; usually set up first. Categories: policies (inventory 1.6, decommissioning 1.7), accountability (executives 2.3), workforce diversity, risk culture, stakeholder engagement, third-party risk."
+  },
+  {
+    "term": "GPAI Code of Practice (Art. 56)",
+    "definition": "Voluntary (10 Jul 2025). Transparency and Copyright chapters: all signatories; Safety & Security: systemic-risk only. Demonstrates Arts. 53/55 compliance, can mitigate fines; no presumption of conformity."
+  },
+  {
+    "term": "GPAI Model vs. GPAI System",
+    "definition": "Trained artifact (Art. 3(63)); its provider owes Arts. 53-55. vs. AI system built on one (Art. 3(66)), regulated by use: Art. 50; high-risk if repurposed (Art. 25(1)(c))."
+  },
+  {
+    "term": "GPAI Model with Systemic Risk (Art. 51)",
+    "definition": "Two routes: high-impact capabilities (presumed above 10^25 training FLOP) or Commission designation on Annex XIII criteria (reach presumed at 10,000 registered EU business users). Adds Art. 55 duties."
   },
   {
     "term": "GPAI Transitional Period",
-    "definition": "GPAI models placed on the market before August 2, 2025 have until August 2, 2027 to reach full compliance with the EU AI Act's GPAI obligations."
+    "definition": "Art. 111(3): models on the market before 2 Aug 2025 must comply by 2 Aug 2027. vs. Art. 111(2): legacy high-risk systems, caught on significant design change."
   },
   {
     "term": "Ground Truth",
-    "definition": "Value of the target variable for a specific element of the labeled input data."
+    "definition": "Target value of a labelled example (ISO/IEC 22989), used to train and score the model. Need not match reality: labels from biased past decisions carry the bias."
+  },
+  {
+    "term": "Group Fairness Metrics",
+    "definition": "Demographic parity: equal selection rates. Equal opportunity: equal true-positive rates. Equalized odds: equal true- and false-positive rates. Calibration: a score means the same in every group. Choose per context, document why (NIST MEASURE 2.11)."
   },
   {
     "term": "Hallucination",
-    "definition": "A phenomenon where an AI model generates plausible-sounding but factually incorrect or fabricated information — a significant risk in LLM deployment."
+    "definition": "Everyday term for a generative model's fluent, confident falsehoods (fake citations); NIST AI 600-1: confabulation. Built into next-token prediction. Controls: RAG grounding, human verification, user training."
   },
   {
     "term": "Heteronomy",
-    "definition": "A characteristic of a system that functions under the constraint of external intervention, measures, or supervision."
+    "definition": "ISO/IEC 22989: functions under external intervention, measures or supervision. Spans no automation through full automation; only autonomy (changing its own objective or domain of use) lies outside."
   },
   {
     "term": "High-Impact AI (Korea)",
-    "definition": "Under Korea's AI Basic Act (Art. 2(4)), an AI system that could significantly affect or endanger life, physical safety or fundamental rights and is used in a listed domain. The domains are energy, drinking water, health care, medical devices, nuclear, biometric analysis for policing, hiring or lending-type judgments, transport, public-sector decisions and K-12 student assessment; the decree can add more."
+    "definition": "Art. 2(4): listed domain AND significant risk to life, safety or rights. Energy, drinking water, health care, medical devices, nuclear, police biometrics, hiring and loan screening, transport, public decisions, K-12 assessment. MSIT confirms on request within 30 days."
   },
   {
     "term": "High-Performance AI (Korea)",
-    "definition": "Commentators' label for AI systems subject to Korea's Art. 32 safety duties: trained with at least 10^26 FLOPs, built on state-of-the-art technology, and posing wide-ranging, significant risks. Their operators must manage lifecycle risks, monitor and respond to safety incidents, and report the results to MSIT."
+    "definition": "Art. 32, all three: at least 10^26 training FLOPs, state of the art, wide-ranging significant risk. Lifecycle risk management, incident response, results to MSIT. vs. EU systemic-risk GPAI: 10^25."
+  },
+  {
+    "term": "High-Risk Derogation (Art. 6(3))",
+    "definition": "Annex III system escapes high-risk if no significant risk and one condition is met: narrow procedural task; improving finished human work; flagging deviations from past decision patterns without replacing human review; preparatory task. Profiling: never. Document it; still register."
+  },
+  {
+    "term": "High-Risk System Requirements (Arts. 9-15)",
+    "definition": "Chapter III Section 2 design duties: risk management (9), data governance (10), technical documentation (11), logging (12), instructions for use (13), human oversight (14), accuracy, robustness, cybersecurity (15). QMS, CE marking, registration: Art. 16 instead."
   },
   {
     "term": "Hiroshima AI Process Reporting Framework",
-    "definition": "Voluntary reporting framework launched by the OECD in February 2025, through which organizations report in a common format on how they align with the G7 Hiroshima Process International Code of Conduct for Organisations Developing Advanced AI Systems. Reports are published on OECD.AI; the first round had 25, and version 2.0 widens participation to organizations deploying and providing advanced AI."
+    "definition": "OECD-run since Feb 2025: voluntary, common-format disclosure of how organizations follow the G7's 2023 advanced-AI Code of Conduct. No legal effect (vs. EU GPAI Code of Practice)."
   },
   {
     "term": "Human Approval Checkpoint",
-    "definition": "A predefined point in an agent's workflow where a human must approve before it proceeds, typically for high-stakes actions, irreversible ones (payments, permanent deletions, outgoing messages), atypical behaviour, or user-set thresholds. Best enforced at system level and audited for rubber-stamping."
+    "definition": "Point where an agent must stop for a human decision. IMDA triggers: high-stakes, irreversible, atypical, user-defined. Enforce at system level, not in the prompt; audit for rubber-stamping."
   },
   {
     "term": "Human Authorship Requirement",
-    "definition": "The US rule that copyright protects only works authored in the first instance by a human being. Upheld in Thaler v. Perlmutter (D.C. Cir., 18 Mar 2025; cert. denied 2 Mar 2026). AI-assisted works remain protectable to the extent of the human's expressive contribution, selection or arrangement; prompts alone are not enough (Copyright Office Part 2, Jan 2025)."
+    "definition": "Only works a person creates get US copyright: Thaler v. Perlmutter (cert. denied Mar 2026). Prompts alone fail; human selection, arrangement or edits are protectable."
   },
   {
     "term": "Human in the Loop",
-    "definition": "A safeguard where a human reviews, overrides, or validates AI decisions in high-stakes scenarios, maintaining accountability in consequential decision-making."
+    "definition": "A person approves each decision before it takes effect; for high-stakes, lower-volume cases. vs. on-the-loop (system acts first). Rubber-stamp review leaves it 'solely automated' (GDPR Art. 22)."
   },
   {
     "term": "Human Oversight",
-    "definition": "EU AI Act requirement that high-risk AI systems be designed to allow natural persons to oversee their operation, intervene when necessary, and override automated decisions."
+    "definition": "EU AI Act Art. 14: high-risk systems built so assigned people can understand limits, stay aware of automation bias, interpret, override and stop them. Deployers assign competent, trained, authorized people (Art. 26(2))."
   },
   {
     "term": "Human-Centricity",
-    "definition": "A principle of responsible AI: AI systems should be designed with human well-being and dignity in mind, augmenting rather than replacing human capabilities."
+    "definition": "BOK I.A principle: AI augments people's capabilities, serving well-being and dignity, rather than replacing or diminishing them. In practice: human oversight (AI Act Art. 14), contestability, impact assessment."
   },
   {
     "term": "Human-Machine Teaming",
-    "definition": "Integration of human interaction and machine intelligence."
+    "definition": "ISO/IEC 22989: human interaction and machine intelligence integrated in one shared task (vs. on-the-loop fallback or after-the-fact sampling). Test: information, authority and time to overrule."
+  },
+  {
+    "term": "Human-on-the-Loop (HOTL)",
+    "definition": "System acts first; a human monitors and can override or halt it (fraud blocks reviewed each morning). vs. in-the-loop (approves each decision first); in-command (decides whether it runs)."
   },
   {
     "term": "Hyperparameter",
-    "definition": "A feature of a machine learning algorithm that influences its learning process. Selected **prior** to training."
+    "definition": "Set before training to shape how the algorithm learns (learning rate, layer count, k in k-means). vs. parameters: weights learned in training. Record it for reproducibility and audit."
+  },
+  {
+    "term": "Illinois AI Video Interview Act",
+    "definition": "Since 2020: before AI analyzes recorded interviews for Illinois jobs, notify, explain, get consent; delete within 30 days of request. AI-only selection: annual race and ethnicity reports."
   },
   {
     "term": "Illinois HB 3773",
-    "definition": "Public Act 103-0804, amending the Illinois Human Rights Act from 1 Jan 2026. Employers may not use AI that has the effect of discriminating on a protected basis in recruitment, hiring, promotion, discipline, discharge or terms of employment. They may not use zip codes as a proxy for protected classes, and must notify employees when AI is used for these decisions. This is an effect standard, unlike Texas's intent standard."
+    "definition": "From 1 Jan 2026: employer AI with a discriminatory effect, or zip-code proxies, violates the Human Rights Act; notify workers. Effect standard vs. Texas's intent."
   },
   {
-    "term": "Image Recognition",
-    "definition": "An image classification process that classifies objects, patterns, or concepts in an image."
+    "term": "Illinois SB 315 (AI Safety Measures Act)",
+    "definition": "Frontier law from 1 Jan 2027, SB 53 thresholds. Only US frontier law mandating an annual independent third-party audit (from 2028). Incidents within 72 hours; AG: $1M/$3M."
   },
   {
     "term": "Impact Assessment",
-    "definition": "A systematic evaluation of potential harms, benefits, compliance gaps, and ethical issues an AI system may create — required for high-risk systems under the EU AI Act."
+    "definition": "Match the instrument: DPIA (GDPR Art. 35; controllers, likely high-risk personal-data processing); FRIA (AI Act Art. 27; certain deployers of Annex III systems); ISO/IEC 42005 (voluntary guidance that feeds both, replaces neither)."
   },
   {
-    "term": "Impact Reassessment Trigger",
-    "definition": "An event that should prompt an organization to revisit an existing AI system impact assessment: a change in intended use or purpose, a significant change to the system (new data, a retrained or replaced model), or a change in applicable law or policy. ISO/IEC 42001 clause 8.4 also calls for assessments at planned intervals or when significant changes are proposed."
+    "term": "Impact Assessment Contents (ISO/IEC 42005 Clause 6)",
+    "definition": "What one record holds: scope; system purpose, intended and unintended uses; data and its quality; algorithms, models; deployment environment (geography, languages); affected parties; benefits and harms incl. failures, misuse; measures. vs. Clause 5: the process."
   },
   {
     "term": "Imputation",
-    "definition": "A procedure in which missing data are replaced by estimated or modeled data."
+    "definition": "Replacing missing values with estimates (vs. dropping incomplete records). If gaps cluster in one group, e.g. low earners, a median fill misstates that group and hides the bias."
   },
   {
     "term": "Incident Management",
-    "definition": "The process of detecting, containing, assessing, remediating, and documenting events where AI systems deviate from intended behavior or cause harm."
+    "definition": "AI twist: unexpected behaviour causing or risking harm, often with no bug (drift, bias, misaligned objective). Serious incidents: provider reports (Art. 73); deployer informs provider first (Art. 26(5))."
   },
   {
-    "term": "Inference",
-    "definition": "A form of reasoning in which conclusions are derived from known premises. In AI, a basic premise is either a fact, a rule, a model, a feature, or raw data."
-  },
-  {
-    "term": "Input Data",
-    "definition": "Data for which an AI system calculates a predicted result or inference."
+    "term": "Instructions for Use (Art. 13)",
+    "definition": "Provider's information pack for high-risk deployers: intended purpose, accuracy metrics, known risks and limits, group performance, oversight measures. vs. Annex IV technical documentation, kept for authorities."
   },
   {
     "term": "Integration Testing",
-    "definition": "Validating that all components of an AI system work together correctly — data flows, API calls, model inference, and downstream system interactions."
+    "definition": "Tests components working together (ingestion, inference, storage, downstream apps), failure paths included. Exam scenario: model tests clean, assembled system misbehaves. vs. unit testing (component alone)."
   },
   {
     "term": "Intellectual Property",
-    "definition": "Legal rights protecting creations of the mind — copyright, patents, trademarks, trade secrets — increasingly challenged by AI training on protected content."
+    "definition": "Copyright, patents, trade secrets, trademarks, EU database rights. AI triage by stage: input (fair use or TDM), model (do weights hold copies?), output (similarity plus access; human authorship). Territorial: jurisdiction first."
+  },
+  {
+    "term": "Intended Purpose (Art. 3(12))",
+    "definition": "Use the provider intends, with context and conditions, per its instructions, marketing and technical documentation. Sets the risk tier; mitigations do not. vs. reasonably foreseeable misuse (Art. 3(13))."
   },
   {
     "term": "Interpretability",
-    "definition": "The ability to understand the relationships between patterns in data used by an AI system. Related to explainability but focused on internal mechanics."
-  },
-  {
-    "term": "Interpretability Testing",
-    "definition": "Assessing whether AI system decisions can be understood and explained in human terms — critical for high-stakes domains like healthcare and finance."
-  },
-  {
-    "term": "ISO 31000:2018",
-    "definition": "The generic risk management standard that ISO/IEC 23894 mirrors clause-by-clause and extends with AI-specific guidance — principles (Clause 4), framework (Clause 5), and process (Clause 6). ISO 23894 extends it; it does not replace it."
+    "definition": "How far a person can understand how a model reaches outputs: high for decision trees, low for deep networks. NIST: answers 'why'. High stakes: prefer glass-box models over post-hoc explanation."
   },
   {
     "term": "ISO/IEC 22989",
-    "definition": "International standard establishing terminology and definitions for AI systems, capabilities, and lifecycle stages — foundational reference for all other ISO AI standards."
+    "definition": "2022 AI concepts and terminology standard: defines, requires nothing, not certifiable. BOK v2.1 core trio with 42001 (certifiable management system) and 42005 (impact assessment guidance)."
+  },
+  {
+    "term": "ISO/IEC 23894",
+    "definition": "Feb 2023 AI risk management guidance, not certifiable; extends ISO 31000 clause by clause. Informative Annex B: AI risk sources. Organizational risk vs. 42005's impacts on people."
   },
   {
     "term": "ISO/IEC 42001",
-    "definition": "The first AI-specific management system standard organizations can certify against (like ISO 27001 for security). Specifies requirements for an AI Management System (AIMS)."
+    "definition": "Dec 2023: first certifiable AI management system standard; AI's counterpart to ISO/IEC 27001. Certifies the organization's AIMS, not a model. Planning: risk assessment (6.1.2), treatment (6.1.3), impact assessment (6.1.4)."
+  },
+  {
+    "term": "ISO/IEC 42001 Annex A Controls",
+    "definition": "Normative: 38 controls in 9 areas (A.2-A.10): policies; internal organization; resources; impact assessment; life cycle; data; information for interested parties; use of AI; third-party and customer relationships. Exclusions justified in the statement of applicability."
   },
   {
     "term": "ISO/IEC 42005",
-    "definition": "International standard (first edition, 28 May 2025) giving guidance on AI system impact assessment: how to set up the process (Clause 5), what each assessment records (Clause 6), and how it fits with ISO/IEC 42001 and 23894 (Annexes A and B). Voluntary guidance for any organization that develops, provides or uses AI; not certifiable."
+    "definition": "May 2025 impact-assessment guidance, never certified, for AI developers, providers and users. Benefits and harms to individuals, groups, society (vs. 23894: organizational risk). 42001 requires it; this explains how."
   },
   {
     "term": "ISO/IEC 42006",
-    "definition": "ISO/IEC 42006:2025 (published 7 July 2025): requirements, additional to ISO/IEC 17021-1, for bodies that audit and certify AI management systems against ISO/IEC 42001. It governs the certifiers, not the organizations being certified."
+    "definition": "July 2025. Requirements, on top of ISO/IEC 17021-1, for bodies that audit and certify an AIMS against 42001. Binds the certifier, not the certified organization."
   },
   {
     "term": "Issue Management",
-    "definition": "The systematic process of identifying, tracking, prioritizing, and resolving problems with deployed AI systems — bridging incidents to long-term remediation."
+    "definition": "Standing problems (recurring misclassification, fairness gap) tracked to a lasting fix; vs. incidents, discrete events. AI triage: service interruption, ethical violation, user harm. BOK IV.C policy area."
   },
   {
-    "term": "Knowledge",
-    "definition": "*\\<Artificial Intelligence>* Abstracted information about objects, events, concepts, or rules, their relationships, and properties, organized for purposeful systematic use. Does **not** imply cognitive abilities."
+    "term": "Jailbreak",
+    "definition": "Crafted prompts ('Do Anything Now' role-play) that make a model ignore its safety training; direct prompt injection (OWASP LLM01). vs. indirect injection hidden in content it reads."
   },
   {
     "term": "Korea AI Basic Act Enforcement Decree",
-    "definition": "Presidential Decree No. 36053 (21 Jan 2026), in force with the Act on 22 Jan 2026. It fills in the Act's thresholds and procedures, including the 10^26 FLOP safety test, the domestic-representative thresholds, labeling methods, the 30-day high-impact confirmation process and five-year document retention."
+    "definition": "Presidential Decree No. 36053, in force with the Act (22 Jan 2026). Holds the numbers: 10^26 FLOPs, representative thresholds, 30-day confirmation, 5-year records, fine amounts."
+  },
+  {
+    "term": "Korea AI Basic Act Fines (Art. 43)",
+    "definition": "Flat KRW 30 million cap, no turnover percentage, for three failures only: no advance notice of high-impact or generative AI, no required domestic representative, ignoring an MSIT order. Grace period: MSIT policy only."
   },
   {
     "term": "Language vs. Multimodal Models",
-    "definition": "A model-type choice in deployment evaluation: language models process and generate text only, while multimodal models handle combinations of text, images, audio, or video. Multimodality expands use cases and also expands the risk surface — each added modality brings its own failure modes, biases, and content risks."
+    "definition": "Text-only vs. text plus images, audio or video; each modality adds misuse modes. Art. 50 (2 Aug 2026): marking (50(2)), deepfake labels (50(4)), emotion or biometric-categorisation notice (50(3))."
   },
   {
     "term": "Large Frontier Developer",
-    "definition": "Under California SB 53, New York's RAISE Act and Illinois SB 315: a developer that has trained or begun training a frontier model (more than 10^26 operations) and that, with its affiliates, had more than $500 million in gross revenue in the preceding calendar year. Large frontier developers carry the heaviest duties: a published frontier AI framework, regulator filings and, in Illinois from 2028, annual independent audits."
+    "definition": "Both limbs: a model trained above 10^26 operations, plus over $500M prior-year revenue with affiliates. Same test in SB 53, RAISE, SB 315. Adds a published frontier AI framework."
   },
   {
     "term": "Large Language Model (LLM)",
-    "definition": "A type of AI model trained on vast text corpora, capable of understanding and generating human-like text. Examples: GPT-4, Claude, Gemini."
+    "definition": "Transformer trained on massive text to predict the next token. Risks: confabulation, data leakage, prompt injection, bias. AI Act: usually a GPAI model; systemic risk presumed above 10^25 training FLOP (Art. 51(2))."
+  },
+  {
+    "term": "Lawful Basis (GDPR Art. 6)",
+    "definition": "Six, no hierarchy: consent, contract, legal obligation, vital interests, public task, legitimate interests. AI training usually relies on legitimate interests (Opinion 28/2024 test); sensitive data also needs an Art. 9(2) exception."
   },
   {
     "term": "Least-Privilege Agent Permissions",
-    "definition": "Granting each agent only the minimum tools, data and rights its task needs: scoped, time- or session-bound and non-transferable, with explicit escalation for anything more, and never beyond what the authorising human may do. A core control for bounding agent risk up front, enforced by access controls rather than prompts."
-  },
-  {
-    "term": "Life Cycle",
-    "definition": "The development of a system, product, service, project, or other human-made entity from planning through to decommissioning."
+    "definition": "Only the tools and access the task needs: scoped, time-bound, never beyond the authorising human's rights. Enforce by access control, not prompt. Excess privilege: OWASP ASI03."
   },
   {
     "term": "Limited Memory AI",
-    "definition": "AI systems that retain information for short periods and use past experiences to improve decisions. Example: autonomous vehicles processing recent traffic data."
+    "definition": "Briefly holds recent observations to inform current decisions (self-driving car tracking nearby traffic). Rung above reactive machines; stored state complicates reproduction and audit."
   },
   {
     "term": "Localization Policy",
-    "definition": "Procedures for restricting an AI system's operation to specific geographic regions, jurisdictions, or contexts — often required by data residency or regulatory mandates."
+    "definition": "Deactivation's BOK IV.C partner: confine or adapt a system per jurisdiction instead of withdrawing it everywhere (not translation). Levers: regional instances, federated learning, feature flags."
   },
   {
     "term": "Long Short-Term Memory (LSTM)",
-    "definition": "A type of recurrent neural network that processes sequential data with satisfactory performance for both long- and short-term dependencies."
+    "definition": "Gated recurrent network that captures dependencies across both distant and recent sequence steps, fixing the plain RNN's vanishing gradients. Pre-transformer standard for speech and language."
   },
   {
     "term": "Machine Learning (ML)",
-    "definition": "The process of optimizing model parameters using computer-aided methods so that the behavior of the model corresponds to the data or experience."
-  },
-  {
-    "term": "Machine Learning Algorithm",
-    "definition": "Algorithm for determining parameters of a machine learning model from data according to specified criteria."
-  },
-  {
-    "term": "Machine Learning Model",
-    "definition": "A mathematical construct that makes an inference or a prediction based on input data or information. Result of training based on a ML algorithm."
-  },
-  {
-    "term": "Machine Translation (MT)",
-    "definition": "Task of automatically translating text or speech from one natural language into another using a computer system."
-  },
-  {
-    "term": "Machine-Readable Opt-Out (TDM)",
-    "definition": "A rightsholder's express reservation of rights against Article 4 text and data mining. For content made publicly available online, the DSM Directive requires the reservation to be machine-readable, for example in metadata or website terms. GPAI providers must identify and honour these reservations with state-of-the-art technologies under AI Act Art. 53(1)(c)."
-  },
-  {
-    "term": "Maintenance Schedule",
-    "definition": "A planned cadence for AI system updates, retraining, and maintenance — frequency determined by risk level, data volatility, and regulatory requirements."
+    "definition": "Derives behavior from data, not explicitly programmed rules (ISO/IEC 22989: optimizing parameters so behavior fits data or experience). Subset of AI; deep learning sits inside it."
   },
   {
     "term": "Manage Function",
-    "definition": "NIST AI RMF function: allocating risk resources to mapped and measured risks — prioritizing, responding to, and recovering from AI incidents, plus ongoing monitoring."
+    "definition": "AI RMF function allocating resources to mapped and measured risks: go/no-go (1.1); mitigate, transfer, avoid or accept (1.3); document residual risk for downstream acquirers (1.4); deactivate systems inconsistent with intended use (2.4); communicate incidents (4.3)."
   },
   {
     "term": "Manufacturing Defect",
-    "definition": "A product liability claim where a product deviates from its intended design during production — AI systems with deployment errors or corrupted models."
+    "definition": "Product-liability theory: this unit departed from its intended design (corrupted weights, wrong model version shipped). vs. design defect (e.g. unrepresentative training data) and failure to warn."
   },
   {
     "term": "Map Function",
-    "definition": "NIST AI RMF function: establishing context to frame AI risks — understanding system purpose, categorization, benefits/costs, and mapping risks to impact on individuals and society."
+    "definition": "AI RMF function setting one system's context: intended purpose, laws and norms, risk tolerance (1.5), categorization and knowledge limits, benefits and costs, third-party components, impact likelihood and magnitude (5.1). Feeds Measure and Manage."
   },
   {
     "term": "Market Surveillance Powers",
-    "definition": "EU AI Act inspection powers: require access to technical documentation, perform unannounced inspections and digital audits, mandate corrective actions, suspend or prohibit marketing, and require withdrawal or recall of non-compliant systems."
+    "definition": "Arts. 74-79 product-safety toolkit: demand documentation, inspect unannounced, order corrective action, restrict or prohibit marketing, withdraw or recall. Graded: fix first, recall last. Public enforcement only."
   },
   {
     "term": "Measure Function",
-    "definition": "NIST AI RMF function: employing quantitative and qualitative methods to analyze and track AI risks — testing, evaluation, verification, and validation (TEVV)."
+    "definition": "AI RMF function: TEVV, quantitative or qualitative, on the risks Map found. 2.5-2.11 test the seven trustworthiness characteristics (2.11 fairness); 2.12 environment; 2.13 TEVV itself. Document the unmeasurable (1.1); independent assessors (1.3)."
   },
   {
     "term": "Membership Inference Attack",
-    "definition": "A privacy attack that determines whether a specific individual's record was part of a model's training set. A key AI-specific threat that existing privacy policies typically fail to address."
+    "definition": "Queries reveal whether a person's record was in the training set; inclusion alone can be sensitive (cancer-patient model). vs. inversion: rebuilds the data. Defence: differential privacy."
   },
   {
     "term": "Misalignment",
-    "definition": "A risk where an AI system's behavior, benign in testing, leads to unintended harmful consequences when deployed — often due to poorly specified objectives."
-  },
-  {
-    "term": "Misinformation",
-    "definition": "False or misleading content shared without intent to deceive, such as a user reposting a chatbot's invented statistic in the belief that it is true. The falsehood can be identical to disinformation; the difference is the absence of intent. NIST AI 600-1 flags generative AI as easing its unintentional production and spread."
+    "definition": "System hits its specified objective or proxy metric in ways nobody intended (a watch-time optimizer surfacing extreme content). Named BOK I.A risk. Nothing malfunctions; redesign the objective."
   },
   {
     "term": "MITRE ATLAS",
-    "definition": "Adversarial Threat Landscape for Artificial-Intelligence Systems — a knowledge base of adversary tactics and techniques specific to AI systems, modeled after MITRE ATT&CK."
-  },
-  {
-    "term": "Model",
-    "definition": "A physical, mathematical, or other logical representation of a system, an entity, a phenomenon, a process, or data."
+    "definition": "ATT&CK-style knowledge base of real attacks on AI (AML.T techniques, case studies). AI-only tactics: AI Model Access, AI Attack Staging (formerly 'ML'). Threat-modeling input, not controls."
   },
   {
     "term": "Model Card",
-    "definition": "A short document released with a trained model that states its intended and out-of-scope uses, how it was evaluated, how it performs across relevant groups and conditions, and its known limitations (format proposed by Mitchell et al., 2019). BOK III.C lists creating the model card as part of release readiness; a system card covers the whole deployed system and a datasheet covers the dataset."
+    "definition": "Mitchell et al. (2019). Ships with a trained model: intended and out-of-scope uses, evaluation metrics, performance by group, limitations. BOK III.C release-readiness item. vs. data sheet (dataset), system card (system)."
+  },
+  {
+    "term": "Model Extraction Attack",
+    "definition": "Mass API queries to build a functionally equivalent copy: steals the asset, enables white-box attacks. vs. inversion (rebuilds training data). Controls: rate limits, query monitoring."
   },
   {
     "term": "Model Inversion Attack",
-    "definition": "A privacy attack that reconstructs sensitive training data from a model's outputs or parameters. AI-era privacy and security policies must add controls for this threat — traditional policies assume data minimization applies only to storage, not to what a trained model retains."
+    "definition": "Probing a model to reconstruct its training data (a face from a face-recognition model). vs. membership inference: only confirms a record was used. Defences: hide confidence scores, differential privacy."
+  },
+  {
+    "term": "Model Weights as Copies (Getty vs. GEMA)",
+    "definition": "Do trained weights contain the works? UK (Nov 2025): no; weights that never stored them are not an 'infringing copy'. Munich (Nov 2025): yes; memorised lyrics are reproductions in the model, outside TDM. Both on appeal."
   },
   {
     "term": "Multi-Agent System",
-    "definition": "A system in which several agents cooperate, for example in sequential, supervisor or swarm patterns. Splitting work lets each agent be scoped narrowly, but interaction adds risks: cascading errors, miscoordination, conflicting goals, collusion, emergent behaviour, and sensitive data leaking through shared memory."
-  },
-  {
-    "term": "Named Entity Recognition (NER)",
-    "definition": "Task of recognizing and labeling the names of entities and their categories for sequences of words."
+    "definition": "Cooperating agents (IMDA patterns: sequential, supervisor, swarm). Interaction risks: cascading failures (OWASP ASI08), insecure inter-agent messages (ASI07), shared-memory leaks, collusion. Test the whole, including a compromised agent."
   },
   {
     "term": "Narrow AI (Weak AI)",
-    "definition": "A type of AI system designed to perform specific tasks in order to solve a particular problem."
+    "definition": "Built for a specific task; every deployed system, LLMs included, however broad its use. vs. AGI (human-level) and ASI (beyond the best humans), both theoretical."
   },
   {
     "term": "National Competent Authorities (EU AI Act)",
-    "definition": "One or more authorities per member state responsible for market surveillance, handling complaints, investigating breaches, and imposing penalties within their jurisdiction."
-  },
-  {
-    "term": "Natural Language",
-    "definition": "A language that is or was actively used in a community of people and whose rules can be derived from usage."
-  },
-  {
-    "term": "Natural Language Generation (NLG)",
-    "definition": "Task of converting semantic data into natural language."
+    "definition": "Art. 70: each Member State names at least one notifying authority (oversees notified bodies) and one market surveillance authority (polices AI not reserved to the AI Office), by 2 Aug 2025."
   },
   {
     "term": "Natural Language Processing (NLP)",
-    "definition": "AI systems that understand, interpret, and generate human language by combining linguistics and machine learning. Example: ChatGPT."
-  },
-  {
-    "term": "Natural Language Understanding (NLU)",
-    "definition": "Extraction of information from text or speech conveyed in natural language, creating a description of the given text/speech and its representation."
+    "definition": "Systems that understand, interpret and generate human language (translation, chatbots, LLMs). ISO/IEC 22989: built on understanding (NLU) or generation (NLG). Text carries personal data and prompt injection."
   },
   {
     "term": "Neural Network (NN)",
-    "definition": "*\\<Artificial Intelligence>* A network consisting of one or more layers of neurons connected by weighted links with adjustable weights, which accepts input data and generates an output."
+    "definition": "ISO/IEC 22989: layers of neurons joined by weighted links with adjustable weights, turning input data into output. Brain-inspired; many hidden layers make it deep learning."
   },
   {
-    "term": "Neuron",
-    "definition": "*\\<Artificial Intelligence>* A primitive processing element that accepts one or more input values and generates an output value by combining the input values and applying an activation function."
+    "term": "NIST AI Bias Categories",
+    "definition": "AI RMF 3.7, from SP 1270. Systemic: institutional practices, historical and societal patterns in data. Computational and statistical: unrepresentative samples, algorithmic error. Human-cognitive: how people perceive and act on output (automation complacency, anchoring). No intent needed."
   },
   {
     "term": "NIST AI Risk Management Framework (AI RMF)",
-    "definition": "NIST AI 100-1 — voluntary framework with four functions (Govern, Map, Measure, Manage) providing organizations a structured approach to AI risk management."
+    "definition": "NIST AI 100-1, Jan 2023: voluntary, sector-agnostic, no certification (vs. ISO/IEC 42001). Core: Govern (cross-cutting), Map, Measure, Manage; 19 categories, 72 outcome subcategories. Seven trustworthiness characteristics. Profiles: use-case, temporal, cross-sectoral."
   },
   {
     "term": "NIST AI RMF Playbook",
-    "definition": "Companion guide to the NIST AI RMF providing practical implementation guidance, use-case examples, and templates for operationalizing the framework's four functions."
+    "definition": "Online AI RMF companion: suggested actions and documentation prompts (questions, not requirements) for each of the 72 subcategories. Voluntary; any subset, any order. RMF states outcomes; this gives the how."
   },
   {
     "term": "Non-Discrimination Law",
-    "definition": "Laws prohibiting unfair treatment based on protected characteristics — applies to AI in employment (Title VII, ADA, ADEA), credit (ECOA), housing (FHA), and insurance."
+    "definition": "Sectoral in the US: Title VII, ADA, ADEA (jobs); ECOA (credit); FHA (housing); state insurance law. Disparate treatment or impact. Employers answer for vendor AI tools."
   },
   {
     "term": "Notice",
-    "definition": "A privacy principle requiring organizations to inform individuals about what personal data is collected and how it will be used — foundational to AI transparency."
+    "definition": "Art. 13 (data from the person) vs. Art. 14 (obtained elsewhere, e.g. scraped). Both disclose automated decision-making logic. Art. 14(5)(b) can excuse informing each person, with safeguards such as publishing it."
+  },
+  {
+    "term": "Notified Body",
+    "definition": "Independent third-party conformity assessor, appointed and monitored by a national notifying authority. Certificates: up to 4 years (Annex III), 5 (Annex I). Pre-market; vs. market surveillance, post-market."
   },
   {
     "term": "Nudification and CSAM Prohibitions",
-    "definition": "Two bans added to EU AI Act Article 5 by the 2026 Digital Omnibus (points (ba) and (bb)), applying from 2 December 2026: AI that generates or manipulates realistic intimate or sexual imagery of an identifiable person without explicit consent, and AI that generates child sexual abuse material. Placing on the market is caught where that output is the intended purpose, or a foreseeable result the system has no adequate safeguards against."
+    "definition": "2026 Omnibus, Art. 5(1)(ba)-(bb), from 2 Dec 2026: AI generating or manipulating intimate imagery of an identifiable person without explicit consent, or child sexual abuse material."
   },
   {
     "term": "NYC Local Law 144",
-    "definition": "New York City's automated employment decision tool (AEDT) law, in force 1 Jan 2023 and enforced by DCWP from 5 Jul 2023. Employers and employment agencies may use an AEDT on candidates or employees who live in NYC only if it had an independent bias audit within the past year, the audit summary is public, and notice was given at least 10 business days before use. Penalties run up to $500 for a first violation and $500-1,500 for each later one."
+    "definition": "Hiring and promotion tools (AEDTs) on NYC residents, since 2023: bias audit within a year, public summary, 10 business days' notice. DCWP enforces; no private right of action."
   },
   {
     "term": "OECD AI Incidents and Hazards Monitor (AIM)",
-    "definition": "OECD.AI tool that tracks AI incidents and hazards reported in the news, automatically classifying articles against the OECD's incident and hazard definitions. Because it relies on public reporting, it captures only a subset of the incidents that actually occur."
+    "definition": "OECD.AI tool logging news-reported AI events that caused or could plausibly cause harm, auto-classified against OECD definitions. Public reports only, so it undercounts."
   },
   {
     "term": "OECD AI Principles",
-    "definition": "The first intergovernmental standard on AI (2019, updated 2024) — five principles: inclusive growth, human-centered values, transparency, robustness, and accountability."
+    "definition": "OECD/LEGAL/0449, 22 May 2019: first intergovernmental AI standard, non-binding; the G20 drew on it. Five, by 2024 headings: inclusive growth, sustainable development, well-being; rule of law, human rights, democratic values (incl. fairness, privacy); transparency, explainability; robustness, security, safety; accountability."
+  },
+  {
+    "term": "OECD AI Principles 2024 Revision",
+    "definition": "3 May 2024 (8 Nov 2023 changed only the definition). Changes: information integrity; misuse and out-of-purpose use; safe override, repair or decommissioning; responsible business conduct; interoperable governance; environmental sustainability. Traceability and risk management moved from 1.4 (robustness) to 1.5 (accountability)."
   },
   {
     "term": "OECD AI System Definition (2023 Update)",
-    "definition": "Definition adopted by the OECD Council on 8 November 2023: a machine-based system that, for explicit or implicit objectives, infers from the input it receives how to generate outputs such as predictions, content, recommendations or decisions that can influence physical or virtual environments. Systems vary in autonomy and adaptiveness after deployment. The EU AI Act's Art. 3(1) definition closely tracks it."
+    "definition": "8 Nov 2023: machine-based system that, for explicit or implicit objectives, infers from input how to generate predictions, content, recommendations or decisions. New: implicit objectives, inference, content, post-deployment adaptiveness."
   },
   {
     "term": "OECD Framework for the Classification of AI Systems",
-    "definition": "OECD tool (Digital Economy Papers No. 323, February 2022) for characterizing AI systems from a policy perspective along five dimensions: People & Planet, Economic Context, Data & Input, AI Model, and Task & Output. Used for registries and inventories, sector frameworks, risk assessment, incident reporting and risk management."
+    "definition": "Feb 2022: five dimensions for characterizing a system: People & Planet; Economic Context; Data & Input; AI Model; Task & Output. Action autonomy: Task & Output. In the lab (pre-deployment), only the last three apply."
+  },
+  {
+    "term": "OECD Recommendations for Policy Makers",
+    "definition": "Section 2 of OECD/LEGAL/0449, for governments (vs. section 1: principles for AI actors). Five: AI R&D investment; inclusive AI-enabling ecosystem (data trusts); interoperable governance and policy environment (experimentation); human capacity and labour market transformation; international co-operation. Non-binding."
   },
   {
     "term": "Opacity",
-    "definition": "A characteristic of AI systems requiring governance: the 'black box' nature of some AI models where it is challenging to understand how inputs are transformed into outputs."
+    "definition": "I.A governance characteristic: black box; learned weights carry no readable logic, so no one can show how input became output. Drives explainability, transparency and contestability duties."
   },
   {
     "term": "Open Source Agreement",
-    "definition": "License terms governing the use of open-source AI models — may include restrictions on commercial use, attribution requirements, or copyleft provisions."
+    "definition": "BOK v2.1: 'licensing agreement'. Permissive (MIT, Apache): attribution. Copyleft (GPL, AGPL): may force derivative disclosure. Community licences: use limits. Trap: non-commercial model in a for-profit product."
   },
   {
-    "term": "Operation & Monitoring",
-    "definition": "Performance monitoring, drift detection, incident management"
+    "term": "Open-Source GPAI Exemption (Art. 53(2))",
+    "definition": "Free licence plus public weights lifts only Art. 53(1)(a)-(b) documentation and the Art. 54 EU representative. Copyright policy and training summary stay; none for systemic-risk or monetised models."
+  },
+  {
+    "term": "Operation AI Comply",
+    "definition": "FTC sweep, Sep 2024: five s.5 cases on deceptive AI claims, e.g. DoNotPay's untested 'robot lawyer'. No AI exemption. Rytr order (fake-review tool) set aside Dec 2025."
   },
   {
     "term": "Operational Controls",
-    "definition": "Policies, procedures, and technical mechanisms governing how an AI system functions in production — including access controls, monitoring thresholds, and intervention protocols."
+    "definition": "Running-state safeguards (access, change management, logging, monitoring thresholds, incident response, rollback) reaching prompts, endpoints, feature stores and the model registry. vs. design controls."
   },
   {
     "term": "Overfitting",
-    "definition": "A modeling error where an AI model learns training data too precisely, including noise, and fails to generalize to new data — results in poor real-world performance."
+    "definition": "Memorises training data, noise included: strong on training data, weak on new data. Fixes: regularisation, dropout, early stopping, more varied data. Memorisation also enables membership inference."
+  },
+  {
+    "term": "OWASP Top 10 for Agentic Applications (2026)",
+    "definition": "Dec 2025 list: ASI01 goal hijack; 02 tool misuse; 03 identity and privilege abuse; 04 supply chain; 05 unexpected code execution; 06 memory and context poisoning; 07 insecure inter-agent comms; 08 cascading failures; 09 human-agent trust exploitation; 10 rogue agents."
   },
   {
     "term": "Parameter (Model Parameter)",
-    "definition": "Internal variable of a model that affects how the model calculates its results."
+    "definition": "Internal variable learned in training (e.g. neural network weights) that shapes a model's results. vs. hyperparameter: set before training. AI Act systemic-risk presumption counts training compute, not parameters."
   },
   {
-    "term": "Patent",
-    "definition": "Legal protection for novel, useful, and non-obvious inventions. AI-generated inventions raise questions about inventorship (e.g., DABUS/Thaler v. Vidal)."
+    "term": "Patent (AI Inventorship)",
+    "definition": "Only a natural person can invent: Thaler v. Vidal (Fed. Cir. 2022) rejected DABUS; USPTO and EPO agree. Copyright twin: Thaler v. Perlmutter."
   },
   {
-    "term": "PDCA Cycle",
-    "definition": "Plan-Do-Check-Act — the continuous improvement model underlying ISO management system standards including ISO 42001's AI Management System."
-  },
-  {
-    "term": "Performance",
-    "definition": "Measurable result. Can refer to quantitative or qualitative findings."
-  },
-  {
-    "term": "Personal Data (PbD)",
-    "definition": "All information that can be used to identify the natural person to whom such information relates, or that is/could be directly or indirectly related to a natural person."
+    "term": "Personal Data",
+    "definition": "GDPR Art. 4(1): any information relating to an identified or identifiable natural person. Inferences count; a trained model is not automatically anonymous (EDPB Opinion 28/2024)."
   },
   {
     "term": "Personally Identifiable Information (PII)",
-    "definition": "Any information that can identify a specific individual, directly or indirectly — name, email, IP address, location data, or online identifiers."
+    "definition": "US term (NIST SP 800-122): can distinguish or trace an individual's identity, alone or with linkable data. vs. GDPR personal data: broader (IP addresses, device IDs)."
   },
   {
-    "term": "Planning",
-    "definition": "*\\<Artificial Intelligence>* Data processing operations that assemble a workflow from a series of actions to achieve a specific objective."
+    "term": "Placing on the Market vs. Putting into Service",
+    "definition": "First supply on the EU market (Art. 3(9)) vs. supply for first use to a deployer, or own use, in the EU (Art. 3(11)). Either, under your name, makes you provider; in-house tools count."
+  },
+  {
+    "term": "PLD Exemptions from Liability (Art. 11)",
+    "definition": "Defendant must prove: not placed on market, defect arose later, legal compliance, development risk, component defence. 'Arose later' fails for software, updates or missing safety updates within its control."
   },
   {
     "term": "Post-Market Monitoring",
-    "definition": "EU AI Act requirement for ongoing surveillance of high-risk AI systems after deployment — documenting incidents, tracking performance, and reporting to authorities."
+    "definition": "AI Act Art. 72. High-risk provider's documented, risk-proportionate plan to gather real-world performance data and feed Art. 9 risk management. vs. Art. 73 incident reporting."
   },
   {
     "term": "Potential for Harm",
-    "definition": "A characteristic of AI requiring governance: AI can be used maliciously or cause unintended negative consequences through surveillance, autonomous weapons, or malfunction."
+    "definition": "I.A governance characteristic: misuse (surveillance, deepfakes, autonomous weapons) or failures that injure people. Severity drives proportionality: heavier duties for high-stakes uses (EU AI Act Annex III)."
+  },
+  {
+    "term": "Pre-, In- and Post-processing Bias Mitigation",
+    "definition": "NIST SP 1270's three intervention points: fix the data (reweighing, resampling); constrain training (fairness term in the objective); adjust outputs (per-group thresholds). US hiring: per-group cutoffs risk Title VII s.703(l)."
   },
   {
     "term": "Precision",
-    "definition": "The proportion of positive predictions that are actually correct — measures how many selected items are relevant. High precision = few false positives."
+    "definition": "TP / (TP + FP): share of flagged cases that were right; prices false alarms. Trades off against recall. Favour it when false positives hurt (alert overload, wrongful takedowns)."
   },
   {
     "term": "Predictability",
-    "definition": "A property of an AI system that enables interested parties to make reliable assumptions about the outcome."
+    "definition": "ISO/IEC 22989: interested parties can make reliable assumptions about the outcome. vs. determinism (same output every time) and reliability (results match intended behaviour). Precondition for oversight."
   },
   {
-    "term": "Prediction",
-    "definition": "Primary output of an AI system given input data or information. Does **not** necessarily mean forecasting something in the future."
+    "term": "Predictive Policing Ban (Art. 5(1)(d))",
+    "definition": "Bans predicting an individual's offending risk solely from profiling or personality traits. Tools aiding a human assessment of objective, verifiable facts: allowed; police use high-risk (Annex III 6(d))."
   },
   {
-    "term": "Privacy",
-    "definition": "A core principle of responsible AI: organizations must ensure AI systems comply with privacy regulations, track all uses of PII, and provide means for inquiries and corrections."
+    "term": "Presumption of Conformity (Art. 40)",
+    "definition": "Meeting a harmonised standard cited in the Official Journal is presumed to meet the requirements it covers. ISO/IEC 42001 certification or GPAI Code adherence: no such effect."
   },
   {
     "term": "Privacy by Design",
-    "definition": "Integrating privacy considerations at every stage of system development, from requirements through deployment, rather than bolting privacy on afterward."
+    "definition": "GDPR Art. 25: safeguards such as pseudonymization built in from the choice of means onward; by default, only data each purpose needs. Not a pre-release check."
   },
   {
     "term": "Privacy-Enhanced",
-    "definition": "NIST trustworthiness characteristic: AI system incorporates safeguards for human autonomy, identity, and dignity through data minimization, anonymization, and consent mechanisms."
+    "definition": "NIST trustworthiness characteristic, MEASURE 2.10: safeguards human autonomy, identity, dignity via anonymity, confidentiality, control. Tools: data minimization, de-identification, aggregation; can cost accuracy, affecting fairness."
   },
   {
     "term": "Probabilistic Output",
-    "definition": "Outputs based on probabilities rather than certainties, common in neural networks and ML models. Contrasts with deterministic systems where outputs are fully predictable."
+    "definition": "I.A governance characteristic: likelihood-weighted estimates; one input can yield different results, and error is built in (vs. deterministic: same input, same output). Respond: thresholds, statistical testing, monitoring."
   },
   {
     "term": "Probability Severity Matrix",
-    "definition": "A risk assessment tool that quantifies and prioritizes risks by plotting likelihood (probability) against potential impact (severity), typically on a grid."
+    "definition": "Likelihood-by-impact grid that scores and ranks harms (BOK III.A design risks). AI caveats: two axes hide scope and reversibility; ratings are ordinal, so rank them, never multiply."
   },
   {
     "term": "Product Liability",
-    "definition": "Legal responsibility of manufacturers and sellers for defective products that cause harm — applies to AI systems under design defect, manufacturing defect, and failure to warn theories."
+    "definition": "Theories: design defect, manufacturing defect, failure to warn; via strict liability, negligence or warranty. Is software a 'product'? US: unsettled. EU revised PLD: yes."
   },
   {
     "term": "Product Liability Directive (EU) 2024/2853",
-    "definition": "The EU's revised no-fault product liability law, replacing Directive 85/374/EEC. Software, including AI systems, is a product however supplied; free and open-source software supplied outside commercial activity is excluded. It adds court-ordered disclosure, rebuttable presumptions of defect and causation, and compensation for medically recognised psychological harm and loss of non-professional data. Transposition by 9 Dec 2026; applies to products placed on the market after that date."
-  },
-  {
-    "term": "Production Data",
-    "definition": "Data collected during the operational phase of an AI system for which a deployed AI system calculates a predicted result or inference."
+    "definition": "No-fault; products placed on the market after 9 Dec 2026. Software, AI included, is a product (non-commercial FOSS excluded). Disclosure orders; rebuttable presumptions of defect and causation."
   },
   {
     "term": "Production Readiness Evaluation",
-    "definition": "Structured pre-deployment review that an AI system is production-worthy: safety, accountability, suitability for intended context, regulatory conformity, performance benchmarking, and operational planning."
+    "definition": "Go/no-go gate with named sign-offs: docs complete (model card, test reports, licences), risks mitigated or deferrals approved, conformity done, monitoring and rollback ready, users trained. Benchmarks alone do not pass it."
   },
   {
     "term": "Prohibited AI",
-    "definition": "EU AI Act category: AI practices banned entirely — includes social scoring, real-time remote biometric identification in public spaces (with narrow exceptions), and subliminal manipulation."
+    "definition": "Art. 5, since 2 Feb 2025: harmful manipulation; exploiting vulnerabilities; social scoring; crime prediction solely from profiling; untargeted face scraping; emotion recognition at work or school; sensitive biometric categorisation; real-time police RBI in public (three exceptions). Omnibus adds two (2 Dec 2026). €35M or 7%."
   },
   {
     "term": "Prompt Engineering",
-    "definition": "Crafting and iterating on the instructions, context and examples sent to a generative model, including system prompts and few-shot examples, to steer it toward more useful, accurate and safe output. It changes no model weights, unlike fine-tuning, and adds no external knowledge source, unlike retrieval augmented generation."
+    "definition": "Steering a generative model at inference via instructions, context, examples. No weight change (vs. fine-tuning), no external source (vs. RAG). Not a deterministic control; version as configuration."
   },
   {
     "term": "Prompt Injection",
-    "definition": "An attack where malicious input manipulates an AI model's behavior by overriding system instructions or injecting harmful content through the user prompt."
+    "definition": "Input that overrides an LLM's instructions (OWASP LLM01:2025). Direct: typed by the user. Indirect: hidden in ingested content (web page, RAG document), riskiest with tool-using agents."
   },
   {
     "term": "Proprietary Model Deployment Obligations",
-    "definition": "The heightened duties that come with deploying a proprietary third-party model: increased contractual obligations, reliance on vendor claims that cannot be independently verified, potential for higher liability exposure, and dependence on the vendor for updates, incident support, and continuity."
+    "definition": "Own model: you are provider, carrying all duties and liability alone. Vendor's closed model: contract replaces inspection (audit rights, change notice, exit); Art. 26 deployer duties stay yours."
   },
   {
     "term": "Proprietary vs. Open-Source Models",
-    "definition": "A core deployment-evaluation choice: proprietary models offer vendor support and cutting-edge capability but limited visibility into training data and terms-of-service constraints; open-source models offer transparency, control, and customization but shift security, hosting, and compliance burden onto the deployer. License terms bind in both cases."
+    "definition": "BOK IV.A choice. Closed: vendor support, little visibility, vendor terms and deprecation risk. Open weights: inspect and control, but you carry hosting, security and compliance. Licences bind both."
+  },
+  {
+    "term": "Provider Obligations (Art. 16)",
+    "definition": "High-risk provider checklist beyond Arts. 9-15: name on the system; QMS (Art. 17); keep documentation 10 years and logs; conformity assessment; EU declaration; CE marking; registration; corrective action (Art. 20); accessibility."
+  },
+  {
+    "term": "Proxy Discrimination",
+    "definition": "Neutral feature standing in for a protected trait (zip code for race); dropping the protected column does not cure it. Deliberate: disparate treatment; unintended: disparate impact."
   },
   {
     "term": "Pseudonymization",
-    "definition": "Processing personal data so it can no longer be attributed to a specific data subject without additional information kept separately — GDPR encourages as a safeguard."
+    "definition": "Art. 4(5): unattributable without separately kept additional information; still personal data. Required AI Act safeguard for bias-detection data (as enacted Art. 10(5); as amended Art. 4a)."
   },
   {
-    "term": "Public Disclosure",
-    "definition": "Transparency obligation to publish information about AI system capabilities, limitations, training data, evaluation results, and intended use — supports accountability."
+    "term": "Public Summary of Training Content (Art. 53(1)(d))",
+    "definition": "Every GPAI provider, open-source included, on the AI Office's mandatory template: main data sets, top 10% of scraped domains, processing. Broad in scope, not work by work."
   },
   {
     "term": "Purpose Limitation",
-    "definition": "A GDPR principle requiring personal data be collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner."
+    "definition": "Art. 5(1)(b): specified, explicit, legitimate purposes; no incompatible further use. Secondary use (training on service data): absent consent or law, pass the Art. 6(4) compatibility test."
   },
   {
     "term": "Quality Management System (QMS)",
-    "definition": "A formalized system documenting processes, procedures, and responsibilities for ensuring AI system quality and compliance throughout the lifecycle."
-  },
-  {
-    "term": "Question Answering",
-    "definition": "Task of determining the most appropriate answer to a question posed in natural language."
+    "definition": "EU AI Act Art. 17, high-risk providers: documented compliance strategy, design and testing, data management, risk management (Art. 9), post-market monitoring (Art. 72), incident reporting (Art. 73). vs. ISO 42001: voluntary, certifiable."
   },
   {
     "term": "RACI Matrix",
-    "definition": "A responsibility assignment framework: Responsible (does the work), Accountable (owns the outcome), Consulted (provides input), Informed (kept updated)."
+    "definition": "Per task: Responsible (does), Accountable (owns outcome; exactly one), Consulted (two-way, before), Informed (one-way, after). AI angle: accountable is a named person, never the model or vendor."
   },
   {
     "term": "RAISE Act",
-    "definition": "New York's Responsible AI Safety and Education Act, signed December 2025 and re-enacted by a March 2026 chapter amendment modelled on California SB 53; effective 1 Jan 2027. It uses the same 10^26-operation and $500M thresholds. Frontier developers report critical safety incidents to a new office within the Department of Financial Services within 72 hours, and large developers publish frameworks and file disclosure statements. The AG can seek up to $1M for a first violation and $3M for later ones; there is no private right of action."
+    "definition": "New York; re-enacted on the SB 53 model (Mar 2026), effective 1 Jan 2027. Incidents to a DFS office within 72 hours (24 if imminent). AG fines up to $1M, then $3M."
   },
   {
     "term": "Reactive Machines",
-    "definition": "AI systems that respond to specific stimuli without memory or learning capability. They operate on pre-programmed rules. Example: IBM Deep Blue."
+    "definition": "No memory, no learning: responds only to the current input (IBM Deep Blue). Bottom rung of the functionality ladder, below limited memory, reasoning, theory of mind, self-aware."
+  },
+  {
+    "term": "Real-Time Remote Biometric Identification (Art. 5(1)(h))",
+    "definition": "Police use in publicly accessible spaces: banned except to find specific victims or missing persons; avert an imminent threat to life or terror attack; locate suspects of Annex II crimes (4+ years). Prior judicial or binding independent approval (emergency: within 24 hours)."
   },
   {
     "term": "Reasoning AI",
-    "definition": "AI systems with advanced pattern analysis and prediction capabilities. Most current LLMs fall in this category, capable of passing standardized tests."
-  },
-  {
-    "term": "Reassessment",
-    "definition": "Periodic review of continued fitness for purpose"
+    "definition": "Multi-step pattern analysis and prediction; where most current LLMs sit (bar-exam passers), above limited memory. A displayed rationale may not match how the answer arose: verify it."
   },
   {
     "term": "Recall",
-    "definition": "The proportion of actual positives correctly identified — measures how many relevant items are selected. High recall = few false negatives."
+    "definition": "TP / (TP + FN): share of actual positives caught; prices misses. Also sensitivity or true positive rate. Favour it when a miss is the harm (cancer screening). Equal opportunity equalises it across groups."
   },
   {
     "term": "Record Keeping",
-    "definition": "The obligation for controllers and processors to maintain records of processing activities, including purposes, data categories, recipients, and retention periods."
+    "definition": "GDPR Art. 30: record of processing activities (purposes, recipients, retention). AI Act high-risk: Art. 12 logs 6+ months (Arts. 19, 26(6)); technical documentation 10 years (Art. 18)."
   },
   {
     "term": "Recurrent Neural Network (RNN)",
-    "definition": "A neural network in which the outputs of both the previous layer and the previous processing step are fed into the current layer."
+    "definition": "Feeds each step's output back in, giving memory across a sequence (text, speech, time series). Stateful: reproducing an output needs the input history. Transformers displaced it for language."
   },
   {
     "term": "Red Teaming",
-    "definition": "Adversarial testing where a team simulates attacks or misuse scenarios to uncover vulnerabilities that standard testing might miss — critical for AI safety evaluation."
+    "definition": "Adversarial probing for harmful outputs, jailbreaks and misuse paths. vs. pen testing (security controls). AI Act Art. 55: mandatory for systemic-risk GPAI providers. Texas TRAIGA: violations it uncovers support a defense."
   },
   {
     "term": "Reinforcement Learning (RL)",
-    "definition": "Learning an optimal sequence of actions to maximize a reward through interaction with an environment."
+    "definition": "Agent acts by trial and error in an environment to maximize reward; no labels (vs. supervised). Failure mode: reward misspecification (misalignment). Human-feedback variant tunes chat LLMs."
   },
   {
     "term": "Reinforcement Learning with Human Feedback (RLHF)",
-    "definition": "A training technique in which people compare or rank a model's outputs, a reward model is trained on those preferences, and reinforcement learning then tunes the model toward the responses people prefer; a common way chat-style LLMs are steered toward helpful, harmless answers. Also called reinforcement learning from human feedback."
+    "definition": "Humans rank outputs, a reward model learns those preferences, then the model is tuned against it. Optimises rater approval, not truth, so inherits rater bias."
   },
   {
-    "term": "Reliability",
-    "definition": "Property of the correspondence between intended behavior and the results."
+    "term": "Remote Biometric Identification (RBI)",
+    "definition": "One-to-many biometric matching against a reference database, without the person's active involvement. Real-time police use in public: banned (three exceptions). Other uses: high-risk (Annex III 1(a)). 1:1 verification: neither."
   },
   {
     "term": "Resilience",
-    "definition": "The ability of a system to quickly recover its operational state following an incident."
+    "definition": "ISO/IEC 22989: quickly recovering operational state after an incident. vs. robustness: holding performance under all circumstances. Built from rollback, backups, manual fallback; agents deny by default."
   },
   {
     "term": "Responsible AI",
-    "definition": "A framework ensuring AI systems are designed, developed, and deployed to respect human rights, promote fairness, and minimize risks while benefiting individuals and society."
+    "definition": "BOK I.A's six principles: fairness; safety and reliability; privacy and security; transparency and explainability; accountability; human-centricity. Same family as trustworthy and ethical AI. vs. NIST's seven trustworthiness characteristics."
   },
   {
     "term": "Retraining",
-    "definition": "Updating a trained model through training with other training data."
+    "definition": "Updating a trained model with different training data (ISO/IEC 22989) on drift, degradation or schedule. Validate as a new model. High-risk substantial modification: new conformity assessment (Art. 43(4)) unless pre-determined in technical documentation."
   },
   {
     "term": "Retrieval Augmented Generation (RAG)",
-    "definition": "A technique where an AI model retrieves relevant external data at query time to augment its responses, improving accuracy and reducing hallucinations."
+    "definition": "Fetches external documents into the prompt at query time; no weight change (vs. fine-tuning). Cuts, never ends, hallucination. Corpus needs access control; poisoned documents enable indirect prompt injection."
   },
   {
     "term": "Right to Erasure",
-    "definition": "GDPR Article 17: the right of individuals to have their personal data deleted in certain circumstances — raises 'machine unlearning' challenges for AI systems."
+    "definition": "GDPR Art. 17: deletion on six grounds; not absolute (17(3): e.g. legal claims, free expression). AI problem: machine unlearning (retraining or approximate methods) once weights hold the data."
+  },
+  {
+    "term": "Right to Explanation (Art. 86)",
+    "definition": "Deployer owes anyone legally or similarly significantly harmed by a decision based on Annex III high-risk output (not critical infrastructure) an explanation of the AI's role and main decision elements. Unlike GDPR Art. 22, human decisions count."
+  },
+  {
+    "term": "Right to Lodge a Complaint (Art. 85)",
+    "definition": "Any person or organisation suspecting an AI Act breach can go to the market surveillance authority, usually national. Feeds surveillance; awards no damages. vs. Art. 89(2): downstream providers to the AI Office."
+  },
+  {
+    "term": "Right to Object (GDPR Art. 21)",
+    "definition": "Halts public-task or legitimate-interest processing (incl. profiling, AI training) unless the controller proves compelling overriding grounds or legal claims. Absolute for direct marketing. vs. Art. 22: no objection needed."
   },
   {
     "term": "Risk",
-    "definition": "The effect of uncertainty on objectives. Deviation can be positive, negative, or both. Characterized by risk drivers, potential events, consequences, and likelihood."
+    "definition": "ISO/IEC 22989, 23894: effect of uncertainty on objectives, positive or negative. NIST AI RMF: composite of an event's probability and consequence magnitude. Realized: issue or incident."
+  },
+  {
+    "term": "Risk Management System (Art. 9)",
+    "definition": "High-risk provider's continuous lifecycle loop: identify and evaluate risks to health, safety and fundamental rights; add post-market data; mitigate to acceptable residual risk; test pre-market. vs. one-off assessment."
   },
   {
     "term": "Robotics",
-    "definition": "AI systems capable of performing kinetic physical tasks such as carrying objects, moving, and more advanced tasks like cooking."
+    "definition": "I.A functionality type: AI doing kinetic, physical tasks (moving, carrying, cooking). Errors become injuries: AI Act Annex I safety-component route to high-risk; Product Liability Directive 2024/2853 covers software."
   },
   {
     "term": "Robustness",
-    "definition": "The ability of a system to maintain its performance level under **all** circumstances."
+    "definition": "ISO/IEC 22989: maintaining performance level under all circumstances, an absolute target. vs. resilience: quick recovery after an incident. AI Act Art. 15 requires it for high-risk systems."
   },
   {
     "term": "Safe",
-    "definition": "NIST trustworthiness characteristic: AI system does not, under defined conditions, lead to a state in which human life, health, property, or the environment is endangered."
+    "definition": "NIST trustworthiness characteristic: under defined conditions, does not endanger human life, health, property or the environment. MEASURE 2.6: residual risk within tolerance; fails harmlessly past knowledge limits."
   },
   {
     "term": "Safety & Security Chapter (GPAI CoP)",
-    "definition": "GPAI Code of Practice chapter applying ONLY to systemic-risk GPAI providers: safety and security framework, risk identification and analysis, mitigations, serious-incident reporting, and cybersecurity."
-  },
-  {
-    "term": "Sample",
-    "definition": "An atomic data element that is processed in batches by a machine learning algorithm or an AI system."
+    "definition": "Systemic-risk signatories only (Art. 55). Risk framework, Model Reports; serious incidents to the AI Office in 2/5/10/15 days (infrastructure, cyber breach, death, other serious harm). External evaluations: Code commitment, not Act duty."
   },
   {
     "term": "SCHUFA Ruling (C-634/21)",
-    "definition": "CJEU judgment of 7 December 2023: a credit bureau's automated score is itself an automated decision under GDPR Article 22 when a lender that receives it draws strongly on it to enter into, perform or end a contract. Upstream score providers can therefore owe Article 22 and Article 15(1)(h) duties."
+    "definition": "CJEU, 7 Dec 2023. A credit bureau's automated score is itself an Art. 22 decision when the lender draws strongly on it, so the bureau owes Art. 22 duties."
   },
   {
-    "term": "Secondary Use",
-    "definition": "The use of an AI system or its outputs for purposes beyond the original intended use case — creates unanticipated risks requiring governance oversight."
+    "term": "Scope and Extraterritorial Reach (Art. 2)",
+    "definition": "Art. 2(1): providers placing AI systems or GPAI models on the EU market, wherever established; EU deployers; non-EU providers and deployers whose output is used in the EU. Also importers, distributors, product manufacturers, authorised reps, affected persons."
+  },
+  {
+    "term": "Scope Exclusions (Art. 2)",
+    "definition": "Out: exclusively military, defence or national security use (dual use is in); sole-purpose scientific R&D; pre-market R&D (real-world testing is in); purely personal use; open-source AI systems unless high-risk, Art. 5 or Art. 50."
   },
   {
     "term": "Secure and Resilient",
-    "definition": "NIST trustworthiness characteristic: AI system can withstand adverse events and recover to normal function while maintaining confidentiality, integrity, and availability."
+    "definition": "NIST trustworthiness characteristic, MEASURE 2.7. Avoids, resists and recovers from attacks (poisoning, model exfiltration), keeping CIA. Withstands unexpected adverse events, degrades gracefully, returns to normal function."
   },
   {
     "term": "Security",
-    "definition": "A core principle of responsible AI: protecting sensitive data (PII, IP, copyrighted content) used by AI systems from unauthorized access, compromise, and theft."
+    "definition": "AI assets: training data, weights, prompts. Threats: extraction, inversion, membership inference, prompt injection, poisoning. One leak can be both a trade-secret loss and a GDPR breach."
   },
   {
     "term": "Security Testing",
-    "definition": "Evaluating AI system resistance to attacks — includes adversarial example testing, prompt injection testing, model extraction attempts, and API security validation."
+    "definition": "Conventional scans and pen tests plus AI-specific ones: adversarial examples, poisoning, extraction, inversion, membership inference, prompt injection. Catalogues: OWASP LLM Top 10, MITRE ATLAS. Hook: AI Act Art. 15(5)."
   },
   {
     "term": "Self-Aware AI",
-    "definition": "The highest theoretical level of AI possessing consciousness and self-awareness. Would recognize its own existence. Currently does not exist."
+    "definition": "Theoretical top rung of the functionality ladder: machine consciousness, recognizing its own existence and states. Nothing qualifies; a chatbot's first-person talk is not evidence."
   },
   {
     "term": "Semi-Supervised Learning",
-    "definition": "A training method using a small amount of labeled data combined with a large amount of unlabeled data. The AI learns from labeled examples then predicts labels for the rest."
-  },
-  {
-    "term": "Semi-Supervised Machine Learning",
-    "definition": "Machine learning in which both labeled and unlabeled data are used during training."
+    "definition": "Small labeled set plus large unlabeled set, for when labeling is expensive; between labeled-only and unlabeled-only training. Gap: the unlabeled majority usually lacks provenance records."
   },
   {
     "term": "Sensitive Data",
-    "definition": "Data requiring heightened protection due to potential for harm if misused — includes special category data plus financial, location, and children's data depending on jurisdiction."
+    "definition": "Wider than GDPR Art. 9 special categories: also children's, financial and location data. Risky as model features, yet needed for bias testing (AI Act Art. 10(5) as enacted; Art. 4a as amended)."
   },
   {
     "term": "Sentiment Analysis",
-    "definition": "Task to computationally identify and categorize opinions expressed in text, speech, or image to determine a range of sentiments (e.g., positive to negative)."
+    "definition": "Scores opinion polarity (positive to negative) in text, speech or images. Text-only scoring is outside the Art. 5(1)(f) work and education ban: emotion recognition (Art. 3(39)) needs biometric data."
+  },
+  {
+    "term": "Serious Incident Reporting (Art. 73)",
+    "definition": "High-risk provider reports AI-linked death, serious harm, rights infringement or critical-infrastructure disruption to the market surveillance authority. From awareness: 15 days; 10 for a death; 2 if widespread or infrastructure."
   },
   {
     "term": "Shadow AI",
-    "definition": "Use of AI tools or systems inside an organization without approval, or outside the view of its governance process, such as staff putting company data into a personal chatbot account; it usually breaks the organization's rules on acceptable AI use, confidentiality or personal data. Managed through discovery, an AI inventory, an acceptable use policy and approved alternatives."
+    "definition": "Unapproved AI use outside governance view (customer data in a personal chatbot). Risks: leakage, no lawful basis. First step: discovery and an AI inventory."
+  },
+  {
+    "term": "Shadow Deployment",
+    "definition": "Candidate model scores copies of live traffic beside the incumbent; outputs logged and compared, never served. vs. canary release (a small slice of real users get it)."
+  },
+  {
+    "term": "SHAP and LIME",
+    "definition": "Post-hoc, model-agnostic explanations of one prediction: Shapley-value feature attributions, or a local surrogate model. Approximate and gameable; a feature chart alone may not satisfy GDPR Art. 15(1)(h)."
   },
   {
     "term": "Small vs. Large Models",
-    "definition": "A deployment-evaluation trade-off: larger models generally offer broader capability but cost more to run, respond slower, and carry a larger risk surface; smaller models are cheaper, faster, and easier to control but may underperform on complex tasks. The governing question is fitness for the specific use case, not maximum capability."
+    "definition": "Pick the smallest model that meets the need. Small: cheap, fast, edge-ready, easier to monitor. Large: broader capability, cost, latency, misuse surface. Shrink: quantization, distillation."
+  },
+  {
+    "term": "Social Scoring Ban (Art. 5(1)(c))",
+    "definition": "Bans rating people over time on social behaviour or traits where it brings detrimental treatment in unrelated contexts, or out of proportion. Binds companies too. Credit scoring: high-risk instead."
   },
   {
     "term": "Soft Computing",
-    "definition": "A field of data processing that tolerates and exploits imprecision, uncertainty, and partial truth to make problem-solving more transparent and robust."
+    "definition": "ISO/IEC 22989: data processing that tolerates and exploits imprecision, uncertainty and partial truth: fuzzy logic, probabilistic reasoning, machine learning. vs. exact, provably correct computation."
+  },
+  {
+    "term": "South Korea AI Basic Act",
+    "definition": "Framework statute: promulgated 21 Jan 2025, in force 22 Jan 2026. MSIT enforces. Reaches conduct abroad affecting Korea; excludes defense uses. No banned practices, no conformity assessment."
   },
   {
     "term": "Special Category Data",
-    "definition": "GDPR Article 9 data types subject to stricter processing prohibitions: race, ethnicity, politics, religion, trade union membership, genetics, biometrics, health, sex life, sexual orientation."
+    "definition": "GDPR Art. 9: racial or ethnic origin, political opinions, religious or philosophical beliefs, union membership, genetic, biometric (to uniquely identify), health, sex life or orientation. Banned unless an Art. 9(2) exception applies, plus an Art. 6 basis."
   },
   {
-    "term": "Speech Recognition (STT)",
-    "definition": "Conversion of a speech signal into a representation of the speech content by a functional unit."
-  },
-  {
-    "term": "Speech Synthesis (TTS)",
-    "definition": "Generation of artificial speech."
+    "term": "Special-Category Data for Bias Detection (Art. 4a)",
+    "definition": "Basis to process sensitive data strictly for bias detection and correction, when synthetic or anonymised data won't do. As enacted (Art. 10(5)): high-risk providers only. As amended: also other systems, models, deployers. GDPR applies too."
   },
   {
     "term": "Speed and Scale",
-    "definition": "A characteristic of AI systems requiring governance: AI processes data and makes decisions far faster than humans and at massive scale, creating both opportunities and risks."
+    "definition": "I.A governance characteristic: millisecond decisions across millions of cases; one flaw hits a population before anyone notices. Front-load controls: pre-deployment testing, automated monitoring, preset rollback criteria."
   },
   {
     "term": "Stakeholder (Interested Party)",
-    "definition": "An individual, group, or organization that can influence a decision or activity, be affected by it, or feel affected by it."
+    "definition": "ISO/IEC 22989: anyone who can influence a decision or activity, be affected by it, or perceive itself affected. ISO/IEC 42001 Clause 4.2: identify them and their requirements."
   },
   {
     "term": "Stakeholder Mapping",
-    "definition": "The process of identifying all parties affected by an AI system, understanding their concerns, interests, and influence — essential for comprehensive risk management."
+    "definition": "Charting everyone a system affects, internal and external, by interest, influence and exposure. Most-missed: people it acts on who never use it. BOK III.A design-risk tool."
   },
   {
     "term": "Stress Testing (AI)",
-    "definition": "Pre-release testing under expected and edge-case workloads: latency and throughput benchmarks, memory/compute usage under load, failover behavior during outages, and evaluation against adversarial and malicious prompts."
+    "definition": "Pre-release run under expected and edge-case load: latency, throughput, resources, failover, adversarial prompts. Shows graceful degradation and safe failure. vs. red teaming (an adversary picks inputs)."
   },
   {
     "term": "STRIDE",
-    "definition": "A threat modeling framework: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege — adapted for AI security analysis."
+    "definition": "Threat categories mapped to AI: spoofing as prompt injection, tampering as data poisoning, information disclosure as model theft, elevation of privilege as unauthorized API chaining. Agents: CSA MAESTRO instead."
   },
   {
-    "term": "Sub-Tier Dependencies",
-    "definition": "Hidden supply-chain risk beneath a contracted AI vendor: subcontracted data-labeling teams, models trained on scraped or copyrighted data, and outdated code libraries. A core challenge is how many levels down the TPRM program should probe."
+    "term": "Substantial Modification (Art. 3(23))",
+    "definition": "Post-market change not foreseen in the initial conformity assessment, affecting compliance with Arts. 8-15 or the intended purpose. New conformity assessment (Art. 43(4)); a third party making it becomes provider."
   },
   {
     "term": "Subsymbolic AI",
-    "definition": "AI based on techniques and models that use an implicit encoding of information derived from experience or raw data."
-  },
-  {
-    "term": "Suggested Actions (AI RMF Playbook)",
-    "definition": "The Playbook's voluntary, per-subcategory steps for reaching an AI RMF outcome, e.g. MAP 1.1's step to identify whether a non-AI or non-technology alternative would give more trustworthy outcomes. Organizations use as many or as few as fit; they are not a checklist or an ordered sequence."
+    "definition": "ISO/IEC 22989: implicit encoding learned from experience or raw data, e.g. neural networks (connectionism: networks of simple interconnected units). Opaque; results carry an error probability. vs. explicit hand-written rules."
   },
   {
     "term": "Supervised Learning",
-    "definition": "A training method using labeled data where the AI learns from examples with known correct answers. Example: spam filter trained on labeled spam/legitimate messages."
-  },
-  {
-    "term": "Supervised Machine Learning",
-    "definition": "Machine learning in which only labeled data is used during training."
+    "definition": "Trains only on labeled input-output pairs, for classification or regression (spam filters). Bias enters through the labels: a target built from past decisions reproduces past discrimination."
   },
   {
     "term": "Support Vector Machine (SVM)",
-    "definition": "Machine learning algorithm that finds decision boundaries with maximum margin."
+    "definition": "ISO/IEC 22989: finds the maximum-margin decision boundary, the widest gap to the nearest training examples of each class. Classical ML; linear versions are far more inspectable than deep networks."
   },
   {
     "term": "Symbolic AI",
-    "definition": "AI based on techniques and models that manipulate symbols and structures according to explicitly defined rules."
+    "definition": "ISO/IEC 22989: explicitly defined rules applied to symbols and structures, e.g. expert systems. Inspectable, needs no training data, brittle outside its rules. vs. learned implicit encodings."
   },
   {
     "term": "Synthetic Data",
-    "definition": "Artificially generated records that imitate the patterns and statistical make-up of a real dataset without copying actual records; used where genuine data is scarce, skewed toward some groups, or too risky to use or share. It lowers but does not remove privacy risk, since a generator trained on personal data can reproduce details of real people."
+    "definition": "Generated records mimicking real data's statistics, for scarcity, imbalance or privacy. Risks: leaking real people, model collapse from overuse. AI Act Art. 4a: sensitive data for bias detection only if synthetic or anonymised data won't do."
   },
   {
     "term": "System Card",
-    "definition": "A transparency document describing an AI system's architecture, training data, intended use, limitations, and ethical considerations — broader scope than a model card."
+    "definition": "Documents the whole deployed system: components, guardrails, tool access, interfaces, context. vs. model card (one model). Voluntary; high-risk providers still owe Annex IV documentation (Art. 11)."
+  },
+  {
+    "term": "Systemic-Risk Notification (Art. 52)",
+    "definition": "Provider tells the Commission within two weeks of meeting, or foreseeing, the 10^25 FLOP condition; may argue the model exceptionally lacks systemic risk. Commission decides."
   },
   {
     "term": "TAKE IT DOWN Act",
-    "definition": "Federal law (Pub. L. 119-12, signed 19 May 2025). It makes it a crime to knowingly publish nonconsensual intimate images, including AI digital forgeries. Covered platforms that host user content must run a notice-and-removal process and take reported images down within 48 hours, along with known identical copies. The platform duties have applied since 19 May 2026 and are enforced by the FTC, including against nonprofits."
-  },
-  {
-    "term": "Task",
-    "definition": "*\\<Artificial Intelligence>* Action required to achieve a specific goal. Examples: classification, regression, ranking, clustering, dimensionality reduction."
+    "definition": "Federal, May 2025: crime to knowingly publish nonconsensual intimate images, AI 'digital forgeries' included. Platforms remove reported images within 48 hours (FTC-enforced from May 2026)."
   },
   {
     "term": "Technical Documentation",
-    "definition": "Required documentation for high-risk AI systems demonstrating compliance — includes system design, training methodologies, testing results, and risk management measures."
+    "definition": "AI Act Art. 11, Annex IV. High-risk provider's compliance file for authorities, drawn up pre-market, kept current, retained 10 years (Art. 18). vs. Annex XI (GPAI models)."
   },
   {
     "term": "Test Data (Evaluation Data)",
-    "definition": "Data used to evaluate the performance of a final model. Distinct from training data and validation data."
+    "definition": "Held-out data that evaluates the final model once (ISO/IEC 22989). vs. training data (fits parameters), validation data (tunes hyperparameters). Leakage or tuning on it inflates every metric."
+  },
+  {
+    "term": "Test, Evaluation, Verification and Validation (TEVV)",
+    "definition": "AI RMF assurance work at every lifecycle stage, design through operation. Best practice: assessors independent of builders and users (MEASURE 1.3). Playbook tags it on all 22 MEASURE subcategories."
   },
   {
     "term": "Texas Responsible AI Governance Act (TRAIGA)",
-    "definition": "Texas HB 149, effective 1 Jan 2026. It bans developing or deploying AI with intent to push people toward self-harm or crime, to discriminate unlawfully (disparate impact alone is not enough), to infringe constitutional rights, or to produce child sexual abuse material or sexual deepfakes. AI disclosure, social-scoring and biometric-identification limits apply to government. The AG alone enforces, with a 60-day cure, penalties up to $200,000 per uncurable violation, a NIST-framework defence and a 36-month sandbox."
+    "definition": "HB 149, from 1 Jan 2026: bans AI used with intent to discriminate (disparate impact alone is not intent), incite harm, infringe constitutional rights or make CSAM. Disclosure binds only government and health care. AG-only; 60-day cure."
   },
   {
     "term": "Text and Data Mining Exception",
-    "definition": "EU copyright exceptions in the DSM Directive (EU) 2019/790 for automated analysis of text and data. Article 3 lets research organisations and cultural heritage institutions mine lawfully accessed works for scientific research, with no opt-out. Article 4 lets anyone mine lawfully accessible works unless the rightsholder has reserved its rights."
+    "definition": "EU DSM Directive. Art. 3: research bodies, no opt-out. Art. 4: anyone, commercial included, unless rights reserved (machine-readably online). AI Act Art. 53(1)(c): GPAI providers honour reservations."
   },
   {
     "term": "Theory of Mind AI",
-    "definition": "A theoretical advanced AI that could understand and simulate human emotions, beliefs, intentions, and thoughts. Example: HAL-9000 (fictional)."
+    "definition": "Theoretical: AI that grasps and simulates others' emotions, beliefs and intentions (fiction: HAL 9000). Chatbots that simulate empathy do not qualify. vs. self-aware AI, the rung above."
   },
   {
     "term": "Third-Party Processor",
-    "definition": "An entity that processes personal data on behalf of the data controller — must have a contract specifying scope, safeguards, and responsibilities (GDPR Art 28)."
+    "definition": "Acts for the controller under an Art. 28 contract; the controller stays accountable. A vendor training its own models on customer data becomes a controller for that use (Art. 28(10))."
   },
   {
     "term": "Third-Party Risk Management (TPRM)",
-    "definition": "Governance of outsourced AI components — pretrained models, cloud infrastructure, data labeling, algorithmic APIs. For AI it must evolve beyond traditional vendor checklists to cover black-box algorithms, datasets of unknown origin, and unpredictable LLM APIs."
+    "definition": "Vendor lifecycle (diligence, contract, monitoring, exit) extended to models, data, labelers and AI APIs. AI twists: vendor model updates, sub-tier suppliers (AI bill of materials). Accountability stays yours."
   },
   {
     "term": "Tool Misuse",
-    "definition": "An agent using a tool it is legitimately allowed to use in an unsafe or unintended way, such as deleting valuable data, over-calling a costly API or leaking information, often after prompt injection or an ambiguous instruction. OWASP ASI02 (Tool Misuse and Exploitation); gaining privileges it should not have is ASI03 instead."
+    "definition": "OWASP ASI02: agent uses a permitted tool unsafely (deletes data, floods a paid API, exfiltrates), often after prompt injection. vs. ASI03 (gaining privileges); ASI05 (code execution)."
   },
   {
     "term": "Trade Secret",
-    "definition": "Confidential business information providing competitive advantage. AI models and training methodologies may be protected as trade secrets if reasonable secrecy measures are maintained."
-  },
-  {
-    "term": "Trained Model",
-    "definition": "Result of model training."
-  },
-  {
-    "term": "Training (Model Training)",
-    "definition": "Process for determining or improving the parameters of a machine learning model, based on a ML algorithm, using training data."
+    "definition": "Survives only while reasonable measures keep it secret; no filing, no term. AI assets: data, weights, fine-tuning recipes. Lost by publication or model extraction."
   },
   {
     "term": "Training and Awareness Program",
-    "definition": "An organizational program delivering AI terminology, strategy, and governance education to all stakeholders, tailored to each role's interaction with AI."
-  },
-  {
-    "term": "Training and Testing",
-    "definition": "The phase where AI models learn from data (training) and are evaluated for accuracy, bias, and performance (testing) before deployment."
-  },
-  {
-    "term": "Training Data",
-    "definition": "Data used to train a machine learning model."
+    "definition": "BOK I.B: AI terminology, strategy and governance education for all staff, depth by role (executives: risk; users: limits, override, escalation). Recurring; measured by outcomes, not attendance."
   },
   {
     "term": "Transfer Learning",
-    "definition": "A set of methods in which data intended for solving one problem is used to apply the knowledge gained from it to another problem."
+    "definition": "Reusing knowledge from one problem on another (pretrain, then fine-tune). Inherits the base model's biases and limits; GPAI providers must document capabilities and limitations for downstream providers (Art. 53(1)(b))."
+  },
+  {
+    "term": "Transformer vs. Diffusion Models",
+    "definition": "Attention-based architecture weighing every token against the others; basis of LLMs. vs. image generators that iteratively denoise random noise; some shown to memorize and regurgitate training images."
   },
   {
     "term": "Transparency (Organization)",
-    "definition": "The characteristic of an organization whereby relevant activities and decisions are communicated to relevant interested parties in a comprehensive, accessible, and understandable manner."
+    "definition": "ISO/IEC 22989: an organization communicates its relevant activities and decisions to interested parties comprehensively, accessibly, understandably. vs. system-level (information about the system) and explainability (why this output)."
   },
   {
     "term": "Transparency (System)",
-    "definition": "A characteristic of a system whereby appropriate information about the system is made available to relevant interested parties. May include: characteristics, performance, limitations, components, procedures, measures, design objectives, data sources, labeling protocols."
-  },
-  {
-    "term": "Transparency and Documentation Prompts (AI RMF Playbook)",
-    "definition": "The questions in each Playbook entry's Transparency and Documentation section, under 'Organizations can document the following', e.g. GOVERN 1.6's 'Who is responsible for documenting and maintaining the AI system inventory details?'. Each list is followed by AI Transparency Resources such as GAO-21-519SP."
+    "definition": "Appropriate information about the system (capabilities, limits, components, data sources) available to relevant stakeholders (ISO/IEC 22989). vs. explainability (why this output). AI Act hook: Art. 13."
   },
   {
     "term": "Transparency Chapter (GPAI CoP)",
-    "definition": "GPAI Code of Practice chapter applying to ALL GPAI providers: model documentation, information to downstream providers, and the Annex XI/XII technical documentation obligations of Articles 53(1)(a)-(b)."
+    "definition": "All signatories; implements Art. 53(1)(a)-(b), Annexes XI-XII. Model Documentation Form, kept 10 years; downstream providers answered within 14 days. vs. Art. 50 duties toward people."
+  },
+  {
+    "term": "Transparency Obligations (Art. 50)",
+    "definition": "From 2 Aug 2026. Providers: disclose AI interaction unless obvious (50(1)); machine-readably mark synthetic output (50(2)). Deployers: notify people exposed to emotion recognition or biometric categorisation (50(3)); label deepfakes and public-interest AI text (50(4))."
   },
   {
     "term": "Trustworthiness",
-    "definition": "The ability to meet the expectations of interested parties in a verifiable manner. Characteristics include: reliability, availability, resilience, security, privacy, accountability, transparency, integrity, authenticity, quality, and user-friendliness. Applies to services, products, technologies, data, information, and organizations."
+    "definition": "ISO/IEC 22989: ability to meet interested parties' expectations in a verifiable way. Characteristics include reliability, availability, resilience, security, privacy, accountability, transparency, integrity, authenticity, quality. vs. NIST AI RMF's seven."
   },
   {
     "term": "Trustworthy AI",
-    "definition": "AI that is built and governed so that people can justifiably rely on it, in line with principles such as safety, fairness and accountability; IAPP treats the term as largely synonymous with ethical AI and responsible AI. The NIST AI RMF's seven characteristics of trustworthy AI are: valid and reliable; safe; secure and resilient; accountable and transparent; explainable and interpretable; privacy-enhanced; and fair with harmful bias managed."
+    "definition": "NIST AI RMF's seven characteristics: valid and reliable (the base); safe; secure and resilient; accountable and transparent (cross-cutting); explainable and interpretable; privacy-enhanced; fair with harmful bias managed. They trade off; document the balance."
+  },
+  {
+    "term": "Two-Person Verification Rule (Art. 14(5))",
+    "definition": "No action on a remote biometric ID match (Annex III 1(a)) until at least two competent, authorised people verify it separately. Law enforcement, migration, border, asylum: exemptible if law deems it disproportionate."
   },
   {
     "term": "Underfitting",
-    "definition": "A modeling error where an AI model is too simple to capture underlying patterns in the data — results in poor performance on both training and new data."
+    "definition": "Too simple or data-starved to learn the pattern: poor on training and new data alike (overfitting: poor only on new data). Fix: more data, features or capacity, not more regularisation."
   },
   {
     "term": "Unfair and Deceptive Acts and Practices (UDAP)",
-    "definition": "FTC-enforced standard prohibiting misleading or harmful business practices. AI systems making unsubstantiated claims or hiding AI involvement may violate UDAP."
+    "definition": "FTC Act s.5 plus state mini-FTC acts; no AI exemption. Deceptive: material claim or omission likely to mislead a reasonable consumer. Unfair: substantial, not reasonably avoidable injury, not outweighed by benefits."
   },
   {
     "term": "Unintended Use",
-    "definition": "Application of an AI system in ways not anticipated by its developers — may produce harmful outcomes due to mismatched capabilities and context."
+    "definition": "Using a system beyond the provider's intended purpose (fraud score reused in hiring); re-opens assessment. Repurposing into a high-risk use makes the deployer the provider (AI Act Art. 25(1)(c))."
   },
   {
     "term": "Unit Testing",
-    "definition": "Testing individual components or functions of an AI system in isolation to verify each part works correctly before integration."
+    "definition": "Pass/fail tests of deterministic code in isolation (transforms, model wrappers, scoring logic). Cannot show statistical model quality. First rung of BOK III.B's ladder (then integration, validation, performance, security, bias, interpretability)."
   },
   {
     "term": "Unsupervised Learning",
-    "definition": "A training method using unlabeled data where the AI must detect patterns independently. Example: customer segmentation from a CRM database."
+    "definition": "Trains only on unlabeled data to find structure: clustering, dimensionality reduction, anomaly detection. Risk: clusters can rebuild protected groups as proxies with no protected attribute supplied."
   },
   {
-    "term": "Unsupervised Machine Learning",
-    "definition": "Machine learning in which only unlabeled data is used during training."
+    "term": "Untargeted Facial Scraping Ban (Art. 5(1)(e))",
+    "definition": "Bans AI building or growing face recognition databases by indiscriminate image harvesting from the internet or CCTV. Outside: targeted searches; voice data; training fictitious-face generators."
   },
   {
     "term": "Use Case",
-    "definition": "A specific application scenario defining what problem the AI system solves, for whom, under what conditions, and with what expected outcomes — foundational to governance."
+    "definition": "Scope spec turning business context into a governable system: function, users, setting, decision authority, constraints, foreseeable misuse. EU AI Act analogue: intended purpose (Art. 3(12))."
   },
   {
     "term": "Use Case Assessment",
-    "definition": "The process of evaluating a proposed AI application against organizational policies, risk appetite, and ethical standards before development begins."
-  },
-  {
-    "term": "User Training",
-    "definition": "Education provided to individuals who interact with AI systems — covering capabilities, limitations, appropriate use, and how to flag unexpected or harmful outputs."
+    "definition": "Pre-development gate: is AI necessary, who could be harmed, is the data adequate? Yields a risk rating that sets review depth (high: third-party audit, executive sign-off)."
   },
   {
     "term": "Utah AI Policy Act",
-    "definition": "Utah's 2024 law (SB 149, effective 1 May 2024) that first required generative AI disclosures and created the Office of AI Policy, the AI Learning Laboratory and regulatory mitigation agreements. As revised by SB 226 (2025), suppliers must disclose AI when a consumer clearly asks, and licensed professionals must disclose up front in high-risk interactions. Using AI is no defence to a consumer-protection violation. Fines reach $2,500 per violation, and the sunset is extended to 1 Jul 2027."
+    "definition": "SB 149 (2024), narrowed by SB 226 (2025): disclose generative AI when a consumer clearly asks; licensed professionals up front in high-risk interactions. Blaming the AI is no defence. Sunset 1 Jul 2027."
   },
   {
     "term": "Valid and Reliable",
-    "definition": "NIST trustworthiness characteristic: AI system produces accurate (valid) and consistent (reliable) outputs under specified conditions."
+    "definition": "Base NIST trustworthiness characteristic, MEASURE 2.5. Objective evidence that intended-use requirements are met; performs without failure for a given time under given conditions. vs. robust (varied conditions)."
   },
   {
     "term": "Validation",
-    "definition": "Confirmation by providing objective evidence that the requirements for a specific intended use or a specific intended application have been met."
+    "definition": "Objective evidence that requirements for a specific intended use are met: did we build the right system? vs. verification (meets the specification). Not the ML tuning-data sense."
   },
   {
     "term": "Validation Data (Development Data)",
-    "definition": "Data used to compare the performance of different candidate models. Used to tune hyperparameters."
+    "definition": "AI Act Art. 3(30): evaluates the trained system and tunes its non-learnable parameters and learning process, e.g. against overfitting. vs. testing data: independent pre-market check (Art. 3(32))."
+  },
+  {
+    "term": "Value Chain Responsibilities (Art. 25)",
+    "definition": "Distributor, importer, deployer or other third party becomes provider (all Art. 16 duties) if it: rebrands a high-risk system (absent a contrary contract); substantially modifies one that stays high-risk; or repurposes a non-high-risk system, GPAI included, into high-risk use."
   },
   {
     "term": "Vendor Agreement",
-    "definition": "Contract with third-party AI providers specifying data usage rights, performance guarantees, liability allocation, audit rights, and compliance obligations."
+    "definition": "BOK IV.B red flags: inputs become vendor property; data kept to improve the model or passed to third parties; outputs unwarranted; irrevocable licence to your feedback. Add change notice, audit rights."
   },
   {
     "term": "Verification",
-    "definition": "Confirmation by providing objective evidence that specified requirements have been met. Ensures only that a product conforms to its specifications."
-  },
-  {
-    "term": "Verification & Validation",
-    "definition": "Testing against specifications, intended use validation"
+    "definition": "Objective evidence that specified requirements are met: did we build the system right? Conformance to the specification only, not fitness for intended use."
   },
   {
     "term": "Watermarking",
-    "definition": "Hiding a signal in AI-generated content, or attaching one to its metadata, that people generally cannot perceive but software can detect, so the content can later be identified as machine-made; one provenance technique alongside metadata, fingerprinting and cryptographic signatures. The EU AI Act requires providers of systems generating synthetic audio, image, video or text to mark outputs in a machine-readable, detectable way (Art. 50(2))."
+    "definition": "Usually imperceptible signal in AI output or metadata that software detects. Art. 50(2): generative-AI providers mark output machine-readably from 2 Aug 2026; systems already marketed: 2 Dec 2026 (Omnibus)."
   },
   {
     "term": "Workforce Readiness",
-    "definition": "Assessment of whether staff have the skills, training, and awareness to effectively use, monitor, and govern AI systems in their operational context."
+    "definition": "BOK IV.A gate: can staff operate, oversee and distrust the system when needed? Hooks: competent, trained, authorised overseers (Art. 26(2)); automation bias (Art. 14(4)(b)); AI literacy (Art. 4)."
   },
   {
     "term": "Zero-Shot Learning (ZSL)",
-    "definition": "A machine learning technique where an AI model recognizes objects or concepts without having seen any training examples of those categories."
+    "definition": "Handles categories or tasks with no training examples, generalizing from related knowledge (vs. few-shot: a handful). Unvalidated capability: test on your actual use and population first."
   }
 ];
+// Retired or merged term -> current term, so saved ratings follow the card.
+const FC_RENAMES = {
+  "AI Act Milestone — August 2, 2026": "AI Act Milestone: 2 Aug 2026",
+  "AI Act Milestone — August 2, 2028": "AI Act Milestone: 2 Aug 2028",
+  "AI Act Milestone — December 2, 2027": "AI Act Milestone: 2 Dec 2027",
+  "AI Act Milestone — February 2, 2025": "AI Act Milestone: 2 Feb 2025",
+  "AI Governance Stakeholder": "Stakeholder Mapping",
+  "AI Impact Assessment": "Fundamental Rights Impact Assessment (FRIA)",
+  "AI Management System (AIMS)": "ISO/IEC 42001",
+  "AI RMF Subcategory": "NIST AI Risk Management Framework (AI RMF)",
+  "AI Risk Sources (ISO 23894 Annex B)": "ISO/IEC 23894",
+  "AI System Impact Assessment (ISO/IEC 42005)": "ISO/IEC 42005",
+  "Article 35 GDPR": "Data Protection Impact Assessment (DPIA)",
+  "Article 56 (EU AI Act)": "GPAI Code of Practice (Art. 56)",
+  "Article 9 GDPR": "Special Category Data",
+  "Automated Decision-Making (ADM)": "Article 22 GDPR",
+  "Bias (Systematic Deviation)": "Algorithmic Bias",
+  "Competent Authorities": "National Competent Authorities (EU AI Act)",
+  "Connectionism (Connectionist Paradigm)": "Subsymbolic AI",
+  "Data Leak": "Breach Notification",
+  "Data Quality Review": "Data Quality",
+  "Data Subject Access Request (DSAR)": "Data Subject Rights",
+  "Deidentification": "Anonymization",
+  "Deterministic Output": "Probabilistic Output",
+  "Documentation and Reporting": "Record Keeping",
+  "Executive Order 14110": "Generative AI Profile (NIST AI 600-1)",
+  "Fair Use": "Fair Use (AI Training)",
+  "Fit-for-Purpose": "Data Quality",
+  "General AI (GAI)": "Artificial General Intelligence (AGI)",
+  "ISO 31000:2018": "ISO/IEC 23894",
+  "Image Recognition": "Computer Vision",
+  "Impact Reassessment Trigger": "ISO/IEC 42005",
+  "Interpretability Testing": "Interpretability",
+  "Machine-Readable Opt-Out (TDM)": "Text and Data Mining Exception",
+  "Maintenance Schedule": "Retraining",
+  "Misinformation": "Disinformation",
+  "PDCA Cycle": "Annex SL",
+  "Patent": "Patent (AI Inventorship)",
+  "Personal Data (PbD)": "Personal Data",
+  "Public Disclosure": "External Communication Plan",
+  "Reassessment": "AI System Life Cycle (ISO/IEC 22989)",
+  "Reliability": "Valid and Reliable",
+  "Secondary Use": "Purpose Limitation",
+  "Semi-Supervised Machine Learning": "Semi-Supervised Learning",
+  "Sub-Tier Dependencies": "Third-Party Risk Management (TPRM)",
+  "Suggested Actions (AI RMF Playbook)": "NIST AI RMF Playbook",
+  "Supervised Machine Learning": "Supervised Learning",
+  "Training and Testing": "Test Data (Evaluation Data)",
+  "Transparency and Documentation Prompts (AI RMF Playbook)": "NIST AI RMF Playbook",
+  "Unsupervised Machine Learning": "Unsupervised Learning",
+  "User Training": "Training and Awareness Program",
+  "Verification & Validation": "AI System Life Cycle (ISO/IEC 22989)"
+};
