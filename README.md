@@ -51,7 +51,17 @@ python3 build_playbook_note.py playbook.json --retrieved YYYY-MM-DD -o "Map/NIST
 
 | Path | What |
 |---|---|
-| `study.html` | The app (quiz, flashcards, test, mind map, book) |
+| `study.html` | The app shell: markup, data and module script tags |
+| `study.css` | All styles, extracted from `study.html` |
+| `core.js` | Phone/media query helper, tab switcher, shared helpers (`isMulti`, `esc`, etc.) |
+| `quiz.js` | Quiz tab: question display, progress tracking, filters |
+| `flashcards.js` | Flashcard tab: term-definition cards with mastery rating |
+| `mindmap.js` | Mind map tab: radial map, indented tree, node drawer |
+| `test.js` | Test tab: timed exam, practice quiz, review |
+| `keyboard.js` | Keyboard shortcuts and `FC_PLACE` computed mapping |
+| `auth.js` | Account and cross-device sync |
+| `book.js` | Book reader: table of contents, scroll-spy, deep linking |
+| `init.js` | Bootstrap: init footer, load first question, handle book deep links |
 | `quiz-data.js`, `flashcard-data.js` | Question bank and flashcards |
 | `map-data.js`, `node-details.js` | Generated: mind map tree, tags, per-node notes |
 | `aigp-book.md` | The book manuscript shown in the Book tab |

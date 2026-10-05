@@ -1,0 +1,302 @@
+// ═══════════ BOOK READER ═══════════
+// book-data.js holds the aigp-book.md manuscript as BOOK_MD (see build_book.py).
+// Pages split at every '# ' heading and every '## Chapter N:' heading.
+const BOOK_KEY = 'aigp-book-last';
+const BOOK_SKIP_SECS = ['Key Terms', 'Further Reading'];
+let BOOK_UNITS = [];
+const bookSlug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
+
+function loadBook() {
+  const s = document.createElement('script');
+  s.src = 'book-data.js';
+  s.onload = () => { parseBook(); buildBookToc(); renderBookDocument(); renderBookFromHash(); };
+  document.body.appendChild(s);
+}
+
+function parseBook() {
+  let cur = null;
+  BOOK_MD.split('\n').forEach(line => {
+    const m = /^# (.+)/.exec(line) || /^## (Chapter \d+: .+)/.exec(line);
+    if (m) { cur = { title: m[1], id: bookSlug(m[1]), level: line.startsWith('# ') ? 1 : 2, lines: [] }; BOOK_UNITS.push(cur); }
+    if (cur) cur.lines.push(line);
+  });
+  BOOK_UNITS = BOOK_UNITS.filter(u => u.title !== 'Contents');  // the sidebar is the contents
+  BOOK_UNITS.forEach(u => {
+    u.md = u.lines.join('\n'); delete u.lines;
+    u.sections = u.level === 2 ? [...u.md.matchAll(/^### (.+)$/gm)].map(m => m[1]).filter(t => !BOOK_SKIP_SECS.includes(t)) : [];
+  });
+}
+
+function toggleBookToc() {
+  document.getElementById('book-toc').classList.toggle('open');
+  document.getElementById('book-toc-overlay').classList.toggle('open');
+}
+
+function bookTocItem(cls, text, onclick) {
+  const d = document.createElement('div');
+  d.className = cls; d.textContent = text; d.onclick = onclick;
+  return d;
+}
+
+function buildBookToc() {
+  const tree = document.getElementById('book-toc-tree');
+  tree.innerHTML = '';
+  let partKids = null;
+  BOOK_UNITS.forEach(u => {
+    if (u.level === 1 && /^Part /.test(u.title)) {
+      const kids = document.createElement('div');
+      kids.className = 'book-toc-kids';   // open by default: the sidebar has to show where you are
+      const head = bookTocItem('book-toc-part', u.title, () => {
+        const open = kids.style.display === 'none';
+        kids.style.display = open ? 'block' : 'none';
+        head.classList.toggle('collapsed', !open);
+        if (open) showBookUnit(u.id);
+      });
+      head.dataset.unit = u.id; head.dataset.target = u.id;
+      tree.append(head, kids);
+      partKids = kids;
+    } else if (u.level === 2 && partKids) {
+      const ch = bookTocItem('book-toc-chapter', u.title, () => showBookUnit(u.id));
+      ch.dataset.unit = u.id; ch.dataset.target = u.id;
+      partKids.appendChild(ch);
+      u.sections.forEach(t => {
+        const a = document.createElement('a');
+        a.className = 'book-toc-section'; a.textContent = t; a.href = '#book/' + u.id + '/' + bookSlug(t);
+        a.dataset.target = u.id + '/' + bookSlug(t);
+        a.onclick = e => { e.preventDefault(); showBookUnit(u.id, bookSlug(t)); };
+        partKids.appendChild(a);
+      });
+    } else {
+      partKids = null;
+      const d = bookTocItem('book-toc-chapter', u.title, () => showBookUnit(u.id));
+      d.dataset.unit = u.id; d.dataset.target = u.id;
+      tree.appendChild(d);
+    }
+  });
+}
+
+// ── The reader: one continuous document, with a scroll-spy sidebar ──────────
+// Every unit renders into a single scrollable document, so the book reads
+// straight through and needs no next/back. BOOK_ANCHORS is the document-ordered
+// list of places the sidebar can point at: one per unit heading, plus one per
+// teaching section of a chapter. The spy binary-searches it for whatever sits
+// under the top of the viewport.
+let BOOK_ANCHORS = [];
+let BOOK_CURRENT = null;
+
+function renderBookDocument() {
+  const el = document.getElementById('book-rendered');
+  const used = new Set();
+  const unique = base => { let id = base, n = 2; while (used.has(id)) id = base + '-' + n++; used.add(id); return id; };
+
+  el.innerHTML = BOOK_UNITS
+    .map(u => '<section class="book-unit" data-unit="' + u.id + '">' + marked.parse(u.md) + '</section>')
+    .join('\n');
+
+  // Index by position, not by selector, so two units that slugify alike cannot
+  // steal each other's anchors.
+  const secs = [...el.children];
+  BOOK_ANCHORS = [];
+  BOOK_UNITS.forEach((u, i) => {
+    const sec = secs[i];
+    if (!sec) return;
+    const head = sec.querySelector('h1, h2');
+    if (head) { head.id = unique('h-' + u.id); BOOK_ANCHORS.push({ el: head, target: u.id, pos: 0 }); }
+    // Only a chapter lists its sections in the sidebar, so only those are spy targets.
+    const wanted = new Set(u.sections.map(bookSlug));
+    sec.querySelectorAll('h3').forEach(h => {
+      const slug = bookSlug(h.textContent.trim());
+      if (!wanted.has(slug)) return;
+      h.id = unique('h-' + u.id + '-' + slug);
+      BOOK_ANCHORS.push({ el: h, target: u.id + '/' + slug, pos: 0 });
+    });
+  });
+
+  el.querySelectorAll('a[href^="http"]').forEach(a => { a.target = '_blank'; a.rel = 'noopener'; });
+  bookMeasure(false);
+
+  // Initialise/d the speed reader after the document is rendered
+  if (typeof RSVP !== 'undefined') RSVP.init();
+}
+
+// Measured against the scroll container rather than the page, so the offsets
+// hold wherever the container sits in the layout. Skipped while the tab is
+// hidden, when every rect would read as zero.
+function bookMeasure(respy) {
+  const content = document.getElementById('book-content');
+  if (!content || !BOOK_ANCHORS.length) return;
+  if (document.getElementById('panel-book').classList.contains('hidden')) return;
+  const base = content.getBoundingClientRect().top - content.scrollTop;
+  BOOK_ANCHORS.forEach(a => { a.pos = a.el.getBoundingClientRect().top - base; });
+  if (respy) bookSpy();
+}
+
+function bookSpy() {
+  if (!BOOK_ANCHORS.length) return;
+  const y = document.getElementById('book-content').scrollTop + 16;
+  let lo = 0, hi = BOOK_ANCHORS.length - 1, cur = 0;
+  while (lo <= hi) {
+    const mid = (lo + hi) >> 1;
+    if (BOOK_ANCHORS[mid].pos <= y) { cur = mid; lo = mid + 1; } else { hi = mid - 1; }
+  }
+  bookActivate(BOOK_ANCHORS[cur].target);
+}
+
+function bookActivate(target) {
+  if (target === BOOK_CURRENT) return;
+  BOOK_CURRENT = target;
+  let hit = null;
+  document.querySelectorAll('#book-toc-tree [data-target]').forEach(d => {
+    const on = d.dataset.target === target;
+    d.classList.toggle('active', on);
+    if (on) hit = d;
+  });
+  if (hit) {
+    const kids = hit.closest('.book-toc-kids');
+    if (kids && kids.style.display === 'none') {   // a folded part cannot show where you are
+      kids.style.display = 'block';
+      const head = kids.previousElementSibling;
+      if (head) head.classList.remove('collapsed');
+    }
+    bookKeepTocVisible(hit);
+  }
+  try { history.replaceState(null, '', '#book/' + target); } catch (e) {}
+
+  // Update the speed-reader section label
+  if (typeof RSVP !== 'undefined') RSVP.updateSectionLabel(target);
+}
+
+// Scroll the sidebar and nothing else, so the active entry stays in view.
+function bookKeepTocVisible(el) {
+  if (phone.matches) return;   // on a phone the sidebar is a modal drawer; nothing to keep in view
+  const toc = document.getElementById('book-toc');
+  const r = el.getBoundingClientRect(), c = toc.getBoundingClientRect();
+  const pad = 12;
+  if (r.top < c.top + pad) toc.scrollTop -= (c.top + pad - r.top);
+  else if (r.bottom > c.bottom - pad) toc.scrollTop += (r.bottom - c.bottom + pad);
+}
+
+function showBookUnit(id, sec) {
+  if (!BOOK_ANCHORS.length) return;
+  const key = sec ? id + '/' + sec : id;
+  const a = BOOK_ANCHORS.find(x => x.target === key) || BOOK_ANCHORS.find(x => x.target === id);
+  if (!a) return;
+  document.getElementById('book-content').scrollTop = Math.max(0, a.pos - 12);
+  bookActivate(a.target);
+  // Take the speed reader with us. This is a deliberate choice of section; the scroll
+  // spy's own changes deliberately do not move the reader, because the reader scrolls
+  // the page itself and would just re-trigger the spy - see followAnchor in rsvp.js.
+  if (typeof RSVP !== 'undefined') RSVP.followAnchor(a.el);
+  if (document.getElementById('book-toc').classList.contains('open')) toggleBookToc();
+}
+
+// The next anchor's pos (or content bottom for the last one) — used to clamp
+// a saved offset so a tall-window position never spills into the next section
+// when restored in a short window (AC6).
+function bookSectionEnd(idx) {
+  if (idx + 1 < BOOK_ANCHORS.length) return BOOK_ANCHORS[idx + 1].pos;
+  const content = document.getElementById('book-content');
+  return content.scrollHeight - content.clientHeight;
+}
+
+// Debounced write on scroll-settle: stores {target, offset} so reopening
+// lands in the same paragraph, not just the section heading (AC1, AC4).
+function bookSavePosition() {
+  if (!BOOK_ANCHORS.length || BOOK_CURRENT === null) return;
+  const content = document.getElementById('book-content');
+  const anchor = BOOK_ANCHORS.find(a => a.target === BOOK_CURRENT);
+  if (!anchor) return;
+  const offset = content.scrollTop - anchor.pos;
+  try {
+    localStorage.setItem(BOOK_KEY, JSON.stringify({ target: BOOK_CURRENT, offset: Math.round(offset) }));
+  } catch (e) {}
+}
+
+// AC2: Tolerant read — a JSON {target, offset} object, or the legacy bare "unit/section" string.
+function bookReadStored() {
+  let raw = null;
+  try { raw = localStorage.getItem(BOOK_KEY); } catch (e) { return null; }
+  if (!raw) return null;
+  try {
+    const parsed = JSON.parse(raw);
+    if (parsed && typeof parsed === 'object' && typeof parsed.target === 'string') {
+      return { target: parsed.target,
+               offset: typeof parsed.offset === 'number' ? Math.max(0, Math.round(parsed.offset)) : 0 };
+    }
+    return null;   // valid JSON, but not our shape: ignore rather than guess
+  } catch (e) {
+    return { target: raw, offset: 0 };   // not JSON, so it is the legacy bare string
+  }
+}
+
+// AC3: resolve exact, then by unit id, then give up quietly.
+// AC6: clamp the offset to the section so a position saved in a tall window cannot
+// spill into the next section when it is restored in a short one.
+function bookApplyStored(stored) {
+  let anchor = BOOK_ANCHORS.find(a => a.target === stored.target);
+  if (!anchor) {
+    // The slug may have drifted (a re-slugified chapter). Try a unit-id prefix match.
+    const prefix = stored.target.split('/')[0];
+    anchor = BOOK_ANCHORS.find(a => a.target === prefix) ||
+             BOOK_ANCHORS.find(a => a.target.startsWith(prefix + '/'));
+  }
+  if (!anchor) return false;   // AC3: degrade quietly, stay at the top, no console noise
+  const end = bookSectionEnd(BOOK_ANCHORS.indexOf(anchor));
+  const content = document.getElementById('book-content');
+  content.scrollTop = Math.max(0, Math.min(anchor.pos + stored.offset, end));
+  bookActivate(anchor.target);
+  return true;
+}
+
+function renderBookFromHash() {
+  if (typeof BOOK_MD === 'undefined' || !BOOK_ANCHORS.length) return;
+  bookMeasure(false);   // the panel may have last been laid out at a different size
+
+  const stored = bookReadStored();
+
+  // AC7, with a caveat that matters. bookActivate() writes this hash itself on every
+  // anchor change, so by the time anyone reloads, the URL is almost always a "#book/"
+  // hash — including when they simply pressed reload. Treating that as a deep link
+  // discards the saved offset and lands on the section heading, which is precisely the
+  // bug this change exists to fix. So: a hash naming the place we saved is our own and
+  // the offset is honoured; a hash naming anywhere else is a genuine deep link and wins.
+  if (window.location.hash.startsWith('#book/')) {
+    const [id, sec] = window.location.hash.slice(6).split('/');
+    const key = sec ? id + '/' + sec : id;
+    if (stored && stored.target === key) { bookApplyStored(stored); return; }
+    showBookUnit(id, sec);
+    return;
+  }
+
+  if (stored) bookApplyStored(stored);
+}
+
+// The book scrolls inside #book-content, so that is the element the spy listens to.
+(() => {
+  let ticking = false;
+  let saveTimer = null;
+  const content = document.getElementById('book-content');
+
+  content.addEventListener('scroll', () => {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(() => { ticking = false; bookSpy(); });
+    }
+    // AC4: debounced write — exactly one localStorage save within ~300ms of the last scroll event
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(bookSavePosition, 300);
+  }, { passive: true });
+
+  addEventListener('resize', () => bookMeasure(true));
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => bookMeasure(true));
+})();
+
+function filterBookToc(val) {
+  const q = val.toLowerCase();
+  document.querySelectorAll('.book-toc-section').forEach(a => a.classList.toggle('hidden', q && !a.textContent.toLowerCase().includes(q)));
+  if (q) document.querySelectorAll('.book-toc-kids').forEach(k => { k.style.display = 'block'; });
+}
+
+window.addEventListener('hashchange', () => {
+  if (!document.getElementById('panel-book').classList.contains('hidden')) renderBookFromHash();
+});
