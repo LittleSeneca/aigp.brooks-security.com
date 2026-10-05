@@ -2955,8 +2955,8 @@ const QUESTION_TAGS = {
 "ch1",
 "ch2",
 "d1",
-"kt213",
 "kt302",
+"kt93",
 "t_rai",
 "t_roles"
 ],
@@ -3303,8 +3303,8 @@ const QUESTION_TAGS = {
 "q-54": [
 "ch6",
 "d2",
+"kt163",
 "kt197",
-"kt211",
 "kt24",
 "kt46",
 "kt75",
@@ -4067,8 +4067,8 @@ const QUESTION_TAGS = {
 "ch1",
 "ch7",
 "d1",
+"kt154",
 "kt250",
-"kt37",
 "ref_nist_rmf",
 "t_ai_types"
 ],
@@ -4134,8 +4134,8 @@ const QUESTION_TAGS = {
 "ch1",
 "d1",
 "kt105",
-"kt84",
-"t_ai_types",
+"kt145",
+"t_ai_char",
 "t_roles"
 ],
 "q-145": [
@@ -4272,8 +4272,8 @@ const QUESTION_TAGS = {
 "q-161": [
 "ch1",
 "d1",
-"kt146",
 "kt197",
+"kt213",
 "kt348",
 "kt95",
 "t_ai_char",
@@ -4695,7 +4695,7 @@ const QUESTION_TAGS = {
 "q-209": [
 "ch1",
 "d1",
-"kt146",
+"kt213",
 "t_rai"
 ],
 "q-210": [
@@ -4843,10 +4843,10 @@ const QUESTION_TAGS = {
 "t_ai_char"
 ],
 "q-226": [
-"ch2",
+"ch1",
 "d1",
-"kt105",
-"t_roles"
+"kt154",
+"t_ai_types"
 ],
 "q-227": [
 "ch1",
@@ -5808,8 +5808,8 @@ const QUESTION_TAGS = {
 "ch1",
 "ch7",
 "d2",
+"kt213",
 "kt375",
-"kt93",
 "ref_22989",
 "t_rai"
 ],
@@ -5848,13 +5848,13 @@ const QUESTION_TAGS = {
 "ch3",
 "ch6",
 "d2",
-"kt191",
+"kt192",
 "kt197",
 "kt200",
 "kt95",
+"t_highrisk_req",
 "t_monitoring",
-"t_oversight",
-"t_risktiers"
+"t_oversight"
 ],
 "q-334": [
 "ch7",
@@ -7241,8 +7241,8 @@ const QUESTION_TAGS = {
 "ch1",
 "ch9",
 "d3",
+"kt213",
 "kt314",
-"kt315",
 "kt325",
 "kt333",
 "kt62",
@@ -9060,9 +9060,9 @@ const QUESTION_TAGS = {
 "ch3",
 "d1",
 "kt119",
+"kt213",
 "kt363",
 "kt41",
-"kt93",
 "t_lineage",
 "t_rai",
 "t_thirdparty",
@@ -13188,7 +13188,7 @@ const QUESTION_TAGS = {
 "d1",
 "kt115",
 "kt166",
-"kt315",
+"kt213",
 "kt325",
 "t_minimization",
 "t_rai"
@@ -13629,9 +13629,9 @@ const QUESTION_TAGS = {
 "ch11",
 "d4",
 "kt0",
+"kt213",
 "kt294",
 "kt295",
-"kt315",
 "kt95",
 "t_deployment",
 "t_modeltypes",
@@ -14625,8 +14625,8 @@ const QUESTION_TAGS = {
 "ch6",
 "d1",
 "kt105",
-"kt192",
 "kt226",
+"kt3",
 "t_ai_types",
 "t_highrisk_req",
 "t_roles"
@@ -15318,7 +15318,7 @@ const QUESTION_TAGS = {
 "ch2",
 "d1",
 "kt105",
-"kt146",
+"kt213",
 "t_rai",
 "t_roles"
 ],
@@ -16986,7 +16986,7 @@ const QUESTION_TAGS = {
 "q-1383": [
 "ch1",
 "d1",
-"kt315",
+"kt213",
 "kt352",
 "t_incident",
 "t_rai"

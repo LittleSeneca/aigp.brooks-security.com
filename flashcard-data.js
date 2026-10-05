@@ -14,7 +14,7 @@ const FLASHCARDS = [
   },
   {
     "term": "Accuracy, Robustness and Cybersecurity (Art. 15)",
-    "definition": "Lifecycle-long high-risk duties: declared performance metrics; resilience via redundancy, fail-safe plans, feedback-loop limits; resistance to data or model poisoning, adversarial examples, confidentiality attacks, model flaws."
+    "definition": "Lifecycle-long high-risk duties: declared performance metrics; resilience to errors and faults; technical redundancy such as backup or fail-safe plans; feedback-loop limits; resistance to data or model poisoning, adversarial examples, confidentiality attacks, model flaws."
   },
   {
     "term": "Action Space (Agentic AI)",
@@ -546,7 +546,7 @@ const FLASHCARDS = [
   },
   {
     "term": "Domestic Representative (Korea AI Basic Act)",
-    "definition": "Art. 36: foreign operator with no Korean address meeting any one: KRW 1 trillion revenue, KRW 10 billion AI revenue, 1 million daily Korean users, or a past fine for ignoring an MSIT order. vs. EU: every non-EU high-risk or GPAI provider."
+    "definition": "Art. 36: foreign operator, no Korean address, meeting any one: KRW 1 trillion revenue, KRW 10 billion AI revenue, 1 million daily Korean users, or a past fine for ignoring an MSIT order. vs. EU: non-EU high-risk and GPAI providers, except non-systemic open-source GPAI."
   },
   {
     "term": "Downstream Harm",
@@ -618,7 +618,7 @@ const FLASHCARDS = [
   },
   {
     "term": "Expert System",
-    "definition": "ISO/IEC 22989: integrates knowledge from human domain specialists, usually hand-coded rules run by an inference engine. Symbolic: explainable by inspection, brittle outside its rules (vs. ML: learns from data)."
+    "definition": "ISO/IEC 22989: accumulates and integrates knowledge from one or more human experts in a specific domain to derive solutions (e.g. medical diagnosis). Built as a knowledge base of rules plus an inference engine; vs. ML, which learns from data."
   },
   {
     "term": "Explainability",
@@ -654,7 +654,7 @@ const FLASHCARDS = [
   },
   {
     "term": "Fair Use (AI Training)",
-    "definition": "US-only defence (§107); factors 1 (transformative) and 4 (market harm) decide. 2025: fair in Bartz (not pirated copies) and Kadrey; unfair in Ross (competing tool). No appellate ruling by Sep 2026."
+    "definition": "US defence (17 U.S.C. §107; EU has none); factors 1 (transformative) and 4 (market harm) decide. Fair in Bartz (not pirated copies) and Kadrey; unfair in Ross (competing tool), affirmed by the Third Circuit Sep 2026 (first appellate ruling)."
   },
   {
     "term": "Fairness",
@@ -854,7 +854,7 @@ const FLASHCARDS = [
   },
   {
     "term": "Interpretability",
-    "definition": "How far a person can understand how a model reaches outputs: high for decision trees, low for deep networks. NIST: answers 'why'. High stakes: prefer glass-box models over post-hoc explanation."
+    "definition": "How far people can make sense of a model and its outputs without post-hoc tools: high for decision trees, low for deep networks. NIST: an output's meaning in context ('why'); explainability is the 'how'. High stakes: prefer glass-box models."
   },
   {
     "term": "ISO/IEC 22989",
@@ -922,7 +922,7 @@ const FLASHCARDS = [
   },
   {
     "term": "Localization Policy",
-    "definition": "Deactivation's BOK IV.C partner: confine or adapt a system per jurisdiction instead of withdrawing it everywhere (not translation). Levers: regional instances, federated learning, feature flags."
+    "definition": "Deactivation's BOK IV.C partner: confine or adapt a system per jurisdiction instead of withdrawing it everywhere (not translation). Levers: separate regional instances, federated learning, modular architecture (regional feature flags)."
   },
   {
     "term": "Long Short-Term Memory (LSTM)",
