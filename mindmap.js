@@ -39,33 +39,29 @@ function nodeScore(id) {
   NODE_QS[id].forEach(qid => { const p = progress[qid]; if (p) { answered++; if (p.correct) correct++; } });
   NODE_FCS[id].forEach(t => { const m = mmMastery[t]; if (m !== undefined) rated++; if (m === true) mastered++; });
   const termTotal = NODE_FCS[id].size;
-  // blended score: correct answers + mastered terms, over answered questions +
-  // ALL descendant terms — unrated/unmastered leaves hold ancestors back from green
-  const denom = answered + termTotal;
+  // blended score: correct answers + mastered terms, over ALL the node's questions and
+  // descendant terms — untried questions and unrated terms hold it back, like the color's tint
+  const denom = NODE_QS[id].size + termTotal;
   const pct = denom ? Math.round((correct + mastered) / denom * 100) : 0;
   return { total: NODE_QS[id].size, answered, correct, rated, mastered, termTotal, pct };
 }
 
-function lerpHex(a, b, t) {
-  const pa = parseInt(a.slice(1), 16), pb = parseInt(b.slice(1), 16);
-  const ch = s => [(s >> 16) & 255, (s >> 8) & 255, s & 255];
-  const [r1, g1, b1] = ch(pa), [r2, g2, b2] = ch(pb);
-  const m = (x, y) => Math.round(x + (y - x) * t);
-  return `rgb(${m(r1, r2)},${m(g1, g2)},${m(b1, b2)})`;
-}
-
 let mmMastery = {};
 // one formula everywhere — term leaves blend their matched questions with
-// their own flashcard rating, exactly like inner nodes blend their subtrees
-function nodeColor(id) {
-  const s = nodeScore(id);
-  if (!s.answered && !s.rated) return '#4a4d5a';           // grey: not tested yet
-  const p = s.pct / 100;
-  return p < 0.5 ? lerpHex('#e74c3c', '#f39c12', p * 2)    // red → amber
-                 : lerpHex('#f39c12', '#2ecc71', (p - 0.5) * 2); // amber → green
+// their own flashcard rating, exactly like inner nodes blend their subtrees.
+// The hue is how much of what's been tried is right (red → amber → green); how far it
+// moves off grey is how much of the node has been tried, so 2 right answers out of
+// 30 questions is grey with a 7% green tint, not solid green
+function nodeColor(id, from = '#4a4d5a') {
+  const s = nodeScore(id), tried = s.answered + s.rated;
+  if (!tried) return from;                                  // grey: not tested yet
+  const p = (s.correct + s.mastered) / tried;
+  const hue = p < 0.5 ? d3.interpolateRgb('#e74c3c', '#f39c12')(p * 2)  // red → amber
+                      : d3.interpolateRgb('#f39c12', '#2ecc71')((p - 0.5) * 2); // amber → green
+  return d3.interpolateRgb(from, hue)(tried / (s.total + s.termTotal));
 }
-// labels follow the same rule, except untouched ones keep their CSS grey: the node grey is too dark to read as text
-const mmTextFill = d => { const s = nodeScore(d.data.id); return s.answered || s.rated ? nodeColor(d.data.id) : null; };
+// labels tint from their own CSS grey instead: the node grey is too dark to read as text
+function mmTextFill(d) { const s = nodeScore(d.data.id); return s.answered || s.rated ? nodeColor(d.data.id, getComputedStyle(this).fill) : null; }
 
 function nodeDomain(id) { // walk up to the d1-d4 ancestor
   let n = MM_BY_ID[id];
@@ -212,8 +208,8 @@ function buildRadialMap(container, root, W, H) {
     .attr('transform', d => d.depth === 0 ? null
       : d.depth === 1 ? `rotate(${90 - d.x * 180 / Math.PI})`   // horizontal domain labels
       : d.x >= Math.PI ? 'rotate(180)' : null)
-    .style('fill', d => d.depth ? mmTextFill(d) : null) // AIGP's label sits on its own circle, so it stays light
-    .text(d => d.data.label.replace(/\n/g, ' '));
+    .text(d => d.data.label.replace(/\n/g, ' '))
+    .filter(d => d.depth).style('fill', mmTextFill); // AIGP's label sits on its own circle, so it stays light
 }
 
 function renderNodeDetail(id) {
