@@ -97,14 +97,14 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .mm-node text { font-size: 9.5px; pointer-events: none; user-select: none; fill: #b9bdcc; transition: opacity 0.2s; paint-order: stroke; stroke: #0f1117; stroke-width: 3px; }
 .mm-node text.node-label { font-size: 11.5px; font-weight: 600; fill: #e1e4ed; }
 .mm-node text.term-label { font-size: 7px; fill: #7d8195; stroke-width: 2.5px; }
-.mm-link { fill: none; stroke: #5a5d6a; stroke-width: 1.3; stroke-opacity: 0.7; transition: stroke-opacity 0.2s; }
+.mm-link { fill: none; stroke-width: 1.3; stroke-opacity: 0.7; transition: stroke-opacity 0.2s; }
 .chip { background: rgba(108,140,255,0.15); border-color: var(--accent); color: var(--accent); border-radius: 20px; }
 .chip.hidden { display: none; }
 .mm-grad { height: 8px; border-radius: 4px; background: linear-gradient(90deg, #e74c3c, #f39c12, #2ecc71); margin: 4px 0 2px; }
 .mm-grad-labels { display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.68rem; margin-bottom: 6px; }
 /* Indented tree view (the only view on phones) */
 #mindmap-graph.indent { overflow-y: auto; cursor: default; }
-.indent .mm-link { stroke: #3a3d4a; stroke-opacity: 1; }
+.indent .mm-link { stroke-opacity: 1; }
 .indent .mm-node { cursor: pointer; }
 .indent .mm-node:focus:not(:focus-visible) { outline: none; } /* Chrome rings SVG on click too */
 .indent .mm-node:hover rect { fill: rgba(108,140,255,0.08); }

@@ -126,8 +126,11 @@ function buildIndentTree(container, root, W) {
   const g = svg.append('g').attr('transform', `translate(16,${S * 1.5})`);
   g.append('text').attr('class', 'mm-score').attr('x', scoreX).attr('y', -S).attr('dy', '0.32em')
     .attr('text-anchor', 'end').attr('font-weight', 600).text('Score');
-  g.append('g').selectAll('path').data(root.links()).join('path')
+  // reversed so each sibling's shorter elbow paints over the longer ones: every stretch
+  // of the shared vertical carries the color of the child it leads to
+  g.append('g').selectAll('path').data(root.links().reverse()).join('path')
     .attr('class', 'mm-link')
+    .style('stroke', d => nodeColor(d.target.data.id))
     .attr('d', d => `M${d.source.depth * I},${d.source.index * S}V${d.target.index * S}h${I}`);
 
   const open = (e, d) => { e.stopPropagation(); selectMMNode(d.data.id); };
@@ -173,10 +176,10 @@ function buildRadialMap(container, root, W, H) {
   mmFitTransform = d3.zoomIdentity.scale(fit);
   mmSvg.call(mmZoom.transform, mmFitTransform);
 
-  // neutral links and rings — performance is the ONLY color on this map
+  // a link takes its child's color: grey until touched, then that subtree's rolled-up score
   g.append('g').selectAll('path').data(root.links()).join('path')
     .attr('class', 'mm-link')
-    .attr('stroke', '#3a3d4a')
+    .style('stroke', d => nodeColor(d.target.data.id)) // style, not attr: .mm-link's CSS stroke beats attributes
     .attr('stroke-opacity', d => d.target.depth === 1 ? 0.9 : 0.5)
     .attr('stroke-width', d => d.target.depth === 1 ? 2 : 1.2)
     .attr('d', d3.linkRadial().angle(d => d.x).radius(d => d.y));
