@@ -63,8 +63,9 @@ Organizations must formally verify authorization to collect, process, store, and
 | **Direct user consent** | Checkbox acceptance in an app |
 | **Implicit user consent** | Included in terms of use (insufficient in some jurisdictions, including EU under GDPR) |
 | **Contractual provisions** | Data-sharing agreements |
-| **Privacy policy / notice declarations** | Declared privacy practices |
 | **Regulatory allowances** | e.g., HIPAA-compliant health data sharing, often requiring deidentification and **Business Associate Agreements (BAAs)** |
+
+A privacy policy or notice is a disclosure, not a basis: it tells people how their data will be used, but the right to use it has to come from one of the bases above. Under GDPR the bases are the six in Article 6(1).
 
 > **Essential:** Formal legal counsel review with a written assertion is considered essential before using data to train AI.
 
@@ -112,7 +113,7 @@ Fitness for purpose includes: compliance with regulations, integration with work
 
 #### Detecting and Preventing Data Drift
 
-**Data drift** — when new output data deviates significantly from original distributions. Monitoring protocols should be mandated as part of AI model lifecycle governance, especially for models that update or learn over time.
+**Data drift** — when the input data a deployed model receives deviates significantly from the training distribution. Monitoring protocols should be mandated as part of AI model lifecycle governance, especially for models that update or learn over time.
 
 ### 1.5 Ensuring Sufficient and Representative Data
 
@@ -125,7 +126,7 @@ Fitness for purpose includes: compliance with regulations, integration with work
 
 | Problem | Cause | Result |
 |---------|-------|--------|
-| **Underfitting** | Insufficient volume of training data | Model unable to generalize effectively |
+| **Underfitting** | Model too simple or under-trained for the problem; an insufficient volume of training data can contribute | Model unable to generalize effectively |
 | **Overfitting** | Too much narrow or repetitive data | Model learns irrelevant patterns |
 
 > Governance helps find the right balance by defining sufficiency thresholds and reuse limits.
@@ -304,7 +305,7 @@ Policies should define:
 | Industry | Requirements |
 |----------|-------------|
 | **Financial services** | Clear lineage for credit scoring, fraud detection, and algorithmic trading data |
-| **Healthcare** | HIPAA compliance requires all health-related AI to trace data back to validated sources |
+| **Healthcare** | Lineage shows that protected health information in training data was used and disclosed as HIPAA permits, for example after de-identification or under a BAA |
 | **Public sector** | Auditability of data sources ensures democratic accountability (criminal justice, welfare automation) |
 
 ### 2.8 Benefits of Strong Traceability
@@ -498,7 +499,7 @@ An AI model may perform well on a validation set but poorly in the real world du
 | **Label noise** | Inconsistent or incorrect labels reduce model reliability |
 | **Outliers and anomalies** | Extreme values or rare cases distort training or cause unstable behavior |
 | **Imbalanced datasets** | One class/group underrepresented, leading to skewed predictions |
-| **Concept drift** | Training data becomes outdated or misaligned with deployment conditions |
+| **Concept drift** | The relationship between inputs and outcomes changes after deployment, so patterns learned in training stop holding |
 
 #### Model-Related Risks
 
@@ -618,9 +619,9 @@ An AI model may perform well on a validation set but poorly in the real world du
 - **[[Data Governance]]** — Framework of managing enterprise data through policies, processes, tools, roles, and responsibilities to ensure accuracy, usability, security, and compliance
 - **[[Data Lineage]]** — Tracking how data flows through pipelines (ingestion, storage, transformation, consumption, maintenance, disposal); the "how and where" of data
 - **[[Data Provenance]]** — Origin and original characteristics of a dataset: where obtained, who created it, under what conditions, intended purpose
-- **[[Data Drift]]** — When new output data deviates significantly from original training distributions
-- **[[Concept Drift]]** — Training data becomes outdated or misaligned with deployment conditions
-- **[[Underfitting]]** — Model too simple or trained on insufficient data to capture real-world patterns
+- **[[Data Drift]]** — When the input data a deployed model receives deviates significantly from the original training distribution
+- **[[Concept Drift]]** — The relationship between inputs and outcomes changes, so patterns learned in training stop holding
+- **[[Underfitting]]** — Model too simple or under-trained to capture real-world patterns, sometimes made worse by too little data
 - **[[Overfitting]]** — Model learns noise/irrelevant patterns instead of generalizable patterns
 - **[[Data Sufficiency]]** — Having enough volume of data to train a model effectively
 - **[[Representativeness]]** — Ensuring training data captures relevant diversity of the deployment environment

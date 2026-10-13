@@ -210,12 +210,12 @@ The ISO 22989 ecosystem model includes:
 
 | Role | Description |
 |------|-------------|
-| **AI Provider** | Entity that makes an AI system available |
-| **AI Manufacturer** | Entity that builds/assembles the AI system |
-| **AI Customer** | Entity that acquires/uses the AI system |
-| **AI Partner** | Entity that collaborates in AI development or deployment |
-| **AI Subject** | Individual affected by or interacting with an AI system |
-| **Competent Authorities** | Regulatory or oversight bodies |
+| **AI Provider** (5.19.2) | Provides AI products or services (sub-roles: AI platform provider, AI product or service provider) |
+| **AI Producer** (5.19.3) | Designs, develops, tests and deploys products or services that use AI (sub-role: AI developer) |
+| **AI Customer** (5.19.4) | Uses an AI product or service, directly or through a provider (sub-role: AI user) |
+| **AI Partner** (5.19.5) | Provides services in the context of AI (sub-roles: AI system integrator, data provider, AI auditor, AI evaluator) |
+| **AI Subject** (5.19.6) | Is affected by an AI system, product or service (sub-roles: data subject, other subjects) |
+| **Relevant Authorities** (5.19.7) | Policy makers and regulators |
 
 ---
 

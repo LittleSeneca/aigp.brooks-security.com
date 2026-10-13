@@ -244,7 +244,7 @@ Some jurisdictions require proactive or reactive disclosure about AI systems.
 
 | Obligation | Framework |
 |------------|-----------|
-| **Public registration of high-risk systems** | EU AI Act — includes intended purpose, technical specs, risk mitigation measures, post-market monitoring plans |
+| **Public registration of high-risk systems** | EU AI Act (Art. 49, Annex VIII Section A): provider and contact details, trade name, intended purpose, a basic description of the data and operating logic, market status, notified-body certificate details where applicable, Member States, the EU declaration of conformity and electronic instructions for use |
 | **Breach notification to data subjects** | GDPR (Article 34) — high-risk breaches |
 | **Serious incident reporting** | EU AI Act — informing regulators of serious incidents and corrective actions |
 | **Consumer alerts** | Consumer protection laws — breaches, unauthorized disclosures, product defects, misleading results |
@@ -428,7 +428,7 @@ When retiring a system, determine what to retain, archive, or delete based on re
 - Temporary model artifacts (checkpoint files)
 - PII not required for compliance
 
-> Use **military-grade data erasure tools** for sensitive data. For cloud-hosted AI, request destruction from the provider, possibly including a **certificate of destruction**. Conduct a **DPIA** before deletion to confirm retention requirements under GDPR, CPRA, etc.
+> Use **military-grade data erasure tools** for sensitive data. For cloud-hosted AI, request destruction from the provider, possibly including a **certificate of destruction**. Before deleting, check **retention obligations** (records schedules, sector rules, litigation holds) against the storage limits of GDPR, CPRA and similar laws, so nothing is destroyed too early or kept too long.
 
 ### 3.6 Communication and Transparency in AI Retirement
 

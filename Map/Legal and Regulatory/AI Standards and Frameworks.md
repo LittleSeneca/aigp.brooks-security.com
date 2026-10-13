@@ -165,10 +165,12 @@ Establishes organizational context, culture, and structures. **Most relevant for
 
 | Category | Key Subcategories |
 |----------|-------------------|
-| **1. Policies, Processes, Procedures** | Documented risk management policies; AI-specific considerations (fairness, explainability, robustness, privacy) |
-| **2. Roles and Responsibilities** | Clear roles/accountabilities across lifecycle; oversight bodies (ethics committees, internal audit); escalation mechanisms |
-| **3. Risk Tolerance and Appetite** | Documented risk appetite/tolerance statements; stakeholder input; periodic reviews as tech/regs evolve |
-| **4. Organizational Culture & Communication** | Leaders model risk-informed decisions; employees raise concerns without retaliation; training reinforces ethical AI use |
+| **1. Policies, processes, procedures and practices** | Policies for mapping, measuring and managing AI risk are in place, transparent and implemented; legal requirements understood; risk management scaled to the organization's risk tolerance (1.3); AI system inventory (1.6); safe decommissioning (1.7) |
+| **2. Accountability structures** | Teams and individuals are empowered, responsible and trained; roles and lines of communication documented (2.1); AI risk training (2.2); executive leadership takes responsibility for AI risk decisions (2.3) |
+| **3. Workforce diversity, equity, inclusion and accessibility** | Diverse teams inform risk decisions across the lifecycle (3.1); roles for human-AI configurations and oversight are defined (3.2) |
+| **4. Organizational culture** | Teams are committed to a culture that considers and communicates AI risk: critical thinking and a safety-first mindset (4.1), documenting and communicating impacts (4.2), testing, incident identification and information sharing (4.3) |
+| **5. Engagement with relevant AI actors** | Processes to collect and integrate feedback from people outside the team that built or deployed the system, about potential impacts (5.1), and to feed it into design and deployment (5.2) |
+| **6. Third-party software, data and supply chain** | Policies address risks from third parties, including IP infringement (6.1), and contingency processes for failures in high-risk third-party data or systems (6.2) |
 
 > **RACI Model:** Responsible, Accountable, Consulted, Informed — used to assign AI governance responsibilities (see [[Organizational Readiness]]).
 
@@ -180,10 +182,11 @@ Identifies the AI system's characteristics and operating context. Iterative acro
 
 | Category | Key Subcategories |
 |----------|-------------------|
-| **1. Context & Intended Purpose** | Documented uses, goals, limitations; foreseeable misuses; socio-technical context; traceable documentation |
-| **2. System Design & Functionality** | Data sources, preprocessing, model features; human-AI interaction design; performance metrics and boundaries |
-| **3. Stakeholders & Affected Populations** | Primary users and decision-makers; impacted individuals/communities; stakeholder engagement documentation |
-| **4. Risk Identification & Prioritization** | Known/foreseeable risks documented; prioritized by likelihood and severity; sources of uncertainty |
+| **1. Context is established and understood** | Intended purposes, beneficial uses, context-specific laws and norms, deployment settings and foreseeable misuse (1.1); interdisciplinary team (1.2); business value (1.4); risk tolerance (1.5); system requirements (1.6) |
+| **2. Categorization of the AI system** | The tasks and methods the system uses (2.1); its knowledge limits and how humans will use its output (2.2); scientific integrity and TEVV considerations (2.3) |
+| **3. Capabilities, targeted usage, goals, expected benefits and costs** | Benefits (3.1) and costs, including non-monetary costs of errors (3.2), compared with benchmarks; targeted application scope (3.3); operator proficiency (3.4); human oversight processes (3.5) |
+| **4. Risks and benefits mapped for all components, including third-party software and data** | Approaches for mapping technology and legal risks of components, including third-party data, software and IP (4.1); internal risk controls for components (4.2) |
+| **5. Impacts to individuals, groups, communities, organizations and society are characterized** | Likelihood and magnitude of each identified impact (5.1); regular engagement with relevant AI actors and integration of their feedback about impacts (5.2) |
 
 > **Epistemic vs. Aleatoric Uncertainty:**
 > - **Epistemic** — unknowns from limited knowledge (e.g., insufficient training data)
@@ -198,10 +201,10 @@ Identifies the AI system's characteristics and operating context. Iterative acro
 
 | Category | Key Subcategories |
 |----------|-------------------|
-| **1. Risk Metrics & Indicators** | Established criteria for each risk; metrics tailored to context/stakeholders; updated as understanding evolves |
-| **2. Evaluation Methods** | Testing (unit, red teaming, blue teaming, stress testing); qualitative methods (expert panels, user studies); third-party audits |
-| **3. System Performance Monitoring** | Continuous monitoring/logging; anomaly/error detection; feedback loops |
-| **4. Risk Documentation & Reporting** | Results documented/archived; stakeholder-appropriate reports; inform future updates |
+| **1. Appropriate methods and metrics are identified and applied** | Metrics for the most significant risks first (1.1); metrics and controls regularly reassessed (1.2); review by internal experts who did not build the system, or independent assessors (1.3) |
+| **2. AI systems are evaluated for trustworthy characteristics** | Thirteen subcategories: TEVV documentation (2.1), human-subject evaluations (2.2), performance (2.3), production monitoring (2.4), validity and reliability (2.5), safety (2.6), security and resilience (2.7), transparency and accountability (2.8), explainability (2.9), privacy (2.10), fairness and bias (2.11), environmental impact (2.12), TEVV effectiveness (2.13). Methods include unit testing, red teaming, stress testing, expert panels, user studies and third-party audits |
+| **3. Mechanisms for tracking identified AI risks over time are in place** | Tracking existing, unanticipated and emergent risks (3.1); tracking where measurement is difficult (3.2); feedback processes for end users and affected communities to report problems and appeal outcomes (3.3) |
+| **4. Feedback about the efficacy of measurement is gathered and assessed** | Measurement approaches connected to the deployment context and informed by domain experts (4.1); results validated with domain experts and relevant AI actors (4.2); measurable performance improvements or declines identified (4.3) |
 
 > **Model Cards & System Cards:** Structured, accessible formats for documenting AI system performance, limitations, and risks (especially for LLMs).
 
@@ -211,10 +214,10 @@ Operationalizes insight from Govern/Map/Measure into concrete mitigation and imp
 
 | Category | Key Subcategories |
 |----------|-------------------|
-| **1. Risk Treatment & Mitigation** | Controls based on risk assessment; technical (algorithmic constraints) + organizational (policy enforcement); all treatment decisions approved/documented |
-| **2. Incident Response & Recovery** | AI-specific incident playbooks; align with cybersecurity IR; escalation tied to risk thresholds; after-action reviews with learning loops |
-| **3. Risk Management Integration** | AI risk integrated with cybersecurity, privacy, ERM; cross-functional coordination; procurement/vendor AI risk protocols |
-| **4. Risk Evolution & System Retirement** | Periodic fitness reviews; end-of-life planning; decommissioning includes documentation and post-use impact assessment |
+| **1. AI risks based on MAP and MEASURE assessments are prioritized, responded to and managed** | Go/no-go decision on whether the system achieves its purpose (1.1); treatment prioritized by impact, likelihood and resources (1.2); responses to high-priority risks: mitigate, transfer, avoid or accept (1.3); residual risks documented (1.4) |
+| **2. Strategies to maximize benefits and minimize negative impacts are planned, prepared, implemented and documented** | Resources and non-AI alternatives considered (2.1); mechanisms to sustain value (2.2); procedures for previously unknown risks (2.3); mechanisms to supersede, disengage or deactivate systems performing outside intended use (2.4) |
+| **3. AI risks and benefits from third-party entities are managed** | Third-party risks monitored with controls applied (3.1); pre-trained models monitored as part of regular maintenance (3.2) |
+| **4. Risk treatments, including response and recovery, and communication plans are documented and monitored regularly** | Post-deployment monitoring plans covering user input, appeal and override, decommissioning, incident response, recovery and change management (4.1); continual improvement (4.2); incidents and errors communicated to relevant AI actors, including affected communities (4.3) |
 
 > **Risk Treatment Options:** Risk acceptance, risk transfer, risk avoidance, risk mitigation — all must be approved by management and documented.
 

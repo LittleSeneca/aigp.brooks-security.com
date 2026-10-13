@@ -107,7 +107,7 @@ A system is **high-risk** if it meets **either**:
 | Requirement | Article | Key Provisions |
 |---|---|---|
 | **Risk Management System** | Art. 9 | Continuous iterative process throughout lifecycle: identify, estimate, evaluate, and mitigate risks to health/safety/fundamental rights. Residual risk must be acceptable. Testing prior to market placement. |
-| **Data & Data Governance** | Art. 10 | Training/validation/testing datasets must meet quality criteria: relevant, representative, free of errors, complete. Governance for design choices, collection, preparation, bias examination, and gap identification. Special category data processing for bias detection permitted under strict safeguards (as enacted: Art. 10(5); as amended by the 2026 Omnibus: Art. 10(5) is deleted and the rule moves to the new **Art. 4a**, see §13). |
+| **Data & Data Governance** | Art. 10 | Training/validation/testing datasets must be relevant, sufficiently representative and, to the best extent possible, free of errors and complete in view of the intended purpose (Art. 10(3)). Governance for design choices, collection, preparation, bias examination, and gap identification. Special category data processing for bias detection permitted under strict safeguards (as enacted: Art. 10(5); as amended by the 2026 Omnibus: Art. 10(5) is deleted and the rule moves to the new **Art. 4a**, see §13). |
 | **Technical Documentation** | Art. 11 | Drawn up before market placement, kept up to date. Must demonstrate compliance per Annex IV (general description, development process, monitoring/functioning details). SMEs may use simplified form. |
 | **Record-Keeping (Logging)** | Art. 12 | Automatic logging over system lifetime. Must record events relevant for risk identification, post-market monitoring facilitation, and operation monitoring. Specific requirements for biometric systems. |
 | **Transparency & Information to Deployers** | Art. 13 | Operation must be sufficiently transparent for deployers to interpret output. Instructions for use must include: provider identity, capabilities/limitations, accuracy/robustness metrics, known risks, input specifications, human oversight measures, etc. |
@@ -230,7 +230,7 @@ Must include documented policies/procedures for:
 - AI Office to facilitate drawing up of codes of practice covering Arts. 53 and 55
 - Codes to be ready by **2 May 2025**
 - If not finalised by **2 August 2025**, Commission may provide common rules via implementing acts
-- **Legal effect:** a code is a way to *demonstrate* compliance until a harmonised standard is published. Only a harmonised standard (once its reference is in the OJ, Art. 40(1)) gives a **presumption of conformity** (Arts. 53(4), 55(2)). Non-adherents must show "alternative adequate means".
+- **Legal effect:** a code is a way to *demonstrate* compliance until a harmonised standard is published; it does not give a **presumption of conformity**. That comes from a harmonised standard once its reference is in the OJ (Arts. 40(1), 53(4), 55(2)), or from common specifications the Commission adopts by implementing act (Art. 41(3)), in each case to the extent they cover the obligations. Non-adherents must show "alternative adequate means".
 - **Status:** the GPAI Code of Practice was published 10 July 2025; the Commission and the AI Board confirmed it adequate on 1 August 2025. See [[GPAI Code of Practice — Key Provisions]].
 - **As amended by the 2026 Omnibus**, Art. 56(6) has the Commission (taking utmost account of the Board's opinion) assess the codes' adequacy and publish that assessment. The replaced paragraph no longer contains the old sentence letting the Commission give a code "general validity" by implementing act.
 
@@ -245,7 +245,7 @@ Must include documented policies/procedures for:
 | **CE Marking** | Art. 48 | Affixed to system/packaging/documentation; subject to general principles of Regulation (EC) 765/2008 |
 | **EU Database Registration** | Art. 49 | Providers register high-risk AI systems before market placement. Deployers who are public authorities also register. Information per Annex VIII. |
 | **Post-Market Monitoring** | Art. 72 | Providers establish and document post-market monitoring system proportionate to nature and risks |
-| **Serious Incident Reporting** | Art. 73 | Providers report serious incidents to market surveillance authorities within **15 days** (or immediately for death); deployers report to provider |
+| **Serious Incident Reporting** | Art. 73 | Providers report serious incidents to the market surveillance authority as soon as they establish a causal link (or its reasonable likelihood), and at the latest within **15 days** of becoming aware; **10 days** where a person died; **2 days** for a widespread infringement or a serious disruption of critical infrastructure (Art. 73(2)-(4)). A deployer that identifies a serious incident informs the provider first, then the importer or distributor and the authority (Art. 26(5)) |
 
 ---
 

@@ -75,7 +75,7 @@ The ISO and IEC standards build on one another; the vocabulary comes first. **IS
 
 **Verification** asks whether the system was built right, against its specifications; **validation** asks whether the right system was built, fit for its intended use. **Robustness** is maintaining performance under all circumstances and **resilience** is recovering operational state after an incident. **Reliability** is distinct from accuracy. **Explainability** answers why a particular output came out as it did; **transparency** is information made available about the system.
 
-22989 also supplies roles that do not match the EU AI Act: the **AI provider** makes a system available, the **AI manufacturer** builds it, the **AI customer** acquires it, and the **AI subject** is the person affected. Map them to the Act's provider, deployer, importer and distributor.
+22989 also supplies roles that do not match the EU AI Act: the **AI provider** makes a system available, the **AI producer** builds it, the **AI customer** uses it, the **AI subject** is the person affected, and **relevant authorities** regulate. Map them to the Act's provider, deployer, importer and distributor.
 
 ### 7.6 ISO/IEC 42001, the Certifiable Management System
 

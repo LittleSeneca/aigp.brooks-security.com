@@ -9206,6 +9206,8 @@ const QUESTION_TAGS = {
 "ch7",
 "d2",
 "kt214",
+"kt22",
+"kt25",
 "kt324",
 "ref_22989"
 ],

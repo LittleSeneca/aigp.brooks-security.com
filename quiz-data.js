@@ -17324,7 +17324,7 @@ const ALL_QUESTIONS = [
     "area": "ch7",
     "domain": "Domain II",
     "difficulty": "Easy",
-    "question": "A governance analyst is mapping stakeholders for a warehouse robotics deployment using the ISO/IEC 22989 role taxonomy. Which party should she record as the AI manufacturer?",
+    "question": "A governance analyst is mapping stakeholders for a warehouse robotics deployment using the ISO/IEC 22989 role taxonomy. Which party should she record as the AI producer?",
     "options": [
       {
         "letter": "A",
@@ -17340,11 +17340,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "The robotics firm that builds and assembles the system into a finished product"
+        "text": "The robotics firm that designs, develops and tests the AI system in the robots"
       }
     ],
     "answer": "D",
-    "explanation": "Under ISO/IEC 22989, the AI manufacturer is the entity that builds or assembles the AI system. Option A is closer to an AI platform or service provider, B is the organization using the system in operation, and C describes AI subjects — the people affected by or sensed by the system."
+    "explanation": "Under ISO/IEC 22989 (clause 5.19.3), the AI producer designs, develops, tests and deploys products or services that use AI; its sub-role is AI developer. Option A is closer to an AI platform provider, B is an AI customer using the system in operation, and C describes AI subjects, the people affected by or sensed by the system."
   },
   {
     "id": "q-665",

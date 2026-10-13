@@ -76,7 +76,7 @@ Most organizations rely on vendors, open-source models, or cloud AI services. Th
 - **Model transparency and explainability** — Disclosures on training data sources, model lineage, performance evaluation, audit mechanisms
 - **Indemnity and liability** — Vendors often disclaim responsibility for harmful outputs; negotiate liability clauses for recourse
 - **Cyber liability insurance** — Require vendors to carry insurance, especially smaller vendors
-- **Security and compliance posture** — Certifications (ISO/IEC 27001, ISO/IEC 42001, SOC 2 Type II), secure development practices
+- **Security and compliance posture** — Certifications (ISO/IEC 27001, ISO/IEC 42001) and attestation reports (SOC 2 Type II, an AICPA audit report rather than a certificate), secure development practices
 
 > **Case study:** An open-source language model under a non-commercial license was integrated into a for-profit chatbot platform, exposing the company to IP infringement claims.
 
@@ -337,7 +337,7 @@ Periodic audits confirm compliance with applicable laws, agreements, policies, a
 - Assign **responsible owners** for each compliance area
 - Coach responsible owners on **proper conduct** with auditors
 
-> **Note:** Some regulations (e.g., EU AI Act) require audits by qualified **external parties** (Notified Bodies), not internal audit staff.
+> **Note:** Some regulations require assessment by qualified **external parties** rather than internal audit staff. Under the EU AI Act, a **notified body** must assess an Annex III biometric system where the provider has not fully applied harmonised standards or common specifications, and Annex I products go through the third-party assessment their own sectoral law requires. Most other Annex III systems use the provider's internal control (Art. 43, Annex VI).
 
 ### Real-Time Testing and Continuous Monitoring
 
