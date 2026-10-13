@@ -41426,5 +41426,2678 @@ const ALL_QUESTIONS = [
     "answer": "D",
     "explanation": "Article 4 requires role-appropriate AI literacy for staff operating/using AI systems — one of the earliest-applying duties (from February 2025). - A: No certification mandate. - B: No annual-report requirement in Article 4. - C: No credential quota exists. --- ## Score interpretation | Score | Verdict | |---|---| | **17–20** | Ready — operations governance is exam-solid; you're cleared for the mock. | | **14–16** | Review weak areas — misses usually cluster on incident-reporting deadlines and oversight design; reread those lessons and journal each miss. | | **< 14** | Redo the phase — rework Phase 6 before retaking; Domain IV carries 21–25 scored questions. |",
     "source": "AIGP Exam Prep (github.com/sanjaynandanj/aigp-exam-prep), MIT, © 2026 MarginX · Domain 4 Quiz #20"
+  },
+  {
+    "id": "q-1532",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Painful",
+    "question": "Which of the following is NOT an element of the OECD's November 2023 definition of an AI system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Systems may vary in their autonomy and adaptiveness after deployment"
+      },
+      {
+        "letter": "B",
+        "text": "It generates outputs for a specific, human-defined objective"
+      },
+      {
+        "letter": "C",
+        "text": "It infers, from the input it receives, how to generate outputs"
+      },
+      {
+        "letter": "D",
+        "text": "Its outputs can influence physical or virtual environments"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A specific, human-defined objective is the ISO/IEC 22989 wording for an AI system, and the OECD's 2019 definition also spoke of human-defined objectives. The November 2023 revision changed this to explicit or implicit objectives so that goals a system learns, for example through reinforcement learning from human feedback, are covered. Varying autonomy and adaptiveness after deployment (A), inference from input (C) and influence on physical or virtual environments (D) are all in the 2023 text."
+  },
+  {
+    "id": "q-1533",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "A governance team is mapping its approval gates to the AI system lifecycle phases set out in the OECD Recommendation on AI, as revised in 2024. Which of the following is NOT one of those phases?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Retirement and decommissioning"
+      },
+      {
+        "letter": "B",
+        "text": "Testing, evaluation, verification and validation"
+      },
+      {
+        "letter": "C",
+        "text": "Data collection and processing"
+      },
+      {
+        "letter": "D",
+        "text": "Continuous validation"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Continuous validation is a stage of the ISO/IEC 22989 life cycle, where it means ongoing checks that a deployed system still meets its requirements in production. The OECD Recommendation, as revised in 2024, lists plan and design; data collection and processing (C); building or adapting models; testing, evaluation, verification and validation (B); deployment; operation and monitoring; and retirement or decommissioning (A)."
+  },
+  {
+    "id": "q-1534",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Which of the following is NOT among the characteristics of AI that the AIGP Body of Knowledge identifies as demanding governance?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Automation bias"
+      },
+      {
+        "letter": "B",
+        "text": "Probabilistic outputs"
+      },
+      {
+        "letter": "C",
+        "text": "Speed and scale"
+      },
+      {
+        "letter": "D",
+        "text": "Data dependency"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Automation bias is the human tendency to defer to model outputs even when they are flawed. It is a risk that arises in how people use AI, not a characteristic of the technology itself. The Body of Knowledge (I.A) lists complexity, opacity, autonomy, speed and scale (C), potential for harm or misuse, data dependency (D), and probabilistic versus deterministic outputs (B) as the characteristics that demand governance."
+  },
+  {
+    "id": "q-1535",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A data science lead sorts the approaches her team uses into AI techniques and training methods. Which item does NOT belong among the training methods?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Zero-shot learning"
+      },
+      {
+        "letter": "B",
+        "text": "Semi-supervised learning"
+      },
+      {
+        "letter": "C",
+        "text": "Deep learning"
+      },
+      {
+        "letter": "D",
+        "text": "Reinforcement learning"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Deep learning is an AI technique, the use of multi-layer neural networks for unstructured data, in the same group as machine learning, natural language processing and expert systems. Training methods are defined by what the model learns from: semi-supervised learning (B) combines a small labeled set with a large unlabeled one, reinforcement learning (D) learns from rewards and penalties, and zero-shot learning (A) recognizes things it has no prior examples of."
+  },
+  {
+    "id": "q-1536",
+    "area": "ch1",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Kestrel Freight's risk team is sorting AI risks by who bears them. Which of the following does NOT belong in the category of risks to organizations?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Misalignment, where benign behavior in testing turns harmful once deployed"
+      },
+      {
+        "letter": "B",
+        "text": "Job displacement as automation replaces roles in transport and customer service"
+      },
+      {
+        "letter": "C",
+        "text": "Operational disruption when an AI system fails in fraud detection or inventory"
+      },
+      {
+        "letter": "D",
+        "text": "Compromise of a vendor that spreads to the company, as in the SolarWinds pattern"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Job displacement is a risk to society, along with economic inequality, erosion of human autonomy and manipulation of public opinion, because the loss falls on workers and the wider economy. Misalignment (A), operational failure (C) and supply chain compromise (D) are all risks to organizations, as are legal and regulatory, financial, cybersecurity and reputational risk."
+  },
+  {
+    "id": "q-1537",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "Harbourline Insurance is drafting the charter for a cross-functional AI governance council drawn from data science, privacy, legal, risk and the business units. Which of the following is NOT typically one of the council's responsibilities?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Developing and maintaining the organization's AI governance framework"
+      },
+      {
+        "letter": "B",
+        "text": "Acting as final reviewer when algorithmic risks are escalated"
+      },
+      {
+        "letter": "C",
+        "text": "Overseeing audits and impact assessments such as AIAs and DPIAs"
+      },
+      {
+        "letter": "D",
+        "text": "Allocating funding for governance tools, training and staffing"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Allocating funding for governance tools, training and staffing is an executive leadership responsibility, along with setting the tone from the top and approving risk thresholds for high-stakes domains. Developing the framework (A), serving as final reviewer for escalations (B) and overseeing AIAs and DPIAs (C) are council duties, as are risk reviews of sensitive use cases and reporting progress to the board of directors."
+  },
+  {
+    "id": "q-1538",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Painful",
+    "question": "Which of the following is NOT a subcategory of the GOVERN function in the NIST AI Risk Management Framework?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Contingency processes are in place for failures or incidents in high-risk third-party AI systems or data"
+      },
+      {
+        "letter": "B",
+        "text": "Mechanisms are in place to inventory AI systems, resourced according to organizational risk priorities"
+      },
+      {
+        "letter": "C",
+        "text": "Mechanisms are in place to disengage or deactivate AI systems performing inconsistently with intended use"
+      },
+      {
+        "letter": "D",
+        "text": "Executive leadership takes responsibility for decisions about risks in AI system development and deployment"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Superseding, disengaging or deactivating a system whose performance or outcomes are inconsistent with intended use is MANAGE 2.4. The closest GOVERN outcome is GOVERN 1.7, which calls for processes to decommission and phase out AI systems safely. Third-party contingency processes (A) are GOVERN 6.2, the AI inventory (B) is GOVERN 1.6, and executive responsibility for AI risk decisions (D) is GOVERN 2.3."
+  },
+  {
+    "id": "q-1539",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Which of the following is NOT a requirement of Clause 5 (Leadership) of ISO/IEC 42001?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Defining the process the organization uses to assess and evaluate AI risks"
+      },
+      {
+        "letter": "B",
+        "text": "Demonstrating top management's commitment to the AI management system"
+      },
+      {
+        "letter": "C",
+        "text": "Establishing an AI policy that records leadership's commitment"
+      },
+      {
+        "letter": "D",
+        "text": "Assigning roles, responsibilities and authorities in the AI management system"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Defining how AI risks are assessed is a planning requirement under Clause 6.1.2, which also requires the organization to retain documented information about its AI risk assessment process. Clause 5 covers leadership: top management shows commitment to the AI management system (B), establishes the AI policy (C), and assigns roles, responsibilities and authorities (D)."
+  },
+  {
+    "id": "q-1540",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Ashgrove Health is designing role-based AI training. Which pairing of audience and core topics does NOT match that audience's training needs?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Frontline users: system behavior, human-in-the-loop workflows and recourse options"
+      },
+      {
+        "letter": "B",
+        "text": "Developers and data scientists: use case vetting, success criteria and user impact"
+      },
+      {
+        "letter": "C",
+        "text": "IT and cybersecurity: system monitoring, incident response and control ownership"
+      },
+      {
+        "letter": "D",
+        "text": "Executives and board: AI strategy, regulatory trends and reputational risk"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Use case vetting, success criteria and user impact are core topics for business and product teams, whose training aims at value alignment and impact awareness. Developers and data scientists need technical topics such as model documentation, bias mitigation and reproducibility. Frontline users (A), IT and cybersecurity staff (C), and executives and the board (D) are each paired with topics that fit their role."
+  },
+  {
+    "id": "q-1541",
+    "area": "ch2",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Which of the following is NOT typically one of legal counsel's responsibilities in an AI governance program?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Taking part in impact assessments and incident response"
+      },
+      {
+        "letter": "B",
+        "text": "Interpreting regulations such as the GDPR and the EU AI Act for AI use"
+      },
+      {
+        "letter": "C",
+        "text": "Drafting AI-specific contract terms and service-level agreements"
+      },
+      {
+        "letter": "D",
+        "text": "Conducting periodic reviews and internal audits of governance controls"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Periodic reviews and internal audits belong to the compliance officer, who also embeds governance controls in workflows, checks adherence to policies and standards such as ISO/IEC 42001, and trains staff on AI compliance risks. Legal counsel's duties include impact assessments and incident response (A), interpreting regulations (B), drafting AI contracts and SLAs (C), and advising on liability, intellectual property and third-party risk."
+  },
+  {
+    "id": "q-1542",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "Before an AI system goes live, lifecycle policy should require a set of pre-deployment controls. Which of the following is NOT one of them?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A monitoring plan approved by a relevant governance body"
+      },
+      {
+        "letter": "B",
+        "text": "A review of the risk assessment and planned mitigations"
+      },
+      {
+        "letter": "C",
+        "text": "Accessible dashboards for compliance officers and regulators"
+      },
+      {
+        "letter": "D",
+        "text": "Submission of a complete documentation package for review"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Accessible dashboards for non-technical stakeholders, compliance officers and regulators are a post-deployment monitoring requirement, alongside real-time performance tracking, alerting and human oversight. The pre-deployment controls are an ethics and compliance review checkpoint, a risk assessment and mitigation review (B), a complete documentation package (D), and a monitoring plan approved by a governance body (A), which is agreed before launch even though it runs afterwards."
+  },
+  {
+    "id": "q-1543",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Pellworth Media is amending its acceptable use policy (AUP) to cover employee use of generative AI tools. Which of the following does NOT belong among the AUP's core elements?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A bar on vendors retraining their models on company data without consent"
+      },
+      {
+        "letter": "B",
+        "text": "Mechanisms for logging and reviewing employees' AI usage"
+      },
+      {
+        "letter": "C",
+        "text": "The AI tools and use cases that are approved for staff"
+      },
+      {
+        "letter": "D",
+        "text": "Data types staff must not enter, set by the data classification policy"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Limits on a vendor retraining its models with company data belong in AI-specific contract clauses on data use, and they bind the vendor rather than employees. The AUP elements for employee use of generative AI are approved tools and use cases (C), prohibited data types under the data classification policy (D), and logging and review of usage (B)."
+  },
+  {
+    "id": "q-1544",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "A procurement team is revising its intake form so that AI-enabled purchases get supplemental review by legal, risk and technical stakeholders. Which of the following is NOT one of the AI risk flags the intake should capture?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The vendor processes personal, biometric or sensitive information"
+      },
+      {
+        "letter": "B",
+        "text": "The vendor's financial solvency, insurance cover and compliance record"
+      },
+      {
+        "letter": "C",
+        "text": "The product includes AI, machine learning, LLMs or automated decision-making"
+      },
+      {
+        "letter": "D",
+        "text": "The organization's data will be used to train the vendor's models"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Solvency, insurance and compliance are the focus of traditional third-party risk management, the checks that AI-specific risks tend to slip past. The AI risk flags at procurement intake are the presence of AI, ML, LLMs or automated decision-making (C), use of the organization's data to train models (D), and vendor processing of personal, biometric or sensitive information (A)."
+  },
+  {
+    "id": "q-1545",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Hard",
+    "question": "A privacy office is revising its policies to address threats that are specific to AI. Which of the following is NOT one of the AI-specific privacy threats those policies should cover?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Unintended memorization, where a model reproduces sensitive training data"
+      },
+      {
+        "letter": "B",
+        "text": "Membership inference, revealing whether a record was in the training set"
+      },
+      {
+        "letter": "C",
+        "text": "Function creep, extending data use beyond its original purpose through AI reuse"
+      },
+      {
+        "letter": "D",
+        "text": "Model theft, where an attacker extracts the model through API access"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Model theft through API extraction is a security threat, one that security policies must add to their threat models along with adversarial attacks, data poisoning and prompt injection. The AI-specific privacy threats are model inversion, membership inference (B), model poisoning, function creep (C) and unintended memorization (A)."
+  },
+  {
+    "id": "q-1546",
+    "area": "ch3",
+    "domain": "Domain I",
+    "difficulty": "Medium",
+    "question": "Every AI project at Larchmont Analytics must keep a data provenance (lineage) document. Which of the following is NOT one of the items that document is meant to capture?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Known limitations such as underrepresentation or class imbalance"
+      },
+      {
+        "letter": "B",
+        "text": "The source from which each dataset was obtained"
+      },
+      {
+        "letter": "C",
+        "text": "Re-identification risk metrics such as k-anonymity scores"
+      },
+      {
+        "letter": "D",
+        "text": "The licensing or usage terms that apply to each dataset"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Quantifiable re-identification metrics such as k-anonymity and l-diversity belong to anonymization and pseudonymization standards in privacy policy. They measure how easily individuals could be singled out, not where a dataset came from or how it may be used. The lineage document records each dataset's source (B), its licensing or usage terms (D), and known limitations such as underrepresentation or class imbalance (A)."
+  },
+  {
+    "id": "q-1547",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Which of the following is NOT an obligation of a deployer of an Annex III high-risk AI system under the EU AI Act?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Using the system in accordance with the instructions for use that accompany it"
+      },
+      {
+        "letter": "B",
+        "text": "Establishing and documenting a post-market monitoring system proportionate to the system's risks"
+      },
+      {
+        "letter": "C",
+        "text": "Informing natural persons that they are subject to the use of the system in decisions about them"
+      },
+      {
+        "letter": "D",
+        "text": "Keeping the logs the system generates, where they are under its control, for at least six months"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A post-market monitoring system under Article 72 is the provider's duty, and its plan forms part of the provider's quality management system. The deployer's own monitoring duty in Article 26(5) is narrower: it watches the system in operation against the instructions for use and informs the provider of risks. Using the system in line with the instructions (A, Art. 26(1)), informing natural persons subject to its decisions (C, Art. 26(11)) and keeping logs under its control for at least six months (D, Art. 26(6)) are all deployer obligations."
+  },
+  {
+    "id": "q-1548",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Halvorsen Freight, a privately owned logistics company in Denmark, licenses a high-risk AI system from a provider and will use it to evaluate the performance of its warehouse staff and recommend promotions. Which of the following is NOT an obligation Halvorsen owes as the system's deployer?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Informing workers' representatives and the affected workers before putting the system into use"
+      },
+      {
+        "letter": "B",
+        "text": "Assigning oversight to staff who have the competence, training and authority to exercise it"
+      },
+      {
+        "letter": "C",
+        "text": "Monitoring the system's operation on the basis of the provider's instructions for use"
+      },
+      {
+        "letter": "D",
+        "text": "Registering its use of the system in the EU database before putting it into use"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Registering use in the EU database is a duty of deployers that are public authorities or Union bodies (Arts. 26(8) and 49(3)); a private employer does not register its use, and the provider registers the system itself under Article 49(1). As an employer, Halvorsen must inform workers' representatives and affected workers before workplace use (A, Art. 26(7)), assign oversight to competent and empowered staff (B, Art. 26(2)) and monitor the system's operation against the instructions for use (C, Art. 26(5))."
+  },
+  {
+    "id": "q-1549",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Valmora Employment Service, a regional public body in Spain, deploys a high-risk AI system that evaluates whether jobseekers are eligible for unemployment benefits. Which of the following is NOT an obligation Valmora has under the EU AI Act?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Carrying out a fundamental rights impact assessment before first use and notifying the market surveillance authority"
+      },
+      {
+        "letter": "B",
+        "text": "Drawing on the provider's instructions for use when it carries out its GDPR data protection impact assessment"
+      },
+      {
+        "letter": "C",
+        "text": "Retaining the logs under its control for at least ten years after the system is first put into use"
+      },
+      {
+        "letter": "D",
+        "text": "Suspending use and informing the provider if it has reason to consider that the system presents a risk"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The Act requires deployers to keep the logs under their control for at least six months (Art. 26(6)) and sets no ten-year period for them; ten years is how long a provider keeps its technical documentation (Art. 18). As a public body using a benefits-eligibility system under Annex III point 5(a), Valmora must carry out a FRIA before first use and notify the market surveillance authority of the results (A, Art. 27(1) and (3)). It must also use the provider's Article 13 information for its DPIA (B, Art. 26(9)), and if it has reason to consider that the system presents a risk, it must inform the provider and the market surveillance authority and suspend use (D, Art. 26(5))."
+  },
+  {
+    "id": "q-1550",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Under Article 27 of the EU AI Act, which of the following is NOT one of the elements a deployer's fundamental rights impact assessment must describe?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An assessment of the necessity and proportionality of the processing in relation to its purposes"
+      },
+      {
+        "letter": "B",
+        "text": "The period of time within which, and the frequency with which, the system is intended to be used"
+      },
+      {
+        "letter": "C",
+        "text": "The categories of natural persons and groups likely to be affected by its use in the specific context"
+      },
+      {
+        "letter": "D",
+        "text": "The measures to be taken if the risks materialise, including internal governance and complaint mechanisms"
+      }
+    ],
+    "answer": "A",
+    "explanation": "An assessment of necessity and proportionality is required content of a GDPR data protection impact assessment under Article 35(7), and it is not one of the FRIA elements in Article 27(1). The FRIA describes the deployer's processes, the period and frequency of use (B), the categories of people and groups likely to be affected (C), the specific risks of harm, the human oversight measures, and the measures to take if risks materialise, including governance and complaint mechanisms (D)."
+  },
+  {
+    "id": "q-1551",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "Each of the following organisations deploys a high-risk AI system listed in Annex III of the EU AI Act. Which one is NOT required to carry out a fundamental rights impact assessment under Article 27 before first use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A regional public agency using a system to assess applicants' eligibility for public assistance benefits"
+      },
+      {
+        "letter": "B",
+        "text": "A privately owned bank using a system to evaluate the creditworthiness of consumers applying for loans"
+      },
+      {
+        "letter": "C",
+        "text": "A municipally owned utility using a system as a safety component in managing its electricity supply"
+      },
+      {
+        "letter": "D",
+        "text": "A private insurer using a system for risk assessment and pricing of individual customers' health insurance"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Article 27 excludes high-risk systems in the critical infrastructure area, Annex III point 2, so the utility does not owe a FRIA for its grid safety component even though it is publicly owned. The duty reaches bodies governed by public law such as the benefits agency (A), and any deployer, public or private, of a creditworthiness system under point 5(b) (B) or a life or health insurance pricing system under point 5(c) (D)."
+  },
+  {
+    "id": "q-1552",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Marisol's mortgage application is refused by Bergholt Bank. A loan officer took the decision, relying on the output of a high-risk creditworthiness system licensed from Quorra Analytics. Under Article 86 of the EU AI Act, which statement about her right to an explanation is NOT accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "She can ask Bergholt Bank, as the deployer that took the decision, for the explanation"
+      },
+      {
+        "letter": "B",
+        "text": "She can obtain a clear and meaningful explanation of the role the system played in the decision-making procedure"
+      },
+      {
+        "letter": "C",
+        "text": "She can obtain a clear and meaningful explanation of the main elements of the decision that was taken"
+      },
+      {
+        "letter": "D",
+        "text": "The right does not arise, because a loan officer rather than the system took the final decision"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Article 86 has no solely-automated condition. It covers decisions the deployer takes on the basis of an Annex III high-risk system's output that produce legal effects or similarly significant effects, so a loan officer's sign-off does not remove the right. GDPR Article 22, by contrast, applies only to decisions based solely on automated processing. The right is held against the deployer, so Marisol asks Bergholt Bank (A), and it entitles her to clear and meaningful explanations of the system's role in the decision-making procedure (B) and of the main elements of the decision (C)."
+  },
+  {
+    "id": "q-1553",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Tamsin Labs, an EU company, has built a CV-screening system that is high-risk under Annex III point 4 (employment). Which of the following is NOT a step Tamsin must complete before placing the system on the EU market?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Having its quality management system and technical documentation assessed by a notified body"
+      },
+      {
+        "letter": "B",
+        "text": "Drawing up technical documentation that covers the content listed in Annex IV of the Act"
+      },
+      {
+        "letter": "C",
+        "text": "Drawing up an EU declaration of conformity and affixing the CE marking to the system"
+      },
+      {
+        "letter": "D",
+        "text": "Registering itself and the system in the EU database for high-risk AI systems"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Article 43(2) sends Annex III points 2 to 8, including employment, through the internal control procedure in Annex VI, with no notified body involved, so the Annex VII assessment of the QMS and documentation is not required. A notified body is compulsory for Annex III point 1 biometric systems unless the provider has fully applied harmonised standards or common specifications. Tamsin must still draw up Annex IV technical documentation (B, Art. 11), sign the EU declaration of conformity and affix the CE marking (C, Arts. 47 and 48), and register under Article 49(1) (D)."
+  },
+  {
+    "id": "q-1554",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Corbel Systems develops a high-risk AI system that allocates shifts and evaluates the performance of employees, and sells it to employers across the EU. Which of the following is NOT one of Corbel's obligations as the system's provider?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Indicating its name, registered trade name or trademark, and contact address on the system or its packaging"
+      },
+      {
+        "letter": "B",
+        "text": "Informing workers' representatives and affected workers before the system is put into use at a workplace"
+      },
+      {
+        "letter": "C",
+        "text": "Taking corrective action, including withdrawal or recall, if it has reason to think the system does not conform"
+      },
+      {
+        "letter": "D",
+        "text": "Keeping the technical documentation at the disposal of national authorities for ten years after market placement"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Informing workers' representatives and affected workers before workplace use is an Article 26(7) duty of the deployer, since it falls on the employer that puts the system to use. Article 16 requires the provider to show its name and contact address on the system, its packaging or its documentation (A), to take corrective action under Article 20 (C), and to keep its documentation for 10 years under Article 18 (D)."
+  },
+  {
+    "id": "q-1555",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Article 17 of the EU AI Act sets out what a high-risk provider's quality management system must cover. Which of the following is NOT one of the required elements?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Procedures for reporting serious incidents to the market surveillance authorities"
+      },
+      {
+        "letter": "B",
+        "text": "A strategy for regulatory compliance, including conformity assessment procedures"
+      },
+      {
+        "letter": "C",
+        "text": "An accountability framework setting out the responsibilities of management and staff"
+      },
+      {
+        "letter": "D",
+        "text": "Procedures for completing a fundamental rights impact assessment before deployment"
+      }
+    ],
+    "answer": "D",
+    "explanation": "A fundamental rights impact assessment is an Article 27 duty of certain deployers, completed before they first use a system, so it is not an element of the provider's QMS. Article 17(1) does require serious incident reporting procedures in line with Article 73 (A), a regulatory compliance strategy covering conformity assessment (B) and an accountability framework (C), along with design, testing, data management, risk management, post-market monitoring and record-keeping procedures."
+  },
+  {
+    "id": "q-1556",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Under Article 13 of the EU AI Act, the instructions for use that a high-risk provider supplies to deployers must contain certain minimum information. Which of the following is NOT part of that minimum content?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The level of accuracy, including its metrics, against which the system has been tested and validated"
+      },
+      {
+        "letter": "B",
+        "text": "The human oversight measures, including technical measures that help deployers interpret outputs"
+      },
+      {
+        "letter": "C",
+        "text": "A public summary of the content used to train the model, drawn up on the AI Office template"
+      },
+      {
+        "letter": "D",
+        "text": "A description of the mechanisms that allow deployers to collect, store and interpret the logs"
+      }
+    ],
+    "answer": "C",
+    "explanation": "A public summary of training content on the AI Office template is an obligation of providers of general-purpose AI models under Article 53(1)(d), and it is not part of a high-risk system's instructions for use. Article 13(3) does require the declared accuracy level and metrics (A), the Article 14 human oversight measures (B), and a description of how deployers can collect, store and interpret the logs (D)."
+  },
+  {
+    "id": "q-1557",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Lindqvist Recruit uses a high-risk AI system that ranks job applicants for its clients. Which of the following is NOT a human oversight requirement that Article 14 of the EU AI Act applies to this system?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Two overseers separately verify and confirm an output before the deployer acts on it"
+      },
+      {
+        "letter": "B",
+        "text": "Overseers can decide not to use an output, or can disregard, override or reverse it"
+      },
+      {
+        "letter": "C",
+        "text": "The system can be interrupted through a stop button or a similar procedure that halts it safely"
+      },
+      {
+        "letter": "D",
+        "text": "Overseers are helped to stay aware of the tendency to over-rely on the system's output"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The two-person verification rule in Article 14(5) applies to remote biometric identification systems under Annex III point 1(a), so it does not reach a recruitment ranking system. For every high-risk system, Article 14(4) requires that overseers can decide not to use, or can override or reverse, an output (B), can intervene or stop the system (C), and are helped to stay aware of automation bias (D)."
+  },
+  {
+    "id": "q-1558",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "Article 15(5) of the EU AI Act lists AI-specific attacks and vulnerabilities that a high-risk system's cybersecurity measures should address. Which of the following is NOT on that list?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Data poisoning, and the poisoning of pre-trained components used in training"
+      },
+      {
+        "letter": "B",
+        "text": "Adversarial examples or model evasion, designed to cause the model to make a mistake"
+      },
+      {
+        "letter": "C",
+        "text": "Confidentiality attacks, and flaws in the model that could be exploited"
+      },
+      {
+        "letter": "D",
+        "text": "Errors, faults or inconsistencies arising from interaction with people or other systems"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Resilience to errors, faults and inconsistencies, including those arising from interaction with people or other systems, is the robustness requirement in Article 15(4), met through measures such as technical redundancy and fail-safe plans. The cybersecurity list in Article 15(5) covers data poisoning and model poisoning (A), adversarial examples or model evasion (B), and confidentiality attacks and model flaws (C)."
+  },
+  {
+    "id": "q-1559",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Article 9(2) of the EU AI Act describes the steps of a high-risk provider's risk management system. Which of the following is NOT one of those steps?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Identifying and analysing the known and reasonably foreseeable risks to health, safety or fundamental rights"
+      },
+      {
+        "letter": "B",
+        "text": "Transferring residual risks to deployers through contractual indemnities and liability insurance"
+      },
+      {
+        "letter": "C",
+        "text": "Estimating and evaluating the risks that may emerge under intended use and reasonably foreseeable misuse"
+      },
+      {
+        "letter": "D",
+        "text": "Evaluating other risks that may emerge from analysis of the data gathered through post-market monitoring"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Risk transfer is one of the general risk treatment options, but Article 9 does not include it; residual risk must instead be judged acceptable after the provider designs risks out where feasible, mitigates what remains and informs deployers. Article 9(2) requires identifying and analysing known and reasonably foreseeable risks (A), estimating and evaluating risks under intended use and reasonably foreseeable misuse (C), evaluating risks shown by post-market monitoring data (D), and adopting targeted risk management measures."
+  },
+  {
+    "id": "q-1560",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Which statement about serious incident reporting for high-risk AI systems under Article 73 of the EU AI Act is NOT accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The general outer deadline is 15 days after the provider or deployer becomes aware of the incident"
+      },
+      {
+        "letter": "B",
+        "text": "A deployer that identifies a serious incident informs the provider first, and then the authorities"
+      },
+      {
+        "letter": "C",
+        "text": "The provider should complete its investigation of the incident before it submits any report"
+      },
+      {
+        "letter": "D",
+        "text": "An infringement of EU-law obligations that protect fundamental rights can count as a serious incident"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Article 73 requires the provider to report immediately once it establishes a causal link, or the reasonable likelihood of one, and allows an incomplete initial report followed by a complete one (Art. 73(5)); the investigation comes after the report (Art. 73(6)). Holding the report until the investigation ends would breach the rule. The general 15-day outer limit from awareness (A, Art. 73(2)) is accurate; it shortens to 10 days where a person dies and 2 days for a widespread infringement or a serious critical-infrastructure disruption (Art. 73(3) and (4)). The deployer's duty under Article 26(5) to inform the provider first (B) and the inclusion of fundamental-rights infringements in the Article 3(49) definition (D) are also accurate."
+  },
+  {
+    "id": "q-1561",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Ardent Imports GmbH, established in Austria, will place on the EU market a high-risk AI system developed by a provider based in Canada. Which of the following is NOT one of Ardent's obligations as importer?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Registering itself and the system in the EU database before placing the system on the market"
+      },
+      {
+        "letter": "B",
+        "text": "Verifying that the provider has appointed an authorised representative in the Union"
+      },
+      {
+        "letter": "C",
+        "text": "Indicating its own name and contact address on the system, its packaging or its documentation"
+      },
+      {
+        "letter": "D",
+        "text": "Keeping copies of key documents, such as the EU declaration of conformity, for ten years"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Article 49(1) puts EU database registration on the provider or its authorised representative, and Article 23 gives the importer no registration duty. Ardent's duties are checks and record-keeping: it verifies that the provider has appointed an authorised representative in the Union (B, Art. 23(1)(d)), puts its own name and contact address on the system, its packaging or its documentation (C, Art. 23(3)), and keeps copies of the EU declaration of conformity, the instructions for use and any notified body certificate for 10 years (D, Art. 23(5))."
+  },
+  {
+    "id": "q-1562",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A Belgian online marketplace makes a high-risk AI system available to business customers without modifying it. An importer has already placed the system on the EU market. Which check is NOT part of the marketplace's obligations as a distributor under Article 24?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Verifying that the system bears the required CE marking"
+      },
+      {
+        "letter": "B",
+        "text": "Verifying that it is accompanied by the EU declaration of conformity and instructions for use"
+      },
+      {
+        "letter": "C",
+        "text": "Verifying that the provider and the importer have met their identification obligations"
+      },
+      {
+        "letter": "D",
+        "text": "Verifying that the provider has drawn up the technical documentation required by Annex IV"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Checking that the provider has drawn up the Annex IV technical documentation is an importer duty under Article 23(1)(b), done before the system is first placed on the market; Article 24 does not ask the distributor to check it. The distributor's Article 24(1) checks are the CE marking (A), the accompanying EU declaration of conformity and instructions for use (B), and the provider's and importer's compliance with their identification obligations (C, Arts. 16(b) and 23(3)), along with the provider's quality management system (Art. 16(c))."
+  },
+  {
+    "id": "q-1563",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Norvik Insurance licenses a high-risk AI system that prices health insurance, and separately runs a general-purpose AI chatbot that answers policyholder questions. Absent a contract allocating obligations otherwise, which of the following would NOT make Norvik the provider of a high-risk AI system under Article 25?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Offering the pricing system to other insurers in the EU under Norvik's own name and trademark"
+      },
+      {
+        "letter": "B",
+        "text": "Feeding the pricing system input data it controls, having checked it is relevant and representative"
+      },
+      {
+        "letter": "C",
+        "text": "Reconfiguring the chatbot to assess and price individual applications for health insurance"
+      },
+      {
+        "letter": "D",
+        "text": "Making a substantial modification to the pricing system that still leaves it a high-risk system"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Making sure that input data under its control is relevant and sufficiently representative is a deployer duty under Article 26(4), and performing it leaves Norvik a deployer. Under Article 25(1), a deployer becomes the provider when it puts its name or trademark on a high-risk system already on the market (A), changes the intended purpose of a system that was not high-risk, such as a general-purpose chatbot, so that it becomes high-risk (C), or makes a substantial modification that keeps the system high-risk (D)."
+  },
+  {
+    "id": "q-1564",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Which of the following AI practices is NOT prohibited by Article 5 of the EU AI Act?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Creating a facial recognition database through untargeted scraping of facial images from CCTV footage"
+      },
+      {
+        "letter": "B",
+        "text": "Using biometric categorisation to deduce individuals' political opinions or sexual orientation"
+      },
+      {
+        "letter": "C",
+        "text": "A retailer using emotion recognition to gauge shoppers' reactions to its in-store displays"
+      },
+      {
+        "letter": "D",
+        "text": "Social scoring that leads to detrimental treatment in contexts unrelated to where the data was gathered"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The Article 5(1)(f) ban on emotion recognition covers workplaces and educational institutions, so a retailer reading shoppers' emotions is not prohibited; it is a high-risk biometric use under Annex III point 1(c), and Article 50(3) requires the deployer to inform the people exposed. Untargeted scraping of facial images to build recognition databases (A, Art. 5(1)(e)), biometric categorisation to deduce sensitive traits such as political opinions or sexual orientation (B, Art. 5(1)(g)) and social scoring with detrimental treatment in unrelated contexts (D, Art. 5(1)(c)) are all prohibited."
+  },
+  {
+    "id": "q-1565",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "Annex III point 5 of the EU AI Act lists high-risk uses that concern access to essential private and public services and benefits. Which of the following uses is NOT high-risk under that point?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A bank detecting financial fraud in the consumer credit applications it receives"
+      },
+      {
+        "letter": "B",
+        "text": "A public authority evaluating people's eligibility for public assistance benefits and services"
+      },
+      {
+        "letter": "C",
+        "text": "An insurer assessing risk and setting prices for individuals' life and health insurance"
+      },
+      {
+        "letter": "D",
+        "text": "An emergency service classifying incoming emergency calls and dispatching first responders"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Annex III point 5(b) covers evaluating creditworthiness and establishing credit scores but expressly excludes systems used to detect financial fraud, so a fraud screen is not high-risk under that point. A public authority evaluating eligibility for public assistance benefits and services (B, point 5(a)), life and health insurance risk assessment and pricing for individuals (C, point 5(c)) and emergency call classification and dispatch (D, point 5(d)) are all listed in point 5."
+  },
+  {
+    "id": "q-1566",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A provider wants to rely on the Article 6(3) derogation to treat a system listed in Annex III as not high-risk. The system does not profile individuals. Which of the following is NOT one of the four conditions Article 6(3) lists?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The system performs a narrow procedural task, such as sorting incoming documents into categories"
+      },
+      {
+        "letter": "B",
+        "text": "A member of staff reviews the system's output and takes the final decision on the case"
+      },
+      {
+        "letter": "C",
+        "text": "The system detects deviations from prior decision-making patterns without replacing the human assessment"
+      },
+      {
+        "letter": "D",
+        "text": "The system performs a task that is preparatory to an assessment relevant to an Annex III use case"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Human sign-off on the final decision is not an Article 6(3) condition, and a listed system such as CV screening or credit scoring stays high-risk even when a person makes the final call. The derogation can rest on a narrow procedural task (A), detecting decision-making patterns or deviations without replacing the human assessment (C), a preparatory task (D), or improving the result of a completed human activity. A provider relying on it must document its assessment and register the system under Article 49(2)."
+  },
+  {
+    "id": "q-1567",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Article 50 of the EU AI Act divides its transparency duties between providers and deployers. Which of the following is NOT a duty it places on deployers?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Disclosing that image, audio or video content they publish is a deepfake"
+      },
+      {
+        "letter": "B",
+        "text": "Informing people exposed to an emotion recognition system that it is operating"
+      },
+      {
+        "letter": "C",
+        "text": "Disclosing that text published to inform the public on matters of public interest was AI-generated"
+      },
+      {
+        "letter": "D",
+        "text": "Ensuring a chatbot is designed so the people using it know they are interacting with AI"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Designing a system that interacts directly with people so they know they are dealing with AI is a provider duty under Article 50(1), as is machine-readable marking of synthetic content under Article 50(2). Article 50 places on deployers the duties to disclose deepfakes (A, Art. 50(4)), to inform people exposed to emotion recognition or biometric categorisation (B, Art. 50(3)), and to disclose AI-generated text published on matters of public interest unless a human reviewed it and someone holds editorial responsibility (C, Art. 50(4))."
+  },
+  {
+    "id": "q-1568",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Which of the following is NOT among the obligations that Article 53(1) of the EU AI Act places on providers of general-purpose AI models?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Drawing up and keeping up to date technical documentation of the model, for the AI Office on request"
+      },
+      {
+        "letter": "B",
+        "text": "Putting in place a policy to comply with EU copyright law, including text-and-data-mining opt-outs"
+      },
+      {
+        "letter": "C",
+        "text": "Ensuring an adequate level of cybersecurity protection for the model and its physical infrastructure"
+      },
+      {
+        "letter": "D",
+        "text": "Making publicly available a sufficiently detailed summary of the content used for training"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Adequate cybersecurity protection for the model and its physical infrastructure is an extra obligation under Article 55(1)(d) for providers of models with systemic risk. Article 53(1) covers all GPAI providers and requires technical documentation (A, Annex XI), a copyright policy that respects text-and-data-mining opt-outs (B), a public summary of training content (D), and information for downstream providers. Qualifying open-source models are exempt from the two documentation duties but not from the copyright policy or the training summary."
+  },
+  {
+    "id": "q-1569",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "Kalden AI's general-purpose model is presumed to have systemic risk because its training compute exceeded 10^25 FLOP. Which of the following is NOT an obligation that the AI Act itself places on Kalden under Article 55?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Commissioning independent external evaluators to assess the model before its release"
+      },
+      {
+        "letter": "B",
+        "text": "Performing model evaluations, including conducting and documenting adversarial testing"
+      },
+      {
+        "letter": "C",
+        "text": "Assessing and mitigating possible systemic risks at Union level, including their sources"
+      },
+      {
+        "letter": "D",
+        "text": "Tracking, documenting and reporting serious incidents to the AI Office without undue delay"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Independent external evaluations are a commitment in the Safety and Security chapter of the voluntary GPAI Code of Practice, binding on signatories that adhere to that chapter. Article 55 itself does not require them. Article 55(1) requires model evaluation with documented adversarial testing (B), assessment and mitigation of Union-level systemic risks (C), serious incident tracking and reporting to the AI Office (D), and adequate cybersecurity protection."
+  },
+  {
+    "id": "q-1570",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Under Article 99 of the EU AI Act, which of the following breaches is NOT subject to the fine ceiling of EUR 15 million or 3% of worldwide annual turnover?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A deployer of a high-risk system failing to meet its obligations under Article 26"
+      },
+      {
+        "letter": "B",
+        "text": "A provider supplying misleading information to a national authority in reply to a request"
+      },
+      {
+        "letter": "C",
+        "text": "An importer placing a high-risk system on the market without the checks Article 23 requires"
+      },
+      {
+        "letter": "D",
+        "text": "A chatbot provider failing to ensure users are told they are interacting with an AI system"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Supplying incorrect, incomplete or misleading information to notified bodies or national competent authorities falls in the lower tier of EUR 7.5 million or 1% under Article 99(5). Breaches of deployer obligations under Article 26 (A), importer obligations under Article 23 (C) and the Article 50 transparency duties (D) all sit in the EUR 15 million or 3% tier under Article 99(4), whichever figure is higher."
+  },
+  {
+    "id": "q-1571",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Which of the following does NOT give a provider of a high-risk AI system a presumption of conformity with the relevant requirements of the EU AI Act?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Following a harmonised standard whose reference has been published in the Official Journal"
+      },
+      {
+        "letter": "B",
+        "text": "Following common specifications that the Commission has adopted by implementing act"
+      },
+      {
+        "letter": "C",
+        "text": "Holding a Cybersecurity Act certificate for the system, for the Article 15 cybersecurity requirements"
+      },
+      {
+        "letter": "D",
+        "text": "Holding an ISO/IEC 42001 certificate for its AI management system, issued by an accredited body"
+      }
+    ],
+    "answer": "D",
+    "explanation": "An ISO/IEC 42001 certificate is useful evidence of a working AI management system, but 42001 is not a harmonised standard cited in the Official Journal, so it creates no legal presumption under the Act. Presumptions come from harmonised standards (A, Art. 40), Commission common specifications (B, Art. 41) and, for the Article 15 cybersecurity requirements, a certificate or statement of conformity under the Cybersecurity Act (C, Art. 42(2))."
+  },
+  {
+    "id": "q-1572",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Harrowgate Labs scrapes public forum posts to train a language model and must record its lawful basis under GDPR Article 6(1). Which of the following is NOT one of the Article 6(1) lawful bases?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Performance of a contract with the data subject"
+      },
+      {
+        "letter": "B",
+        "text": "Data the data subject has manifestly made public"
+      },
+      {
+        "letter": "C",
+        "text": "Protection of the vital interests of a person"
+      },
+      {
+        "letter": "D",
+        "text": "Legitimate interests of the controller or a third party"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Data manifestly made public by the data subject is one of the Article 9(2) exceptions to the ban on special category data (Art. 9(2)(e)). It does not appear in Article 6(1), so the public nature of the posts does not by itself give Harrowgate a lawful basis. Article 6(1) lists six bases, among them contract (A, Art. 6(1)(b)), vital interests (C, Art. 6(1)(d)) and legitimate interests (D, Art. 6(1)(f)), which draft EDPB Guidelines 03/2026 describe as the basis often used for scraping."
+  },
+  {
+    "id": "q-1573",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Which of the following is NOT a special category of personal data under GDPR Article 9(1)?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Trade union membership"
+      },
+      {
+        "letter": "B",
+        "text": "Data concerning sex life or sexual orientation"
+      },
+      {
+        "letter": "C",
+        "text": "Biometric data used to uniquely identify a person"
+      },
+      {
+        "letter": "D",
+        "text": "Precise geolocation data"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Precise geolocation is not on the Article 9(1) list; California's CPRA treats it as sensitive personal information, which is why it shows up in US sensitive-data lists. Location data can reveal special category data by inference, and data that reveals a listed category can fall within Article 9, but location as such is not a listed category. Trade union membership (A), data concerning sex life or sexual orientation (B) and biometric data processed to uniquely identify a person (C) are all Article 9(1) categories."
+  },
+  {
+    "id": "q-1574",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Calder Insurance is drafting the data protection impact assessment for an AI underwriting model. Which of the following is NOT one of the elements GDPR Article 35(7) requires the DPIA to contain?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A systematic description of the processing and its purposes"
+      },
+      {
+        "letter": "B",
+        "text": "An assessment of the necessity and proportionality of the processing"
+      },
+      {
+        "letter": "C",
+        "text": "A record that the supervisory authority was consulted on the findings"
+      },
+      {
+        "letter": "D",
+        "text": "The measures envisaged to address the risks to data subjects"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Consulting the supervisory authority is a separate step under Article 36(1), required before processing where the DPIA shows a high risk that the controller cannot mitigate (recital 84). Article 35(7) requires four elements: a systematic description of the processing and its purposes (A), an assessment of necessity and proportionality (B), an assessment of the risks to data subjects' rights and freedoms, and the measures envisaged to address those risks (D)."
+  },
+  {
+    "id": "q-1575",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Which of the following is NOT one of the principles relating to processing of personal data in GDPR Article 5?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Data protection by design: building safeguards into systems"
+      },
+      {
+        "letter": "B",
+        "text": "Storage limitation: keeping data no longer than necessary"
+      },
+      {
+        "letter": "C",
+        "text": "Accuracy: keeping data accurate and up to date"
+      },
+      {
+        "letter": "D",
+        "text": "Integrity and confidentiality: securing data against loss"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Data protection by design is a controller obligation in Article 25, which requires technical and organisational measures that put the Article 5 principles into effect, such as data minimisation. Storage limitation (B, Art. 5(1)(e)), accuracy (C, Art. 5(1)(d)) and integrity and confidentiality (D, Art. 5(1)(f)) are Article 5 principles, alongside lawfulness, fairness and transparency, purpose limitation, data minimisation and accountability."
+  },
+  {
+    "id": "q-1576",
+    "area": "ch4",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A CCPA-covered retailer uses automated decision-making technology (ADMT) in several ways. Under the CPPA regulations that took effect in 2026, which use does NOT involve a \"significant decision\"?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Deciding whether to offer an applicant a warehouse job"
+      },
+      {
+        "letter": "B",
+        "text": "Approving or denying a customer's store credit card application"
+      },
+      {
+        "letter": "C",
+        "text": "Choosing which customers are shown a promotional advertisement"
+      },
+      {
+        "letter": "D",
+        "text": "Selecting tenants for apartments the retailer leases above its stores"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The regulations say expressly that a significant decision does not include advertising to a consumer (Cal. Code Regs. tit. 11, §7001(ddd)(6)). A significant decision is one that results in the provision or denial of financial or lending services, housing, education enrollment or opportunities, employment or independent-contracting opportunities or compensation, or healthcare services. A falls under employment (hiring), B under financial or lending services (an extension of credit) and D under housing."
+  },
+  {
+    "id": "q-1577",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A defective AI-enabled home device placed on the EU market in 2027 causes several losses. Under the Product Liability Directive (EU) 2024/2853, which loss is NOT compensable damage?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Medically recognised harm to the owner's psychological health"
+      },
+      {
+        "letter": "B",
+        "text": "Corruption of a firm's accounting records used in its business"
+      },
+      {
+        "letter": "C",
+        "text": "Destruction of a consumer's family photos stored on the device"
+      },
+      {
+        "letter": "D",
+        "text": "Fire damage to the owner's house caused by the device"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Article 6 of the Directive covers destruction or corruption of data only where the data is not used for professional purposes, so a firm's business records fall outside it; Article 5 also gives the right to compensation to natural persons, not firms. Death or personal injury includes medically recognised damage to psychological health (A), loss of a consumer's private data is covered (C), and damage to property other than the defective product itself and not used exclusively for professional purposes is covered (D)."
+  },
+  {
+    "id": "q-1578",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Which of the following is NOT an element of the test for an \"unfair\" act or practice under Section 5 of the FTC Act?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The practice causes or is likely to cause substantial injury"
+      },
+      {
+        "letter": "B",
+        "text": "Consumers cannot reasonably avoid the injury themselves"
+      },
+      {
+        "letter": "C",
+        "text": "The injury is not outweighed by countervailing benefits"
+      },
+      {
+        "letter": "D",
+        "text": "The company intended the practice to harm consumers"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Section 5 liability does not depend on intent; intent is what separates fraud from an unfair or deceptive act. Under 15 U.S.C. §45(n) a practice is unfair if it causes or is likely to cause substantial injury (A), the injury is not reasonably avoidable by consumers (B), and the injury is not outweighed by countervailing benefits (C)."
+  },
+  {
+    "id": "q-1579",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "Bramblecote Card Services audits its AI credit-card underwriting model under the Equal Credit Opportunity Act. Which of the following is NOT a basis on which ECOA prohibits credit discrimination?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Familial status"
+      },
+      {
+        "letter": "B",
+        "text": "Marital status"
+      },
+      {
+        "letter": "C",
+        "text": "Receipt of public assistance"
+      },
+      {
+        "letter": "D",
+        "text": "Age"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Familial status is a protected characteristic under the Fair Housing Act, which reaches housing and mortgage credit; it is not one of ECOA's prohibited bases. ECOA (15 U.S.C. §1691(a)) bars credit discrimination on the basis of race, color, religion, national origin, sex, marital status (B) or age (D), because some of the applicant's income comes from public assistance (C), or because the applicant exercised in good faith a right under the Consumer Credit Protection Act."
+  },
+  {
+    "id": "q-1580",
+    "area": "ch5",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A US model developer sued over training on copyrighted books plans to argue fair use. Which of the following is NOT one of the four factors courts weigh under 17 U.S.C. §107?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The purpose and character of the use, including transformativeness"
+      },
+      {
+        "letter": "B",
+        "text": "The nature of the copyrighted work, such as factual or creative"
+      },
+      {
+        "letter": "C",
+        "text": "Whether the rightsholder reserved its rights in machine-readable form"
+      },
+      {
+        "letter": "D",
+        "text": "The amount and substantiality of the portion used"
+      }
+    ],
+    "answer": "C",
+    "explanation": "A machine-readable reservation of rights is the opt-out that limits the EU DSM Directive's Article 4 text and data mining exception (Art. 4(3)); the US fair use test has no such factor. Section 107 weighs the purpose and character of the use, including transformativeness (A), the nature of the work (B), the amount and substantiality used (D), and the effect on the potential market for the work, which the US Copyright Office and some courts read to include market dilution by AI output."
+  },
+  {
+    "id": "q-1581",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "Lonestar Outfitters, a private retailer doing business in Texas, deploys several AI systems. Which prohibition in the Texas Responsible AI Governance Act (TRAIGA) does NOT apply to it?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "No AI developed or deployed with intent to unlawfully discriminate"
+      },
+      {
+        "letter": "B",
+        "text": "No social scoring that leads to unjustified detrimental treatment"
+      },
+      {
+        "letter": "C",
+        "text": "No AI that intentionally aims to incite self-harm or crime"
+      },
+      {
+        "letter": "D",
+        "text": "No chat AI that simulates sexual conduct while posing as a minor"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The section 552.053 ban on social scoring applies to governmental entities, so a private retailer is outside it. The bans on AI developed or deployed with intent to unlawfully discriminate (A, s. 552.056), on AI that intentionally aims to incite self-harm, harm to others or crime (C, s. 552.052), and on intentionally developing or distributing chat AI that simulates sexual conduct while impersonating a minor (D, s. 552.057(2)) apply to any person."
+  },
+  {
+    "id": "q-1582",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A developer releasing a generative AI system to the public in California is preparing the training-data documentation that AB 2013 requires it to post. Which item is NOT part of that required documentation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Whether the datasets include copyrighted, trademarked or patented material"
+      },
+      {
+        "letter": "B",
+        "text": "Whether the datasets include personal information"
+      },
+      {
+        "letter": "C",
+        "text": "Whether synthetic data was used in developing the system"
+      },
+      {
+        "letter": "D",
+        "text": "The total computing power used to train the system"
+      }
+    ],
+    "answer": "D",
+    "explanation": "AB 2013 does not ask for training compute; compute is the threshold measure in frontier-model laws such as California SB 53, which covers models trained with more than 10^26 operations. The posted documentation must cover, among other things, dataset sources, whether the data includes copyrighted, trademarked or patented material (A), whether it includes personal information (B), and whether synthetic data was used (C)."
+  },
+  {
+    "id": "q-1583",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "A logistics firm plans to scan employees' face geometry for building access at its Illinois sites. Which of the following is NOT a duty the Biometric Information Privacy Act (BIPA) places on it?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Deleting a person's data within 30 days of their request"
+      },
+      {
+        "letter": "B",
+        "text": "Publishing a retention schedule capped at 3 years after last interaction"
+      },
+      {
+        "letter": "C",
+        "text": "Obtaining a written release before collecting the face scans"
+      },
+      {
+        "letter": "D",
+        "text": "Not selling, leasing or otherwise profiting from the data"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Deletion within 30 days of a request is a duty under Illinois's AI Video Interview Act, which covers AI analysis of recorded job interviews. BIPA instead requires a public retention schedule (B) under which data is destroyed when its purpose is met or within 3 years of the person's last interaction, whichever comes first. It also requires written notice and a written release before collection (C) and bars selling, leasing or otherwise profiting from biometric data (D)."
+  },
+  {
+    "id": "q-1584",
+    "area": "ch6",
+    "domain": "Domain II",
+    "difficulty": "Painful",
+    "question": "A Korean operator providing a high-impact AI system has put the Article 34(1) measures of the AI Basic Act in place. Under Enforcement Decree Article 27, which of the following is it NOT required to post at its premises or on its website?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Key contents of its risk management plan, such as its risk policy"
+      },
+      {
+        "letter": "B",
+        "text": "Key contents of its plan for explaining outputs and key criteria"
+      },
+      {
+        "letter": "C",
+        "text": "The documents showing the safety and trust measures it has taken"
+      },
+      {
+        "letter": "D",
+        "text": "Name and contact details of the person responsible for oversight"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Measure 5 of Article 34(1) requires the operator to prepare and keep documents showing its safety and trust measures for 5 years, and electronic storage is allowed (Decree Art. 27(2)); it does not have to post them. Decree Art. 27(1) requires posting for measures 1 to 4: the key contents of the risk management plan (A) and the explanation plan (B), the user protection measures, and the name and contact details of the person responsible for human oversight (D). Trade secrets may be left out of what is posted."
+  },
+  {
+    "id": "q-1585",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Which of the following is NOT one of the six categories of the GOVERN function in the NIST AI RMF 1.0 Core?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Accountability structures that empower, train and hold teams responsible"
+      },
+      {
+        "letter": "B",
+        "text": "Processes for robust engagement with relevant AI actors"
+      },
+      {
+        "letter": "C",
+        "text": "Policies for risks from third-party software, data and supply chains"
+      },
+      {
+        "letter": "D",
+        "text": "Characterization of impacts on individuals, groups and society"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Characterizing impacts on individuals, groups, communities, organizations and society is MAP 5, the last category of the MAP function. GOVERN's six categories are policies, processes and procedures (GOVERN 1), accountability structures (GOVERN 2, option A), workforce diversity, equity, inclusion and accessibility (GOVERN 3), risk culture and communication (GOVERN 4), engagement with relevant AI actors (GOVERN 5, option B) and third-party and supply-chain risk (GOVERN 6, option C)."
+  },
+  {
+    "id": "q-1586",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A media company is building its risk register around the 12 risks in NIST AI 600-1, the Generative AI Profile. Which of the following is NOT one of those 12 risks?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Workforce displacement"
+      },
+      {
+        "letter": "B",
+        "text": "Confabulation"
+      },
+      {
+        "letter": "C",
+        "text": "Value chain and component integration"
+      },
+      {
+        "letter": "D",
+        "text": "Human-AI configuration"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Workforce displacement is not one of the 12 GAI risks in NIST AI 600-1. The profile mentions labor-market impacts only as an example of ecosystem-level risk when it explains how the scope of risks varies. Displacement potential is instead a criterion in the People & Planet dimension of the OECD Framework for the Classification of AI Systems. Confabulation (B), value chain and component integration (C) and human-AI configuration (D) are all on NIST's list, alongside risks such as information integrity, information security and intellectual property."
+  },
+  {
+    "id": "q-1587",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "NIST AI 600-1 describes structured public feedback as a way to evaluate whether generative AI systems perform as intended. Which of the following is NOT one of the three structured public feedback methods it names?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Participatory engagement, such as focus groups and surveys"
+      },
+      {
+        "letter": "B",
+        "text": "Model testing of a system's claimed capabilities and guardrails"
+      },
+      {
+        "letter": "C",
+        "text": "Field testing, such as usability studies and randomized experiments"
+      },
+      {
+        "letter": "D",
+        "text": "AI red-teaming in a controlled environment"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Model testing, which checks whether a system shows its claimed capabilities and guardrails, is one of the three testing levels in NIST's ARIA evaluation programme, together with red teaming and field testing. NIST AI 600-1 (Appendix A.1.5) names participatory engagement such as focus groups, small user studies and surveys (A), field testing such as usability work and structured randomized experiments (C), and AI red-teaming (D) as its structured public feedback methods."
+  },
+  {
+    "id": "q-1588",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "An organization implementing ISO/IEC 42001 is mapping the controls under Annex A objective A.5, \"Assessing impacts of AI systems\". Which of the following is NOT one of those controls?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A defined process for AI system impact assessment"
+      },
+      {
+        "letter": "B",
+        "text": "Assessing impacts on individuals or groups of individuals"
+      },
+      {
+        "letter": "C",
+        "text": "Assessing the societal impacts of AI systems"
+      },
+      {
+        "letter": "D",
+        "text": "Assessing risks to the organization's own business objectives"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Risk to the organization's own objectives is handled by AI risk assessment (clause 6.1.2) and by ISO/IEC 23894, which extends ISO 31000; objective A.5 looks outward at the individuals, groups and societies an AI system affects. Its controls are the assessment process (A.5.2, option A), documentation of the assessment (A.5.3), impacts on individuals or groups (A.5.4, option B) and societal impacts (A.5.5, option C)."
+  },
+  {
+    "id": "q-1589",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "Which of the following is NOT one of the informative annexes of ISO/IEC 42005:2025, the standard on AI system impact assessment?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Guidance for using the assessment within an ISO/IEC 42001 AIMS"
+      },
+      {
+        "letter": "B",
+        "text": "Requirements for bodies that certify AI management systems"
+      },
+      {
+        "letter": "C",
+        "text": "A taxonomy of the harms and benefits an AI system can cause"
+      },
+      {
+        "letter": "D",
+        "text": "An example template for recording an impact assessment"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Requirements for bodies that audit and certify AI management systems are set by a separate standard, ISO/IEC 42006:2025, and 42005 is guidance that nothing is certified against. Its five informative annexes give guidance for use with ISO/IEC 42001 (option A) and with ISO/IEC 23894, a harms and benefits taxonomy (option C), guidance on aligning with other assessments, and an example template (option D)."
+  },
+  {
+    "id": "q-1590",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Medium",
+    "question": "A bank's governance analyst is classifying the parties around its credit-scoring system using clause 5.19 of ISO/IEC 22989:2022. Which of the following is NOT one of the AI stakeholder roles that clause defines?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "AI deployer"
+      },
+      {
+        "letter": "B",
+        "text": "AI provider"
+      },
+      {
+        "letter": "C",
+        "text": "AI customer"
+      },
+      {
+        "letter": "D",
+        "text": "AI subject"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Deployer is the EU AI Act's term for a person or body using an AI system under its authority (Art. 3(4)); ISO/IEC 22989 has no deployer role, and an organization that uses an AI system falls under AI customer, whose sub-role is AI user. Clause 5.19 defines the AI provider (B), AI producer, AI customer (C), AI partner, AI subject (D) and relevant authorities."
+  },
+  {
+    "id": "q-1591",
+    "area": "ch7",
+    "domain": "Domain II",
+    "difficulty": "Hard",
+    "question": "The OECD Recommendation on AI, as revised in 2024, pairs five values-based principles with five recommendations to governments. Which of the following is NOT one of the five recommendations for national policies and international co-operation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Investing in AI research and development"
+      },
+      {
+        "letter": "B",
+        "text": "Fostering an inclusive AI-enabling ecosystem"
+      },
+      {
+        "letter": "C",
+        "text": "Promoting responsible business conduct across the AI lifecycle"
+      },
+      {
+        "letter": "D",
+        "text": "Building human capacity and preparing for labour market change"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Responsible business conduct belongs to the Accountability principle (1.5(c)), which since the May 2024 revision asks AI actors to apply systematic risk management and responsible business conduct across the AI system lifecycle. The five recommendations to governments are investing in AI research and development (A), fostering an inclusive AI-enabling ecosystem (B), shaping an enabling interoperable governance and policy environment, building human capacity and preparing for labour market transformation (D), and international co-operation for trustworthy AI."
+  },
+  {
+    "id": "q-1592",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Larkspur Insurance is documenting requirements for a claims-triage model. Which of the following is NOT a technical (non-functional) requirement?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The system must assign each incoming claim to one of four triage bands"
+      },
+      {
+        "letter": "B",
+        "text": "The system must keep responding when claim volumes triple at month end"
+      },
+      {
+        "letter": "C",
+        "text": "The system must keep operating safely when an upstream data feed fails"
+      },
+      {
+        "letter": "D",
+        "text": "Claims handlers must be able to act on each output without specialist training"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Assigning each claim to a triage band describes what the system does, so A is a functional requirement. Technical (non-functional) requirements set how well the system must operate, covering qualities such as performance, scalability, security, privacy, usability and resilience. Scalability under month-end volumes (B), resilience when a data feed fails (C) and usability for claims handlers (D) are all non-functional."
+  },
+  {
+    "id": "q-1593",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Hard",
+    "question": "A team is preparing an AI system impact assessment under ISO/IEC 42005. Which of the following is NOT one of the elements the standard expects the assessment record to contain?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Information about the data used, including documentation of its quality"
+      },
+      {
+        "letter": "B",
+        "text": "The deployment environment, such as the geographical area and languages"
+      },
+      {
+        "letter": "C",
+        "text": "An assessment of the necessity and proportionality of the processing"
+      },
+      {
+        "letter": "D",
+        "text": "Reasonably foreseeable failures and misuse, as well as benefits and harms"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Necessity and proportionality is a required element of a GDPR Article 35(7) DPIA, so C belongs to the data protection assessment. Clause 6 of ISO/IEC 42005 asks for data information and quality (A), the deployment environment including geographical area and languages (B), and the actual and reasonably foreseeable impacts, covering benefits, harms, failures and misuse (D), along with scope, system and model information, interested parties and measures."
+  },
+  {
+    "id": "q-1594",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "A design team uses the NIST AI RMF MAP function to frame the risks of a new patient no-show prediction model. Which of the following is NOT a MAP outcome?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Organizational risk tolerances are determined and documented"
+      },
+      {
+        "letter": "B",
+        "text": "Negative residual risks to downstream acquirers and end users are documented"
+      },
+      {
+        "letter": "C",
+        "text": "Processes for human oversight are defined, assessed and documented"
+      },
+      {
+        "letter": "D",
+        "text": "System requirements are elicited from and understood by relevant AI actors"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Documenting negative residual risks to downstream acquirers and end users is MANAGE 1.4, which follows the prioritization and treatment of risks. Determining and documenting organizational risk tolerances is MAP 1.5 (A); GOVERN 1.3 is a separate outcome about processes that set the level of risk management activity based on that tolerance. Human oversight processes are MAP 3.5 (C), and eliciting system requirements from relevant AI actors is MAP 1.6 (D)."
+  },
+  {
+    "id": "q-1595",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Aldgate Transit's design lead is assembling the documentation that should exist at the design stage, before any build work starts. Which of the following does NOT belong in that design-stage documentation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The problem statement, as defined by the business rather than the developers"
+      },
+      {
+        "letter": "B",
+        "text": "The assumptions and constraints the design depends on"
+      },
+      {
+        "letter": "C",
+        "text": "An initial analysis of the risks the system poses"
+      },
+      {
+        "letter": "D",
+        "text": "The hyperparameters, batch size and epoch count chosen for training"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Hyperparameters, batch size and epoch count make up the model training configuration, which is chosen and recorded in training documentation once training is under way. Design-stage documentation includes the problem statement as the business defines it (A), assumptions and constraints (B) and an initial risk analysis (C), along with the governance and compliance context, intended users and use cases, system inputs and outputs, the training data to be used and a high-level architecture."
+  },
+  {
+    "id": "q-1596",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Ostrava Credit must be able to explain automated lending decisions to applicants and regulators. Which of the following is NOT an approach to explainability?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Using an inherently interpretable model, such as a decision tree or linear model"
+      },
+      {
+        "letter": "B",
+        "text": "Applying post hoc explanation tools such as SHAP or LIME"
+      },
+      {
+        "letter": "C",
+        "text": "Combining several models into an ensemble through model stacking"
+      },
+      {
+        "letter": "D",
+        "text": "Offering case-based counterfactual explanations for individual decisions"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Ensemble models and model stacking combine several models to offset the weaknesses of any one of them and improve performance and resilience. That is a training and testing strategy, and it does not explain how a decision was reached. Explainability approaches include inherently interpretable models such as decision trees and linear models (A), post hoc tools such as SHAP and LIME (B), counterfactual, case-based explanations (D) and plain-language justifications for users."
+  },
+  {
+    "id": "q-1597",
+    "area": "ch8",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "An AI impact assessment rates each identified impact on four factors: likelihood, severity, scope and reversibility. Each of the following questions addresses one of those factors EXCEPT:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "How easily the harm could be detected"
+      },
+      {
+        "letter": "B",
+        "text": "How many people the impact would affect"
+      },
+      {
+        "letter": "C",
+        "text": "How likely the impact is to occur"
+      },
+      {
+        "letter": "D",
+        "text": "Whether the harm could later be reversed"
+      }
+    ],
+    "answer": "A",
+    "explanation": "How easily a harm could be detected says nothing about its probability, its seriousness, how many people it reaches or whether it can be undone, so it falls outside all four factors. Likelihood is the probability that the impact occurs (C), severity is the level of harm to individuals or groups, scope is the number of people affected (B), and reversibility is whether the harm can be undone (D). Risk matrices or heat maps can then help prioritize the rated impacts."
+  },
+  {
+    "id": "q-1598",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Before training a churn model, a data steward profiles the source tables against five data quality dimensions: accuracy, completeness, integrity, timeliness and consistency. Which check does NOT measure any of those dimensions?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Whether customer IDs in the billing table still match records in the CRM table"
+      },
+      {
+        "letter": "B",
+        "text": "Whether there are enough records to train the model effectively"
+      },
+      {
+        "letter": "C",
+        "text": "Whether the records were refreshed recently enough to reflect current customers"
+      },
+      {
+        "letter": "D",
+        "text": "Whether date fields follow the expected format across the tables"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Having enough records to train effectively is data sufficiency, a question of volume. Completeness asks whether required fields are populated, which a table can satisfy however few records it holds. Matching IDs across tables tests integrity (A), recency tests timeliness (C) and date formats test consistency (D)."
+  },
+  {
+    "id": "q-1599",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Hard",
+    "question": "A team running fairness tests on a speech-recognition model follows the NIST AI RMF Playbook's suggested actions for MEASURE 2.11. Which of the following is NOT one of the types of harm the Playbook names for the team to identify?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Allocational harm"
+      },
+      {
+        "letter": "B",
+        "text": "Erasure"
+      },
+      {
+        "letter": "C",
+        "text": "Quality-of-service harm"
+      },
+      {
+        "letter": "D",
+        "text": "Reputational harm"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Reputational harm is not among the types the Playbook names. In AI risk management it usually refers to damage to the standing of the organization that builds or deploys the system, a business risk rather than a fairness harm to the people the system affects. The fairness assessment in the Playbook's suggested actions for MEASURE 2.11 starts by identifying types of harm: allocational (A), representational, quality of service (C), stereotyping and erasure (B)."
+  },
+  {
+    "id": "q-1600",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Hard",
+    "question": "Veritas Hiring, the provider of a high-risk recruitment system, is applying the data governance practices of EU AI Act Article 10 to its training, validation and testing data. Which of the following is NOT one of the practices Article 10 requires?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Publishing a summary of the training content"
+      },
+      {
+        "letter": "B",
+        "text": "Addressing the relevant design choices"
+      },
+      {
+        "letter": "C",
+        "text": "Examining the data for possible biases"
+      },
+      {
+        "letter": "D",
+        "text": "Identifying gaps or shortcomings in the data"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Publishing a summary of training content is a duty of general-purpose AI model providers under Article 53(1)(d), so A comes from the GPAI regime. For high-risk systems, Article 10(2) calls for data governance and management practices covering the relevant design choices (B), data collection and preparation, examination for possible biases (C) and the identification of data gaps or shortcomings (D), and Article 10(3) requires datasets that are relevant, sufficiently representative and, to the best extent possible, free of errors and complete."
+  },
+  {
+    "id": "q-1601",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Meridian Bank is applying data protection by design under GDPR Article 25 as it trains a fraud model on customer records. Which of the following is NOT a privacy-by-design technique?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Federated learning, so raw records stay at each branch"
+      },
+      {
+        "letter": "B",
+        "text": "Differential privacy, adding calibrated noise during training"
+      },
+      {
+        "letter": "C",
+        "text": "Resampling to balance fraud and non-fraud cases"
+      },
+      {
+        "letter": "D",
+        "text": "Pseudonymising customer identifiers at ingestion"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Resampling balances class distributions through upsampling or downsampling. It improves data quality and helps the model learn the rarer fraud cases, but it does not protect the customers whose records are used. Federated learning keeps raw records where they are held (A), differential privacy adds calibrated noise during training (B) and pseudonymisation at ingestion replaces direct identifiers (D). All three are recognized privacy-by-design techniques for AI, and Article 25(1) names pseudonymisation as an example of an appropriate measure."
+  },
+  {
+    "id": "q-1602",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Brackley Health builds a synthetic dataset from real patient records to train a triage model. Which of the following claims about synthetic data is NOT accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Carefully built synthetic records can make the training data more representative"
+      },
+      {
+        "letter": "B",
+        "text": "Lineage records can be skipped for a dataset generated in-house"
+      },
+      {
+        "letter": "C",
+        "text": "Heavy reliance on synthetic records can cause model collapse"
+      },
+      {
+        "letter": "D",
+        "text": "Records for very small patient groups can remain re-identifiable"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Being generated in-house does not exempt a dataset from lineage, which records how a dataset was generated or where it came from and which systems and models use it. The other claims are accurate: carefully constructed synthetic data can improve representativeness (A), NIST AI 600-1 links over-reliance on synthetic data to model collapse (C), and synthetic data is not privacy-preserving by default, so records for small populations can remain vulnerable to re-identification (D)."
+  },
+  {
+    "id": "q-1603",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "A validation team is planning interpretability and explainability tests for a claims model. Which of the following is NOT an interpretability testing method?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Using SHAP or LIME to explain individual predictions"
+      },
+      {
+        "letter": "B",
+        "text": "Checking whether a person could replicate the model's predictions"
+      },
+      {
+        "letter": "C",
+        "text": "Summarizing what the model values overall through feature importance"
+      },
+      {
+        "letter": "D",
+        "text": "Comparing false positive rates across demographic groups"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Comparing false positive rates across demographic groups is a performance parity check, part of bias and fairness testing. It shows whether errors fall unevenly across groups, not how the model reaches its predictions. Interpretability testing covers model-agnostic tools such as SHAP and LIME (A), simulatability, meaning whether a person can replicate the model's predictions (B), and global interpretability such as feature importance analysis (C)."
+  },
+  {
+    "id": "q-1604",
+    "area": "ch9",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Brightwater Analytics plans to buy a third-party dataset to train a pricing model and is setting the requirements the data source must meet. Which of the following is NOT a reasonable requirement to place on the source?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A warranty that the data is bias-free"
+      },
+      {
+        "letter": "B",
+        "text": "A declaration of the data's provenance"
+      },
+      {
+        "letter": "C",
+        "text": "Proof of lawful collection and consent"
+      },
+      {
+        "letter": "D",
+        "text": "Documentation of modifications or aggregations the source made"
+      }
+    ],
+    "answer": "A",
+    "explanation": "No data source can credibly warrant that a dataset is free of bias, because whether data is biased depends partly on the use and the population the model will serve. The buyer has to test for bias through its own fairness checks, such as demographic audits and data distribution checks. Reasonable requirements for a third-party source are a declaration of the data's provenance (B), proof of lawful collection and consent (C) and documentation of the modifications or aggregations the source performed (D)."
+  },
+  {
+    "id": "q-1605",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Kestrel Media is organizing pre-release work on a generative AI writing tool around the four primary considerations that NIST AI 600-1 says its public working group focused on. Which of the following is NOT one of the four?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Governance"
+      },
+      {
+        "letter": "B",
+        "text": "Content provenance"
+      },
+      {
+        "letter": "C",
+        "text": "Information integrity"
+      },
+      {
+        "letter": "D",
+        "text": "Incident disclosure"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Information integrity is one of the profile's twelve GAI risks, not one of its four primary considerations. The public working group focused on governance (A), content provenance (B), pre-deployment testing and incident disclosure (D), and Appendix A of the profile describes each one."
+  },
+  {
+    "id": "q-1606",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Corvid Logistics is writing the deployment policy for its AI route planner. Which of the following is NOT a component of an effective deployment policy?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Approval gates that make deployment depend on compliance, legal and security sign-offs"
+      },
+      {
+        "letter": "B",
+        "text": "Developers releasing their own packaged builds directly into production"
+      },
+      {
+        "letter": "C",
+        "text": "Mandatory isolation between development, staging and production environments"
+      },
+      {
+        "letter": "D",
+        "text": "Rollback steps, escalation contacts and fail-safe procedures in each deployment plan"
+      }
+    ],
+    "answer": "B",
+    "explanation": "An effective deployment policy sets strict release procedures in which developers do not have administrator access to production and hand the packaged AI system to operations personnel. Developers releasing their own builds would remove that separation of duties. The other options are components of the policy: approval gates that make deployment contingent on compliance, legal and security sign-offs (A), mandatory isolation of development, staging and production environments (C) and rollback procedures with verification steps, escalation contacts and fail-safe procedures (D)."
+  },
+  {
+    "id": "q-1607",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "Halden Lending's monitoring lead is writing one alert for each of three types of drift: covariate drift, label drift and concept drift. Which proposed alert does NOT target one of those drift types?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Applicant income distributions move away from the training baseline"
+      },
+      {
+        "letter": "B",
+        "text": "The observed default rate rises well above the rate seen in training"
+      },
+      {
+        "letter": "C",
+        "text": "Features that once predicted default stop predicting it"
+      },
+      {
+        "letter": "D",
+        "text": "Loan officers override the model's recommendations more often"
+      }
+    ],
+    "answer": "D",
+    "explanation": "A rising override rate is a signal about how people are using the model's outputs, not a change in the inputs, the outcomes or the relationship between them. Repeated human overrides are a leading indicator that should trigger a model review. Covariate drift is a change in the input distribution (A), label drift is a change in the distribution of outcomes such as loan defaults (B), and concept drift is a change in the relationship between inputs and outputs (C)."
+  },
+  {
+    "id": "q-1608",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Before Fenwick Mutual releases its claims model, a multidisciplinary governance team holds the final gate review. Which of the following is NOT something that review is meant to confirm?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The model has been certified to ISO/IEC 42001"
+      },
+      {
+        "letter": "B",
+        "text": "Security hardening and incident response procedures have been validated"
+      },
+      {
+        "letter": "C",
+        "text": "Users and operations staff have been trained"
+      },
+      {
+        "letter": "D",
+        "text": "Version control traces the released model, data and configuration"
+      }
+    ],
+    "answer": "A",
+    "explanation": "ISO/IEC 42001 certification applies to an organization's AI management system, so there is no model certificate for a gate to confirm. The final gate review confirms that security hardening and incident response procedures are validated (B), that users and operations personnel are trained (C) and that version control and traceability of models, data and configurations are maintained (D), together with complete documentation, risk mitigations implemented or their deferral approved, monitoring plans and verified compliance."
+  },
+  {
+    "id": "q-1609",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "The AIGP Body of Knowledge calls for a regular schedule of maintenance, updates and retraining once a model is in production. Each of the following belongs in that maintenance schedule EXCEPT:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Monthly or quarterly evaluations of model quality"
+      },
+      {
+        "letter": "B",
+        "text": "Disposal of training data and retired model artifacts"
+      },
+      {
+        "letter": "C",
+        "text": "Retraining at intervals set by volatility and risk"
+      },
+      {
+        "letter": "D",
+        "text": "Updates to libraries, frameworks and container images"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Disposal of training data and model artifacts is a retirement activity, carried out with data archival, model decommissioning and migration when a system is taken out of service. The maintenance schedule for a live system covers monthly or quarterly evaluations of model quality (A), retraining anywhere from weekly to annually depending on volatility and risk (C) and updates to libraries, frameworks and container images (D), along with hotfix intervals and quarterly business reviews."
+  },
+  {
+    "id": "q-1610",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Painful",
+    "question": "Which of the following is NOT an outcome of the NIST AI RMF MEASURE function?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Test sets, metrics and details of the TEVV tools used are documented"
+      },
+      {
+        "letter": "B",
+        "text": "The environmental impact of training and managing the model is assessed"
+      },
+      {
+        "letter": "C",
+        "text": "The likelihood and magnitude of each identified impact are documented"
+      },
+      {
+        "letter": "D",
+        "text": "End users can report problems and appeal outcomes through feedback processes"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Documenting the likelihood and magnitude of each identified impact, beneficial and harmful, is MAP 5.1, part of characterizing impacts before they are measured. MEASURE 2.1 covers test sets, metrics and TEVV tool details (A), MEASURE 2.12 environmental impact and sustainability (B), and MEASURE 3.3 feedback processes for end users and affected communities to report problems and appeal outcomes (D)."
+  },
+  {
+    "id": "q-1611",
+    "area": "ch10",
+    "domain": "Domain III",
+    "difficulty": "Medium",
+    "question": "Three months after launch, Ardent Retail reviews how it monitors its recommendation model in production. Which of the following is NOT a post-deployment monitoring technique?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Drift detection, alerting when inputs or predictions deviate from training data"
+      },
+      {
+        "letter": "B",
+        "text": "Misuse detection, watching for unauthorized or unintended uses"
+      },
+      {
+        "letter": "C",
+        "text": "Explainability monitoring, checking that explanations stay accurate and consistent"
+      },
+      {
+        "letter": "D",
+        "text": "Canary deployment, releasing to a small group of users first"
+      }
+    ],
+    "answer": "D",
+    "explanation": "A canary deployment is a release practice that tests a new version on a small group of users before full rollout, used alongside staged rollouts and rollback procedures. It governs how a version reaches production rather than how a live system is watched. Post-deployment monitoring techniques include drift detection (A), bias detection, misuse detection (B) and explainability monitoring (C)."
+  },
+  {
+    "id": "q-1612",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "Ardenne Foods is comparing deployment modes for a demand-forecasting model. Which pairing of deployment mode and drawback is NOT accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Cloud: less control over where the data is located"
+      },
+      {
+        "letter": "B",
+        "text": "On-premises: costly infrastructure and lower scalability"
+      },
+      {
+        "letter": "C",
+        "text": "Edge: depends on a steady network connection to run inference"
+      },
+      {
+        "letter": "D",
+        "text": "Hybrid: added architectural complexity and integration overhead"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Edge deployment runs the model on or near the device, so inference does not depend on a network connection; that independence is one of edge's strengths. Its drawbacks are limited compute power and the limits that places on model size. Cloud deployment gives less control over where data is located (A), on-premises deployment brings costly infrastructure and lower scalability (B), and a hybrid design adds architectural complexity and integration overhead (D)."
+  },
+  {
+    "id": "q-1613",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "Which of the following statements about adapting a model for deployment is NOT accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Retrieval augmented generation retrains the model's weights on the organization's documents"
+      },
+      {
+        "letter": "B",
+        "text": "Fine-tuning adapts the model to domain data but can raise maintenance and retraining costs"
+      },
+      {
+        "letter": "C",
+        "text": "Using the base model as-is, without modification, suits general tasks such as summarization"
+      },
+      {
+        "letter": "D",
+        "text": "Quantization and distillation shrink the model and cut latency, sometimes with a modest loss of accuracy"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Retrieval augmented generation leaves the model's weights unchanged and draws on an external knowledge base at inference time; adapting the weights to domain-specific data is fine-tuning. B gives fine-tuning's trade-off, C the as-is option, which suits general-purpose tasks such as summarization, and D the size and latency gains of quantization and distillation, which can cost a little accuracy."
+  },
+  {
+    "id": "q-1614",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Painful",
+    "question": "IMDA's Model AI Governance Framework for Agentic AI sorts risk factors into those that raise the impact of an agent's failure and those that raise its likelihood. Which of the following is NOT an impact factor?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Whether the agent has write access to systems as well as read access"
+      },
+      {
+        "letter": "B",
+        "text": "Whether the agent uses its own judgment instead of following a standard operating procedure"
+      },
+      {
+        "letter": "C",
+        "text": "Whether its actions, such as entering a contract or emailing outside parties, can be undone"
+      },
+      {
+        "letter": "D",
+        "text": "Whether it can reach sensitive data, especially when it keeps a persistent memory"
+      }
+    ],
+    "answer": "B",
+    "explanation": "IMDA lists the level of autonomy, meaning whether an agent defines its own workflow or follows a well-defined procedure, as a factor affecting likelihood: more autonomy makes behavior less predictable and errors more likely. Read versus write access (A), the reversibility of actions such as entering a contract or emailing outside parties (C), and access to sensitive data, made worse by persistent memory (D), are factors affecting impact."
+  },
+  {
+    "id": "q-1615",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "Which of the following does NOT describe one of the four levels of human involvement in IMDA's Model AI Governance Framework for Agentic AI?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A human reviews and approves every action the agent takes"
+      },
+      {
+        "letter": "B",
+        "text": "A human approves significant steps, such as writing to a database"
+      },
+      {
+        "letter": "C",
+        "text": "A human decides whether and when the system is used at all"
+      },
+      {
+        "letter": "D",
+        "text": "No approvals are needed, though actions may be audited afterwards"
+      }
+    ],
+    "answer": "C",
+    "explanation": "C describes human-in-command, one of the three oversight approaches in the EU High-Level Expert Group's 2019 Ethics Guidelines for Trustworthy AI, where people oversee the system's overall activity, decide whether, when and how to use it, and can override its decisions. IMDA's four levels are agent proposes, human operates, where a human reviews and approves every action (A); agent and human collaborate, where a human approves significant steps such as writing to a database or making a payment (B); agent operates, human approves, where approval is needed only at critical steps or failures; and agent operates, human observes, where no approval is needed but actions may be audited afterwards (D)."
+  },
+  {
+    "id": "q-1616",
+    "area": "ch13",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "Larkspur Bank is deciding whether to deploy an AI agent in the EU and lists facts that could place it in the EU AI Act's high-risk tier. Which of the following is NOT a basis for high-risk classification?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It plans and acts across many steps with little human input"
+      },
+      {
+        "letter": "B",
+        "text": "It evaluates the creditworthiness of individual loan applicants"
+      },
+      {
+        "letter": "C",
+        "text": "It screens and filters applications for job vacancies"
+      },
+      {
+        "letter": "D",
+        "text": "It profiles individuals while carrying out an Annex III use"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Under the EU AI Act the risk tier follows the use. Operating with varying levels of autonomy is part of the Article 3(1) definition of an AI system, so autonomy brings the agent within the Act but does not by itself make it high-risk. Evaluating the creditworthiness of natural persons falls under Annex III point 5(b) (B), screening and filtering job applications under point 4(a) (C), and an Annex III system that profiles people is always high-risk under the final subparagraph of Article 6(3) (D)."
+  },
+  {
+    "id": "q-1617",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Painful",
+    "question": "Fennick Analytics plans to build a product on a general-purpose AI model released under a free and open-source license, with its weights, architecture and usage information public. The model is not classified as presenting systemic risk. Which statement about the model provider's obligations under Article 53 of the EU AI Act is NOT accurate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It must still have a policy to comply with EU copyright law, including text-and-data-mining opt-outs"
+      },
+      {
+        "letter": "B",
+        "text": "It must still give downstream providers the Annex XII information on the model's capabilities and limits"
+      },
+      {
+        "letter": "C",
+        "text": "It must still publish a sufficiently detailed summary of the content used to train the model"
+      },
+      {
+        "letter": "D",
+        "text": "It would lose the open-source exemption if the model were classified as presenting systemic risk"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Article 53(2) lifts the technical documentation and downstream-information duties in Article 53(1)(a) and (b) for models released under a free and open-source licence whose weights, architecture and usage information are public, so Fennick cannot count on receiving Annex XII information. The copyright policy (A) and the public training-content summary (C) still apply, and Article 53(2) says the exemption does not apply to models with systemic risk (D)."
+  },
+  {
+    "id": "q-1618",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "Rowan Systems builds an HR product on a general-purpose AI model whose provider has signed the GPAI Code of Practice. Which of the following is NOT a commitment the provider makes in the Code's Transparency chapter?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Publicly disclosing contact details through which downstream providers can request information"
+      },
+      {
+        "letter": "B",
+        "text": "Answering a downstream provider's request within 14 days, save in exceptional circumstances"
+      },
+      {
+        "letter": "C",
+        "text": "Updating its model documentation for relevant changes and keeping earlier versions for 10 years"
+      },
+      {
+        "letter": "D",
+        "text": "Reporting serious incidents involving the model to each downstream provider that integrates it"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Serious incident reporting sits in the Safety and Security chapter (Commitment 9), which applies to providers of models with systemic risk, and the reports go to the AI Office and, where applicable, national competent authorities. No chapter commits providers to notify downstream providers; Measure 9.1 only asks providers to help downstream providers report incidents themselves. The Transparency chapter applies to every signatory: Measure 1.2 covers public contact details for downstream requests (A) and answering those requests within 14 days save in exceptional circumstances (B), and Measure 1.1 covers updating the model documentation for relevant changes and keeping earlier versions for 10 years after the model is placed on the market (C)."
+  },
+  {
+    "id": "q-1619",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "Halden Insurance is adopting a vendor's high-risk AI system for pricing life insurance and reviews the instructions for use that Article 13 of the EU AI Act requires the provider to supply. Which of the following would Halden NOT expect to find there?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The identity of the provider that supplies the system"
+      },
+      {
+        "letter": "B",
+        "text": "The system's accuracy and robustness metrics and its known risks"
+      },
+      {
+        "letter": "C",
+        "text": "A fundamental rights impact assessment of Halden's own use"
+      },
+      {
+        "letter": "D",
+        "text": "The human oversight measures that apply to the system"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The fundamental rights impact assessment is a deployer duty under Article 27, which applies to public bodies, private entities providing public services and deployers of the credit and insurance systems in Annex III points 5(b) and (c), so Halden must carry it out itself. Article 13(3) requires the instructions for use to cover the provider's identity (A), the system's accuracy and robustness metrics and the known circumstances that may lead to risks (B), and the human oversight measures (D)."
+  },
+  {
+    "id": "q-1620",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Painful",
+    "question": "Corbel Insurance licenses a third-party claims model and maps its supplier-risk work to the NIST AI RMF. Which subcategory does NOT belong to one of the categories that address risks from third-party software, data or entities?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "MANAGE 1.4: negative residual risks to downstream acquirers and end users are documented"
+      },
+      {
+        "letter": "B",
+        "text": "GOVERN 6.2: contingency processes handle failures or incidents in high-risk third-party data or AI systems"
+      },
+      {
+        "letter": "C",
+        "text": "MAP 4.1: approaches map the technology and legal risks of components, including third-party data or software"
+      },
+      {
+        "letter": "D",
+        "text": "MANAGE 3.2: pre-trained models used in development are monitored as part of regular maintenance"
+      }
+    ],
+    "answer": "A",
+    "explanation": "MANAGE 1.4 sits in MANAGE 1, on prioritizing and responding to the risks of the organization's own system, and documents the residual risks that system leaves for its downstream acquirers and end users. GOVERN 6.2 (B) sits in GOVERN 6, on risks arising from third-party software, data and other supply chain issues; MAP 4.1 (C) in MAP 4, which maps risks for all components including third-party software and data; and MANAGE 3.2 (D) in MANAGE 3, which manages risks and benefits from third-party entities."
+  },
+  {
+    "id": "q-1621",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "During due diligence on an AI document-review vendor, Marlowe LLP asks for evidence of the vendor's security and compliance posture. Which of the following could the vendor NOT legitimately provide?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An ISO/IEC 27001 certificate for its information security management system"
+      },
+      {
+        "letter": "B",
+        "text": "An ISO/IEC 42005 certificate for its AI system impact assessments"
+      },
+      {
+        "letter": "C",
+        "text": "An ISO/IEC 42001 certificate for its AI management system"
+      },
+      {
+        "letter": "D",
+        "text": "A SOC 2 Type II report on its controls"
+      }
+    ],
+    "answer": "B",
+    "explanation": "ISO/IEC 42005 gives guidance on AI system impact assessment and has no certification scheme, so there is no legitimate 42005 certificate. Impact assessment is checked in an ISO/IEC 42001 certification audit, against 42001's own clauses 6.1.4 and 8.4. ISO/IEC 27001 (A) and ISO/IEC 42001 (C) are certifiable management system standards, and a SOC 2 Type II report (D) is an independent auditor's attestation on how the vendor's controls operated over a period, which is common evidence of security posture even though it is a report rather than a certificate."
+  },
+  {
+    "id": "q-1622",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "Which of the following is NOT a vehicle for communication between an organization and its AI vendors and partners?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vendor agreements requiring the vendor to report outages, incidents and performance changes"
+      },
+      {
+        "letter": "B",
+        "text": "Service level agreements setting timelines and scope for updates, disclosures and issue resolution"
+      },
+      {
+        "letter": "C",
+        "text": "Joint communication protocols settling who speaks for a system both parties own"
+      },
+      {
+        "letter": "D",
+        "text": "Registration of the system and its intended purpose in the public EU database for high-risk AI"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Registration in the EU database is a regulatory disclosure the EU AI Act requires for high-risk systems (Article 49), made to a database the Commission runs (Article 71), so it is not a channel between an organization and its vendors. Communication with vendors and partners is built into vendor agreements that require reports of outages, incidents and performance changes (A), service level agreements that fix timelines and scope for updates, disclosures and issue resolution (B), and joint communication protocols that settle who speaks for a jointly owned system (C)."
+  },
+  {
+    "id": "q-1623",
+    "area": "ch11",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "Quillon Insurance is marking up a draft contract for a vendor-hosted claims model. Which of the following clauses does NOT protect Quillon?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Quillon may periodically audit the vendor's development, monitoring and incident response operations"
+      },
+      {
+        "letter": "B",
+        "text": "The vendor must disclose its training data sources, model lineage and performance evaluations"
+      },
+      {
+        "letter": "C",
+        "text": "The vendor may send Quillon's data to third parties where needed to perform the services"
+      },
+      {
+        "letter": "D",
+        "text": "The vendor must carry cyber liability insurance for the engagement"
+      }
+    ],
+    "answer": "C",
+    "explanation": "A clause letting the vendor send Quillon's data to third parties to perform the services widens the vendor's freedom rather than protecting Quillon, and it is a common red flag in AI contracts because it allows data sharing Quillon cannot control. Audit rights over the vendor's operations (A) offset the reduced visibility of a system a third party runs, disclosure of training data sources, model lineage and performance evaluations (B) supports Quillon's own risk assessment, and required cyber liability insurance (D) helps ensure the vendor can cover losses from a breach."
+  },
+  {
+    "id": "q-1624",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "A Level 1 (Critical) incident hits Wexcombe Bank's credit model: a regulatory violation affecting many applicants. Which of the following does NOT belong among the immediate escalation steps for an incident this severe?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Retraining the model on corrected data"
+      },
+      {
+        "letter": "B",
+        "text": "A legal hold on the incident's related artifacts"
+      },
+      {
+        "letter": "C",
+        "text": "Protecting records through attorney-client privilege"
+      },
+      {
+        "letter": "D",
+        "text": "Suspending the model or rolling it back"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Retraining on corrected data is a corrective action that comes later, in the eradication step of incident response, after containment and a root-cause investigation. Immediate escalation of a critical incident can include notifying executives and regulators, placing a legal hold on related artifacts (B), protecting records through attorney-client privilege (C) and suspending or rolling back the model (D)."
+  },
+  {
+    "id": "q-1625",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "Tamworth Insurance tiers its change reviews for a claims agent according to IMDA's agentic AI framework. Which pairing of change and review is NOT what IMDA recommends?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A tweak to the agent's prompt: a light review"
+      },
+      {
+        "letter": "B",
+        "text": "An update to the underlying model: a full governance review"
+      },
+      {
+        "letter": "C",
+        "text": "A change touching high-stakes decisions: an immediate reassessment"
+      },
+      {
+        "letter": "D",
+        "text": "A widening of the agent's autonomy: a light review"
+      }
+    ],
+    "answer": "D",
+    "explanation": "IMDA groups an autonomy adjustment with a model update as a material change that may need a full governance review, and it separately counts autonomy as a factor that raises the likelihood of error. It gives minor changes such as prompt refinements a lighter review (A), model updates a full governance review (B), and critical changes affecting high-stakes decisions an immediate re-assessment of risk (C)."
+  },
+  {
+    "id": "q-1626",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "Six months into running a claims-approval agent, Harrow Mutual suspects its human approvers have slipped into automation bias. Which of the following is NOT a measure IMDA recommends for keeping their oversight meaningful?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tracking each reviewer's override rate and how long their reviews take"
+      },
+      {
+        "letter": "B",
+        "text": "Relying on the agent's displayed chain of thought to explain its actions"
+      },
+      {
+        "letter": "C",
+        "text": "Training reviewers on the agent's common failure modes"
+      },
+      {
+        "letter": "D",
+        "text": "Running anomaly detection and alerts on the agent's logged events"
+      }
+    ],
+    "answer": "B",
+    "explanation": "IMDA cautions that chain-of-thought reasoning, sometimes used for explainability, is not analogous to human reasoning, so reviewers should be taught its limits rather than rely on it to explain what the agent did. IMDA's measures include auditing the overseers by tracking override rates and review times (A), training them to spot common failure modes (C), and backing them up with automated monitoring such as alerts on logged events and detection of anomalous agent behavior (D)."
+  },
+  {
+    "id": "q-1627",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "Rookwood Logistics is writing the policy for shutting down an AI agent that misbehaves. Which of the following does NOT belong in that deactivation policy?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Who is authorized to trigger the kill switch"
+      },
+      {
+        "letter": "B",
+        "text": "Which credentials, tokens and tool connections are revoked"
+      },
+      {
+        "letter": "C",
+        "text": "How long the agent stays paused before resuming on its own"
+      },
+      {
+        "letter": "D",
+        "text": "Which manual fallback takes over the agent's work"
+      }
+    ],
+    "answer": "C",
+    "explanation": "An agent that resumes on its own after a pause fails open: if nobody responds, it carries on. IMDA calls for denying action by default when human approval is unavailable, and for halting agents until a human can assess them. A deactivation policy should instead name who may trigger the kill switch (A), what access is revoked, such as credentials, tokens and tool connections (B), and which fallback takes over, since IMDA expects termination to come with fallback solutions (D)."
+  },
+  {
+    "id": "q-1628",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "Drayton Credit is retiring a loan-decisioning model and sorting what to keep. Which of the following would Drayton NOT normally archive?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Temporary model artifacts such as training checkpoint files"
+      },
+      {
+        "letter": "B",
+        "text": "Final model versions and their training data lineage"
+      },
+      {
+        "letter": "C",
+        "text": "Incident reports and the mitigation records that followed"
+      },
+      {
+        "letter": "D",
+        "text": "Records of communications with users and stakeholders"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Temporary model artifacts such as training checkpoint files are usually candidates for disposal at retirement, along with redundant training data and personal data not needed for compliance. Final model versions with their training data lineage (B), incident reports and mitigation records (C), and records of communications with users and stakeholders (D) are worth archiving because audits, disputes and regulators may later need them."
+  },
+  {
+    "id": "q-1629",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Medium",
+    "question": "Penrose Health is planning the controlled deactivation of a patient-triage model. Which of the following is NOT a challenge of carrying out that shutdown?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Keeping critical business processes running through the shutdown"
+      },
+      {
+        "letter": "B",
+        "text": "Preventing the loss of audit trails and traceability"
+      },
+      {
+        "letter": "C",
+        "text": "Deprovisioning API keys, credentials and service accounts"
+      },
+      {
+        "letter": "D",
+        "text": "Detecting performance degradation from drift in the model's inputs"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Performance degradation from drift is a common trigger for deciding to retire a system, a question settled before the shutdown is planned, not a challenge of carrying it out. The challenges of a controlled deactivation include keeping critical business processes running (A), preventing the loss of audit trails and traceability (B), revoking access such as API keys, credentials and service accounts (C), and watching for unintended consequences of the shutdown."
+  },
+  {
+    "id": "q-1630",
+    "area": "ch12",
+    "domain": "Domain IV",
+    "difficulty": "Hard",
+    "question": "NIST AI RMF MANAGE 4.1 says post-deployment monitoring plans include mechanisms for several activities. Which of the following is NOT among them?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Capturing and evaluating input from users and other AI actors"
+      },
+      {
+        "letter": "B",
+        "text": "Assessing environmental impact and sustainability"
+      },
+      {
+        "letter": "C",
+        "text": "Appeal and override of system decisions"
+      },
+      {
+        "letter": "D",
+        "text": "Decommissioning, recovery and change management"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Assessing environmental impact and sustainability is MEASURE 2.12, one of the evaluations of trustworthy characteristics, and it is not among the mechanisms MANAGE 4.1 builds into post-deployment monitoring plans. MANAGE 4.1 names mechanisms for capturing and evaluating input from users and other relevant AI actors (A), appeal and override (C), and decommissioning, incident response, recovery and change management (D)."
   }
 ];
