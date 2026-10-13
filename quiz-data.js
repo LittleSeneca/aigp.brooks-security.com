@@ -367,7 +367,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only engineers can understand AI governance content"
+        "text": "Governance content is too technical for anyone outside engineering to follow"
       },
       {
         "letter": "D",
@@ -552,7 +552,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Governance applies only to systems that process personal or sensitive data"
+        "text": "Governance scope should be set by whether a system processes personal or sensitive data"
       },
       {
         "letter": "C",
@@ -614,7 +614,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only vendors holding an ISO/IEC 42001 certificate may be considered"
+        "text": "Vendors without an ISO/IEC 42001 certificate are excluded from consideration"
       }
     ],
     "answer": "A",
@@ -687,7 +687,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "They apply only to paper records rather than digital ones"
+        "text": "They were drafted for paper records and exclude digital ones"
       },
       {
         "letter": "C",
@@ -764,7 +764,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Optimizing exclusively for overall accuracy on the full test set"
+        "text": "Optimizing for overall accuracy on the full test set"
       },
       {
         "letter": "B",
@@ -876,7 +876,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "A system is used only by employees rather than customers"
+        "text": "A system is used by employees rather than customers"
       },
       {
         "letter": "C",
@@ -1586,7 +1586,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Provides customer support in only one language"
+        "text": "Provides customer support in a single language"
       }
     ],
     "answer": "A",
@@ -1690,11 +1690,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "It is the only legally binding AI standard in the EU"
+        "text": "It is the legally binding AI standard adopted under EU law"
       },
       {
         "letter": "D",
-        "text": "It focuses exclusively on privacy engineering for AI"
+        "text": "It is a privacy engineering standard written for AI systems"
       }
     ],
     "answer": "B",
@@ -1802,7 +1802,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Sector-specific rules applicable only to manufacturing"
+        "text": "Sector-specific rules written for the manufacturing industry"
       }
     ],
     "answer": "A",
@@ -2087,7 +2087,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Distributor only"
+        "text": "Deployer, with no provider obligations"
       },
       {
         "letter": "B",
@@ -2635,7 +2635,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Because retraining is only permitted during annual maintenance windows"
+        "text": "Because regulators require retraining to align with annual maintenance windows"
       },
       {
         "letter": "D",
@@ -2847,7 +2847,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Threat modeling can only be performed after deployment"
+        "text": "Threat modeling begins after deployment, once real attacks can be observed"
       },
       {
         "letter": "C",
@@ -2878,7 +2878,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "It only affects models during offline evaluation"
+        "text": "It affects models during offline evaluation, not in production"
       },
       {
         "letter": "D",
@@ -2986,7 +2986,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Promotional slogans emphasizing capabilities only"
+        "text": "Promotional slogans that highlight the system's capabilities and benefits"
       },
       {
         "letter": "D",
@@ -3067,7 +3067,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Incidents occur only in training environments"
+        "text": "Incidents are failures that occur in training environments before release"
       },
       {
         "letter": "D",
@@ -3179,7 +3179,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Publishing only a dense technical appendix"
+        "text": "Publishing a dense technical appendix for users to consult"
       }
     ],
     "answer": "B",
@@ -3219,7 +3219,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "The exclusive responsibility of the legal department to authorize any AI project"
+        "text": "A legal department function that authorizes each AI project"
       },
       {
         "letter": "B",
@@ -3231,7 +3231,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "The engineering discipline focused solely on training and tuning machine learning algorithms"
+        "text": "The engineering discipline focused on training and tuning machine learning algorithms"
       }
     ],
     "answer": "C",
@@ -3353,7 +3353,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "AI ethics is only relevant for academic research, not business applications"
+        "text": "AI ethics is relevant to academic research rather than business applications"
       },
       {
         "letter": "C",
@@ -3375,7 +3375,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Delegating all governance responsibilities exclusively to technical engineering teams"
+        "text": "Delegating all governance responsibilities to technical engineering teams"
       },
       {
         "letter": "B",
@@ -3383,7 +3383,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Limiting governance activities to the initial design and development phases only"
+        "text": "Limiting governance activities to the initial design and development phases"
       },
       {
         "letter": "D",
@@ -3457,7 +3457,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Medium risk, needing only standard governance procedures and routine review cycles"
+        "text": "Medium risk, handled through standard governance procedures and routine review cycles"
       },
       {
         "letter": "C",
@@ -3465,7 +3465,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Low risk, requiring only minimal oversight and basic documentation requirements"
+        "text": "Low risk, requiring minimal oversight and basic documentation"
       }
     ],
     "answer": "A",
@@ -3587,7 +3587,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Implement only minimal governance since no specific AI regulations have been issued"
+        "text": "Implement minimal governance since no specific AI regulations have been issued"
       },
       {
         "letter": "C",
@@ -3609,7 +3609,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Transparency obligations apply only to AI systems operated by government agencies"
+        "text": "Transparency obligations fall on government agencies, not private companies"
       },
       {
         "letter": "B",
@@ -3669,7 +3669,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "AI risk management deals exclusively with cybersecurity threats and system vulnerabilities"
+        "text": "AI risk management deals with cybersecurity threats and system vulnerabilities rather than broader harms"
       },
       {
         "letter": "D",
@@ -3743,7 +3743,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "A regulatory mandate that applies exclusively to publicly traded corporations"
+        "text": "A regulatory mandate imposed on publicly traded corporations by securities law"
       },
       {
         "letter": "C",
@@ -3769,7 +3769,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Ignoring international regulations and focusing only on headquarters location"
+        "text": "Applying headquarters-country law everywhere and ignoring international regulations"
       },
       {
         "letter": "C",
@@ -3795,15 +3795,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only the IT department, since AI systems are fundamentally technology products"
+        "text": "The IT department, since AI systems are fundamentally technology products"
       },
       {
         "letter": "C",
-        "text": "Only outside consulting firms hired to advise on governance best practices externally"
+        "text": "Outside consulting firms hired to run governance on the organization's behalf"
       },
       {
         "letter": "D",
-        "text": "Only C-suite executives and senior leaders without input from operational teams"
+        "text": "C-suite executives and senior leaders, without input from operational teams"
       }
     ],
     "answer": "A",
@@ -4037,7 +4037,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "LLMs can be trained to produce outputs that meet specific fairness criteria, but only when the training data is explicitly balanced across all protected demographic categories"
+        "text": "LLMs can be trained to produce outputs that meet specific fairness criteria, provided the training data is explicitly balanced across all protected demographic categories"
       }
     ],
     "answer": "C",
@@ -4241,7 +4241,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Use the tool only for non-critical, low-stakes diagnostic decisions where errors are acceptable"
+        "text": "Restrict the tool to non-critical, low-stakes diagnostic decisions where errors are acceptable"
       },
       {
         "letter": "D",
@@ -4601,7 +4601,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only a minor technical error in the model that can be corrected in the next update"
+        "text": "A minor technical error in the model that can be corrected in the next update"
       },
       {
         "letter": "C",
@@ -4683,7 +4683,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only the system's average accuracy rate across the entire population"
+        "text": "The system's average accuracy rate across the entire population"
       },
       {
         "letter": "D",
@@ -4987,7 +4987,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only a minor technical problem that requires routine parameter adjustments to resolve"
+        "text": "A minor technical problem that requires routine parameter adjustments to resolve"
       },
       {
         "letter": "B",
@@ -5125,7 +5125,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only privacy concerns related to the collection of location and demographic data"
+        "text": "Privacy concerns related to the collection of location and demographic data"
       },
       {
         "letter": "D",
@@ -5333,7 +5333,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Restricting AI use exclusively to non-medical and non-healthcare applications"
+        "text": "Restricting AI use to non-medical and non-healthcare applications"
       },
       {
         "letter": "D",
@@ -5351,11 +5351,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Prioritize privacy by withholding model explanations from data subjects and providing only the legal minimum information required under the GDPR's automated decision-making provisions"
+        "text": "Prioritize privacy by withholding model explanations from data subjects and providing the bare legal minimum required under the GDPR's automated decision-making provisions"
       },
       {
         "letter": "B",
-        "text": "Disregard both principles when they conflict and rely solely on accuracy as the governing metric"
+        "text": "Disregard both principles when they conflict and rely on accuracy as the governing metric"
       },
       {
         "letter": "C",
@@ -5385,7 +5385,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Designing AI systems exclusively for government and public sector applications"
+        "text": "Reserving AI systems for government and public sector applications"
       },
       {
         "letter": "D",
@@ -5545,7 +5545,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Base the selection decision solely on the comparative acquisition and operational costs"
+        "text": "Base the selection decision on the comparative acquisition and operational costs"
       }
     ],
     "answer": "C",
@@ -5663,7 +5663,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Implement ethics principles only if key competitors in the market are also doing"
+        "text": "Implement ethics principles to the same degree that key competitors in the market do"
       },
       {
         "letter": "B",
@@ -5805,7 +5805,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Deploy the system only after completing an algorithmic impact assessment that quantifies the displacement risk and proposes specific mitigation measures for affected workers"
+        "text": "Deploy the system once an algorithmic impact assessment quantifies the displacement risk and proposes specific mitigation measures for affected workers"
       }
     ],
     "answer": "A",
@@ -5819,11 +5819,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only government regulators and agencies that have statutory authority over AI"
+        "text": "Those with statutory authority over AI, meaning government regulators and agencies"
       },
       {
         "letter": "B",
-        "text": "Only the company's shareholders and investors who hold equity in the organization"
+        "text": "Those who hold equity in the organization, meaning shareholders and investors"
       },
       {
         "letter": "C",
@@ -5831,7 +5831,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only the AI developers and engineers who build and maintain the technical systems"
+        "text": "Those who build and maintain the technical systems, meaning AI developers and engineers"
       }
     ],
     "answer": "C",
@@ -5853,11 +5853,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only the data science team, since governance is inherently a technical discipline"
+        "text": "The data science team, since governance is inherently a technical discipline"
       },
       {
         "letter": "D",
-        "text": "Only the legal department, since AI governance is fundamentally a compliance function"
+        "text": "The legal department, since AI governance is fundamentally a compliance function"
       }
     ],
     "answer": "A",
@@ -5883,7 +5883,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "They become relevant stakeholders only after measurable harms have already occurred"
+        "text": "They become relevant stakeholders once measurable harms have occurred"
       }
     ],
     "answer": "C",
@@ -5923,11 +5923,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only hospital administrators and healthcare facility management personnel"
+        "text": "Hospital administrators and healthcare facility management personnel"
       },
       {
         "letter": "B",
-        "text": "Only the internal development team and engineering staff building the system"
+        "text": "The internal development team and engineering staff building the system"
       },
       {
         "letter": "C",
@@ -6287,7 +6287,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Disregard distributional impacts and focus solely on aggregate net benefit"
+        "text": "Disregard distributional impacts and focus on aggregate net benefit"
       },
       {
         "letter": "B",
@@ -6377,7 +6377,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Engage only the most influential stakeholder groups and disregard all other perspectives"
+        "text": "Engage the most influential stakeholder groups and disregard all other perspectives"
       }
     ],
     "answer": "A",
@@ -6447,7 +6447,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Disclose information only to regulators and withhold it from all other stakeholder groups"
+        "text": "Disclose information to regulators and withhold it from all other stakeholder groups"
       },
       {
         "letter": "C",
@@ -6521,11 +6521,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "AI systems deployed solely for entertainment, gaming, or recreational purposes"
+        "text": "AI systems deployed for entertainment, gaming, or recreational purposes"
       },
       {
         "letter": "B",
-        "text": "AI systems that process only anonymized or synthetic data with no personal information"
+        "text": "AI systems that process anonymized or synthetic data with no personal information"
       },
       {
         "letter": "C",
@@ -6533,7 +6533,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "AI systems used exclusively for internal administrative purposes like scheduling"
+        "text": "AI systems used for internal administrative purposes like scheduling"
       }
     ],
     "answer": "C",
@@ -6547,11 +6547,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only publishing a privacy policy notice on the provider's public-facing website"
+        "text": "Publishing a privacy notice on the provider's website, which satisfies the Act"
       },
       {
         "letter": "B",
-        "text": "Only a one-time registration filing with a designated national regulatory authority"
+        "text": "A one-time registration filing with a national authority, with no ongoing duties"
       },
       {
         "letter": "C",
@@ -6559,7 +6559,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only conducting an annual independent financial audit of AI-related expenditures"
+        "text": "An annual independent financial audit of AI-related expenditures"
       }
     ],
     "answer": "C",
@@ -6599,7 +6599,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "To mandate that all AI systems be developed and released exclusively as open-source projects"
+        "text": "To mandate that all AI systems be developed and released as open-source projects"
       },
       {
         "letter": "B",
@@ -6629,7 +6629,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Regulations that only apply to organizations physically headquartered within the jurisdiction's borders"
+        "text": "Regulations that apply to organizations physically headquartered within the jurisdiction's borders"
       },
       {
         "letter": "C",
@@ -6707,7 +6707,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only the regulations of the country where the training data was originally collected"
+        "text": "The law of the country where the training data was collected, which governs the whole system"
       },
       {
         "letter": "C",
@@ -6715,7 +6715,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only US federal law applies since the company is incorporated in the United States"
+        "text": "US federal law, since the company is incorporated in the United States"
       }
     ],
     "answer": "C",
@@ -6785,7 +6785,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Regulations that only address the physical safety of AI hardware in industrial settings"
+        "text": "Regulations that address the physical safety of AI hardware in industrial settings rather than AI use"
       },
       {
         "letter": "C",
@@ -6941,7 +6941,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "A technical code review focused solely on programming style, syntax, and documentation quality"
+        "text": "A technical code review focused on programming style, syntax, and documentation quality"
       },
       {
         "letter": "C",
@@ -6989,11 +6989,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Complying only with voluntary technical standards and industry guidelines"
+        "text": "Complying with voluntary technical standards and industry guidelines in place of legal requirements"
       },
       {
         "letter": "B",
-        "text": "Complying exclusively with internal company policies without regard to external legal obligations"
+        "text": "Complying with internal company policies without regard to external legal obligations"
       },
       {
         "letter": "C",
@@ -7067,15 +7067,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only cloud service providers that host and serve AI model inference on their infrastructure"
+        "text": "A cloud service provider that hosts and serves inference for an AI model built by another company"
       },
       {
         "letter": "B",
-        "text": "Only commercial entities that sell AI systems directly for monetary compensation to customers"
+        "text": "A reseller that distributes AI systems built by others under the original developer's brand"
       },
       {
         "letter": "C",
-        "text": "Only the individual developers who wrote the original lines of source code for the system"
+        "text": "The individual employees who wrote the source code, regardless of who markets the system"
       },
       {
         "letter": "D",
@@ -7105,7 +7105,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only the original developer of the open-source model bears any regulatory obligations"
+        "text": "The original developer of the open-source model retains all regulatory obligations for the modified version"
       }
     ],
     "answer": "B",
@@ -7201,7 +7201,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only non-binding warning letters and advisory notices issued by regulatory authorities"
+        "text": "Non-binding warning letters and advisory notices, with no power to impose fines"
       },
       {
         "letter": "C",
@@ -7209,7 +7209,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only intangible reputational consequences with no formal financial enforcement mechanism"
+        "text": "Reputational consequences such as public naming, with no formal financial enforcement mechanism"
       }
     ],
     "answer": "C",
@@ -7223,7 +7223,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only the AI system provider, since technical compliance is their responsibility alone"
+        "text": "The AI system provider, since deployers carry no obligations once a system is technically compliant"
       },
       {
         "letter": "B",
@@ -7231,7 +7231,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only the end users who operated the system in a discriminatory manner bear responsibility"
+        "text": "The end users who operated the system, while the provider and deployer carry no liability"
       },
       {
         "letter": "D",
@@ -7361,11 +7361,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Randomly select one jurisdiction's regulatory framework and comply exclusively with that set of rules"
+        "text": "Randomly select one jurisdiction's regulatory framework and apply that set of rules everywhere"
       },
       {
         "letter": "D",
-        "text": "Comply only with the least stringent regulatory regime to minimize the organizational compliance burden"
+        "text": "Comply with the least stringent regulatory regime to minimize the organizational compliance burden"
       }
     ],
     "answer": "A",
@@ -7405,7 +7405,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Oversight exercised exclusively by corporate boards of directors and audit committees"
+        "text": "Oversight exercised by corporate boards of directors and audit committees over management"
       },
       {
         "letter": "B",
@@ -7435,11 +7435,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Reporting is required only during the organization's annual regulatory filing cycle"
+        "text": "Reporting is deferred to the organization's next annual regulatory filing cycle"
       },
       {
         "letter": "C",
-        "text": "Reporting is required only if the incident is discovered and publicized by the media"
+        "text": "Reporting is triggered when the incident is discovered and publicized by the media"
       },
       {
         "letter": "D",
@@ -7487,15 +7487,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only names, physical addresses, and government-issued identification numbers"
+        "text": "Names, physical addresses, and government ID numbers, but not online identifiers or location data"
       },
       {
         "letter": "C",
-        "text": "Any data that has been pseudonymized and can be re-identified only when combined with separately stored attribution keys held by the data controller"
+        "text": "Pseudonymized data that can be re-identified with separately stored keys, as opposed to data that directly names an individual"
       },
       {
         "letter": "D",
-        "text": "Only sensitive data revealing health, biometric, or political information"
+        "text": "Sensitive data revealing health, biometric, or political information, with other data outside GDPR"
       }
     ],
     "answer": "A",
@@ -7513,7 +7513,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "GDPR applies only to AI systems deployed in healthcare and medical diagnostic applications"
+        "text": "GDPR applies to AI systems deployed in healthcare and medical diagnostics, with other sectors exempt"
       },
       {
         "letter": "C",
@@ -7561,7 +7561,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only obtaining the data subject's consent to the collection of their personal data"
+        "text": "Obtaining the data subject's consent, which removes the need for transparency or human review"
       },
       {
         "letter": "B",
@@ -7569,7 +7569,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only implementing appropriate technical data security measures and encryption for stored data"
+        "text": "Encrypting stored data, which satisfies GDPR's requirements for automated credit decisions"
       },
       {
         "letter": "D",
@@ -7613,7 +7613,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Limiting only the duration for which personal data may be retained in storage systems"
+        "text": "Limiting the duration for which personal data may be retained in storage systems"
       },
       {
         "letter": "B",
@@ -7691,7 +7691,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "An assessment focused exclusively on the quality and accuracy of the personal data being processed"
+        "text": "An assessment focused on the quality and accuracy of the personal data being processed"
       },
       {
         "letter": "B",
@@ -7717,11 +7717,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "A DPIA is required only for AI systems deployed in healthcare and clinical medical diagnostic contexts"
+        "text": "A DPIA is required for AI systems in healthcare and clinical contexts, while other sectors are exempt"
       },
       {
         "letter": "B",
-        "text": "A DPIA is required only after an AI system has already malfunctioned or caused measurable harm"
+        "text": "A DPIA is conducted after an AI system has already malfunctioned or caused measurable harm"
       },
       {
         "letter": "C",
@@ -7729,7 +7729,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "A DPIA is required only when the AI system processes special categories of personal data, such as health information, biometric data, or data revealing racial or ethnic origin"
+        "text": "A DPIA is triggered by processing special categories of data, such as health or biometric data, and is not needed for any other type of processing"
       }
     ],
     "answer": "C",
@@ -7807,7 +7807,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only the standard data protection requirements that apply to all categories of personal data"
+        "text": "The same data protection requirements that apply to all categories of personal data"
       }
     ],
     "answer": "A",
@@ -7847,7 +7847,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only high-level aggregate statistics derived from the personal data, not the underlying records"
+        "text": "High-level aggregate statistics derived from the personal data, without the underlying records"
       },
       {
         "letter": "B",
@@ -7885,7 +7885,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only the original source data must be erased; the trained model can be retained unchanged"
+        "text": "Erasing the original source data fully discharges the obligation; the trained model is kept unchanged"
       }
     ],
     "answer": "C",
@@ -7977,11 +7977,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "GDPR applies only if the organization maintains physical offices, staff, or servers on EU territory"
+        "text": "GDPR applies if the organization stores the data on servers located in the EU, and not otherwise"
       },
       {
         "letter": "B",
-        "text": "No — GDPR applies exclusively to organizations legally incorporated within an EU member state"
+        "text": "No, GDPR applies to organizations legally incorporated within an EU member state, not foreign companies"
       },
       {
         "letter": "C",
@@ -8003,7 +8003,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Inferences qualify as personal data only if the underlying attributes were explicitly collected from the individual"
+        "text": "Inferences are personal data when built from explicitly collected attributes, but not when derived from other data"
       },
       {
         "letter": "B",
@@ -8107,7 +8107,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Information must be provided only if the data subject submits a formal written request to receive it"
+        "text": "Information must be provided when the data subject submits a formal written request, not at collection"
       },
       {
         "letter": "B",
@@ -8119,7 +8119,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only the legal name and registered business address of the organization that collected the data"
+        "text": "The legal name and registered business address of the organization, and nothing further"
       }
     ],
     "answer": "B",
@@ -8145,7 +8145,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only stop processing if the data subject pays a reasonable administrative fee for handling the objection"
+        "text": "Stop processing if the data subject pays a reasonable administrative fee for handling the objection"
       }
     ],
     "answer": "C",
@@ -8163,11 +8163,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Implementing data encryption as the sole and exclusive security measure, without additional controls"
+        "text": "Encrypting all stored data, which GDPR treats as full compliance with its security obligations"
       },
       {
         "letter": "C",
-        "text": "Enforcing strong password complexity policies as the only necessary data protection measure"
+        "text": "Enforcing strong password complexity policies, which GDPR names as the required protection measure"
       },
       {
         "letter": "D",
@@ -8275,7 +8275,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only notifying the data subject is required before transferring their personal data internationally"
+        "text": "Notifying the data subject before the transfer, which removes the need for any further safeguards"
       }
     ],
     "answer": "C",
@@ -8453,11 +8453,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "An assessment analyzing only the market positioning and competitive landscape for the AI product"
+        "text": "An assessment analyzing the market positioning and competitive landscape for the AI product"
       },
       {
         "letter": "D",
-        "text": "An assessment focused exclusively on the financial costs and projected return on investment"
+        "text": "An assessment focused on the financial costs and projected return on investment"
       }
     ],
     "answer": "A",
@@ -8501,7 +8501,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only the name, affiliation, and contact information of the model's original developer"
+        "text": "The developer's name and contact details, with performance and limitations left to separate documents"
       },
       {
         "letter": "C",
@@ -8561,7 +8561,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Evaluating only the system's aggregate accuracy without examining subgroup performance"
+        "text": "Evaluating the system's aggregate accuracy without examining subgroup performance"
       }
     ],
     "answer": "C",
@@ -8631,11 +8631,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Monitoring AI systems only during the initial model development and testing phases"
+        "text": "Monitoring AI systems during the initial development and testing phases, before release"
       },
       {
         "letter": "C",
-        "text": "Monitoring limited exclusively to cybersecurity threats, intrusions, and security incidents"
+        "text": "Monitoring of cybersecurity threats, intrusions, and security incidents affecting the AI host"
       },
       {
         "letter": "D",
@@ -8661,7 +8661,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Limiting human involvement to only the initial training phase of the AI model lifecycle"
+        "text": "Limiting human involvement to the initial training phase of the AI model lifecycle"
       },
       {
         "letter": "D",
@@ -8683,7 +8683,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "An arrangement where humans participate only during the initial model training phase"
+        "text": "An arrangement where humans participate during the initial model training phase and then step away"
       },
       {
         "letter": "C",
@@ -8705,11 +8705,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Remove all human oversight entirely and rely exclusively on the AI system's automated decisions"
+        "text": "Remove all human oversight entirely and rely on the AI system's automated decisions"
       },
       {
         "letter": "B",
-        "text": "Only initiate human review after errors have been reported by affected individuals"
+        "text": "Wait until affected individuals report errors before starting any human review"
       },
       {
         "letter": "C",
@@ -8735,11 +8735,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Controlling only the version history of the application source code in a code repository"
+        "text": "Keeping application source code in a repository, without versioning models or training data"
       },
       {
         "letter": "C",
-        "text": "Managing only the versioning and revision history of written documentation and policies"
+        "text": "Managing revision history of written documentation and policies, separate from model artifacts"
       },
       {
         "letter": "D",
@@ -8765,7 +8765,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "The ability to reproduce only the specific errors and failure modes of the AI system"
+        "text": "The ability to recreate a specific error a user reported, without reconstructing model results"
       },
       {
         "letter": "D",
@@ -8821,7 +8821,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Testing only for the personal biases and prejudices held by individual AI developers"
+        "text": "Testing for the personal biases and prejudices held by individual AI developers"
       }
     ],
     "answer": "C",
@@ -8861,15 +8861,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only detailed technical specifications and architecture diagrams for the AI model"
+        "text": "Detailed technical specifications and architecture diagrams, without governance or risk records"
       },
       {
         "letter": "B",
-        "text": "Only end-user manuals and basic operating instructions for the deployed AI system"
+        "text": "End-user manuals and basic operating instructions, rather than development records"
       },
       {
         "letter": "C",
-        "text": "Only legal contracts, regulatory filings, and compliance-related documentation files"
+        "text": "Legal contracts, regulatory filings, and compliance files, kept apart from technical records"
       },
       {
         "letter": "D",
@@ -8887,7 +8887,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Planning limited exclusively to physical hardware failures and equipment malfunctions"
+        "text": "Planning for physical hardware failures and equipment malfunctions in the data center"
       },
       {
         "letter": "B",
@@ -8895,11 +8895,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Planning focused solely on financial losses, budget overruns, and cost overrun scenarios"
+        "text": "Planning focused on financial losses, budget overruns, and cost overrun scenarios"
       },
       {
         "letter": "D",
-        "text": "Planning that addresses only cybersecurity breaches and unauthorized access incidents"
+        "text": "Planning for cybersecurity breaches and unauthorized access, excluding model failures and harms"
       }
     ],
     "answer": "B",
@@ -8939,7 +8939,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only general-purpose AI regulations apply, with no additional healthcare-specific obligations"
+        "text": "General-purpose AI regulations apply, with no additional healthcare-specific obligations"
       },
       {
         "letter": "B",
@@ -8951,7 +8951,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "AI systems in healthcare are regulated exclusively through voluntary industry codes of conduct, with no binding statutory requirements at either the federal or state level in the US"
+        "text": "AI systems in healthcare are governed by voluntary industry codes of conduct, with no binding statutory requirements at either the federal or state level in the US"
       }
     ],
     "answer": "C",
@@ -8965,11 +8965,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only general software quality regulations apply, with no medical or health-specific requirements"
+        "text": "General software quality regulations apply, with no medical or health-specific requirements"
       },
       {
         "letter": "B",
-        "text": "No healthcare-specific regulations apply to AI systems that only provide diagnostic suggestions"
+        "text": "No healthcare-specific regulations apply to AI systems that provide diagnostic suggestions"
       },
       {
         "letter": "C",
@@ -9021,7 +9021,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only general-purpose AI regulations apply, with no financial sector-specific requirements"
+        "text": "General-purpose AI regulations apply, with no financial sector-specific requirements"
       },
       {
         "letter": "C",
@@ -9043,7 +9043,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only general principles of contract law and standard commercial transactions apply"
+        "text": "General contract law and commercial transaction rules, with no credit-specific statutes involved"
       },
       {
         "letter": "B",
@@ -9051,7 +9051,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only individual state laws apply, with no applicable federal regulatory framework"
+        "text": "State laws apply, with no applicable federal regulatory framework for credit decisions"
       },
       {
         "letter": "D",
@@ -9073,7 +9073,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only intentional, deliberate discrimination is prohibited under US fair lending statutes"
+        "text": "US fair lending statutes prohibit intentional discrimination but not disparate impact"
       },
       {
         "letter": "C",
@@ -9099,11 +9099,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "AI systems used in employment decisions are regulated exclusively through voluntary industry standards such as the NIST AI RMF, with no binding statutory requirements under US federal law"
+        "text": "AI systems used in employment decisions are governed by voluntary industry standards such as the NIST AI RMF, with no binding statutory requirements under US federal law"
       },
       {
         "letter": "C",
-        "text": "Only general-purpose AI regulations apply, with no employment-specific legal obligations"
+        "text": "General-purpose AI regulations apply, with no employment-specific legal obligations"
       },
       {
         "letter": "D",
@@ -9129,7 +9129,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only general software development and quality assurance requirements are relevant"
+        "text": "General software development and quality assurance requirements, with no employment law obligations"
       },
       {
         "letter": "D",
@@ -9147,7 +9147,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only general-purpose AI regulations apply, with no law enforcement-specific limitations"
+        "text": "General-purpose AI regulations apply, with no law enforcement-specific limitations"
       },
       {
         "letter": "B",
@@ -9177,7 +9177,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only concerns about the financial cost of procurement and system implementation matter"
+        "text": "The main concern is the financial cost of procurement and system implementation"
       },
       {
         "letter": "C",
@@ -9199,15 +9199,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only the commercial reputation and market track record of the technology vendor are significant"
+        "text": "The vendor's commercial reputation and market track record, which courts treat as decisive"
       },
       {
         "letter": "B",
-        "text": "Only the system's aggregate technical accuracy and predictive precision metrics matter"
+        "text": "The system's aggregate accuracy, which courts treat as a complete defense to discrimination claims"
       },
       {
         "letter": "C",
-        "text": "Only the procurement cost and ongoing maintenance expenses of the AI system are relevant"
+        "text": "The procurement cost and ongoing maintenance expenses of the AI system"
       },
       {
         "letter": "D",
@@ -9225,7 +9225,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only general-purpose AI regulations apply, with no transportation-specific requirements"
+        "text": "General-purpose AI regulations apply, with no transportation-specific requirements"
       },
       {
         "letter": "B",
@@ -9255,7 +9255,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only insurance underwriting and premium calculation challenges are significant concerns"
+        "text": "Insurance underwriting and premium pricing are the significant concerns, with safety left to insurers"
       },
       {
         "letter": "C",
@@ -9277,7 +9277,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only general-purpose AI regulations apply, with no education-specific legal obligations"
+        "text": "General-purpose AI regulations apply, with no education-specific legal obligations"
       },
       {
         "letter": "B",
@@ -9311,7 +9311,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only concerns about the financial cost of implementing AI admissions tools matter"
+        "text": "The financial cost of implementing AI admissions tools is the main concern to evaluate"
       },
       {
         "letter": "D",
@@ -9363,7 +9363,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only general-purpose AI regulations apply, with no insurance-specific requirements"
+        "text": "General-purpose AI regulations apply, with no insurance-specific requirements"
       },
       {
         "letter": "D",
@@ -9407,7 +9407,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only general-purpose AI regulations apply, with no content-moderation-specific rules"
+        "text": "General-purpose AI regulations apply, with no content-moderation-specific rules"
       },
       {
         "letter": "B",
@@ -9489,7 +9489,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only general-purpose AI regulations apply, with no advertising-specific legal obligations or restrictions"
+        "text": "General-purpose AI regulations apply, with no advertising-specific legal obligations or restrictions"
       },
       {
         "letter": "C",
@@ -9515,7 +9515,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only concerns about the financial cost and return on investment of AI-driven campaigns matter"
+        "text": "The financial cost and return on investment of AI-driven campaigns are the main issues"
       },
       {
         "letter": "C",
@@ -9541,11 +9541,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "AI systems in critical infrastructure are regulated exclusively through the same general-purpose frameworks that apply to consumer AI applications, without sector-specific requirements"
+        "text": "AI systems in critical infrastructure are regulated through the same general-purpose frameworks that apply to consumer AI applications, without sector-specific requirements"
       },
       {
         "letter": "C",
-        "text": "Only general-purpose AI regulations apply, with no infrastructure-specific obligations"
+        "text": "General-purpose AI regulations apply, with no infrastructure-specific obligations"
       },
       {
         "letter": "D",
@@ -9575,7 +9575,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only computational performance and system throughput considerations are truly relevant"
+        "text": "Computational performance and system throughput are the considerations that truly matter"
       }
     ],
     "answer": "A",
@@ -9597,7 +9597,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only individual state-level regulations apply, with no applicable federal framework"
+        "text": "State-level regulations govern grid AI, with no applicable federal framework"
       },
       {
         "letter": "D",
@@ -9615,7 +9615,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only general-purpose AI regulations apply, with no government-specific legal obligations or limitations"
+        "text": "General-purpose AI regulations apply, with no government-specific legal obligations or limitations"
       },
       {
         "letter": "B",
@@ -9679,7 +9679,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only general software quality and IT procurement requirements are relevant here"
+        "text": "General software quality and IT procurement requirements are the relevant standards here"
       }
     ],
     "answer": "B",
@@ -9879,7 +9879,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Specifying only the staffing plan and team structure for the development effort"
+        "text": "Specifying the staffing plan and team structure for the development effort"
       },
       {
         "letter": "C",
@@ -9901,7 +9901,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Creating only the user interface wireframes and visual design mockup deliverables"
+        "text": "Creating the user interface wireframes and visual design mockup deliverables"
       },
       {
         "letter": "B",
@@ -10017,7 +10017,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Gathering only end-user feedback and customer satisfaction survey response data"
+        "text": "Gathering end-user feedback and customer satisfaction survey response data"
       }
     ],
     "answer": "C",
@@ -10083,7 +10083,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Tracking only the compute cost and cloud resource consumption during training runs"
+        "text": "Tracking the compute cost and cloud resource consumption of training runs"
       },
       {
         "letter": "B",
@@ -10213,7 +10213,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Performing only unit tests on individual code modules and software components in isolation"
+        "text": "Unit tests on individual code modules, which make system-level testing unnecessary"
       },
       {
         "letter": "B",
@@ -10221,11 +10221,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Conducting only user acceptance testing with a small group of representative end users"
+        "text": "User acceptance testing with a small group of end users, in place of technical testing"
       },
       {
         "letter": "D",
-        "text": "Running only regression tests to verify that existing features still function correctly"
+        "text": "Regression tests confirming existing features still work, which also cover AI-specific risks"
       }
     ],
     "answer": "B",
@@ -10403,11 +10403,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only when a sufficient number of users have submitted formal written complaints directly"
+        "text": "Once user complaints reach a set threshold, regardless of what monitoring shows"
       },
       {
         "letter": "D",
-        "text": "Only when a new AI impact assessment has been completed and approved, confirming the retraining does not introduce new risks"
+        "text": "When the annual AI impact assessment is renewed, regardless of what monitoring shows in between"
       }
     ],
     "answer": "A",
@@ -10499,7 +10499,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Handling only cybersecurity breaches and information security incident response workflows"
+        "text": "Running the standard cybersecurity breach response workflow, with no AI-specific harm categories"
       },
       {
         "letter": "B",
@@ -10507,11 +10507,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Managing only personnel-related workplace incidents and employee dispute resolution processes"
+        "text": "Managing personnel-related workplace incidents and employee dispute resolution processes"
       },
       {
         "letter": "D",
-        "text": "Addressing only customer support complaints and help desk service ticket request queues"
+        "text": "Addressing customer support complaints and help desk service ticket request queues"
       }
     ],
     "answer": "B",
@@ -10629,15 +10629,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Tracking only the product development lifecycle for commercial software product releases"
+        "text": "Tracking the product development lifecycle for commercial software product releases"
       },
       {
         "letter": "B",
-        "text": "Recording only the career progression and employment lifecycle of staff and team members"
+        "text": "Recording the career progression and employment lifecycle of staff and team members"
       },
       {
         "letter": "C",
-        "text": "Documenting only the lifecycle stages of physical hardware and infrastructure assets"
+        "text": "Documenting the lifecycle stages of physical hardware and infrastructure assets"
       },
       {
         "letter": "D",
@@ -10655,11 +10655,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "The sole purpose of documentation is to provide legal protection in the event of lawsuits"
+        "text": "Its main purpose is to provide legal protection in the event of lawsuits"
       },
       {
         "letter": "B",
-        "text": "Documentation is only valuable during the post-deployment phase, when incident investigations and regulatory audits require evidence of system behavior"
+        "text": "Documentation becomes valuable after deployment, when incident investigations and regulatory audits require evidence, rather than during development"
       },
       {
         "letter": "C",
@@ -10667,7 +10667,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Documentation is useful only for creating marketing content and sales collateral materials"
+        "text": "Documentation mainly serves to create marketing content and sales collateral materials"
       }
     ],
     "answer": "C",
@@ -10685,15 +10685,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Managing only the revision history of governance policy documents and procedure manuals"
+        "text": "Managing the revision history of governance policy documents and procedure manuals"
       },
       {
         "letter": "C",
-        "text": "Tracking only the firmware versions and serial numbers of physical hardware components"
+        "text": "Tracking the firmware versions and serial numbers of physical hardware components"
       },
       {
         "letter": "D",
-        "text": "Controlling only the release versions of application software and programming libraries used"
+        "text": "Controlling the release numbering of the application's public-facing software builds"
       }
     ],
     "answer": "A",
@@ -10711,7 +10711,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Overseeing only organizational restructuring and reporting line modification processes"
+        "text": "Overseeing organizational restructuring and reporting line modification processes"
       },
       {
         "letter": "C",
@@ -10719,7 +10719,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Managing only personnel reassignments and team restructuring decisions and approvals"
+        "text": "Managing personnel reassignments and team restructuring decisions and approvals"
       }
     ],
     "answer": "A",
@@ -10745,7 +10745,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Delegate governance responsibility entirely to each system's product owner, with the central governance function providing only advisory guidance on request"
+        "text": "Delegate governance responsibility entirely to each system's product owner, with the central governance function offering advisory guidance on request"
       }
     ],
     "answer": "B",
@@ -10763,11 +10763,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Consolidating only the governance committee and team membership structures across projects"
+        "text": "Consolidating the governance committee and team membership structures across projects"
       },
       {
         "letter": "C",
-        "text": "Integrating only the documentation artifacts and records across different lifecycle stages"
+        "text": "Combining the documentation artifacts from each lifecycle stage into one shared repository"
       },
       {
         "letter": "D",
@@ -10789,11 +10789,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Overseeing only the storage hardware and media where data files are physically kept"
+        "text": "Overseeing the storage hardware and media where data files are physically kept"
       },
       {
         "letter": "C",
-        "text": "Administering only the database management systems and their technical configuration settings"
+        "text": "Administering the database management systems and their technical configuration settings"
       },
       {
         "letter": "D",
@@ -10815,7 +10815,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Data governance is important only for controlling the financial costs of data storage and processing"
+        "text": "Data governance is important mainly for controlling the financial costs of data storage and processing"
       },
       {
         "letter": "C",
@@ -10823,7 +10823,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Data governance matters solely for meeting regulatory compliance and passing audit requirements"
+        "text": "Data governance matters chiefly for meeting regulatory compliance and passing audit requirements"
       }
     ],
     "answer": "C",
@@ -10945,11 +10945,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Lineage tracking is only needed for technical debugging and engineering purposes"
+        "text": "Lineage tracking serves technical debugging needs rather than governance purposes"
       },
       {
         "letter": "C",
-        "text": "Lineage is only relevant when preparing for a formal third-party audit engagement"
+        "text": "Lineage becomes relevant once a formal third-party audit engagement is scheduled"
       },
       {
         "letter": "D",
@@ -11175,7 +11175,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "The only meaningful concern is the cost and logistics of data storage infrastructure."
+        "text": "Storage cost and infrastructure logistics should be the deciding factor."
       },
       {
         "letter": "B",
@@ -11187,7 +11187,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Retention duration is constrained solely by storage capacity and infrastructure limits."
+        "text": "Retention duration should be set by available storage capacity and infrastructure limits."
       }
     ],
     "answer": "C",
@@ -11231,11 +11231,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Implementing encryption as the sole and exclusive data protection measure with no additional controls"
+        "text": "Implementing encryption as the primary data protection measure, making additional controls unnecessary"
       },
       {
         "letter": "C",
-        "text": "Enforcing strong password policies as the only necessary security protection for AI data"
+        "text": "Enforcing strong password policies as the main security protection needed for AI data"
       },
       {
         "letter": "D",
@@ -11387,7 +11387,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only tracking the speed and throughput rate of the labeling production pipeline is relevant"
+        "text": "Tracking the speed and throughput rate of the labeling pipeline as the key governance metric"
       },
       {
         "letter": "C",
@@ -11395,7 +11395,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only monitoring the financial cost per labeled data point and the overall labeling budget matters"
+        "text": "Monitoring the financial cost per labeled data point against the overall labeling budget"
       }
     ],
     "answer": "C",
@@ -11461,7 +11461,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "The only benefit of augmentation is reducing the financial cost of collecting new real-world data"
+        "text": "Its main benefit is reducing the financial cost of collecting new real-world data"
       },
       {
         "letter": "B",
@@ -11469,7 +11469,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Augmentation only helps by increasing the total volume of training data regardless of distribution"
+        "text": "Augmentation helps by increasing the total volume of training data, regardless of distribution"
       },
       {
         "letter": "D",
@@ -11591,7 +11591,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only the computational efficiency and runtime cost of computing each engineered feature matters"
+        "text": "The computational efficiency and runtime cost of each engineered feature are the main concerns"
       },
       {
         "letter": "B",
@@ -11625,7 +11625,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Include the feature only if it qualifies as the single most important predictor in the entire model"
+        "text": "Include the feature if it qualifies as the single most important predictor in the entire model"
       },
       {
         "letter": "D",
@@ -11759,7 +11759,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Anonymization obligations do not apply to data used solely for model training."
+        "text": "Anonymization obligations do not apply to data used for model training."
       }
     ],
     "answer": "B",
@@ -11803,7 +11803,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only senior management and executives should be granted access to organizational data"
+        "text": "Access to organizational data should be restricted to senior management and executives"
       },
       {
         "letter": "C",
@@ -11811,7 +11811,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only members of the technical engineering and data science staff should have data access"
+        "text": "All technical engineering and data science staff should be granted data access by default"
       }
     ],
     "answer": "C",
@@ -11837,7 +11837,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Grant access only if personally authorized in writing by the organization's chief executive officer"
+        "text": "Grant access once the organization's chief executive officer personally authorizes it in writing"
       }
     ],
     "answer": "C",
@@ -11911,7 +11911,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Standard accuracy benchmarks are the only governance metric needed for responsible AI."
+        "text": "Standard accuracy benchmarks are the governance metric that matters for responsible AI."
       },
       {
         "letter": "D",
@@ -12007,7 +12007,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only the final aggregate accuracy score on the held-out test dataset"
+        "text": "The final aggregate accuracy score, checked once training is complete"
       },
       {
         "letter": "B",
@@ -12015,11 +12015,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only the direct financial cost of the compute resources consumed during training"
+        "text": "The total cloud spend for the project, reviewed at the end of each billing cycle"
       },
       {
         "letter": "D",
-        "text": "Only the total wall-clock time required for the training run to complete"
+        "text": "Whether the training run finishes within its scheduled wall-clock time window"
       }
     ],
     "answer": "B",
@@ -12093,7 +12093,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Separating test data is only needed to satisfy regulatory checklist requirements."
+        "text": "Separating test data is mainly done to satisfy regulatory checklist requirements."
       },
       {
         "letter": "D",
@@ -12137,15 +12137,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only user acceptance testing with a small panel of internal stakeholders is sufficient"
+        "text": "User acceptance testing with a small panel of internal stakeholders is sufficient"
       },
       {
         "letter": "B",
-        "text": "Only measuring inference latency and throughput under various simulated load conditions"
+        "text": "Load testing of inference latency and throughput under simulated conditions is sufficient"
       },
       {
         "letter": "C",
-        "text": "Only testing aggregate accuracy on a standard held-out test dataset is adequate"
+        "text": "Testing aggregate accuracy on a standard held-out test dataset is adequate"
       },
       {
         "letter": "D",
@@ -12375,7 +12375,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only document the finding in a technical report without implementing any corrective measures"
+        "text": "Document the finding in a technical report and defer corrective measures to a later release"
       },
       {
         "letter": "C",
@@ -12475,7 +12475,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Edge case testing is performed solely to satisfy external regulatory and compliance requirements"
+        "text": "Edge case testing exists mainly to satisfy external regulatory and compliance requirements"
       },
       {
         "letter": "B",
@@ -12487,7 +12487,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Edge case testing is only conducted for completeness of the testing checklist, with no practical benefit"
+        "text": "Edge case testing is conducted for completeness of the testing checklist, with no practical benefit"
       }
     ],
     "answer": "B",
@@ -12605,7 +12605,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Integration testing is only relevant for narrow technical debugging and engineering troubleshooting purposes"
+        "text": "Integration testing is a narrow technical debugging step with little governance relevance"
       },
       {
         "letter": "B",
@@ -12617,7 +12617,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Integration testing matters only for generating documentation artifacts to satisfy audit requirements"
+        "text": "Integration testing mainly generates documentation artifacts to satisfy audit requirements"
       }
     ],
     "answer": "B",
@@ -12631,7 +12631,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only document the UI presentation issue in the system's known limitations register"
+        "text": "Document the UI presentation issue in the known limitations register and leave the interface unchanged"
       },
       {
         "letter": "B",
@@ -12639,7 +12639,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Assign blame exclusively to the user interface design team and escalate through their management chain"
+        "text": "Assign blame to the user interface design team and escalate through their management chain"
       },
       {
         "letter": "D",
@@ -12743,11 +12743,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Regression testing is only required for high-risk AI systems as defined by the EU AI Act; lower-risk systems can rely on continuous monitoring alone"
+        "text": "Regression testing is required for high-risk AI systems as defined by the EU AI Act; lower-risk systems can rely on continuous monitoring instead"
       },
       {
         "letter": "D",
-        "text": "Regression testing is only needed when the model's training data is updated; code and infrastructure changes do not affect model behavior"
+        "text": "Regression testing is needed when the model's training data is updated; code and infrastructure changes do not affect model behavior"
       }
     ],
     "answer": "B",
@@ -12825,7 +12825,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Separating test data is only needed to satisfy regulatory checklist requirements."
+        "text": "Separating test data is mainly needed to satisfy regulatory checklist requirements."
       }
     ],
     "answer": "A",
@@ -12929,7 +12929,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Continuous testing applies only to models that undergo online learning, where the model updates its parameters continuously from live production data"
+        "text": "Continuous testing is reserved for models that undergo online learning, where parameters update continuously from live production data"
       }
     ],
     "answer": "A",
@@ -12995,11 +12995,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only full immediate deployment to all users simultaneously is a viable go-to-market strategy"
+        "text": "Full immediate deployment to all users simultaneously is the standard approach regardless of risk"
       },
       {
         "letter": "B",
-        "text": "Only small-scale pilot programs conducted in controlled, non-production environments are acceptable"
+        "text": "Small-scale pilot programs in controlled, non-production environments are required for every AI system"
       },
       {
         "letter": "C",
@@ -13007,7 +13007,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only A/B testing with a randomly selected subset of users is an appropriate deployment method"
+        "text": "A/B testing with a randomly selected subset of users is the required deployment method"
       }
     ],
     "answer": "C",
@@ -13055,7 +13055,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Full deployment should proceed only after the system has operated in a shadow mode for a defined period, with its outputs compared against the existing process without affecting live decisions"
+        "text": "Run the system in shadow mode for a defined period against the existing process, then switch to full deployment with monitoring scaled back"
       },
       {
         "letter": "D",
@@ -13181,7 +13181,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only tracking performance metrics like click-through rates and conversion is governance-relevant"
+        "text": "Tracking performance metrics like click-through and conversion rates is sufficient for governance"
       },
       {
         "letter": "C",
@@ -13211,7 +13211,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Canary deployment releases AI systems exclusively in the Canary Islands region."
+        "text": "Canary deployment releases AI systems first in the Canary Islands region."
       },
       {
         "letter": "D",
@@ -13367,11 +13367,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "User training should focus exclusively on basic technical troubleshooting steps."
+        "text": "User training should center on basic technical troubleshooting steps rather than system behavior."
       },
       {
         "letter": "D",
-        "text": "Users only need login and navigation training for effective system use."
+        "text": "Login and navigation training is sufficient for effective system use."
       }
     ],
     "answer": "B",
@@ -13385,7 +13385,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only the AI development team who built the model without considering user-facing limitations"
+        "text": "The AI development team, since model builders carry full responsibility for user-facing limitations"
       },
       {
         "letter": "B",
@@ -13393,7 +13393,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only the individual end users who over-relied on the system despite their training obligations"
+        "text": "The individual end users, since each user carries full responsibility for how far they rely on the system"
       },
       {
         "letter": "D",
@@ -13437,11 +13437,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Change management is only relevant for updating organizational charts and reporting structures"
+        "text": "Change management is a matter of updating organizational charts and reporting structures"
       },
       {
         "letter": "B",
-        "text": "Change management only matters for producing documentation artifacts required by the project management office"
+        "text": "Change management exists to produce the documentation artifacts required by the project management office"
       },
       {
         "letter": "C",
@@ -13467,11 +13467,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Stakeholder communication involves only updating software vendors and suppliers."
+        "text": "Stakeholder communication means notifying software vendors and suppliers of release dates."
       },
       {
         "letter": "C",
-        "text": "Stakeholder communication is directed exclusively at shareholders."
+        "text": "Stakeholder communication is directed at shareholders through investor reports."
       },
       {
         "letter": "D",
@@ -13649,15 +13649,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only after a regulator formally orders the system to be taken offline"
+        "text": "After a regulator formally orders the system to be taken offline"
       },
       {
         "letter": "C",
-        "text": "Only when every user has filed a formal complaint about the system"
+        "text": "When every user has filed a formal complaint about the system"
       },
       {
         "letter": "D",
-        "text": "Only when the system has been in production for at least one full business cycle and sufficient performance data exists to confirm that the issues are not transient artifacts of the deployment process"
+        "text": "Once the system has been in production for at least one full business cycle and sufficient performance data exists to confirm that the issues are not transient artifacts of the deployment process"
       }
     ],
     "answer": "A",
@@ -13701,7 +13701,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only the development team, since they possess the deepest technical understanding of the system's behavior"
+        "text": "The development team, since they possess the deepest technical understanding of the system's behavior"
       },
       {
         "letter": "C",
@@ -13887,7 +13887,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Reviewing only the completeness and accuracy of the deployment documentation and runbooks"
+        "text": "Reviewing the completeness and accuracy of the deployment documentation and runbooks"
       },
       {
         "letter": "D",
@@ -13909,7 +13909,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only intangible reputational risks affecting the organization's brand and public perception"
+        "text": "Reputational risks to brand and public perception, with technical and safety risks left to the engineering team"
       },
       {
         "letter": "C",
@@ -13917,7 +13917,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only direct financial risks to the organization's revenue, budget, and shareholder value"
+        "text": "Direct financial risks to revenue, budget, and shareholder value, with other risks handled after launch"
       }
     ],
     "answer": "A",
@@ -13957,11 +13957,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Processes that only address the scheduling and timing of when deployments occur"
+        "text": "Processes for scheduling deployment windows so that releases cause minimal service disruption"
       },
       {
         "letter": "B",
-        "text": "Controls focused exclusively on tracking the financial costs of deployment activities"
+        "text": "Controls for tracking and approving the financial costs of deployment activities"
       },
       {
         "letter": "C",
@@ -14191,7 +14191,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only resource consumption metrics such as CPU utilization, memory footprint, and storage usage"
+        "text": "Resource consumption metrics such as CPU utilization, memory footprint, and storage usage, in place of accuracy measures"
       },
       {
         "letter": "B",
@@ -14243,7 +14243,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only user satisfaction survey results, since perceived fairness is ultimately a subjective measure"
+        "text": "User satisfaction survey results, since perceived fairness is ultimately a subjective measure"
       },
       {
         "letter": "B",
@@ -14255,7 +14255,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only a single overall fairness score computed across the entire population without disaggregation"
+        "text": "A single overall fairness score computed across the entire population without disaggregation"
       }
     ],
     "answer": "B",
@@ -14295,7 +14295,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Tracking only cybersecurity breaches and unauthorized access events affecting AI infrastructure"
+        "text": "Tracking uptime and service-level breaches for the infrastructure hosting AI models"
       },
       {
         "letter": "B",
@@ -14303,7 +14303,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Monitoring only cybersecurity breaches such as unauthorized API access, model exfiltration attempts, and adversarial input attacks against the AI system's inference endpoint"
+        "text": "Monitoring cybersecurity events such as unauthorized API access and model exfiltration attempts, rather than the model's own errors or harmful outputs"
       },
       {
         "letter": "D",
@@ -14321,7 +14321,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only catastrophic system crashes that result in complete service unavailability"
+        "text": "Catastrophic system crashes that cause complete service unavailability, with lesser failures left untracked"
       },
       {
         "letter": "B",
@@ -14329,7 +14329,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only complaints formally submitted by end users through official support channels"
+        "text": "Complaints formally submitted by end users, which serve as the trigger for logging an incident"
       },
       {
         "letter": "D",
@@ -14425,7 +14425,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Monitoring only the accuracy of the system's predictions against a held-out ground truth dataset"
+        "text": "Monitoring the accuracy of the system's predictions against a held-out ground truth dataset"
       },
       {
         "letter": "B",
@@ -14455,7 +14455,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Because performance metrics capture only technical accuracy, while outcome monitoring verifies that the organization's AI governance policies are being followed by operational teams in practice"
+        "text": "Because performance metrics capture technical accuracy, while outcome monitoring verifies that the organization's AI governance policies are being followed by operational teams in practice"
       },
       {
         "letter": "C",
@@ -14463,7 +14463,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Because outcome monitoring satisfies the EU AI Act's requirement for post-market surveillance of high-risk AI systems, while performance monitoring addresses only the GDPR's data protection obligations"
+        "text": "Because outcome monitoring satisfies the EU AI Act's requirement for post-market surveillance of high-risk AI systems, while performance monitoring addresses the GDPR's data protection obligations"
       }
     ],
     "answer": "A",
@@ -14533,7 +14533,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only documentation audits verifying that required records have been created and properly filed"
+        "text": "Documentation audits, which replace substantive testing of the model itself"
       },
       {
         "letter": "C",
@@ -14541,7 +14541,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only standard financial audits examining the AI project's budget, expenditures, and return on investment"
+        "text": "Standard financial audits of the AI project's budget and return on investment, which cover AI risk adequately"
       }
     ],
     "answer": "A",
@@ -14637,7 +14637,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Auditing external networks only"
+        "text": "Auditing an organization's external network perimeter"
       },
       {
         "letter": "C",
@@ -14645,7 +14645,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Auditing external documents only"
+        "text": "Auditing externally sourced documents"
       }
     ],
     "answer": "C",
@@ -14685,7 +14685,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Internal audits are sufficient for AI systems classified as limited or minimal risk under the EU AI Act, while external audits are only required for high-risk systems that undergo notified body conformity assessment"
+        "text": "Internal audits are sufficient for AI systems classified as limited or minimal risk under the EU AI Act, while external audits are reserved for high-risk systems that undergo notified body conformity assessment"
       },
       {
         "letter": "B",
@@ -14697,7 +14697,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Internal audits focus on operational controls such as access management, change control, and incident response, while external audits focus exclusively on model-level concerns such as accuracy, fairness, and explainability"
+        "text": "Internal audits focus on operational controls such as access management, change control, and incident response, while external audits focus on model-level concerns such as accuracy, fairness, and explainability"
       }
     ],
     "answer": "C",
@@ -14719,7 +14719,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "An assessment concerned only with the financial cost of developing and running the algorithms"
+        "text": "An assessment of the financial cost of developing and running the algorithms"
       },
       {
         "letter": "D",
@@ -14745,11 +14745,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "The only meaningful challenge is the financial cost of hiring qualified auditors and conducting the audit"
+        "text": "The main challenge is the financial cost of hiring qualified auditors, since the methods themselves are well established"
       },
       {
         "letter": "D",
-        "text": "The only challenge is the time required to complete a thorough audit of a complex AI system"
+        "text": "The main challenge is the time a thorough audit takes, since the methods themselves are well standardized"
       }
     ],
     "answer": "A",
@@ -14793,7 +14793,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Share the findings only with the external audit firm that conducted the original assessment"
+        "text": "Share the findings with the external audit firm that conducted the assessment and close the engagement"
       },
       {
         "letter": "C",
@@ -14815,7 +14815,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Continue operating the system with the existing monitoring controls, since the bias has already been identified and documented — additional action is only required if the bias exceeds the quantitative thresholds defined in the fairness monitoring policy"
+        "text": "Continue operating the system with the existing monitoring controls, since the bias has already been identified and documented, and take further action once the bias exceeds the quantitative thresholds defined in the fairness monitoring policy"
       },
       {
         "letter": "B",
@@ -14871,7 +14871,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only the scheduling convenience and current workload of the internal audit team"
+        "text": "The scheduling convenience and current workload of the internal audit team"
       },
       {
         "letter": "C",
@@ -14879,7 +14879,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only the capacity and availability of qualified third-party external auditing firms"
+        "text": "The capacity and availability of qualified third-party external auditing firms"
       }
     ],
     "answer": "C",
@@ -15001,11 +15001,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only the personal preferences and professional judgment of the lead auditor assigned to the engagement"
+        "text": "The personal preferences of the lead auditor assigned to the engagement"
       },
       {
         "letter": "C",
-        "text": "Only the total amount of time budgeted and allocated for completing the audit exercise"
+        "text": "The amount of time left in the audit team's annual calendar"
       },
       {
         "letter": "D",
@@ -15083,7 +15083,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Limit the audit to reviewing only publicly available documentation and marketing materials"
+        "text": "Limit the audit to reviewing publicly available documentation and marketing materials"
       },
       {
         "letter": "D",
@@ -15127,7 +15127,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Protocols that address only cybersecurity breaches and unauthorized system access events"
+        "text": "Protocols designed for cybersecurity breaches, with model errors handled as routine software bugs"
       },
       {
         "letter": "B",
@@ -15205,15 +15205,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only through automated monitoring dashboards tracking predefined technical thresholds"
+        "text": "Automated monitoring dashboards, which make other detection channels unnecessary"
       },
       {
         "letter": "B",
-        "text": "Only through periodic scheduled audits conducted by internal or external audit teams"
+        "text": "Periodic scheduled audits, which are the recognized channel for formally declaring an incident"
       },
       {
         "letter": "C",
-        "text": "Only through complaints formally submitted by end users through official support channels"
+        "text": "Formal end-user complaints, since an incident exists once someone reports it"
       },
       {
         "letter": "D",
@@ -15231,7 +15231,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "The only deficiency is in the communications function, not in the monitoring or detection systems themselves"
+        "text": "The deficiency lies in the communications function rather than in the monitoring or detection systems"
       },
       {
         "letter": "B",
@@ -15257,7 +15257,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Calculating only the direct and indirect financial costs incurred by the organization due to the incident"
+        "text": "Calculating the financial costs of the incident to set the amount of any insurance claim"
       },
       {
         "letter": "B",
@@ -15283,7 +15283,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only the total count of affected individuals regardless of the severity or type of harm they experienced"
+        "text": "The total count of affected individuals, regardless of the severity or type of harm they experienced"
       },
       {
         "letter": "B",
@@ -15291,7 +15291,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only the direct and indirect financial losses incurred by the organization as a result of the incident"
+        "text": "The financial losses incurred by the organization, which set the incident's severity level"
       },
       {
         "letter": "D",
@@ -15339,7 +15339,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Incidents should only be escalated after the root cause has been definitively established, because premature escalation to leadership before the facts are known creates unnecessary alarm and undermines confidence in the AI governance program"
+        "text": "Incidents should be escalated after the root cause has been definitively established, because premature escalation to leadership before the facts are known creates unnecessary alarm and undermines confidence in the AI governance program"
       },
       {
         "letter": "C",
@@ -15413,15 +15413,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only gaps and omissions in the written documentation describing the system's design and operation"
+        "text": "The written documentation describing the system's design, rather than its code or data"
       },
       {
         "letter": "B",
-        "text": "Only the actions and decisions of individual end users who were operating the system at the time"
+        "text": "The decisions of individual end users at the time, rather than the system's design or governance"
       },
       {
         "letter": "C",
-        "text": "Only the specific lines of source code or model configuration that directly triggered the failure"
+        "text": "The specific lines of code or configuration that triggered the failure, without looking at data or process"
       },
       {
         "letter": "D",
@@ -15547,15 +15547,15 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only the internal AI governance board and the data protection officer, because external notification could trigger regulatory scrutiny before the organization has completed its internal investigation and determined the root cause"
+        "text": "The internal AI governance board and the data protection officer, with external notification deferred until the internal investigation has determined the root cause"
       },
       {
         "letter": "C",
-        "text": "Only the development team responsible for the affected system, because they possess the technical expertise needed to diagnose and remediate the issue — broader notification would create unnecessary alarm before the facts are established"
+        "text": "The development team responsible for the affected system, with broader notification held back until the facts are established, since they have the expertise to diagnose and remediate the issue"
       },
       {
         "letter": "D",
-        "text": "Only the organization's cyber insurance carrier, because the policy requires prompt notification of incidents that may result in claims, and the carrier's guidance should determine whether and when other stakeholders are informed"
+        "text": "The organization's cyber insurance carrier first, because the policy requires prompt notice of possible claims, and the carrier's guidance then determines whether and when other stakeholders are informed"
       }
     ],
     "answer": "A",
@@ -15569,7 +15569,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Follow legal counsel's advice exclusively without weighing ethical obligations or stakeholder expectations"
+        "text": "Follow legal counsel's advice as the controlling factor without weighing ethical obligations or stakeholder expectations"
       },
       {
         "letter": "B",
@@ -15751,11 +15751,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Accountability matters solely to satisfy legal and regulatory compliance filing requirements"
+        "text": "Accountability exists to satisfy legal and regulatory compliance filing requirements"
       },
       {
         "letter": "B",
-        "text": "Accountability is relevant only for defining reporting relationships on organizational structure charts"
+        "text": "Accountability is a matter of defining reporting relationships on organizational structure charts"
       },
       {
         "letter": "C",
@@ -15803,7 +15803,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Accountability should be assigned exclusively to the Chief AI Officer, because diffusing accountability across multiple roles creates ambiguity and prevents any single individual from being held responsible when governance failures occur"
+        "text": "Accountability should rest with the Chief AI Officer, because diffusing accountability across multiple roles creates ambiguity and prevents any single individual from being held responsible when governance failures occur"
       },
       {
         "letter": "B",
@@ -15855,11 +15855,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only direct monetary payments and financial settlements issued to the affected individuals"
+        "text": "Monetary payments and financial settlements, which close out any further obligation to the affected individuals"
       },
       {
         "letter": "B",
-        "text": "Only verbal or written apologies with no accompanying corrective or remedial action taken"
+        "text": "Verbal or written apologies with no accompanying corrective or remedial action taken"
       },
       {
         "letter": "C",
@@ -15985,7 +15985,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only publishing the technical architecture documentation and API specifications for developer audiences"
+        "text": "Publishing technical architecture documentation and API specifications, with no plain-language disclosure for users"
       },
       {
         "letter": "B",
@@ -15997,7 +15997,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only including AI-related disclosures in marketing materials and promotional content for the product"
+        "text": "AI-related disclosures placed in marketing materials and promotional content for the product"
       }
     ],
     "answer": "B",
@@ -16071,7 +16071,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Contestability is a prerequisite for transparency, because organizations can only be transparent about decisions that individuals have formally contested through the established appeals process and for which the organization has prepared a documented response"
+        "text": "Contestability is a prerequisite for transparency, because organizations can be transparent about a decision once individuals have formally contested it through the established appeals process and the organization has prepared a documented response"
       },
       {
         "letter": "D",
@@ -16167,7 +16167,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Accountability is a subset of AI governance that applies only to high-risk systems under the EU AI Act, while governance encompasses the broader framework applicable to all AI systems regardless of risk classification"
+        "text": "Accountability is a subset of AI governance created by the EU AI Act for high-risk systems, while governance encompasses the broader framework applicable to all AI systems regardless of risk classification"
       },
       {
         "letter": "B",
@@ -16383,7 +16383,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Encrypted them so that only the vendor's authorized staff can decrypt and read them"
+        "text": "Encrypted them so that the vendor's authorized staff hold the keys needed to decrypt and read them"
       },
       {
         "letter": "B",
@@ -16476,7 +16476,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only if the model undergoes a substantial modification after the rules took effect"
+        "text": "When the model next undergoes a substantial modification after the rules took effect"
       }
     ],
     "answer": "B",
@@ -16900,7 +16900,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "It does not apply, because that chapter binds only providers of models designated as posing systemic risk"
+        "text": "It does not apply, because that chapter binds providers of models designated as posing systemic risk, which this model is not"
       },
       {
         "letter": "C",
@@ -17058,7 +17058,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "It responds only to current sensor readings and carries no stored experience between moments"
+        "text": "It reacts to current sensor readings and carries no stored experience between moments"
       },
       {
         "letter": "B",
@@ -17116,7 +17116,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only bodies at member-state level may certify high-risk systems before they are placed on the market"
+        "text": "Member-state authorities certify high-risk systems before they are placed on the market"
       },
       {
         "letter": "C",
@@ -17980,7 +17980,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Remove blurry and duplicate images so only usable examples remain"
+        "text": "Remove blurry and duplicate images so that the remaining set is usable"
       },
       {
         "letter": "C",
@@ -18825,7 +18825,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only if the assistant monitors its own performance and flags its own errors"
+        "text": "Yes, if the assistant monitors its own performance and flags its own errors"
       }
     ],
     "answer": "A",
@@ -19037,7 +19037,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "That only authorized personnel are able to access and reconfigure the system"
+        "text": "That access to reconfigure the system is restricted to authorized personnel"
       },
       {
         "letter": "D",
@@ -19407,7 +19407,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "The program reviews vendors only annually rather than continuously monitoring their financial health"
+        "text": "The program reviews vendors annually rather than continuously monitoring their financial health"
       },
       {
         "letter": "B",
@@ -19550,7 +19550,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Notify affected users within 30 days, contacting the authority only if harm to individuals materializes"
+        "text": "Notify affected users within 30 days, and contact the authority if harm to individuals later materializes"
       },
       {
         "letter": "D",
@@ -19735,7 +19735,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Training the model exclusively on records that human clinicians have validated"
+        "text": "Training the model on records that human clinicians have reviewed and validated"
       },
       {
         "letter": "C",
@@ -19986,7 +19986,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "The claim simply means the platform is sold to the general public rather than only to enterprise customers"
+        "text": "The claim simply means the platform is sold to the general public rather than to enterprise customers"
       }
     ],
     "answer": "A",
@@ -20576,7 +20576,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "The underlying records are encrypted so only credentialed analysts can read them"
+        "text": "The underlying records are encrypted so that uncredentialed staff cannot read them"
       },
       {
         "letter": "D",
@@ -20734,7 +20734,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "It operates only under human sign-off, with tightly restricted autonomy"
+        "text": "It operates under mandatory human sign-off, with tightly restricted autonomy"
       },
       {
         "letter": "C",
@@ -20876,7 +20876,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Failure to establish a post-market surveillance plan that tracks user behavior adaptations, such as automation bias and deskilling, as leading indicators of governance degradation rather than relying solely on model performance metrics"
+        "text": "Failure to establish a post-market surveillance plan that tracks user behavior adaptations, such as automation bias and deskilling, as leading indicators of governance degradation alongside model performance metrics"
       }
     ],
     "answer": "B",
@@ -20976,7 +20976,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "SHAP explanations are only valid for linear models and tree-based ensembles; applying them to deep neural networks produces approximations that are not accepted by EU supervisory authorities as satisfying the right to explanation under the GDPR"
+        "text": "SHAP explanations are designed for linear models and tree-based ensembles; applying them to deep neural networks produces approximations that are not accepted by EU supervisory authorities as satisfying the right to explanation under the GDPR"
       },
       {
         "letter": "D",
@@ -21202,7 +21202,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "GDPR Article 22(1), because the content moderation system produces legal effects concerning the users by restricting their ability to express themselves on the platform, and the decision is based solely on automated processing without meaningful human intervention"
+        "text": "GDPR Article 22(1), because the content moderation system produces legal effects concerning the users by restricting their ability to express themselves on the platform, and the decision is based on automated processing without meaningful human intervention"
       },
       {
         "letter": "B",
@@ -21240,7 +21240,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "The manufacturer must comply with whichever framework imposes the more stringent requirements for each specific obligation — the AI Act for data governance and transparency, the MDR for clinical evaluation and post-market surveillance — but only one conformity assessment is required, conducted by the notified body designated under the more stringent framework"
+        "text": "The manufacturer must comply with whichever framework imposes the more stringent requirements for each specific obligation, the AI Act for data governance and transparency and the MDR for clinical evaluation and post-market surveillance, with a single conformity assessment conducted by the notified body designated under the more stringent framework"
       }
     ],
     "answer": "B",
@@ -21314,7 +21314,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "The organization conducted adversarial testing and a bias audit before deployment, but did not engage an external third party to validate the testing methodology, relying solely on the internal data science team's self-assessment of the model's fairness characteristics"
+        "text": "The organization conducted adversarial testing and a bias audit before deployment, but did not engage an external third party to validate the testing methodology, relying instead on the internal data science team's self-assessment of the model's fairness characteristics"
       },
       {
         "letter": "D",
@@ -21384,7 +21384,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "The system is grandfathered and may continue operating unchanged, because the AI Act applies only to systems placed on the market or put into service after the Act's applicability date — pre-existing systems are exempt from conformity assessment and ongoing obligations"
+        "text": "The system is grandfathered and may continue operating unchanged, because the AI Act's obligations attach to systems placed on the market or put into service after the applicability date, and pre-existing systems are permanently exempt from conformity assessment and ongoing obligations"
       },
       {
         "letter": "B",
@@ -21540,7 +21540,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Halt the training run, remove the affected data, and restart training from scratch using only data with a valid lawful basis — because continuing to train on data without a valid lawful basis constitutes ongoing unlawful processing under the GDPR, and the sunk cost of the partial training run does not justify continued non-compliance"
+        "text": "Halt the training run, remove the affected data, and restart training from scratch using data with a confirmed lawful basis, because continuing to train on data without a valid lawful basis constitutes ongoing unlawful processing under the GDPR, and the sunk cost of the partial training run does not justify continued non-compliance"
       },
       {
         "letter": "B",
@@ -21548,7 +21548,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Pause the training run, obtain an interim legal opinion on the validity of the consent mechanism, and implement a checkpoint preserving the current model state — resuming training only if the legal opinion confirms the consent was valid, and restarting with cleansed data if it was not"
+        "text": "Pause the training run, obtain an interim legal opinion on the validity of the consent mechanism, and implement a checkpoint preserving the current model state, resuming training if the legal opinion confirms the consent was valid and restarting with cleansed data if it was not"
       },
       {
         "letter": "D",
@@ -21648,7 +21648,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "A shadow deployment comparison between versions 2.1 and 3.0 running on production data for a statistically significant period, providing empirical evidence of how each version performs on live traffic rather than relying solely on validation set metrics that may not represent current production data distributions"
+        "text": "A shadow deployment comparison between versions 2.1 and 3.0 running on production data for a statistically significant period, providing empirical evidence of how each version performs on live traffic rather than relying on validation set metrics that may not represent current production data distributions"
       },
       {
         "letter": "C",
@@ -21942,7 +21942,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "The need to conduct a final fairness audit and post-retirement ethical review to document the system's performance characteristics at retirement, assess whether the model's historical decisions warrant any corrective action, and capture lessons learned for the governance framework — ensuring that decommissioning is not merely a technical shutdown but a governance event that closes the system's accountability lifecycle"
+        "text": "The need to conduct a final fairness audit and post-retirement ethical review to document the system's performance characteristics at retirement, assess whether the model's historical decisions warrant any corrective action, and capture lessons learned for the governance framework, so that decommissioning is handled as a governance event that closes the system's accountability lifecycle rather than as a technical shutdown"
       }
     ],
     "answer": "B",
@@ -21964,7 +21964,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Whether the rollback to the previous model version introduced any new risks — such as reintroducing previously resolved bias or performance issues — and whether the rollback decision was made with governance input or solely by the engineering team without assessing the governance implications of reverting to a superseded model version"
+        "text": "Whether the rollback to the previous model version introduced any new risks, such as reintroducing previously resolved bias or performance issues, and whether the rollback decision was made with governance input or unilaterally by the engineering team without assessing the governance implications of reverting to a superseded model version"
       },
       {
         "letter": "D",
@@ -22072,7 +22072,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Require the vendor to provide a model card for the new model and conduct your own fairness and accuracy evaluation on a dataset representative of your organization's accounts payable patterns — because relying solely on vendor-provided performance metrics without independent validation would violate the due diligence obligations expected of AI deployers under both the NIST AI RMF and EU AI Act risk management requirements"
+        "text": "Require the vendor to provide a model card for the new model and conduct your own fairness and accuracy evaluation on a dataset representative of your organization's accounts payable patterns, because accepting vendor-provided performance metrics without independent validation would violate the due diligence obligations expected of AI deployers under both the NIST AI RMF and EU AI Act risk management requirements"
       }
     ],
     "answer": "B",
@@ -22389,7 +22389,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only the buying government bodies must assess, as deployers of public-service AI must in the EU"
+        "text": "The buying government bodies bear the assessment duty, as deployers of public-service AI do in the EU"
       },
       {
         "letter": "D",
@@ -22551,7 +22551,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "It must redo all three measures itself, because deemed compliance only covers public bodies"
+        "text": "It must redo all three measures itself, because deemed compliance covers public bodies, not private firms"
       },
       {
         "letter": "D",
@@ -22574,7 +22574,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only the missing representative is finable; notice failures get corrective orders"
+        "text": "The missing representative is finable, but notice failures get corrective orders"
       },
       {
         "letter": "C",
@@ -22686,7 +22686,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "An affected consumer must sue first, and the attorney general may join only after that suit is filed"
+        "text": "An affected consumer must sue first, and the attorney general may then join that suit"
       },
       {
         "letter": "B",
@@ -22698,7 +22698,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Nothing, since the 60-day cure right is available only to developers and never extends to deployers"
+        "text": "Nothing, since the 60-day cure right covers developers and does not extend to deployers"
       }
     ],
     "answer": "B",
@@ -22825,7 +22825,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Relying solely on AI video analysis to choose applicants without reporting demographic data"
+        "text": "Relying on AI video analysis to choose applicants without reporting demographic data"
       },
       {
         "letter": "C",
@@ -23156,7 +23156,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only by the attorney general, because the 2024 amendment removed the private right of action"
+        "text": "Through attorney general enforcement, because the 2024 amendment removed the private right of action"
       },
       {
         "letter": "C",
@@ -23164,7 +23164,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only as actual damages, because the 2024 amendment abolished liquidated damages for employers"
+        "text": "As actual damages, because the 2024 amendment abolished liquidated damages for employers"
       }
     ],
     "answer": "C",
@@ -23248,11 +23248,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Label it as AI-generated within 72 hours; removal is required only for authentic images"
+        "text": "Label it as AI-generated within 72 hours; removal is required for authentic images, not AI-made ones"
       },
       {
         "letter": "D",
-        "text": "Forward it to the FTC within 24 hours, and remove it only if the FTC confirms it is unlawful"
+        "text": "Forward it to the FTC within 24 hours, and remove it once the FTC confirms it is unlawful"
       }
     ],
     "answer": "B",
@@ -23294,7 +23294,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "No crime is committed, because the Act's criminal provisions cover only authentic, unaltered images"
+        "text": "No crime is committed, because the Act's criminal provisions cover authentic images, not AI-generated ones"
       },
       {
         "letter": "B",
@@ -23306,7 +23306,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only the platform can be liable, and only if it fails to remove the image within 48 hours of a request"
+        "text": "The platform, not the poster, is liable, if it fails to remove the image within 48 hours of a request"
       }
     ],
     "answer": "C",
@@ -23325,11 +23325,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Yes, but only for state laws that the Commerce Department listed as onerous in its 90-day review"
+        "text": "Yes, for the state laws that the Commerce Department listed as onerous in its 90-day review"
       },
       {
         "letter": "C",
-        "text": "No, because it governs only federal agencies' own purchasing and use of AI, not state laws at all"
+        "text": "No, because it governs federal agencies' own purchasing and use of AI and does not address state laws"
       },
       {
         "letter": "D",
@@ -23414,7 +23414,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "The Feist originality test, which asks only whether the image shows a creative spark"
+        "text": "The Feist originality test, which asks whether the image shows a creative spark"
       }
     ],
     "answer": "A",
@@ -23468,7 +23468,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Training a model that is later sold commercially rather than used only for research"
+        "text": "Training a model that is later sold commercially rather than kept for research use"
       }
     ],
     "answer": "C",
@@ -23483,7 +23483,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "The court ruled only that short regurgitated snippets are fair, leaving training undecided"
+        "text": "The court ruled that short regurgitated snippets are fair, leaving training undecided"
       },
       {
         "letter": "B",
@@ -23491,7 +23491,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "The court held that training on books is fair use only when the copies were lawfully bought"
+        "text": "The court held that training on books is fair use provided the copies were lawfully bought"
       },
       {
         "letter": "D",
@@ -23576,7 +23576,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Users who prompted the lyrics were primarily liable, with OpenAI only a contributor"
+        "text": "Users who prompted the lyrics were primarily liable, with OpenAI a secondary contributor"
       }
     ],
     "answer": "B",
@@ -23595,11 +23595,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Allowed only for research organisations and heritage institutions doing scientific research"
+        "text": "Allowed for research organisations and heritage institutions, not commercial developers"
       },
       {
         "letter": "C",
-        "text": "Allowed only if the developer pays equitable remuneration to the rightsholders concerned"
+        "text": "Allowed provided the developer pays equitable remuneration to the rightsholders concerned"
       },
       {
         "letter": "D",
@@ -23665,7 +23665,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only outputs that copy works verbatim, because market dilution is not a cognizable harm"
+        "text": "Outputs that copy works verbatim, since market dilution is not a cognizable harm"
       }
     ],
     "answer": "C",
@@ -23715,7 +23715,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Defence (2) succeeds, because the development-risk test looks only at scientific knowledge in March 2027"
+        "text": "Defence (2) succeeds, because the development-risk test is fixed at scientific knowledge in March 2027"
       },
       {
         "letter": "D",
@@ -23800,7 +23800,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only NYC Local Law 144 now applies, because federal law defers to local bias-audit mandates"
+        "text": "NYC Local Law 144 now governs instead, because federal law defers to local bias-audit mandates"
       }
     ],
     "answer": "B",
@@ -23881,7 +23881,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only the decision itself, because algorithmic denials are exempt from giving reasons"
+        "text": "The decision itself, since algorithmic denials are exempt from giving reasons"
       }
     ],
     "answer": "A",
@@ -24039,11 +24039,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only the Commission and Member States now carry AI literacy duties, so providers and deployers have none"
+        "text": "The Commission and Member States now carry AI literacy duties, so providers and deployers have none"
       },
       {
         "letter": "D",
-        "text": "The duty now applies only to high-risk providers and deployers, from the Annex III application date"
+        "text": "The duty now applies to high-risk providers and deployers, and all others are exempt"
       }
     ],
     "answer": "A",
@@ -24085,7 +24085,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Permitted, since the ban reaches only systems whose intended purpose is producing such imagery"
+        "text": "Permitted, since the ban reaches systems whose intended purpose is producing such imagery, which this is not"
       },
       {
         "letter": "B",
@@ -24097,7 +24097,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Permitted, since only the individual users who generate such images commit the prohibited practice"
+        "text": "Permitted, since the individual users who generate such images commit the prohibited practice, not the provider"
       }
     ],
     "answer": "C",
@@ -24116,7 +24116,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "It is barred, because only providers of high-risk systems may process such data for bias testing"
+        "text": "It is barred, because the bias-testing exception is reserved for providers of high-risk systems"
       },
       {
         "letter": "C",
@@ -24374,7 +24374,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only when each person whose data was used has consented to the model's training"
+        "text": "When each person whose data was used has consented to the model's training"
       }
     ],
     "answer": "C",
@@ -24416,7 +24416,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Nothing, because unlawful processing in development is solely the developer's responsibility"
+        "text": "Nothing, because unlawful processing in development is the developer's responsibility, not the deployer's"
       },
       {
         "letter": "B",
@@ -24447,11 +24447,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only when the bureau itself refuses the applicant's loan with no human involvement"
+        "text": "When the bureau itself refuses the applicant's loan with no human involvement"
       },
       {
         "letter": "C",
-        "text": "Never, because only the lender that acts on the score can make an Article 22 decision"
+        "text": "Never, because the lender that acts on the score is the one making any Article 22 decision"
       },
       {
         "letter": "D",
@@ -24478,7 +24478,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only a copy of the personal data used, since the logic is a protected trade secret"
+        "text": "A copy of the personal data used, withholding the logic as a protected trade secret"
       },
       {
         "letter": "D",
@@ -24562,7 +24562,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only the lender owes an explanation, because the bureau takes no decision about the applicant"
+        "text": "The lender owes the explanation, not the bureau, because the bureau takes no decision about the applicant"
       },
       {
         "letter": "C",
@@ -24647,11 +24647,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only once it certifies an AI management system to ISO/IEC 42001, which 42005 extends"
+        "text": "Yes, but first it must certify an AI management system to ISO/IEC 42001, which 42005 extends"
       },
       {
         "letter": "D",
-        "text": "Only for systems classified as high-risk under the EU AI Act, where the standard is mandatory"
+        "text": "Yes, for systems classified as high-risk under the EU AI Act, where the standard is mandatory"
       }
     ],
     "answer": "B",
@@ -24805,7 +24805,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "42001 mentions impact assessment only in an informative annex, so it cannot be required"
+        "text": "42001 places impact assessment in an informative annex, so it cannot be required"
       },
       {
         "letter": "C",
@@ -24832,7 +24832,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Scoring only the risks that the system poses to the vendor's contractual commitments"
+        "text": "Setting thresholds by the risk the system poses to the vendor's contractual commitments"
       },
       {
         "letter": "C",
@@ -24840,7 +24840,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Recording only negative impacts, since benefits already sit in the business case"
+        "text": "Recording negative impacts and leaving the benefits to the business case"
       }
     ],
     "answer": "C",
@@ -24867,7 +24867,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only the vendor's FRIA, since fundamental rights assessment is an obligation of the provider"
+        "text": "The vendor's FRIA, since fundamental rights assessment is an obligation of the provider"
       }
     ],
     "answer": "A",
@@ -24890,7 +24890,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "It is intended only for organizations that develop AI systems"
+        "text": "It is aimed at AI developers rather than organizations that use AI systems"
       },
       {
         "letter": "D",
@@ -25145,7 +25145,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "It applies only to the AI systems that the organization has classified as high-risk"
+        "text": "It is scoped to the AI systems that the organization has classified as high-risk"
       }
     ],
     "answer": "B",
@@ -25218,7 +25218,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "A single fixed edition, reissued only after the RMF's formal review due by 2028"
+        "text": "A single fixed edition, to be reissued after the RMF's formal review due by 2028"
       },
       {
         "letter": "C",
@@ -25268,7 +25268,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "As credible only if the vendor implemented every suggested action for all 72 subcategories"
+        "text": "As credible if the vendor implemented every suggested action for all 72 subcategories"
       },
       {
         "letter": "B",
@@ -25658,7 +25658,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Deploy the agent with read-only database access so it cannot change the tables it pulls from"
+        "text": "Deploy the agent without write access to the database so it cannot change the tables it pulls from"
       },
       {
         "letter": "C",
@@ -25820,7 +25820,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Re-running a failed read-only query against an approved internal database"
+        "text": "Re-running a failed lookup query against an approved internal database"
       },
       {
         "letter": "C",
@@ -26121,7 +26121,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only an internal record, as an accidental leak with no attacker is not a personal data breach"
+        "text": "An internal incident record, as an accidental leak with no attacker is not a personal data breach"
       },
       {
         "letter": "B",
@@ -26133,7 +26133,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Notice to the supervisory authority only once the chatbot vendor confirms training use"
+        "text": "Notice to the supervisory authority once the chatbot vendor confirms training use"
       }
     ],
     "answer": "C",
@@ -26812,7 +26812,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Stand up a parallel AI-only review structure that bypasses the existing risk process"
+        "text": "Stand up a parallel AI review structure that bypasses the existing risk process"
       },
       {
         "letter": "D",
@@ -28388,7 +28388,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Retrain only when users report problems"
+        "text": "Wait for user complaints to trigger each retraining"
       },
       {
         "letter": "D",
@@ -28436,7 +28436,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "It is produced only after a serious incident occurs"
+        "text": "It is produced after a serious incident occurs, to document the response"
       },
       {
         "letter": "B",
@@ -28468,7 +28468,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Leave the model running in read-only mode indefinitely"
+        "text": "Leave the model running in a view-and-query mode indefinitely"
       },
       {
         "letter": "C",
@@ -28476,7 +28476,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Notify only internal stakeholders, since the system is being withdrawn"
+        "text": "Notify internal stakeholders and skip external notice, since the system is being withdrawn"
       }
     ],
     "answer": "A",
@@ -28576,7 +28576,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Restricting the system to supervised learning techniques only"
+        "text": "Restricting the system to supervised learning techniques"
       },
       {
         "letter": "B",
@@ -28860,7 +28860,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "The LGPD applies only to data processed inside Brazil, so cloud training abroad is exempt"
+        "text": "The LGPD has no extraterritorial reach, so cloud training abroad is exempt"
       },
       {
         "letter": "C",
@@ -29368,11 +29368,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "The FTC Act is the exclusive source of AI obligations for private companies"
+        "text": "The FTC Act preempts all other sources of AI obligations for private companies"
       },
       {
         "letter": "D",
-        "text": "Only the law of the state where the company is headquartered applies"
+        "text": "The law of the state where the company is headquartered governs all its operations"
       }
     ],
     "answer": "B",
@@ -29556,7 +29556,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Report only the metric the model does satisfy"
+        "text": "Report the metric the model satisfies and omit the other"
       },
       {
         "letter": "B",
@@ -29612,7 +29612,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Deployer only, since it did not build the system"
+        "text": "Deployer, since it did not build the system"
       },
       {
         "letter": "B",
@@ -29624,7 +29624,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Importer only, with verification duties but no provider obligations"
+        "text": "Importer, with verification duties but no provider obligations"
       }
     ],
     "answer": "C",
@@ -29904,7 +29904,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Retention limits apply only to special-category data"
+        "text": "Retention limits apply to special-category data but not to ordinary personal data"
       }
     ],
     "answer": "B",
@@ -30128,7 +30128,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Notify only the individual who was harmed"
+        "text": "Notify the harmed individual directly, with no regulator involvement"
       },
       {
         "letter": "C",
@@ -30544,11 +30544,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only software procurement contracts"
+        "text": "Software procurement and licensing contracts"
       },
       {
         "letter": "B",
-        "text": "Only cloud infrastructure agreements"
+        "text": "Cloud infrastructure and hosting agreements"
       },
       {
         "letter": "C",
@@ -30556,7 +30556,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only vendors processing personal data"
+        "text": "Data processing agreements with personal-data vendors"
       }
     ],
     "answer": "C",
@@ -30600,11 +30600,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Revenue and headcount only"
+        "text": "Revenue, headcount and market share"
       },
       {
         "letter": "B",
-        "text": "Regulatory jurisdiction only"
+        "text": "Regulatory jurisdiction and the number of regulators involved"
       },
       {
         "letter": "C",
@@ -31096,11 +31096,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Data quality checks are needed only at the point of collection"
+        "text": "Data quality checks at collection make later pipeline checks unnecessary"
       },
       {
         "letter": "C",
-        "text": "Feature engineering should be finalized only after deployment"
+        "text": "Feature engineering should be finalized after deployment, using live data"
       },
       {
         "letter": "D",
@@ -31512,7 +31512,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Interpretability is only relevant to open-source models"
+        "text": "Interpretability matters chiefly for open-source models"
       },
       {
         "letter": "B",
@@ -31524,7 +31524,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "It is required only where personal data is processed"
+        "text": "It is a legal requirement triggered by processing personal data"
       }
     ],
     "answer": "B",
@@ -31672,7 +31672,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "A model chosen solely on public benchmark rankings"
+        "text": "The model that tops public benchmark rankings"
       }
     ],
     "answer": "B",
@@ -31692,7 +31692,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "A language-only model"
+        "text": "A text-in, text-out language model"
       },
       {
         "letter": "C",
@@ -31952,7 +31952,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Restricting documentation to internal staff only"
+        "text": "Restricting documentation to internal staff"
       },
       {
         "letter": "C",
@@ -32172,7 +32172,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "No — only incidents causing material harm warrant recording"
+        "text": "No, since recording is reserved for incidents causing material harm"
       },
       {
         "letter": "B",
@@ -32184,7 +32184,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only if the customer escalates it formally"
+        "text": "No, unless the customer escalates it formally"
       }
     ],
     "answer": "C",
@@ -32524,11 +32524,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Vendors marketing AI are the highest risk and should be the sole focus"
+        "text": "Vendors marketing AI are the highest risk, so the current scope is correct"
       },
       {
         "letter": "D",
-        "text": "AI screening is only required for vendors processing personal data"
+        "text": "The policy should instead screen vendors that process personal data"
       }
     ],
     "answer": "A",
@@ -32636,7 +32636,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Federal authority over AI exists only for government procurement of AI systems"
+        "text": "Federal AI authority covers government procurement of AI, not private-sector use"
       },
       {
         "letter": "B",
@@ -32644,11 +32644,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only state attorneys general may act against private-sector AI use"
+        "text": "State attorneys general, not federal agencies, enforce the law against private-sector AI use"
       },
       {
         "letter": "D",
-        "text": "Agencies may act only after an individual proves monetary loss"
+        "text": "Agencies must wait for an individual to prove monetary loss before acting"
       }
     ],
     "answer": "B",
@@ -32732,7 +32732,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only training data transfers are regulated"
+        "text": "Transfer rules attach to training data, not to inference traffic"
       }
     ],
     "answer": "B",
@@ -32984,7 +32984,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only if a competitor files a complaint"
+        "text": "Not unless a competitor files a complaint"
       }
     ],
     "answer": "C",
@@ -33356,7 +33356,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only regulators may define AI success metrics"
+        "text": "Success metrics must be set by regulators, not the deploying team"
       }
     ],
     "answer": "A",
@@ -33464,7 +33464,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Fit for purpose applies only to test data, not training data"
+        "text": "Fit for purpose is assessed on test data, not training data"
       },
       {
         "letter": "D",
@@ -33688,7 +33688,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only the model's accuracy on holdout data"
+        "text": "A repeat of the model's accuracy check on holdout data"
       },
       {
         "letter": "B",
@@ -33748,7 +33748,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Deployment data governance applies only to regulated industries"
+        "text": "Deployment-phase data rules are triggered by operating in a regulated industry"
       },
       {
         "letter": "C",
@@ -33784,7 +33784,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "It applies only where regulators mandate it"
+        "text": "It is a regulatory filing duty rather than an internal monitoring practice"
       }
     ],
     "answer": "A",
@@ -33876,7 +33876,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "It is only useful after an incident has occurred"
+        "text": "It is most useful as a post-incident review exercise"
       }
     ],
     "answer": "C",
@@ -33928,7 +33928,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Residual risk need only be recorded if a regulator asks"
+        "text": "Residual risk is recorded at a regulator's request rather than routinely"
       },
       {
         "letter": "D",
@@ -33960,7 +33960,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only if a user submits a formal complaint"
+        "text": "Not unless a user submits a formal complaint"
       }
     ],
     "answer": "C",
@@ -34012,11 +34012,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "It affects only the marketing function's credibility"
+        "text": "It is a reputational matter for the marketing function rather than a legal one"
       },
       {
         "letter": "D",
-        "text": "It is a concern only for systems classified as high risk"
+        "text": "It matters for high-risk systems but is harmless for low-risk ones"
       }
     ],
     "answer": "A",
@@ -34044,7 +34044,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "It requires only that the inference endpoint be switched off"
+        "text": "It is complete once the inference endpoint is switched off"
       }
     ],
     "answer": "C",
@@ -34220,7 +34220,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Because it is the only lifecycle stage with legal consequences"
+        "text": "Because legal liability attaches at the incident stage rather than at earlier stages"
       }
     ],
     "answer": "A",
@@ -34332,7 +34332,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Accepting that only the immediate vendor's practices are assessable"
+        "text": "Assessing the immediate vendor and treating deeper layers as out of scope"
       }
     ],
     "answer": "A",
@@ -34356,7 +34356,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only during the data collection stage"
+        "text": "At the data collection stage, before any processing begins"
       },
       {
         "letter": "D",
@@ -34384,7 +34384,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Minimization applies only to special-category data"
+        "text": "Minimization targets special-category data rather than ordinary personal data"
       },
       {
         "letter": "D",
@@ -34440,7 +34440,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only the scripted invoice tool, because it takes actions in other systems"
+        "text": "The scripted invoice tool, because it takes actions in other systems"
       },
       {
         "letter": "D",
@@ -34496,11 +34496,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Consumer protection applies only where a product is defective"
+        "text": "Consumer protection here requires the product to be defective"
       },
       {
         "letter": "D",
-        "text": "Only if the advertisement omits a disclaimer in small print"
+        "text": "Not if the advertisement includes a disclaimer in small print"
       }
     ],
     "answer": "A",
@@ -34528,7 +34528,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "It is a concern only if the user is a minor"
+        "text": "It is a child-protection matter that arises for users who are minors"
       }
     ],
     "answer": "A",
@@ -35112,15 +35112,15 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only the network perimeter and API gateway"
+        "text": "The network perimeter and API gateway"
       },
       {
         "letter": "B",
-        "text": "Only the source code repository"
+        "text": "The source code repository and build system"
       },
       {
         "letter": "C",
-        "text": "Only the physical data centre"
+        "text": "The physical data centre and its access controls"
       },
       {
         "letter": "D",
@@ -35148,7 +35148,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only if the reviewer requests it"
+        "text": "Not unless the reviewer requests it"
       },
       {
         "letter": "D",
@@ -35356,7 +35356,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only the performance requirement needs documenting"
+        "text": "The performance requirement is documented; the objective can stay informal"
       }
     ],
     "answer": "C",
@@ -35436,7 +35436,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only the consent dialogue raises an issue; prompt timing is a marketing decision"
+        "text": "The consent dialogue raises an issue; prompt timing is a legitimate marketing decision"
       },
       {
         "letter": "D",
@@ -35784,7 +35784,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Ownership is determined solely by which party paid for the compute"
+        "text": "Ownership vests in whichever party paid for the compute"
       }
     ],
     "answer": "B",
@@ -36268,7 +36268,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Learns exclusively from labeled training data supplied by a human operator"
+        "text": "Must learn from labeled training data supplied by a human operator"
       }
     ],
     "answer": "B",
@@ -36576,7 +36576,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "The energy consumption of the training run only"
+        "text": "The energy consumption and carbon cost of the training run"
       }
     ],
     "answer": "B",
@@ -36656,7 +36656,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Is an importer with documentation-verification duties only"
+        "text": "Is an importer with documentation-verification duties"
       },
       {
         "letter": "D",
@@ -36684,7 +36684,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Deploying a model only in jurisdictions without AI regulation"
+        "text": "Deploying a model first in jurisdictions without AI regulation"
       },
       {
         "letter": "D",
@@ -36764,7 +36764,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Standard uptime SLA and indemnity for IP infringement only"
+        "text": "A standard uptime SLA paired with indemnity for IP infringement"
       },
       {
         "letter": "C",
@@ -36788,7 +36788,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "The end users of the system only"
+        "text": "The end users of the system, through an in-product notice"
       },
       {
         "letter": "B",
@@ -36848,11 +36848,11 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Is in scope only if it processes EU personal data, since the Act piggybacks on GDPR jurisdiction"
+        "text": "Is in scope through GDPR, since the Act borrows GDPR's territorial rules for processing EU personal data"
       },
       {
         "letter": "C",
-        "text": "Is in scope only after it opens an EU subsidiary"
+        "text": "Comes into scope once it opens an EU subsidiary, and not before"
       },
       {
         "letter": "D",
@@ -36880,7 +36880,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Train only the data science team"
+        "text": "Limit training to the data science team that builds the models"
       },
       {
         "letter": "D",
@@ -36928,7 +36928,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Accuracy and lawfulness only"
+        "text": "Accuracy and integrity/confidentiality"
       },
       {
         "letter": "B",
@@ -36968,7 +36968,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "It only works on tabular data"
+        "text": "It is designed primarily for structured tabular data"
       }
     ],
     "answer": "A",
@@ -37180,7 +37180,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only after a public incident occurs"
+        "text": "After a public incident, to diagnose what went wrong"
       },
       {
         "letter": "B",
@@ -37188,7 +37188,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only during the initial data-collection stage"
+        "text": "During the initial data-collection stage, before any model exists"
       },
       {
         "letter": "D",
@@ -37348,7 +37348,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "HireSense is out of scope as a US company; only Rheinwerk has duties"
+        "text": "HireSense is out of scope as a US company, so Rheinwerk takes on the provider duties"
       },
       {
         "letter": "B",
@@ -37444,7 +37444,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Average the two metrics into one number and report only that"
+        "text": "Average the two metrics into one composite score and report that as the fairness result"
       }
     ],
     "answer": "C",
@@ -37500,7 +37500,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Applies only to minimal-risk systems"
+        "text": "Applies to minimal-risk systems rather than high-risk ones"
       }
     ],
     "answer": "B",
@@ -37628,7 +37628,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Shadow deployment only works for chatbots"
+        "text": "Shadow deployment is a technique designed for chatbots and conversational models"
       },
       {
         "letter": "B",
@@ -37684,11 +37684,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only the final accuracy number"
+        "text": "The final accuracy and loss metrics"
       },
       {
         "letter": "B",
-        "text": "Only the marketing name of the model"
+        "text": "The model's release name and marketing label"
       },
       {
         "letter": "C",
@@ -37832,7 +37832,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Send results only to candidates who were rejected"
+        "text": "Send results privately to candidates who were rejected"
       },
       {
         "letter": "D",
@@ -37888,7 +37888,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Discrimination that only occurs when intended"
+        "text": "Discrimination that requires proof of intent to be actionable"
       },
       {
         "letter": "D",
@@ -37972,7 +37972,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only social media companies face AI risk"
+        "text": "AI risk arises chiefly on social media platforms"
       },
       {
         "letter": "D",
@@ -38048,7 +38048,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only SOC 2 and uptime history, as for any SaaS"
+        "text": "A SOC 2 report and uptime history, as for any SaaS"
       },
       {
         "letter": "B",
@@ -38144,7 +38144,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "A FRIA is only needed if citizens complain"
+        "text": "A FRIA is triggered when citizens file complaints"
       }
     ],
     "answer": "C",
@@ -38224,7 +38224,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Applicable only to prohibited systems"
+        "text": "Applicable to prohibited systems rather than high-risk ones"
       },
       {
         "letter": "D",
@@ -38272,7 +38272,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only server CPU utilization"
+        "text": "Server CPU utilization and latency"
       },
       {
         "letter": "B",
@@ -38388,7 +38388,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Applies only to state agencies"
+        "text": "Applies to state agencies, not private companies"
       },
       {
         "letter": "C",
@@ -38396,7 +38396,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Regulates only DNA, not fingerprints or face geometry"
+        "text": "Regulates DNA samples, not fingerprints or face geometry"
       }
     ],
     "answer": "A",
@@ -38420,7 +38420,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Required only for public-sector uses"
+        "text": "Required for public-sector uses, with private deployers exempt"
       },
       {
         "letter": "D",
@@ -38552,7 +38552,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only the AI incident process applies; GDPR ignores chatbots"
+        "text": "The AI incident process governs, since GDPR does not reach chatbot outputs"
       },
       {
         "letter": "B",
@@ -38564,7 +38564,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "The only duty is to fine the prompt engineer"
+        "text": "The main duty is to discipline the prompt engineer"
       }
     ],
     "answer": "B",
@@ -38704,7 +38704,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Only update its marketing materials"
+        "text": "Update its marketing materials to note the new capability"
       }
     ],
     "answer": "C",
@@ -38720,11 +38720,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Do nothing after the sale; monitoring is exclusively the deployer's job"
+        "text": "Do nothing after the sale; monitoring passes to the deployer"
       },
       {
         "letter": "B",
-        "text": "Monitor only for the first 30 days"
+        "text": "Monitor for the first 30 days after market placement"
       },
       {
         "letter": "C",
@@ -38868,7 +38868,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Reviewing AI only after regulators call"
+        "text": "Reviewing AI when regulators raise questions"
       },
       {
         "letter": "D",
@@ -38976,7 +38976,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Interviews with the CEO only"
+        "text": "Interviews with the CEO and product owner"
       },
       {
         "letter": "C",
@@ -39012,7 +39012,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "A disclaimer that the tool is \"for entertainment only\" while using it for decisions anyway"
+        "text": "A disclaimer that the tool is \"for entertainment purposes\" while using it for decisions anyway"
       }
     ],
     "answer": "C",
@@ -39480,7 +39480,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Fairness metrics are only definable for binary classifiers"
+        "text": "Fairness metrics cannot be defined beyond binary classifiers"
       },
       {
         "letter": "C",
@@ -39512,7 +39512,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Human-in-command only at the design stage"
+        "text": "Human-in-command at the design stage"
       },
       {
         "letter": "D",
@@ -39740,7 +39740,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Ask only for the model's parameter count"
+        "text": "Ask for the model's parameter count as a proxy for robustness"
       }
     ],
     "answer": "C",
@@ -39880,7 +39880,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Faces liability only if it intended to discriminate"
+        "text": "Is liable under a standard that requires proof of discriminatory intent"
       }
     ],
     "answer": "A",
@@ -39956,7 +39956,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only fully autonomous hiring decisions with no human involvement at any stage"
+        "text": "Fully autonomous hiring decisions, excluding tools where a human makes the final call"
       },
       {
         "letter": "C",
@@ -40016,7 +40016,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Succeed only if the model was trained on licensed data"
+        "text": "Succeed if the model was trained on licensed data"
       },
       {
         "letter": "D",
@@ -40132,7 +40132,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Criminal penalties only, with no administrative fines"
+        "text": "Criminal penalties set by member states in place of administrative fines"
       }
     ],
     "answer": "C",
@@ -40264,7 +40264,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Binding only on EU member states, as an annex to the AI Act"
+        "text": "Binding on EU member states as an annex to the AI Act"
       },
       {
         "letter": "C",
@@ -40328,7 +40328,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Ensure only senior engineers write model code"
+        "text": "Ensure senior engineers write the model code"
       }
     ],
     "answer": "B",
@@ -40512,11 +40512,11 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Uses only automated benchmark suites"
+        "text": "Relies on automated benchmark suites run at scale"
       },
       {
         "letter": "B",
-        "text": "Is performed exclusively by regulators"
+        "text": "Is performed by regulators as part of conformity review"
       },
       {
         "letter": "C",
@@ -40524,7 +40524,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Happens only after public release"
+        "text": "Happens after public release, using real user traffic"
       }
     ],
     "answer": "C",
@@ -40576,7 +40576,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "A DPIA covers all AI risks; an AIA covers only privacy"
+        "text": "A DPIA covers all AI risks; an AIA covers privacy risks"
       },
       {
         "letter": "D",
@@ -40600,7 +40600,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only notified bodies"
+        "text": "Notified bodies, as part of conformity assessment"
       },
       {
         "letter": "C",
@@ -40660,7 +40660,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Only the dataset's collection methodology"
+        "text": "The dataset's collection methodology and labeling process"
       },
       {
         "letter": "D",
@@ -40792,7 +40792,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Launch, because accuracy is the only gate criterion"
+        "text": "Launch, because accuracy is the primary gate criterion"
       },
       {
         "letter": "B",
@@ -40848,7 +40848,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "The original provider remains solely responsible forever"
+        "text": "The original provider keeps full provider responsibility for the modified system"
       },
       {
         "letter": "B",
@@ -41072,7 +41072,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only quarterly PowerPoint reviews"
+        "text": "Quarterly PowerPoint reviews for leadership"
       },
       {
         "letter": "B",
@@ -41188,7 +41188,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "The provider's engineers exclusively"
+        "text": "The provider's engineers, who know the system best"
       },
       {
         "letter": "C",
@@ -41244,7 +41244,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Only be disclosed if the subject files a complaint first"
+        "text": "Be disclosed once the subject files a complaint"
       },
       {
         "letter": "C",
@@ -41268,7 +41268,7 @@ const ALL_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Only in an annual transparency report"
+        "text": "In an annual transparency report"
       },
       {
         "letter": "B",
@@ -41280,7 +41280,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Never; only deployers report incidents"
+        "text": "Never; deployers report incidents directly"
       }
     ],
     "answer": "B",
@@ -41304,7 +41304,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Reporting directly to the European Commission only, bypassing everyone else"
+        "text": "Reporting directly to the European Commission, bypassing the provider"
       },
       {
         "letter": "D",
@@ -41336,7 +41336,7 @@ const ALL_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Audits only when a candidate complains"
+        "text": "Audits triggered by candidate complaints"
       }
     ],
     "answer": "B",
