@@ -13,7 +13,7 @@ Open [study.html](study.html) in a browser. No server is needed: everything is v
   - Answers are only revealed when you submit.
 - **Mind Map**: a tree mirroring the Obsidian vault in `Map/`: root → 4 domains → 13 knowledge areas → topics → key-term leaves.
   - Two views: a radial map, and an indented tree with a score column. Phones show only the indented tree.
-  - Nodes, and the lines leading to them, color by performance: grey (untested), then red → amber → green.
+  - Nodes, the lines leading to them, and their labels color by performance: grey (untested), then red → amber → green.
   - Clicking a node opens a drawer on its card, inside its full chain of parent cards from AIGP down. Each card holds the node's notes, then a collapsed card for each child, nested down to the key terms. Cards get lighter the further they sit from the root. Opening a card moves the map's focus to that node, and closing it moves focus back up one level.
   - Each card's notes are authored: an at-a-glance summary, a long-form deep dive, why it matters for the exam, key points, and a Sources & Further Reading list linking the free primary sources it draws on. Below those sits a collapsed fold of the verbatim source notes from `Map/`.
   - AIGP's pinned title bar holds the close button and, on desktop, a button that widens the drawer over the whole map. Phones always show the drawer full width.

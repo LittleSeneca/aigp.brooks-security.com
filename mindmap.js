@@ -64,6 +64,8 @@ function nodeColor(id) {
   return p < 0.5 ? lerpHex('#e74c3c', '#f39c12', p * 2)    // red → amber
                  : lerpHex('#f39c12', '#2ecc71', (p - 0.5) * 2); // amber → green
 }
+// labels follow the same rule, except untouched ones keep their CSS grey: the node grey is too dark to read as text
+const mmTextFill = d => { const s = nodeScore(d.data.id); return s.answered || s.rated ? nodeColor(d.data.id) : null; };
 
 function nodeDomain(id) { // walk up to the d1-d4 ancestor
   let n = MM_BY_ID[id];
@@ -147,12 +149,14 @@ function buildIndentTree(container, root, W) {
   node.append('text')
     .attr('class', d => d.depth <= 2 ? 'node-label' : d.data.term !== undefined ? 'term-label' : null)
     .attr('x', labelX).attr('dy', '0.32em')
+    .style('fill', mmTextFill)
     .text(d => d.data.label.replace(/\n/g, ' '))
     .each(function (d) { // ellipsize labels that would run into the Score column (narrow phones)
       for (let t = this.textContent; t && this.getComputedTextLength() > scoreX - 40 - labelX(d); )
         this.textContent = (t = t.slice(0, -1).trimEnd()) + '…';
     });
   node.append('text').attr('class', 'mm-score').attr('x', scoreX).attr('dy', '0.32em').attr('text-anchor', 'end')
+    .style('fill', mmTextFill)
     .text(d => { const s = nodeScore(d.data.id); return s.answered || s.rated ? s.pct + '%' : '—'; });
 
   // back from a card's question or flashcard button with the drawer still open: show that row
@@ -208,6 +212,7 @@ function buildRadialMap(container, root, W, H) {
     .attr('transform', d => d.depth === 0 ? null
       : d.depth === 1 ? `rotate(${90 - d.x * 180 / Math.PI})`   // horizontal domain labels
       : d.x >= Math.PI ? 'rotate(180)' : null)
+    .style('fill', d => d.depth ? mmTextFill(d) : null) // AIGP's label sits on its own circle, so it stays light
     .text(d => d.data.label.replace(/\n/g, ' '));
 }
 
