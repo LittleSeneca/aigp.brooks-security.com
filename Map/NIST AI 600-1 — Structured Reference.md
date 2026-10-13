@@ -522,7 +522,7 @@ Applicable tasks referenced throughout the Profile:
 - **[[NIST AI RMF — Structured Reference]]** — AI 600-1 is a cross-sectoral profile of the AI RMF; uses the same Govern/Map/Measure/Manage structure
 - **[[NIST ARIA — Structured Reference]]** — ARIA's initial risk testing draws from AI 600-1's 12 GAI risks; ARIA serves the AI RMF Measure function
 - **[[AI Standards and Frameworks]]** — AI 600-1 represents NIST's profile-based approach to sector/technology-specific AI risk management
-- **[[AIGP Body of Knowledge — Exam Blueprint]]** — Directly relevant to Domain II (AI Development & Lifecycle), Domain III (AI Deployment & Use), and Domain IV (AI Governance & Risk Management)
+- **[[AIGP Body of Knowledge — Exam Blueprint]]** — Directly relevant to Domain II (Laws, Standards & Frameworks, II.D), Domain III (Governing AI Development) and Domain IV (Governing AI Deployment & Use)
 
 ---
 

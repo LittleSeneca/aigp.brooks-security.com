@@ -304,7 +304,8 @@ Define triggers for review: technical (model or tool changes), environmental (do
 - **OWASP ASI10:** kill switches and credential revocation to disable rogue agents at once; quarantine suspect agents in a sandbox for forensics; readmit them only after fresh attestation, dependency checks and human approval.
 - **OWASP ASI04 and ASI08:** a supply-chain kill switch that revokes specific tools, prompts or connections across every deployment; blast-radius limits such as quotas, progress caps and circuit breakers between planner and executor.
 - **IMDA:** design ways to take agents offline; halt or terminate them, with fallback solutions, when something serious happens.
-- **BOK IV.C:** "create and implement a policy and controls to deactivate or localize an AI system" when regulation or performance requires it. For agents the policy should name who may trigger the switch, what gets revoked (credentials, tokens, tool connections), which manual fallback takes over, and what evidence is kept. IMDA's warning about lost tradecraft matters here: staff who never do the task by hand may not be able to run the fallback.
+- **BOK IV.C:** "create and implement a policy and controls to deactivate or localize an AI system" when regulation or performance requires it.
+- **Applying it to agents** (this note's synthesis, not BOK text): the policy should name who may trigger the switch, what gets revoked (credentials, tokens, tool connections), which manual fallback takes over, and what evidence is kept. IMDA's warning about lost tradecraft matters here: staff who never do the task by hand may not be able to run the fallback.
 - **EU AI Act Art. 14(4)(e):** high-risk systems must let overseers interrupt them with a "stop" button or similar procedure that brings the system to a halt in a safe state.
 
 ### 7.5 Fail-safe design

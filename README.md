@@ -6,7 +6,7 @@ Self-contained study environment for the IAPP Artificial Intelligence Governance
 
 Open [study.html](study.html) in a browser. No server is needed: everything is vendored and works offline. There are five tabs:
 
-- **Quiz**: a bank of 1,528 questions with domain, difficulty and status filters. 25 are "Select N" multi-select questions, scored all-or-nothing like the real exam.
+- **Quiz**: a bank of 1,627 questions with domain, difficulty and status filters. 25 are "Select N" multi-select questions, scored all-or-nothing like the real exam.
 - **Flashcards**: 400 key terms with domain, area and status filters, and ✓/✗ mastery rating.
 - **Test**: timed Full Exam (100 questions, 3 hours) and Practice Quiz (25 questions, 1 hour).
   - Questions are drawn to the blueprint's domain weights (about 21/25/27/27 per 100), with each domain spread evenly across difficulty tiers.

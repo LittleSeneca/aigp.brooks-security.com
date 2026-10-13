@@ -131,7 +131,7 @@ related:
 | 552.051 | **Government agencies**; health-care providers | Tell consumers they are interacting with AI, before or at the time of interaction, even if it seems obvious; clear, plain language, no dark patterns. Health-care providers disclose AI used in a service or treatment by the date it is first provided |
 | 552.052 | Any person | No AI developed or deployed in a way that **intentionally aims** to incite self-harm, harm to others or crime |
 | 552.053 | Government only | No social scoring that leads to unjustified or unrelated detrimental treatment |
-| 552.054 | Government only | No AI that uniquely identifies people from biometric data or scraped images without consent where that infringes their rights |
+| 552.054 | Government; any person through (c) | (b): no government AI that uniquely identifies people from biometric data, or from images gathered online without consent, where that infringes their rights. (c): a breach of Bus. & Com. Code §503.001, the biometric identifier law that binds any person and that TRAIGA amended, is also a breach of this section |
 | 552.055 | Any person | No AI with the **sole intent** of infringing constitutional rights |
 | 552.056 | Any person | No AI developed or deployed **with intent to unlawfully discriminate** against a protected class; **disparate impact alone does not show intent**. Carve-outs for regulated insurers and federally insured financial institutions |
 | 552.057 | Any person | No AI with the sole intent of producing child sexual abuse material or unlawful sexual deepfakes; no chat AI that simulates sexual conduct while impersonating a minor |

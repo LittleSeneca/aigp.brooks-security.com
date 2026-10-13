@@ -61,8 +61,9 @@ ISO 42001 is built on the **Plan-Do-Check-Act** (Deming Cycle):
 | Annex | Content |
 |-------|---------|
 | **Annex A** | Normative controls — specific requirements organizations must implement (or justify exclusion) |
-| **Annex B** | Informative guidelines — implementation recommendations from ISO experts |
-| **Annex C** | Informative — links to RAI objectives and ethical principles |
+| **Annex B** | Normative implementation guidance for each Annex A control |
+| **Annex C** | Informative: potential AI-related organizational objectives and risk sources |
+| **Annex D** | Informative: use of the AI management system across domains and sectors |
 
 ---
 

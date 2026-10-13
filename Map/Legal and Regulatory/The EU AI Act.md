@@ -457,7 +457,7 @@ Compliance obligations depend on the role an organization plays in the AI supply
 |------|------------|-----------------|
 | **Provider** | Develops an AI system/GPAI model and places it on the EU market under its own name/brand | Risk management, conformity assessments, technical documentation, CE marking, EU database registration, post-market monitoring, incident reporting |
 | **Deployer** | Uses AI systems in professional activities (not private use) | Human oversight during use, monitor performance and report incidents, ensure input data quality, maintain logs, use per provider instructions |
-| **Importer** | Places AI systems from non-EU countries onto the EU market | Verify CE marking and conformity assessment, ensure documentation is complete, register in EU database, cooperate with authorities |
+| **Importer** | Places AI systems from non-EU countries onto the EU market | Verify the provider has carried out the conformity assessment, drawn up the technical documentation, affixed the CE marking and appointed an authorised representative; add own name and contact details; keep the certificate, declaration and instructions for use for 10 years; cooperate with authorities (Art. 23). EU database registration falls on the provider, not the importer (Art. 49) |
 | **Distributor** | Makes AI systems available in EU market without modifying them (e.g., app stores, marketplaces) | Verify CE marking is present, confirm provider/importer contact info visible, suspend distribution if non-compliance suspected, cooperate with authorities |
 
 ---

@@ -343,7 +343,7 @@ When documented as a repeatable process, impact assessments:
 
 | Framework | Requirement |
 |-----------|-------------|
-| **EU AI Act** | Article 6 requires "conformity assessments" and documentation for high-risk AI systems |
+| **EU AI Act** | Article 43 requires a conformity assessment, and Article 11 technical documentation, for high-risk AI systems; Article 6 sets the rules that classify a system as high-risk |
 | **Canada's DADM** | Article 6.1 requires Algorithmic Impact Assessments (AIA) for AI decision-making systems |
 | **California CPRA (and similar)** | Grants regulators authority to require risk assessments for automated decision-making |
 | **OECD and G7 principles** | Encourage impact assessments as a best practice |

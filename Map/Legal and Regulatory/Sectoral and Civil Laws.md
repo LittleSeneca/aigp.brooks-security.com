@@ -60,7 +60,7 @@ Courts weigh four factors (17 U.S.C. §107):
 | Purpose and character of use | Commercial vs. non-profit; transformative vs. duplicative |
 | Nature of the copyrighted work | Factual vs. creative |
 | Amount and substantiality used | How much of the original was used |
-| Effect on the market | Does the use compete with the original? Includes market dilution by AI output of the same kind |
+| Effect on the market | Does the use compete with the original or its licensing market? Whether market dilution by AI output of the same kind counts is unsettled: *Kadrey* and the Copyright Office's 2025 training report accept the theory, *Bartz* rejected it |
 
 > **Exam note:** Developers argue training is transformative because models learn patterns rather than keep copies. As of 2026 district courts have split: training was fair use on the records in *Bartz* and *Kadrey*, but not in *Thomson Reuters v. Ross*. Factor one (transformativeness) and factor four (market harm) decide the cases, and how the data was acquired can decide the exposure.
 
@@ -305,7 +305,7 @@ The EEOC's May 2022 ADA and May 2023 Title VII technical assistance on AI was **
 
 #### Equal Credit Opportunity Act (ECOA, 1974)
 
-Prohibits discrimination in credit transactions based on race, sex, marital status, religion, national origin, age, or receipt of public assistance.
+Prohibits discrimination in any aspect of a credit transaction based on race, color, religion, national origin, sex, marital status or age (if the applicant can contract), because income comes from public assistance, or because the applicant exercised in good faith a right under the Consumer Credit Protection Act (15 U.S.C. §1691(a)).
 
 | AI Requirement |
 |---------------|
