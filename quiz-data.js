@@ -5529,27 +5529,27 @@ const ALL_QUESTIONS = [
     "id": "q-211",
     "domain": "Domain I",
     "difficulty": "Hard",
-    "question": "An organization must choose between two AI systems: System A is more accurate but less explainable; System B is less accurate but more explainable. The application is loan approval. Which ethical consideration should MOST influence the decision?",
+    "question": "A US lender must choose between two AI systems for loan approval: System A is more accurate but less explainable; System B is less accurate but more explainable. Which system should it choose, and why?",
     "options": [
       {
         "letter": "A",
-        "text": "Select the most accurate system because accuracy is the primary metric regulators examine when auditing algorithmic decision-making in lending under the Equal Credit Opportunity Act"
+        "text": "System A, because accuracy is the primary metric regulators examine when auditing algorithmic decision-making in lending under the Equal Credit Opportunity Act"
       },
       {
         "letter": "B",
-        "text": "Select the most explainable system because the GDPR's right to explanation for automated decisions requires that every individual decision be fully interpretable by the affected person"
+        "text": "System B, because the GDPR's right to explanation for automated decisions requires that every individual decision be fully interpretable by the affected person"
       },
       {
         "letter": "C",
-        "text": "Balance accuracy with explainability, considering legal requirements and the context of the decisions being made"
+        "text": "System B, provided its accuracy is acceptable, because the lender must give each denied applicant the specific reasons for the denial"
       },
       {
         "letter": "D",
-        "text": "Base the selection decision on the comparative acquisition and operational costs"
+        "text": "Whichever system has the lower combined acquisition and operating cost"
       }
     ],
     "answer": "C",
-    "explanation": "Loan approval involves significant individual impact and legal requirements (e.g., adverse action notices under ECOA). The decision should balance accuracy with explainability, considering legal obligations, the need for contestability, and the ability to identify and address discrimination. Absolute prioritization (A or C) ignores important trade-offs."
+    "explanation": "Under ECOA and Regulation B, a lender that denies credit must give the applicant the specific principal reasons. The CFPB has said (Circular 2022-03) that using a model too complex to explain is no excuse for failing to do so. That makes explainability a legal floor in lending, so System B is the choice as long as it is accurate enough to lend responsibly. A is wrong because regulators look at fair lending and the reasons behind denials, not raw accuracy. B picks the right system for the wrong reason: GDPR Article 22 gives people meaningful information about the logic involved and a right to contest, not full interpretability of every decision, and a US lender isn't mainly governed by GDPR anyway. D ignores the legal and ethical stakes."
   },
   {
     "id": "q-212",
