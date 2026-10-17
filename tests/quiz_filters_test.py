@@ -16,6 +16,7 @@ set, every later click on an option was ignored too.
 import functools
 import http.server
 import os
+import re
 import socketserver
 import sys
 import threading
@@ -25,6 +26,8 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROBE = """() => ({
   answered: answered,
   expl: !!document.querySelector('#question-area .explanation'),
+  badge: !!document.querySelector('#question-area .tally'),
+  meta: (document.querySelector('#question-area .q-meta') || {}).textContent || '',
   qtext: (document.querySelector('#question-area .q-text') || {}).textContent || '',
   nextText: filteredQuestions[currentIndex + 1] ? filteredQuestions[currentIndex + 1].question : null,
   prevText: filteredQuestions[currentIndex - 1] ? filteredQuestions[currentIndex - 1].question : null,
@@ -33,6 +36,14 @@ PROBE = """() => ({
   done: document.getElementById('answered-count').textContent,
   filtered: filteredQuestions.length,
 })"""
+
+COUNTER = re.compile(r"#(\d+)/(\d+)")
+
+
+def counter(page):
+    """(position, batch size) from the question header's #n/m."""
+    m = COUNTER.search(page.evaluate(PROBE)["meta"].replace(" ", ""))
+    return (int(m.group(1)), int(m.group(2))) if m else (None, None)
 
 FAILS = []
 
@@ -60,6 +71,24 @@ def click_option(page, nth=1):
     page.click("#question-area .option:nth-child(%d)" % nth)
 
 
+def ensure_single(page, hops=8):
+    """Advance past a Select N question: these scenarios exercise the single-answer click.
+
+    The question on screen is drawn at random when no filter has been applied, so without this
+    a run occasionally lands on a Select N, where one click only selects an option.
+    """
+    for _ in range(hops):
+        if not page.query_selector("#multi-submit"):
+            return True
+        page.click("#question-area .nav-row button:nth-child(3)")
+        page.wait_for_timeout(250)
+    return False
+
+
+def prev_disabled(page):
+    return page.evaluate("() => document.querySelector('#question-area .nav-row button:nth-child(1)').disabled")
+
+
 def scenario(browser, url, name, status=None, difficulty=None, pre_js=None, step=0, nav="next"):
     print("\n== %s" % name)
     ctx = browser.new_context(viewport={"width": 1400, "height": 900}, locale="en-US")
@@ -80,6 +109,7 @@ def scenario(browser, url, name, status=None, difficulty=None, pre_js=None, step
     for _ in range(step):
         page.click("#question-area .nav-row button:nth-child(3)")
         page.wait_for_timeout(200)
+    ensure_single(page)
 
     pre = page.evaluate(PROBE)
     if pre["nOpts"] == 0:
@@ -166,6 +196,62 @@ def multi_scenario(browser, url, name, status=None, difficulty=None):
     ok(post["expl"], "the Select N answer is revealed")
 
 
+def drill_scenario(browser, url, name, status="unanswered", difficulty="Medium", pre_js=None):
+    """Working through a batch: the counter counts up, the batch stays put, Prev reaches back.
+
+    The batch used to re-filter on every answer, so with Status = Unanswered the question just
+    answered dropped out: the counter read "#1" of a shrinking total, and Prev stayed disabled
+    because everything answered was already gone from the list.
+    """
+    print("\n== %s" % name)
+    ctx = browser.new_context(viewport={"width": 1400, "height": 900}, locale="en-US")
+    page = ctx.new_page()
+    errs = []
+    page.on("pageerror", lambda e: errs.append(str(e)))
+    page.goto(url + "/study.html", wait_until="domcontentloaded")
+    page.wait_for_timeout(900)
+    if pre_js:
+        page.evaluate(pre_js)
+        page.wait_for_timeout(300)
+    page.select_option("#status-filter", status)
+    page.wait_for_timeout(250)
+    page.select_option("#difficulty-filter", difficulty)
+    page.wait_for_timeout(300)
+
+    ensure_single(page)
+    pos, size = counter(page)
+    if not pos or not size:
+        ok(False, "could not read the #n/m counter from the question header")
+        ctx.close()
+        return
+    ok(size > 3, "batch of %s questions to work through" % size)
+    if pos == 1:
+        ok(prev_disabled(page), "Prev is disabled on the batch's first question")
+    else:
+        print("    SKIP  batch did not open at #1 (stepped past a Select N question)")
+
+    for step in range(3):
+        page.click("#question-area .option")
+        page.wait_for_timeout(350)
+        ok(page.evaluate(PROBE)["expl"], "answer %d reveals" % (step + 1))
+        size_now = counter(page)[1]
+        ok(size_now == size, "the batch still reads %s while answering (got %s)" % (size, size_now))
+        page.click("#question-area .nav-row button:nth-child(3)")
+        page.wait_for_timeout(300)
+        pos_now, size_now = counter(page)
+        ok(pos_now == pos + step + 1 and size_now == size,
+           "counter advanced to #%d/%d" % (pos + step + 1, size))
+        ok(not prev_disabled(page), "Prev is enabled at #%d" % (pos + step + 1))
+
+    page.click("#question-area .nav-row button:nth-child(1)")
+    page.wait_for_timeout(300)
+    back = page.evaluate(PROBE)
+    ok(back["badge"] and not back["expl"],
+       "Prev steps back to the answered question and shows its tally, not a reveal")
+    ok(not errs, "no page errors while drilling (%s)" % (errs[:1] or "none"))
+    ctx.close()
+
+
 def main():
     from playwright.sync_api import sync_playwright
 
@@ -184,6 +270,9 @@ def main():
                      step=1, nav="prev")
             multi_scenario(browser, url, "Status = Unanswered, a Select N question",
                            status="unanswered", difficulty="Hard")
+            drill_scenario(browser, url, "Drilling a batch, no filter change")
+            drill_scenario(browser, url, "Drilling a batch under a mind-map node filter",
+                           difficulty="all", pre_js="() => mmStudyNode('ch1')")
             scenario(browser, url, "difficulty change alone (control)", difficulty="Medium")
             scenario(browser, url, "no filters (control)")
             browser.close()
