@@ -72,6 +72,7 @@ python3 build_playbook_note.py playbook.json --retrieved YYYY-MM-DD -o "Map/NIST
 | `verify_enrichment.py` | Gate for the generated mind map: regeneration fidelity, enrichment coverage, section order, the Source Notes fold, source shape, and the authored-text style rules |
 | `enrichments/` | Authored per-node and per-term text for the mind map drawer. By-type files (`01-structure` … `10-bok-v2.1`) plus one file per BOK domain (`11-domain1.json`, …). Later files win, so a per-domain file overrides the by-type files for the nodes it covers. |
 | `Map/` | Obsidian vault: knowledge-area notes, structured references, canvas |
+| `tests/quiz_filters_test.py` | Regression test for the quiz's answer reveal after a filter change. Needs `playwright` and a chromium build; serves the repo on a throwaway port and drives it headless |
 | `docs/specs/` | Specifications for larger changes |
 
 ## Third-party content and licences
