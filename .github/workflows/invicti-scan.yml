@@ -1,0 +1,82 @@
+name: Invicti Scan
+
+# CI-driven DAST against a target that already exists in Invicti Platform.
+#
+# The job does not scan anything itself: the scan runs platform-side and this
+# container only drives the API — start the scan, wait for it, and fail the
+# build if a finding at or above INVICTI_MINIMUM_SEVERITY was reported.
+# Findings and reports live in the platform; the artifact is the CLI's local
+# working data only.
+#
+# Requires a repo secret named INVICTI_API_TOKEN (an API token issued by the
+# platform). See .github/workflows/deploy-aigp.yml for the repo's other
+# workflow.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+# A scan is long-lived and platform-side. Two runs against the same target at
+# once would pile onto each other, so never let them overlap — queue instead.
+concurrency:
+  group: invicti-scan
+  cancel-in-progress: false
+
+jobs:
+  invicti-scan:
+    name: DAST scan (Invicti Platform)
+    runs-on: ubuntu-latest
+    # Outlives INVICTI_SCAN_TIMEOUT below, so a hung scan fails here with the
+    # CLI's own reason instead of being killed by the runner with no result.
+    timeout-minutes: 75
+    container:
+      image: invicti/scan-cli:latest
+      # The image's default user is uid 1001, but the docker daemon creates the
+      # volume source below as root:root, and only root can write into it.
+      options: --user root
+      # The CLI writes its working data to /home/invicti/publicdata, which is
+      # inside the image — so it has to be mounted to be readable afterwards.
+      volumes:
+        - /home/runner/work/scan-results:/home/invicti/publicdata
+    env:
+      INVICTI_API_BASE_URL: "https://platform-eu.invicti.com"
+      # Repo secret. If this is replaced by a literal, the literal is sent as
+      # the token and every run fails authorization.
+      INVICTI_API_TOKEN: ${{ secrets.INVICTI_API_TOKEN }}
+      # Asset ID of the pre-configured target: the uuid in the platform URL as
+      # ?assetId=... — NOT the DAST target ID in the target's Details drawer.
+      # Those look identical and the wrong one fails with "Failed to retrieve
+      # target".
+      INVICTI_TARGET_ID: "7530d5ea-79d3-4a08-ac74-e3360074bbf7"
+      # aigp.brooks-security.com is publicly reachable, so the cloud agent can
+      # hit it. An internal target needs EphemeralAgent (or PreDefinedAgent
+      # plus INVICTI_AGENT_ID) instead — CloudAgent cannot reach one.
+      INVICTI_SCAN_AGENT: "CloudAgent"
+      # Must match a profile name in the platform exactly; names are
+      # case-sensitive.
+      INVICTI_SCAN_PROFILE: "Full Scan"
+      # A single severity, not a list: this is the floor that fails the build,
+      # so High already covers Critical.
+      INVICTI_MINIMUM_SEVERITY: "High"
+      # Kept under the job's timeout-minutes for the reason given there.
+      INVICTI_SCAN_TIMEOUT: "60"
+
+    steps:
+      - name: Run Invicti Scan CLI
+        run: /home/invicti/scancli/ScanCLI
+
+      - name: Upload scan artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: invicti-scan-results
+          # /__w is this container's view of the runner's /home/runner/work,
+          # so this path is the host side of the volume mounted above.
+          path: /__w/scan-results/**
+          if-no-files-found: ignore
+          retention-days: 7
