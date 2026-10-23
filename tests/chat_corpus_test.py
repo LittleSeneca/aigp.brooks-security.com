@@ -314,6 +314,54 @@ class Generator(unittest.TestCase):
     def test_two_bad_replies_record_a_failure(self):
         self.assertIsNone(self.gen.generate({"id": "a#b", "title": "T", "breadcrumb": "B", "text": "t"}, lambda m: "nope"))
 
+    def test_pending_skips_done_retries_failures_and_reruns_changed_text(self):
+        """A cached result is reused, but a cached *failure* is not: leaving one cached would make a
+        transient outage permanent for every section it touched."""
+        h = self.gen.corpus_builder.section_hash
+        sections = [
+            {"id": "a#b", "text": "one"},
+            {"id": "c#d", "text": "two"},
+            {"id": "e#f", "text": "three"},
+        ]
+        cache = {
+            "a#b": {"hash": h("one"), "aliases": ["ok"]},
+            "c#d": {"hash": h("two"), "aliases": [], "error": "HTTP Error 402"},
+        }
+        self.assertEqual([s["id"] for s in self.gen.pending(sections, cache)], ["c#d", "e#f"])
+
+        stale = {"a#b": {"hash": h("text that changed"), "aliases": ["old"]}}
+        self.assertEqual([s["id"] for s in self.gen.pending(sections[:1], stale)], ["a#b"])
+
+    def test_a_cap_on_reasoning_is_opt_in(self):
+        """ALIAS_REASONING_MAX adds a reasoning budget to the request; unset, the body stays plain."""
+        import os
+        from unittest import mock
+
+        captured = {}
+
+        class FakeResponse:
+            def __enter__(self_inner):
+                return self_inner
+
+            def __exit__(self_inner, *a):
+                return False
+
+            def read(self_inner):
+                return b'{"choices": [{"message": {"content": "x"}}]}'
+
+        def fake_urlopen(req, timeout=None):
+            captured["body"] = json.loads(req.data.decode())
+            return FakeResponse()
+
+        with mock.patch("urllib.request.urlopen", fake_urlopen):
+            with mock.patch.dict(os.environ, {}, clear=False):
+                os.environ.pop("ALIAS_REASONING_MAX", None)
+                self.gen.http_chat([{"role": "user", "content": "hi"}], "m", "http://x/v1", "k")
+                self.assertNotIn("reasoning", captured["body"])
+                os.environ["ALIAS_REASONING_MAX"] = "0"
+                self.gen.http_chat([{"role": "user", "content": "hi"}], "m", "http://x/v1", "k")
+                self.assertEqual(captured["body"]["reasoning"], {"max_tokens": 0})
+
 
 if __name__ == "__main__":
     unittest.main()

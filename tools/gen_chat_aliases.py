@@ -71,9 +71,16 @@ def _env(name, default=None):
 
 
 def http_chat(messages, model, base_url, api_key, temperature=0, timeout=60):
-    """One OpenAI-compatible chat completion. Returns the assistant message content."""
+    """One OpenAI-compatible chat completion. Returns the assistant message content.
+
+    ALIAS_REASONING_MAX caps a reasoning model's thinking budget, which matters here: on this task an
+    uncapped model spends ~90% of its output thinking about a mechanical extraction and takes 6x as long
+    for the same aliases. Unset by default, so the request stays plain OpenAI-compatible."""
     url = base_url.rstrip("/") + "/chat/completions"
     body = {"model": model, "messages": messages, "temperature": temperature}
+    cap = os.environ.get("ALIAS_REASONING_MAX")
+    if cap:
+        body["reasoning"] = {"max_tokens": int(cap)}
     req = urllib.request.Request(
         url,
         data=json.dumps(body).encode(),
@@ -142,12 +149,14 @@ def save_cache(path, cache):
 
 
 def pending(sections, cache):
-    """Sections whose id is new or whose text hash no longer matches the cached one (including a
-    previous failure, which carries an empty alias list and is retried)."""
+    """Sections whose id is new, whose text hash no longer matches, or whose last attempt failed.
+
+    A failure is retried: an entry carrying an `error` is not a result, so leaving it cached would make
+    a transient outage permanent for every section it touched."""
     out = []
     for s in sections:
         entry = cache.get(s["id"])
-        if not entry or entry.get("hash") != corpus_builder.section_hash(s["text"]):
+        if not entry or entry.get("hash") != corpus_builder.section_hash(s["text"]) or entry.get("error"):
             out.append(s)
     return out
 
@@ -156,6 +165,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--limit", type=int, default=0, help="generate at most N sections this run (0 = all pending)")
     ap.add_argument("--ids", help="comma-separated section ids to generate, overriding the pending set")
+    ap.add_argument("--ids-file", type=Path, help="file of section ids, one per line (for chunked parallel runs)")
     ap.add_argument("--out", type=Path, default=OUT, help="cache file (default chat_aliases.json)")
     ap.add_argument("--dry-run", action="store_true", help="print the prompts for the first 3 sections; call nothing")
     args = ap.parse_args(argv)
@@ -163,8 +173,11 @@ def main(argv=None):
     sections = corpus_builder.build_all(include_aliases=False)
     cache = load_cache(args.out)
 
-    if args.ids:
-        wanted = {i.strip() for i in args.ids.split(",") if i.strip()}
+    if args.ids or args.ids_file:
+        if args.ids_file:
+            wanted = {line.strip() for line in args.ids_file.read_text(encoding="utf-8").splitlines() if line.strip()}
+        else:
+            wanted = {i.strip() for i in args.ids.split(",") if i.strip()}
         todo = [s for s in sections if s["id"] in wanted]
     else:
         todo = pending(sections, cache)
