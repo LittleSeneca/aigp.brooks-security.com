@@ -1,6 +1,6 @@
 # Cross-device progress sync
 
-Status: implemented, 2026-09-24
+Status: implemented, 2026-09-24. Sign-in moved to Google on 2026-10-23 (see Google sign-in); the username and password sections below describe the legacy path that remains for existing accounts.
 
 ## Goal
 
@@ -200,3 +200,17 @@ Everything is request-priced, so idle cost is about $0 and PITR costs cents. The
 | Response egress | Up to 5 req/s × 1 MB, about 430 GB/day. Beyond CloudFront's free 1 TB/month that is about $37/day. This is the largest residual. |
 
 An AWS Budgets email alert on the account is the backstop for all of these. It is not part of this change.
+
+## Google sign-in
+
+Password registration is retired. New accounts are created by signing in with Google; existing password accounts can still `login` but there is no migration or linking, so a person with both ends up with two accounts.
+
+- **Flow:** authorization code with PKCE, run by the Lambda so the client secret (SSM SecureString `/brooks-security.com/aigp/google_client_secret`, read at runtime) never reaches the browser.
+  1. The app links to `GET /api/aigp/google`. The Lambda sets an HttpOnly, Secure, SameSite=Lax cookie (`aigp_oauth`, path `/auth`, 10 minutes) holding a random state and PKCE verifier, and redirects to Google with scope `openid email`.
+  2. Google redirects to `GET /auth/callback` (the client's registered redirect URI; CloudFront routes `/auth/*` to the API). The Lambda checks `state` against the cookie, exchanges the code, and checks the ID token's `iss`, `aud`, `exp`, a numeric `sub`, and `email_verified`. The token comes directly from Google's token endpoint over TLS, so its signature is not re-verified.
+  3. The Lambda redirects to `/#login=<token>&name=<email>`, or `/#auth_error=<message>` on any failure. The app reads the fragment, removes it from the URL, and signs in as it would after a password login.
+- **Identity:** the DynamoDB key is `g.<google sub>`, never the email, which can change. The item carries `provider = "google"` and the current `email` (refreshed at each sign-in), and has no `salt` or `hash`. Tokens, sync, and merge are unchanged.
+- **Squatting:** `login` refuses Google items, and the callback refuses a `g.*` item that lacks `provider = "google"`, so a password account can never occupy or take over a Google identity.
+- **Routes and limits:** `register` returns `410`. The two GET routes share the 2 requests/second (burst 5) ceiling with `login`.
+- **Google console:** a Web application client with origin `https://aigp.brooks-security.com` and redirect `https://aigp.brooks-security.com/auth/callback`. The Lambda's `REDIRECT_URI` must match it exactly. The consent screen needs only the `openid` and `email` scopes, and if it is in Testing mode only listed test users can sign in.
+- **Recovery:** a lost Google account is recovered the way Google recovers it; deleting a user's item still revokes every token issued for it.

@@ -38,13 +38,20 @@
 </div>
 
 <dialog id="auth-dlg">
-  <form id="auth-out" onsubmit="authSubmit(event)">
+  <div id="auth-out">
     <h3>Sync your progress</h3>
-    <p class="muted">Sign in to see your progress on every device. Progress already on this device is added to your account. There's no email, so a forgotten password can't be recovered.</p>
-    <input id="auth-user" autocomplete="username" placeholder="Username" required minlength="3" maxlength="32" pattern="[A-Za-z0-9._\-]+" title="Letters, digits, dot, dash or underscore">
-    <input id="auth-pass" type="password" autocomplete="current-password" placeholder="Password (8+ characters)" required minlength="8" maxlength="128">
-    <div class="row"><button class="primary" value="login">Sign in</button><button value="register">Create account</button><button type="button" style="margin-left:auto" onclick="authDlg.close()">Close</button></div>
-  </form>
+    <p class="muted">Sign in with Google to see your progress on every device. Progress already on this device is added to your account. We only receive your email address.</p>
+    <div class="row"><a id="auth-google" href="/api/aigp/google">Sign in with Google</a><button type="button" style="margin-left:auto" onclick="authDlg.close()">Close</button></div>
+    <details id="auth-legacy">
+      <summary>Have a username and password account?</summary>
+      <p class="muted">Password accounts are being retired and new ones can't be created.</p>
+      <form onsubmit="authSubmit(event)">
+        <input id="auth-user" autocomplete="username" placeholder="Username" required minlength="3" maxlength="32" pattern="[A-Za-z0-9._\-]+" title="Letters, digits, dot, dash or underscore">
+        <input id="auth-pass" type="password" autocomplete="current-password" placeholder="Password" required maxlength="128">
+        <div class="row"><button value="login">Sign in</button></div>
+      </form>
+    </details>
+  </div>
   <div id="auth-in">
     <h3>Signed in as <span id="auth-name"></span></h3>
     <p class="muted" id="auth-last"></p>
