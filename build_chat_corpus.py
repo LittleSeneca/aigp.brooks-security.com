@@ -474,12 +474,46 @@ def build_enrichments(entries, nodes, used=None):
 
 # --- aliases, validation, main -------------------------------------------------------------------
 
-def build_all(root=ROOT):
+def section_hash(text):
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def load_aliases(root=ROOT):
+    path = root / "chat_aliases.json"
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return {k: v for k, v in data.items() if not k.startswith("_")}
+
+
+def merge_aliases(corpus, aliases):
+    """Attach each section's aliases when the stored text hash still matches; drop stale ones with a
+    warning. Alias lists are attached as `aliases`; a section with none gets no key."""
+    merged = 0
+    for section in corpus:
+        entry = aliases.get(section["id"])
+        if not entry:
+            continue
+        if entry.get("hash") != section_hash(section["text"]):
+            print(f"warning: stale aliases for {section['id']} (text changed since they were generated); dropped", file=sys.stderr)
+            continue
+        names = entry.get("aliases") or []
+        if names:
+            section["aliases"] = names
+            merged += 1
+    return merged
+
+
+def build_all(root=ROOT, include_book=True, include_enrichments=True, include_aliases=True):
     corpus = build(SOURCES, root)
     used = {s["id"] for s in corpus}
-    book_sections, _, _ = build_book((root / BOOK).read_text(encoding="utf-8"), used)
-    corpus += book_sections
-    corpus += build_enrichments(load_enrichments(root), load_nodes(root), used)
+    if include_book:
+        book_sections, _, _ = build_book((root / BOOK).read_text(encoding="utf-8"), used)
+        corpus += book_sections
+    if include_enrichments:
+        corpus += build_enrichments(load_enrichments(root), load_nodes(root), used)
+    if include_aliases:
+        merge_aliases(corpus, load_aliases(root))
     return corpus
 
 
@@ -503,6 +537,27 @@ def problems(corpus):
             bad.append(f"empty section {s['id']}")
         if "[[" in s["text"] or "[[" in s["title"]:
             bad.append(f"wikilink left in {s['id']}")
+        for msg in _alias_problems(s):
+            bad.append(msg)
+    return bad
+
+
+def _alias_problems(section):
+    names = section.get("aliases")
+    if names is None:
+        return []
+    if not isinstance(names, list) or not all(isinstance(a, str) for a in names):
+        return [f"aliases must be a list of strings in {section['id']}"]
+    bad = []
+    if len(names) > 8:
+        bad.append(f"more than 8 aliases in {section['id']}")
+    for a in names:
+        if len(a) > 120:
+            bad.append(f"alias over 120 characters in {section['id']}")
+        if "—" in a:
+            bad.append(f"em dash in an alias in {section['id']}")
+        if "[[" in a or "]]" in a:
+            bad.append(f"brackets in an alias in {section['id']}")
     return bad
 
 
@@ -530,6 +585,7 @@ def main():
         sys.exit(f"gzipped corpus is {gz:,} bytes, over the 5 MB the Lambda will hold")
     print(f"{len(corpus):,} sections: " + ", ".join(f"{k} {v:,}" for k, v in sorted(kinds.items())))
     print(f"{len(raw):,} bytes raw, {gz:,} gzipped -> {OUT.relative_to(ROOT)}")
+    print(f"aliases merged into {sum(1 for s in corpus if s.get('aliases')):,} sections")
     print("10 largest:")
     for s in sizes[-10:][::-1]:
         print(f"  {len(s['text']):6} {s['id']}")

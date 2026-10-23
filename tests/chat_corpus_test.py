@@ -256,5 +256,64 @@ class Enrichments(unittest.TestCase):
         self.assertEqual(b.problems(self.sections()), [])
 
 
+class Aliases(unittest.TestCase):
+    """Phase 4: the alias cache the generator writes, and the merge the build does."""
+
+    def test_problems_enforces_the_alias_rules(self):
+        s = {"id": "a#b", "doc": "a", "title": "t", "breadcrumb": "x", "text": "ok"}
+        self.assertEqual(b.problems([dict(s, aliases=["data protection impact assessment", "DPIA"])]), [])
+        for bad in (["x"] * 9, ["—"], ["[["], ["y" * 121], "not a list", [1, 2]):
+            self.assertTrue(b.problems([dict(s, aliases=bad)]), bad)
+
+    def test_merge_attaches_matching_and_drops_stale(self):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        root = Path(tmp.name)
+        corpus = [
+            {"id": "a#b", "doc": "a", "title": "t", "breadcrumb": "x", "text": "fresh text"},
+            {"id": "c#d", "doc": "c", "title": "t", "breadcrumb": "x", "text": "other text"},
+        ]
+        (root / "chat_aliases.json").write_text(json.dumps({
+            "a#b": {"hash": b.section_hash("fresh text"), "aliases": ["an alias"]},
+            "c#d": {"hash": "deadbeef", "aliases": ["stale alias"]},
+        }), encoding="utf-8")
+        merged = b.merge_aliases(corpus, b.load_aliases(root))
+        self.assertEqual(merged, 1)
+        self.assertEqual(corpus[0]["aliases"], ["an alias"])
+        self.assertNotIn("aliases", corpus[1])  # a stale alias is worse than none
+        self.assertEqual(b.problems(corpus), [])
+
+
+class Generator(unittest.TestCase):
+    """The offline alias generator: its parsing, cleaning and retry, without any model call."""
+
+    @classmethod
+    def setUpClass(cls):
+        import importlib.util
+
+        path = Path(__file__).resolve().parent.parent / "tools" / "gen_chat_aliases.py"
+        spec = importlib.util.spec_from_file_location("gen_chat_aliases", path)
+        cls.gen = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(cls.gen)
+
+    def test_parses_json_even_from_a_fence_or_prose(self):
+        self.assertEqual(self.gen.parse_aliases('```json\n{"aliases": ["a", "b"]}\n```'), ["a", "b"])
+        self.assertEqual(self.gen.parse_aliases('Sure: {"aliases": ["a"]} hope that helps'), ["a"])
+        self.assertIsNone(self.gen.parse_aliases("no json here"))
+        self.assertIsNone(self.gen.parse_aliases('{"aliases": "not a list"}'))
+
+    def test_cleaning_enforces_the_rules(self):
+        kept = self.gen.clean_aliases(["good one", "bad — dash", "a" * 200, " ".join(["word"] * 13), "good one"])
+        self.assertEqual(kept, ["good one"])
+
+    def test_a_malformed_reply_is_retried_then_succeeds(self):
+        replies = iter(["not json", "still not json", '{"aliases": ["third time lucky"]}'])
+        section = {"id": "a#b", "title": "T", "breadcrumb": "B", "text": "text"}
+        self.assertEqual(self.gen.generate(section, lambda messages: next(replies)), ["third time lucky"])
+
+    def test_two_bad_replies_record_a_failure(self):
+        self.assertIsNone(self.gen.generate({"id": "a#b", "title": "T", "breadcrumb": "B", "text": "t"}, lambda m: "nope"))
+
+
 if __name__ == "__main__":
     unittest.main()
