@@ -1,0 +1,13 @@
+{
+  "name": "vuln-lab",
+  "version": "0.0.0",
+  "private": true,
+  "description": "INVICTI-TEST-51 Old pins with published CVEs, for the SCA scan. Never installed.",
+  "dependencies": {
+    "lodash": "4.17.15",
+    "minimist": "1.2.0",
+    "jquery": "1.12.4",
+    "express": "4.16.0",
+    "node-fetch": "2.6.0"
+  }
+}
