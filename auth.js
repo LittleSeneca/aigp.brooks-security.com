@@ -50,7 +50,7 @@ async function finishSignIn(r){
   const owner=localStorage.getItem(OWNER_KEY);
   if(owner&&owner!==r.username){
     if(!confirm(`This browser has progress from ${owner}. Discard it and sign in as ${r.username}?`))return;
-    clearLocalProgress();
+    clearLocalProgress();chatForget(); // saved chats are the previous person's too
   }
   localStorage.setItem(OWNER_KEY,r.username);
   setAuth({username:r.username,token:r.token,name:r.name});
@@ -83,7 +83,7 @@ async function signOut(){
   // Refusing by default keeps unsynced work; the override keeps a shared machine from staying signed in.
   const since=lastSync?new Date(lastSync).toLocaleTimeString(undefined,{hour:'numeric',minute:'2-digit'}):'you signed in on this device';
   if(!await sync()&&!confirm(`Can't reach the server. Sign out anyway? Changes on this device since ${since} will be lost.`))return;
-  localStorage.removeItem(OWNER_KEY);setAuth(null);clearLocalProgress();
+  localStorage.removeItem(OWNER_KEY);setAuth(null);clearLocalProgress();chatForget();
 }
 function openAuth(){document.getElementById('auth-err').textContent='';renderAuth();authDlg.showModal();}
 function renderAuth(){

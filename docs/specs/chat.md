@@ -10,7 +10,7 @@ A Chat tab, shown only to people signed in with Google, that answers questions a
 
 - **Answering from the model's own knowledge.** The prompt tells it to say "That isn't covered in the study materials" instead.
 - **Streaming.** Function URLs are not available in this account, and HTTP API cannot stream. The UI shows the model's search steps while it works instead.
-- **Saved conversations.** History lives in the page's memory. A reload starts over, and nothing is stored server-side beyond the job (24 hours).
+- **Server-side or cross-device chat history.** Chats are saved in the browser only (see Chat history). Nothing is stored server-side beyond the job (24 hours).
 - **Semantic search.** Keyword search (BM25). See Search.
 
 ## Is it an agent?
@@ -97,6 +97,17 @@ The deploy workflow builds the corpus and uploads it to the private bucket after
 `chat.js`, plus a panel in `study.html`. `renderAuth` shows the tab when the session's username starts with `g.`; losing a Google session (sign-out, expiry, a 401) hides the tab, returns to Quiz, and clears the conversation.
 
 The answer is rendered with `marked` and then **sanitised**, because model output can be steered by the question and by anything quoted from the materials. The HTML is parsed inertly and rebuilt from an allowlist of formatting tags with no attributes at all, so there are no links, images, handlers or styles. Other tags keep their text and lose their markup. `tests/chat_ui_test.py` feeds it a hostile answer (script, `onerror`, `javascript:` link, iframe) and checks nothing survives.
+
+### Chat history
+
+A sidebar lists saved chats, newest first, with **+ New chat** at its top (on phones it collapses behind a Chats button). Chats are kept in localStorage under `aigp-chats`: `{id, title, ts, messages: [{role, content, sources?}]}`, at most 50, titled by the first question. They are deliberately not synced: that would put people's questions in our database, which the design otherwise avoids.
+
+- A new chat is saved only once it has a question, so clicking New chat repeatedly adds nothing.
+- Each question sends that chat's last 10 plain turns as history, so a new chat starts clean.
+- One question is in flight at a time. Switching chats meanwhile is allowed; the answer is filed under the chat that asked and its pending marker follows that chat. Deleting that chat drops the answer.
+- A question that errors is taken back out of the chat and returned to the input, matching the server giving the question back. A chat left empty by that is not kept.
+- Chats are cleared on sign-out and when a different account signs in on the browser, with the rest of that person's data. Resetting quiz progress leaves them alone. Opening the app signed out of Google hides the tab but does not delete anything.
+- The counter reads "N of 200 prompts left this week".
 
 ## Infrastructure (brooks-security.com)
 
