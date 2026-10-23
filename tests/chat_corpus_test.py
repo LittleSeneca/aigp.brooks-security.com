@@ -332,8 +332,8 @@ class Generator(unittest.TestCase):
         stale = {"a#b": {"hash": h("text that changed"), "aliases": ["old"]}}
         self.assertEqual([s["id"] for s in self.gen.pending(sections[:1], stale)], ["a#b"])
 
-    def test_a_cap_on_reasoning_is_opt_in(self):
-        """ALIAS_REASONING_MAX adds a reasoning budget to the request; unset, the body stays plain."""
+    def test_a_reasoning_setting_is_opt_in(self):
+        """ALIAS_REASONING shapes the request (`off` or a token budget); unset, the body stays plain."""
         import os
         from unittest import mock
 
@@ -355,12 +355,15 @@ class Generator(unittest.TestCase):
 
         with mock.patch("urllib.request.urlopen", fake_urlopen):
             with mock.patch.dict(os.environ, {}, clear=False):
-                os.environ.pop("ALIAS_REASONING_MAX", None)
+                os.environ.pop("ALIAS_REASONING", None)
                 self.gen.http_chat([{"role": "user", "content": "hi"}], "m", "http://x/v1", "k")
                 self.assertNotIn("reasoning", captured["body"])
-                os.environ["ALIAS_REASONING_MAX"] = "0"
+                os.environ["ALIAS_REASONING"] = "off"
                 self.gen.http_chat([{"role": "user", "content": "hi"}], "m", "http://x/v1", "k")
-                self.assertEqual(captured["body"]["reasoning"], {"max_tokens": 0})
+                self.assertEqual(captured["body"]["reasoning"], {"enabled": False})
+                os.environ["ALIAS_REASONING"] = "512"
+                self.gen.http_chat([{"role": "user", "content": "hi"}], "m", "http://x/v1", "k")
+                self.assertEqual(captured["body"]["reasoning"], {"max_tokens": 512})
 
 
 if __name__ == "__main__":

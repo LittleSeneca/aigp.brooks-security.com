@@ -14,6 +14,8 @@ picks it up.
     export ALIAS_BASE_URL=https://openrouter.ai/api/v1
     export ALIAS_MODEL=<a chat model>
     export ALIAS_API_KEY=<key>            # never commit this
+    export ALIAS_REASONING=off            # optional: disable a reasoning model's thinking, which here
+                                          # spent 90% of its output and 6x the time on a mechanical task
     python3 tools/gen_chat_aliases.py --limit 50        # generate the next 50 sections
     python3 tools/gen_chat_aliases.py --dry-run         # print the prompts, call nothing
 
@@ -73,14 +75,17 @@ def _env(name, default=None):
 def http_chat(messages, model, base_url, api_key, temperature=0, timeout=60):
     """One OpenAI-compatible chat completion. Returns the assistant message content.
 
-    ALIAS_REASONING_MAX caps a reasoning model's thinking budget, which matters here: on this task an
-    uncapped model spends ~90% of its output thinking about a mechanical extraction and takes 6x as long
-    for the same aliases. Unset by default, so the request stays plain OpenAI-compatible."""
+    ALIAS_REASONING shapes a reasoning model's thinking, and it matters here: left alone, this model
+    spent ~90% of its output on reasoning about a mechanical extraction, and on some sections ran to its
+    128k ceiling (294 seconds and real money for one section). Set it to `off` ({"enabled": false}) or to
+    an integer token budget. Unset by default, so the request stays plain OpenAI-compatible."""
     url = base_url.rstrip("/") + "/chat/completions"
     body = {"model": model, "messages": messages, "temperature": temperature}
-    cap = os.environ.get("ALIAS_REASONING_MAX")
-    if cap:
-        body["reasoning"] = {"max_tokens": int(cap)}
+    reasoning = os.environ.get("ALIAS_REASONING")
+    if reasoning == "off":
+        body["reasoning"] = {"enabled": False}
+    elif reasoning:
+        body["reasoning"] = {"max_tokens": int(reasoning)}
     req = urllib.request.Request(
         url,
         data=json.dumps(body).encode(),
