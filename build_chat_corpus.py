@@ -211,10 +211,198 @@ def build(paths, root=ROOT):
     return corpus
 
 
+# --- the book ------------------------------------------------------------------------------------
+
+H1_DOCS = {
+    "About This Book": "book-front",
+    "How to Read a Chapter": "book-front",
+    "About the AIGP Exam": "book-exam",
+    "Where the Four Domains Meet": "book-where",
+    "Appendix A: Standards and Frameworks at a Glance": "book-appendix-a",
+    "Appendix B: Glossary": "book-glossary",
+}
+PART_RE = re.compile(r"^Part (I|II|III|IV): ")
+CHAPTER_RE = re.compile(r"^Chapter (\d+): ")
+GLOSSARY_TERM_RE = re.compile(r"^\*\*(.+?)\.\*\*\s*(.*)$", re.S)
+COMMENT_RE = re.compile(r"<!--.*?-->", re.S)
+
+
+def _doc_heading(line, fence):
+    m = None if fence else HEADING_RE.match(line)
+    return (len(m[1]), m[2].strip()) if m else None
+
+
+def split_book_docs(md):
+    """Slice aigp-book.md into virtual documents.
+
+    Returns (headings, docs): `headings` is every ##/### heading outside the Contents list (for the
+    coverage check), `docs` is a list of {slug, offset, part, lines}. Chapters become one document each
+    (book-chN, offset 1 so `##` is its top level); every other document keeps `#` as its top level
+    (offset 0). The Part a chapter belongs to is carried as `part` for its breadcrumb.
+    """
+    lines = COMMENT_RE.sub("", md).split("\n")
+    headings, docs, cur, part, skip, fence = [], [], None, None, False, False
+    for line in lines:
+        if line.lstrip().startswith("```"):
+            fence = not fence
+        h = _doc_heading(line, fence)
+        if not h:
+            if not skip and cur is not None:
+                cur["lines"].append(line)
+            continue
+        level, heading = h
+        if level == 1 and heading == "Contents":
+            cur, skip = None, True
+            continue
+        if skip and level > 1:
+            continue
+        skip = False
+        if level in (2, 3):
+            headings.append(heading)
+        if level == 1 and heading == BOOK_TITLE:
+            cur = {"slug": "book-front", "offset": 0, "part": None, "lines": [], "lead": BOOK_TITLE, "sub": True}
+            docs.append(cur)
+            continue
+        pm = PART_RE.match(heading) if level == 1 else None
+        cm = CHAPTER_RE.match(heading) if level == 2 else None
+        if pm:
+            part = heading
+            num = {"I": 1, "II": 2, "III": 3, "IV": 4}[pm.group(1)]
+            cur = {"slug": f"book-part{num}", "offset": 0, "part": None, "lines": [], "lead": None}
+            docs.append(cur)
+        elif cm:
+            cur = {"slug": f"book-ch{cm.group(1)}", "offset": 1, "part": part, "lines": [], "lead": None}
+            docs.append(cur)
+        elif level == 1:
+            cur = {"slug": H1_DOCS.get(heading) or ("book-" + slug(heading)), "offset": 0, "part": None, "lines": [], "lead": None}
+            docs.append(cur)
+        elif cur is None:
+            continue
+        elif cur.get("sub") and level == 2:
+            # the title page's subtitle line: keep its words as body text, not as a heading
+            cur["sub"] = False
+            cur["lines"].append(heading)
+            continue
+        cur["lines"].append(line)
+    return headings, docs
+
+
+def parse_doc(lines, offset, lead=None):
+    """(sections, part) for one virtual document. A heading opens a section; the section's parts are its
+    heading path within the document (the chapter's Part is added to the breadcrumb separately)."""
+    out, path, body, fence = [], [], [], False
+    current = ([], lead) if lead else None
+
+    def flush():
+        text = "\n".join(body).strip()
+        if current and text:
+            out.append((current[0], current[1], text))
+        body.clear()
+
+    for line in lines:
+        if line.lstrip().startswith("```"):
+            fence = not fence
+        m = None if fence else HEADING_RE.match(line)
+        if not m:
+            body.append(line)
+            continue
+        flush()
+        depth = len(m[1]) - offset
+        heading = m[2].strip()
+        path = path[: depth - 1] + [heading]
+        current = (list(path), heading)
+    flush()
+    return out
+
+
+def parse_glossary(lines):
+    """(sections, terms) for the glossary. Each `**Term.** definition` paragraph becomes its own
+    section; the `### A` letter headings become breadcrumb parts, and the intro prose stays a section."""
+    base = "Appendix B: Glossary"
+    out, terms, preface, block, letter = [], [], [], [], None
+
+    def emit_terms():
+        for para in re.split(r"\n\s*\n", "\n".join(block)):
+            para = para.strip()
+            if not para:
+                continue
+            m = GLOSSARY_TERM_RE.match(para)
+            term = m.group(1).strip() if m else letter
+            if m:
+                terms.append(term)
+            out.append(([base, letter, term], term, para))
+
+    for line in lines:
+        m = re.match(r"^### +(.+?) *#*$", line)
+        if not m:
+            (preface if letter is None else block).append(line)
+            continue
+        if letter is None:
+            text = "\n".join(preface).strip()
+            if text:
+                out.append(([base], base, text))
+        else:
+            emit_terms()
+            block = []
+        letter = m[1].strip()
+    if letter is None:
+        text = "\n".join(preface).strip()
+        if text:
+            out.append(([base], base, text))
+    else:
+        emit_terms()
+    return out, terms
+
+
+def build_book(md=None, used=None):
+    """Corpus sections for the book. Returns (sections, headings, terms)."""
+    md = md if md is not None else BOOK.read_text(encoding="utf-8")
+    headings, docs = split_book_docs(md)
+    used = used if used is not None else set()
+    corpus, terms = [], []
+    for doc in docs:
+        if doc["slug"] == "book-glossary":
+            raw, terms = parse_glossary(doc["lines"])
+            packed = [(parts, title, c) for parts, title, text in raw for c in chunk_text(text)]
+        else:
+            # No forward-merge for the book: every ## and ### is its own section, so a breadcrumb
+            # matches the heading it came from and a short section (a Key Terms list) stays citable on
+            # its own. Only the size split applies.
+            packed = [(parts, title, c) for parts, title, text in parse_doc(doc["lines"], doc["offset"], doc.get("lead")) for c in chunk_text(text)]
+        for parts, title, text in packed:
+            crumb = " > ".join([BOOK_TITLE] + ([doc["part"]] if doc["part"] else []) + parts)
+            corpus.append({"id": _new_id(used, doc["slug"], title), "doc": doc["slug"], "title": title, "breadcrumb": crumb, "text": plain(text)})
+    return corpus, headings, terms
+
+
+def book_coverage(headings, corpus):
+    """The headings (##/### outside the Contents list, from split_book_docs) that no book section
+    represents: not a section title, not a breadcrumb part, and not inside a section's text."""
+    book = [s for s in corpus if s["doc"].startswith("book-")]
+    return [h for h in headings if not any(h == s["title"] or h in s["breadcrumb"].split(" > ") or h in s["text"] for s in book)]
+
+
+def book_text_coverage(md, sections):
+    """(covered, total) characters: book section text over the book's characters, the Contents list
+    excluded. Used to prove the book was ingested whole."""
+    keep, skip = [], False
+    for line in md.split("\n"):
+        m = HEADING_RE.match(line)
+        if m and len(m[1]) == 1:
+            skip = m[2].strip() == "Contents"
+        if not skip:
+            keep.append(line)
+    return sum(len(s["text"]) for s in sections if s["doc"].startswith("book-")), len("\n".join(keep))
+
+
 # --- aliases, validation, main -------------------------------------------------------------------
 
 def build_all(root=ROOT):
-    return build(SOURCES, root)
+    corpus = build(SOURCES, root)
+    used = {s["id"] for s in corpus}
+    book_sections, _, _ = build_book((root / BOOK).read_text(encoding="utf-8"), used)
+    corpus += book_sections
+    return corpus
 
 
 def source_kind(doc):

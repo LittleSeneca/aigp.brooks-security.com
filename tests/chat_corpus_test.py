@@ -165,5 +165,49 @@ class Build(unittest.TestCase):
         self.assertTrue(all(len(s["text"]) <= b.MAX_CHARS for s in c))
 
 
+class Book(unittest.TestCase):
+    """The book is read from the real manuscript; it is the artifact under test."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.sections, cls.headings, cls.terms = b.build_book(used=set())
+
+    def test_every_heading_maps_to_a_section(self):
+        self.assertEqual(b.book_coverage(self.headings, self.sections), [])
+        self.assertGreater(len(self.headings), 100)
+
+    def test_the_book_is_ingested_almost_whole(self):
+        covered, total = b.book_text_coverage(b.BOOK.read_text(encoding="utf-8"), self.sections)
+        self.assertGreaterEqual(covered / total, 0.95)
+
+    def test_the_coverage_check_catches_a_dropped_section(self):
+        """Prove the check is not vacuous: drop a section and its heading is reported missing."""
+        missing = b.book_coverage(self.headings, self.sections[1:])
+        self.assertTrue(missing)
+        self.assertEqual(b.book_coverage(self.headings, self.sections), [])
+
+    def test_breadcrumb_names_part_chapter_and_section(self):
+        crumbs = [s["breadcrumb"] for s in self.sections if s["id"].startswith("book-ch6#")]
+        self.assertTrue(any(c == "Governing AI > Part II: Laws, Standards and Frameworks > Chapter 6: The Law Written for AI > 6.2 Prohibited Practices and the Two December Additions" for c in crumbs), crumbs[:5])
+
+    def test_the_contents_list_is_skipped(self):
+        self.assertFalse(any("Contents" in s["breadcrumb"].split(" > ") for s in self.sections))
+
+    def test_the_glossary_is_one_section_per_term(self):
+        terms = [s for s in self.sections if s["doc"] == "book-glossary"]
+        self.assertGreater(len(terms), 300)
+        self.assertTrue(all(s["id"].startswith("book-glossary#") for s in terms))
+        self.assertIn("book-glossary#a-b-testing", [s["id"] for s in terms])
+        self.assertIn("Governing AI > Appendix B: Glossary > A > A/B Testing", [s["breadcrumb"] for s in terms])
+        self.assertGreater(max(len(s["text"]) for s in terms), 0)
+
+    def test_the_chapters_are_separate_documents(self):
+        docs = {s["doc"] for s in self.sections}
+        for n in range(1, 14):
+            self.assertIn(f"book-ch{n}", docs)
+        for extra in ("book-front", "book-exam", "book-where", "book-appendix-a", "book-glossary", "book-part1", "book-part4"):
+            self.assertIn(extra, docs)
+
+
 if __name__ == "__main__":
     unittest.main()
