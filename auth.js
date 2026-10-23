@@ -45,21 +45,37 @@ function applyState(s){
   if(reviewTs!=null)reviewIdx=s.tests.findIndex(t=>t.ts===reviewTs);
   if(testView==='menu')renderTest();else renderHistory();
 }
-async function authSubmit(e){
+// Both sign-in paths end here: a password login (legacy) or the token Google's callback hands back.
+async function finishSignIn(r){
+  const owner=localStorage.getItem(OWNER_KEY);
+  if(owner&&owner!==r.username){
+    if(!confirm(`This browser has progress from ${owner}. Discard it and sign in as ${r.username}?`))return;
+    clearLocalProgress();
+  }
+  localStorage.setItem(OWNER_KEY,r.username);
+  setAuth({username:r.username,token:r.token,name:r.name});
+  await sync(); // uploads whatever this device already had
+}
+async function authSubmit(e){ // legacy password accounts only; registration is retired
   e.preventDefault();
   const err=document.getElementById('auth-err');err.textContent='';
   try{
-    const r=await api(e.submitter.value,{username:document.getElementById('auth-user').value,password:document.getElementById('auth-pass').value});
+    const r=await api('login',{username:document.getElementById('auth-user').value,password:document.getElementById('auth-pass').value});
     document.getElementById('auth-pass').value='';
-    const owner=localStorage.getItem(OWNER_KEY);
-    if(owner&&owner!==r.username){
-      if(!confirm(`This browser has progress from ${owner}. Discard it and sign in as ${r.username}?`))return;
-      clearLocalProgress();
-    }
-    localStorage.setItem(OWNER_KEY,r.username);
-    setAuth({username:r.username,token:r.token});
-    await sync(); // uploads whatever this device already had
+    await finishSignIn(r);
   }catch(x){err.textContent=x.message;}
+}
+// /auth/callback sends the browser back to /#login=<token>&name=<email> (or #auth_error=<message>).
+// Take it off the URL at once so a token never lingers in history or a copied link.
+async function consumeGoogleReturn(){
+  const h=new URLSearchParams(location.hash.slice(1));
+  if(!h.has('login')&&!h.has('auth_error'))return false;
+  history.replaceState(null,'',location.pathname+location.search);
+  if(h.has('auth_error')){openAuth();document.getElementById('auth-err').textContent=h.get('auth_error');return true;}
+  // The token is "<username>.<createdAt>.<expiry>.<sig>"; the username may itself contain dots.
+  const token=h.get('login'),username=token.split('.').slice(0,-3).join('.');
+  await finishSignIn({username,token,name:h.get('name')||undefined});
+  return true; // finishSignIn already synced
 }
 async function signOut(){
   if(!confirm("Sign out? This device's progress is cleared. It stays saved in your account."))return;
@@ -71,14 +87,14 @@ async function signOut(){
 }
 function openAuth(){document.getElementById('auth-err').textContent='';renderAuth();authDlg.showModal();}
 function renderAuth(){
-  const b=document.getElementById('auth-btn');b.querySelector('.lbl').textContent=auth?auth.username:'Sign in';b.querySelector('use').setAttribute('href',auth?'#i-synced':'#i-cloud');
+  const b=document.getElementById('auth-btn');b.querySelector('.lbl').textContent=auth?(auth.name||auth.username):'Sign in';b.querySelector('use').setAttribute('href',auth?'#i-synced':'#i-cloud');
   document.getElementById('auth-out').hidden=!!auth;document.getElementById('auth-in').hidden=!auth;
-  if(auth){document.getElementById('auth-name').textContent=auth.username;
+  if(auth){document.getElementById('auth-name').textContent=auth.name||auth.username;
     document.getElementById('auth-last').textContent=lastSync?'Last synced '+new Date(lastSync).toLocaleTimeString(undefined,{hour:'numeric',minute:'2-digit'})+'.':'Not synced yet on this device.';}
 }
 // Sync needs the /api origin, so it is off when the app is opened from disk.
 if(location.protocol!=='file:'){
-  document.getElementById('auth-btn').hidden=false;renderAuth();sync();
+  document.getElementById('auth-btn').hidden=false;renderAuth();consumeGoogleReturn().then(handled=>{if(!handled)sync();});
   // Pull the other devices' progress on return. Tab switches fire both events; the timer collapses them.
   const syncShortly=()=>{if(auth){clearTimeout(syncTimer);syncTimer=setTimeout(sync,300);}};
   document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')syncShortly();});
