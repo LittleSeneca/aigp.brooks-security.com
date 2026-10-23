@@ -87,6 +87,7 @@ async function signOut(){
 }
 function openAuth(){document.getElementById('auth-err').textContent='';renderAuth();authDlg.showModal();}
 function renderAuth(){
+  renderChatAccess();
   const b=document.getElementById('auth-btn');b.querySelector('.lbl').textContent=auth?(auth.name||auth.username):'Sign in';b.querySelector('use').setAttribute('href',auth?'#i-synced':'#i-cloud');
   document.getElementById('auth-out').hidden=!!auth;document.getElementById('auth-in').hidden=!auth;
   if(auth){document.getElementById('auth-name').textContent=auth.name||auth.username;

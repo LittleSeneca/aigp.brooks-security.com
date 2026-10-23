@@ -1,6 +1,6 @@
 // ═══════════ KEYBOARD ═══════════
 document.addEventListener('keydown', e => {
-  if(e.target.tagName==='SELECT'||e.target.tagName==='INPUT'||authDlg.open)return;
+  if(e.target.tagName==='SELECT'||e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA'||authDlg.open)return;
   const k=e.key.toUpperCase();
   if(k==='ESCAPE'&&!document.getElementById('panel-mindmap').classList.contains('hidden')){e.preventDefault();selectMMNode(null);return;}
   const qi=!document.getElementById('panel-quiz').classList.contains('hidden');
