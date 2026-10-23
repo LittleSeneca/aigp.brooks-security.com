@@ -1,0 +1,735 @@
+{
+ "note": "Student-style questions for tests/chat_search_eval.py. `expected` lists the sections that answer the question (verified by reading them); a hit at k counts if any expected id is in the top k. `type` is natural (a raw question), keyword (specific terms) or term (a glossary lookup). `domain` is the AIGP domain. One trap was removed during verification: framework-recall-cards#the-art-5-principles-... is GDPR Article 5, not EU AI Act Article 5.",
+ "questions": [
+  {
+   "q": "Which practices does the EU AI Act prohibit?",
+   "type": "natural",
+   "domain": "II",
+   "expected": [
+    "the-eu-ai-act#1-1-prohibited-ai-systems",
+    "book-ch6#6-2-prohibited-practices-and-the-two-december-additions"
+   ]
+  },
+  {
+   "q": "Which AI systems does the EU AI Act treat as high-risk?",
+   "type": "natural",
+   "domain": "II",
+   "expected": [
+    "the-eu-ai-act#1-2-high-risk-ai-systems",
+    "eu-ai-act-2024#4-2-annex-iii-8-high-risk-areas",
+    "book-ch6#6-3-two-routes-to-high-risk"
+   ]
+  },
+  {
+   "q": "Who has to carry out a data protection impact assessment?",
+   "type": "natural",
+   "domain": "II",
+   "expected": [
+    "iso-42005#12-comparison-42005-vs-gdpr-dpia-vs-eu-ai-act-fria",
+    "book-ch4#4-7-the-dpia-and-the-fundamental-rights-impact-assessment",
+    "book-glossary#data-protection-impact-assessment-dpia"
+   ]
+  },
+  {
+   "q": "What are the penalties for breaking the EU AI Act?",
+   "type": "natural",
+   "domain": "II",
+   "expected": [
+    "eu-ai-act-2024#11-1-fine-tiers-for-operators-art-99",
+    "the-eu-ai-act#4-4-penalty-framework",
+    "book-ch6#6-9-penalties-and-enforcement"
+   ]
+  },
+  {
+   "q": "How does an organization get certified for its AI management system?",
+   "type": "natural",
+   "domain": "II",
+   "expected": [
+    "iso-42001#overview",
+    "book-ch7#7-6-iso-iec-42001-the-certifiable-management-system",
+    "framework-recall-cards#the-three-core-iso-ai-standards-the-bok-names-and-the-others"
+   ]
+  },
+  {
+   "q": "What is the difference between a DPIA and a fundamental rights impact assessment?",
+   "type": "natural",
+   "domain": "II",
+   "expected": [
+    "iso-42005#12-comparison-42005-vs-gdpr-dpia-vs-eu-ai-act-fria",
+    "book-ch4#4-7-the-dpia-and-the-fundamental-rights-impact-assessment"
+   ]
+  },
+  {
+   "q": "Who is responsible for an AI system once it is deployed?",
+   "type": "natural",
+   "domain": "I",
+   "expected": [
+    "book-ch2#2-4-roles-along-the-value-chain",
+    "organizational-readiness#5-developers-deployers-and-users-in-ai-governance",
+    "framework-recall-cards#the-four-actor-roles-and-what-flips-a-deployer-into-a-provider"
+   ]
+  },
+  {
+   "q": "What should a company check before adopting a third-party AI tool?",
+   "type": "natural",
+   "domain": "IV",
+   "expected": [
+    "book-ch12#12-1-six-instruments-six-questions",
+    "privacy-and-data-protection-law#due-diligence-checklist-for-ai-vendors",
+    "ai-risk-management-and-assurance#common-contract-clauses-to-scrutinize-red-flags"
+   ]
+  },
+  {
+   "q": "How do you detect that a deployed model is drifting?",
+   "type": "natural",
+   "domain": "IV",
+   "expected": [
+    "book-ch13#13-4-detecting-degradation-drift-and-emergent-failure",
+    "deployment-and-monitoring#3-3-detecting-drift-and-performance-degradation",
+    "framework-recall-cards#drift-types"
+   ]
+  },
+  {
+   "q": "What has to be logged when an AI system runs in production?",
+   "type": "natural",
+   "domain": "IV",
+   "expected": [
+    "book-ch13#13-2-what-to-log-and-why-logs-are-the-evidence-base",
+    "book-ch10#10-7-monitoring-in-production-what-to-log-and-what-to-alert-on"
+   ]
+  },
+  {
+   "q": "How should an AI system be tested before it is released?",
+   "type": "natural",
+   "domain": "III",
+   "expected": [
+    "book-ch10#10-2-pre-deployment-testing-functional-performance-and-adversarial",
+    "data-governance-and-model-training#3-1-understanding-ai-testing-objectives",
+    "ai-risk-management-and-assurance#red-teaming-for-adversarial-robustness"
+   ]
+  },
+  {
+   "q": "What is the risk of relying on a vendor's own test results?",
+   "type": "natural",
+   "domain": "IV",
+   "expected": [
+    "book-ch12#12-2-what-a-vendor-s-own-testing-proves"
+   ]
+  },
+  {
+   "q": "Why is AI harder to govern than ordinary software?",
+   "type": "natural",
+   "domain": "I",
+   "expected": [
+    "book-ch1#1-3-what-makes-ai-different",
+    "ai-and-ai-governance#3-characteristics-of-ai-requiring-governance",
+    "nist-ai-rmf#how-ai-risks-differ-from-traditional-software-risks"
+   ]
+  },
+  {
+   "q": "What does the GOVERN function require an organization to do?",
+   "type": "natural",
+   "domain": "II",
+   "expected": [
+    "nist-ai-rmf#function-1-govern",
+    "ai-standards-and-frameworks#the-four-core-functions"
+   ]
+  },
+  {
+   "q": "How should training data be documented so an auditor can follow it?",
+   "type": "natural",
+   "domain": "III",
+   "expected": [
+    "book-ch9#9-11-documentation-and-versioning",
+    "framework-recall-cards#data-lineage-and-provenance-what-an-auditor-is-actually-asking-for",
+    "ai-system-design#1-4-maintaining-traceability-and-audit-readiness"
+   ]
+  },
+  {
+   "q": "Which risks are specific to generative AI?",
+   "type": "natural",
+   "domain": "II",
+   "expected": [
+    "nist-ai-600-1#2-the-12-gai-risks",
+    "book-ch7#7-4-nist-ai-600-1-the-generative-ai-profile"
+   ]
+  },
+  {
+   "q": "When do the EU AI Act's high-risk obligations start to apply?",
+   "type": "natural",
+   "domain": "II",
+   "expected": [
+    "book-ch6#6-10-the-two-calendars",
+    "the-eu-ai-act#6-eu-ai-act-implementation-timeline-as-enacted-vs-as-amended-by-the-2026-digital-omnibus"
+   ]
+  },
+  {
+   "q": "What is the difference between an AI provider and an AI deployer?",
+   "type": "natural",
+   "domain": "II",
+   "expected": [
+    "framework-recall-cards#the-four-actor-roles-and-what-flips-a-deployer-into-a-provider",
+    "book-ch6#6-4-provider-duties-under-articles-8-to-21"
+   ]
+  },
+  {
+   "q": "How should an organization decide whether to deploy a new AI use case?",
+   "type": "natural",
+   "domain": "IV",
+   "expected": [
+    "book-ch11#11-1-vetting-the-use-case",
+    "book-ch11#11-7-the-decision-record-and-who-owns-the-go-decision"
+   ]
+  },
+  {
+   "q": "What should happen when an AI system reaches end of life?",
+   "type": "natural",
+   "domain": "IV",
+   "expected": [
+    "book-ch13#13-10-retirement-decommissioning-and-the-governance-of-end-of-life",
+    "ongoing-ai-operations#3-ai-system-retirement"
+   ]
+  },
+  {
+   "q": "How does the GDPR treat automated decision-making?",
+   "type": "natural",
+   "domain": "II",
+   "expected": [
+    "book-ch4#4-8-automated-decision-making-under-article-22",
+    "privacy-and-data-protection-law#gdpr-article-22-human-in-the-loop-or-window-dressing",
+    "gdpr#cjeu-schufa-c-634-21-7-december-2023"
+   ]
+  },
+  {
+   "q": "What obligations come with a general-purpose AI model?",
+   "type": "natural",
+   "domain": "II",
+   "expected": [
+    "book-ch6#6-7-general-purpose-ai-models",
+    "gpai-code-of-practice#1-overview-and-purpose",
+    "eu-ai-act-2024#8-3-additional-obligations-gpai-with-systemic-risk-art-55"
+   ]
+  },
+  {
+   "q": "How do you keep a human meaningfully in the loop on an agentic system?",
+   "type": "natural",
+   "domain": "III",
+   "expected": [
+    "agentic-ai-governance#2-3-levels-of-human-involvement",
+    "book-ch11#11-5-setting-the-level-of-autonomy",
+    "agentic-ai-governance#5-5-keeping-oversight-meaningful-automation-bias"
+   ]
+  },
+  {
+   "q": "What is the three-layer model of ownership for AI?",
+   "type": "natural",
+   "domain": "I",
+   "expected": [
+    "book-ch2#2-1-three-layers-of-ownership"
+   ]
+  },
+  {
+   "q": "How does an organization tailor AI governance to its own context?",
+   "type": "natural",
+   "domain": "I",
+   "expected": [
+    "organizational-readiness#4-tailoring-ai-governance-to-organizational-context",
+    "book-ch2#2-5-fitting-the-program-to-the-organization"
+   ]
+  },
+  {
+   "q": "How do you decide how much autonomy to give an AI system?",
+   "type": "natural",
+   "domain": "IV",
+   "expected": [
+    "book-ch11#11-5-setting-the-level-of-autonomy",
+    "agentic-ai-governance#2-2-two-dials-action-space-and-autonomy"
+   ]
+  },
+  {
+   "q": "What documentation must a high-risk AI system have under the EU AI Act?",
+   "type": "natural",
+   "domain": "II",
+   "expected": [
+    "eu-ai-act-2024#5-requirements-for-high-risk-ai-systems-arts-8-15",
+    "book-ch6#6-4-provider-duties-under-articles-8-to-21"
+   ]
+  },
+  {
+   "q": "How should a release gate be run before a model goes live?",
+   "type": "natural",
+   "domain": "III",
+   "expected": [
+    "book-ch10#10-1-release-gates-and-who-signs"
+   ]
+  },
+  {
+   "q": "What is an AI impact assessment and when is it carried out?",
+   "type": "natural",
+   "domain": "III",
+   "expected": [
+    "iso-42005#2-scope-and-applicability",
+    "book-ch8#8-3-the-design-stage-impact-assessment"
+   ]
+  },
+  {
+   "q": "How do you switch off or roll back a model that misbehaves in production?",
+   "type": "natural",
+   "domain": "IV",
+   "expected": [
+    "book-ch10#10-9-rollback-kill-switch-and-the-safe-state",
+    "agentic-ai-governance#7-5-fail-safe-design"
+   ]
+  },
+  {
+   "q": "Article 5 prohibited practices",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "the-eu-ai-act#1-1-prohibited-ai-systems"
+   ]
+  },
+  {
+   "q": "Annex III high-risk areas",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "eu-ai-act-2024#4-2-annex-iii-8-high-risk-areas"
+   ]
+  },
+  {
+   "q": "GOVERN 2 accountability structures",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "nist-ai-rmf#govern-2-accountability-structures",
+    "nist-ai-rmf-playbook#govern-2-accountability-structures-and-training"
+   ]
+  },
+  {
+   "q": "MAP 5 impacts characterized",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "nist-ai-rmf-playbook#map-5-impacts-characterized"
+   ]
+  },
+  {
+   "q": "MEASURE 3 risk tracking",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "nist-ai-rmf#measure-3-risk-tracking"
+   ]
+  },
+  {
+   "q": "AI RMF four core functions",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "ai-standards-and-frameworks#the-four-core-functions",
+    "framework-recall-cards#the-four-ai-rmf-functions-and-what-each-one-does"
+   ]
+  },
+  {
+   "q": "ISO/IEC 42001 PDCA cycle",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "iso-42001#the-pdca-cycle"
+   ]
+  },
+  {
+   "q": "ISO/IEC 22989 vocabulary",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "book-ch7#7-5-iso-iec-22989-the-vocabulary-layer",
+    "iso-22989#key-governance-takeaways"
+   ]
+  },
+  {
+   "q": "EU AI Act FRIA Article 27",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "book-ch6#6-5-deployer-duties-and-the-fundamental-rights-impact-assessment"
+   ]
+  },
+  {
+   "q": "SCHUFA automated decision credit scoring",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "gdpr#cjeu-schufa-c-634-21-7-december-2023"
+   ]
+  },
+  {
+   "q": "EDPB Opinion 28/2024 legitimate interest",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "gdpr#edpb-opinion-28-2024-legitimate-interest-for-ai-models"
+   ]
+  },
+  {
+   "q": "Colorado SB 26-189 automated decision-making technology",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "us-ai-laws#3-2-sb-26-189-automated-decision-making-technology-in-consequential-decisions"
+   ]
+  },
+  {
+   "q": "Texas TRAIGA HB 149",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "us-ai-laws#4-texas-responsible-ai-governance-act-traiga-hb-149"
+   ]
+  },
+  {
+   "q": "NYC Local Law 144 bias audit",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "us-ai-laws#7-1-nyc-local-law-144-automated-employment-decision-tools-aedts"
+   ]
+  },
+  {
+   "q": "South Korea AI Basic Act high-impact AI",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "south-korea-ai-basic-act#5-risk-classification-which-categories-trigger-which-duties"
+   ]
+  },
+  {
+   "q": "OWASP Top 10 for agentic applications",
+   "type": "keyword",
+   "domain": "III",
+   "expected": [
+    "agentic-ai-governance#6-4-owasp-top-10-for-agentic-applications-2026"
+   ]
+  },
+  {
+   "q": "IMDA action space and autonomy dials",
+   "type": "keyword",
+   "domain": "III",
+   "expected": [
+    "agentic-ai-governance#2-2-two-dials-action-space-and-autonomy"
+   ]
+  },
+  {
+   "q": "agent kill switch deactivation",
+   "type": "keyword",
+   "domain": "III",
+   "expected": [
+    "book-glossary#agent-kill-switch",
+    "agentic-ai-governance#7-5-fail-safe-design"
+   ]
+  },
+  {
+   "q": "data lineage and provenance",
+   "type": "keyword",
+   "domain": "III",
+   "expected": [
+    "data-governance-and-model-training#2-1-defining-data-lineage-and-data-provenance",
+    "book-ch9#9-3-provenance-and-lineage"
+   ]
+  },
+  {
+   "q": "train validation test splits leakage",
+   "type": "keyword",
+   "domain": "III",
+   "expected": [
+    "book-ch9#9-7-train-validation-and-test-splits-and-leakage"
+   ]
+  },
+  {
+   "q": "fairness metrics impossibility result",
+   "type": "keyword",
+   "domain": "III",
+   "expected": [
+    "book-ch9#9-9-fairness-metrics-and-the-impossibility-result"
+   ]
+  },
+  {
+   "q": "synthetic data training",
+   "type": "keyword",
+   "domain": "III",
+   "expected": [
+    "book-ch9#9-10-synthetic-data",
+    "privacy-and-data-protection-law#synthetic-data-and-minimization"
+   ]
+  },
+  {
+   "q": "staged rollout canary shadow deployment",
+   "type": "keyword",
+   "domain": "IV",
+   "expected": [
+    "book-ch10#10-5-staged-rollout-pilots-canary-and-shadow"
+   ]
+  },
+  {
+   "q": "model cards release artifacts",
+   "type": "keyword",
+   "domain": "IV",
+   "expected": [
+    "book-ch10#10-4-model-cards-and-system-documentation-as-release-artifacts",
+    "book-ch12#12-3-model-cards-and-system-level-assessment"
+   ]
+  },
+  {
+   "q": "incident management AI systems",
+   "type": "keyword",
+   "domain": "IV",
+   "expected": [
+    "book-ch13#13-5-incident-management-for-ai-systems",
+    "ai-risk-management-and-assurance#documenting-incidents-issues-and-risks"
+   ]
+  },
+  {
+   "q": "breach and incident notification duties",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "book-ch13#13-6-breach-and-incident-notification-duties"
+   ]
+  },
+  {
+   "q": "California TFAIA SB 53 frontier model transparency",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "us-ai-laws#6-1-sb-53-transparency-in-frontier-artificial-intelligence-act-tfaia"
+   ]
+  },
+  {
+   "q": "GPAI systemic risk threshold",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "eu-ai-act-2024#8-3-additional-obligations-gpai-with-systemic-risk-art-55",
+    "gpai-code-of-practice#5-safety-security-chapter-systemic-risk-gpai-only"
+   ]
+  },
+  {
+   "q": "FTC Act Section 5 unfair deceptive practices",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "sectoral-and-civil-laws#3-1-ftc-act-section-5"
+   ]
+  },
+  {
+   "q": "product liability defect in an AI system",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "sectoral-and-civil-laws#4-2-what-is-a-defect-in-ai"
+   ]
+  },
+  {
+   "q": "copyright fair use factors for AI training",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "sectoral-and-civil-laws#1-1-copyright-law-and-ai-training",
+    "framework-recall-cards#copyright-and-the-four-fair-use-factors"
+   ]
+  },
+  {
+   "q": "biometric data special category",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "privacy-and-data-protection-law#biometrics",
+    "gdpr#special-categories-in-ai-training-2026-developments"
+   ]
+  },
+  {
+   "q": "AI literacy training objectives",
+   "type": "keyword",
+   "domain": "I",
+   "expected": [
+    "organizational-readiness#core-training-objectives",
+    "book-ch2#2-3-literacy-and-readiness"
+   ]
+  },
+  {
+   "q": "RACI matrix for governance tasks",
+   "type": "keyword",
+   "domain": "I",
+   "expected": [
+    "organizational-readiness#raci-matrix-for-governance-tasks",
+    "book-ch2#2-2-raci-by-task"
+   ]
+  },
+  {
+   "q": "trustworthy characteristics evaluation MEASURE 2",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "nist-ai-rmf#measure-2-trustworthy-characteristics-evaluation",
+    "nist-ai-rmf-playbook#measure-2-evaluation-for-trustworthy-characteristics"
+   ]
+  },
+  {
+   "q": "AI RMF profiles",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "nist-ai-rmf#ai-rmf-profiles"
+   ]
+  },
+  {
+   "q": "ISO 42001 clause 6 planning",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "iso-42001#clause-6-planning"
+   ]
+  },
+  {
+   "q": "ISO/IEC 42005 AI system impact assessment",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "iso-42005#1-overview",
+    "book-ch7#7-7-iso-iec-42005-and-impact-assessment"
+   ]
+  },
+  {
+   "q": "Domain I foundations overview",
+   "type": "keyword",
+   "domain": "I",
+   "expected": [
+    "map-d1#domain-i-foundations"
+   ]
+  },
+  {
+   "q": "I.B organizational expectations competence",
+   "type": "keyword",
+   "domain": "I",
+   "expected": [
+    "map-ch2#i-b-organizational-expectations"
+   ]
+  },
+  {
+   "q": "II.C AI-specific laws",
+   "type": "keyword",
+   "domain": "II",
+   "expected": [
+    "map-ch6#ii-c-ai-specific-laws"
+   ]
+  },
+  {
+   "q": "III.A design and building competence",
+   "type": "keyword",
+   "domain": "III",
+   "expected": [
+    "map-ch8#iii-a-design-building"
+   ]
+  },
+  {
+   "q": "III.B training and testing data competence",
+   "type": "keyword",
+   "domain": "III",
+   "expected": [
+    "map-ch9#iii-b-training-testing-data"
+   ]
+  },
+  {
+   "q": "Domain IV deployment and use overview",
+   "type": "keyword",
+   "domain": "IV",
+   "expected": [
+    "map-d4#domain-iv-deployment-use"
+   ]
+  },
+  {
+   "q": "IV.C deployment and use governance competence",
+   "type": "keyword",
+   "domain": "IV",
+   "expected": [
+    "map-ch12#iv-c-deployment-use-governance"
+   ]
+  },
+  {
+   "q": "What is an AI system?",
+   "type": "term",
+   "domain": "I",
+   "expected": [
+    "book-glossary#ai-system",
+    "oecd-ai-principles#ai-system"
+   ]
+  },
+  {
+   "q": "Define accountability",
+   "type": "term",
+   "domain": "I",
+   "expected": [
+    "book-glossary#accountability"
+   ]
+  },
+  {
+   "q": "What is a DPIA?",
+   "type": "term",
+   "domain": "II",
+   "expected": [
+    "book-glossary#data-protection-impact-assessment-dpia",
+    "iso-42005#12-comparison-42005-vs-gdpr-dpia-vs-eu-ai-act-fria"
+   ]
+  },
+  {
+   "q": "What is concept drift?",
+   "type": "term",
+   "domain": "III",
+   "expected": [
+    "book-glossary#concept-drift"
+   ]
+  },
+  {
+   "q": "What is red teaming?",
+   "type": "term",
+   "domain": "III",
+   "expected": [
+    "book-glossary#red-teaming",
+    "agentic-ai-governance#6-3-red-teaming-and-threat-modelling"
+   ]
+  },
+  {
+   "q": "What is an adversarial example?",
+   "type": "term",
+   "domain": "III",
+   "expected": [
+    "book-glossary#adversarial-example"
+   ]
+  },
+  {
+   "q": "What is confabulation?",
+   "type": "term",
+   "domain": "II",
+   "expected": [
+    "book-glossary#confabulation"
+   ]
+  },
+  {
+   "q": "What is content provenance?",
+   "type": "term",
+   "domain": "II",
+   "expected": [
+    "book-glossary#content-provenance-nist-ai-600-1"
+   ]
+  },
+  {
+   "q": "What does human oversight mean?",
+   "type": "term",
+   "domain": "IV",
+   "expected": [
+    "book-glossary#human-oversight"
+   ]
+  }
+ ]
+}
