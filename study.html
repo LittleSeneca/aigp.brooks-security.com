@@ -219,14 +219,21 @@
 <!-- ═══ CHAT (Google accounts only) ═══ -->
 <div class="tab-panel hidden" id="panel-chat">
 <div class="chat-wrap">
-  <div class="chat-log" id="chat-log" aria-live="polite">
-    <p class="muted chat-intro">Ask about anything in the study materials. Answers come only from them, with the sections they draw on. Your questions are processed by a third-party model provider (OpenRouter).</p>
+  <aside class="chat-side" id="chat-side">
+    <button class="primary chat-new" id="chat-new" type="button" onclick="chatNew()">+ New chat</button>
+    <button class="chat-side-toggle" id="chat-side-toggle" type="button" onclick="chatToggleSide()" aria-expanded="false" aria-controls="chat-list">Chats</button>
+    <ul class="chat-list" id="chat-list" aria-label="Chat history"></ul>
+  </aside>
+  <div class="chat-main">
+    <div class="chat-log" id="chat-log" aria-live="polite">
+      <p class="muted chat-intro">Ask about anything in the study materials. Answers come only from them, with the sections they draw on. Your questions are processed by a third-party model provider (OpenRouter). Chats are saved in this browser only.</p>
+    </div>
+    <form class="chat-form" id="chat-form" onsubmit="chatSubmit(event)">
+      <textarea id="chat-input" rows="2" maxlength="2000" placeholder="e.g. Which practices does the EU AI Act prohibit?" aria-label="Your question"></textarea>
+      <button class="primary" id="chat-send" type="submit">Ask</button>
+    </form>
+    <div class="chat-foot"><span id="chat-quota" class="muted"></span></div>
   </div>
-  <form class="chat-form" id="chat-form" onsubmit="chatSubmit(event)">
-    <textarea id="chat-input" rows="2" maxlength="2000" placeholder="e.g. Which practices does the EU AI Act prohibit?" aria-label="Your question"></textarea>
-    <button class="primary" id="chat-send" type="submit">Ask</button>
-  </form>
-  <div class="chat-foot"><span id="chat-quota" class="muted"></span><button type="button" id="chat-clear" onclick="chatClear()">New conversation</button></div>
 </div>
 </div>
 

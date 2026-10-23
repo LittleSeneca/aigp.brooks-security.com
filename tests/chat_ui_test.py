@@ -122,12 +122,54 @@ def scenarios(browser, url):
     ok([m["role"] for m in second["history"]] == ["user", "assistant"] and second["history"][0]["content"] == "Which practices are prohibited?", "second question carries the first turn")
     ok(second["token"] == token("g.12345") and second["message"] == "And Article 6?", "token and message sent")
 
-    page.click("#chat-clear")
-    ok(page.locator(".chat-msg").count() == 0, "New conversation clears the log")
+    ok(page.locator(".chat-item").count() == 1 and "Which practices are prohibited?" in page.inner_text(".chat-item.active .open"), "one saved chat, titled by its first question, shown active")
+    ok(page.is_visible("#chat-clear") is False if page.query_selector("#chat-clear") else True, "the old New conversation button is gone")
+
+    print("\n== sidebar: new chat, switching, persistence, delete")
+    page.click("#chat-new")
+    ok(page.locator(".chat-msg").count() == 0 and page.locator(".chat-item").count() == 1, "New chat shows an empty log and saves nothing yet")
+    page.click("#chat-new")
+    ok(page.locator(".chat-item").count() == 1, "New chat again adds nothing")
+    page.fill("#chat-input", "What is GOVERN 1?")
+    polls["n"] = 5
+    page.click("#chat-send")
+    page.wait_for_selector(".chat-msg.assistant", timeout=15000)
+    third = [b for a_, b in seen if a_ == "chat"][-1]
+    ok(third["history"] == [], "a new chat starts with no history")
+    ok(page.locator(".chat-item").count() == 2 and "GOVERN 1" in page.inner_text(".chat-item.active .open"), "second chat listed first and active")
+    page.locator(".chat-item .open").nth(1).click()
+    ok(page.locator(".chat-msg.user").count() == 2 and page.locator(".chat-msg.assistant").count() == 2, "opening the first chat restores both turns")
+    ok(page.locator(".chat-msg.assistant").first.locator(".chat-sources li").count() == 2, "restored answers keep their sources")
+    page.reload()
+    page.wait_for_timeout(700)
+    page.click("#tab-chat")
+    ok(page.locator(".chat-item").count() == 2, "chats survive a reload")
+    ok(page.evaluate("JSON.parse(localStorage.getItem('aigp-chats')).every(c => c.messages.every(m => m.role && m.content))"), "stored shape is plain")
+
+    page.once("dialog", lambda d: d.accept())
+    page.locator(".chat-item").nth(1).hover()
+    page.locator(".chat-item .del").nth(1).click()
+    ok(page.locator(".chat-item").count() == 1, "delete removes a chat")
+
+    print("\n== an answer lands in the chat that asked, even after switching away")
+    polls["n"] = -3  # three running polls before done
+    page.click("#chat-new")
+    page.fill("#chat-input", "Slow question?")
+    page.click("#chat-send")
+    page.wait_for_selector(".chat-msg.pending")
+    page.locator(".chat-item .open").nth(1).click()  # the older chat, while the slow one is in flight
+    ok(page.locator(".chat-msg.pending").count() == 0, "other chat shows no pending marker")
+    page.locator(".chat-item .open").first.click()
+    ok(page.locator(".chat-msg.pending").count() == 1, "the asking chat shows its pending marker again")
+    page.wait_for_selector(".chat-msg.assistant", timeout=20000)
+    ok(page.locator(".chat-msg.user").inner_text() == "Slow question?" and page.locator(".chat-msg.assistant").count() == 1, "answer filed under the asking chat")
     ok(not errs, f"no page errors {errs}")
 
-    print("\n== sign-out removes the tab and the conversation")
-    page.evaluate("setAuth(null)")
+    print("\n== sign-out removes the tab and, with it, saved chats")
+    page.on("dialog", lambda d: d.accept())
+    page.evaluate("signOut()")
+    page.wait_for_timeout(800)
+    ok(page.evaluate("localStorage.getItem('aigp-chats')") is None, "saved chats cleared from storage")
     ok(not page.is_visible("#tab-chat") and page.is_visible("#panel-quiz"), "tab hidden, back on Quiz")
     ctx.close()
 
@@ -145,6 +187,7 @@ def scenarios(browser, url):
     page.click("#chat-send")
     page.wait_for_selector(".chat-msg.error", timeout=5000)
     ok("used all 200" in page.inner_text(".chat-msg.error") and "0 of 200" in page.inner_text("#chat-quota"), "weekly limit message and quota 0")
+    ok(page.input_value("#chat-input") == "hello" and page.locator(".chat-item").count() == 0, "a refused question is handed back and no empty chat is saved")
     ctx.close()
 
     def api_fail(action, body):
