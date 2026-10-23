@@ -209,5 +209,52 @@ class Book(unittest.TestCase):
             self.assertIn(extra, docs)
 
 
+class Enrichments(unittest.TestCase):
+    """The reader, against a tiny fixture rather than the real (large) files."""
+
+    NODES = [
+        {"id": "root", "label": "AIGP", "parent": None},
+        {"id": "d1", "label": "Domain I\nFoundations", "parent": "root"},
+        {"id": "ch1", "label": "I.A · The Case", "parent": "d1"},
+        {"id": "term:Agent", "label": "Agent", "parent": "ch1", "term": "Agent"},
+    ]
+    ENTRIES = {
+        "ch1": {
+            "overview": "An overview sentence.",
+            "deep_dive": "### Detail\n\nA deep dive paragraph.",
+            "exam": "The exam tests this.",
+            "key_points": ["First point.", "Second point."],
+            "sources": [{"title": "Source One", "url": "https://example.com/one"}],
+        },
+    }
+
+    def sections(self):
+        return b.build_enrichments(self.ENTRIES, self.NODES, used=set())
+
+    def test_two_sections_per_entry_with_stable_ids(self):
+        c = self.sections()
+        self.assertEqual([s["id"] for s in c], ["map-ch1#i-a-the-case", "map-ch1#i-a-the-case-exam-focus"])
+        self.assertEqual([s["id"] for s in self.sections()], [s["id"] for s in c])  # stable
+
+    def test_breadcrumb_is_the_path_from_the_root(self):
+        self.assertEqual({s["breadcrumb"] for s in self.sections()}, {"AIGP > Domain I Foundations > I.A · The Case"})
+
+    def test_the_halves_carry_the_right_content(self):
+        first, second = self.sections()
+        self.assertIn("An overview sentence.", first["text"])
+        self.assertIn("A deep dive paragraph.", first["text"])  # deep dive kept as markdown
+        self.assertIn("### Detail", first["text"])
+        self.assertIn("The exam tests this.", second["text"])
+        self.assertIn("First point.", second["text"])
+        self.assertIn("Source One", second["text"])  # source titles as text
+        self.assertNotIn("https://", second["text"])  # URLs left out
+
+    def test_a_key_with_no_node_is_skipped_not_fatal(self):
+        self.assertEqual(b.build_enrichments({"nope": {"overview": "x"}}, self.NODES, used=set()), [])
+
+    def test_problems_accepts_enrichment_sections(self):
+        self.assertEqual(b.problems(self.sections()), [])
+
+
 if __name__ == "__main__":
     unittest.main()

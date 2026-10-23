@@ -395,6 +395,83 @@ def book_text_coverage(md, sections):
     return sum(len(s["text"]) for s in sections if s["doc"].startswith("book-")), len("\n".join(keep))
 
 
+# --- the enrichments -----------------------------------------------------------------------------
+
+def load_nodes(root=ROOT):
+    """The mind map's node list, as verify_enrichment.py parses it."""
+    return json.loads(MM_NODES_RE.search((root / "map-data.js").read_text(encoding="utf-8")).group(1))
+
+
+def node_key(node):
+    """A term leaf is keyed `term:<name>`; every other node by its id."""
+    return f"term:{node['term']}" if "term" in node else node["id"]
+
+
+def _label(node):
+    return node["label"].replace("\n", " ")
+
+
+def node_path(node, by_key):
+    """Breadcrumb path from the root, e.g. ['AIGP', 'Domain I Foundations', 'I.A ...', 'topic']."""
+    parts, cur, seen = [], node, set()
+    while cur is not None and cur["id"] not in seen:
+        seen.add(cur["id"])
+        parts.append(_label(cur))
+        cur = by_key.get(cur.get("parent")) if cur.get("parent") else None
+    return list(reversed(parts))
+
+
+def load_enrichments(root=ROOT):
+    """The non-empty enrichment files (11 to 14). The other files carry only `{}`; the single `root`
+    entry in 01-structure.json is not a domain file and is not ingested."""
+    entries = {}
+    for path in sorted(root.glob("enrichments/1[1-4]-*.json")):
+        for key, value in json.loads(path.read_text(encoding="utf-8")).items():
+            if key in entries:
+                print(f"warning: enrichment key {key!r} defined in more than one file; last wins", file=sys.stderr)
+            entries[key] = value
+    return entries
+
+
+def _enrichment_text(entry, half):
+    """The text of one enrichment section. `half` is 'overview' (overview plus deep dive) or 'exam'
+    (why it matters for the exam, the key points, and the source titles)."""
+    if half == "overview":
+        return "\n\n".join(x for x in (entry.get("overview"), entry.get("deep_dive")) if x)
+    parts = [entry.get("exam")]
+    points = entry.get("key_points") or []
+    if points:
+        parts.append("\n".join(f"- {p}" for p in points))
+    titles = [s.get("title") for s in entry.get("sources") or [] if s.get("title")]
+    if titles:
+        parts.append("\n".join(f"- {t}" for t in titles))
+    return "\n\n".join(x for x in parts if x)
+
+
+def build_enrichments(entries, nodes, used=None):
+    """Corpus sections for the enrichment entries: two per node (overview plus deep dive; exam angle plus
+    key points and source titles)."""
+    by_key = {node_key(n): n for n in nodes}
+    by_id = {n["id"]: n for n in nodes}
+    used = used if used is not None else set()
+    corpus = []
+    for key in sorted(entries, key=lambda k: by_key.get(k, {}).get("id", k)):
+        node = by_key.get(key) or by_id.get(key)
+        if node is None:
+            print(f"warning: enrichment key {key!r} has no mind-map node; skipped", file=sys.stderr)
+            continue
+        doc = "map-" + slug(key)
+        crumb = " > ".join(node_path(node, by_id))
+        for half, title in (("overview", _label(node)), ("exam", _label(node) + " (exam focus)")):
+            text = _enrichment_text(entries[key], half)
+            if not text.strip():
+                continue
+            for i, c in enumerate(chunk_text(text)):
+                sid = _new_id(used, doc, title if i == 0 else f"{title} (part {i + 1})")
+                corpus.append({"id": sid, "doc": doc, "title": title if i == 0 else f"{title} (part {i + 1})", "breadcrumb": crumb, "text": c})
+    return corpus
+
+
 # --- aliases, validation, main -------------------------------------------------------------------
 
 def build_all(root=ROOT):
@@ -402,6 +479,7 @@ def build_all(root=ROOT):
     used = {s["id"] for s in corpus}
     book_sections, _, _ = build_book((root / BOOK).read_text(encoding="utf-8"), used)
     corpus += book_sections
+    corpus += build_enrichments(load_enrichments(root), load_nodes(root), used)
     return corpus
 
 
