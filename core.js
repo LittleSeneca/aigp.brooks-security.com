@@ -1,12 +1,13 @@
 // ═══════════ TABS ═══════════
 const phone = matchMedia('(max-width: 768px)'); // the CSS phone breakpoint
 function switchTab(tab) {
-  ['quiz','flashcards','test','mindmap','book'].forEach(t => {
+  ['quiz','flashcards','test','mindmap','book','chat'].forEach(t => {
     document.getElementById('panel-'+t).classList.toggle('hidden', t !== tab);
     document.getElementById('tab-'+t).classList.toggle('active', t === tab);
   });
   if (tab === 'mindmap') setTimeout(buildMindMap, 50);
   if (tab === 'test') renderTest();
+  if (tab === 'chat') chatOpen();
   if (tab === 'book') { if (typeof BOOK_MD === 'undefined') loadBook(); else renderBookFromHash(); }
 }
 

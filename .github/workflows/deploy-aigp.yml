@@ -25,6 +25,7 @@ on:
       - test.js
       - keyboard.js
       - auth.js
+      - chat.js
       - book.js
       - rsvp.js
       - init.js
@@ -35,6 +36,9 @@ on:
       - book-data.js
       - d3.v7.min.js
       - marked.min.js
+      # The chat corpus is built from these and uploaded after the site (see the last step).
+      - build_chat_corpus.py
+      - Map/**
       - .github/workflows/deploy-aigp.yml
   workflow_dispatch:
 
@@ -54,6 +58,9 @@ env:
   # Created in brooks-security.com/terraform/aigp-deploy.tf. Not a secret —
   # the role is only assumable from this repo's main branch over OIDC.
   ROLE_ARN: arn:aws:iam::570516803292:role/aigp-study-github-deploy
+  # Private bucket for the study chat's knowledge, created in brooks-security.com/terraform/aigp-chat.tf.
+  # Not served by CloudFront; the role can write only corpus.json.gz into it.
+  CORPUS_BUCKET: aigp-chat-corpus-570516803292
 
 jobs:
   deploy:
@@ -79,7 +86,7 @@ jobs:
           set -euo pipefail
           mkdir -p _site
           cp study.html study.css core.js quiz.js flashcards.js \
-             mindmap.js test.js keyboard.js auth.js book.js rsvp.js init.js \
+             mindmap.js test.js keyboard.js auth.js chat.js book.js rsvp.js init.js \
              quiz-data.js flashcard-data.js map-data.js \
              node-details.js book-data.js d3.v7.min.js marked.min.js _site/
           ls -l _site/
@@ -117,3 +124,13 @@ jobs:
 
           served=$(curl -s "https://${BUCKET}/" | grep -c "AIGP Study" || true)
           [ "${served}" -gt 0 ] || { echo "entry point does not look like the app"; exit 1; }
+
+      # The chat's knowledge: the notes cut into sections and uploaded to the private corpus bucket
+      # (docs/specs/chat.md). Last on purpose: if the bucket doesn't exist yet this step fails, but the
+      # site above is already live. The Lambda reads the object on its next cold start.
+      - name: Build and upload the chat corpus
+        run: |
+          set -euo pipefail
+          python3 tests/chat_corpus_test.py
+          python3 build_chat_corpus.py
+          aws s3 cp _corpus/corpus.json.gz "s3://${CORPUS_BUCKET}/corpus.json.gz"

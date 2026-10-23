@@ -4,7 +4,7 @@ Self-contained study environment for the IAPP Artificial Intelligence Governance
 
 ## Using it
 
-Open [study.html](study.html) in a browser. No server is needed: everything is vendored and works offline. There are five tabs:
+Open [study.html](study.html) in a browser. No server is needed: everything is vendored and works offline. There are five tabs, plus a sixth for signed-in Google accounts:
 
 - **Quiz**: a bank of 1,627 questions with domain, difficulty and status filters. 25 are "Select N" multi-select questions, scored all-or-nothing like the real exam.
 - **Flashcards**: 400 key terms with domain, area and status filters, and ✓/✗ mastery rating.
@@ -19,6 +19,7 @@ Open [study.html](study.html) in a browser. No server is needed: everything is v
   - AIGP's pinned title bar holds the close button and, on desktop, a button that widens the drawer over the whole map. Phones always show the drawer full width.
   - Each open card has two small buttons, labeled with the node's questions correct/total and terms mastered/total. They filter the Quiz or Flashcards to that node.
   - Every question and card is tagged down to a term leaf, so completing all of a node's leaves turns it green by definition.
+- **Chat** (Google accounts only): ask questions and get answers drawn only from the study materials, with the sections cited. 200 questions per week. See [docs/specs/chat.md](docs/specs/chat.md). It needs the deployed API, so it does not exist when the app is opened from disk.
 - **Book**: *The Record*, a narrative guide to the whole BOK that follows one fictional company through a year of AI governance, plus a step-by-step study plan with links to every free primary source the BOK draws on.
 
 Progress is saved in the browser (localStorage). On https://aigp.brooks-security.com an optional account (Google sign-in; the app receives only your email address) syncs it across devices: each device keeps working offline and merges with the server in the background. The sync API (a Lambda and a DynamoDB table) lives in the brooks-security.com repo; see [docs/specs/cross-device-sync.md](docs/specs/cross-device-sync.md). Opened from disk, the app has no sync and progress stays per browser and per URL.
@@ -60,6 +61,8 @@ python3 build_playbook_note.py playbook.json --retrieved YYYY-MM-DD -o "Map/NIST
 | `test.js` | Test tab: timed exam, practice quiz, review |
 | `keyboard.js` | Keyboard shortcuts and `FC_PLACE` computed mapping |
 | `auth.js` | Account and cross-device sync |
+| `chat.js` | Chat tab: question and polling client, answer sanitiser |
+| `build_chat_corpus.py` | Cuts the vault notes into the chat's corpus (seed list; the deploy uploads it to a private bucket) |
 | `book.js` | Book reader: table of contents, scroll-spy, deep linking |
 | `init.js` | Bootstrap: init footer, load first question, handle book deep links |
 | `quiz-data.js`, `flashcard-data.js` | Question bank and flashcards |
