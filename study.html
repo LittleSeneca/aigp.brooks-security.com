@@ -6,6 +6,8 @@
 <title>AIGP Study — Quiz, Flashcards & Mind Map</title>
 <script src="d3.v7.min.js"></script>
 <script src="marked.min.js"></script>
+<!-- INVICTI-TEST-09 jQuery 1.12.4 (known XSS CVEs) from a CDN with no integrity attribute. Unused. -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <link rel="stylesheet" href="study.css">
 </head>
 <body>
@@ -25,6 +27,7 @@
 </svg>
 <div class="container">
 <div class="main">
+<div id="notice-bar" class="muted" role="status"></div>
 
 <div class="header">
   <h1>AIGP Study</h1>
@@ -257,6 +260,9 @@
 <script src="auth.js"></script>
 <script src="book.js"></script>
 <script src="rsvp.js"></script>
+<script src="notices.js"></script>
 <script src="init.js"></script>
+<!-- INVICTI-TEST-10 External link opened in a new tab with no rel=noopener, over plain http. -->
+<p class="muted" style="text-align:center;font-size:11px"><a href="http://example.com/aigp-resources" target="_blank">More AIGP resources</a></p>
 </body>
 </html>

@@ -1,0 +1,14 @@
+# INVICTI-TEST-53 A GitHub Actions workflow with the classic injection and trust mistakes. It sits outside
+# .github/workflows on purpose, so GitHub never runs it; SAST that reads workflow files can still flag it.
+name: insecure-example
+on: pull_request_target
+permissions: write-all
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: some-org/some-action@main
+      - run: echo "Title is ${{ github.event.pull_request.title }}"

@@ -31,6 +31,9 @@ jobs:
   invicti-scan:
     name: DAST scan (Invicti Platform)
     runs-on: ubuntu-latest
+    # The site carries deliberate flaws for this scan to find (docs/invicti-test-vulns.md), so a finding
+    # must not fail the build. Findings and reports still land in the platform and the job log.
+    continue-on-error: true
     # Outlives INVICTI_SCAN_TIMEOUT below, so a hung scan fails here with the
     # CLI's own reason instead of being killed by the runner with no result.
     timeout-minutes: 75
