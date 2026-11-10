@@ -9,7 +9,7 @@ name: Invicti Scan
 # working data only.
 #
 # Requires repo secrets INVICTI_API_TOKEN (an API token issued by the
-# platform), INVICTI_API_BASE_URL and INVICTI_TARGET_ID. See .github/workflows/deploy-aigp.yml for the repo's other
+# platform) and INVICTI_API_BASE_URL. See .github/workflows/deploy-aigp.yml for the repo's other
 # workflow.
 
 # Runs on pull requests only, so a DAST scan gates the merge to main. SAST and
@@ -51,11 +51,11 @@ jobs:
       # Repo secret. If this is replaced by a literal, the literal is sent as
       # the token and every run fails authorization.
       INVICTI_API_TOKEN: ${{ secrets.INVICTI_API_TOKEN }}
-      # Repo secret: the asset ID of the pre-configured target, the uuid in the
-      # platform URL as ?assetId=... — NOT the DAST target ID in the target's Details drawer.
+      # The asset ID of the pre-configured target, the uuid in the platform URL
+      # as ?assetId=... — NOT the DAST target ID in the target's Details drawer.
       # Those look identical and the wrong one fails with "Failed to retrieve
       # target".
-      INVICTI_TARGET_ID: ${{ secrets.INVICTI_TARGET_ID }}
+      INVICTI_TARGET_ID: "5b59ea7e-51fc-4dcf-9d53-70df542aab29"
       # aigp.brooks-security.com is publicly reachable, so the cloud agent can
       # hit it. An internal target needs EphemeralAgent (or PreDefinedAgent
       # plus INVICTI_AGENT_ID) instead — CloudAgent cannot reach one.
