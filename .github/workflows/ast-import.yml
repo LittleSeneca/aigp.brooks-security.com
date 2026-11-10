@@ -57,14 +57,12 @@ jobs:
       # filesystem scan reads vuln-lab/Dockerfile as config (it cannot be built:
       # its remote ADD is a planted flaw that returns 404) and the dependency
       # manifests, and also looks for secrets.
+      # Run from the image instead of aquasecurity/trivy-action, whose tag
+      # scheme has changed between releases.
       - name: Run trivy
-        uses: aquasecurity/trivy-action@0.28.0
-        with:
-          scan-type: fs
-          scanners: vuln,misconfig,secret
-          format: sarif
-          output: trivy.sarif
-          exit-code: "0"
+        run: |
+          docker run --rm -v "$PWD:/src" -w /src aquasec/trivy:0.58.1 fs \
+            --scanners vuln,misconfig,secret --format sarif --output trivy.sarif .
 
       - name: Import into Invicti Platform
         run: .github/scripts/import-sarif.sh trivy.sarif
