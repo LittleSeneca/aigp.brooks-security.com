@@ -1,0 +1,79 @@
+name: AST Import
+
+# SAST and container/config/dependency scans, on every commit pushed to any
+# branch. Each scan runs here in CI and writes SARIF, which is imported into
+# Invicti Platform through its AST Import API (/swagger on the platform host).
+# The DAST scan is a separate workflow that runs on pull requests only:
+# .github/workflows/invicti-scan.yml.
+#
+# Requires the repo secret INVICTI_API_TOKEN, the same one the DAST workflow uses.
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  INVICTI_API_BASE_URL: "https://platform-eu.invicti.com"
+  INVICTI_API_TOKEN: ${{ secrets.INVICTI_API_TOKEN }}
+
+jobs:
+  sast:
+    name: SAST scan (semgrep)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      # Findings must not fail the scan step: the repo carries planted flaws
+      # (docs/invicti-test-vulns.md), and the results are triaged in the platform.
+      - name: Run semgrep
+        run: |
+          pip install semgrep
+          semgrep scan --config auto --sarif --output semgrep.sarif
+
+      - name: Import into Invicti Platform
+        run: .github/scripts/import-sarif.sh semgrep.sarif
+
+      - name: Upload SARIF
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: semgrep-sarif
+          path: semgrep.sarif
+          if-no-files-found: ignore
+          retention-days: 7
+
+  container:
+    name: CS scan (trivy)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      # The site is static files in S3, so there is no image of its own. A
+      # filesystem scan reads vuln-lab/Dockerfile as config (it cannot be built:
+      # its remote ADD is a planted flaw that returns 404) and the dependency
+      # manifests, and also looks for secrets.
+      - name: Run trivy
+        uses: aquasecurity/trivy-action@0.28.0
+        with:
+          scan-type: fs
+          scanners: vuln,misconfig,secret
+          format: sarif
+          output: trivy.sarif
+          exit-code: "0"
+
+      - name: Import into Invicti Platform
+        run: .github/scripts/import-sarif.sh trivy.sarif
+
+      - name: Upload SARIF
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: trivy-sarif
+          path: trivy.sarif
+          if-no-files-found: ignore
+          retention-days: 7
