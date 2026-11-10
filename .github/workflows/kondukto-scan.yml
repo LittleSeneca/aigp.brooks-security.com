@@ -4,7 +4,7 @@ name: Kondukto Scans
 # to any branch. The DAST scan is a separate workflow that runs on pull requests
 # only: .github/workflows/invicti-scan.yml.
 #
-# Requires repo secrets KONDUKTO_HOST and KONDUKTO_TOKEN.
+# Requires the repo secret INVICTI_API_TOKEN.
 
 on:
   push:
@@ -13,11 +13,11 @@ on:
 permissions:
   contents: read
 
-# The kdt CLI now reads INVICTI_ASPM_HOST and INVICTI_ASPM_TOKEN; the repo
-# secrets keep their original names.
+# The kdt CLI reads INVICTI_ASPM_HOST and INVICTI_ASPM_TOKEN. The host is not
+# secret; the token is the same repo secret the DAST workflow uses.
 env:
-  INVICTI_ASPM_HOST: ${{ secrets.KONDUKTO_HOST }}
-  INVICTI_ASPM_TOKEN: ${{ secrets.KONDUKTO_TOKEN }}
+  INVICTI_ASPM_HOST: "https://platform-eu.invicti.com"
+  INVICTI_ASPM_TOKEN: ${{ secrets.INVICTI_API_TOKEN }}
 
 jobs:
   sast:
