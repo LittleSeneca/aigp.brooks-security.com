@@ -1,0 +1,62 @@
+name: Kondukto Scans
+
+# SAST and container scans through the Kondukto CLI (kdt), on every commit pushed
+# to any branch. The DAST scan is a separate workflow that runs on pull requests
+# only: .github/workflows/invicti-scan.yml.
+#
+# Requires repo secrets KONDUKTO_HOST and KONDUKTO_TOKEN.
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  KONDUKTO_HOST: ${{ secrets.KONDUKTO_HOST }}
+  KONDUKTO_TOKEN: ${{ secrets.KONDUKTO_TOKEN }}
+
+jobs:
+  sast:
+    name: SAST scan (Kondukto)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup KDT
+        run: curl -sSL https://cli.kondukto.io | sh
+
+      # The app is JavaScript and Python, so this uses semgrep; gosec in the
+      # vendor example only reads Go. Change -t if your Kondukto instance has a
+      # different SAST tool enabled for this project.
+      - name: Run a SAST scan
+        run: |
+          kdt scan \
+            -p "${{ github.event.repository.name }}" \
+            -t semgrep \
+            -b "${{ github.ref_name }}"
+
+  container:
+    name: CS scan (Kondukto)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup KDT
+        run: curl -sSL https://cli.kondukto.io | sh
+
+      # The site itself is static files in S3; the only image in the repo is the
+      # never-deployed vuln-lab one, so that is what gets built and scanned.
+      - name: Build the image
+        run: docker build -t aigp-vuln-lab:ci vuln-lab
+
+      - name: Run a CS scan
+        run: |
+          kdt scan \
+            -p "${{ github.event.repository.name }}" \
+            -t trivy \
+            --image=aigp-vuln-lab:ci \
+            -b "${{ github.ref_name }}"

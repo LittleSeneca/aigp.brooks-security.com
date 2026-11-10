@@ -12,10 +12,10 @@ name: Invicti Scan
 # platform). See .github/workflows/deploy-aigp.yml for the repo's other
 # workflow.
 
+# Runs on pull requests only, so a DAST scan gates the merge to main. SAST and
+# container scans run on every commit: .github/workflows/kondukto-scan.yml.
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
   pull_request:
 
 permissions:
