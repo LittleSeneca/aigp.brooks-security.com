@@ -21,10 +21,6 @@ env:
   # github.event.repository.name; --create-project makes the project on the
   # first scan if ASPM doesn't have it yet.
   KDT_PROJECT: aigp-study
-  # The SAST scanner clones the project's repository, so a project created
-  # without one fails with "repository configuration is missing or invalid".
-  # These only apply when --create-project actually creates the project.
-  KDT_REPO: https://github.com/${{ github.repository }}
 
 jobs:
   sast:
@@ -49,7 +45,6 @@ jobs:
         run: |
           kdt scan \
             -p "$KDT_PROJECT" --create-project --project-name "$KDT_PROJECT" \
-            --repo-id "$KDT_REPO" --alm-tool github \
             -t invictisast \
             -b "${{ github.ref_name }}"
 
@@ -73,7 +68,6 @@ jobs:
         run: |
           kdt scan \
             -p "$KDT_PROJECT" --create-project --project-name "$KDT_PROJECT" \
-            --repo-id "$KDT_REPO" --alm-tool github \
             -t invictics \
             --image=python:latest \
             -b "${{ github.ref_name }}"
