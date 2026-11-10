@@ -42,7 +42,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: semgrep-sarif
-          path: semgrep.sarif
+          path: |
+            semgrep.sarif
+            import-failures/
           if-no-files-found: ignore
           retention-days: 7
 
@@ -72,6 +74,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: trivy-sarif
-          path: trivy.sarif
+          path: |
+            trivy.sarif
+            import-failures/
           if-no-files-found: ignore
           retention-days: 7
