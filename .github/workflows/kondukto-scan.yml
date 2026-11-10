@@ -13,9 +13,11 @@ on:
 permissions:
   contents: read
 
+# The kdt CLI now reads INVICTI_ASPM_HOST and INVICTI_ASPM_TOKEN; the repo
+# secrets keep their original names.
 env:
-  KONDUKTO_HOST: ${{ secrets.KONDUKTO_HOST }}
-  KONDUKTO_TOKEN: ${{ secrets.KONDUKTO_TOKEN }}
+  INVICTI_ASPM_HOST: ${{ secrets.KONDUKTO_HOST }}
+  INVICTI_ASPM_TOKEN: ${{ secrets.KONDUKTO_TOKEN }}
 
 jobs:
   sast:
@@ -48,15 +50,13 @@ jobs:
       - name: Setup KDT
         run: curl -sSL https://cli.kondukto.io | sh
 
-      # The site itself is static files in S3; the only image in the repo is the
-      # never-deployed vuln-lab one, so that is what gets built and scanned.
-      - name: Build the image
-        run: docker build -t aigp-vuln-lab:ci vuln-lab
-
+      # The site is static files in S3, so there is no image of its own to scan.
+      # vuln-lab/Dockerfile cannot be built (its remote ADD is a planted flaw
+      # that returns 404), so this scans the base image it starts from.
       - name: Run a CS scan
         run: |
           kdt scan \
             -p "${{ github.event.repository.name }}" \
             -t trivy \
-            --image=aigp-vuln-lab:ci \
+            --image=python:latest \
             -b "${{ github.ref_name }}"
