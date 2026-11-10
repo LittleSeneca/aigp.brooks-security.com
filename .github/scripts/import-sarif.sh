@@ -44,19 +44,17 @@ jq -c --argjson n "$chunk" '
 total="$(wc -l < "$work/parts.jsonl")"
 echo "Importing $sarif in $total part(s)"
 
-auth="Authorization: Bearer $INVICTI_API_TOKEN"
+# The platform's API tokens go in X-Auth. Sent as a bearer, a non-JWT token makes
+# the server answer 500 instead of 401, so it is not tried first.
+auth="X-Auth: $INVICTI_API_TOKEN"
 i=0
 while IFS= read -r part; do
   i=$((i + 1))
   base64 -w0 <<<"$part" | jq -Rs '{sarifFile: .}' > "$work/payload.json"
 
   status="$(post "$work/payload.json" "$auth")"
-  # The API documents two auth schemes (bearer JWT and an X-Auth header); fall
-  # back to the second if the token is rejected as a bearer.
-  if [ "$status" = 401 ] && [[ $auth == Authorization* ]]; then
-    echo "Bearer auth rejected (401), switching to X-Auth"
-    auth="X-Auth: $INVICTI_API_TOKEN"
-    status="$(post "$work/payload.json" "$auth")"
+  if [ "$status" = 401 ]; then
+    echo "X-Auth rejected (401): INVICTI_API_TOKEN is not valid for the AST Import API" >&2
   fi
 
   echo "part $i/$total: HTTP $status"
