@@ -1,0 +1,75 @@
+name: Kondukto Scans
+
+# SAST and container scans through the Kondukto CLI (kdt) against Invicti ASPM,
+# on every commit pushed to any branch. The DAST scan is a separate workflow that
+# runs on pull requests only: .github/workflows/invicti-scan.yml.
+#
+# Requires the repo secrets INVICTI_ASPM_HOST (the ASPM instance's base URL) and
+# INVICTI_ASPM_TOKEN (an API token from ASPM: Integrations > API Tokens).
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  INVICTI_ASPM_HOST: ${{ secrets.INVICTI_ASPM_HOST }}
+  INVICTI_ASPM_TOKEN: ${{ secrets.INVICTI_ASPM_TOKEN }}
+  # The repo name contains dots, so it is spelled out instead of taken from
+  # github.event.repository.name; --create-project makes the project on the
+  # first scan if ASPM doesn't have it yet.
+  KDT_PROJECT: aigp-study
+
+jobs:
+  sast:
+    name: SAST scan (Kondukto)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup KDT
+        run: curl -sSL https://cli.kondukto.io | sh
+
+      # Fails fast with a clear message if the host or token is wrong, and
+      # prints the scanner names this instance accepts for -t.
+      - name: Check connection
+        run: |
+          kdt ping -a
+          kdt list scanners
+
+      # The app is JavaScript and Python, so this uses semgrep; the vendor
+      # example's gosec only reads Go. Findings do not fail the step: the repo
+      # carries planted flaws (docs/invicti-test-vulns.md).
+      - name: Run a SAST scan
+        run: |
+          kdt scan \
+            -p "$KDT_PROJECT" --create-project --project-name "$KDT_PROJECT" \
+            -t semgrep \
+            -b "${{ github.ref_name }}"
+
+  container:
+    name: CS scan (Kondukto)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup KDT
+        run: curl -sSL https://cli.kondukto.io | sh
+
+      - name: Check connection
+        run: kdt ping -a
+
+      # The site is static files in S3, so there is no image of its own.
+      # vuln-lab/Dockerfile cannot be built (its remote ADD is a planted flaw
+      # that returns 404), so this scans the base image it starts from.
+      - name: Run a CS scan
+        run: |
+          kdt scan \
+            -p "$KDT_PROJECT" --create-project --project-name "$KDT_PROJECT" \
+            -t trivy \
+            --image=python:latest \
+            -b "${{ github.ref_name }}"
