@@ -33,21 +33,19 @@ jobs:
       - name: Setup KDT
         run: curl -sSL https://cli.kondukto.io | sh
 
-      # Fails fast with a clear message if the host or token is wrong, and
-      # prints the scanner names this instance accepts for -t.
+      # Fails fast with a clear message if the host or token is wrong; on success
+      # it also prints the scanner names this instance accepts for -t.
       - name: Check connection
-        run: |
-          kdt ping -a
-          kdt list scanners
+        run: kdt ping -a
 
-      # The app is JavaScript and Python, so this uses semgrep; the vendor
-      # example's gosec only reads Go. Findings do not fail the step: the repo
-      # carries planted flaws (docs/invicti-test-vulns.md).
+      # invictisast is the instance's SAST scanner (see kdt ping -a). Findings do
+      # not fail the step: the repo carries planted flaws
+      # (docs/invicti-test-vulns.md).
       - name: Run a SAST scan
         run: |
           kdt scan \
             -p "$KDT_PROJECT" --create-project --project-name "$KDT_PROJECT" \
-            -t semgrep \
+            -t invictisast \
             -b "${{ github.ref_name }}"
 
   container:
@@ -70,6 +68,6 @@ jobs:
         run: |
           kdt scan \
             -p "$KDT_PROJECT" --create-project --project-name "$KDT_PROJECT" \
-            -t trivy \
+            -t invictics \
             --image=python:latest \
             -b "${{ github.ref_name }}"
